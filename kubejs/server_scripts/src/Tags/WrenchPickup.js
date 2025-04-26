@@ -1,0 +1,111 @@
+ServerEvents.tags("block", event =>{
+    /**
+    * 
+    * @param {Internal.TagEventJS} event 
+    * @param {ResourceLocation_} tag 
+    * @param {[Items_]} excludeItems 
+    */
+    function removeItemsFromTag(event, tag, excludeItems) {
+        let items = event.get(tag).getObjectIds();
+        let nonRemoveItems = [];
+    
+        items.forEach(item => {
+            if (!excludeItems.includes(item.toString())) {
+                nonRemoveItems.push(item);
+          }
+        });
+    
+        event.removeAll(tag);
+        nonRemoveItems.forEach(item => {
+            event.add(tag, item);
+        });
+    }
+    
+    let create_wrench =[
+        '#betterend:pedestal',
+        '#forge:sites/villager_job',
+        '#minecraft:buttons',
+        '#minecraft:pressure_plates',
+        '#minecraft:rails',
+        '#quark:crystal_lamp',
+        'alexscaves:azure_magnet',
+        'alexscaves:hologram_projector',
+        'alexscaves:magnetic_activator',
+        'alexscaves:magnetic_light',
+        'alexscaves:quarry',
+        'alexscaves:scarlet_magnet',
+        'anvilcraft:active_silencer',
+        'anvilcraft:auto_crafter',
+        'anvilcraft:batch_crafter',
+        'anvilcraft:block_devourer',
+        'anvilcraft:block_placer',
+        'anvilcraft:charge_collector',
+        'anvilcraft:charger',
+        'anvilcraft:chute',
+        'anvilcraft:crab_trap',
+        'anvilcraft:corrupted_beacon',
+        'anvilcraft:discharger',
+        'anvilcraft:ember_anvil',
+        'anvilcraft:ferrite_core_magnet_block',
+        'anvilcraft:giant_anvil',
+        'anvilcraft:heater',
+        'anvilcraft:heliostats',
+        'anvilcraft:hollow_magnet_block',
+        'anvilcraft:impact_pile',
+        'anvilcraft:induction_light',
+        'anvilcraft:item_collector',
+        'anvilcraft:load_monitor',
+        'anvilcraft:magnet_block',
+        'anvilcraft:magnetic_chute',
+        'anvilcraft:menger_sponge',
+        'anvilcraft:overseer',
+        'anvilcraft:thermoelectric_converter',
+        'anvilcraft:transmission_pole',
+        'anvilcraft:transparent_crafting_table',
+        'anvilcraft:piezoelectric_crystal',
+        'anvilcraft:power_converter_big',
+        'anvilcraft:power_converter_middle',
+        'anvilcraft:power_converter_small',
+        'anvilcraft:remote_transmission_pole',
+        'anvilcraft:royal_anvil',
+        'anvilcraft:ruby_laser',
+        'anvilcraft:ruby_prism',
+        'anvilcraft:space_overcompressor',
+        'anvilcraft:spectral_anvil',
+        'anvilcraft:stamping_platform',
+        'minecraft:bell',
+        'minecraft:calibrated_sculk_sensor',
+        'minecraft:chiseled_bookshelf',
+        'minecraft:honey_block',
+        'minecraft:sculk_sensor',
+        'minecraft:slime_block',
+        'minecraft:tnt',
+        'quark:chute',
+        'quark:crafter',
+        'quark:ender_watcher',
+        'quark:gravisand',
+        'quark:iron_rod',
+        'quark:magnet',
+        'quark:redstone_randomizer',
+        'rubinated_nether:ruby_laser',
+        'spelunkery:carved_nephrite',
+        'spelunkery:compression_blast_miner',
+        'spelunkery:nephrite_diode',
+        'spelunkery:nephrite_fountain',
+        'spelunkery:nephrite_siphon',
+        'supplementaries:bellows',
+        'supplementaries:cannon',
+        'supplementaries:cog_block',
+        'supplementaries:crank',
+        'supplementaries:crystal_display',
+        'supplementaries:faucet',
+        'supplementaries:lock_block',
+        'supplementaries:redstone_illuminator',
+        'supplementaries:relayer',
+        'supplementaries:speaker_block',
+        'supplementaries:spring_launcher',
+        'supplementaries:turn_table',
+        'supplementaries:wind_vane'
+    ]
+    event.add('create:wrench_pickup', create_wrench)
+})
