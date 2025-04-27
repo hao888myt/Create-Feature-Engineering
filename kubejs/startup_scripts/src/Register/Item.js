@@ -18,6 +18,8 @@ StartupEvents.registry('item', event => {
 
     event.create('rubber') // 橡胶
 
+    event.create('litematica_tool') // 投影工具
+
     event.create('adulterated_compound_base')
     event.create('incomplete_chromatic_compound')
     event.create('chromatic_compound_shard')

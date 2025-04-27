@@ -13,6 +13,9 @@ ClientEvents.lang("zh_cn", (event) => {
     event.add("item.kubejs.chromatic_compound_shard", "异彩化合物碎片")
     event.add("item.kubejs.unstable_chromatic_compound", "不稳定异彩化合物")
 
+    event.add("item.kubejs.rubber", "橡胶")
+    event.add("item.kubejs.litematica_tool", "投影工具")
+
     AddBlockLang("base_block", "化合物基质块")
     AddBlockLang("adulterated_base_block", "掺杂化合物基质块")
 
