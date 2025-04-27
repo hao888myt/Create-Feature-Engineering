@@ -1,7 +1,7 @@
 StartupEvents.registry('item', event => {
 
     // 批量注册构件
-    global.MechanismType.forEach((mechanism) => {
+    global.MechanismTypes.forEach((mechanism) => {
         event.create(`${mechanism}_mechanism`)
             .texture(`kubejs:item/mechanism/complete/${mechanism}`)
         event.create(`incomplete_${mechanism}_mechanism`)
