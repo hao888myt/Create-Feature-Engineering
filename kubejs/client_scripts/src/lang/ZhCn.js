@@ -47,19 +47,19 @@ ClientEvents.lang("zh_cn", (event) => {
         ["colorful", "七彩"]
     ]
 
-    MechanismName.forEach((key, value) => {
+    MechanismName.forEach(([key, value]) => {
         event.add(`item.kubejs.${key}_mechanism`, `${value}构件`)
         event.add(`item.kubejs.incomplete_${key}_mechanism`, `${value}构件（半成品）`)
         event.add(`item.kubejs.${key}_machine`, `${value}机器`)
         event.add(`block.kubejs.${key}_machine`, `${value}机器`)
     })
 
-    function AddBlockLang(key, value) {
+    function AddBlockLang([key, value]) {
         event.add(`item.kubejs.${key}`, value)
         event.add(`block.kubejs.${key}`, value)
     }
 
-    function AddFluidLang(key, value) {
+    function AddFluidLang([key, value]) {
         event.add(`fluid.kubejs.${key}`, value)
         event.add(`block.kubejs.${key}`, value)
         event.add(`item.kubejs.${key}_bucket`, `${value}桶`)
