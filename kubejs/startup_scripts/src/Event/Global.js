@@ -1,5 +1,5 @@
 // 所有构件与机器名称
-global.MechanismType = [
+global.MechanismTypes = [
     "andesite",
     "sturdy",
     "magnet",

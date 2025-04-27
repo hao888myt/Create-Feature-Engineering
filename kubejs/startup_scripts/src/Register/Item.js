@@ -1,38 +1,7 @@
 StartupEvents.registry('item', event => {
 
-    MechanismType = [
-        "andesite",
-        "sturdy",
-        "magnet",
-        "infernal",
-        "sculk",
-        "nuclear",
-        "endless",
-        "crystal",
-        "onyx",
-        "azurite",
-        "bedrock",
-        "moonstone",
-        "glass_crest",
-        "effulgent",
-        "aether",
-        "copper",
-        "optical",
-        "candy",
-        "dark",
-        "primal",
-        "plant",
-        "ender",
-        "enchantment",
-        "quitoxic",
-        "star",
-        "resonance",
-        "annihilation",
-        "colorful"
-    ]
-
     // 批量注册构件
-    MechanismTypes.forEach((mechanism) => {
+    global.MechanismTypes.forEach((mechanism) => {
         event.create(`${mechanism}_mechanism`)
             .texture(`kubejs:item/mechanism/complete/${mechanism}`)
         event.create(`incomplete_${mechanism}_mechanism`)
