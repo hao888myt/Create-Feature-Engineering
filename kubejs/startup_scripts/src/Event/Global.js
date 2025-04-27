@@ -1,3 +1,9 @@
+// 开发者名单
+global.DeveloperName = [
+    "hao888myt",
+    "Vechni_Metel"
+]
+
 // 所有构件与机器名称
 global.MechanismTypes = [
     "andesite",
@@ -28,10 +34,4 @@ global.MechanismTypes = [
     "resonance",
     "annihilation",
     "colorful"
-]
-
-// 开发者名单
-global.DeveloperName = [
-    "hao888myt",
-    "Vechni_Metel"
 ]
