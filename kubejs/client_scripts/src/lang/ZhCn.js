@@ -55,12 +55,12 @@ ClientEvents.lang("zh_cn", (event) => {
         event.add(`block.kubejs.${key}_machine`, `${value}机器`)
     })
 
-    function AddBlockLang(key, value) {
+    function AddBlockLang([key, value]) {
         event.add(`item.kubejs.${key}`, value)
         event.add(`block.kubejs.${key}`, value)
     }
 
-    function AddFluidLang(key, value) {
+    function AddFluidLang([key, value]) {
         event.add(`fluid.kubejs.${key}`, value)
         event.add(`block.kubejs.${key}`, value)
         event.add(`item.kubejs.${key}_bucket`, `${value}桶`)

@@ -4,8 +4,8 @@ global.DeveloperName = [
     "Vechni_Metel"
 ]
 
-// 设备名单
-global.MechanismType = [
+// 所有构件与机器名称
+global.MechanismTypes = [
     "andesite",
     "sturdy",
     "magnet",
