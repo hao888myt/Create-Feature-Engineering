@@ -1,27 +1,6 @@
-ServerEvents.tags("block", event =>{
-    /**
-    * 
-    * @param {Internal.TagEventJS} event 
-    * @param {ResourceLocation_} tag 
-    * @param {[Items_]} excludeItems 
-    */
-    function removeItemsFromTag(event, tag, excludeItems) {
-        let items = event.get(tag).getObjectIds();
-        let nonRemoveItems = [];
-    
-        items.forEach(item => {
-            if (!excludeItems.includes(item.toString())) {
-                nonRemoveItems.push(item);
-          }
-        });
-    
-        event.removeAll(tag);
-        nonRemoveItems.forEach(item => {
-            event.add(tag, item);
-        });
-    }
-    
-    let create_wrench =[
+ServerEvents.tags("block", event => {
+
+    let create_wrench = [
         '#betterend:pedestal',
         '#forge:sites/villager_job',
         '#minecraft:buttons',
@@ -108,4 +87,5 @@ ServerEvents.tags("block", event =>{
         'supplementaries:wind_vane'
     ]
     event.add('create:wrench_pickup', create_wrench)
+    
 })
