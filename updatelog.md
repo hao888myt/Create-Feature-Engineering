@@ -26,7 +26,7 @@
 1. 优化KJS文件排布，完善Github仓库——Vechni_Metel
 2. 优化了禁用铁砧附魔机器的代码——hao888myt
 3. 禁用了附魔台附魔机器——hao888myt
-4. 将xekr红石显示、stay true、更低的阻尼盾牌、叶子不茂密、部分mod汉化、钠汉化丢进kubejs的resourcepacks里作为默认加载项——hao888myt
+4. 将xekr红石显示、stay true、更低的阻尼盾牌、叶子不茂密、部分mod汉化、钠汉化丢进kubejs的assets里作为默认加载项——hao888myt
 
 ### 游戏内容移除
 ## Mod
