@@ -199,7 +199,7 @@ ServerEvents.recipes(event => {
       )
     }
 
-    machines("kubejs:andesite_machine", "create:andesite_casing", "kubejs:andsite_mechanism")
+    machines("kubejs:andesite_machine", "create:andesite_casing", "kubejs:andesite_mechanism")
     machines("kubejs:copper_machine", "create:copper_casing", "kubejs:copper_mechanism")
     machines("kubejs:brass_machine", "create:brass_casing", "create:precision_mechanism")
     machines("kubejs:sturdy_machine", "create:railway_casing", "kubejs:sturdy_mechanism")
@@ -262,6 +262,62 @@ ServerEvents.recipes(event => {
         A: "#forge:plates/iron"
       }
     )
+
+    // 修复黄铜锭
+    event.remove("anvilcraft:brass_ingot")
+
+    //革制手提袋
+    event.remove("bagofholding:leather_bag_of_holding")
+    event.shaped(
+      Item.of("bagofholding:leather_bag_of_holding"),
+      [
+        "SLS",
+        "LCL",
+        "WLW"
+      ],
+      {
+        L: "#forge:leather",
+        C: "#forge:chests",
+        W: "#minecraft:wool",
+        S: "#forge:string"
+      }
+    ) 
+
+    //铁制手提袋
+    event.remove("bagofholding:iron_bag_of_holding")
+    event.shaped(
+      Item.of("bagofholding:iron_bag_of_holding"),
+      [
+        "STS",
+        "ILI",
+        "WIW"
+      ],
+      {
+        I: "#forge:ingots/iron",
+        L: "bagofholding:leather_bag_of_holding",
+        W: "#minecraft:wool",
+        S: "#forge:string",
+        T: "#spectrum:gemstone_shards"
+      }
+    )   
+
+    //金制手提袋
+    event.remove("bagofholding:golden_bag_of_holding")
+    event.shaped(
+      Item.of("bagofholding:golden_bag_of_holding"),
+      [
+        "SDS",
+        "GIG",
+        "WGW"
+      ],
+      {
+        G: "#forge:ingots/gold",
+        I: "bagofholding:iron_bag_of_holding",
+        W: "#minecraft:wool",
+        S: "#forge:string",
+        D: "#forge:gems/diamond"
+      }
+    ) 
 
     //冲击桩
     // event.remove("anvilcraft:impact_pile")
