@@ -4,6 +4,9 @@ ServerEvents.tags("block", event => {
     event.add('alexscaves:ferromagnetic_blocks', 'anvilcraft:ferrite_core_magnet_block')
     event.add('alexscaves:ferromagnetic_blocks', 'quark:magnet')
 
+    event.add('minecraft:needs_diamond_tool', 'kubejs:paltaeria_catalyst')
+    event.add('minecraft:mineable/pickaxe', 'kubejs:paltaeria_catalyst')
+
     removeItemsFromTag(event, 'alexscaves:ferromagnetic_blocks', 'minecraft:anvil')
     removeItemsFromTag(event, 'alexscaves:ferromagnetic_blocks', 'minecraft:chipped_anvil')
     removeItemsFromTag(event, 'alexscaves:ferromagnetic_blocks', 'minecraft:damaged_anvil')
