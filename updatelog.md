@@ -2,44 +2,40 @@
 这是为`机械动力：特性工程`整合包玩家与开发者撰写的更新日志
 开发者进行撰写时请在相应分类下简单描述本次更改的内容并署名是谁进行的更改
 
-## alpha-0.0.2版本
+## alpha-0.0.3版本
 
 ### 游戏内容添加
-## Mod
-1. Player Hopper（玩家漏斗）——hao888myt
-2. Create: Copycats+（机械动力：伪装方块+）——hao888myt
-3. Tinkers Bounce Pad（匠魂弹跳板）——hao888myt
-4. Embeddium——hao888myt
-5. Chloride (Embeddium++)——hao888myt
-6. NBT Copy——hao888myt
-7. Create: Cyber Goggles（机械动力：赛博护目镜）——hao888myt
-8. 键位冲突显示——hao888myt
-9.  Create Factory Logistics——hao888myt
-10. Create Mobile Packages——hao888myt
-11. MoreJS——hao888myt
-12. Researchable——hao888myt
-13. Just an End Anchor——hao888myt
-## 物品
-1. 添加了投影工具——hao888myt
+#### Mod
+1. Golems Are Friends Not Fodder——hao888myt
+2. Catalogue（模组目录）——hao888myt
+3. Better Burning（更好的燃烧机制）——hao888myt
+4. This boat is MINE!（这是我的船！）——hao888myt
+5. Too fast——hao888myt——hao888myt
+6. Compressed Create Recipes——hao888myt
+#### 机制
+1. `潜影弹`击中`苍绿催生体`，可以将以`苍绿催生体`为中心5x5的`末地石`转化为`上升重力方块形态`的`苍绿矿石`，而其它方块则会被转化为该方块的`上升重力方块形态`——hao888myt
+#### 物品/方块
+1. 添加了`苍绿催生体`——hao888myt
+#### 材质包
+1. 添加了由`CLOTLIU`制作的`探险家指南针结构汉化`材质包——hao888myt
 
 ### 游戏内容修改
-1. 优化KJS文件排布，完善Github仓库——Vechni_Metel
-2. 优化了禁用铁砧附魔机器的代码——hao888myt
-3. 禁用了附魔台附魔机器——hao888myt
-4. 将xekr红石显示、stay true、更低的阻尼盾牌、叶子不茂密、部分mod汉化、钠汉化丢进kubejs的assets里作为默认加载项——hao888myt
+#### 代码
+1. 将`Catalyst.js`中指令生成`重力方块、下落的方块`部分进行了优化——hao888myt
+#### 配方
+1. 降低了`铁手提袋`的造价——hao888myt
+2. 增加了`金手提袋`的造价——hao888myt
 
 ### 游戏内容移除
-## Mod
-1. End's Delight（末地乐事）——hao888myt
-2. Xeno——hao888myt
-3. All Leak Memory——hao888myt
-4. Hearths——hao888myt
-5. IncineratorsTryHard（灾变：武器技参数配置冒火的剑）——hao888myt
-6. L_Enders_Cataclysm（灾变）——hao888myt
-7. Goblintraders（哥布林商人）——hao888myt
-8. Lionfishapi——hao888myt
-9. Creeper Overhaul（苦力怕革新）——hao888myt
-10. Enderman Overhaul（末影人革新）——hao888myt
-11. KeyMap——hao888myt
+#### Mod
+1. SimplyHouses——hao888myt
+2. Totw Modded（旷野之息高塔 再重置）——hao888myt
+3. Totw Additions（旷野之息高塔_附加）——hao888myt
+4. YungsBetterDesertTemples（YUNG的沙漠神殿优化）——hao888myt
+5. YungsBetterJungleTemples（YUNG的丛林神庙优化）——hao888myt
 
 ### bug修复
+1. 修复了材质包`叶子不茂密`无法覆盖`stay true`叶子的bug——hao888myt
+2. 修复了某些情况下，`工作台无物品`会输出`黄铜锭`的bug——hao888myt
+3. 修复了`安山机器`的配方——hao888myt
+4. 修复了`ZhCn`中`AddBlockLang`和`AddFluidLang`无法生效的bug——hao888myt
