@@ -11,8 +11,8 @@ StartupEvents.registry('item', event => {
     event.create('shimmerstone_gem_shard') // 火花石碎片
     event.create('shimmerstone_gem_lump') // 火花石碎块
 
-    event.create('paltaeria_catalyst') // 苍绿催化剂
-    event.create('stratine_catalyst') // 绯红催化剂
+    event.create('up_catalyst') // 苍绿催化剂
+    event.create('down_catalyst') // 绯红催化剂
     event.create('hover_catalyst') // 悬浮催化剂
     event.create('gravity_catalyst') // 重力催化剂
 
