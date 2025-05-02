@@ -48,10 +48,10 @@ BlockEvents.rightClicked(event => {
 
         //生成重力方块
         if (event.getItem().id != 'kubejs:gravity_catalyst')
-            event.server.runCommandSilent('summon spectrum:gravity_block' + ' ' + blockX.toString() + ' ' + blockY.toString() + ' ' + blockZ.toString() + ' ' + '{' + parseBlockState(state) + ', GravityModifier:' + gravityModifier +'}')
+            event.server.runCommandSilent(`summon spectrum:gravity_block ${blockX.toString()} ${blockY.toString()} ${blockZ.toString()} {${parseBlockState(state)},GravityModifier:${gravityModifier}}`)
         //生成下落方块
         else
-            event.server.runCommandSilent('summon minecraft:falling_block' + ' ' + blockX.toString() + ' ' + blockY.toString() + ' ' + blockZ.toString() + ' ' + '{' + parseBlockState(state) + '}')
+            event.server.runCommandSilent(`summon minecraft:falling_block ${blockX.toString()} ${blockY.toString()} ${blockZ.toString()} {${parseBlockState(state)}}`)
 
         //删除目标方块
         event.level.destroyBlock(event.block.pos,false)
@@ -93,10 +93,10 @@ BlockEvents.rightClicked(event => {
     }
 })
 
-ItemEvents.rightClicked(event => {
-    if (event.hand == "OFF_HAND") return
-    if (event.getItem().id != 'kubejs:rubber') return
-    //console.log(event.getTarget().entity.getNbt().toString())
-    if (event.getTarget().entity == null) return
-    console.log(event.target.entity.getNbt().toString())
-})
+// ItemEvents.rightClicked(event => {
+//     if (event.hand == "OFF_HAND") return
+//     if (event.getItem().id != 'kubejs:rubber') return
+//     //console.log(event.getTarget().entity.getNbt().toString())
+//     if (event.getTarget().entity == null) return
+//     console.log(event.target.entity.getNbt().toString())
+// })
