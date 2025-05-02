@@ -26,8 +26,8 @@
 1. 降低了`铁手提袋`的造价——hao888myt
 2. 增加了`金手提袋`的造价——hao888myt
 #### 物品
-1. 将`绯红催化剂`的注册名改为`kubejs:down_catalyst`
-2. 将`苍绿催化剂`的注册名改为`kubejs:up_catalyst`
+1. 将`绯红催化剂`的注册名改为`kubejs:down_catalyst`——hao888myt
+2. 将`苍绿催化剂`的注册名改为`kubejs:up_catalyst`——hao888myt
 
 ### 游戏内容移除
 #### Mod
