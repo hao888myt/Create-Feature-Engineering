@@ -17,6 +17,9 @@ ServerEvents.tags('item', event => {
     event.add('kubejs:sap', 'anvilcraft:resin')
     event.add('kubejs:sap', 'alexscaves:pewen_sap')
 
+    //添加砂带标签
+    event.add("kubejs:sandpaper_belt", ['vintageimprovements:grinder_belt', 'createmetallurgy:sandpaper_belt'])
+
     /**
     * 
     * @param {Internal.TagEventJS} event 
