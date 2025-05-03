@@ -3,7 +3,7 @@ BlockEvents.rightClicked(event => {
     if (event.hand == "OFF_HAND") return
 
     //获得玩家
-    let player = event.getPlayer()
+    var player = event.getPlayer()
 
     //判断玩家是否存在
     if (player == null) return
@@ -34,24 +34,34 @@ BlockEvents.rightClicked(event => {
         let blockY = event.block.y
         let blockZ = event.block.z
 
+        if (event.block.id == 'minecraft:air') return
+
         //存储方块状态
         let state = event.block.getBlockState().toString()
 
-
-        //判断催化剂类型
-        let gravityModifier = "0.0f"
-        if (event.getItem().id == 'kubejs:paltaeria_catalyst') gravityModifier = "0.2f"
-        else if (event.getItem().id == 'kubejs:stratine_catalyst') gravityModifier = "-0.2f"
-        else if (event.getItem().id == 'kubejs:hover_catalyst') gravityModifier = "0.0f"
-
-        if (event.block.id == 'minecraft:air') return
-
         //生成重力方块
         if (event.getItem().id != 'kubejs:gravity_catalyst')
-            event.server.runCommandSilent(`summon spectrum:gravity_block ${blockX.toString()} ${blockY.toString()} ${blockZ.toString()} {${parseBlockState(state)},GravityModifier:${gravityModifier}}`)
+        {
+            //判断催化剂类型
+            let gravityModifier = 0.0
+            if (event.getItem().id == 'kubejs:paltaeria_catalyst') gravityModifier = 0.2
+            else if (event.getItem().id == 'kubejs:stratine_catalyst') gravityModifier = -0.2
+            else if (event.getItem().id == 'kubejs:hover_catalyst') gravityModifier = 0.0
+
+            let gravityBlock = player.level.createEntity("spectrum:gravity_block")
+            gravityBlock.setPosition( blockX + 0.5, blockY, blockZ + 0.5)
+            gravityBlock.mergeNbt(`{${parseBlockState(state)}}`)
+            gravityBlock.mergeNbt(`{GravityModifier:${gravityModifier}}`)
+            gravityBlock.spawn()
+        }
         //生成下落方块
         else
-            event.server.runCommandSilent(`summon minecraft:falling_block ${blockX.toString()} ${blockY.toString()} ${blockZ.toString()} {${parseBlockState(state)}}`)
+        {
+            let fallingBlock = player.level.createEntity("minecraft:falling_block")
+            fallingBlock.setPosition( blockX + 0.5, blockY, blockZ + 0.5)
+            fallingBlock.mergeNbt(`{${parseBlockState(state)}}`)
+            fallingBlock.spawn()
+        }
 
         //删除目标方块
         event.level.destroyBlock(event.block.pos,false)
