@@ -43,16 +43,17 @@ BlockEvents.rightClicked(event => {
         if (event.getItem().id != 'kubejs:gravity_catalyst')
         {
             //判断催化剂类型
-            let gravityModifier = 0.0
-            if (event.getItem().id == 'kubejs:paltaeria_catalyst') gravityModifier = 0.2
-            else if (event.getItem().id == 'kubejs:stratine_catalyst') gravityModifier = -0.2
-            else if (event.getItem().id == 'kubejs:hover_catalyst') gravityModifier = 0.0
+            let gravityModifier = "0.0f"
+            if (event.getItem().id == 'kubejs:paltaeria_catalyst') gravityModifier = "0.2f"
+            else if (event.getItem().id == 'kubejs:stratine_catalyst') gravityModifier = "-0.2f"
+            else if (event.getItem().id == 'kubejs:hover_catalyst') gravityModifier = "0.0f"
 
-            let gravityBlock = player.level.createEntity("spectrum:gravity_block")
-            gravityBlock.setPosition( blockX + 0.5, blockY, blockZ + 0.5)
-            gravityBlock.mergeNbt(`{${parseBlockState(state)}}`)
-            gravityBlock.mergeNbt(`{GravityModifier:${gravityModifier}}`)
-            gravityBlock.spawn()
+            event.server.runCommandSilent(`execute in ${player.level.dimension.toString()} run summon spectrum:gravity_block ${blockX} ${blockY} ${blockZ} {${parseBlockState(state)}, GravityModifier:${gravityModifier}}`)
+
+            // let gravityBlock = player.level.createEntity("spectrum:gravity_block")
+            // gravityBlock.setPosition( blockX + 0.5, blockY, blockZ + 0.5)
+            // gravityBlock.mergeNbt(`{${parseBlockState(state)}, GravityModifier: 0.2f}`)
+            // gravityBlock.spawn()
         }
         //生成下落方块
         else

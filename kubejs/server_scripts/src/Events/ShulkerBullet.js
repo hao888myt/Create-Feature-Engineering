@@ -32,7 +32,7 @@ NativeEvents.onEvent('net.minecraftforge.event.entity.ProjectileImpactEvent', ev
         return null
     }
 
-    let blockPos = CheckBlock('kubejs:paltaeria_catalyst')
+    let blockPos = CheckBlock('kubejs:paltaeria_ore_catalyst')
 
     if (blockPos == null) return
 
@@ -62,12 +62,24 @@ NativeEvents.onEvent('net.minecraftforge.event.entity.ProjectileImpactEvent', ev
             const blockState = level.getBlockState(pos)
             const block = blockState.getBlock()
 
+            if (block == Block.getBlock('minecraft:air')) return
+
+            // let gravityBlock = level.createEntity("spectrum:gravity_block")
+
             level.destroyBlock(pos,false)
-            if (block == Block.getBlock('minecraft:end_stone')) {
-                Utils.getServer().runCommandSilent(`summon spectrum:gravity_block ${pos.getX()} ${pos.getY()} ${pos.getZ()} {BlockState: {Name: "spectrum:paltaeria_ore"}, GravityModifier:0.2f}`)
-            } else if (block != Block.getBlock('minecraft:air')) {
-                Utils.getServer().runCommandSilent(`summon spectrum:gravity_block ${pos.getX()} ${pos.getY()} ${pos.getZ()} {${parseBlockState(blockState.toString())}, GravityModifier:0.2f}`)
+            if (block == Block.getBlock('minecraft:end_stone'))
+            {
+                //gravityBlock.mergeNbt(`{BlockState: {Name: "spectrum:paltaeria_ore"}, GravityModifier: 0.2}`)
+                Utils.getServer().runCommandSilent(`execute in ${level.dimension.toString()} run summon spectrum:gravity_block ${pos.getX()} ${pos.getY()} ${pos.getZ()} {BlockState: {Name: "spectrum:paltaeria_ore"}, GravityModifier:0.4f}`)
+            } 
+            else 
+            {
+                //gravityBlock.mergeNbt(`{${parseBlockState(blockState)}, GravityModifier: 0.2}`)
+                Utils.getServer().runCommandSilent(`execute in ${level.dimension.toString()} run summon spectrum:gravity_block ${pos.getX()} ${pos.getY()} ${pos.getZ()} {${parseBlockState(blockState.toString())}, GravityModifier:0.4f}`)
             }
+
+            // gravityBlock.setPosition( pos.getX() + 0.5, pos.getY(), pos.getZ() + 0.5)
+            // gravityBlock.spawn()
         })
     }
 

@@ -5,8 +5,8 @@ ServerEvents.tags('item', event => {
     event.add('lychee:fire_immune', 'spectrum:shimmerstone_gem')
 
     //添加催化剂标签
-    event.add('kubejs:catalysts', 'kubejs:up_catalyst')
-    event.add('kubejs:catalysts', 'kubejs:down_catalyst')
+    event.add('kubejs:catalysts', 'kubejs:paltaeria_catalyst')
+    event.add('kubejs:catalysts', 'kubejs:stratine_catalyst')
     event.add('kubejs:catalysts', 'kubejs:hover_catalyst')
     event.add('kubejs:catalysts', 'kubejs:gravity_catalyst')
 

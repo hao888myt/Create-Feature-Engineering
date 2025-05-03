@@ -3,8 +3,8 @@ ClientEvents.lang("zh_cn", (event) => {
     event.add("item.kubejs.shimmerstone_gem_shard", "火花石碎片")
     event.add("item.kubejs.shimmerstone_gem_lump", "火花石碎块")
 
-    event.add("item.kubejs.up_catalyst", "苍绿催化剂")
-    event.add("item.kubejs.down_catalyst", "绯红催化剂")
+    event.add("item.kubejs.paltaeria_catalyst", "苍绿催化剂")
+    event.add("item.kubejs.stratine_catalyst", "绯红催化剂")
     event.add("item.kubejs.hover_catalyst", "悬浮催化剂")
     event.add("item.kubejs.gravity_catalyst", "重力催化剂")
 
@@ -20,7 +20,7 @@ ClientEvents.lang("zh_cn", (event) => {
     AddBlockLang("base_block", "化合物基质块")
     AddBlockLang("adulterated_base_block", "掺杂化合物基质块")
 
-    AddBlockLang("paltaeria_catalyst", "苍绿催生体")
+    AddBlockLang("paltaeria_ore_catalyst", "苍绿催生体")
 
     let MechanismName = [
         ["andesite", "安山"],

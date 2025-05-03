@@ -1,0 +1,8 @@
+{
+	"parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "kubejs:block/paltaeria_ore_catalyst_bottom",
+    "side": "kubejs:block/paltaeria_ore_catalyst_side",
+    "top": "kubejs:block/paltaeria_ore_catalyst_top"
+  }
+}

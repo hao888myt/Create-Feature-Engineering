@@ -20,5 +20,5 @@ StartupEvents.registry("block", event => {
     event.create("base_block")
     event.create('adulterated_base_block')
 
-    event.create('paltaeria_catalyst').hardness(5.0).stoneSoundType()
+    event.create('paltaeria_ore_catalyst').hardness(5.0).stoneSoundType()
 })
