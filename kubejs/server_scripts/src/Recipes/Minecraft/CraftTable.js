@@ -67,6 +67,41 @@ ServerEvents.recipes(event => {
       }
     )
 
+    //平行齿轮箱
+    event.shapeless(
+      Item.of("create_connected:parallel_gearbox", 2),
+      [
+        "create:gearbox",
+        "kubejs:andesite_mechanism"
+      ]
+    )
+
+    //六向齿轮箱
+    event.shapeless(
+      Item.of("create_connected:six_way_gearbox", 4),
+      [
+        "create:gearbox",
+        "kubejs:andesite_mechanism",
+        "kubejs:andesite_mechanism"
+      ]
+    )
+    event.shapeless(
+      Item.of("create_connected:six_way_gearbox", 2),
+      [
+        "create_connected:parallel_gearbox",
+        "kubejs:andesite_mechanism"
+      ]
+    )
+
+    //链式齿轮箱
+    event.shapeless(
+      Item.of("create_connected:encased_chain_cogwheel", 2),
+      [
+        "create:encased_chain_drive",
+        "kubejs:andesite_mechanism"
+      ]
+    )
+
     //铜构件
     event.shaped(
       Item.of("kubejs:copper_mechanism"),
@@ -317,7 +352,21 @@ ServerEvents.recipes(event => {
         S: "#forge:string",
         D: "#forge:gems/diamond"
       }
-    ) 
+    )
+
+    //冶金学砂带
+    event.remove("createmetallurgy:crafting/materials/sandpaper_belt")
+    event.shaped(
+      Item.of("createmetallurgy:sandpaper_belt"),
+      [
+        "SSS",
+        "S S",
+        "SSS"
+      ],
+      {
+        S: "#create:sandpaper"
+      }
+    )
 
     //冲击桩
     // event.remove("anvilcraft:impact_pile")
