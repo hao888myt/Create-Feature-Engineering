@@ -21,4 +21,6 @@ StartupEvents.registry("block", event => {
     event.create('adulterated_base_block')
 
     event.create('paltaeria_ore_catalyst').hardness(5.0).stoneSoundType()
+
+    event.create("toretoise_fossil").hardness(3.0).stoneSoundType() // 乌龟化石
 })
