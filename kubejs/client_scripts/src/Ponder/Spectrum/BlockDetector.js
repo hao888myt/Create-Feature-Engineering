@@ -88,6 +88,12 @@ Ponder.registry((event) => {
             scene.text(30, "而不是与视觉上的底部相连的方块进行比较", [1, 2.5, 2.5]).attachKeyFrame()
             scene.idle(45)
 
+            scene.text(15, "补充一下", [1, 2.5, 2.5]).attachKeyFrame()
+            scene.idle(20)
+
+            scene.text(30, "面朝下的方块探测器是无法检测方块的", [1, 2.5, 2.5])
+            scene.idle(45)
+
             scene.addKeyframe()
             scene.world.setBlocks([2, 3, 2], "create:andesite_casing", true)
             scene.world.showSection([2, 3, 2], Direction.DOWN)
