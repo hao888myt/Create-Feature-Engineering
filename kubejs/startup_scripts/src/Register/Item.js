@@ -24,4 +24,6 @@ StartupEvents.registry('item', event => {
     event.create('incomplete_chromatic_compound')
     event.create('chromatic_compound_shard')
     event.create('unstable_chromatic_compound')
+
+    event.create("ore_feed") // 矿石饲料
 })
