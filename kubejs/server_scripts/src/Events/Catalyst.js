@@ -28,48 +28,61 @@ BlockEvents.rightClicked(event => {
     }
 
     //判断玩家是否持有催化剂
-    if (event.getItem().hasTag('kubejs:catalysts')){
-        //存储方块坐标
-        let blockX = event.block.x
-        let blockY = event.block.y
-        let blockZ = event.block.z
+    if (!event.getItem().hasTag('kubejs:catalysts')) return
 
-        if (event.block.id == 'minecraft:air') return
 
-        //存储方块状态
-        let state = event.block.getBlockState().toString()
+    //存储方块坐标
+    let blockX = event.block.x
+    let blockY = event.block.y
+    let blockZ = event.block.z
 
-        //生成重力方块
-        if (event.getItem().id != 'kubejs:gravity_catalyst')
-        {
-            //判断催化剂类型
-            let gravityModifier = "0.0f"
-            if (event.getItem().id == 'kubejs:paltaeria_catalyst') gravityModifier = "0.2f"
-            else if (event.getItem().id == 'kubejs:stratine_catalyst') gravityModifier = "-0.2f"
-            else if (event.getItem().id == 'kubejs:hover_catalyst') gravityModifier = "0.0f"
+    if (event.block.id == 'minecraft:air') return
 
-            event.server.runCommandSilent(`execute in ${player.level.dimension.toString()} run summon spectrum:gravity_block ${blockX} ${blockY} ${blockZ} {${parseBlockState(state)}, GravityModifier:${gravityModifier}}`)
+    if (event.block.hasTag('spectrum:idols')) {
+        if (containsDeployerFakePlayer(event.getPlayer().toString())) return
+    }
 
-            // let gravityBlock = player.level.createEntity("spectrum:gravity_block")
-            // gravityBlock.setPosition( blockX + 0.5, blockY, blockZ + 0.5)
-            // gravityBlock.mergeNbt(`{${parseBlockState(state)}, GravityModifier: 0.2f}`)
-            // gravityBlock.spawn()
-        }
-        //生成下落方块
-        else
-        {
-            let fallingBlock = player.level.createEntity("minecraft:falling_block")
-            fallingBlock.setPosition( blockX + 0.5, blockY, blockZ + 0.5)
-            fallingBlock.mergeNbt(`{${parseBlockState(state)}}`)
-            fallingBlock.spawn()
-        }
+    //存储方块状态
+    let state = event.block.getBlockState().toString()
 
-        //删除目标方块
-        event.level.destroyBlock(event.block.pos,false)
+    //生成重力方块
+    if (event.getItem().id != 'kubejs:gravity_catalyst')
+    {
+        //判断催化剂类型
+        let gravityModifier = "0.0f"
+        if (event.getItem().id == 'kubejs:paltaeria_catalyst') gravityModifier = "0.2f"
+        else if (event.getItem().id == 'kubejs:stratine_catalyst') gravityModifier = "-0.2f"
+        else if (event.getItem().id == 'kubejs:hover_catalyst') gravityModifier = "0.0f"
 
-        // 消耗催化剂
-        if (!player.creative)
-            event.getItem().count--
+        event.server.runCommandSilent(`execute in ${player.level.dimension.toString()} run summon spectrum:gravity_block ${blockX} ${blockY} ${blockZ} {${parseBlockState(state)}, GravityModifier:${gravityModifier}}`)
+
+        // let gravityBlock = player.level.createEntity("spectrum:gravity_block")
+        // gravityBlock.setPosition( blockX + 0.5, blockY, blockZ + 0.5)
+        // gravityBlock.mergeNbt(`{${parseBlockState(state)}, GravityModifier: 0.2f}`)
+        // gravityBlock.spawn()
+    }
+    //生成下落方块
+    else
+    {
+        let fallingBlock = player.level.createEntity("minecraft:falling_block")
+        fallingBlock.setPosition( blockX + 0.5, blockY, blockZ + 0.5)
+        fallingBlock.mergeNbt(`{${parseBlockState(state)}}`)
+        fallingBlock.spawn()
+    }
+
+    //删除目标方块
+    let pos = event.block.pos
+    event.level.destroyBlock(pos,false)
+
+    if(event.level.getBlock(pos).id == 'minecraft:water') event.level.setBlockAndUpdate(pos, Block.getBlock("minecraft:air").defaultBlockState())
+
+    // 消耗催化剂
+    if (!player.creative)
+        event.getItem().count--
+
+
+    function containsDeployerFakePlayer(str) {
+        return /DeployerFakePlayer/i.test(str);
     }
 
     //处理方块状态字符串
