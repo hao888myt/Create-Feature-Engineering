@@ -118,6 +118,9 @@ ServerEvents.recipes(event => {
 		create.deploying('kubejs:incomplete_copper_mechanism', ['kubejs:incomplete_copper_mechanism', '#kubejs:sap']),
 	]).transitionalItem('kubejs:incomplete_copper_mechanism').loops(2)
 
+	//删除流体构件配方
+	event.remove('create_factory_logistics:sequenced_assembly/fluid_mechanism')
+
     //精密构件
     event.remove('create:sequenced_assembly/precision_mechanism')
 	create.sequenced_assembly([
