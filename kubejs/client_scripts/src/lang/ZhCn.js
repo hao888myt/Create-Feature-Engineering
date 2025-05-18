@@ -1,26 +1,32 @@
 ClientEvents.lang("zh_cn", (event) => {
 
-    event.add("item.kubejs.shimmerstone_gem_shard", "火花石碎片")
-    event.add("item.kubejs.shimmerstone_gem_lump", "火花石碎块")
+    AddItemLang("shimmerstone_gem_shard", "火花石碎片")
+    AddItemLang("shimmerstone_gem_lump", "火花石碎块")
 
-    event.add("item.kubejs.paltaeria_catalyst", "苍绿催化剂")
-    event.add("item.kubejs.stratine_catalyst", "绯红催化剂")
-    event.add("item.kubejs.hover_catalyst", "悬浮催化剂")
-    event.add("item.kubejs.gravity_catalyst", "重力催化剂")
+    AddItemLang("paltaeria_catalyst", "苍绿催化剂")
+    AddItemLang("stratine_catalyst", "绯红催化剂")
+    AddItemLang("hover_catalyst", "悬浮催化剂")
+    AddItemLang("gravity_catalyst", "重力催化剂")
 
-    event.add("item.kubejs.adulterated_compound_base", "掺杂化合物基质")
-    event.add("item.kubejs.incomplete_chromatic_compound", "未完成的异彩化合物")
-    event.add("item.kubejs.chromatic_compound_shard", "异彩化合物碎片")
-    event.add("item.kubejs.unstable_chromatic_compound", "不稳定异彩化合物")
+    AddItemLang("adulterated_compound_base", "掺杂化合物基质")
+    AddItemLang("incomplete_chromatic_compound", "未完成的异彩化合物")
+    AddItemLang("chromatic_compound_shard", "异彩化合物碎片")
+    AddItemLang("unstable_chromatic_compound", "不稳定异彩化合物")
 
-    event.add("item.kubejs.rubber", "橡胶")
-    
-    event.add("item.kubejs.litematica_tool", "投影工具")
+    AddItemLang("kubejs.rubber", "橡胶")
+
+    AddItemLang("litematica_tool", "投影工具")
+
+    AddItemLang("ore_feed", "矿石饲料")
 
     AddBlockLang("base_block", "化合物基质块")
     AddBlockLang("adulterated_base_block", "掺杂化合物基质块")
 
     AddBlockLang("paltaeria_ore_catalyst", "苍绿催生体")
+
+    AddBlockLang("toretoise_fossil", "乌龟化石")
+
+
 
     let MechanismName = [
         ["andesite", "安山"],
@@ -70,6 +76,10 @@ ClientEvents.lang("zh_cn", (event) => {
         event.add(`fluid.kubejs.${key}`, value)
         event.add(`block.kubejs.${key}`, value)
         event.add(`item.kubejs.${key}_bucket`, `${value}桶`)
+    }
+
+    function AddItemLang(key, value) {
+        event.add(`item.kubejs.${key}`, value)
     }
 
 })
