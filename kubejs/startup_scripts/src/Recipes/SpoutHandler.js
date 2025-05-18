@@ -8,17 +8,38 @@ CreateEvents.spoutHandler((event) => {
     // 單位視模組載入器而不同，Forge = 1MB、Fabric = 1 unit
     // 1 B（Bucket，桶） = 1000 MB（MiliBucket，千分之一桶） = 81000 unit（單位流體）
   
-    event.add(
-      "kubejs:dirt", // ID
-      'minecraft:dirt', // 目標方塊
-      (block, fluid, simulate) => {
-        if (fluid.id === Fluid.water().id && fluid.amount >= 250) {
-          if (!simulate) {
-            block.set('minecraft:mud');
+    // event.add(
+    //   "kubejs:dirt", // ID
+    //   'minecraft:dirt', // 目標方塊
+    //   (block, fluid, simulate) => {
+    //     if (fluid.id === Fluid.water().id && fluid.amount >= 250) {
+    //       if (!simulate) {
+    //         block.set('minecraft:mud');
+    //       }
+    //       return 250
+    //     }
+    //     return 0
+    //   }
+    // )
+
+    addSpoutHandler("kubejs:water_to_mud", 'minecraft:dirt', Fluid.water(250), 'minecraft:mud')
+    addSpoutHandler("kubejs:water_to_clay", 'minecraft:glass', Fluid.water(250), 'minecraft:clay')
+
+    function addSpoutHandler(id, inputBlock, inputFluid, outputBlock){
+      event.add(
+        id,
+        inputBlock,
+        (block, fluid, simulate) => {
+          if (fluid.id === inputFluid.id && fluid.amount >= inputFluid.amount) 
+          {
+            if (!simulate) 
+            {
+              block.set(outputBlock);
+            }
+            return inputFluid.amount
           }
-          return 250
+          return 0
         }
-        return 0
-      }
-    )
+      )
+    }
   })
