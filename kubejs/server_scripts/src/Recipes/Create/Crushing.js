@@ -7,6 +7,15 @@ ServerEvents.recipes(event=>{
     //火花石变火花石碎片
     create.crushing([Item.of('kubejs:shimmerstone_gem_shard', 2), Item.of('kubejs:shimmerstone_gem_shard').withChance(0.25)], ['spectrum:shimmerstone_gem'])
 
-    //珍珠磨碎片
-    create.crushing([Item.of('betterend:ender_shard', 2), Item.of('betterend:ender_shard').withChance(0.25)], ['#forge:ender_pearls'])
+    // 光谱世界水晶粉碎
+    CrushingCrystal("topaz")
+    CrushingCrystal("citrine")
+    CrushingCrystal("onyx")
+    CrushingCrystal("moonstone")
+    function CrushingCrystal(mateirial){
+        create.crushing(
+        [Item.of(`spectrum:${mateirial}_shard`, 7), Item.of(`spectrum:${mateirial}_shard`).withChance(0.5)], 
+        [`spectrum:${mateirial}_cluster`]
+        )
+    }
 })
