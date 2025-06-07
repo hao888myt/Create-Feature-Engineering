@@ -197,6 +197,7 @@ ServerEvents.recipes(event => {
 	create.sequenced_assembly([
 		Item.of('kubejs:onyx_mechanism')
 	], 'kubejs:crystal_mechanism', [
+		create.deploying('kubejs:incomplete_onyx_mechanism', ['kubejs:incomplete_onyx_mechanism', 'spectrum:polished_basalt_slab']),
 		create.deploying('kubejs:incomplete_onyx_mechanism', ['kubejs:incomplete_onyx_mechanism', 'spectrum:onyx_shard']),
 		create.filling('kubejs:incomplete_onyx_mechanism', ['kubejs:incomplete_onyx_mechanism', Fluid.of('minecraft:lava', 500)]),
 	]).transitionalItem('kubejs:incomplete_onyx_mechanism').loops(1)
