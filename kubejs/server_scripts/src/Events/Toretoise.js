@@ -1,11 +1,28 @@
-ItemEvents.rightClicked(event => {
+// ItemEvents.rightClicked(event => {
+//     if (event.getItem().id != "kubejs:ore_feed") return
+//     const toretoise = event.getTarget().entity
+//     if (toretoise == null) return
+//     if (toretoise.type !== "quark:toretoise") return
+//     if (!hasOreTypeZero(toretoise.getNbt().toString())) return
+    
+//     mergeOreType(toretoise, RandomOreType())
+// })
+
+ItemEvents.entityInteracted(event => {
     if (event.getItem().id != "kubejs:ore_feed") return
-    const toretoise = event.getTarget().entity
+
+    var ore_feed = event.getItem()
+    var player = event.getPlayer()
+
+    const toretoise = event.getTarget()
     if (toretoise == null) return
     if (toretoise.type !== "quark:toretoise") return
+
     if (!hasOreTypeZero(toretoise.getNbt().toString())) return
-    
+
     mergeOreType(toretoise, RandomOreType())
+
+    if (!player.creative) ore_feed.count--
 })
 
 BlockEvents.rightClicked(event =>{
@@ -19,6 +36,11 @@ BlockEvents.rightClicked(event =>{
 
     let area = AABB.of(centerPos.getX() - radius, centerPos.getY() - radius, centerPos.getZ() - radius, centerPos.getX() + radius, centerPos.getY() + radius + 0.1, centerPos.getZ() + radius)
     let entities = event.level.getEntitiesWithin(area)
+    // event.level.getBlockStates(area).forEach(blockState => {
+    //     let block = blockState.getBlock()
+    //     if (block.id == "minecraft:sand")
+    //         event.getBlock().pos
+    // })
     console.log(entities)
     
     if (entities == null) return
@@ -37,6 +59,8 @@ BlockEvents.rightClicked(event =>{
             break
         }
     }
+
+    if (!player.creative) ore_feed.count--
 })
 
 function RandomOreType() {
