@@ -12,13 +12,15 @@ EntityEvents.hurt(event => {
         var targetPos = target.position()
 
         // 获取监守者和目标的整数坐标
-        var wardenRoundPos = new Vec3i(Math.round(wardenPos.x), Math.round(wardenPos.y), Math.round(wardenPos.z));
-        var targetRoundPos = new Vec3i(Math.round(targetPos.x()), Math.round(targetPos.y()), Math.round(targetPos.z()));
+        var wardenBlockPos = new Vec3i(Math.round(wardenPos.x), Math.round(wardenPos.y), Math.round(wardenPos.z));
+        var targetBlockPos = new Vec3i(Math.round(targetPos.x()), Math.round(targetPos.y()), Math.round(targetPos.z()));
+        // var wardenBlockPos = source.getActual().blockPosition
+        // var targetBlockPos = target.blockPosition
 
         // 计算直线的长度（最大差值）
-        const dx = Math.abs(targetRoundPos.x - wardenRoundPos.x);
-        const dy = Math.abs(targetRoundPos.y - wardenRoundPos.y);
-        const dz = Math.abs(targetRoundPos.z - wardenRoundPos.z);
+        const dx = Math.abs(targetBlockPos.x - wardenBlockPos.x);
+        const dy = Math.abs(targetBlockPos.y - wardenBlockPos.y);
+        const dz = Math.abs(targetBlockPos.z - wardenBlockPos.z);
         const maxDelta = Math.max(dx, dy, dz);
 
         var distence = Math.sqrt(dx * dx + dy * dy + dz * dz)

@@ -1,4 +1,4 @@
-NativeEvents.onEvent('net.minecraftforge.event.entity.ProjectileImpactEvent', event =>{
+NativeEvents.onEvent(Java.loadClass('net.minecraftforge.event.entity.ProjectileImpactEvent'), event =>{
     const projectile = event.getProjectile()
 
     if(projectile.getType() != 'minecraft:shulker_bullet') return
