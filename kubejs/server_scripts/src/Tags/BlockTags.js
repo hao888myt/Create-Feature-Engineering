@@ -19,9 +19,9 @@ ServerEvents.tags("block", event => {
     event.add('minecraft:mineable/pickaxe', 'kubejs:toretoise_fossil')
 
     // 各种深板岩矿
-    event.add("c:ores_in_ground/deepslate", "createnuclear:deepslate_lead_ore") // 原子核动的铅矿
-    event.add("c:ores_in_ground/deepslate", "createnuclear:deepslate_uranium_ore") // 原子核动的铀矿
-    event.add("c:ores_in_ground/deepslate", "create:deepslate_zinc_ore") // 机械动力的锌矿
+    event.add("c:deepslate_metal", "createnuclear:deepslate_lead_ore") // 原子核动的铅矿
+    event.add("c:deepslate_metal", "createnuclear:deepslate_uranium_ore") // 原子核动的铀矿
+    event.add("c:deepslate_metal", "create:deepslate_zinc_ore") // 机械动力的锌矿
 
     removeItemsFromTag(event, 'alexscaves:ferromagnetic_blocks', 'minecraft:anvil')
     removeItemsFromTag(event, 'alexscaves:ferromagnetic_blocks', 'minecraft:chipped_anvil')
