@@ -301,59 +301,6 @@ ServerEvents.recipes(event => {
     // 修复黄铜锭
     event.remove("anvilcraft:brass_ingot")
 
-    //革制手提袋
-    event.remove("bagofholding:leather_bag_of_holding")
-    event.shaped(
-      Item.of("bagofholding:leather_bag_of_holding"),
-      [
-        "SLS",
-        "LCL",
-        "WLW"
-      ],
-      {
-        L: "#forge:leather",
-        C: "#forge:chests",
-        W: "#minecraft:wool",
-        S: "#forge:string"
-      }
-    ) 
-
-    //铁制手提袋
-    event.remove("bagofholding:iron_bag_of_holding")
-    event.shaped(
-      Item.of("bagofholding:iron_bag_of_holding"),
-      [
-        "STS",
-        "ILI",
-        "WIW"
-      ],
-      {
-        I: "#forge:ingots/iron",
-        L: "bagofholding:leather_bag_of_holding",
-        W: "#minecraft:wool",
-        S: "#forge:string",
-        T: "#spectrum:gemstone_shards"
-      }
-    )   
-
-    //金制手提袋
-    event.remove("bagofholding:golden_bag_of_holding")
-    event.shaped(
-      Item.of("bagofholding:golden_bag_of_holding"),
-      [
-        "SDS",
-        "GIG",
-        "WGW"
-      ],
-      {
-        G: "#forge:ingots/gold",
-        I: "bagofholding:iron_bag_of_holding",
-        W: "#minecraft:wool",
-        S: "#forge:string",
-        D: "#forge:gems/diamond"
-      }
-    )
-
     //冶金学砂带
     event.remove("createmetallurgy:crafting/materials/sandpaper_belt")
     event.shaped(
