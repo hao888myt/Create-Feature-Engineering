@@ -1,5 +1,6 @@
 {
-    "probejs.modHash": 6560980228714394658,
+    "probejs.modHash": 5003324263667619499,
     "probejs.registryHash": -5795453923841277555,
-    "probejs.enabled": true
+    "probejs.enabled": true,
+    "probejs.isolatedScope": true
 }
