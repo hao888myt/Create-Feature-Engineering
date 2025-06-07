@@ -237,7 +237,7 @@ ServerEvents.recipes(event =>{
       .required_advancement('spectrum:create_onyx_shard')
 
     //缟玛瑙构件
-    spectrum.fusion_shrine(100, 0, Fluid.of("minecraft:lava"), [Item.of('kubejs:crystal_mechanism'), Item.of('spectrum:onyx_shard')], 'kubejs:onyx_mechanism')
+    spectrum.fusion_shrine(100, 0, Fluid.of("minecraft:lava"), [Item.of('kubejs:crystal_mechanism'), Item.of('spectrum:onyx_shard'), Item.of("spectrum:polished_basalt_slab")], 'kubejs:onyx_mechanism')
       .required_advancement('spectrum:unlocks/blocks/fusion_shrine')
     
     
