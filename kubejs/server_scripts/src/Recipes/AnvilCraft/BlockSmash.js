@@ -155,4 +155,54 @@ ServerEvents.recipes(event => {
           }
         ]
     })
+
+    event.custom({
+      "type": "anvilcraft:anvil_processing",
+        "anvil_recipe_type": "block_smash",
+        "icon": {
+          "item": "spectrum:stratine_ore"
+        },
+        "outcomes": [
+          {
+            "type": "set_block",
+            "chance": 1.0,
+            "offset": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "result": {
+              "block": "spectrum:stratine_ore"
+            }
+          }
+        ],
+        "predicates": [
+          {
+            "type": "has_block",
+            "match_block": {
+              "blocks": [
+                "kubejs:stradpole_skeleton"
+              ]
+            },
+            "offset": [
+              0.0,
+              -1.0,
+              0.0
+            ]
+          },
+          {
+            "type": "has_block_ingredient",
+            "match_block": {
+              "blocks": [
+                "minecraft:lava"
+              ]
+            },
+            "offset": [
+              0.0,
+              -2.0,
+              0.0
+            ]
+          }
+        ]
+    })
 })
