@@ -13,18 +13,31 @@ ClientEvents.lang("zh_cn", (event) => {
     AddItemLang("chromatic_compound_shard", "异彩化合物碎片")
     AddItemLang("unstable_chromatic_compound", "不稳定异彩化合物")
 
-    AddItemLang("kubejs.rubber", "橡胶")
+    AddItemLang("rubber", "橡胶")
+    AddItemLang("incomplete_circuit_board", "未完成的电路板")
+
+    AddItemLang("soul_vulture_heart", "灵魂鹫之心")
+    AddItemLang("ectoplasm", "灵质")
 
     AddItemLang("litematica_tool", "投影工具")
 
     AddItemLang("ore_feed", "矿石饲料")
+    AddItemLang("cyan_mixture", "青色混合物")
 
     AddBlockLang("base_block", "化合物基质块")
     AddBlockLang("adulterated_base_block", "掺杂化合物基质块")
 
+    AddBlockLang("stradpole_skeleton", "跨座蝌蚪遗骸")
+
     AddBlockLang("paltaeria_ore_catalyst", "苍绿催生体")
 
     AddBlockLang("toretoise_fossil", "乌龟化石")
+
+    AddFluidLang("ectoplasm", "灵质")
+
+    AddFluidLang("molten_azure_neodymium", "熔融青钕合金")
+    AddFluidLang("molten_scarlet_neodymium", "熔融赤钕合金")
+
 
 
 
