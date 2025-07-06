@@ -140,14 +140,22 @@ ServerEvents.recipes(event => {
 		create.pressing('kubejs:incomplete_sturdy_mechanism', 'kubejs:incomplete_sturdy_mechanism')
 	]).transitionalItem('kubejs:incomplete_sturdy_mechanism').loops(2)
 
+	// 电路板
+	create.sequenced_assembly([
+		Item.of('anvilcraft:circuit_board')
+	], 'anvilcraft:hardend_resin', [
+		create.deploying("kubejs:incomplete_circuit_board", ["kubejs:incomplete_circuit_board", 'create:electron_tube']),
+		create.deploying("kubejs:incomplete_circuit_board", ["kubejs:incomplete_circuit_board", '#forge:wires/copper']),
+		create.deploying("kubejs:incomplete_circuit_board", ["kubejs:incomplete_circuit_board", '#forge:wires/copper'])
+	]).transitionalItem("kubejs:incomplete_circuit_board").loops(2)
 
-	//电磁构件
+	// 电磁构件
 	create.sequenced_assembly([
 		Item.of('kubejs:magnet_mechanism')
-	], 'kubejs:copper_mechanism', [
+	], "#forge:plates/obsidian", [
 		create.deploying('kubejs:incomplete_magnet_mechanism', ['kubejs:incomplete_magnet_mechanism', 'alexscaves:scarlet_neodymium_ingot']),
 		create.deploying('kubejs:incomplete_magnet_mechanism', ['kubejs:incomplete_magnet_mechanism', 'alexscaves:azure_neodymium_ingot']),
-		create.filling('kubejs:incomplete_magnet_mechanism', ['kubejs:incomplete_magnet_mechanism', Fluid.of('createmetallurgy:molten_lead', 90)]),
+		create.deploying('kubejs:incomplete_magnet_mechanism', ['kubejs:incomplete_magnet_mechanism', 'anvilcraft:circuit_board']),
 		create.deploying('kubejs:incomplete_magnet_mechanism', ['kubejs:incomplete_magnet_mechanism', '#forge:rubber']),
 	]).transitionalItem('kubejs:incomplete_magnet_mechanism').loops(3)
 
