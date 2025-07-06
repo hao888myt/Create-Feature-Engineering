@@ -165,7 +165,7 @@ ServerEvents.recipes(event => {
         "outcomes": [
           {
             "type": "set_block",
-            "chance": 1.0,
+            "chance": 0.6,
             "offset": [
               0.0,
               -1.0,
@@ -178,7 +178,7 @@ ServerEvents.recipes(event => {
         ],
         "predicates": [
           {
-            "type": "has_block",
+            "type": "has_block_ingredient",
             "match_block": {
               "blocks": [
                 "kubejs:stradpole_skeleton"
