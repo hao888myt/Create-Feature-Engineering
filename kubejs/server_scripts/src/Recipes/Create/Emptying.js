@@ -1,3 +1,5 @@
+const { $ItemStack } = require("packages/net/minecraft/world/item/$ItemStack");
+
 ServerEvents.recipes(event => {
     const create = event.recipes.create
 
