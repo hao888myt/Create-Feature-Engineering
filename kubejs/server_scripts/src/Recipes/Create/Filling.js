@@ -8,10 +8,6 @@ ServerEvents.recipes(event => {
     //火花石碎片变火花石碎块
     create.filling(Item.of('kubejs:shimmerstone_gem_lump').withChance(0.85), [Fluid.of('minecraft:lava', 200), 'kubejs:shimmerstone_gem_shard'])
 
-    //以太石
-    // event.remove('create_dd:filling/aethersite')
-    // create.filling('create_dd:aethersite', [Fluid.of('create_dd:chromatic_waste', 50), '#forge:stone'])
-
     // 水晶注液
     FillingCrystal("citrine")
     FillingCrystal("topaz")
