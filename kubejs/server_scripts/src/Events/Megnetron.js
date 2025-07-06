@@ -17,8 +17,6 @@ EntityEvents.hurt("alexscaves:magnetron", event => {
     }
 })
 
-BlockEvents.
-
 BlockEvents.placed("alexscaves:heart_of_iron", event => {
     const level = event.getLevel()
     const pos = event.block.getPos()
