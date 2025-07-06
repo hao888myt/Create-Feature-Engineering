@@ -18,6 +18,8 @@ StartupEvents.registry('item', event => {
 
     event.create('rubber') // 橡胶
 
+    event.create("incomplete_circuit_board") // 未完成的电路板
+
     event.create('litematica_tool') // 投影工具
 
     event.create('adulterated_compound_base')
@@ -26,4 +28,9 @@ StartupEvents.registry('item', event => {
     event.create('unstable_chromatic_compound')
 
     event.create("ore_feed") // 矿石饲料
+
+    event.create("soul_vulture_heart") // 灵魂鹫之心
+    event.create("ectoplasm") // 灵质
+
+    event.create("cyan_mixture") // 青色混合物
 })
