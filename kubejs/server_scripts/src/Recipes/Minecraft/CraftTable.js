@@ -315,19 +315,18 @@ ServerEvents.recipes(event => {
       }
     )
 
-    //冲击桩
-    // event.remove("anvilcraft:impact_pile")
-    // event.shaped(
-    //   Item.of("anvilcraft:impact_pile"),
-    //   [
-    //     " A ",
-    //     " B ",
-    //     " C "
-    //   ],
-    //   {
-    //     A: "#forge:obsidian",
-    //     B: "create_dd:infernal_mechanism",
-    //     C: "#forge:ingots/netherite"
-    //   }
-    // )
+    // 特斯拉球
+    event.remove("alexscaves:tesla_bulb")
+    event.shaped(
+      Item.of("alexscaves:tesla_bulb", 4),
+      [
+        "EEE",
+        "ETE",
+        "EEE"
+      ],
+      {
+        E: "alexscaves:energized_galena_neutral",
+        T: "alexscaves:telecore"
+      }
+    )
 })
