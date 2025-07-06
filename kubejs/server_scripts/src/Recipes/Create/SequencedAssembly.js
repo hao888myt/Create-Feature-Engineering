@@ -141,6 +141,7 @@ ServerEvents.recipes(event => {
 	]).transitionalItem('kubejs:incomplete_sturdy_mechanism').loops(2)
 
 	// 电路板
+	event.remove("anvilcraft:circuit_board")
 	create.sequenced_assembly([
 		Item.of('anvilcraft:circuit_board')
 	], 'anvilcraft:hardend_resin', [
