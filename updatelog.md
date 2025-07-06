@@ -2,47 +2,111 @@
 这是为`机械动力：特性工程`整合包玩家与开发者撰写的更新日志
 开发者进行撰写时请在相应分类下简单描述本次更改的内容并署名是谁进行的更改
 
-## alpha-0.0.5版本
+## alpha-0.0.6版本
 
 ### 游戏内容添加
 #### Mod
-1. 添加了`Compressed Create Recipes`——hao888myt
+1. 添加了`Bee Fix（蜜蜂修复）`——hao888myt
+2. 添加了`FastEvent`——hao888myt
+3. 添加了`TetraClip（易验锻造）`——hao888myt
+4. 添加了`Create:Fluid Stuffs（机械动力：流体附加）`——hao888myt
+5. 添加了`Yes, Steve Model（是，史蒂夫模型）`——hao888myt
+6. 添加了`Construction Wand（建筑手杖）`——hao888myt
+7. 添加了`Save My Shaky Network（救救我的答辩网络）`——hao888myt
+8. 添加了`Shipwreck Fix（沉船修复/沉船卡顿优化）`——hao888myt
+9. 添加了`Sophisticated Storage In Motion（精妙存储：矿车物流）`——hao888myt
+10. 添加了`Sophisticated Storage（精妙存储）`——hao888myt
+11. 添加了`Sophisticated Core（精妙核心）`——hao888myt
+12. 添加了`Sophisticated Backpacks（精妙背包）`——hao888myt
+13. 添加了`Sophisticated Storage Create Integration`——hao888myt
+14. 添加了`Sophisticated Backpacks Create Integration`——hao888myt
+15. 添加了`Create: Packagers PSI Compat`——hao888myt
+16. 添加了`Shipwreck Fix（沉船修复）`——hao888myt
+17. 添加了`Useful Slime`——hao888myt
+18. 添加了`Common NetWork`——hao888myt
+19. 添加了`Sound Controller`——hao888myt
+20. 添加了`Fancy Menu`——hao888myt
+21. 添加了`Melody`——hao888myt
+22. 添加了`Konkrete`——hao888myt
+23. 添加了`JavaScript JS`——hao888myt
+24. 添加了`Better End Sky`——hao888myt
+25. 添加了`Create:Delivery Director`——hao888myt
+26. 添加了`Create Mechanical Chicken`——hao888myt
+27. 添加了`Create: Ratatouille`——hao888myt
+28. 添加了`FTB Filter System`——hao888myt
+29. 添加了`Bulb Early（铜灯补充）`——hao888myt
+30. 添加了`Extra Gauges`——hao888myt
+31. 添加了`Tetracompat`——hao888myt
+32. 添加了`Create: Catatouille（机械动力：齿轮与麦穗）`——hao888myt
+33. 添加了`FTB Chunks Compatibility`——hao888myt
+34. 添加了`Create Quality of Life`——hao888myt
+35. 添加了`Forged Paginated Advancements`——hao888myt
+36. 添加了`Happy Ghast Legacy`——hao888myt
+37. 添加了`Colorwheel Patcher`——hao888myt
+38. 添加了`Colorwheel`——hao888myt
+39. 添加了`Create: Direct Chute`——hao888myt
+40. 添加了`Create: Hypertube（机械动力：超级管道）`——hao888myt
+41. 添加了`Squid No Glitch`——hao888myt
+42. 添加了`Create: Steam Rails（机械动力：汽鸣铁道）`——hao888myt
+43. 添加了`Create: Rainbow Compound（机械动力：彩虹化合物）`——hao888myt
+44. 添加了`Caelus`——hao888myt
+45. 添加了`Shared Advancements`——hao888myt
+46. 添加了`More Sniffer Flowers`——hao888myt
+47. 添加了`Worldedit（创世神）`——hao888myt
+48. 添加了`WorldEdit CUI`——hao888myt
+49. 添加了`Worldedit Items`——hao888myt
+50. 添加了`PowerfulJS`——hao888myt
+51. 添加了`More Burners`——hao888myt
+52. 添加了`Create Mechanical Spawner`——hao888myt
+53. 添加了`FluidJS`——hao888myt
+54. 添加了`UtilJS`——hao888myt
+55. 添加了`MoonlitPEM`——hao888myt
+56. 添加了`Create More: Parallel Pipes`——hao888myt
 #### 物品
-1. 添加了`矿石饲料`——hao888myt
+1. 添加了`灵质`——hao888myt
+2. 加了`青色混合物`——hao888myt
 #### 方块
-1. 添加了`乌龟化石`——hao888myt
-2. 为`机械动力：原子核动`的`深层铀矿石`和`深层铅矿石`添加了`#c:ores_in_ground/deepslate`——hao888myt
-3. 为`机械动力`的`深层锌矿石`添加了`#c:ores_in_ground/deepslate`——hao888myt
+1. 添加了`跨座蝌蚪遗骸`——hao888myt
+#### 流体
+1. 添加了`灵质`——hao888myt
+2. 添加了`熔融赤钕合金`——hao888myt
+3. 添加了`熔融青钕合金`——hao888myt
+#### 标签
+1. 为`功能性存储`、`精妙存储`、`精妙背包`的各种方块添加了`alexscaves:ferromagnetic_blocks`的标签——hao888myt
 #### 特性
-1. 将`矿石饲料`喂给`乌龟`后，`乌龟`分别有20%，10%，10%，50%，10%的概率长出`煤矿石`、`铁矿石`、`红石矿石`、`青金石矿石`和`铜矿石`——hao888myt
-2. 用`矿物饲料`右击`乌龟化石`后，可以在以`乌龟化石`为中心3x3x3的区域内将`矿物饲料`喂给`乌龟`——hao888myt
+1. 现在`精致装饰`的`扳手`不会消耗耐久——hao888myt
 #### 配方
-1. 添加了`煤炭`在`压缩机`中加压反应并加热生产`焦炭`的配方——hao888myt
-2. 添加了`矿石饲料`的配方——hao888myt
-#### 思索
-1. `光谱世界`的`方块探测器`——hao888myt
-#### 代码
-1. 添加了`AddItemLang(key, value)`——hao888myt
+1. 添加了`CMY三件套`的`注液配方`——hao888myt
+2. 添加了`光谱世界`各种水晶晶簇的`粉碎轮`配方——hao888myt
+3. 添加了`钕合金`相关的`熔铸`与`浇筑`配方——hao888myt
+4. 添加了`磁流核`做`电子管`的配方——hao888myt
+#### 材质包
+1. 添加了`光谱护眼材质包`——hao888myt
+#### 数据包
+1. 添加了`Spectrum Overchanting Unlock`——hao888myt
 
 ### 游戏内容修改
-#### Mod
-1. 将`铁砧工艺`的版本换成了`1.4.1-rc-2`——hao888myt
 #### 配方
-1. 修改了`树脂`的配方——hao888myt
+1. 完善了`缟玛瑙构件`章节的配方——hao888myt
+2. 完善了`电磁构件`章节的配方——hao888myt
+3. 更改了`硬化树脂`的配方——hao888myt
+4. 增加了`特斯拉球`的合成数量——hao888myt
+#### 材质包
+1. 更改了`XKRD 红显v3.5for1.20.2~1.21.3`的加载顺序——hao888myt
 
 ### 游戏内容移除
 #### Mod
-1. 删除了`True Ending:Ender Dragon Overaul`——hao888myt
-2. 删除了`Packetfixer`——hao888myt
-3. 删除了`Pick Block Pro（选择方块专业版）`——hao888myt
+1. 移除了`Bag Of Holding`——hao888myt
+2. 移除了`In Control`——hao888myt
+3. 移除了`Rubinated Nether（耀红下界）`——hao888myt
+4. 移除了`Chloride`——hao888myt
+5. 移除了`Advancement Sync`——hao888myt
+6. 移除了`Custom Fluid Mixin`——hao888myt
+7. 移除了`Insanelib`——hao888myt
+#### 标签
+1. 移除了`所有铁砧`的`alexscaves:magnetron_weapons`标签——hao888myt
 #### 配方
-1. 删除了`流体构件`的配方——hao888myt
+1. 移除了`加热器`制作`钕合金锭`的配方——hao888myt
 
 ### bug修复
-####
-1. 修复了`首次进入末地`时，`游戏会崩溃`的bug——hao888myt
-2. 修复了`部分树叶`无法在`振动台`上获得对应树苗的bug——hao888myt
-3. 修复了`催化剂`催化`含水方块`后，原地会留下一格水的bug——hao888myt
-4. 修复了`机械手`使用`催化剂`催化`魔盒`导致坏档的bug（通过禁用机械手催化魔盒实现）——hao888myt
-5. 修复了`基岩刷石机`无法生效的bug——hao888myt
-6. 修复了`CobbleGenRandomizer`默认配置文件扰乱刷石机结果的bug——hao888myt
+1. 修复了`机械手`对着`乌龟`使用`矿石饲料`无法生效的问题
