@@ -47,7 +47,9 @@ ServerEvents.tags("block", event => {
         'functionalstorage:framed_2', 
         'functionalstorage:framed_4', 
         'functionalstorage:simple_compacting_drawer',
-        'functionalstorage:compacting_drawer'
+        'functionalstorage:compacting_drawer',
+
+        "create:content_observer"
     ]
     ferromagnetic_blocks.forEach(block => {
         event.add('alexscaves:ferromagnetic_blocks', block)
@@ -69,13 +71,20 @@ ServerEvents.tags("block", event => {
     //防龙Tag
     event.add("minecraft:dragon_immune", "endergetic:boof_block") //浮跃块
 
-    removeItemsFromTag(event, 'alexscaves:ferromagnetic_blocks', 'minecraft:anvil')
-    removeItemsFromTag(event, 'alexscaves:ferromagnetic_blocks', 'minecraft:chipped_anvil')
-    removeItemsFromTag(event, 'alexscaves:ferromagnetic_blocks', 'minecraft:damaged_anvil')
-    removeItemsFromTag(event, 'alexscaves:ferromagnetic_blocks', 'anvilcraft:royal_anvil')
-    removeItemsFromTag(event, 'alexscaves:ferromagnetic_blocks', 'anvilcraft:ember_anvil')
-    removeItemsFromTag(event, 'alexscaves:ferromagnetic_blocks', 'anvilcraft:spectral_anvil')
-    removeItemsFromTag(event, 'alexscaves:ferromagnetic_blocks', 'spectrum:bedrock_anvil')
+    var anvils = [
+        'minecraft:anvil',
+        'minecraft:chipped_anvil',
+        'minecraft:damaged_anvil',
+        'anvilcraft:royal_anvil',
+        'anvilcraft:ember_anvil',
+        'anvilcraft:spectral_anvil',
+        'spectrum:bedrock_anvil'
+    ]
+
+    anvils.forEach(anvil => {
+        removeItemsFromTag(event, 'alexscaves:ferromagnetic_blocks', anvil)
+        removeItemsFromTag(event, 'alexscaves:magnetron_weapons', anvil)
+    })
 
     /**
     * 
