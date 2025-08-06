@@ -1,43 +1,4 @@
 ServerEvents.recipes(event =>{
-    //安山机器
-    //动力钻头
-    event.remove("create:crafting/kinetics/mechanical_drill")
-    event.smithing('create:mechanical_drill', 'kubejs:andesite_mechanism', "kubejs:andesite_machine", "#forge:ingots/iron")
-
-    //动力锯
-    event.remove("create:crafting/kinetics/mechanical_saw")
-    event.smithing('create:mechanical_saw', 'kubejs:andesite_mechanism', "kubejs:andesite_machine", '#forge:plates/iron')
-
-    //动力冲压机
-    event.remove("create:crafting/kinetics/mechanical_press")
-    event.smithing('create:mechanical_press', 'kubejs:andesite_mechanism', "kubejs:andesite_machine", '#forge:storage_blocks/iron')
-
-    //动力搅拌器
-    event.remove("create:crafting/kinetics/mechanical_mixer")
-    event.smithing('create:mechanical_mixer', 'kubejs:andesite_mechanism', "kubejs:andesite_machine", "create:andesite_alloy")
-
-    //动力砂带磨床
-    event.remove("createmetallurgy:crafting/content/mechanical_belt_grinder")
-    event.remove("vintageimprovements:craft/belt_grinder")
-    event.smithing('createmetallurgy:mechanical_belt_grinder', 'kubejs:andesite_mechanism', "kubejs:andesite_machine", "#kubejs:sandpaper_belt")
-
-
-    //黄铜机器
-    //动力臂
-    event.remove("create:crafting/kinetics/mechanical_arm")
-    event.smithing('create:mechanical_arm', "create:precision_mechanism", "kubejs:brass_machine", "#forge:plates/brass")
-
-
-    //坚固机器
-    //熔铸搅拌器
-    event.remove('createmetallurgy:foundry_mixer')
-    event.smithing('createmetallurgy:foundry_mixer', 'kubejs:sturdy_mechanism', 'kubejs:sturdy_machine', 'createmetallurgy:sturdy_whisk')
-
-    //柴油机
-    event.remove('createdieselgenerators:diesel_engine')
-    event.smithing('createdieselgenerators:diesel_engine', 'createdieselgenerators:engine_piston', 'kubejs:sturdy_machine', 'create:fluid_tank')
-
-
     //电磁机器
     //电动马达
     // event.remove("createaddition:mechanical_crafting/electric_motor")
