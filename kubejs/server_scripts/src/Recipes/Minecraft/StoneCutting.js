@@ -1,75 +1,178 @@
 ServerEvents.recipes(event => {
-    //安山机器
-    //安山隧道
-    event.remove("create:crafting/logistics/andesite_tunnel")
-    event.stonecutting(Item.of("create:andesite_tunnel", 4), "kubejs:andesite_machine")
+    
+    // 科技主线
+    let andesite_machine = [
+        Item.of("create:andesite_tunnel", 4),
+        Item.of("create:andesite_funnel", 4),
+        Item.of("create:mechanical_roller", 1),
+        Item.of("create:mechanical_harvester", 2),
+        Item.of("create:mechanical_plough", 2),
+        Item.of("create:encased_chain_drive", 16),
+        Item.of("create:portable_storage_interface", 2)
+    ]
 
-    //安山漏斗
-    event.remove("create:crafting/logistics/andesite_funnel")
-    event.stonecutting(Item.of("create:andesite_funnel", 4), "kubejs:andesite_machine")
+    let andseite_remove = [
+        "create:crafting/logistics/andesite_tunnel",
+        "create:crafting/logistics/andesite_funnel",
+        "create:crafting/kinetics/mechanical_roller",
+        "create:crafting/kinetics/mechanical_harvester",
+        "create:crafting/kinetics/mechanical_plough",
+        "create:crafting/kinetics/portable_storage_interface"
+    ]
 
-    //动力压路机
-    event.remove("create:crafting/kinetics/mechanical_roller")
-    event.stonecutting(Item.of("create:mechanical_roller", 1), "kubejs:andesite_machine")
+    let brass_machine = [
+        Item.of("create:brass_tunnel", 4),
+        Item.of("create:brass_funnel", 4),
+        Item.of("create:rotation_speed_controller", 2),
+        Item.of("create:sequenced_gearshift", 8),
+        Item.of("create:deployer", 4),
+        Item.of("create:mechanical_crafter", 4),
+        Item.of("create:stockpile_switch", 4),
+        Item.of("create_connected:overstress_clutch", 4),
+        Item.of("create_connected:inventory_access_port", 4),
+        Item.of("create:content_observer", 4),
+        Item.of("create:smart_fluid_pipe", 4),
+        Item.of("create:smart_chute", 4)
+    ]
 
-    //动力收割机
-    event.remove("create:crafting/kinetics/mechanical_harvester")
-    event.stonecutting(Item.of("create:mechanical_harvester", 2), "kubejs:andesite_machine")
+    let brass_remove = [
+        "create:crafting/logistics/brass_tunnel",
+        "create:crafting/logistics/brass_funnel",
+        "create:crafting/kinetics/rotation_speed_controller",
+        "create:crafting/kinetics/sequenced_gearshift",
+        "create:crafting/kinetics/mechanical_crafter",
+        "create:crafting/logistics/stockpile_switch",
+        "create_connected:crafting/kinetics/inventory_access_port",
+        "create_connected:crafting/kinetics/overstress_clutch",
+        "create:crafting/logistics/content_observer",
+        "create:crafting/kinetics/smart_fluid_pipe",
+        "create:crafting/kinetics/smart_chute",
+    ]
 
-    //动力犁
-    event.remove("create:crafting/kinetics/mechanical_plough")
-    event.stonecutting(Item.of("create:mechanical_plough", 2), "kubejs:andesite_machine")
+    let sturdy_machine = [
+        Item.of("createdieselgenerators:pumpjack_bearing", 2),
+        "createdieselgenerators:pumpjack_crank",
+        "createdieselgenerators:pumpjack_head",
+        Item.of("anvilcraft:impact_pile", 4),
+        Item.of("railways:portable_fuel_interface", 2)
+    ]
 
-    //链式传动箱
-    event.stonecutting(Item.of("create:encased_chain_drive", 4), "kubejs:andesite_machine")
+    let sturdy_remove = [
+        "createdieselgenerators:crafting/pumpjack_bearing",
+        "createdieselgenerators:mechanical_crafting/pumpjack_crank",
+        "createdieselgenerators:crafting/pumpjack_head",
+        "anvilcraft:impact_pile",
+        "railways:crafting/portable_fuel_interface"
+    ]
 
-    //反转齿轮箱
-    event.stonecutting(Item.of("create:gearshift", 4), "kubejs:andesite_machine")
+    let magnet_machine = [
+        Item.of("alexscaves:magnetic_levitation_rail", 16),
+        Item.of("alexscaves:hologram_projector", 4),
+        Item.of("alexscaves:magnetic_light", 2),
+        Item.of("alexscaves:azure_magnet", 2),
+        Item.of("alexscaves:scarlet_magnet", 2),
+        Item.of("alexscaves:magnetic_activator", 4),
+        Item.of("createaddition:connector", 4),
+        Item.of("createaddition:large_connector", 2),
+        Item.of("anvilcraft:power_converter_big", 1),
+        Item.of("anvilcraft:power_converter_middle", 3),
+        Item.of("anvilcraft:power_converter_small", 9),
+        Item.of("anvilcraft:transmission_pole", 2),
+        Item.of("anvilcraft:load_monitor", 4),
+        Item.of("anvilcraft:induction_light", 8),
+        Item.of("createaddition:portable_energy_interface", 2)
+    ]
 
-    //反向反转齿轮箱
-    event.stonecutting(Item.of("create_connected:inverted_gearshift", 4), "kubejs:andesite_machine")
+    let magnet_remove = [
+        "alexscaves:magnetic_levitation_rail",
+        "alexscaves:hologram_projector",
+        "alexscaves:magnetic_light",
+        "alexscaves:azure_magnet",
+        "alexscaves:scarlet_magnet",
+        "createaddition:crafting/small_connector_copper",
+        "createaddition:crafting/large_connector_electrum",
+        "anvilcraft:power_converter_big",
+        "anvilcraft:transmission_pole",
+        "anvilcraft:load_monitor",
+        "anvilcraft:induction_light",
+        "createaddition:crafting/portable_energy_interface"
+    ]
 
-    //平行齿轮箱
-    event.stonecutting(Item.of("create_connected:parallel_gearbox", 4), "kubejs:andesite_machine")
+    andesite_machine.forEach((item) => {
+        event.stonecutting(item, "kubejs:andesite_machine")
+    })
+    
+    andseite_remove.forEach((recipe) => {
+        event.remove(recipe)
+    })
 
-    //竖直平行齿轮箱
-    event.stonecutting(Item.of("create_connected:vertical_parallel_gearbox", 4), "kubejs:andesite_machine")
+    brass_machine.forEach((item) => {
+        event.stonecutting(item, "kubejs:brass_machine")
+    })
 
-    //十字齿轮箱
-    event.stonecutting(Item.of("create:gearbox", 4), "kubejs:andesite_machine")
+    brass_remove.forEach((recipe) => {
+        event.remove(recipe)
+    })
 
-    //竖十字齿轮箱
-    event.stonecutting(Item.of("create:vertical_gearbox", 4), "kubejs:andesite_machine")
+    sturdy_machine.forEach((item) => {
+        event.stonecutting(item, "kubejs:sturdy_machine")
+    })
 
+    sturdy_remove.forEach((recipe) => {
+        event.remove(recipe)
+    })
 
-    //黄铜机器
-    //黄铜隧道
-    event.remove("create:crafting/logistics/brass_tunnel")
-    event.stonecutting(Item.of("create:brass_tunnel", 4), "kubejs:brass_machine")
+    magnet_machine.forEach((item) => {
+        event.stonecutting(item, "kubejs:magnet_machine")
+    })
 
-    //黄铜漏斗
-    event.remove("create:crafting/logistics/brass_funnel")
-    event.stonecutting(Item.of("create:brass_funnel", 4), "kubejs:brass_machine")
+    magnet_remove.forEach((recipe) => {
+        event.remove(recipe)
+    })
 
-    //空鼓风机触媒
-    event.remove("create_connected:crafting/kinetics/empty_fan_catalyst")
-    event.stonecutting(Item.of("create_connected:empty_fan_catalyst", 4), "kubejs:brass_machine")
+    // 科技支线
+    let copper_machine = [
+        Item.of("create:portable_fluid_interface", 2)
+    ]
 
-    //黄铜十字齿轮箱
-    event.remove("create_connected:crafting/kinetics/brass_gearbox")
-    event.stonecutting(Item.of("create_connected:brass_gearbox", 2), "kubejs:brass_machine")
+    let copper_remove = [
+        "create:crafting/kinetics/portable_fluid_interface"
+    ]
 
-    //黄铜竖直十字齿轮箱
-    event.stonecutting(Item.of("create_connected:vertical_brass_gearbox", 2), "kubejs:brass_machine")
+    let logistics_machine = [
+        Item.of("create:chain_conveyor", 8),
+        Item.of("create:stock_ticker", 2),
+        Item.of("create:stock_link", 4),
+        Item.of("create:package_frogport", 4),
+        Item.of("create:packager", 4),
+        Item.of("create:repackager", 4),
+        Item.of("create:redstone_requester", 2),
+        Item.of("create:factory_gauge", 8),
+    ]
 
-    //转速控制器
-    event.remove("create:crafting/kinetics/rotation_speed_controller")
-    event.stonecutting(Item.of("create:rotation_speed_controller", 2), "kubejs:brass_machine")
+    let logistics_remove = [
+        "create:crafting/logistics/packager",
+        "create:crafting/logistics/redstone_requester",
+        "create:crafting/logistics/factory_gauge",
+        "create:crafting/logistics/stock_ticker",
+        "create:crafting/logistics/stock_link",
+        "create:crafting/logistics/package_frogport",
+        "create:crafting/kinetics/chain_conveyor"
+    ]
 
-    //可编程齿轮箱
-    event.remove("create:crafting/kinetics/sequenced_gearshift")
-    event.stonecutting(Item.of("create:sequenced_gearshift", 2), "kubejs:brass_machine")
+    copper_machine.forEach((item) => {
+        event.stonecutting(item, "kubejs:copper_machine")
+    })
 
-    //机械手
-    event.stonecutting(Item.of("create:deployer", 4), "kubejs:brass_machine")
+    copper_remove.forEach((recipe) => {
+        event.remove(recipe)
+    })
+    
+    logistics_machine.forEach((item) => {
+        event.stonecutting(item, "kubejs:logistics_machine")
+    })
+
+    logistics_remove.forEach((recipe) => {
+        event.remove(recipe)
+    })
 })
