@@ -1,0 +1,5 @@
+new Schema("createaddition:charging")
+    .simpleKey("input", "inputItem")
+    .simpleKey("result", "outputItem")
+    .simpleKey("energy", "intNumber", 4000)
+    .simpleKey("maxChargeRate", "intNumber", 200)
