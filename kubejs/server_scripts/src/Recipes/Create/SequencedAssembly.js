@@ -110,14 +110,6 @@ ServerEvents.recipes(event => {
 		create.deploying('kubejs:incomplete_andesite_mechanism', ['kubejs:incomplete_andesite_mechanism', 'petrolsparts:coaxial_gear'])
 	]).transitionalItem('kubejs:incomplete_andesite_mechanism').loops(1)
 
-	//铜构件
-    create.sequenced_assembly([
-		Item.of('kubejs:copper_mechanism')
-	], 'kubejs:andesite_mechanism', [
-		create.deploying('kubejs:incomplete_copper_mechanism', ['kubejs:incomplete_copper_mechanism', '#forge:plates/copper']),
-		create.deploying('kubejs:incomplete_copper_mechanism', ['kubejs:incomplete_copper_mechanism', '#kubejs:sap']),
-	]).transitionalItem('kubejs:incomplete_copper_mechanism').loops(2)
-
 	//删除流体构件配方
 	event.remove('create_factory_logistics:sequenced_assembly/fluid_mechanism')
 
@@ -137,7 +129,8 @@ ServerEvents.recipes(event => {
 	], 'create:precision_mechanism', [
 		create.deploying('kubejs:incomplete_sturdy_mechanism', ['kubejs:incomplete_sturdy_mechanism', '#forge:plates/obsidian']),
 		create.filling('kubejs:incomplete_sturdy_mechanism', ['kubejs:incomplete_sturdy_mechanism', Fluid.of('createmetallurgy:molten_tungsten', 90)]),
-		create.pressing('kubejs:incomplete_sturdy_mechanism', 'kubejs:incomplete_sturdy_mechanism')
+		create.pressing('kubejs:incomplete_sturdy_mechanism', 'kubejs:incomplete_sturdy_mechanism'),
+		create.filling('kubejs:incomplete_sturdy_mechanism', ['kubejs:incomplete_sturdy_mechanism', Fluid.of('createmetallurgy:molten_zinc', 180)]),
 	]).transitionalItem('kubejs:incomplete_sturdy_mechanism').loops(2)
 
 	// 电路板
@@ -159,6 +152,34 @@ ServerEvents.recipes(event => {
 		create.deploying('kubejs:incomplete_magnet_mechanism', ['kubejs:incomplete_magnet_mechanism', 'anvilcraft:circuit_board']),
 		create.deploying('kubejs:incomplete_magnet_mechanism', ['kubejs:incomplete_magnet_mechanism', '#forge:rubber']),
 	]).transitionalItem('kubejs:incomplete_magnet_mechanism').loops(3)
+
+
+	//铜构件
+    create.sequenced_assembly([
+		Item.of('kubejs:copper_mechanism')
+	], 'kubejs:andesite_mechanism', [
+		create.deploying('kubejs:incomplete_copper_mechanism', ['kubejs:incomplete_copper_mechanism', '#forge:plates/copper']),
+		create.deploying('kubejs:incomplete_copper_mechanism', ['kubejs:incomplete_copper_mechanism', '#kubejs:sap']),
+	]).transitionalItem('kubejs:incomplete_copper_mechanism').loops(2)
+	
+	// 物流构件
+	create.sequenced_assembly([
+		Item.of('kubejs:logistics_mechanism')
+	], 'kubejs:andesite_mechanism', [
+		create.deploying('kubejs:incomplete_logistics_mechanism', ['kubejs:incomplete_logistics_mechanism', 'minecraft:chain']),
+		create.deploying('kubejs:incomplete_logistics_mechanism', ['kubejs:incomplete_logistics_mechanism', 'create:transmitter']),
+		create.deploying('kubejs:incomplete_logistics_mechanism', ['kubejs:incomplete_logistics_mechanism', 'create:belt_connector']),
+	]).transitionalItem('kubejs:incomplete_logistics_mechanism').loops(1)
+
+	// 铜线圈
+	event.remove("create_optical:sequenced_assembly/copper_coil")
+	create.sequenced_assembly([
+		Item.of('create_optical:copper_coil')
+	], 'create:andesite_alloy', [
+		create.deploying('create_optical:incomplete_copper_coil', ['create_optical:incomplete_copper_coil', '#forge:wires/copper']),
+		create.pressing('create_optical:incomplete_copper_coil', ['create_optical:incomplete_copper_coil']),
+		create.deploying('create_optical:incomplete_copper_coil', ['create_optical:incomplete_copper_coil', '#forge:wires/copper'])
+	]).transitionalItem('create_optical:incomplete_copper_coil').loops(1)
 
 	//糖果构件
 
