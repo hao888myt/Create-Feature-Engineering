@@ -186,4 +186,5 @@ ServerEvents.recipes(event =>{
     //深板岩石子压入
     itemInject('spelunkery:deepslate_pebble', 'minecraft:cobbled_deepslate', 'minecraft:deepslate')
 
+    
 })
