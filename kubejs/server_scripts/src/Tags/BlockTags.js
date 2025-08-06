@@ -12,32 +12,6 @@ ServerEvents.tags("block", event => {
         'sophisticatedbackpacks:diamond_backpack',
         'sophisticatedbackpacks:netherite_backpack',
 
-        "sophisticatedstorage:copper_barrel",
-        "sophisticatedstorage:limited_copper_barrel_1",
-        "sophisticatedstorage:limited_copper_barrel_2",
-        "sophisticatedstorage:limited_copper_barrel_3",
-        "sophisticatedstorage:limited_copper_barrel_4",
-        "sophisticatedstorage:iron_barrel",
-        "sophisticatedstorage:limited_iron_barrel_1",
-        "sophisticatedstorage:limited_iron_barrel_2",
-        "sophisticatedstorage:limited_iron_barrel_3",
-        "sophisticatedstorage:limited_iron_barrel_4",
-        "sophisticatedstorage:gold_barrel",
-        "sophisticatedstorage:limited_gold_barrel_1",
-        "sophisticatedstorage:limited_gold_barrel_2",
-        "sophisticatedstorage:limited_gold_barrel_3",
-        "sophisticatedstorage:limited_gold_barrel_4",
-        "sophisticatedstorage:diamond_barrel",
-        "sophisticatedstorage:limited_diamond_barrel_1",
-        "sophisticatedstorage:limited_diamond_barrel_2",
-        "sophisticatedstorage:limited_diamond_barrel_3",
-        "sophisticatedstorage:limited_diamond_barrel_4",
-        "sophisticatedstorage:netherite_barrel",
-        "sophisticatedstorage:limited_netherite_barrel_1",
-        "sophisticatedstorage:limited_netherite_barrel_2",
-        "sophisticatedstorage:limited_netherite_barrel_3",
-        "sophisticatedstorage:limited_netherite_barrel_4",
-
         'functionalstorage:fluid_1',
         'functionalstorage:fluid_2',
         'functionalstorage:fluid_4',
@@ -67,6 +41,10 @@ ServerEvents.tags("block", event => {
     event.add("c:deepslate_metal", "createnuclear:deepslate_lead_ore") // 原子核动的铅矿
     event.add("c:deepslate_metal", "createnuclear:deepslate_uranium_ore") // 原子核动的铀矿
     event.add("c:deepslate_metal", "create:deepslate_zinc_ore") // 机械动力的锌矿
+
+    // 钢机壳
+    event.add("minecraft:mineable/axe", "kubejs:steel_casing")
+    event.add("minecraft:mineable/pickaxe", "kubejs:steel_casing")
 
     //防龙Tag
     event.add("minecraft:dragon_immune", "endergetic:boof_block") //浮跃块
