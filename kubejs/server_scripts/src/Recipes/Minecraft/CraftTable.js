@@ -48,7 +48,7 @@ ServerEvents.recipes(event => {
       ],
       {
         A: "#forge:plates/gold",
-        B: "#forge:ingots/andesite_alloy"
+        B: "create:andesite_alloy"
       }
     )
 
@@ -67,41 +67,6 @@ ServerEvents.recipes(event => {
       }
     )
 
-    //平行齿轮箱
-    event.shapeless(
-      Item.of("create_connected:parallel_gearbox", 2),
-      [
-        "create:gearbox",
-        "kubejs:andesite_mechanism"
-      ]
-    )
-
-    //六向齿轮箱
-    event.shapeless(
-      Item.of("create_connected:six_way_gearbox", 4),
-      [
-        "create:gearbox",
-        "kubejs:andesite_mechanism",
-        "kubejs:andesite_mechanism"
-      ]
-    )
-    event.shapeless(
-      Item.of("create_connected:six_way_gearbox", 2),
-      [
-        "create_connected:parallel_gearbox",
-        "kubejs:andesite_mechanism"
-      ]
-    )
-
-    //链式齿轮箱
-    event.shapeless(
-      Item.of("create_connected:encased_chain_cogwheel", 2),
-      [
-        "create:encased_chain_drive",
-        "kubejs:andesite_mechanism"
-      ]
-    )
-
     //铜构件
     event.shaped(
       Item.of("kubejs:copper_mechanism"),
@@ -116,66 +81,7 @@ ServerEvents.recipes(event => {
         C: "kubejs:andesite_mechanism"
       }
     )
-
-    //注液器
-    event.remove("create:crafting/kinetics/spout")
-    event.shaped(
-      Item.of("create:spout"),
-      [
-        " A ",
-        " B ",
-        " C "
-      ],
-      {
-        A: "create:copper_casing",
-        B: "kubejs:copper_mechanism",
-        C: "minecraft:dried_kelp"
-      }
-    )
-
-    //分液池
-    event.remove("create:crafting/kinetics/item_drain")
-    event.shaped(
-      Item.of("create:item_drain", 2),
-      [
-        " C ",
-        " B ",
-        " A "
-      ],
-      {
-        A: "create:copper_casing",
-        B: "kubejs:copper_mechanism",
-        C: "minecraft:iron_bars"
-      }
-    )
-
-    //软管滑轮
-    event.remove("create:crafting/kinetics/hose_pulley")
-    event.shaped(
-      Item.of("create:hose_pulley"),
-      [
-        " A ",
-        " B ",
-        " C "
-      ],
-      {
-        A: "create:copper_casing",
-        B: "minecraft:dried_kelp_block",
-        C: "kubejs:copper_mechanism"
-      }
-    )
-
-    //移动式流体接口
-    event.remove("create:crafting/kinetics/portable_fluid_interface")
-    event.shapeless(
-      Item.of("create:portable_fluid_interface", 2),
-      [
-        "create:copper_casing",
-        "kubejs:copper_mechanism",
-        "create:chute"
-      ]
-    )
-
+    
     //烈焰人燃烧室
     event.shaped(
       Item.of("create:blaze_burner", 2),
@@ -218,6 +124,30 @@ ServerEvents.recipes(event => {
     //   }
     // )
 
+    // 传送带
+    event.shaped(
+      Item.of("create:belt_connector", 6),
+      [
+        "DDD",
+        "RRR"
+      ],
+      {
+        D: "minecraft:dried_kelp",
+        R: "#forge:rubber"
+      }
+    )
+    event.shaped(
+      Item.of("create:belt_connector", 6),
+      [
+        "RRR",
+        "DDD"
+      ],
+      {
+        D: "minecraft:dried_kelp",
+        R: "#forge:rubber"
+      }
+    )
+
     //各种机器
     let machines = (machine, casing, mechanism) =>{
       event.shaped(
@@ -238,12 +168,12 @@ ServerEvents.recipes(event => {
     machines("kubejs:copper_machine", "create:copper_casing", "kubejs:copper_mechanism")
     machines("kubejs:brass_machine", "create:brass_casing", "create:precision_mechanism")
     machines("kubejs:sturdy_machine", "create:railway_casing", "kubejs:sturdy_mechanism")
-    machines("kubejs:magnet_machine", "#create:casing/steel", "kubejs:magnet_mechanism")
+    machines("kubejs:magnet_machine", "kubejs:steel_casing", "kubejs:magnet_mechanism")
 
     machines("kubejs:crystal_machine", "spectrum:polished_calcite", "kubejs:crystal_mechanism")
     machines("kubejs:onyx_machine", "spectrum:polished_basalt", "kubejs:onyx_mechanism")
-    
-    machines("kubejs:quitoxic_machine", "spectrum:quitoxic_powder", "kubejs:quitoxic_mechanism")
+
+    machines("kubejs:logistics_machine", "create:cardboard_block", "kubejs:logistics_mechanism")
 
     //化合物基质
     let item_to_block = (item, block ,number) =>{
@@ -329,4 +259,43 @@ ServerEvents.recipes(event => {
         T: "alexscaves:telecore"
       }
     )
+
+    // 传动复制
+    function copy(item, mechanism) {
+      event.shapeless(
+        Item.of(item, 4),
+        [
+          item,
+          mechanism
+        ]
+      )
+    }
+
+    let andesite_copy = [
+      'create_connected:encased_chain_cogwheel',
+      'create:gearshift', 
+      'create_connected:inverted_gearshift', 
+      'create_connected:parallel_gearbox', 
+      'create_connected:vertical_parallel_gearbox', 
+      'create_connected:six_way_gearbox', 
+      'create:encased_chain_drive', 
+      'create_connected:cross_connector', 
+      'create_connected:vertical_six_way_gearbox',
+      'create:gearbox',
+      'create:vertical_gearbox'
+    ]
+
+    andesite_copy.forEach(item => {
+      copy(item, "kubejs:andesite_mechanism")
+    })
+
+    let brass_copy = [
+      "create_connected:brass_gearbox",
+      "create_connected:vertical_brass_gearbox",
+      "create:adjustable_chain_gearshift"
+    ]
+
+    brass_copy.forEach(item => {
+      copy(item, "create:precision_mechanism")
+    })
 })
