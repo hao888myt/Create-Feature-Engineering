@@ -13,27 +13,28 @@ global.MechanismTypes = [
     "sculk",
     "nuclear",
     "endless",
+
     "crystal",
     "onyx",
     "azurite",
-    "bedrock",
-    "moonstone",
     "glass_crest",
     "effulgent",
     "aether",
+
     "copper",
+    "logistics",
+    "fluid",
+    "intelligent",
+    "advanced_logistics",
+
+    "agriculture",
     "optical",
-    "candy",
+    "bedrock",
     "dark",
-    "primal",
-    "plant",
     "ender",
-    "enchantment",
-    "quitoxic",
-    "star",
     "resonance",
     "annihilation",
-    "colorful"
+    "colorful",
 ]
 
 // 有可附魔的机器
