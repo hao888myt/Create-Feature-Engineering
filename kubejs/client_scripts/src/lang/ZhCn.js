@@ -15,6 +15,7 @@ ClientEvents.lang("zh_cn", (event) => {
 
     AddItemLang("rubber", "橡胶")
     AddItemLang("incomplete_circuit_board", "未完成的电路板")
+    AddBlockLang("steel_casing", "钢机壳")
 
     AddItemLang("soul_vulture_heart", "灵魂鹫之心")
     AddItemLang("ectoplasm", "灵质")
@@ -43,30 +44,32 @@ ClientEvents.lang("zh_cn", (event) => {
 
     let MechanismName = [
         ["andesite", "安山"],
+        ["brass","黄铜"],
         ["sturdy", "坚固"],
         ["magnet", "电磁"],
         ["infernal", "炼狱"],
-        ["brass","黄铜"],
         ["sculk", "幽匿"],
         ["nuclear", "核能"],
         ["endless", "终焉"],
+
         ["crystal", "水晶"],
         ["onyx", "缟玛瑙"],
         ["azurite", "石青"],
         ["bedrock", "基岩"],
-        ["moonstone", "月长石"],
         ["glass_crest", "琉璃"],
         ["effulgent", "龙翎"],
         ["aether", "以太"],
+
         ["copper", "铜"],
+        ["logistics", "物流"],
+        ["fluid", "流体处理"],
+        ["intelligent", "智能"],
+        ["advanced_logistics", "高级物流"],
+
         ["optical", "光学"],
-        ["candy", "糖果"],
         ["dark", "黑暗"],
-        ["primal", "远古"],
         ["plant", "植物"],
         ["ender", "末影"],
-        ["enchantment", "附魔"],
-        ["quitoxic", "奇毒"],
         ["star", "流星"],
         ["resonance", "嗡鸣"],
         ["annihilation", "湮灭"],
