@@ -9,16 +9,16 @@ ForgeEvents.onEvent($BlockEvent.FluidPlaceBlockEvent,event=>{
             let newState = Blocks.COBBLESTONE.defaultBlockState()
             switch (randomResult) {
                 case 0:
-                    newState = Block.getBlock('minecraft:andesite').defaultBlockState()
+                    newState = Block.getBlock("minecraft:andesite").defaultBlockState()
                     break
                 case 1:
-                    newState = Block.getBlock('minecraft:tuff').defaultBlockState()
+                    newState = Block.getBlock("minecraft:tuff").defaultBlockState()
                     break
                 case 2:
-                    newState = Block.getBlock('minecraft:diorite').defaultBlockState()
+                    newState = Block.getBlock("minecraft:diorite").defaultBlockState()
                     break
                 case 3:
-                    newState = Block.getBlock('minecraft:granite').defaultBlockState()
+                    newState = Block.getBlock("minecraft:granite").defaultBlockState()
                     break
             }
             event.setNewState(newState)
