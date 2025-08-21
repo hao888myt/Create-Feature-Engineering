@@ -1,14 +1,17 @@
 ServerEvents.recipes(event => {
-    
+
     // 科技主线
     let andesite_machine = [
         Item.of("create:andesite_tunnel", 4),
         Item.of("create:andesite_funnel", 4),
-        Item.of("create:mechanical_roller", 1),
+        Item.of("create:mechanical_roller", 2),
         Item.of("create:mechanical_harvester", 2),
         Item.of("create:mechanical_plough", 2),
-        Item.of("create:encased_chain_drive", 16),
-        Item.of("create:portable_storage_interface", 2)
+        Item.of("create:portable_storage_interface", 2),
+        Item.of("create:chain_conveyor", 4),
+        Item.of("create:powered_latch", 4),
+        Item.of("create:powered_toggle_latch", 4),
+        Item.of("quark:crafter", 4)
     ]
 
     let andseite_remove = [
@@ -17,7 +20,11 @@ ServerEvents.recipes(event => {
         "create:crafting/kinetics/mechanical_roller",
         "create:crafting/kinetics/mechanical_harvester",
         "create:crafting/kinetics/mechanical_plough",
-        "create:crafting/kinetics/portable_storage_interface"
+        "create:crafting/kinetics/portable_storage_interface",
+        "create:crafting/kinetics/chain_conveyor",
+        "create:crafting/logistics/powered_latch",
+        "create:crafting/logistics/powered_toggle_latch",
+        "quark:automation/crafting/crafter"
     ]
 
     let brass_machine = [
@@ -32,7 +39,10 @@ ServerEvents.recipes(event => {
         Item.of("create_connected:inventory_access_port", 4),
         Item.of("create:content_observer", 4),
         Item.of("create:smart_fluid_pipe", 4),
-        Item.of("create:smart_chute", 4)
+        Item.of("create:smart_chute", 4),
+        Item.of("create:pulse_repeater", 4),
+        Item.of("create:pulse_extender", 4),
+        Item.of("create:pulse_timer", 4)
     ]
 
     let brass_remove = [
@@ -47,14 +57,26 @@ ServerEvents.recipes(event => {
         "create:crafting/logistics/content_observer",
         "create:crafting/kinetics/smart_fluid_pipe",
         "create:crafting/kinetics/smart_chute",
+        "create:crafting/logistics/pulse_repeater",
+        "create:crafting/logistics/pulse_extender",
+        "create:crafting/logistics/pulse_timer"
     ]
 
     let sturdy_machine = [
         Item.of("createdieselgenerators:pumpjack_bearing", 2),
-        "createdieselgenerators:pumpjack_crank",
-        "createdieselgenerators:pumpjack_head",
+        Item.of("createdieselgenerators:pumpjack_crank"),
+        Item.of("createdieselgenerators:pumpjack_head"),
+        Item.of("createdieselgenerators:distillation_controller", 2),
         Item.of("anvilcraft:impact_pile", 4),
-        Item.of("railways:portable_fuel_interface", 2)
+        Item.of("create:track_observer", 8),
+        Item.of("create:track_station", 8),
+        Item.of("create:track_signal", 8),
+        Item.of("create:controls", 8),
+        Item.of("railways:portable_fuel_interface", 2),
+        Item.of("railways:semaphore", 4),
+        Item.of("railways:track_coupler", 4),
+        Item.of("railways:track_switch_andesite", 4),
+        Item.of("railways:track_switch_brass", 4),
     ]
 
     let sturdy_remove = [
@@ -132,22 +154,43 @@ ServerEvents.recipes(event => {
 
     // 科技支线
     let copper_machine = [
-        Item.of("create:portable_fluid_interface", 2)
+        Item.of("create:item_drain", 8),
+        Item.of("create:spout", 4),
+        Item.of("create:portable_fluid_interface", 2),
+        Item.of("ratatouille:irrigation_tower", 2),
+        Item.of("sliceanddice:sprinkler", 4),
+        Item.of("functionalstorage:fluid_1", 4),
+        Item.of("functionalstorage:fluid_2", 4),
+        Item.of("functionalstorage:fluid_4", 4),
+
     ]
 
     let copper_remove = [
-        "create:crafting/kinetics/portable_fluid_interface"
+        "create:crafting/kinetics/item_drain",
+        "create:crafting/kinetics/spout",
+        "create:crafting/kinetics/portable_fluid_interface",
+        "ratatouille:irrigation_tower",
+        "sliceanddice:sprinkler",
+        "functionalstorage:fluid_1",
+        "functionalstorage:fluid_2",
+        "functionalstorage:fluid_4"
     ]
 
     let logistics_machine = [
-        Item.of("create:chain_conveyor", 8),
         Item.of("create:stock_ticker", 2),
         Item.of("create:stock_link", 4),
+        Item.of("create_factory_logistics:network_link",4),
         Item.of("create:package_frogport", 4),
+        Item.of("create_factory_logistics:jar_packager", 4),
         Item.of("create:packager", 4),
         Item.of("create:repackager", 4),
-        Item.of("create:redstone_requester", 2),
+        Item.of("create:redstone_requester", 4),
         Item.of("create:factory_gauge", 8),
+        Item.of("create_factory_logistics:factory_fluid_gauge", 8),
+        Item.of("create:redstone_link", 4),
+        Item.of("create_connected:linked_transmitter", 4),
+        Item.of("functionalstorage:storage_controller", 2),
+        Item.of("functionalstorage:controller_extension", 4),
     ]
 
     let logistics_remove = [
@@ -157,7 +200,12 @@ ServerEvents.recipes(event => {
         "create:crafting/logistics/stock_ticker",
         "create:crafting/logistics/stock_link",
         "create:crafting/logistics/package_frogport",
-        "create:crafting/kinetics/chain_conveyor"
+        "create_factory_logistics:network_link",
+        "create_factory_logistics:factory_fluid_gauge",
+        "create_factory_logistics:jar_packager",
+        "create:crafting/logistics/redstone_link",
+        "functionalstorage:storage_controller",
+        "functionalstorage:controller_extension"
     ]
 
     copper_machine.forEach((item) => {
@@ -173,6 +221,61 @@ ServerEvents.recipes(event => {
     })
 
     logistics_remove.forEach((recipe) => {
+        event.remove(recipe)
+    })
+
+    // 混合线
+    let agriculture_machine = [
+        Item.of("createfisheryindustry:frame_trap", 8), 
+        Item.of("createfisheryindustry:trap_nozzle", 4), 
+        Item.of("createfisheryindustry:mesh_trap", 4), 
+        Item.of("ratatouille:squeeze_basin", 2), 
+        Item.of("ratatouille:compost_tower", 4), 
+        Item.of("ratatouille:thresher", 4),
+        Item.of("createeggproduction:empty_egg_collector_block", 4), 
+        Item.of("createeggproduction:incubator", 2)
+    ]
+
+    let agriculture_remove = [
+        "createfisheryindustry:frame_trap",
+        "createfisheryindustry:trap_nozzle",
+        "createfisheryindustry:mesh_trap",
+        "ratatouille:squeeze_basin",
+        "ratatouille:compost_tower",
+        "ratatouille:thresher",
+        "createeggproduction:empty_egg_collector_block",
+        "createeggproduction:incubator"
+    ]
+
+    let optical_machine = [
+        Item.of('create_optical:encased_mirror', 4), 
+        Item.of('create_optical:polarizing_beam_splitter_block', 4), 
+        Item.of('create_optical:absorption_polarizing_filter', 4),
+        Item.of("create_optical:optical_sensor", 4),
+        Item.of("anvilcraft:heliostats", 4),
+    ]
+
+    let optical_remove = [
+        "create_optical:encased_mirror",
+        "create_optical:polarizing_beam_splitter_block",
+        "create_optical:absorption_polarizing_filter",
+        "create_optical:optical_sensor",
+        "anvilcraft:heliostats"
+    ]
+
+    agriculture_machine.forEach((item) => {
+        event.stonecutting(item, "kubejs:agriculture_machine")
+    })
+
+    agriculture_remove.forEach((recipe) => {
+        event.remove(recipe)
+    })
+
+    optical_machine.forEach((item) => {
+        event.stonecutting(item, "kubejs:optical_machine")
+    })
+
+    optical_remove.forEach((recipe) => {
         event.remove(recipe)
     })
 })

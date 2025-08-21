@@ -5,16 +5,31 @@ ServerEvents.recipes((event) => {
     event.remove("netherchested:nether_chest")
     create.item_application("netherchested:nether_chest", ["#forge:chests", "minecraft:nether_bricks"])
 
+    // 保险库
+    event.remove({mod: "create_bs"})
+    event.remove("create:crafting/kinetics/item_vault")
+    create.item_application("create:item_vault", ["create_bs:wooden_item_vault", "#forge:ingots/iron"])
+    create.item_application("create_bs:copper_item_vault", ["create:item_vault", "#forge:plates/copper"])
+    create.item_application("create_bs:iron_item_vault", ["create_bs:copper_item_vault", "#forge:plates/iron"])
+    create.item_application("create_bs:gold_item_vault", ["create_bs:iron_item_vault", "#forge:plates/gold"])
+    create.item_application("create_bs:crystal_item_vault", ["create_bs:gold_item_vault", "#forge:glass"])
+    create.item_application("create_bs:diamond_item_vault", ["create_bs:crystal_item_vault", "#forge:gems/diamond"])
+    create.item_application("create_bs:obsidian_item_vault", ["create_bs:diamond_item_vault", "#forge:plates/obsidian"])
+    create.item_application("create_bs:netherite_item_vault", ["create_bs:obsidian_item_vault", "#forge:plates/netherite"])
 
     // 科技主线
     let andesite_machine = [
-        ["createmetallurgy:mechanical_belt_grinder", "#kubejs:sandpaper_belt"],
+        ["createmetallurgy:mechanical_belt_grinder", "createmetallurgy:sandpaper_belt"],
         ["create:mechanical_drill", "#forge:ingots/iron"],
         ["create:mechanical_saw", "#forge:plates/iron"],
         ["create:mechanical_press", "#forge:storage_blocks/iron"],
         ["create:mechanical_mixer", "create:whisk"],
         ["create:encased_fan", "create:propeller"],
-        ["create:millstone", "#forge:stone"]
+        ["create:millstone", "#forge:stone"],
+        ["vintageimprovements:spring_coiling_machine", "vintageimprovements:spring_coiling_machine_wheel"],
+        ["createaddition:rolling_mill", "create:shaft"],
+        ["ratatouille:mechanical_demolder", "#forge:slimeballs"],
+        ["vintageimprovements:curving_press", "vintageimprovements:iron_spring"]
     ]
 
     let brass_machine = [
@@ -25,6 +40,11 @@ ServerEvents.recipes((event) => {
         ["createmetallurgy:foundry_mixer", "createmetallurgy:sturdy_whisk"],
         ["createdieselgenerators:diesel_engine", "createdieselgenerators:engine_piston"],
         ["createdieselgenerators:pumpjack_hole", "create:fluid_pipe"]
+    ]
+    let sturdy_casing = [
+        ["create:track_signal", "create:electron_tube"],
+        ["create:controls", "minecraft:lever"],
+        ["create:track_station", "minecraft:compass"]
     ]
 
     let magnet_machine = [
@@ -43,6 +63,7 @@ ServerEvents.recipes((event) => {
         create.item_application(items[0], ["kubejs:andesite_machine", items[1]])
     })
     event.remove("create:crafting/kinetics/deployer")
+    event.remove("vintageimprovements:craft/belt_grinder")
     create.item_application("create:deployer", ["create:andesite_casing", "create:brass_hand"])
 
 
@@ -55,6 +76,10 @@ ServerEvents.recipes((event) => {
     sturdy_machine.forEach((items) => {
         event.remove({output: items[0]})
         create.item_application(items[0], ["kubejs:sturdy_machine", items[1]])
+    })
+    sturdy_casing.forEach((items) => {
+        event.remove({output: items[0]})
+        create.item_application(items[0], ["create:railway_casing", items[1]])
     })
 
     event.remove({output: "createdieselgenerators:large_diesel_engine"})
@@ -72,11 +97,7 @@ ServerEvents.recipes((event) => {
     // 科技支线
     let copper_machine = [
         ["create:hose_pulley", "minecraft:dried_kelp_block"],
-    ]
-
-    let copper_casing = [
-        ["create:item_drain", "minecraft:iron_bars"],
-        ["create:spout", "minecraft:dried_kelp"]
+        ["vintageimprovements:vacuum_chamber", "create:mechanical_pump"]
     ]
 
     copper_machine.forEach((items) => {
@@ -84,14 +105,38 @@ ServerEvents.recipes((event) => {
         create.item_application(items[0], ["kubejs:copper_machine", items[1]])
     })
 
-    copper_casing.forEach((items) => {
-        event.remove( {output: items[0]})
-        create.item_application(items[0], ["create:copper_casing", items[1]])
+    // 混合线
+    let agriculture_machine = [
+        ["create:propeller", "ratatouille:spreader"]
+    ]
+
+    let optical_machine = [
+        ["create_optical:optical_receptor", "create_optical:copper_coil"],
+        ["create_optical:heavy_optical_receptor", "create_optical:golden_coil"],
+        ["create_optical:beam_condenser", "create_optical:rose_quartz_catalyst_coil"],
+        ["create_optical:hologram_source", "create_optical:zinc_coil"],
+        ["create_optical:optical_source", "create_optical:optical_device"],
+        ["create_optical:beam_focuser", "create_optical:mirror"],
+        ["anvilcraft:ruby_prism", "kubejs:royal_prism"],
+        ["anvilcraft:ruby_laser", "kubejs:royal_optical_device"],
+    ]
+
+    agriculture_machine.forEach((items) => {
+        event.remove({output: items[0]})
+        create.item_application(items[0], ["kubejs:agriculture_machine", items[1]])
     })
 
+    optical_machine.forEach((items) => {
+        event.remove({output: items[0]})
+        create.item_application(items[0], ["kubejs:optical_machine", items[1]])
+    })
+    event.remove("create_optical:thermal_optical_source")
+    create.item_application("create_optical:thermal_optical_source", ["create_optical:optical_source", "#kubejs:fluid_tanks"])
+
+    // 动力泵
     event.remove({output: "create:mechanical_pump"})
     create.item_application("create:mechanical_pump", ["create:fluid_pipe", "create:cogwheel"])
 
     // 烈焰人燃烧室
-    create.item_application("create:blaze_burner", ["minecraft:netherrack", "create:iron_sheet"])
+    create.item_application("create:empty_blaze_burner", ["minecraft:netherrack", "#forge:plates/iron"])
 })

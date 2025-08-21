@@ -1,9 +1,6 @@
 ServerEvents.recipes(event => {
-
-  
-
     //传送石
-    event.remove("waystones:warp_stone")
+    //event.remove("waystones:warp_stone")
 
     //夸克的磁铁
     event.remove("quark:oddities/crafting/magnet")
@@ -35,6 +32,24 @@ ServerEvents.recipes(event => {
       {
         A: "#c:iron_ingots",
         B: "minecraft:obsidian"
+      }
+    )
+
+    // 抽入升级和输出升级
+    event.shapeless("functionalstorage:puller_upgrade", "functionalstorage:pusher_upgrade")
+    event.shapeless("functionalstorage:pusher_upgrade", "functionalstorage:puller_upgrade")
+
+    // 木制保险库
+    event.shaped(
+      Item.of("create_bs:wooden_item_vault", 4),
+      [
+        "W",
+        "B",
+        "W",
+      ],
+      {
+        W: "#minecraft:wooden_slabs",
+        B: "#forge:barrels"
       }
     )
 
@@ -109,7 +124,7 @@ ServerEvents.recipes(event => {
     )
 
     //交易置物台
-    event.remove("trading_floor:trading_depot")
+    //event.remove("trading_floor:trading_depot")
     // event.shaped(
     //   Item.of("trading_floor:trading_depot"),
     //   [
@@ -145,6 +160,20 @@ ServerEvents.recipes(event => {
       {
         D: "minecraft:dried_kelp",
         R: "#forge:rubber"
+      }
+    )
+
+    // 铸造盆
+    event.remove("createmetallurgy:crafting/content/casting_basin")
+    event.shaped(
+      Item.of("createmetallurgy:casting_basin"),
+      [
+        "A A",
+        "A A",
+        "AAA"
+      ],
+      {
+        A: "create:andesite_alloy"
       }
     )
 
@@ -231,19 +260,18 @@ ServerEvents.recipes(event => {
     // 修复黄铜锭
     event.remove("anvilcraft:brass_ingot")
 
-    //冶金学砂带
-    event.remove("createmetallurgy:crafting/materials/sandpaper_belt")
-    event.shaped(
-      Item.of("createmetallurgy:sandpaper_belt"),
+    // 玫瑰石英
+    event.remove("create:crafting/materials/rose_quartz")
+    event.shapeless(
+      Item.of("create:rose_quartz"),
       [
-        "SSS",
-        "S S",
-        "SSS"
-      ],
-      {
-        S: "#create:sandpaper"
-      }
+        "minecraft:quartz",
+        Item.of("minecraft:redstone", 4)
+      ]
     )
+
+    // 冶金学砂带
+    event.remove("createmetallurgy:crafting/materials/sandpaper_belt")
 
     // 特斯拉球
     event.remove("alexscaves:tesla_bulb")
@@ -272,17 +300,20 @@ ServerEvents.recipes(event => {
     }
 
     let andesite_copy = [
-      'create_connected:encased_chain_cogwheel',
-      'create:gearshift', 
-      'create_connected:inverted_gearshift', 
-      'create_connected:parallel_gearbox', 
-      'create_connected:vertical_parallel_gearbox', 
-      'create_connected:six_way_gearbox', 
-      'create:encased_chain_drive', 
-      'create_connected:cross_connector', 
-      'create_connected:vertical_six_way_gearbox',
-      'create:gearbox',
-      'create:vertical_gearbox'
+      "create_connected:encased_chain_cogwheel",
+      "create:gearshift", 
+      "create_connected:inverted_gearshift", 
+      "create_connected:parallel_gearbox", 
+      "create_connected:vertical_parallel_gearbox", 
+      "create_connected:six_way_gearbox", 
+      "create:encased_chain_drive", 
+      "create_connected:cross_connector", 
+      "create_connected:vertical_six_way_gearbox",
+      "create:gearbox",
+      "create:vertical_gearbox",
+      "create:chain_conveyor",
+      "create:powered_latch",
+      "create:powered_toggle_latch"
     ]
 
     andesite_copy.forEach(item => {
@@ -292,7 +323,10 @@ ServerEvents.recipes(event => {
     let brass_copy = [
       "create_connected:brass_gearbox",
       "create_connected:vertical_brass_gearbox",
-      "create:adjustable_chain_gearshift"
+      "create:adjustable_chain_gearshift",
+      "create:pulse_extender",
+      "create:pulse_repeater",
+      "create:pulse_timer"
     ]
 
     brass_copy.forEach(item => {
