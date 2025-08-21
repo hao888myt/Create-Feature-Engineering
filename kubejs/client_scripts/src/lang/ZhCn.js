@@ -15,12 +15,15 @@ ClientEvents.lang("zh_cn", (event) => {
 
     AddItemLang("rubber", "橡胶")
     AddItemLang("incomplete_circuit_board", "未完成的电路板")
+    AddItemLang("royal_prism", "皇家棱镜")
+    AddItemLang("royal_optical_device", "皇家光学设备")
     AddBlockLang("steel_casing", "钢机壳")
 
     AddItemLang("soul_vulture_heart", "灵魂鹫之心")
     AddItemLang("ectoplasm", "灵质")
 
     AddItemLang("litematica_tool", "投影工具")
+    AddItemLang("world_edit_tool", "创世神工具")
 
     AddItemLang("ore_feed", "矿石饲料")
     AddItemLang("cyan_mixture", "青色混合物")
@@ -62,10 +65,10 @@ ClientEvents.lang("zh_cn", (event) => {
 
         ["copper", "铜"],
         ["logistics", "物流"],
-        ["fluid", "流体处理"],
         ["intelligent", "智能"],
         ["advanced_logistics", "高级物流"],
 
+        ["agriculture", "农业"],
         ["optical", "光学"],
         ["dark", "黑暗"],
         ["plant", "植物"],
