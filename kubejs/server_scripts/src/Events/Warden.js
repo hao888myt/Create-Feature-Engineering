@@ -2,11 +2,11 @@ EntityEvents.hurt(event => {
     const target = event.entity;
     const source = event.source;
 
-    const inputBlock = 'sculk_replaceable';
-    const resultBlock = 'minecraft:sculk';
+    const inputBlock = "sculk_replaceable";
+    const resultBlock = "minecraft:sculk";
 
     // 判断是否为监守者的音波攻击
-    if (source.getType() == 'sonic_boom') {
+    if (source.getType() == "sonic_boom") {
         // 获取监守者和目标的坐标
         var wardenPos = new Vec3f(source.sourcePosition.x(), source.sourcePosition.y() + 1, source.sourcePosition.z())
         var targetPos = target.position()
