@@ -76,9 +76,9 @@
 	   0.5: Every second random tick
 	   0.0: Never (forbidden - players would be unable to progress)
 	*/
-	"FadingDecayTickRate": 1.0,
-	"FailingDecayTickRate": 1.0,
-	"RuinDecayTickRate": 1.0,
+	"FadingDecayTickRate": 8.0,
+	"FailingDecayTickRate": 8.0,
+	"RuinDecayTickRate": 8.0,
 	"ForfeitureDecayTickRate": 1.0,
 	// Whether bottles can be used to pick up decay. Default is true.
 	"CanBottleUpFading": true,

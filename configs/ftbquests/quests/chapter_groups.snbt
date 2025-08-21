@@ -1,0 +1,9 @@
+{
+	chapter_groups: [
+		{ id: "68183BAB20955C2F", title: "科技主线" }
+		{ id: "146AE87893DB4A83", title: "科技支线" }
+		{ id: "0E1D4108432012A6", title: "魔法主线" }
+		{ id: "14DAEA400B635033", title: "魔法支线" }
+		{ id: "4042F8DB98776FDF", title: "混合线" }
+	]
+}
