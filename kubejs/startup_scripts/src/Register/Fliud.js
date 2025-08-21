@@ -1,5 +1,5 @@
-StartupEvents.registry('fluid', event => {
-    event.create('ectoplasm')
+StartupEvents.registry("fluid", event => {
+    event.create("ectoplasm")
       .thinTexture(0x85e6ff)
       .bucketColor(0x85e6ff)
 

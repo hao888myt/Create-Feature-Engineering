@@ -23,7 +23,6 @@ global.MechanismTypes = [
 
     "copper",
     "logistics",
-    "fluid",
     "intelligent",
     "advanced_logistics",
 
