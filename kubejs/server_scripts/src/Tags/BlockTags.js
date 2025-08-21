@@ -1,41 +1,41 @@
 ServerEvents.tags("block", event => {
     let ferromagnetic_blocks = [
-        'anvilcraft:hollow_magnet_block',
-        'anvilcraft:magnet_block',
-        'anvilcraft:ferrite_core_magnet_block',
-        'quark:magnet',
-        'endergetic:boof_block',
+        "anvilcraft:hollow_magnet_block",
+        "anvilcraft:magnet_block",
+        "anvilcraft:ferrite_core_magnet_block",
+        "quark:magnet",
+        "endergetic:boof_block",
 
-        'sophisticatedbackpacks:copper_backpack',
-        'sophisticatedbackpacks:iron_backpack',
-        'sophisticatedbackpacks:gold_backpack',
-        'sophisticatedbackpacks:diamond_backpack',
-        'sophisticatedbackpacks:netherite_backpack',
+        "sophisticatedbackpacks:copper_backpack",
+        "sophisticatedbackpacks:iron_backpack",
+        "sophisticatedbackpacks:gold_backpack",
+        "sophisticatedbackpacks:diamond_backpack",
+        "sophisticatedbackpacks:netherite_backpack",
 
-        'functionalstorage:fluid_1',
-        'functionalstorage:fluid_2',
-        'functionalstorage:fluid_4',
-        'functionalstorage:compacting_framed_drawer', 
-        'functionalstorage:framed_simple_compacting_drawer',
-        'functionalstorage:framed_1', 
-        'functionalstorage:framed_2', 
-        'functionalstorage:framed_4', 
-        'functionalstorage:simple_compacting_drawer',
-        'functionalstorage:compacting_drawer',
+        "functionalstorage:fluid_1",
+        "functionalstorage:fluid_2",
+        "functionalstorage:fluid_4",
+        "functionalstorage:compacting_framed_drawer", 
+        "functionalstorage:framed_simple_compacting_drawer",
+        "functionalstorage:framed_1", 
+        "functionalstorage:framed_2", 
+        "functionalstorage:framed_4", 
+        "functionalstorage:simple_compacting_drawer",
+        "functionalstorage:compacting_drawer",
 
         "create:content_observer"
     ]
     ferromagnetic_blocks.forEach(block => {
-        event.add('alexscaves:ferromagnetic_blocks', block)
+        event.add("alexscaves:ferromagnetic_blocks", block)
     })
 
     // 苍绿催化体
-    event.add('minecraft:needs_diamond_tool', 'kubejs:paltaeria_catalyst')
-    event.add('minecraft:mineable/pickaxe', 'kubejs:paltaeria_catalyst')
+    event.add("minecraft:needs_diamond_tool", "kubejs:paltaeria_catalyst")
+    event.add("minecraft:mineable/pickaxe", "kubejs:paltaeria_catalyst")
 
     // 乌龟化石
-    event.add('minecraft:needs_stone_tool', 'kubejs:toretoise_fossil')
-    event.add('minecraft:mineable/pickaxe', 'kubejs:toretoise_fossil')
+    event.add("minecraft:needs_stone_tool", "kubejs:toretoise_fossil")
+    event.add("minecraft:mineable/pickaxe", "kubejs:toretoise_fossil")
 
     // 各种深板岩矿
     event.add("c:deepslate_metal", "createnuclear:deepslate_lead_ore") // 原子核动的铅矿
@@ -50,18 +50,18 @@ ServerEvents.tags("block", event => {
     event.add("minecraft:dragon_immune", "endergetic:boof_block") //浮跃块
 
     var anvils = [
-        'minecraft:anvil',
-        'minecraft:chipped_anvil',
-        'minecraft:damaged_anvil',
-        'anvilcraft:royal_anvil',
-        'anvilcraft:ember_anvil',
-        'anvilcraft:spectral_anvil',
-        'spectrum:bedrock_anvil'
+        "minecraft:anvil",
+        "minecraft:chipped_anvil",
+        "minecraft:damaged_anvil",
+        "anvilcraft:royal_anvil",
+        "anvilcraft:ember_anvil",
+        "anvilcraft:spectral_anvil",
+        "spectrum:bedrock_anvil"
     ]
 
     anvils.forEach(anvil => {
-        removeItemsFromTag(event, 'alexscaves:ferromagnetic_blocks', anvil)
-        removeItemsFromTag(event, 'alexscaves:magnetron_weapons', anvil)
+        removeItemsFromTag(event, "alexscaves:ferromagnetic_blocks", anvil)
+        removeItemsFromTag(event, "alexscaves:magnetron_weapons", anvil)
     })
 
     /**

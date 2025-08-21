@@ -17,8 +17,18 @@ ServerEvents.tags('item', event => {
     event.add('kubejs:sap', 'anvilcraft:resin')
     event.add('kubejs:sap', 'alexscaves:pewen_sap')
 
-    //添加砂带标签
-    event.add("kubejs:sandpaper_belt", ['vintageimprovements:grinder_belt', 'createmetallurgy:sandpaper_belt'])
+    //添加流体储罐标签
+    let tank = [
+        "create:fluid_tank", 
+        "create_connected:fluid_vessel", 
+        "createfluidstuffs:multi_fluid_tank", 
+        "railways:fuel_tank", 
+        "createenderlink:ender_tank"
+    ]
+
+    tank.forEach(tank => {
+        event.add("kubejs:fluid_tanks", tank)
+    })
 
     /**
     * 
