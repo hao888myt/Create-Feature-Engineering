@@ -1,25 +1,12 @@
 # 外部工具设置
-
-/.mixin.out/
-/.probe/
-/.vscode/
-/backups/
-/PCL/
-/.idea/
+/*/
+/*
 
 # mod设置
-
-/quests_structures/
-/rhino.local.properties
-/CustomSkinLoader/
-/data/
-/emi.json
-/fabricloader.log
-/hotai/
-/kiwipacks/
-/mods/
-/patchouli_books/
-/patchouli_data.json
+!/hotai/
+!/kubejs/
+/kubejs/config/probe-settings.json
+!/defaultconfigs/
 
 # 游戏设置与信息
 
@@ -34,13 +21,11 @@
 
 # 游戏本体
 
-/机械动力：特性工程-natives
-/机械动力：特性工程.jar
-/机械动力：特性工程.json
-
 # mod配置
 
-/config/*
 !/config/ftbquests/
+!/config/bocchud/
+!/config/fancymenu/
+!/config/forgematica/
 
 # 此处需要加入部分配置文件更改可以在对应文件路径前输入一个!来进行筛选
