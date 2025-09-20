@@ -18,6 +18,24 @@ ServerEvents.recipes(event=>{
         [`spectrum:${mateirial}_cluster`]
         )
     }
+    
+    // 粗铜粉碎
+    event.remove("createnuclear:crushing/raw_copper")
+
+    // 钨矿石粉碎
+    event.remove("createmetallurgy:crushing/wolframite_ore")
+    create.crushing([
+        Item.of("createmetallurgy:crushed_raw_wolframite", 2),
+        Item.of("createmetallurgy:crushed_raw_wolframite").withChance(0.25),
+        Item.of("create:experience_nugget").withChance(0.75),
+        Item.of("minecraft:cobbled_deepslate").withChance(0.12),
+    ], "minecraft:netherrack")
+    create.crushing([
+        Item.of("createmetallurgy:crushed_raw_wolframite", 2),
+        Item.of("createmetallurgy:crushed_raw_wolframite").withChance(0.25),
+        Item.of("create:experience_nugget").withChance(0.75),
+        Item.of("minecraft:cobbled_deepslate").withChance(0.12),
+    ], "anvilcraft:deepslate_tungsten_ore")
 
     // 凝灰岩粉碎
     event.remove("create:crushing/tuff")
