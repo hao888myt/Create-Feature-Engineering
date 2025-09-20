@@ -1,0 +1,279 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "22D7B52E12C728C5"
+	group: "68183BAB20955C2F"
+	icon: "kubejs:andesite_machine"
+	id: "22D7B52E12C728C5"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5586C754D751EA57"]
+			description: [
+				"&e铁锭&r也是一个消耗量极大的材料，在&d特性工程&r中，也有许多量产方案"
+				"{@pagebreak}"
+				"&l1.铁砧抢夺铁傀儡"
+				"简单来说，就是让铁砧从高处下落砸掉铁傀儡&b超过40%的血量&r，铁傀儡就会掉落铁锭"
+				"之后用&9机械手&r或者&9发射器&r修复铁傀儡，循环往复"
+				"&7&o也可以让工具匠或者盔甲匠来修，无消耗，但修复欲望并不算高"
+				"&7（关于铁砧抢夺的具体机制，可以在铁砧的思索里找到）"
+				"{image:ftbquests:textures/iron_golem.png width:90 height:90 align:center}"
+			]
+			icon: "minecraft:iron_ingot"
+			id: "4F009CED08A01F8F"
+			tasks: [
+				{
+					id: "76D1FE5539170859"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "6090019863B130B4"
+					title: "自动化完成"
+					type: "checkmark"
+				}
+			]
+			title: "铁锭大亨"
+			x: 3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["4F009CED08A01F8F"]
+			description: [
+				"这里推荐用&9压缩抽屉&r来将铁锭转化成铁粒"
+				"&7（记得放铁粒而不是放铁锭，直接放铁锭压的是重质铁块！！！）"
+			]
+			icon: "minecraft:iron_nugget"
+			id: "3DF7630DEF30F596"
+			tasks: [
+				{
+					id: "56C0F34D82F0710B"
+					item: "minecraft:iron_nugget"
+					type: "item"
+				}
+				{
+					id: "255D61F33C5E9BC2"
+					title: "自动化完成"
+					type: "checkmark"
+				}
+			]
+			title: "分解一下"
+			x: 3.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5586C754D751EA57"]
+			description: [
+				"在&d机械动力&r中，&e安山岩&r是一种重要的材料，是&e安山合金&r的原料之一"
+				"{@pagebreak}"
+				"&l1.基岩刷石机"
+				"当&9岩浆&r和&9水&r在&9基岩&r上对撞，会刷出4种石头："
+				"&e安山岩、闪长岩、花岗岩和凝灰岩"
+				"每种石头&b产生的权重都是相同的"
+				"{image:ftbquests:textures/cobblestone_generation.png width:160 height:90 align:center}"
+			]
+			icon: "minecraft:andesite"
+			id: "36D249ABCAFFA70A"
+			tasks: [
+				{
+					id: "6F1A1FBB652C30AF"
+					item: "minecraft:andesite"
+					type: "item"
+				}
+				{
+					id: "4CD9F11D2AB70E6F"
+					title: "自动化完成"
+					type: "checkmark"
+				}
+			]
+			title: "安山岩被踢出了废石村"
+			x: 5.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"3DF7630DEF30F596"
+				"36D249ABCAFFA70A"
+			]
+			description: ["直接放在工作台里合成也太浪费了，推荐用&9搅拌器&r来合成"]
+			icon: "create:andesite_alloy"
+			id: "16DBF961636CF11E"
+			tasks: [
+				{
+					id: "5F90CC45C6084B37"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					id: "012C3552A4282B4B"
+					title: "自动化完成"
+					type: "checkmark"
+				}
+			]
+			title: "万恶之源"
+			x: 5.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["573D2C2B4A5929DB"]
+			description: ["用木板切的时候,记得先合成一个&e同轴齿轮&r给&9动力锯&a设置过滤&r，不然你会收获一堆台阶（"]
+			icon: "petrolsparts:coaxial_gear"
+			id: "11CF38CAA74C32A4"
+			tasks: [
+				{
+					id: "12106DDADD8A3803"
+					item: "petrolsparts:coaxial_gear"
+					type: "item"
+				}
+				{
+					id: "160D273D72E9D942"
+					title: "自动化完成"
+					type: "checkmark"
+				}
+			]
+			title: "没有传动杆的小齿轮"
+			x: 7.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"16DBF961636CF11E"
+				"11CF38CAA74C32A4"
+			]
+			icon: "kubejs:andesite_mechanism"
+			id: "2B1BF90E860E0B90"
+			tasks: [
+				{
+					id: "2B8CF5699DD1FF8F"
+					item: "kubejs:andesite_mechanism"
+					type: "item"
+				}
+				{
+					id: "3F9606DED00104A6"
+					title: "自动化完成"
+					type: "checkmark"
+				}
+			]
+			title: "简单装配"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5586C754D751EA57"]
+			description: [
+				"&m手挖是一种极其不健康的行为&r"
+				"搓一点&9动力锯&r和&9动力轴承&r吧，就可以做个简单的树场了"
+			]
+			icon: "minecraft:oak_log"
+			id: "204A614BB81EC53A"
+			tasks: [
+				{
+					id: "2C61E5CDBD3B6FD0"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:logs)"
+						}
+					}
+					title: "任意 原木"
+					type: "item"
+				}
+				{
+					id: "2490AB9B4EB63815"
+					title: "自动化完成"
+					type: "checkmark"
+				}
+			]
+			title: "环境之友"
+			x: 9.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6FD251F8A4B1C77C"]
+			description: ["&9动力锯&r可以把&e1块原木&r锯出&e6块木板&r，&b增产50%！"]
+			icon: "minecraft:oak_planks"
+			id: "573D2C2B4A5929DB"
+			tasks: [
+				{
+					id: "5A6F6BE877E3549B"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:planks)"
+						}
+					}
+					title: "任意 木板"
+					type: "item"
+				}
+				{
+					id: "223E911CF058837E"
+					title: "自动化完成"
+					type: "checkmark"
+				}
+			]
+			title: "木生一，一生六"
+			x: 8.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["204A614BB81EC53A"]
+			description: ["原木放到&9动力锯&r上锯一下就可以&a去皮&r了"]
+			icon: "minecraft:stripped_oak_log"
+			id: "6FD251F8A4B1C77C"
+			tasks: [
+				{
+					id: "1D2050EB3A01F525"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:stripped_logs)"
+						}
+					}
+					title: "任意 去皮原木"
+					type: "item"
+				}
+				{
+					id: "6F0EA38682DE4E97"
+					title: "自动化完成"
+					type: "checkmark"
+				}
+			]
+			title: "去皮一下"
+			x: 7.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2B1BF90E860E0B90"]
+			id: "4ED45916D25994F9"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "11B9DC5E5918390D"
+				item: "kubejs:andesite_machine"
+				type: "item"
+			}]
+			title: "第一章完成！"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			icon: "create:wrench"
+			id: "5586C754D751EA57"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "0AAD40D40D98F213"
+				title: "我知道了"
+				type: "checkmark"
+			}]
+			title: "启程"
+			x: 6.0d
+			y: -8.5d
+		}
+	]
+	title: "第一章：安山动力（施工中）"
+}

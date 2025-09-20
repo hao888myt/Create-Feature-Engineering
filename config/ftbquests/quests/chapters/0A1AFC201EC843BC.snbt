@@ -1,0 +1,228 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "0A1AFC201EC843BC"
+	group: "68183BAB20955C2F"
+	icon: "kubejs:brass_machine"
+	id: "0A1AFC201EC843BC"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			icon: "kubejs:andesite_mechanism"
+			id: "204F2D1099B47126"
+			tasks: [
+				{
+					id: "612622013798D09F"
+					item: "kubejs:andesite_mechanism"
+					type: "item"
+				}
+				{
+					id: "26314A0695CD3183"
+					title: "自动化完成"
+					type: "checkmark"
+				}
+			]
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["66AA72C8C6FA1201"]
+			icon: "createmetallurgy:molten_gold_bucket"
+			id: "7D5A82AC34D52096"
+			tasks: [
+				{
+					id: "649A445D068521B4"
+					item: "createmetallurgy:molten_gold_bucket"
+					type: "item"
+				}
+				{
+					id: "4E881AB135EB5ED3"
+					title: "自动化完成"
+					type: "checkmark"
+				}
+			]
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"787BE436961EA0F1"
+				"27EF5F22610F07A7"
+			]
+			icon: "create:electron_tube"
+			id: "529F2C6C413B0DD2"
+			tasks: [
+				{
+					id: "7F8DDA285E4510E3"
+					item: "create:electron_tube"
+					type: "item"
+				}
+				{
+					id: "33B45A97E5E369B5"
+					title: "自动化完成"
+					type: "checkmark"
+				}
+			]
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["53850ED4BA751271"]
+			icon: "create:polished_rose_quartz"
+			id: "27EF5F22610F07A7"
+			tasks: [
+				{
+					id: "06B8822DCDF71F2C"
+					item: "create:polished_rose_quartz"
+					type: "item"
+				}
+				{
+					id: "6CAE5FDC4BD0324E"
+					title: "自动化完成"
+					type: "checkmark"
+				}
+			]
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"3F355CCA46AEDE82"
+				"54AE5A05FA4BC21F"
+			]
+			icon: "create:rose_quartz"
+			id: "53850ED4BA751271"
+			tasks: [
+				{
+					id: "6DF08749C06E63B6"
+					item: "create:rose_quartz"
+					type: "item"
+				}
+				{
+					id: "60DE1A27394A1EE6"
+					title: "自动化完成"
+					type: "checkmark"
+				}
+			]
+			x: -3.0d
+			y: -4.5d
+		}
+		{
+			icon: "minecraft:quartz"
+			id: "3F355CCA46AEDE82"
+			tasks: [{
+				id: "51E50DE3CAE8817B"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -4.5d
+		}
+		{
+			icon: "minecraft:redstone"
+			id: "54AE5A05FA4BC21F"
+			tasks: [
+				{
+					id: "71DF2135B3B055BF"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					id: "24B2F687A8DB4977"
+					title: "自动化完成"
+					type: "checkmark"
+				}
+			]
+			x: -1.0d
+			y: -4.5d
+		}
+		{
+			icon: "createmetallurgy:molten_iron_bucket"
+			id: "787BE436961EA0F1"
+			tasks: [
+				{
+					id: "4EFD3526BE386317"
+					item: "createmetallurgy:molten_iron_bucket"
+					type: "item"
+				}
+				{
+					id: "16398BE4AE38677E"
+					title: "自动化完成"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"7D5A82AC34D52096"
+				"529F2C6C413B0DD2"
+				"204F2D1099B47126"
+			]
+			icon: "create:precision_mechanism"
+			id: "4630FF9783E1202B"
+			tasks: [
+				{
+					id: "452CFD544979DC22"
+					item: "create:precision_mechanism"
+					type: "item"
+				}
+				{
+					id: "3364F9DA0256A6C8"
+					title: "自动化完成"
+					type: "checkmark"
+				}
+			]
+			x: -1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5AB8E3E99B4268CA"]
+			id: "66AA72C8C6FA1201"
+			tasks: [{
+				id: "66EDAF357D23F6C8"
+				item: "createmetallurgy:gold_dust"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2212F88A66AD6A64"]
+			id: "5AB8E3E99B4268CA"
+			tasks: [{
+				id: "7593387B60EE599E"
+				item: "createmetallurgy:dirty_gold_dust"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -6.5d
+		}
+		{
+			id: "2212F88A66AD6A64"
+			tasks: [{
+				id: "68F800D270289D26"
+				item: "create:crushed_raw_gold"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["4630FF9783E1202B"]
+			id: "49A275C334666175"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "3899869C1BF45DE5"
+				item: "kubejs:brass_machine"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 5.0d
+		}
+	]
+	title: "第二章：黄铜时代（施工中）"
+}
