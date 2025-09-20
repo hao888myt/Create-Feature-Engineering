@@ -3,26 +3,17 @@
 /*
 !/References/
 
-# mod设置
+# 魔改相关
 !/hotai/
 !/kubejs/
+!/ldlib/
 /kubejs/config/probe-settings.json
 !/defaultconfigs/
 
-# 游戏设置与信息
-
-/schematics/
-/local/
-/logs/
-/shaderpacks/
-/resourcepacks/
-/usercache.json
-/usernamecache.json
-/options.txt
-
-# 游戏本体
-
 # mod配置
+
+!/config/
+/config/*
 
 !/config/ftbquests/
 !/config/bocchud/
