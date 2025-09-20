@@ -1,1 +1,24 @@
-{}
+{
+  "spectrum.ponder.block_detector_0.header": "方块探测器",
+  "spectrum.ponder.block_detector_0.text_1": "这是一个方块探测器",
+  "spectrum.ponder.block_detector_0.text_2": "你可以用它来检测方块",
+  "spectrum.ponder.block_detector_0.text_3": "方块检测器可以将它面朝的方块的方块",
+  "spectrum.ponder.block_detector_0.text_4": "与它下方方块进行比较",
+  "spectrum.ponder.block_detector_0.text_5": "就像这样",
+  "spectrum.ponder.block_detector_0.text_6": "当它面朝的方块被改变成其它的时候",
+  "spectrum.ponder.block_detector_0.text_7": "它不会发出红石信号",
+  "spectrum.ponder.block_detector_1.header": "其它方向的方块探测器",
+  "spectrum.ponder.block_detector_1.text_1": "再强调一次",
+  "spectrum.ponder.block_detector_1.text_2": "方块探测器是将它面朝的方块的方块",
+  "spectrum.ponder.block_detector_1.text_3": "与它下方方块进行比较",
+  "spectrum.ponder.block_detector_1.text_4": "而不是与视觉上的底部相连的方块进行比较",
+  "spectrum.ponder.block_detector_1.text_5": "补充一下",
+  "spectrum.ponder.block_detector_1.text_6": "面朝下的方块探测器是无法检测方块的",
+  "spectrum.ponder.block_detector_2.header": "方块状态的匹配",
+  "spectrum.ponder.block_detector_2.text_1": "方块探测器会比较方块状态",
+  "spectrum.ponder.block_detector_2.text_2": "对于方块探测器来说",
+  "spectrum.ponder.block_detector_2.text_3": "打开的木桶和关闭的木桶是不同的方块",
+  "spectrum.ponder.block_detector_2.text_4": "但是方块探测器不会比较NBT",
+  "spectrum.ponder.block_detector_2.text_5": "无论木桶里有什么",
+  "spectrum.ponder.block_detector_2.text_6": "都不影响它是个关着的木桶"
+}
