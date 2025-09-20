@@ -38,4 +38,14 @@ StartupEvents.registry("item", event => {
 
     event.create("royal_prism") // 皇家棱镜
     event.create("royal_optical_device") // 皇家光学设备
+
+    let numbers = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
+    numbers.forEach((number) => {
+        event.create(`unstackable_${number}`)
+        .rarity("uncommon")
+        .unstackable()
+
+        event.create(`${number}`)
+        .rarity("uncommon")
+    })
 })
