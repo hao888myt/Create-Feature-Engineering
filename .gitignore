@@ -28,5 +28,18 @@
 !/config/bocchud/
 !/config/fancymenu/
 !/config/forgematica/
+!/config/ftbquests/
+!/config/alexscaves-client.toml
+!/config/alexscaves-general.toml
+!/config/alexsmobs.toml
+!/config/anvilcraft.json5
+!/config/quark-common.toml
+!/config/questsadditions-client.toml
+!/config/Spectrum.json5
+!/config/spelunkery-client.toml
+!/config/spelunkery-common.toml
+!/config/tweakerge.json
+!/config/tweakermore.json
+!/config/usefulslime-common.toml
 
 # 此处需要加入部分配置文件更改可以在对应文件路径前输入一个!来进行筛选
