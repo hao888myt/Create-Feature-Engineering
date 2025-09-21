@@ -1,10 +1,6 @@
 ServerEvents.recipes((event) => {
     const create = event.recipes.create
     
-    // 下界箱子
-    event.remove("netherchested:nether_chest")
-    create.item_application("netherchested:nether_chest", ["#forge:chests", "minecraft:nether_bricks"])
-
     // 保险库
     event.remove({mod: "create_bs"})
     event.remove("create:crafting/kinetics/item_vault")
