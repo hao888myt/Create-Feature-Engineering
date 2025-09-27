@@ -2,6 +2,22 @@ ServerEvents.recipes(event => {
     //传送石
     //event.remove("waystones:warp_stone")
 
+    let beyond_dimension_remove = [
+      "beyonddimensions:ars_source_pathway", 
+      "beyonddimensions:net_interface", 
+      "beyonddimensions:net_pathway", 
+      "beyonddimensions:net_energy_pathway", 
+      "beyonddimensions:net_terminal_block", 
+      "beyonddimensions:net_pump_block", 
+      "beyonddimensions:net_hopper_block", 
+      "beyonddimensions:net_furnace_block", 
+      "beyonddimensions:dimensional_connect_block", 
+      "beyonddimensions:net_control"
+    ]
+    beyond_dimension_remove.forEach(item => {
+      event.remove({output: item})
+    })
+
     //夸克的磁铁
     event.remove("quark:oddities/crafting/magnet")
     event.shaped(
