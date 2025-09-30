@@ -12,7 +12,26 @@ global.EnchantableMachines = [
     "create:mechanical_drill"
 ]
 
-global.randomNum = (minNum, maxNum) => { 
+const COLORS = [
+    "white",
+    "orange",
+    "magenta",
+    "light_blue",
+    "yellow",
+    "lime",
+    "pink",
+    "gray",
+    "light_gray",
+    "cyan",
+    "purple",
+    "blue",
+    "brown",
+    "green",
+    "red",
+    "black"
+]
+
+function randomNum(minNum, maxNum){ 
     switch(arguments.length){ 
         case 1: 
             return parseInt(Math.random() * minNum + 1, 10)
