@@ -16,6 +16,7 @@
 /config/*
 
 !/config/ftbquests/
+!/config/beyonddimensions-common.toml
 !/config/bocchud/
 !/config/fancymenu/
 !/config/forgematica/
