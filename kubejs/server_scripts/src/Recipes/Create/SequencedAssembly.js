@@ -104,7 +104,7 @@ ServerEvents.recipes(event => {
 	//光学构件
 	create.sequenced_assembly([
 		Item.of("kubejs:optical_mechanism")
-	], "kubejs:crystal_mechanism", [
+	], "kubejs:crystal_core", [
 		create.deploying("kubejs:incomplete_optical_mechanism", ["kubejs:incomplete_optical_mechanism", "create_optical:mirror"]),
 		create.deploying("kubejs:incomplete_optical_mechanism", ["kubejs:incomplete_optical_mechanism", "create_optical:polarizing_filter"]),
 		create.filling("kubejs:incomplete_optical_mechanism", ["kubejs:incomplete_optical_mechanism", Fluid.of("supplementaries:lumisene", 100)])
@@ -132,9 +132,9 @@ ServerEvents.recipes(event => {
 
 	//终焉构件
 
-	//水晶构件
+	//水晶核心
 	create.sequenced_assembly([
-		Item.of("kubejs:crystal_mechanism")
+		Item.of("kubejs:crystal_core")
 	], "spectrum:polished_calcite_slab", [
 		create.deploying("kubejs:incomplete_crystal_mechanism", ["kubejs:incomplete_crystal_mechanism", "minecraft:amethyst_shard"]),
 		create.deploying("kubejs:incomplete_crystal_mechanism", ["kubejs:incomplete_crystal_mechanism", "spectrum:citrine_shard"]),
@@ -144,7 +144,7 @@ ServerEvents.recipes(event => {
 	//缟玛瑙构件
 	create.sequenced_assembly([
 		Item.of("kubejs:onyx_mechanism")
-	], "kubejs:crystal_mechanism", [
+	], "kubejs:crystal_core", [
 		create.deploying("kubejs:incomplete_onyx_mechanism", ["kubejs:incomplete_onyx_mechanism", "spectrum:polished_basalt_slab"]),
 		create.deploying("kubejs:incomplete_onyx_mechanism", ["kubejs:incomplete_onyx_mechanism", "spectrum:onyx_shard"]),
 		create.filling("kubejs:incomplete_onyx_mechanism", ["kubejs:incomplete_onyx_mechanism", Fluid.of("minecraft:lava", 500)]),

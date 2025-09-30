@@ -1,11 +1,11 @@
 ServerEvents.recipes(event => {
 
-    // 水晶构件
+    // 水晶核心
     event.custom({
         "type": "anvilcraft:anvil_processing",
         "anvil_recipe_type": "stamping",
         "icon": {
-            "item": 'kubejs:crystal_mechanism'
+            "item": 'kubejs:crystal_core'
         },
         "outcomes": [
             {
@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
                 ],
                 "result": {
                     "count": 1,
-                    "item": 'kubejs:crystal_mechanism'
+                    "item": 'kubejs:crystal_core'
                 }
             }
         ],

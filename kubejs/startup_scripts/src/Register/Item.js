@@ -8,6 +8,8 @@ StartupEvents.registry("item", event => {
             .texture(`kubejs:item/mechanism/incomplete/${mechanism}`)
     })
 
+    event.create("crystal_core") // 水晶核心
+
     event.create("shimmerstone_gem_shard") // 火花石碎片
     event.create("shimmerstone_gem_lump") // 火花石碎块
 

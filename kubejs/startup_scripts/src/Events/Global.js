@@ -13,14 +13,7 @@ global.MechanismTypes = [
     "sculk",
     "nuclear",
     "endless",
-
-    "crystal",
-    "onyx",
-    "azurite",
-    "glass_crest",
-    "effulgent",
-    "aether",
-
+    
     "copper",
     "logistics",
     "intelligent",

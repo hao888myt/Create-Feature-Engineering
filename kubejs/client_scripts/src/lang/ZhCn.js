@@ -1,5 +1,7 @@
 ClientEvents.lang("zh_cn", (event) => {
 
+    AddItemLang("crystal_core", "水晶核心")
+
     AddItemLang("shimmerstone_gem_shard", "火花石碎片")
     AddItemLang("shimmerstone_gem_lump", "火花石碎块")
 
@@ -54,14 +56,6 @@ ClientEvents.lang("zh_cn", (event) => {
         ["sculk", "幽匿"],
         ["nuclear", "核能"],
         ["endless", "终焉"],
-
-        ["crystal", "水晶"],
-        ["onyx", "缟玛瑙"],
-        ["azurite", "石青"],
-        ["bedrock", "基岩"],
-        ["glass_crest", "琉璃"],
-        ["effulgent", "龙翎"],
-        ["aether", "以太"],
 
         ["copper", "铜"],
         ["logistics", "物流"],

@@ -215,7 +215,7 @@ ServerEvents.recipes(event => {
     machines("kubejs:sturdy_machine", "create:railway_casing", "kubejs:sturdy_mechanism")
     machines("kubejs:magnet_machine", "kubejs:steel_casing", "kubejs:magnet_mechanism")
 
-    machines("kubejs:crystal_machine", "spectrum:polished_calcite", "kubejs:crystal_mechanism")
+    machines("kubejs:crystal_machine", "spectrum:polished_calcite", "kubejs:crystal_core")
     machines("kubejs:onyx_machine", "spectrum:polished_basalt", "kubejs:onyx_mechanism")
 
     machines("kubejs:logistics_machine", "create:cardboard_block", "kubejs:logistics_mechanism")
