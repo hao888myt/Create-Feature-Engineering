@@ -103,7 +103,7 @@ ServerEvents.recipes((event) => {
 
     // 混合线
     let agriculture_machine = [
-        ["create:propeller", "ratatouille:spreader"]
+        ["ratatouille:spreader", "create:propeller"]
     ]
 
     let optical_machine = [
