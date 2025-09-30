@@ -1,4 +1,14 @@
 ServerEvents.highPriorityData(event => {
+    event.addJson("oei:replacements/copper_materials.json", [
+        {
+            "matchItems":
+            [
+                "#forge:nuggets/copper"
+            ],
+            "resultItems": "create:copper_nugget"
+        }
+    ])
+
     event.addJson("oei:replacements/lead_materials.json", [
         {
             "matchItems":
