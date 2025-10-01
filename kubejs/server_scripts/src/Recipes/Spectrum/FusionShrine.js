@@ -233,12 +233,8 @@ ServerEvents.recipes(event =>{
 
     let { spectrum } = event.recipes
     //缟玛瑙粉末催化
-    spectrum.fusion_shrine(200, 2.0, Fluid.of("minecraft:lava"), ['spectrum:onyx_powder', 'spectrum:citrine_shard', 'spectrum:topaz_shard', 'minecraft:amethyst_shard'], Item.of('spectrum:onyx_shard', 3))
+    spectrum.fusion_shrine(200, 0.0, Fluid.of("minecraft:lava"), ['spectrum:onyx_powder', 'spectrum:citrine_shard', 'spectrum:topaz_shard', 'minecraft:amethyst_shard'], Item.of('spectrum:onyx_shard', 3))
       .required_advancement('spectrum:create_onyx_shard')
-
-    //缟玛瑙构件
-    spectrum.fusion_shrine(100, 0, Fluid.of("minecraft:lava"), [Item.of('kubejs:crystal_core'), Item.of('spectrum:onyx_shard'), Item.of("spectrum:polished_basalt_slab")], 'kubejs:onyx_mechanism')
-      .required_advancement('spectrum:unlocks/blocks/fusion_shrine')
     
     
 })
