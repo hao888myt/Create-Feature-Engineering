@@ -1,0 +1,122 @@
+Name:Create：Feature Engineering
+Version:alpha-0.0.9
+
+# 是否打包正式版 PCL，以便没有启动器的玩家安装整合包。
+IncludeLauncher:False
+
+# 是否打包 PCL 个性化内容，例如功能隐藏设置、主页、背景音乐和图片等。
+IncludeLauncherCustom:True
+
+# 是否将 Mod、资源包、光影包的文件直接放入整合包中，这样在导入时就无需联网下载它们。
+# 建议仅在无法稳定连接 CurseForge 或 Modrinth 时才考虑启用。
+# 二次分发可能违反使用协议，请尽量不要公开发布包含资源文件的整合包！
+DontCheckHostedAssets:False
+
+# 如果你想要打包上传到 Modrinth，启用此项会生成完全符合 Modrinth 要求的整合包文件。
+# 由于 Modrinth 要求，只能从 CurseForge 下载的资源将无法联网下载，会被直接放入整合包中。
+# 此选项与 IncludeLauncher、IncludeLauncherCustom、DontCheckHostedAssets 冲突。
+ModrinthUploadMode:True
+
+# 导出的文件的存放位置。
+# 若设置了此项，在导出时会直接将文件放到此路径，不会弹窗要求选择。
+# 若 IncludeLauncher 为 True，应以 .zip 结尾；若为 False，应以 .mrpack 结尾。
+PackPath:
+
+==============================================================
+
+# 修改下方的规则以控制需要导出的内容。
+# 以 ! 开头以反选。可以使用 *、?、[] 通配符。靠后的行覆盖靠前的。
+
+# 游戏本体设置
+options.txt
+configureddefaults/
+
+# Mod
+mods/
+!mods/*.disabled
+!mods/*.old
+!mods/.connector/
+coremods/
+lib/
+
+# 已禁用的 Mod
+mods/*.disabled
+mods/*.old
+
+# 整合包重要数据
+addons/
+multiblocked/
+modpack-update-checker/
+global_packs/
+global_resource_packs/
+global_data_packs/
+optional_data_packs/
+maps/
+icon.png
+mods-resourcepacks/
+matmos/
+resource_assorts/
+resource_assorts.json
+patchouli_books/
+datapacks/
+kubejs*/
+!kubejs*/probe/
+!kubejs*/exported/
+!kubejs*/jsconfig.json
+!kubejs*/README.txt
+openloader/
+worldshape/
+resources/
+scripts/
+structures/
+fontfiles/
+oresources/
+packmenu/
+craftpresence/
+pointblanks/
+template*/
+!template*/playerdata/
+!template*/stats/
+hotai/
+Idlib/
+
+# Mod 设置
+config/
+!config/jei/world/
+!config/worldedit/
+config/worldedit/worldedit.properties
+!config/spark/
+config/spark/config.json
+defaultconfigs/
+journeymap/config/
+journeymap/server/
+TrashSlotSaveState.json
+customfov.txt
+gg.essential.mod/
+essential/
+!essential/*/
+!essential/*.jar*
+!essential/screenshot-checksum-caches.json
+!essential/microsoft_accounts.json
+paragliderSettings.nbt
+local/client_config.json
+local/ftbl.json
+local/client/sidebar_buttons.json
+local/client/ftbutilities.cfg
+local/client/ftblib.cfg
+local/client/xencraft.cfg
+liteloader.properties
+default_reference.xml
+CustomSkinLoader/CustomSkinLoader.json
+
+# 排除的文件
+!*.log
+!*.dat_old
+!*.BakaCoreInfo
+!hmclversion.cfg
+!log4j2.xml
+
+==============================================================
+
+# 如果想将额外的文件自动放到压缩包根目录中，可以将它们的路径写在下方。
+# 必须是完整路径。每行中，若以 \ 结尾则代表是文件夹，不以 \ 结尾则代表是文件。
