@@ -1,4 +1,5 @@
 StartupEvents.registry("fluid", event => {
+    // 灵质
     event.create("ectoplasm")
       .thinTexture(0x85e6ff)
       .bucketColor(0x85e6ff)
@@ -12,4 +13,9 @@ StartupEvents.registry("fluid", event => {
     event.create("molten_scarlet_neodymium")
       .thickTexture(0xd90f1f)
       .bucketColor(0xd90f1f)
+    
+    // 液态魔源
+    event.create("liquid_source")
+      .thinTexture(0x8a00ff)
+      .bucketColor(0x8a00ff)
 })
