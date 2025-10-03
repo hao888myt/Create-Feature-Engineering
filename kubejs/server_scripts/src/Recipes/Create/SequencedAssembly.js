@@ -36,7 +36,7 @@ ServerEvents.recipes(event => {
 	create.sequenced_assembly([
 		Item.of("create:precision_mechanism")
 	], "kubejs:andesite_mechanism", [
-		create.filling("create:incomplete_precision_mechanism", ["create:incomplete_precision_mechanism", Fluid.of("createdieselgenerators:plant_oil", 250)]),
+		create.filling("create:incomplete_precision_mechanism", ["create:incomplete_precision_mechanism", Fluid.of("createdieselgenerators:biodiesel", 250)]),
 		create.deploying("create:incomplete_precision_mechanism", ["create:incomplete_precision_mechanism", "create:electron_tube"]),
 		create.deploying("create:incomplete_precision_mechanism", ["create:incomplete_precision_mechanism", "create:electron_tube"]),
 		create.filling("create:incomplete_precision_mechanism", ["create:incomplete_precision_mechanism", Fluid.of("createmetallurgy:molten_gold", 90)])
