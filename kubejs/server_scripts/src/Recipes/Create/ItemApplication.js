@@ -30,6 +30,7 @@ ServerEvents.recipes((event) => {
 
     let brass_machine = [
         ["create:mechanical_arm", "#forge:plates/brass"],
+        ["fluid:pipette", "kubejs:copper_mechanism"],
     ]
 
     let sturdy_machine = [
@@ -67,6 +68,10 @@ ServerEvents.recipes((event) => {
         event.remove({output: items[0]})
         create.item_application(items[0], ["kubejs:brass_machine", items[1]])
     })
+    event.remove("fluid:smart_fluid_interface")
+    create.item_application("fluid:smart_fluid_interface", ["fluid:fluid_interface", "kubejs:copper_mechanism"])
+    event.remove("fluid:centrifugal_pump")
+    create.item_application("fluid:centrifugal_pump", ["create:mechanical_pump", "create:propeller"])
 
 
     sturdy_machine.forEach((items) => {
