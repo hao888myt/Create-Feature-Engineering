@@ -11,5 +11,11 @@ ServerEvents.recipes(event => {
     //植本质压骨粉
     create.compacting(Item.of('minecraft:bone_meal', 16), 'spectrum:vegetal')
 
-    //刚玉簇压刚玉
+    // 删除种子油配方，修改植物油配方
+    event.remove("createaddition:compacting/seed_oil")
+    event.remove("createdieselgenerators:compacting/plant_oil")
+    create.compacting(Fluid.of("createdieselgenerators:plant_oil", 100), Item.of("minecraft:wheat_seeds", 4)).heated()
+
+    // 删除生物乙醇配方
+    event.remove("createaddition:mixing/bioethanol")
 })
