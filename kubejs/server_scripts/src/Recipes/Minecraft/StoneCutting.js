@@ -163,7 +163,8 @@ ServerEvents.recipes(event => {
         Item.of("functionalstorage:fluid_1", 4),
         Item.of("functionalstorage:fluid_2", 4),
         Item.of("functionalstorage:fluid_4", 4),
-
+        Item.of("fluid:copper_tap", 4),
+        Item.of("fluid:fluid_interface", 4)
     ]
 
     let copper_remove = [
