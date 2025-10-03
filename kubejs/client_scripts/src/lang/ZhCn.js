@@ -46,7 +46,31 @@ ClientEvents.lang("zh_cn", (event) => {
 
     AddFluidLang("liquid_source", "液态魔源")
 
-
+    let numbers =[
+        ["zero", "0"],
+        ["unstackable_zero", "0（不可堆叠）"],
+        ["one", "1"],
+        ["unstackable_one", "1（不可堆叠）"],
+        ["two", "2"],
+        ["unstackable_two", "2（不可堆叠）"],
+        ["three", "3"],
+        ["unstackable_three", "3（不可堆叠）"],
+        ["four", "4"],
+        ["unstackable_four", "4（不可堆叠）"],
+        ["five", "5"],
+        ["unstackable_five", "5（不可堆叠）"],
+        ["six", "6"],
+        ["unstackable_six", "6（不可堆叠）"],
+        ["seven", "7"],
+        ["unstackable_seven", "7（不可堆叠）"],
+        ["eight", "8"],
+        ["unstackable_eight", "8（不可堆叠）"],
+        ["nine", "9"],
+        ["unstackable_nine", "9（不可堆叠）"]
+    ]
+    numbers.forEach(number => {
+        AddItemLang(number[0], number[1])
+    })
 
 
     let MechanismName = [
