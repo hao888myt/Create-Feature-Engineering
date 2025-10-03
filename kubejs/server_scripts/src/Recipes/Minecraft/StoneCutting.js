@@ -23,8 +23,7 @@ ServerEvents.recipes(event => {
         "create:crafting/kinetics/portable_storage_interface",
         "create:crafting/kinetics/chain_conveyor",
         "create:crafting/logistics/powered_latch",
-        "create:crafting/logistics/powered_toggle_latch",
-        "quark:automation/crafting/crafter"
+        "create:crafting/logistics/powered_toggle_latch"
     ]
 
     let brass_machine = [
@@ -67,6 +66,7 @@ ServerEvents.recipes(event => {
         Item.of("createdieselgenerators:pumpjack_crank"),
         Item.of("createdieselgenerators:pumpjack_head"),
         Item.of("createdieselgenerators:distillation_controller", 2),
+        Item.of("createdieselgenerators:bulk_fermenter", 3),
         Item.of("anvilcraft:impact_pile", 4),
         Item.of("create:track_observer", 8),
         Item.of("create:track_station", 8),
@@ -83,6 +83,7 @@ ServerEvents.recipes(event => {
         "createdieselgenerators:crafting/pumpjack_bearing",
         "createdieselgenerators:mechanical_crafting/pumpjack_crank",
         "createdieselgenerators:crafting/pumpjack_head",
+        "createdieselgenerators:crafting/bulk_fermenter",
         "anvilcraft:impact_pile",
         "railways:crafting/portable_fuel_interface"
     ]
