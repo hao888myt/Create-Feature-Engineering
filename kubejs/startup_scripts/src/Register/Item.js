@@ -9,6 +9,7 @@ StartupEvents.registry("item", event => {
     })
 
     event.create("crystal_core") // 水晶核心
+    event.create("incomplete_crystal_core") // 未完成的水晶核心
 
     event.create("shimmerstone_gem_shard") // 火花石碎片
     event.create("shimmerstone_gem_lump") // 火花石碎块
