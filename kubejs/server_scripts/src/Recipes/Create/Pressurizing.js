@@ -6,5 +6,5 @@ ServerEvents.recipes(event => {
 
     // 润滑油
     vintageimprovements.pressurizing(Fluid.of("kubejs:lubricant", 50), 
-    Fluid.of("createdieselgenerators:diesel", 100)).heated()
+    Fluid.of("kubejs:heavy_oil", 100)).heated()
 })
