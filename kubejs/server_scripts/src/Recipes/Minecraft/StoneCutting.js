@@ -1,4 +1,20 @@
 ServerEvents.recipes(event => {
+    // 切数字
+    let numbers = [
+        Item.of("kubejs:zero"),
+        Item.of("kubejs:one"),
+        Item.of("kubejs:two"),
+        Item.of("kubejs:three"),
+        Item.of("kubejs:four"),
+        Item.of("kubejs:five"),
+        Item.of("kubejs:six"),
+        Item.of("kubejs:seven"),
+        Item.of("kubejs:eight"),
+        Item.of("kubejs:nine")
+    ]
+    numbers.forEach((item) => {
+        event.stonecutting(item,"#kubejs:numbers")
+    })
 
     // 科技主线
     let andesite_machine = [
