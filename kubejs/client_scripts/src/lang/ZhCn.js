@@ -17,6 +17,8 @@ ClientEvents.lang("zh_cn", (event) => {
 
     AddItemLang("rubber", "橡胶")
     AddItemLang("incomplete_circuit_board", "未完成的电路板")
+    AddItemLang("incomplete_magnetoelectric_core", "未完成的磁电核心")
+    AddItemLang("silicon_plate", "单晶硅板")
     AddItemLang("royal_prism", "皇家棱镜")
     AddItemLang("royal_optical_device", "皇家光学设备")
     AddBlockLang("steel_casing", "钢机壳")
