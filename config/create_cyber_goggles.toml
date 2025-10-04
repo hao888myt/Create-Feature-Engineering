@@ -1,0 +1,41 @@
+[goggles]
+enhancedInfo = true
+hideStaticKineticInfo = false
+betterStoreInfo = true
+renderExtraItems = true
+enableKineticEffect = true
+preciseNumber = true
+disableScreenGoggles = true
+canRenderOnValueBox = false
+betterLine = true
+[gameMode]
+enableGoggle = true
+enableInSurvival = true
+enableInCreative = true
+enableInSpectator = true
+enableInAdventure = true
+[outlineRenderer]
+renderAnalogBox = true
+delayRenderDuration = 60
+windPushColor = 14532966
+windPullColor = 8375776
+rainbowDebug = false
+[chainConveyor]
+alwaysAllowRiding = false
+preventFalling = false
+enhancedConnection = true
+cardBoardedYourself = false
+[wrench]
+leftClickFastDismantle = false
+alwaysAllowRotating = false
+removeCooldown = true
+[misc]
+infEditBoxLength = false
+removeCardboardOverlay = true
+removeNetheriteFirstPerson = false
+allowDivingBoot = true
+fixSchematicName = true
+rightClickPenetrate = false
+forcedBackend = false
+nbtFix = false
+showScrapContent = true
