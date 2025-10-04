@@ -48,7 +48,8 @@ ClientEvents.lang("zh_cn", (event) => {
 
     AddFluidLang("light_oil", "轻油")
     AddFluidLang("heavy_oil", "重油")
-    AddFluidLang("liquefied_petroleum_gas", "液化石油气")
+    AddFluidLang("petroleum_gas", "液化石油气")
+    AddFluidLang("lubricant", "润滑油")
 
     let numbers =[
         ["zero", "0"],
