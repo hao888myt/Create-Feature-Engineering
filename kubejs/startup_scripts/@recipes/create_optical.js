@@ -1,0 +1,5 @@
+new Schema("create_optical:focusing")
+    .simpleKey("ingredients", "inputItemArray")
+    .simpleKey("processingTime", "intNumber")
+    .simpleKey("required_beam_type", "intNumber")
+    .simpleKey("results", "outputItemArray")
