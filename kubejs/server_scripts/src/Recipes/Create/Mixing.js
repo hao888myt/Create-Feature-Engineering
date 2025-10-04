@@ -1,4 +1,4 @@
-ServerEvents.recipes(event=>{
+ServerEvents.recipes(event => {
     const create = event.recipes.create
 
     // 纸浆
@@ -12,14 +12,17 @@ ServerEvents.recipes(event=>{
 
     // 矿石饲料
     create.mixing([
-        Item.of("kubejs:ore_feed", 16), 
-        Item.of("kubejs:ore_feed", 8).withChance(0.5)], 
+        Item.of("kubejs:ore_feed", 16),
+        Item.of("kubejs:ore_feed", 8).withChance(0.5)],
         [
-            Item.of("minecraft:coal", 4), 
-            Item.of("spelunkery:rough_cinnabar", 2), 
-            Item.of("create:crushed_raw_iron", 2), 
-            Item.of("spelunkery:rough_lazurite", 10), 
-            Item.of("create:crushed_raw_copper", 2), 
+            Item.of("minecraft:coal", 4),
+            Item.of("spelunkery:rough_cinnabar", 2),
+            Item.of("create:crushed_raw_iron", 2),
+            Item.of("spelunkery:rough_lazurite", 10),
+            Item.of("create:crushed_raw_copper", 2),
             Item.of("minecraft:glow_berries", 4)
         ])
+
+    // 液态数字
+    create.mixing(Fluid.of("kubejs:liquid_number", 1000), ["8x #kubejs:number", Fluid.of("minecraft:water", 1000)])
 })
