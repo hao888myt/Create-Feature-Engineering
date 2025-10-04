@@ -1,4 +1,9 @@
 StartupEvents.registry("fluid", event => {
+  // 液态数字
+  event.create("liquid_number")
+    .thinTexture(0xffffff)
+    .bucketColor(0xffffff)
+
   // 灵质
   event.create("ectoplasm")
     .thinTexture(0x85e6ff)

@@ -39,6 +39,8 @@ ClientEvents.lang("zh_cn", (event) => {
 
     AddBlockLang("toretoise_fossil", "乌龟化石")
 
+    AddFluidLang("liquid_number", "液态数字")
+
     AddFluidLang("ectoplasm", "灵质")
 
     AddFluidLang("molten_azure_neodymium", "熔融青钕合金")
@@ -48,7 +50,7 @@ ClientEvents.lang("zh_cn", (event) => {
 
     AddFluidLang("light_oil", "轻油")
     AddFluidLang("heavy_oil", "重油")
-    AddFluidLang("petroleum_gas", "液化石油气")
+    AddFluidLang("petroleum_gas", "石油气")
     AddFluidLang("lubricant", "润滑油")
 
     let numbers =[
