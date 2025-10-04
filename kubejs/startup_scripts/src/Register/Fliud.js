@@ -21,16 +21,16 @@ StartupEvents.registry("fluid", event => {
 
   // 轻油
   event.create("light_oil")
-    .thinTexture("#f9e000ff")
-    .bucketColor("#f9e000ff")
+    .thinTexture("0xf9e000")
+    .bucketColor("0xf9e000")
 
   // 重油
   event.create("heavy_oil")
-    .thinTexture("#e59500ff")
-    .bucketColor("#e59500ff")
+    .thinTexture("0xe59500")
+    .bucketColor("0xe59500")
 
   // 液化石油气
   event.create("liquefied_petroleum_gas")
-    .thinTexture("#171515ff")
-    .bucketColor("#171515ff")
+    .thinTexture("0x171515")
+    .bucketColor("0x171515")
 })
