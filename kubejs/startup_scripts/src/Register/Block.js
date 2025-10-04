@@ -22,7 +22,7 @@ StartupEvents.registry("block", event => {
     event.create("base_block")
     event.create('adulterated_base_block')
 
-    event.create('paltaeria_ore_catalyst').hardness(5.0).stoneSoundType()
+    event.create('paltaeria_ore_catalyst').hardness(5.0).stoneSoundType() // 苍绿催生体
 
     event.create("toretoise_fossil").hardness(3.0).stoneSoundType() // 乌龟化石
 
@@ -35,7 +35,7 @@ StartupEvents.registry("block", event => {
 
     // event.createCustom('an_item:ranshao_qiti_gas', () =>
     // new $Gas($GasBuilder.builder()
-    //   .tint(Color.of('#787878ff').getRgbJS())
+    //   .tint(Color.of('#171515ff').getRgbJS())
     //   .with(new $Fuel(() => 1, () => //1表示燃烧时间1t
     //     $FloatingLong.create(200)) //200代表能量密度80FE/mB
     //   )))
