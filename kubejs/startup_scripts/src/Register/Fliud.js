@@ -33,8 +33,9 @@ StartupEvents.registry("fluid", event => {
   event.create("petroleum_gas")
     .thinTexture(0x242121)
     .bucketColor(0x242121)
+    .noBlock()
     .gaseous()
-  
+    
   // 润滑油
   event.create("lubricant")
     .thinTexture(0x1ec900)
