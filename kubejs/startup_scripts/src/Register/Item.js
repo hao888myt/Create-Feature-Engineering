@@ -22,6 +22,8 @@ StartupEvents.registry("item", event => {
 
     event.create("incomplete_circuit_board") // 未完成的电路板
 
+    event.create("incomplete_magnetoelectric_core") // 未完成的磁电核心
+
     event.create("litematica_tool") // 投影工具
 
     event.create("world_edit_tool") // 创世神工具
