@@ -1,5 +1,5 @@
 public void RecipesSchema(RecipeComponentFactoryRegistryEvent event) {
-event.register("bool", BooleanComponent.BOOLEAN);
+	event.register("bool", BooleanComponent.BOOLEAN);
 
 	event.register("intNumber", NumberComponent.INT);
 	event.register("longNumber", NumberComponent.LONG);
