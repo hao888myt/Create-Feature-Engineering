@@ -5,8 +5,8 @@ ServerEvents.recipes(event => {
     createaddition.charging("anvilcraft:capacitor_empty", "anvilcraft:capacitor", 64000, 400)
 
     // 磁铁锭充电
-    createaddition.charging("minecraft:iron_ingot", "magnet_ingot", 16000, 200)
+    createaddition.charging("minecraft:iron_ingot", "anvilcraft:magnet_ingot", 16000, 200)
 
     // 磁铁块充电
-    createaddition.charging("minecraft:iron_block", "magnet_block", 144000, 400)
+    createaddition.charging("minecraft:iron_block", "anvilcraft:magnet_block", 144000, 400)
 })
