@@ -2,10 +2,18 @@ ServerEvents.highPriorityData(event => {
     event.addJson("oei:replacements/copper_materials.json", [
         {
             "matchItems":
-            [
-                "#forge:nuggets/copper"
-            ],
+                [
+                    "#forge:nuggets/copper"
+                ],
             "resultItems": "create:copper_nugget"
+        },
+        {
+            "matchItems":
+                [
+                    "anvilcraft:brass_block",
+                    "create:brass_block"
+                ],
+            "resultItems": "create:brass_block"
         }
     ])
 
@@ -53,8 +61,8 @@ ServerEvents.highPriorityData(event => {
         {
             "matchItems":
                 [
-                    "createfisheryindustry:zinc_sheet", 
-                    "createaddition:zinc_sheet", 
+                    "createfisheryindustry:zinc_sheet",
+                    "createaddition:zinc_sheet",
                     "vintageimprovements:zinc_sheet"
                 ],
             "resultItems": "createfisheryindustry:zinc_sheet"
@@ -76,7 +84,7 @@ ServerEvents.highPriorityData(event => {
         {
             "matchItems":
                 [
-                    "create:zinc_block", 
+                    "create:zinc_block",
                     "anvilcraft:zinc_block"
                 ],
             "resultItems": "create:zinc_block"
@@ -91,7 +99,7 @@ ServerEvents.highPriorityData(event => {
         {
             "matchItems":
                 [
-                    "anvilcraft:raw_zinc_block", 
+                    "anvilcraft:raw_zinc_block",
                     "create:raw_zinc_block"
                 ],
             "resultItems": "create:raw_zinc_block"
@@ -99,7 +107,7 @@ ServerEvents.highPriorityData(event => {
         {
             "matchItems":
                 [
-                    "anvilcraft:deepslate_zinc_ore", 
+                    "anvilcraft:deepslate_zinc_ore",
                     "create:deepslate_zinc_ore"
                 ],
             "resultItems": "create:deepslate_zinc_ore"
