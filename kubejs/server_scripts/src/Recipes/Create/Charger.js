@@ -1,43 +1,12 @@
 ServerEvents.recipes(event => {
-    event.custom({
-        "type":"createaddition:charging",
-        "input": {
-            "item": "minecraft:iron_ingot",
-            "count": 1
-        },
-        "result": {
-            "item": "anvilcraft:magnet_ingot",
-            "count": 1
-        },
-        "energy": 16000,
-        "maxChargeRate": 200,
-    })
+    const createaddition = event.recipes.createaddition
 
-    event.custom({
-        "type":"createaddition:charging",
-        "input": {
-            "item": "anvilcraft:capacitor_empty",
-            "count": 1
-        },
-        "result": {
-            "item": "anvilcraft:capacitor",
-            "count": 1
-        },
-        "energy": 64000,
-        "maxChargeRate": 400,
-    })
+    // 电容器充电
+    createaddition.charging("anvilcraft:capacitor_empty", "anvilcraft:capacitor", 64000, 400)
 
-    event.custom({
-        "type":"createaddition:charging",
-        "input": {
-            "item": "minecraft:iron_block",
-            "count": 1
-        },
-        "result": {
-            "item": "anvilcraft:magnet_block",
-            "count": 1
-        },
-        "energy": 144000,
-        "maxChargeRate": 400,
-    })
+    // 磁铁锭充电
+    createaddition.charging("minecraft:iron_ingot", "magnet_ingot", 16000, 200)
+
+    // 磁铁块充电
+    createaddition.charging("minecraft:iron_block", "magnet_block", 144000, 400)
 })
