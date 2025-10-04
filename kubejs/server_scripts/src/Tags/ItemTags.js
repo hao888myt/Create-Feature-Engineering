@@ -30,6 +30,38 @@ ServerEvents.tags('item', event => {
         event.add("kubejs:fluid_tanks", tank)
     })
 
+    let numbers = [
+        "kubejs:zero",
+        "kubejs:one",
+        "kubejs:two",
+        "kubejs:three",
+        "kubejs:four",
+        "kubejs:five",
+        "kubejs:six",
+        "kubejs:seven",
+        "kubejs:eight",
+        "kubejs:nine"
+    ]
+    numbers.forEach(number => {
+        event.add("kubejs:numbers", number)
+    })
+
+    let unstackable_numbers = [
+        "kubejs:unstackable_zero",
+        "kubejs:unstackable_one",
+        "kubejs:unstackable_two",
+        "kubejs:unstackable_three",
+        "kubejs:unstackable_four",
+        "kubejs:unstackable_five",
+        "kubejs:unstackable_six",
+        "kubejs:unstackable_seven",
+        "kubejs:unstackable_eight",
+        "kubejs:unstackable_nine"
+    ]
+    unstackable_numbers.forEach(unstackable_number => {
+        event.add("kubejs:unstackable_numbers", unstackable_number)
+    })
+
     /**
     * 
     * @param {Internal.TagEventJS} event 
