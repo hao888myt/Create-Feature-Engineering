@@ -19,11 +19,6 @@ StartupEvents.registry("fluid", event => {
     .thickTexture(0xd90f1f)
     .bucketColor(0xd90f1f)
 
-  // 液态魔源
-  event.create("liquid_source")
-    .thinTexture(0x8a00ff)
-    .bucketColor(0x8a00ff)
-
   // 轻油
   event.create("light_oil")
     .thinTexture(0xf9e000)

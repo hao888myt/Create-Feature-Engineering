@@ -46,8 +46,6 @@ ClientEvents.lang("zh_cn", (event) => {
     AddFluidLang("molten_azure_neodymium", "熔融青钕合金")
     AddFluidLang("molten_scarlet_neodymium", "熔融赤钕合金")
 
-    AddFluidLang("liquid_source", "液态魔源")
-
     AddFluidLang("light_oil", "轻油")
     AddFluidLang("heavy_oil", "重油")
     AddFluidLang("petroleum_gas", "石油气")
