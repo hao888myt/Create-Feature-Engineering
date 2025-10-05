@@ -197,6 +197,16 @@ ServerEvents.highPriorityData(event => {
         }
     ])
 
+    event.addJson("oei:replacements/flour.json", [
+        {
+            "matchItems":
+                [
+                    "#forge:flour/wheat"
+                ],
+            "resultItems": "create:wheat_flour"
+        }
+    ])
+
     event.addJson("oei:replacements/belt.json", [
         {
             "matchItems":
