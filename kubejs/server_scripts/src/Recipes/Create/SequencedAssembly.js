@@ -8,8 +8,8 @@ ServerEvents.recipes(event => {
 		Item.of("create:sturdy_sheet", 4)
 	], "spectrum:neolith", [
 		create.filling("create:unprocessed_obsidian_sheet", ["create:unprocessed_obsidian_sheet", Fluid.of("createmetallurgy:molten_steel", 90)]),
-		create.cutting("create:unprocessed_obsidian_sheet", "create:unprocessed_obsidian_sheet"),
-		create.cutting("create:unprocessed_obsidian_sheet", "create:unprocessed_obsidian_sheet")
+		create.pressing("create:unprocessed_obsidian_sheet", "create:unprocessed_obsidian_sheet"),
+		create.pressing("create:unprocessed_obsidian_sheet", "create:unprocessed_obsidian_sheet")
 	]).transitionalItem("create:unprocessed_obsidian_sheet").loops(1)
 
 	create.sequenced_assembly([
@@ -61,6 +61,16 @@ ServerEvents.recipes(event => {
 		create.deploying("kubejs:incomplete_circuit_board", ["kubejs:incomplete_circuit_board", "#forge:wires/copper"]),
 		create.deploying("kubejs:incomplete_circuit_board", ["kubejs:incomplete_circuit_board", "#forge:wires/copper"])
 	]).transitionalItem("kubejs:incomplete_circuit_board").loops(2)
+
+	// 磁电核心
+	event.remove({output: "anvilcraft:magnetoelectric_core"})
+	create.sequenced_assembly([
+		Item.of("anvilcraft:magnetoelectric_core")
+	], "anvilcraft:magnet_block", [
+		create.deploying("kubejs:incomplete_magnetoelectric_core", ["kubejs:incomplete_magnetoelectric_core", "kubejs:silicon_plate"]),
+		create.filling("kubejs:incomplete_magnetoelectric_core", ["kubejs:incomplete_magnetoelectric_core", Fluid.of("kubejs:lubricant", 100)]),
+		create.deploying("kubejs:incomplete_magnetoelectric_core", ["kubejs:incomplete_magnetoelectric_core", "#forge:wires/copper"]),
+	]).transitionalItem("kubejs:incomplete_magnetoelectric_core").loops(3)
 
 	// 电磁构件
 	create.sequenced_assembly([
