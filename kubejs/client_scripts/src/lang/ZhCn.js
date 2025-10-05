@@ -11,13 +11,13 @@ ClientEvents.lang("zh_cn", (event) => {
     AddItemLang("gravity_catalyst", "重力催化剂")
 
     AddItemLang("adulterated_compound_base", "掺杂化合物基质")
-    AddItemLang("incomplete_chromatic_compound", "未完成的异彩化合物")
+    AddItemLang("incomplete_chromatic_compound", "异彩化合物（半成品）")
     AddItemLang("chromatic_compound_shard", "异彩化合物碎片")
     AddItemLang("unstable_chromatic_compound", "不稳定异彩化合物")
 
     AddItemLang("rubber", "橡胶")
-    AddItemLang("incomplete_circuit_board", "未完成的电路板")
-    AddItemLang("incomplete_magnetoelectric_core", "未完成的磁电核心")
+    AddItemLang("incomplete_circuit_board", "电路板（半成品）")
+    AddItemLang("incomplete_magnetoelectric_core", "磁电核心（半成品）")
     AddItemLang("silicon_plate", "单晶硅板")
     AddItemLang("royal_prism", "皇家棱镜")
     AddItemLang("royal_optical_device", "皇家光学设备")
