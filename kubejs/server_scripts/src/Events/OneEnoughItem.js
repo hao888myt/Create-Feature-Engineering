@@ -399,4 +399,15 @@ ServerEvents.highPriorityData(event => {
             "resultItems": "copycats:copycat_catwalk"
         }
     ])
+
+    event.addJson("oei:replacements/capacitor.json", [
+        {
+            "matchItems":
+                [
+                    "createaddition:capacitor",
+                    "anvilcraft:capacitor_empty"
+                ],
+            "resultItems": "anvilcraft:capacitor_empty",
+        }
+    ])
 })
