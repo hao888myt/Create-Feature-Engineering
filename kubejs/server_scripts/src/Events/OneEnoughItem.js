@@ -1,4 +1,24 @@
 ServerEvents.highPriorityData(event => {
+    event.addJson("oei:replacements/iron_materials.json", [
+        {
+            "matchItems":
+                [
+                    "#forge:plates/iron"
+                ],
+            "resultItems": "minecraft:heavy_weighted_pressure_plate"
+        }
+    ])
+
+    event.addJson("oei:replacements/gold_materials.json", [
+        {
+            "matchItems":
+                [
+                    "#forge:plates/gold"
+                ],
+            "resultItems": "minecraft:light_weighted_pressure_plate"
+        }
+    ])
+
     event.addJson("oei:replacements/copper_materials.json", [
         {
             "matchItems":
@@ -10,10 +30,10 @@ ServerEvents.highPriorityData(event => {
         {
             "matchItems":
                 [
-                    "anvilcraft:brass_block",
-                    "create:brass_block"
+                    "create:copper_sheet",
+                    "anvilcraft:copper_pressure_plate"
                 ],
-            "resultItems": "create:brass_block"
+            "resultItems": "anvilcraft:copper_pressure_plate"
         }
     ])
 
@@ -54,8 +74,35 @@ ServerEvents.highPriorityData(event => {
                     "anvilcraft:lead_block"
                 ],
             "resultItems": "anvilcraft:lead_block"
+        },
+        {
+            "matchItems":
+                [
+                    "#forge:plates/lead"
+                ],
+            "resultItems": "anvilcraft:lead_pressure_plate"
         }
     ]);
+
+    event.addJson("oei:replacements/silver_materials.json", [
+        {
+            "matchItems":
+                [
+                    "#forge:plates/silver"
+                ],
+            "resultItems": "anvilcraft:silver_pressure_plate"
+        }
+    ])
+
+    event.addJson("oei:replacements/tin_materials.json", [
+        {
+            "matchItems":
+                [
+                    "#forge:plates/tin"
+                ],
+            "resultItems": "anvilcraft:tin_pressure_plate"
+        }
+    ])
 
     event.addJson("oei:replacements/zinc_materials.json", [
         {
@@ -63,9 +110,10 @@ ServerEvents.highPriorityData(event => {
                 [
                     "createfisheryindustry:zinc_sheet",
                     "createaddition:zinc_sheet",
-                    "vintageimprovements:zinc_sheet"
+                    "vintageimprovements:zinc_sheet",
+                    "anvilcraft:zinc_pressure_plate"
                 ],
-            "resultItems": "createfisheryindustry:zinc_sheet"
+            "resultItems": "anvilcraft:zinc_pressure_plate"
         },
         {
             "matchItems":
@@ -114,6 +162,16 @@ ServerEvents.highPriorityData(event => {
         }
     ])
 
+    event.addJson("oei:replacements/uranium_materials.json", [
+        {
+            "matchItems":
+                [
+                    "#forge:plates/uranium"
+                ],
+            "resultItems": "anvilcraft:uranium_pressure_plate"
+        }
+    ])
+
     event.addJson("oei:replacements/steel_materials.json", [
         {
             "matchItems":
@@ -135,7 +193,8 @@ ServerEvents.highPriorityData(event => {
         {
             "matchItems":
                 [
-                    "#c:brass_blocks"
+                    "anvilcraft:brass_block",
+                    "create:brass_block"
                 ],
             "resultItems": "create:brass_block"
         },
@@ -145,7 +204,24 @@ ServerEvents.highPriorityData(event => {
                     "#forge:ingots/brass"
                 ],
             "resultItems": "create:brass_ingot"
+        },
+        {
+            "matchItems":
+                [
+                    "#forge:plates/brass"
+                ],
+            "resultItems": "anvilcraft:brass_pressure_plate"
         }
+    ])
+
+    event.addJson("oei:replacements/bronze_materials.json", [
+        {
+            "matchItems":
+                [
+                    "#forge:plates/bronze"
+                ],
+            "resultItems": "anvilcraft:bronze_pressure_plate"
+        },
     ])
 
     event.addJson("oei:replacements/tungsten_materials.json", [
@@ -184,6 +260,13 @@ ServerEvents.highPriorityData(event => {
                     "createmetallurgy:raw_wolframite_block",
                 ],
             "resultItems": "anvilcraft:raw_tungsten_block"
+        },
+        {
+            "matchItems":
+                [
+                    "#forge:plates/tungsten"
+                ],
+            "resultItems": "anvilcraft:tungsten_pressure_plate"
         }
     ])
 
