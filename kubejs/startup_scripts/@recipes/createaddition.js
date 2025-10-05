@@ -3,3 +3,8 @@ new Schema("createaddition:charging")
     .simpleKey("result", "outputItem")
     .simpleKey("energy", "intNumber", 4000)
     .simpleKey("maxChargeRate", "intNumber", 200)
+
+new Schema("createaddition:liquid_burning")
+    .simpleKey("input", "inputFluid")
+    .simpleKey("burnTime", "intNumber")
+    .simpleKey("superheated", "bool", false)
