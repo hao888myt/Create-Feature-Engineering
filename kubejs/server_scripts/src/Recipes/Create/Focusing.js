@@ -9,5 +9,5 @@ ServerEvents.recipes(event => {
     // 4 - 不需要光线
 
     // 单晶硅板
-    create_optical.focusing("minecraft:chest", 20, 2, "kubejs:silicon_plate")
+    create_optical.focusing("#spectrum:gemstone_shards", 20, 2, "kubejs:silicon_plate")
 })
