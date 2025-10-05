@@ -21,11 +21,24 @@ StartupEvents.registry("item", event => {
 
     event.create("rubber") // 橡胶
 
-    event.create("incomplete_circuit_board") // 未完成的电路板
+    event.create("incomplete_foundry_mixer") // 熔铸搅拌器（未完成）
+    event.create("incomplete_distillation_controller") // 分馏塔控制器（未完成）
+    event.create("incomplete_bulk_fermenter") // 批量发酵器（未完成）
+    event.create("incomplete_impact_pile") // 冲击桩（未完成）
 
-    event.create("incomplete_magnetoelectric_core") // 未完成的磁电核心
+    event.create("incomplete_circuit_board") // 电路板（未完成）
+    event.create("incomplete_magnetoelectric_core") // 磁电核心（未完成）
+    event.create("incomplete_capacitor_empty") // 电容器（未完成）
     
     event.create("silicon_plate") // 单晶硅板
+
+    event.create("incomplete_electric_motor") // 电动马达（未完成）
+    event.create("incomplete_alternator") // 交流发电机（未完成）
+    event.create("incomplete_tesla_coil") // 特斯拉线圈（未完成）
+    event.create("incomplete_modular_accumulator") // 蓄电池（未完成）
+    event.create("incomplete_transmission_pole") // 输电杆（未完成）
+    event.create("incomplete_remote_transmission_pole") // 远程输电杆（未完成）
+    event.create("incomplete_heater") // 加热器（未完成）
 
     event.create("litematica_tool") // 投影工具
 
