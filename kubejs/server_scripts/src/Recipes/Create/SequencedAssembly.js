@@ -68,7 +68,7 @@ ServerEvents.recipes(event => {
 	], "anvilcraft:magnet_block", [
 		create.deploying("kubejs:incomplete_magnetoelectric_core", ["kubejs:incomplete_magnetoelectric_core", "kubejs:silicon_plate"]),
 		create.filling("kubejs:incomplete_magnetoelectric_core", ["kubejs:incomplete_magnetoelectric_core", Fluid.of("kubejs:lubricant", 100)]),
-		create.deploying("kubejs:incomplete_magnetoelectric_core", ["kubejs:incomplete_magnetoelectric_core", "#forge:wires/copper"]),
+		create.deploying("kubejs:incomplete_magnetoelectric_core", ["kubejs:incomplete_magnetoelectric_core", "create_optical:copper_coil"]),
 	]).transitionalItem("kubejs:incomplete_magnetoelectric_core").loops(3)
 
 	// 电磁构件
