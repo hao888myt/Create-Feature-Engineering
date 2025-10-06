@@ -25,10 +25,15 @@ StartupEvents.registry("item", event => {
     event.create("incomplete_distillation_controller") // 分馏塔控制器（未完成）
     event.create("incomplete_bulk_fermenter") // 批量发酵器（未完成）
     event.create("incomplete_impact_pile") // 冲击桩（未完成）
+    event.create("incomplete_diesel_engine") // 柴油引擎（未完成）
+    event.create("incomplete_pumpjack_hole") // 抽油机油泵（未完成）
+    event.create("incomplete_pumpjack_crank") // 抽油机曲柄（未完成）
+    event.create("incomplete_pumpjack_head") // 抽油机驴头（未完成）
+    event.create("incomplete_pumpjack_bearing") // 抽油机轴承（未完成）
 
     event.create("incomplete_circuit_board") // 电路板（未完成）
     event.create("incomplete_magnetoelectric_core") // 磁电核心（未完成）
-    event.create("incomplete_capacitor_empty") // 电容器（未完成）
+    event.create("incomplete_capacitor") // 电容器（未完成）
     
     event.create("silicon_plate") // 单晶硅板
 
@@ -39,6 +44,11 @@ StartupEvents.registry("item", event => {
     event.create("incomplete_transmission_pole") // 输电杆（未完成）
     event.create("incomplete_remote_transmission_pole") // 远程输电杆（未完成）
     event.create("incomplete_heater") // 加热器（未完成）
+    event.create("incomplete_charge_collector") // 集电器（未完成）
+    event.create("incomplete_piezoelectric_crystal") // 压电晶体（未完成）
+    event.create("incomplete_connector") // 连接器（未完成）
+    event.create("incomplete_large_connector") // 大型连接器（未完成）
+    event.create("incomplete_portable_energy_interface") // 移动式能量接口（未完成）
 
     event.create("litematica_tool") // 投影工具
 

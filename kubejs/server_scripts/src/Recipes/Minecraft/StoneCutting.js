@@ -78,12 +78,6 @@ ServerEvents.recipes(event => {
     ]
 
     let sturdy_machine = [
-        Item.of("createdieselgenerators:pumpjack_bearing", 2),
-        Item.of("createdieselgenerators:pumpjack_crank"),
-        Item.of("createdieselgenerators:pumpjack_head"),
-        Item.of("createdieselgenerators:distillation_controller", 2),
-        Item.of("createdieselgenerators:bulk_fermenter", 3),
-        Item.of("anvilcraft:impact_pile", 4),
         Item.of("create:track_observer", 8),
         Item.of("create:track_station", 8),
         Item.of("create:track_signal", 8),
@@ -96,45 +90,21 @@ ServerEvents.recipes(event => {
     ]
 
     let sturdy_remove = [
-        "createdieselgenerators:crafting/pumpjack_bearing",
-        "createdieselgenerators:mechanical_crafting/pumpjack_crank",
-        "createdieselgenerators:crafting/pumpjack_head",
-        "createdieselgenerators:crafting/bulk_fermenter",
-        "anvilcraft:impact_pile",
         "railways:crafting/portable_fuel_interface"
     ]
 
     let magnet_machine = [
-        Item.of("alexscaves:magnetic_levitation_rail", 16),
-        Item.of("alexscaves:hologram_projector", 4),
-        Item.of("alexscaves:magnetic_light", 2),
-        Item.of("alexscaves:azure_magnet", 2),
-        Item.of("alexscaves:scarlet_magnet", 2),
-        Item.of("alexscaves:magnetic_activator", 4),
-        Item.of("createaddition:connector", 4),
-        Item.of("createaddition:large_connector", 2),
         Item.of("anvilcraft:power_converter_big", 1),
         Item.of("anvilcraft:power_converter_middle", 3),
         Item.of("anvilcraft:power_converter_small", 9),
-        Item.of("anvilcraft:transmission_pole", 2),
         Item.of("anvilcraft:load_monitor", 4),
-        Item.of("anvilcraft:induction_light", 8),
-        Item.of("createaddition:portable_energy_interface", 2)
+        Item.of("anvilcraft:induction_light", 8)
     ]
 
     let magnet_remove = [
-        "alexscaves:magnetic_levitation_rail",
-        "alexscaves:hologram_projector",
-        "alexscaves:magnetic_light",
-        "alexscaves:azure_magnet",
-        "alexscaves:scarlet_magnet",
-        "createaddition:crafting/small_connector_copper",
-        "createaddition:crafting/large_connector_electrum",
         "anvilcraft:power_converter_big",
-        "anvilcraft:transmission_pole",
         "anvilcraft:load_monitor",
         "anvilcraft:induction_light",
-        "createaddition:crafting/portable_energy_interface"
     ]
 
     andesite_machine.forEach((item) => {

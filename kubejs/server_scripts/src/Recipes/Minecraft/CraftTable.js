@@ -226,6 +226,20 @@ ServerEvents.recipes(event => {
     }
   )
 
+  // 工作盆盖板
+  event.remove("createdieselgenerators:crafting/basin_lid")
+  event.shaped(
+    Item.of("createdieselgenerators:basin_lid", 3),
+    [
+      " C ",
+      "AAA",
+    ],
+    {
+      A: "create:andesite_alloy",
+      C: "minecraft:clock"
+    }
+  )
+
   //各种机器
   let machines = (machine, casing, mechanism) => {
     event.shaped(

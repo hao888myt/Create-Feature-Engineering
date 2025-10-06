@@ -33,11 +33,9 @@ ServerEvents.recipes((event) => {
         ["fluid:pipette", "kubejs:copper_mechanism"],
     ]
 
-    let sturdy_machine = [
-        ["createmetallurgy:foundry_mixer", "createmetallurgy:sturdy_whisk"],
-        ["createdieselgenerators:diesel_engine", "createdieselgenerators:engine_piston"],
-        ["createdieselgenerators:pumpjack_hole", "create:fluid_pipe"]
-    ]
+    // let sturdy_machine = [
+        
+    // ]
     let sturdy_casing = [
         ["create:track_signal", "create:electron_tube"],
         ["create:controls", "minecraft:lever"],
@@ -45,14 +43,7 @@ ServerEvents.recipes((event) => {
     ]
 
     let magnet_machine = [
-        ["moreburners:electric_burner", "create:empty_blaze_burner"],
         ["alexscaves:quarry", "alexscaves:heart_of_iron"],
-        ["anvilcraft:heater", "moreburners:copper_coil"],
-        ["anvilcraft:charge_collector", "anvilcraft:magnet_ingot"],
-        ["createaddition:electric_motor", "#forge:plates/brass"],
-        ["createaddition:alternator", "#forge:plates/iron"],
-        ["createaddition:modular_accumulator", "#anvilcraft:capacitor"],
-        ["createaddition:tesla_coil", "createaddition:copper_spool"]
     ]
 
     andesite_machine.forEach((items) => {
@@ -74,10 +65,10 @@ ServerEvents.recipes((event) => {
     create.item_application("fluid:centrifugal_pump", ["create:mechanical_pump", "create:propeller"])
 
 
-    sturdy_machine.forEach((items) => {
-        event.remove({output: items[0]})
-        create.item_application(items[0], ["kubejs:sturdy_machine", items[1]])
-    })
+    // sturdy_machine.forEach((items) => {
+    //     // event.remove({output: items[0]})
+    //     create.item_application(items[0], ["kubejs:sturdy_machine", items[1]])
+    // })
     sturdy_casing.forEach((items) => {
         event.remove({output: items[0]})
         create.item_application(items[0], ["create:railway_casing", items[1]])
@@ -86,12 +77,11 @@ ServerEvents.recipes((event) => {
     event.remove({output: "createdieselgenerators:large_diesel_engine"})
     event.remove({output: "railways:fuel_tank"})
     create.item_application("railways:fuel_tank", ["create:fluid_tank", "#forge:plates/obsidian"])
-    create.item_application("createdieselgenerators:large_diesel_engine", ["createdieselgenerators:diesel_engine", "#forge:storage_blocks/brass"])
     create.item_application("kubejs:steel_casing", ["#forge:stripped_logs", "#forge:ingots/steel"])
 
 
     magnet_machine.forEach((items) => {
-        event.remove({output: items[0]})
+        // event.remove({output: items[0]})
         create.item_application(items[0], ["kubejs:magnet_machine", items[1]])
     })
 
