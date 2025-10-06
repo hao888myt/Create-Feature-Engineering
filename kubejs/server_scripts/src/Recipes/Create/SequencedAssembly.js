@@ -86,14 +86,14 @@ ServerEvents.recipes(event => {
 		Item.of("anvilcraft:impact_pile")
 	], "kubejs:sturdy_machine", [
 		create.deploying("kubejs:incomplete_impact_pile", ["kubejs:incomplete_impact_pile", "#forge:plates/obsidian"]),
-		create.press("kubejs:incomplete_impact_pile", ["kubejs:incomplete_impact_pile"]),
+		create.pressing("kubejs:incomplete_impact_pile", ["kubejs:incomplete_impact_pile"]),
 		create.filling("kubejs:incomplete_impact_pile", ["kubejs:incomplete_impact_pile", Fluid.of("createdieselgenerators:biodiesel", 250)]),
 	]).transitionalItem("kubejs:incomplete_impact_pile").loops(3)
 	create.sequenced_assembly([
 		Item.of("anvilcraft:impact_pile", 4)
 	], "kubejs:sturdy_machine", [
 		create.deploying("kubejs:incomplete_impact_pile", ["kubejs:incomplete_impact_pile", "#forge:plates/obsidian"]),
-		create.press("kubejs:incomplete_impact_pile", ["kubejs:incomplete_impact_pile"]),
+		create.pressing("kubejs:incomplete_impact_pile", ["kubejs:incomplete_impact_pile"]),
 		create.filling("kubejs:incomplete_impact_pile", ["kubejs:incomplete_impact_pile", Fluid.of("createdieselgenerators:diesel", 250)]),
 	]).transitionalItem("kubejs:incomplete_impact_pile").loops(1)
 
