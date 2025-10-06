@@ -26,8 +26,10 @@ preventFalling = false
 enhancedConnection = true
 cardBoardedYourself = false
 [wrench]
-leftClickFastDismantle = false
+enchancedWrench = false
+betterEncasedPipe = true
 alwaysAllowRotating = false
+leftClickFastDismantle = false
 removeCooldown = true
 [misc]
 infEditBoxLength = false
