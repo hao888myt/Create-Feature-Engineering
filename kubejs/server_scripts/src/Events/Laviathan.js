@@ -16,6 +16,7 @@ EntityEvents.hurt("alexsmobs:laviathan", event => {
             const block = event.getLevel().getBlock(pos.above(3))
             block.popItem(Item.of("obsidian", randomNum(8, 12)))
             laviathan.mergeNbt("{Obsidian:0b}")
+            laviathan.health += 5
         }
         event.cancel()
     }
