@@ -214,7 +214,7 @@ ServerEvents.recipes(event => {
 	create.sequenced_assembly([
 		Item.of("createaddition:tesla_coil")
 	], "kubejs:magnet_machine", [
-		create.deploying("kubejs:incomplete_tesla_coil", ["kubejs:incomplete_tesla_coil", "createaddition:copper_spool"]),
+		create.deploying("kubejs:incomplete_tesla_coil", ["kubejs:incomplete_tesla_coil", "createaddition:electrum_spool"]),
 		create.deploying("kubejs:incomplete_tesla_coil", ["kubejs:incomplete_tesla_coil", "#anvilcraft:capacitor"]),
 		create.deploying("kubejs:incomplete_tesla_coil", ["kubejs:incomplete_tesla_coil", "anvilcraft:magnetoelectric_core"])
 	]).transitionalItem("kubejs:incomplete_tesla_coil").loops(1)
@@ -226,7 +226,7 @@ ServerEvents.recipes(event => {
 	], "kubejs:magnet_machine", [
 		create.deploying("kubejs:incomplete_modular_accumulator", ["kubejs:incomplete_modular_accumulator", "anvilcraft:magnetoelectric_core"]),
 		create.deploying("kubejs:incomplete_modular_accumulator", ["kubejs:incomplete_modular_accumulator", "#anvilcraft:capacitor"]),
-		create.deploying("kubejs:incomplete_modular_accumulator", ["kubejs:incomplete_modular_accumulator", "#anvilcraft:capacitor"])
+		create.deploying("kubejs:incomplete_modular_accumulator", ["kubejs:incomplete_modular_accumulator", "#forge:plates/electrum"])
 	]).transitionalItem("kubejs:incomplete_modular_accumulator").loops(1)
 
 	// 连接器
