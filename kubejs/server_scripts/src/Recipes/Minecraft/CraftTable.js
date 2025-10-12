@@ -102,7 +102,7 @@ ServerEvents.recipes(event => {
     }
   )
 
-  //黄铜手部零件
+  // 黄铜手部零件
   event.shaped(
     Item.of("create:brass_hand"),
     [
@@ -116,7 +116,7 @@ ServerEvents.recipes(event => {
     }
   )
 
-  //安山构件
+  // 安山构件
   event.shaped(
     Item.of("kubejs:andesite_mechanism"),
     [
@@ -131,7 +131,7 @@ ServerEvents.recipes(event => {
     }
   )
 
-  //铜构件
+  // 铜构件
   event.shaped(
     Item.of("kubejs:copper_mechanism"),
     [
@@ -146,7 +146,7 @@ ServerEvents.recipes(event => {
     }
   )
 
-  //烈焰人燃烧室
+  // 烈焰人燃烧室
   event.shaped(
     Item.of("create:blaze_burner", 2),
     [
@@ -156,18 +156,6 @@ ServerEvents.recipes(event => {
     ],
     {
       A: "#forge:plates/iron",
-      B: "spectrum:shimmerstone_gem"
-    }
-  )
-  event.shaped(
-    Item.of("create:blaze_burner", 4),
-    [
-      " A ",
-      "ABA",
-      " A "
-    ],
-    {
-      A: "#forge:plates/industrial_iron",
       B: "spectrum:shimmerstone_gem"
     }
   )
