@@ -10,5 +10,5 @@ ServerEvents.recipes(event => {
 
     // 单晶硅板
     vintageimprovements.pressurizing(Item.of("kubejs:silicon_plate").withChance(0.5), 
-    "#spectrum:gemstone_shards").heated()
+    "#spectrum:gemstone_clusters").heated()
 })
