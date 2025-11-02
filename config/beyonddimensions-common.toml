@@ -30,4 +30,6 @@ interface_can_pop_resource = false
 #注意：仅在确定需要时使用，后续版本更新会将其移除并添加其他替代方案，会保证存档兼容。
 #Range: 1 ~ 27
 interface_usable_capacity = 27
+#是否与JEI或EMI同步搜索
+search_text_with_jei_emi = true
 
