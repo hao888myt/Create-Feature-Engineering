@@ -6,7 +6,7 @@ EntityEvents.death("alexscaves:magnetron", event => {
     var BlockData = Blockstates.get("BlockData")
     if (BlockData.size() >= 8 && event.getSource().getType() == "lightningBolt")
     {
-        event.getEntity().block.popItem(Item.of("alexscaves:telecore", 3))
+        event.getEntity().block.popItem(Item.of("alexscaves:telecore", randomNum(2, 4)))
     }
 })
 
