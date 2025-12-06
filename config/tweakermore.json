@@ -61,7 +61,7 @@
     "daytimeOverrideValue": 0,
     "disableEntityRenderInterpolationForcedSync": false,
     "f3BEntityFacingVectorLength": 2.0,
-    "f3GSimplify": false,
+    "f3GSimplify": true,
     "f3IUseRelatedCoordinate": false,
     "f3IUseRelatedCoordinateShift1": true,
     "f3TextScale": 1.0,
@@ -281,7 +281,7 @@
       }
     },
     "fireworkRocketThrottler": {
-      "enabled": false,
+      "enabled": true,
       "hotkey": {
         "keys": ""
       }
@@ -395,7 +395,7 @@
       }
     },
     "fakeNightVision": {
-      "enabled": true,
+      "enabled": false,
       "hotkey": {
         "keys": ""
       }
@@ -774,7 +774,7 @@
   },
   "internal": {
     "configGui": {
-      "category": "MC_TWEAKS",
+      "category": "ALL",
       "sortingStrategy": "ALPHABET"
     },
     "configStatistic": {
@@ -871,8 +871,8 @@
         "useAmount": 1
       },
       "fireworkRocketThrottler": {
-        "lastUsedTime": 0,
-        "useAmount": 0
+        "lastUsedTime": 1758968157953,
+        "useAmount": 1
       },
       "fireworkRocketThrottlerCooldown": {
         "lastUsedTime": 0,
@@ -1039,8 +1039,8 @@
         "useAmount": 0
       },
       "pistorderClearDisplay": {
-        "lastUsedTime": 0,
-        "useAmount": 0
+        "lastUsedTime": 1763822282645,
+        "useAmount": 5
       },
       "pistorderDynamicallyInfoUpdate": {
         "lastUsedTime": 0,
@@ -1279,8 +1279,8 @@
         "useAmount": 0
       },
       "f3GSimplify": {
-        "lastUsedTime": 0,
-        "useAmount": 0
+        "lastUsedTime": 1758968156166,
+        "useAmount": 1
       },
       "f3IUseRelatedCoordinate": {
         "lastUsedTime": 0,
@@ -1295,8 +1295,8 @@
         "useAmount": 0
       },
       "fakeNightVision": {
-        "lastUsedTime": 1754713601637,
-        "useAmount": 5
+        "lastUsedTime": 1758970040321,
+        "useAmount": 6
       },
       "fixChestMirroring": {
         "lastUsedTime": 0,
