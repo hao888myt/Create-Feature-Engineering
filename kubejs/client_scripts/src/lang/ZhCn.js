@@ -78,6 +78,17 @@ ClientEvents.lang("zh_cn", (event) => {
     AddFluidLang("heavy_oil", "重油")
     AddFluidLang("petroleum_gas", "石油气")
     AddFluidLang("lubricant", "润滑油")
+    AddFluidLang("oxygen", "氧气")
+    AddFluidLang("hydrogen", "氢气")
+    AddFluidLang("nitrogen", "氮气")
+    AddFluidLang("ammonia", "氨气")
+    AddFluidLang("chlorine", "氯气")
+    AddFluidLang("carbon_dioxide", "二氧化碳")
+    AddFluidLang("nitric_oxide", "一氧化氮")
+    AddFluidLang("nitrogen_dioxide", "二氧化氮")
+    AddFluidLang("hydrochloric_acid", "盐酸")
+    AddFluidLang("nitric_acid", "硝酸")
+
 
     let numbers =[
         ["zero", "0"],
