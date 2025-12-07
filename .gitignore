@@ -40,3 +40,6 @@
 # 此处需要加入部分配置文件更改可以在对应文件路径前输入一个!来进行筛选
 .probe/*
 !.probe/probe-settings.json
+kubejs/startup_scripts/jsconfig.json
+kubejs/server_scripts/jsconfig.json
+kubejs/client_scripts/jsconfig.json
