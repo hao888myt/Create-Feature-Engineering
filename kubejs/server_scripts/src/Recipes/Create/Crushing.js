@@ -66,7 +66,7 @@ ServerEvents.recipes(event=>{
     create.crushing("anvilcraft:deepslate_chips", "minecraft:deepslate")
 
     // 下界岩粉碎
-    create.crushing("anvilcraft:nether_chips", "minecraft:netherrack")
+    create.crushing("anvilcraft:nether_dust", "minecraft:netherrack")
 
     // 末地石粉碎
     create.crushing("anvilcraft:end_dust", "minecraft:end_stone")
