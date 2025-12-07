@@ -40,4 +40,70 @@ StartupEvents.registry("fluid", event => {
   event.create("lubricant")
     .thinTexture(0x1ec900)
     .bucketColor(0x1ec900)
+
+  // 氧气
+  event.create("oxygen")
+    .thinTexture(0x90c8ff)
+    .bucketColor(0x90c8ff)
+    .noBlock()
+    .gaseous()
+  
+  // 氢气
+  event.create("hydrogen")
+    .thinTexture(0xffffff)
+    .bucketColor(0xffffff)
+    .noBlock()
+    .gaseous()
+  
+  // 氮气
+  event.create("nitrogen")
+    .thinTexture(0x909090)
+    .bucketColor(0x909090)
+    .noBlock()
+    .gaseous()
+  
+  // 氨气
+  event.create("ammonia")
+    .thinTexture(0x00ff22)
+    .bucketColor(0x00ff22)
+    .noBlock()
+    .gaseous()
+  
+  // 氯气
+  event.create("chlorine")
+    .thinTexture(0x00ff55)
+    .bucketColor(0x00ff55)
+    .noBlock()
+    .gaseous()
+  
+  // 二氧化碳
+  event.create("carbon_dioxide")
+    .thinTexture(0x888888)
+    .bucketColor(0x888888)
+    .noBlock()
+    .gaseous()
+  
+  // 一氧化氮
+  event.create("nitric_oxide")
+    .thinTexture(0xff8888)
+    .bucketColor(0xff8888)
+    .noBlock()
+    .gaseous()
+  
+  // 二氧化氮
+  event.create("nitrogen_dioxide")
+    .thinTexture(0xff5500)
+    .bucketColor(0xff5500)
+    .noBlock()
+    .gaseous()
+  
+  // 盐酸
+  event.create("hydrochloric_acid")
+    .thinTexture(0x00ffaa)
+    .bucketColor(0x00ffaa)
+  
+  // 硝酸
+  event.create("nitric_acid")
+    .thinTexture(0xffee00)
+    .bucketColor(0xffee00)
 })
