@@ -27,5 +27,5 @@ ServerEvents.recipes(event => {
     create.mixing(Fluid.of("kubejs:liquid_number", 1000), ["8x #kubejs:number", Fluid.of("minecraft:water", 1000)])
 
     // 电解水
-    create.mixing([Fluid.of("kubejs:hydrogen", 500), Fluid.of("kubejs:oxygen", 250), "anvilcraft:capacitor_empty"], [Fluid.of("minecraft:water", 500, "anvilcraft:capacitor")])
+    create.mixing([Fluid.of("kubejs:hydrogen", 500), Fluid.of("kubejs:oxygen", 250), "anvilcraft:capacitor_empty"], [Fluid.of("minecraft:water", 500), "anvilcraft:capacitor"])
 })
