@@ -61,4 +61,16 @@ ServerEvents.recipes(event=>{
     // 安山岩粉碎
     event.remove("createnuclear:crushing/andesite")
     create.crushing("anvilcraft:cinerite", "minecraft:andesite")
+
+    // 深板岩粉碎
+    create.crushing("anvilcraft:deepslate_chips", "minecraft:deepslate")
+
+    // 下界岩粉碎
+    create.crushing("anvilcraft:nether_chips", "minecraft:netherrack")
+
+    // 末地石粉碎
+    create.crushing("anvilcraft:end_dust", "minecraft:end_stone")
+
+    // 黑石粉碎
+    create.crushing("anvilcraft:black_sand", "minecraft:basalt")
 })
