@@ -67,6 +67,14 @@ global.Materials = [
         zh_cn: "黄铜",
     },
     {
+        id: "steel",
+        color: "#888888",
+        types: [
+            MaterialType.MOLTEN
+        ],
+        zh_cn: "钢",
+    },
+    {
         id: "azure_neodymium",
         color: "#163cb8",
         types: [
@@ -81,6 +89,14 @@ global.Materials = [
             MaterialType.MOLTEN
         ],
         zh_cn: "赤钕",
+    },
+    {
+        id: "silicon",
+        color: "#cccccc",
+        types: [
+            MaterialType.SHEET
+        ],
+        zh_cn: "硅"
     }
 ]
 
