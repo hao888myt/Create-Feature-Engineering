@@ -1,0 +1,15 @@
+{
+  "itemGroup.cmr": "机械动力：更多配方",
+
+  "create.recipe.fan_custom.fan": "鼓风机前的方块",
+  "create.recipe.fan_custom": "自定义鼓风机配方",
+  "create.recipe.heat_requirement.cooled": "降温",
+  "create.recipe.heat_requirement.frozen": "冷冻",
+
+  "block.cmr.snowman_cooler": "雪傀儡冷冻室",
+  "block.cmr.empty_snowman_cooler": "空的雪傀儡冷冻室",
+
+  "item.cmr.frozen_cake": "冷冻蛋糕",
+  "item.cmr.frozen_cake_base": "冷冻蛋糕胚"
+
+}

@@ -1,0 +1,26 @@
+{
+    "block.usefulslime.slippery_slime_block": "光滑粘液块",
+
+    "item.usefulslime.slime_sling": "粘液弹弓",
+
+    "item.usefulslime.slime_boots": "粘液靴子",
+
+    "item.usefulslime.slime_leggings": "粘液护腿",
+
+    "item.usefulslime.slime_chestplate": "粘液胸甲",
+
+    "item.usefulslime.slime_helmet": "粘液头盔",
+
+    "item.usefulslime.jello": "粘液方糖",
+
+    "config.usefulslime.hang_climbing_damages_slime_helmet": "悬吊损坏粘液头盔",
+
+    "config.usefulslime.wall_climbing_damages_slime_chestplate_and_leggings": "攀爬损坏粘液胸甲和护腿",
+
+    "config.usefulslime.bouncing_damages_slime_boots": "跳跃损坏粘液靴子",
+
+    "modmenu.usefulslime.license": "许可证",
+
+    "modmenu.descriptionTranslation.usefulslime": "添加黏液的一些新用途\n\n许可证: https://github.com/MincraftEinstein/UsefulSlime/blob/main/LICENSE.md"
+
+}
