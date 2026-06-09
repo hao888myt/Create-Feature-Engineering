@@ -1,0 +1,13 @@
+{
+    "probejs.modHash": 1788401846574538123,
+    "probejs.generateBeans": true,
+    "probejs.enableDecompiler": false,
+    "probejs.complete": true,
+    "probejs.newGame": false,
+    "probejs.fullScanMods": [
+        "minecraft",
+        "kubejs",
+        "neoforge"
+    ],
+    "probejs.hintsForLLM": true
+}
