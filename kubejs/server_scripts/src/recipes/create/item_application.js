@@ -30,10 +30,10 @@ ServerEvents.recipes((event) => {
         ["alexscaves:quarry", "alexscaves:heart_of_iron"],
     ]
 
-    andesite_machine.forEach((items) => {
-        event.remove({output: items[0]})
-        create.item_application(items[0], ["create_feature_engineering:andesite_machine", items[1]])
-    })
+    // andesite_machine.forEach((items) => {
+    //     event.remove({output: items[0]})
+    //     create.item_application(items[0], ["create_feature_engineering:andesite_machine", items[1]])
+    // })
     event.remove("create:crafting/kinetics/deployer")
     event.remove("vintageimprovements:craft/belt_grinder")
     create.item_application("create:deployer", ["create:andesite_casing", "create:brass_hand"])
@@ -43,10 +43,6 @@ ServerEvents.recipes((event) => {
         event.remove({output: items[0]})
         create.item_application(items[0], ["create_feature_engineering:brass_machine", items[1]])
     })
-    event.remove("fluid:smart_fluid_interface")
-    create.item_application("fluid:smart_fluid_interface", ["fluid:fluid_interface", "create_feature_engineering:copper_mechanism"])
-    event.remove("fluid:centrifugal_pump")
-    create.item_application("fluid:centrifugal_pump", ["create:mechanical_pump", "create:propeller"])
 
     
     sturdy_casing.forEach((items) => {
