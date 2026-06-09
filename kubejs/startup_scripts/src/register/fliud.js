@@ -6,10 +6,14 @@ StartupEvents.registry("fluid", event => {
     })
 
     global.Materials.forEach(material => {
-        if (material.types.includes(MaterialType.MOLTEN)) {
-            event.create(`${global.ModPackId}:molten_${material.id}`, "thick")
-                .tint(material.color)
-                .bucketItem.containerItem('minecraft:bucket')
-        }
+        material.types.forEach((type) => {
+            switch (type) {
+                case MaterialType.MOLTEN:
+                    event.create(`${global.ModPackId}:molten_${material.id}`, "thick")
+                        .tint(material.color)
+                        .bucketItem.containerItem('minecraft:bucket')
+                    break
+            }
+        })
     })
 })

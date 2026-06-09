@@ -1,4 +1,14 @@
 // 材料注册
+/** 材料种类 */
+class MaterialType {
+    static MOLTEN = "molten"
+    static SHEET = "sheet"
+
+    static INGOT = "ingot"
+    static BLOCK = "block"
+    static NUGGET = "nugget"
+}
+
 global.Materials = [
     {
         id: "iron",
@@ -331,13 +341,3 @@ global.BasicFluids = [
         zh_cn: "硝酸"
     }
 ]
-
-/** 材料种类 */
-class MaterialType {
-    static MOLTEN = "molten"
-    static SHEET = "sheet"
-
-    static INGOT = "ingot"
-    static BLOCK = "block"
-    static NUGGET = "nugget"
-}
