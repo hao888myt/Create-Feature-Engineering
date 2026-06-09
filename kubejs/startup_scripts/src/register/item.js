@@ -11,9 +11,6 @@ StartupEvents.registry("item", event => {
     global.Materials.forEach((material) => {
         material.types.forEach((type) => {
             switch (type) {
-                case MaterialType.BLOCK:
-                    event.create(`${global.ModPackId}:${material.id}_block`)
-                    break
                 case MaterialType.INGOT:
                     event.create(`${global.ModPackId}:${material.id}_ingot`)
                     break
