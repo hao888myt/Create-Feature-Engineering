@@ -36,28 +36,4 @@ ServerEvents.tags("item", event => {
     crystal_blocks.forEach(crystal_block => {
         event.add("create_feature_engineering:crystal_blocks", crystal_block)
     })
-
-    /**
-    * 
-    * @param {Internal.TagEventJS} event 
-    * @param {ResourceLocation_} tag 
-    * @param {[Items_]} excludeItems 
-    */
-
-    function removeItemsFromTag(event, tag, excludeItems) {
-        let items = event.get(tag).getObjectIds();
-        let nonRemoveItems = [];
-
-        items.forEach(item => {
-            if (!excludeItems.includes(item.toString())) {
-                nonRemoveItems.push(item);
-            }
-        });
-
-        event.removeAll(tag);
-        nonRemoveItems.forEach(item => {
-            event.add(tag, item);
-        });
-    }
-
 })
