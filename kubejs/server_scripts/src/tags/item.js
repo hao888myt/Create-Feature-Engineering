@@ -26,38 +26,6 @@ ServerEvents.tags("item", event => {
         event.add("create_feature_engineering:fluid_tanks", tank)
     })
 
-    let numbers = [
-        "create_feature_engineering:zero",
-        "create_feature_engineering:one",
-        "create_feature_engineering:two",
-        "create_feature_engineering:three",
-        "create_feature_engineering:four",
-        "create_feature_engineering:five",
-        "create_feature_engineering:six",
-        "create_feature_engineering:seven",
-        "create_feature_engineering:eight",
-        "create_feature_engineering:nine"
-    ]
-    numbers.forEach(number => {
-        event.add("create_feature_engineering:numbers", number)
-    })
-
-    let unstackable_numbers = [
-        "create_feature_engineering:unstackable_zero",
-        "create_feature_engineering:unstackable_one",
-        "create_feature_engineering:unstackable_two",
-        "create_feature_engineering:unstackable_three",
-        "create_feature_engineering:unstackable_four",
-        "create_feature_engineering:unstackable_five",
-        "create_feature_engineering:unstackable_six",
-        "create_feature_engineering:unstackable_seven",
-        "create_feature_engineering:unstackable_eight",
-        "create_feature_engineering:unstackable_nine"
-    ]
-    unstackable_numbers.forEach(unstackable_number => {
-        event.add("create_feature_engineering:unstackable_numbers", unstackable_number)
-    })
-
     let crystal_blocks = [
         "minecraft:amethyst_block", 
         "spectrum:citrine_block", 

@@ -37,13 +37,15 @@ StartupEvents.registry("item", event => {
     let numbers = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
     numbers.forEach((number) => {
         event.create(`${global.ModPackId}:unstackable_${number}`)
-        .rarity("uncommon")
-        .unstackable()
+            .rarity("uncommon")
+            .tag(`${global.ModPackId}:unstackable_numbers`)
+            .unstackable()
     })
 
     numbers.forEach((number) => {
         event.create(`${global.ModPackId}:${number}`)
-        .rarity("uncommon")
+            .tag(`${global.ModPackId}:numbers`)
+            .rarity("uncommon")
     })
 
     global.IncompletedItems.forEach(item => {
