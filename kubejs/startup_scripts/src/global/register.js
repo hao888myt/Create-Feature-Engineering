@@ -153,6 +153,10 @@ global.BasicItems = [
 
 global.IncompletedItems = [
     {
+        id: "research_pack",
+        zh_cn: "研究包",
+    },
+    {
         id: "distillation_controller",
         zh_cn: "分馏塔控制器",
     },
