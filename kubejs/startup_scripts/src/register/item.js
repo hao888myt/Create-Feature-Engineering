@@ -13,12 +13,18 @@ StartupEvents.registry("item", event => {
             switch (type) {
                 case MaterialType.INGOT:
                     event.create(`${global.ModPackId}:${material.id}_ingot`)
+                        .tag(`c:ingots`)
+                        .tag(`c:ingots/${material.id}`)
                     break
                 case MaterialType.NUGGET:
                     event.create(`${global.ModPackId}:${material.id}_nugget`)
+                        .tag(`c:nuggets`)
+                        .tag(`c:nuggets/${material.id}`)
                     break
                 case MaterialType.SHEET:
                     event.create(`${global.ModPackId}:${material.id}_sheet`)
+                        .tag(`c:plates`)
+                        .tag(`c:plates/${material.id}`)
                     break
             }
         })
