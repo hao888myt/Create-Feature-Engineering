@@ -76,12 +76,12 @@ ServerEvents.recipes((event) => {
     ]
 
     let optical_machine = [
-        ["create_optical:optical_receptor", "create_optical:copper_coil"],
-        ["create_optical:heavy_optical_receptor", "create_optical:golden_coil"],
-        ["create_optical:beam_condenser", "create_optical:rose_quartz_catalyst_coil"],
-        ["create_optical:hologram_source", "create_optical:zinc_coil"],
-        ["create_optical:optical_source", "create_optical:optical_device"],
-        ["create_optical:beam_focuser", "create_optical:mirror"],
+        // ["create_optical:optical_receptor", "create_optical:copper_coil"],
+        // ["create_optical:heavy_optical_receptor", "create_optical:golden_coil"],
+        // ["create_optical:beam_condenser", "create_optical:rose_quartz_catalyst_coil"],
+        // ["create_optical:hologram_source", "create_optical:zinc_coil"],
+        // ["create_optical:optical_source", "create_optical:optical_device"],
+        // ["create_optical:beam_focuser", "create_optical:mirror"],
         ["anvilcraft:ruby_prism", "create_feature_engineering:royal_prism"],
         ["anvilcraft:ruby_laser", "create_feature_engineering:royal_optical_device"],
     ]
@@ -96,7 +96,7 @@ ServerEvents.recipes((event) => {
         create.item_application(items[0], ["create_feature_engineering:optical_machine", items[1]])
     })
     event.remove("create_optical:thermal_optical_source")
-    create.item_application("create_optical:thermal_optical_source", ["create_optical:optical_source", Ingredient.of("#create_feature_engineering:fluid_tanks")])
+    // create.item_application("create_optical:thermal_optical_source", ["create_optical:optical_source", Ingredient.of("#create_feature_engineering:fluid_tanks")])
 
     // 动力泵
     event.remove({output: "create:mechanical_pump"})

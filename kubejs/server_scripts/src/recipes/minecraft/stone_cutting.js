@@ -192,18 +192,18 @@ ServerEvents.recipes(event => {
     // 混合线
 
     let optical_machine = [
-        Item.of('create_optical:encased_mirror', 4), 
-        Item.of('create_optical:polarizing_beam_splitter_block', 4), 
-        Item.of('create_optical:absorption_polarizing_filter', 4),
-        Item.of("create_optical:optical_sensor", 4),
+        // Item.of('create_optical:encased_mirror', 4), 
+        // Item.of('create_optical:polarizing_beam_splitter_block', 4), 
+        // Item.of('create_optical:absorption_polarizing_filter', 4),
+        // Item.of("create_optical:optical_sensor", 4),
         Item.of("anvilcraft:heliostats", 4),
     ]
 
     let optical_remove = [
-        "create_optical:encased_mirror",
-        "create_optical:polarizing_beam_splitter_block",
-        "create_optical:absorption_polarizing_filter",
-        "create_optical:optical_sensor",
+        // "create_optical:encased_mirror",
+        // "create_optical:polarizing_beam_splitter_block",
+        // "create_optical:absorption_polarizing_filter",
+        // "create_optical:optical_sensor",
         "anvilcraft:heliostats"
     ]
 

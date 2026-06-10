@@ -1,6 +1,16 @@
 ServerEvents.recipes(event => {
 
-	const create = event.recipes.create
+	let create = event.recipes.create
+	let transitionalItem = "minecraft:barrier"
+
+	// 智能研究包
+	transitionalItem = "create:incomplete_precision_mechanism"
+	create.sequenced_assembly(Item.of('researchd:research_pack[researchd:research_pack="create_feature_engineering:smart"]', 2),
+	 "create:precision_mechanism", [
+			create.deploying(transitionalItem, [transitionalItem, "create_connected:empty_fan_catalyst"]),
+			create.deploying(transitionalItem, [transitionalItem, "create:electron_tube"]),
+			create.deploying(transitionalItem, [transitionalItem, "create:filter"]),
+	]).transitionalItem(transitionalItem).loops(1).id("create:sdasdasdasd")
 
 	//坚固板
 	event.remove("create:sequenced_assembly/sturdy_sheet")
@@ -149,18 +159,16 @@ ServerEvents.recipes(event => {
 
 	// 磁电核心
 	event.remove({ output: "anvilcraft:magnetoelectric_core" })
-	create.sequenced_assembly([
-		Item.of("anvilcraft:magnetoelectric_core", 2)
-	], "anvilcraft:magnet_block", [
-		create.deploying("create_feature_engineering:incomplete_magnetoelectric_core", ["create_feature_engineering:incomplete_magnetoelectric_core", "create_feature_engineering:silicon_plate"]),
-		create.filling("create_feature_engineering:incomplete_magnetoelectric_core", ["create_feature_engineering:incomplete_magnetoelectric_core", Fluid.of("create_feature_engineering:lubricant", 100)]),
-		create.deploying("create_feature_engineering:incomplete_magnetoelectric_core", ["create_feature_engineering:incomplete_magnetoelectric_core", "create_optical:copper_coil"]),
-	]).transitionalItem("create_feature_engineering:incomplete_magnetoelectric_core").loops(3)
+	// create.sequenced_assembly([
+	// 	Item.of("anvilcraft:magnetoelectric_core", 2)
+	// ], "anvilcraft:magnet_block", [
+	// 	create.deploying("create_feature_engineering:incomplete_magnetoelectric_core", ["create_feature_engineering:incomplete_magnetoelectric_core", "create_feature_engineering:silicon_plate"]),
+	// 	create.filling("create_feature_engineering:incomplete_magnetoelectric_core", ["create_feature_engineering:incomplete_magnetoelectric_core", Fluid.of("create_feature_engineering:lubricant", 100)]),
+	// 	create.deploying("create_feature_engineering:incomplete_magnetoelectric_core", ["create_feature_engineering:incomplete_magnetoelectric_core", "create_optical:copper_coil"]),
+	// ]).transitionalItem("create_feature_engineering:incomplete_magnetoelectric_core").loops(3)
 
 	// 电容器
 	event.remove("anvilcraft:capacitor_empty")
-	event.remove("createaddition:crafting/capacitor_1")
-	event.remove("createaddition:crafting/capacitor_2")
 	// create.sequenced_assembly([
 	// 	Item.of("anvilcraft:capacitor_empty", 4)
 	// ], "#create_feature_engineering:sap", [
@@ -218,7 +226,7 @@ ServerEvents.recipes(event => {
 	// ]).transitionalItem("create_feature_engineering:incomplete_charge_collector").loops(1)
 
 	// 压电晶体
-	event.remove({ output: "anvilcraft:piezoelectric_crystal"})
+	event.remove({ output: "anvilcraft:piezoelectric_crystal" })
 	// create.sequenced_assembly([
 	// 	Item.of("anvilcraft:piezoelectric_crystal")
 	// ], "#create_feature_engineering:crystal_blocks", [

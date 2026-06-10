@@ -17,13 +17,13 @@ ServerEvents.recipes(event => {
 
     // 发信线圈
     event.remove("create:crafting/materials/transmitter")
-    create.mechanical_crafting(Item.of("create:transmitter", 2), [
-      "E",
-      "C"
-    ], {
-      C: "create_optical:copper_coil",
-      E: "create:electron_tube"
-    })
+    // create.mechanical_crafting(Item.of("create:transmitter", 2), [
+    //   "E",
+    //   "C"
+    // ], {
+    //   C: "create_optical:copper_coil",
+    //   E: "create:electron_tube"
+    // })
 
     //磁电核心
     // event.remove("anvilcraft:magnetoelectric_core_forge")
