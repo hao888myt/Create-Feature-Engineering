@@ -3,26 +3,22 @@ const { $ResearchBuilder } = require("@package/com/portingdeadmods/researchd/com
 const { $ResearchEffectHelper, $ResearchMethodHelper } = require("@package/com/portingdeadmods/researchd/compat/kubejs/helpers");
 
 ResearchdEvents.registerResearchPacks(event => {
-    let researchPacks = [
-        ["conveying", [167, 173, 159]],
-        ["logistics", [12, 34, 56]],
-        ["smart", [248, 202, 103]],
-        ["fluid", [231, 143, 97]],
-        ["chemical", [50, 200, 50]],
-        ["optical", [50, 200, 50]],
-        ["electrical", [50, 200, 50]],
-        ["package", [50, 200, 50]]
+    let research_packs = [
+        ["conveying", "#81868A"],
+        ["logistics", "#3C3F40"],
+        ["smart", "#EBAE2D"],
+        ["fluid", "#bf5935"],
+        ["chemical", "#94C2E6"],
+        ["electrical", "#3077D4"],
+        ["package", "#5B4226"],
     ]
-    researchPacks.forEach(pack => {
+
+    research_packs.forEach(pack => {
+        let color = MathTool.hexToRgb(pack[1])
         event.create(`${global.ModPackId}:${pack[0]}`)
-            .color(pack[1][0], pack[1][1], pack[1][2])
+            .color(color[0], color[1], color[2])
     })
 });
-
-/**
- * @type {Research[]}
- */
-let researchs = []
 
 class Research {
     /**
@@ -157,17 +153,26 @@ class Research {
         })
         return this
     }
-
-    /**
-     * 必须在研究设置完后调用！
-     * 必须调用！
-     */
-    joinResearchs() {
-        researchs.push(this)
-    }
 }
 
 ResearchdEvents.registerResearches(event => {
+
+    /**
+    * @type {Research[]}
+    */
+    let researchs = [
+        new Research("smart")
+            .setIcon("create:shaft")
+            .consumePack(
+                {
+                    pack_id: "conveying",
+                    count: "10",
+                    duration: "20"
+                }
+            )
+    ]
+
+    // 请不要将研究的注册写在这个函数之后的部分
     researchs.forEach(research => {
         event.create(`${global.ModPackId}:${research.id}`)
             .icon(research.icon)
