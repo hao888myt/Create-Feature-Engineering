@@ -14,7 +14,7 @@ ResearchdEvents.registerResearchPacks(event => {
     ]
 
     research_packs.forEach(pack => {
-        let color = MathTool.hexToRgb(pack[1])
+        let color = hexToRgb(pack[1])
         event.create(`${global.ModPackId}:${pack[0]}`)
             .color(color[0], color[1], color[2])
     })
