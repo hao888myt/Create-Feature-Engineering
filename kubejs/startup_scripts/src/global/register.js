@@ -20,7 +20,7 @@ global.Materials = [
     },
     {
         id: "gold",
-        color: "#ECCC3B",
+        color: "#f7d349",
         types: [
             MaterialType.MOLTEN
         ],
