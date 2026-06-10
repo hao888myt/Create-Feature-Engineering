@@ -10,7 +10,7 @@ ResearchdEvents.registerResearchPacks(event => {
         ["package", [50, 200, 50]]
     ]
     researchPacks.forEach(pack => {
-        event.create(`kubejs:${pack[0]}`)
+        event.create(`${global.ModPackId}:${pack[0]}`)
             .color(pack[1][0], pack[1][1], pack[1][2])
     })
 });
