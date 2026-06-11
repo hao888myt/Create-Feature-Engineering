@@ -29,7 +29,7 @@ BlockEvents.rightClicked(event => {
 
 
     //存储方块坐标
-    let {x, y, z} = event.block
+    let { x, y, z } = event.block
 
     if (event.block.id == "minecraft:air") return
 
@@ -39,7 +39,7 @@ BlockEvents.rightClicked(event => {
 
     //存储方块状态
     let id = event.block.getId()
-    let properties = equalToColon(event.block.getProperties().toString())
+    let properties = transformNBT(event.block.getProperties().toString())
 
     let item_id = event.getItem().id
 
@@ -73,18 +73,21 @@ BlockEvents.rightClicked(event => {
         gravity_block.mergeNbt(`{BlockState:{Name:"${id}",Properties:${properties}}}`)
     }
 
-    gravity_block.setPosition(x + 0.5, y, z + 0.5)
-    gravity_block.spawn()
+    
+    event.server.scheduleInTicks(1, delay => {
+        //删除目标方块
+        let pos = event.block.pos
+        event.level.destroyBlock(pos, false)
 
-    //删除目标方块
-    let pos = event.block.pos
-    event.level.destroyBlock(pos, false)
+        if (event.level.getBlock(pos).id == "minecraft:water") event.level.setBlockAndUpdate(pos, Block.getBlock("minecraft:air").defaultBlockState())
 
-    if (event.level.getBlock(pos).id == "minecraft:water") event.level.setBlockAndUpdate(pos, Block.getBlock("minecraft:air").defaultBlockState())
+        gravity_block.setPosition(x + 0.5, y, z + 0.5)
+        gravity_block.spawn()
+    })
 
     // 消耗催化剂
     if (!player.creative)
-        event.getItem().count--
+        event.getItem().consume(1, player)
 
 
     function containsDeployerFakePlayer(str) {
