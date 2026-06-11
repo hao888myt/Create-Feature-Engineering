@@ -5,6 +5,6 @@ ServerEvents.recipes(event => {
         Fluid.of("create_feature_engineering:heavy_oil", 100)).heated()
 
     // 单晶硅板
-    vintageimprovements.pressurizing(CreateItem.of("create_feature_engineering:silicon_plate", 0.5),
+    vintageimprovements.pressurizing(CreateItem.of("create_feature_engineering:silicon_sheet", 0.5),
         Ingredient.of("#spectrum:gemstone_clusters")).heated()
 })
