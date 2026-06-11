@@ -9,22 +9,22 @@ ServerEvents.tags("item", event => {
     event.add("create_feature_engineering:catalysts", "create_feature_engineering:hover_catalyst")
     event.add("create_feature_engineering:catalysts", "create_feature_engineering:gravity_catalyst")
 
+    let ingots = [
+        ["steel", "create_feature_engineering:steel_ingot"],
+        ["andesite_alloy", "create:andesite_alloy"],
+        ["azure_neodymium", "alexscaves:azure_neodymium_ingot"],
+        ["scarlet_neodymium", "alexscaves:scarlet_neodymium_ingot"]
+    ]
+    ingots.forEach(ingot => {
+        event.add(`c:ingots/${ingot[0]}`, ingot[1])
+    })
+
     //添加橡胶标签
     event.add("neoforge:rubber", "create_feature_engineering:rubber")
 
     //添加树脂标签
     event.add("create_feature_engineering:sap", "anvilcraft:resin")
     event.add("create_feature_engineering:sap", "alexscaves:pewen_sap")
-
-    //添加流体储罐标签
-    let tank = [
-        "create:fluid_tank", 
-        "create_connected:fluid_vessel", 
-    ]
-
-    tank.forEach(tank => {
-        event.add("create_feature_engineering:fluid_tanks", tank)
-    })
 
     let crystal_blocks = [
         "minecraft:amethyst_block", 
