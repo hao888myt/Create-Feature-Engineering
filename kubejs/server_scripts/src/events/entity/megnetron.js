@@ -1,3 +1,6 @@
+let $BlockPos = Java.loadClass("net.minecraft.core.BlockPos");
+let $Level = Java.loadClass("net.minecraft.world.level.Level");
+
 EntityEvents.death("alexscaves:magnetron", event => {
     let magnetron = event.getEntity()
 
@@ -11,9 +14,14 @@ EntityEvents.death("alexscaves:magnetron", event => {
 })
 
 NativeEvents.onEvent(Java.loadClass("net.neoforged.neoforge.event.level.BlockEvent$NeighborNotifyEvent"), event => {
+    /** @type {$Level} */
     let level = event.getLevel()
+
+    /** @type {$BlockPos} */
     let pos = event.getPos()
+    
     let blockstate = level.getBlockState(pos)
+    
     let megnetron = level.createEntity("alexscaves:magnetron")
     megnetron.setPos(pos.getX() + 0.5, pos.getY(), pos.getZ() + 0.5)
 
