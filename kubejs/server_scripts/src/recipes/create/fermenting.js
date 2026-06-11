@@ -14,4 +14,13 @@ ServerEvents.recipes(event => {
         Ingredient.of('#c:flours/wheat'),
         Fluid.of("minecraft:water", 200)
     ])
+
+    global.Materials.forEach(material => {
+        if (material.types.includes("molten"))
+        {
+            cdg.basin_fermenting(Fluid.of(`${global.ModPackId}:flowing_molten_${material.id}`, 90), [
+                Ingredient.of(`#c:ingots/${material.id}`)
+            ]).heated()
+        }
+    });
 })
