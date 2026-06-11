@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-    const create = event.recipes.create
+    let create = event.recipes.create
 
     // 粉碎轮
     event.remove("create:mechanical_crafting/crushing_wheel")

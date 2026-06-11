@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-    const cdg = event.recipes.createdieselgenerators
+    let cdg = event.recipes.createdieselgenerators
 
     // 乙醇
     event.remove("createdieselgenerators:basin_fermenting/fermentable")
