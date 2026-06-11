@@ -1,7 +1,7 @@
 ClientEvents.lang("zh_cn", (event) => {
-    AddBlockLang("create_feature_engineering:stradpole_skeleton", "跨座蝌蚪遗骸")
+    AddBlockLang("stradpole_skeleton", "跨座蝌蚪遗骸")
 
-    AddBlockLang("create_feature_engineering:paltaeria_ore_catalyst", "苍绿催生体")
+    AddBlockLang("paltaeria_ore_catalyst", "苍绿催生体")
 
     AddResearchPackLang("conveying", "传动")
     AddResearchPackLang("logistics", "物流")
