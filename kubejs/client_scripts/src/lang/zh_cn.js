@@ -72,7 +72,7 @@ ClientEvents.lang("zh_cn", (event) => {
                 case "ingot":
                     AddItemLang(material.id, `${material.zh_cn}锭`)
                     break
-                case "plate":
+                case "sheet":
                     AddItemLang(material.id, `${material.zh_cn}板`)
                     break
                 case "molten":
