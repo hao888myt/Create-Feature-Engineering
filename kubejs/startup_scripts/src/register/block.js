@@ -20,14 +20,4 @@ StartupEvents.registry("block", event => {
     event.create(`${global.ModPackId}:stradpole_skeleton`).hardness(3.0).stoneSoundType() // 跨座蝌蚪遗骸
 
     event.create(`${global.ModPackId}:steel_casing`) // 钢机壳
-
-    // // event.createCustom("steel_casing", () => 
-    // //     new $CasingBlock())
-
-    // // event.createCustom('an_item:ranshao_qiti_gas', () =>
-    // // new $Gas($GasBuilder.builder()
-    // //   .tint(Color.of('#171515ff').getRgbJS())
-    // //   .with(new $Fuel(() => 1, () => //1表示燃烧时间1t
-    // //     $FloatingLong.create(200)) //200代表能量密度80FE/mB
-    // //   )))
 })
