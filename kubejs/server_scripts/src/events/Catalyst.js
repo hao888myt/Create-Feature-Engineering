@@ -1,9 +1,11 @@
+const { $Entity } = require("@package/net/minecraft/world/entity")
+
 BlockEvents.rightClicked(event => {
     //排除副手干扰
     if (event.hand == "OFF_HAND") return
 
     //获得玩家
-    var player = event.getPlayer()
+    let player = event.getPlayer()
 
     //判断玩家是否存在
     if (player == null) return
@@ -23,13 +25,11 @@ BlockEvents.rightClicked(event => {
     }
 
     //判断玩家是否持有催化剂
-    if (!event.getItem().hasTag("kubejs:catalysts")) return
+    if (!event.getItem().hasTag("create_feature_engineering:catalysts")) return
 
 
     //存储方块坐标
-    let blockX = event.block.x
-    let blockY = event.block.y
-    let blockZ = event.block.z
+    let {x, y, z} = event.block
 
     if (event.block.id == "minecraft:air") return
 
@@ -38,30 +38,43 @@ BlockEvents.rightClicked(event => {
     }
 
     //存储方块状态
-    let state = event.block.getBlockState().toString()
+    let id = event.block.getId()
+    let properties = equalToColon(event.block.getProperties().toString())
+
+    let item_id = event.getItem().id
+
+    /** @type {$Entity} */
+    let gravity_block
 
     //生成重力方块
-    if (event.getItem().id != "kubejs:gravity_catalyst") {
+    if (item_id != "create_feature_engineering:gravity_catalyst") {
         //判断催化剂类型
-        let gravityModifier = "0.0f"
-        if (event.getItem().id == "kubejs:paltaeria_catalyst") gravityModifier = "0.2f"
-        else if (event.getItem().id == "kubejs:stratine_catalyst") gravityModifier = "-0.2f"
-        else if (event.getItem().id == "kubejs:hover_catalyst") gravityModifier = "0.0f"
+        let gravity_modifier = "0.0f"
+        let no_gravity = "0b"
 
-        event.server.runCommandSilent(`execute in ${player.level.dimension.toString()} run summon spectrum:gravity_block ${blockX} ${blockY} ${blockZ} {${parseBlockState(state)}, GravityModifier:${gravityModifier}}`)
+        switch (item_id) {
+            case "create_feature_engineering:paltaeria_catalyst":
+                gravity_modifier = "0.2f"
+                break
+            case "create_feature_engineering:stratine_catalyst":
+                gravity_modifier = "-0.2f"
+                break
+            case "create_feature_engineering:hover_catalyst":
+                no_gravity = "1b"
+                break
+        }
 
-        // let gravityBlock = player.level.createEntity("spectrum:gravity_block")
-        // gravityBlock.setPosition( blockX + 0.5, blockY, blockZ + 0.5)
-        // gravityBlock.mergeNbt(`{${parseBlockState(state)}, GravityModifier: 0.2f}`)
-        // gravityBlock.spawn()
+        gravity_block = player.level.createEntity("spectrum:float_block")
+        gravity_block.mergeNbt(`{BlockState:{Name:"${id}",Properties:${properties}}, GravityModifier:${gravity_modifier}, NoGravity:${no_gravity}}`)
     }
     //生成下落方块
     else {
-        let fallingBlock = player.level.createEntity("minecraft:falling_block")
-        fallingBlock.setPosition(blockX + 0.5, blockY, blockZ + 0.5)
-        fallingBlock.mergeNbt(`{${parseBlockState(state)}}`)
-        fallingBlock.spawn()
+        gravity_block = player.level.createEntity("minecraft:falling_block")
+        gravity_block.mergeNbt(`{BlockState:{Name:"${id}",Properties:${properties}}}`)
     }
+
+    gravity_block.setPosition(x + 0.5, y, z + 0.5)
+    gravity_block.spawn()
 
     //删除目标方块
     let pos = event.block.pos
@@ -77,43 +90,4 @@ BlockEvents.rightClicked(event => {
     function containsDeployerFakePlayer(str) {
         return /DeployerFakePlayer/i.test(str);
     }
-
-    //处理方块状态字符串
-    function parseBlockState(input) {
-        const pattern = /^Block{([^}]+)}(?:\[(.*)])?$/;
-        const match = input.match(pattern);
-
-        const output = {
-            BlockState: {
-                Name: match[1].trim()
-            }
-        };
-
-        if (match[2]) {
-            output.BlockState.Properties = {};
-            match[2].split(',')
-                .filter(prop => prop.trim())
-                .forEach(prop => {
-                    const [key, val] = prop.split('=').map(s => s.trim());
-                    if (key && val !== undefined) {
-                        output.BlockState.Properties[key] = val.replace(/^["']+|["']+$/g, '');
-                    }
-                });
-        }
-
-        return JSON.stringify(output, null, 2)
-            .replace(/"([^"]+)":/g, '$1:')
-            .replace(/: "([^"]+)"/g, ': "$1"')
-            .replace(/^{\s*/, '')       // 精确匹配开头 {
-            .replace(/\s*}\s*$/, '')    // 精确匹配结尾 }
-            .replace(/^  /gm, '');      // 调整缩进
-    }
 })
-
-// ItemEvents.rightClicked(event => {
-//     if (event.hand == "OFF_HAND") return
-//     if (event.getItem().id != 'kubejs:rubber') return
-//     //console.log(event.getTarget().entity.getNbt().toString())
-//     if (event.getTarget().entity == null) return
-//     console.log(event.target.entity.getNbt().toString())
-// })
