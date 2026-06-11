@@ -156,17 +156,7 @@ ResearchdEvents.registerResearches(event => {
     /**
     * @type {Research[]}
     */
-    let researchs = [
-        new Research("smart")
-            .setIcon("create:shaft")
-            .consumePack(
-                {
-                    pack_id: "conveying",
-                    count: "10",
-                    duration: "20"
-                }
-            )
-            .unlockRecipe("minecraft:oak_planks")
+    let researchs = [ 
     ]
 
     // 请不要将研究的注册写在这个函数之后的部分
