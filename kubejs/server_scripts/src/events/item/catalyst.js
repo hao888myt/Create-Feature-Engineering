@@ -1,4 +1,4 @@
-const { $Entity } = require("@package/net/minecraft/world/entity")
+let $Entity = Java.loadClass("net.minecraft.world.entity.Entity");
 
 BlockEvents.rightClicked(event => {
     //排除副手干扰
