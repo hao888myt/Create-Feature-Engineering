@@ -1,7 +1,3 @@
-const { $ResearchMethod } = require("@package/com/portingdeadmods/researchd/api/research/methods");
-const { $ResearchBuilder } = require("@package/com/portingdeadmods/researchd/compat/kubejs/builders");
-const { $ResearchEffectHelper, $ResearchMethodHelper } = require("@package/com/portingdeadmods/researchd/compat/kubejs/helpers");
-
 ResearchdEvents.registerResearchPacks(event => {
     let research_packs = [
         ["conveying", "#81868A"],
@@ -105,7 +101,7 @@ class Research {
      * @returns
      */
     consumePack(pack) {
-        this.consume_packs.push($ResearchMethodHelper.consumePack(pack.pack_id, pack.count, pack.duration))
+        this.consume_packs.push(ResearchMethodHelper.consumePack(`${global.ModPackId}:${pack.pack_id}`, pack.count, pack.duration))
         return this
     }
 
@@ -170,6 +166,7 @@ ResearchdEvents.registerResearches(event => {
                     duration: "20"
                 }
             )
+            .unlockRecipe("minecraft:oak_planks")
     ]
 
     // 请不要将研究的注册写在这个函数之后的部分
@@ -177,7 +174,7 @@ ResearchdEvents.registerResearches(event => {
         event.create(`${global.ModPackId}:${research.id}`)
             .icon(research.icon)
             .parents(research.parents)
-            .method($ResearchMethodHelper.and(research.consume_packs))
-            .effect($ResearchEffectHelper.unlockRecipes(research.unlock_recipes))
+            .method(ResearchMethodHelper.and(research.consume_packs))
+            .effect(ResearchEffectHelper.unlockRecipes(research.unlock_recipes))
     })
 })
