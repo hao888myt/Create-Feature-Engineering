@@ -122,10 +122,6 @@ global.BasicItems = [
         zh_cn: "橡胶",
     },
     {
-        id: "silicon_plate",
-        zh_cn: "单晶硅板",
-    },
-    {
         id: "royal_prism",
         zh_cn: "皇家棱镜",
     },
