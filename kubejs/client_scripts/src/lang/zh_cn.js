@@ -70,10 +70,13 @@ ClientEvents.lang("zh_cn", (event) => {
         material.types.forEach(type => {
             switch (type) {
                 case "ingot":
-                    AddItemLang(material.id, `${material.zh_cn}锭`)
+                    AddItemLang(`${material.id}_ingot`, `${material.zh_cn}锭`)
                     break
-                case "plate":
-                    AddItemLang(material.id, `${material.zh_cn}板`)
+                case "nugget":
+                    AddItemLang(`${material.id}_nugget`, `${material.zh_cn}粒`)
+                    break
+                case "sheet":
+                    AddItemLang(`${material.id}_sheet`, `${material.zh_cn}板`)
                     break
                 case "molten":
                     AddFluidLang(`molten_${material.id}`, `熔融${material.zh_cn}`)
