@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
-    const create = event.recipes.create
+    let create = event.recipes.create
 
-    // 传动科技包
+    // 传动研究包
     create.mixing(Item.of('researchd:research_pack[researchd:research_pack="create_feature_engineering:conveying"]', 2),
         [
             Item.of("create:shaft", 3),
