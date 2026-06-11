@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-    const cdg = event.recipes.createdieselgenerators
+    let cdg = event.recipes.createdieselgenerators
 
     // 原油分馏
     event.remove("createdieselgenerators:distillation/superheated_crude_oil")
