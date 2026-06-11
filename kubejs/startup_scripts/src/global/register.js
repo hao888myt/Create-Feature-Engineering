@@ -70,6 +70,7 @@ global.Materials = [
         id: "steel",
         color: "#888888",
         types: [
+            MaterialType.INGOT,
             MaterialType.MOLTEN
         ],
         zh_cn: "钢",
