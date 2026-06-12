@@ -7,6 +7,7 @@ ServerEvents.loaded(event => {
 
     let defaultRules = [
         "doInsomnia false",
+        "playersSleepingPercentage 0"
     ]
     defaultRules.forEach(rule => server.runCommandSilent(`gamerule ${rule}`))
     console.log("默认游戏规则设置完成")
