@@ -1,4 +1,4 @@
-const { $Projectile } = require("@package/net/minecraft/world/entity/projectile")
+let $Projectile = Java.loadClass("net.minecraft.world.entity.projectile.Projectile");
 
 NativeEvents.onEvent(Java.loadClass("net.neoforged.neoforge.event.entity.ProjectileImpactEvent"), event => {
     /** @type {$Projectile} */
