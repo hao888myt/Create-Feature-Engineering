@@ -13,6 +13,15 @@ ItemEvents.rightClicked("create_fantasizing:block_placer", event => {
 
     let components = event.getItem().getComponentMap()
 
+    let shaper_tool = components.get("create_fantasizing:shaper_tool")
+
+    switch(shaper_tool){
+        case "fill":
+            return
+        case "overlay":
+            return
+    }
+
     let current_size = components.get("create:shaper_brush_params")
     let shaper_brush = components.get("create_fantasizing:shaper_brush")
 
