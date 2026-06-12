@@ -35,16 +35,16 @@ ServerEvents.recipes((event) => {
 
         function spectrumToAnvilCraft() {
             // if (ingredient_item != null) {
-            //     anvilCraft.item_crush()
+            //     anvilCraft.stamping()
             //         .ingredients(ingredient_item)
             //         .results(result_item, result_count)
             // }
             // else {
-            //     anvilCraft.item_crush()
+            //     anvilCraft.stamping()
             //         .ingredients(Ingredient.of(`#${ingredient_tag}`))
             //         .results(result_item, result_count)
             // }
-            
+
             // console.log(ingredient_item + " " + ingredient_tag)
         }
     })
