@@ -44,7 +44,8 @@ ServerEvents.recipes((event) => {
             //         .ingredients(Ingredient.of(`#${ingredient_tag}`))
             //         .results(result_item, result_count)
             // }
-            console.log(ingredient_item + " " + ingredient_tag)
+            
+            // console.log(ingredient_item + " " + ingredient_tag)
         }
     })
     // event.remove({ type: "spectrum:anvil_crushing" });
