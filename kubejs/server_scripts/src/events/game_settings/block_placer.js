@@ -48,7 +48,7 @@ ItemEvents.rightClicked("create_fantasizing:block_placer", event => {
 
     size.forEach(i => {
         if (i > max_size) {
-            player.tell(`当前可用的最大尺寸是${max_size}!`)
+            player.tell(`当前放置、替换、清除可用的最大尺寸是${max_size}!`)
             event.cancel()
         }
     })
