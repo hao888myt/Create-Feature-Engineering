@@ -12,7 +12,7 @@ class MaterialType {
 global.Materials = [
     {
         id: "iron",
-        color: "#891414",
+        color: "#B82222",
         types: [
             MaterialType.MOLTEN
         ],
