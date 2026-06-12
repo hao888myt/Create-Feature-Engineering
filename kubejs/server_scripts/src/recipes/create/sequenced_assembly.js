@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
 
 	// 流体研究包
 	transitionalItem = "create_feature_engineering:incomplete_research_pack"
-	create.sequenced_assembly(Item.of('researchd:research_pack[researchd:research_pack="create_feature_engineering:smart"]', 2),
+	create.sequenced_assembly(Item.of('researchd:research_pack[researchd:research_pack="create_feature_engineering:fluid"]', 2),
 	 "create:fluid_tank", [
 			create.deploying(transitionalItem, [transitionalItem, "create:item_drain"]),
 			create.deploying(transitionalItem, [transitionalItem, "create:spout"]),
