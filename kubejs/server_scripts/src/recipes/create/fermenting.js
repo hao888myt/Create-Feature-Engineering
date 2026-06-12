@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
     global.Materials.forEach(material => {
         if (material.types.includes("molten"))
         {
-            cdg.basin_fermenting(Fluid.of(`${global.ModPackId}:flowing_molten_${material.id}`, 90), [
+            cdg.basin_fermenting(Fluid.of(`${global.ModPackId}:molten_${material.id}`, 90), [
                 Ingredient.of(`#c:ingots/${material.id}`)
             ]).heated()
         }
