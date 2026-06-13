@@ -6,7 +6,7 @@ ResearchdEvents.registerResearchPacks(event => {
         ["fluid", "#bf5935"],
         ["chemical", "#94C2E6"],
         ["electrical", "#3077D4"],
-        ["package", "#5B4226"],
+        ["package", "#6B4F30"],
     ]
 
     research_packs.forEach(pack => {
