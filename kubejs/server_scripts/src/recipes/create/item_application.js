@@ -9,6 +9,9 @@ ServerEvents.recipes((event) => {
         ["create:mechanical_saw", "create:andesite_casing", "#c:plates/iron"],
         ["create:mechanical_drill", "create:andesite_casing", "#c:ingots/iron"],
 
+        ["vintageimprovements:spring_coiling_machine", "create:andesite_casing", "vintageimprovements:spring_coiling_machine_wheel"],
+        ["create_enchantment_industry:mechanical_grindstone", "create:shaft", "#c:ingots/andesite_alloy"],
+
         ["create:deployer", "create:andesite_casing", "create:brass_hand"],
 
         ["create:empty_blaze_burner", "minecraft:netherrack", "#c:plates/iron"]
@@ -17,16 +20,6 @@ ServerEvents.recipes((event) => {
 
     recipes.forEach(recipe => {
         create.item_application(recipe[0], [Ingredient.of(recipe[1]), Ingredient.of(recipe[2])])
-        if (recipe.length == 4 && recipe[3] != null) {
-            return
-        }
-        if (recipe.length > 3) {
-            for (let i = 3; i < recipe.length; i++) {
-                event.remove(recipe[i])
-            }
-        }
-        else {
-            event.remove({ output: recipe[0] })
-        }
+        removeRecipe(recipe, 3, event)
     })
 })
