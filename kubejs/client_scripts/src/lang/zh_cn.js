@@ -1,4 +1,8 @@
 ClientEvents.lang("zh_cn", (event) => {
+    AddItemLang("net_creater", "维度网络发生器")
+    AddItemLang("singularity", "奇点")
+    AddItemLang("net_checker", "维度网络查询器")
+
     AddBlockLang("stradpole_skeleton", "跨座蝌蚪遗骸")
 
     AddBlockLang("paltaeria_ore_catalyst", "苍绿催生体")
