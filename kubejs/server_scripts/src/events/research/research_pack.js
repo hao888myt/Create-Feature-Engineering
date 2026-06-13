@@ -2,7 +2,7 @@ ResearchdEvents.registerResearchPacks(event => {
     let research_packs = [
         ["conveying", "#81868A"],
         ["logistics", "#3C3F40"],
-        ["smart", "#EBAE2D"],
+        ["smart", "#E8B74D"],
         ["fluid", "#bf5935"],
         ["chemical", "#94C2E6"],
         ["electrical", "#3077D4"],
@@ -14,157 +14,86 @@ ResearchdEvents.registerResearchPacks(event => {
         event.create(`${global.ModPackId}:${pack[0]}`)
             .color(color[0], color[1], color[2])
     })
-});
-
-class Research {
-    /**
-     * @param {string} id 研究id
-     */
-    constructor(id) {
-        this.id = id
-    }
-
-    /**
-     * 设置图标
-     * @param {string} icon 物品id
-     * @returns 
-     */
-    setIcon(icon) {
-        this.icon = icon
-        return this
-    }
-
-    /**
-     * @type {string[]}
-     */
-    parents = []
-
-    /**
-     * 用于记录该研究所需的所有研究，用于查重
-     * @private
-     * @type {string[]}
-     */
-    ancestors = []
-
-    /**
-     * 设置父级研究
-     * @param {Research} parent
-     * @returns 
-     */
-    setParent(parent) {
-        if (this.ancestors.includes(parent.id)) {
-            console.warn(`研究${this.id}当前添加的父级研究${parent.id}已存在于它祖先研究中!`)
-        }
-        else if (this.id == parent.id) {
-            console.warn(`研究${this.id}自己需要研究自己才能解锁吗？有意思`)
-        }
-        else {
-            this.parents.push(parent)
-            parent.ancestors.forEach(ancestor => {
-                if (!this.ancestors.includes(ancestor)) {
-                    this.ancestors.push(ancestor)
-                }
-            })
-            this.ancestors.push(parent.id)
-        }
-        return this
-    }
-
-    /**
-     * 批量设置父级研究
-     * @param {Research[]} parents
-     * @returns 
-     */
-    setParents(parents) {
-        parents.forEach(parent => {
-            this.setParent(parent)
-        })
-        return this
-    }
-
-    /**
-     * @typedef {Object} ConsumePack
-     * @property {string} pack_id 研究包id
-     * @property {number} count 消耗数量
-     * @property {number} duration 时间
-     */
-
-    /**
-     * 设置消耗的研究包
-     * @type {$ResearchMethod[]} consume_packs 消耗的研究包
-     */
-    consume_packs = []
-
-    /**
-     * 设置研究消耗的研究包
-     * @param {ConsumePack} pack
-     * @returns
-     */
-    consumePack(pack) {
-        this.consume_packs.push(ResearchMethodHelper.consumePack(`${global.ModPackId}:${pack.pack_id}`, pack.count, pack.duration))
-        return this
-    }
-
-    /**
-     * 批量设置研究消耗的研究包
-     * @param {ConsumePack[]} packs
-     * @returns
-     */
-    consumePacks(packs) {
-        packs.forEach(pack => {
-            this.consumePack(pack)
-        })
-        return this
-    }
-
-    /**
-     * 这个研究可以解锁的配方
-     * @type {string[]}
-     */
-    unlock_recipes = []
-
-    /**
-     * 设置解锁的配方
-     * @param {string} recipe
-     * @returns
-     */
-    unlockRecipe(recipe) {
-        if (this.unlock_recipes.includes(recipe)) {
-            console.warn(`配方${recipe}已经被添加过了！`)
-        }
-        else {
-            this.unlock_recipes.push(recipe)
-        }
-        return this
-    }
-
-    /**
-     * 批量设置解锁的配方
-     * @param {string[]} recipes
-     * @returns
-     */
-    unlockRecipes(recipes) {
-        recipes.forEach(recipe => {
-            this.unlockRecipe(recipe)
-        })
-        return this
-    }
-}
+})
 
 ResearchdEvents.registerResearches(event => {
+    let rp = {
+        conveying: "conveying",
+        logistics: "logistics",
+        smart: "smart",
+        fluid: "fluid",
+        chemical: "chemical",
+        electrical: "electrical",
+        package: "package"
+    }
 
     /**
-    * @type {Research[]}
-    */
-    let researchs = [ 
-    ]
+     * @param {string} id
+     * @param {number} count
+     */
+    function consumeItem(id, count) {
+        return ResearchMethodHelper.consumeItem(id, count)
+    }
 
-    // 请不要将研究的注册写在这个函数之后的部分
-    researchs.forEach(research => {
-        event.create(`${global.ModPackId}:${research.id}`)
-            .icon(research.icon)
-            .parents(research.parents)
-            .method(ResearchMethodHelper.and(research.consume_packs))
-            .effect(ResearchEffectHelper.unlockRecipes(research.unlock_recipes))
-    })
+    /**
+     * @param {*[][]} items
+     */
+    function consumeItems(items) {
+        let result = []
+        items.forEach(item => {
+            result.push(consumeItem(item[0], item[1]))
+        })
+        return result
+    }
+
+    /**
+     * @param {string} id 
+     * @param {number} count 
+     * @param {number} duration 单位：tick
+     */
+    function consumePack(id, count, duration) {
+        return ResearchMethodHelper.consumePack(`${global.ModPackId}:${id}`, count, duration)
+    }
+
+    /**
+     * @param {*[][]} packs
+     */
+    function consumePacks(packs) {
+        let result = []
+        packs.forEach(pack => {
+            result.push(consumePack(pack[0], pack[1], pack[2]))
+        })
+        return result
+    }
+
+    /**
+     * @param {string} recipe 
+     * @returns 
+     */
+    function unlockRecipe(recipe) {
+        return ResearchEffectHelper.unlockRecipe(recipe)
+    }
+
+    /**
+     * @param {string[]} recipes
+     * @returns 
+     */
+    function unlockRecipes(recipes) {
+        return ResearchEffectHelper.unlockRecipes(recipes)
+    }
+
+    event.create("conveying")
+        .icon("researchd:research_pack")
+        .method(consumeItem("create:andesite_alloy", 16))
+        .effect(unlockRecipe("create:kjs/researchd_research_pack"))
+        .literalName("传动研究包")
+        .literalDescription("千里之行，始于足下")
+    
+    event.create("basic_bearing")
+        .icon("create:windmill_bearing")
+        .method(consumePack(rp.conveying, 8, 200))
+        .effect(unlockRecipes(["create:crafting/kinetics/windmill_bearing", "create:crafting/kinetics/mechanical_bearing"]))
+        .parent("conveying")
+        .translatableName("基础轴承")
+        .translatableDescription("解锁风车轴承和动力轴承的配方")
 })
