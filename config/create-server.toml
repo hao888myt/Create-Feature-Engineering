@@ -412,7 +412,7 @@
 	#Maximum distance in blocks a Package Port can be placed at from its target.
 	# Default: 5
 	# Range: > 1
-	packagePortRange = 5
+	packagePortRange = 12
 	#.
 	#Maximum possible range in blocks of redstone link connections.
 	# Default: 256
