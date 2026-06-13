@@ -88,7 +88,7 @@ ResearchdEvents.registerResearches(event => {
         .iconStacks('researchd:research_pack[researchd:research_pack="create_feature_engineering:conveying"]')
         .method(consumeItem("create:andesite_alloy", 16))
         .effect(unlockRecipe("create:kjs/researchd_research_pack"))
-    
+
     event.create("basic_bearing")
         .translatableName("基础轴承")
         .translatableDescription("解锁风车轴承和动力轴承的配方")
@@ -96,6 +96,31 @@ ResearchdEvents.registerResearches(event => {
         .method(consumePack(rp.conveying, 8, 200))
         .effect(unlockRecipes(["create:crafting/kinetics/windmill_bearing", "create:crafting/kinetics/mechanical_bearing"]))
         .parent("conveying")
-        .translatableName("基础轴承")
-        .translatableDescription("解锁风车轴承和动力轴承的配方")
+    
+    event.create("simple_process")
+        .translatableName("简单加工")
+        .translatableDescription("解锁卷簧机和动力砂轮")
+        .icon("vintageimprovements:spring_coiling_machine")
+        .method(consumePack(rp.conveying, 8, 200))
+        .effect(unlockRecipes(["create:kjs/create_enchantment_industry_mechanical_grindstone", "create:kjs/vintageimprovements_spring_coiling_machine"]))
+        .parent("conveying")
+
+    event.create("logistics")
+        .translatableName("物流研究包")
+        .translatableDescription("用于研究物流系统")
+        .iconStacks('researchd:research_pack[researchd:research_pack="create_feature_engineering:logistics"]')
+        .method(consumePack(rp.conveying, 16, 400))
+        .effect(unlockRecipe("create:kjs/researchd_research_pack_2"))
+        .parent("conveying")
+    
+    event.create("gantry_carriage")
+        .translatableName("起重机")
+        .translatableDescription("解锁起重机")
+        .icon("create:gantry_carriage")
+        .method(consumePacks([
+            [rp.conveying, 8, 200],
+            [rp.logistics, 8, 200]
+        ]))
+        .effect(unlockRecipes(["create:crafting/kinetics/gantry_carriage", "create:crafting/kinetics/gantry_shaft"]))
+        .parent("logistics")
 })
