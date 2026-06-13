@@ -105,6 +105,7 @@ config/parcool-server.toml
 config/create-server.toml
 config/anvilcraft-server.toml
 config/trading_floor-server.toml
+config/tweakeroo.json
 
 # 排除的文件
 !*.log

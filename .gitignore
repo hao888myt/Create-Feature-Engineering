@@ -16,6 +16,7 @@
 !/config/create-server.toml
 !/config/anvilcraft-server.toml
 !/config/trading_floor-server.toml
+!/config/tweakeroo.json
 
 # 此处需要加入部分配置文件更改可以在对应文件路径前输入一个!来进行筛选
 kubejs/startup_scripts/jsconfig.json
