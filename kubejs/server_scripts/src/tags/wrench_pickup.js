@@ -111,7 +111,9 @@ ServerEvents.tags("block", event => {
 
         "@farmersdelight",
 
-        "@glassential",
+        "@fluiddrawerslegacy",
+
+        "@storagedrawers",
 
         "minecraft:bell",
         "minecraft:calibrated_sculk_sensor",
