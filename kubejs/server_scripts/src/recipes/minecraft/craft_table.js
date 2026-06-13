@@ -2,6 +2,9 @@ ServerEvents.recipes(event => {
   //传送石
   //event.remove("waystones:warp_stone")
 
+  // 
+  event.remove({ mod: "beyonddimensions" })
+
   // 数字0
   event.shaped(Item.of("create_feature_engineering:zero", 8), [
     "ZZZ",
