@@ -63,7 +63,7 @@ ResearchdEvents.registerResearches(event => {
         packs.forEach(pack => {
             result.push(consumePack(pack[0], pack[1], pack[2]))
         })
-        return result
+        return ResearchMethodHelper.and(result)
     }
 
     /**
