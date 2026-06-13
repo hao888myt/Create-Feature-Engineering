@@ -83,11 +83,11 @@ ResearchdEvents.registerResearches(event => {
     }
 
     event.create("conveying")
-        .icon("researchd:research_pack")
+        .translatableName("传动研究包")
+        .translatableDescription("千里之行，始于足下")
+        .iconStacks('researchd:research_pack[researchd:research_pack="create_feature_engineering:conveying"]')
         .method(consumeItem("create:andesite_alloy", 16))
         .effect(unlockRecipe("create:kjs/researchd_research_pack"))
-        .literalName("传动研究包")
-        .literalDescription("千里之行，始于足下")
     
     event.create("basic_bearing")
         .icon("create:windmill_bearing")
