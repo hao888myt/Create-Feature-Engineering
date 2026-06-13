@@ -1,11 +1,11 @@
 Name:Create：Feature Engineering
-Version:alpha-0.0.9
+Version:0.1.0-alpha
 
 # 是否打包正式版 PCL，以便没有启动器的玩家安装整合包。
 IncludeLauncher:False
 
 # 是否打包 PCL 个性化内容，例如功能隐藏设置、主页、背景音乐和图片等。
-IncludeLauncherCustom:True
+IncludeLauncherCustom:False
 
 # 是否将 Mod、资源包、光影包的文件直接放入整合包中，这样在导入时就无需联网下载它们。
 # 建议仅在无法稳定连接 CurseForge 或 Modrinth 时才考虑启用。
@@ -78,26 +78,19 @@ template*/
 !template*/playerdata/
 !template*/stats/
 hotai/
-Idlib/
+Idlib2/
 
 # Mod 设置
 config/
+!config*/
 !config/jei/world/
 !config/worldedit/
 config/worldedit/worldedit.properties
 !config/spark/
 config/spark/config.json
 defaultconfigs/
-journeymap/config/
-journeymap/server/
 TrashSlotSaveState.json
 customfov.txt
-gg.essential.mod/
-essential/
-!essential/*/
-!essential/*.jar*
-!essential/screenshot-checksum-caches.json
-!essential/microsoft_accounts.json
 paragliderSettings.nbt
 local/client_config.json
 local/ftbl.json
@@ -105,9 +98,12 @@ local/client/sidebar_buttons.json
 local/client/ftbutilities.cfg
 local/client/ftblib.cfg
 local/client/xencraft.cfg
-liteloader.properties
 default_reference.xml
 CustomSkinLoader/CustomSkinLoader.json
+
+config/parcool-server.toml
+config/create-server.toml
+config/anvilcraft-server.toml
 
 # 排除的文件
 !*.log
