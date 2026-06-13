@@ -1,0 +1,124 @@
+#Maximum radius of giant anvil's shock behavior
+# Default: 16
+# Range: 4 ~ 16
+giant_anvil_max_shock_radius = 16
+#Maximum depth a lightning strike can reach
+# Default: 2
+# Range: 1 ~ 16
+lightning_strike_depth = 2
+#Maximum radius a lightning strike can reach
+lightning_strike_radius = 1
+#Maximum length a magnet attracts
+# Default: 5
+# Range: 0 ~ 8
+magnet_attracts_distance = 5
+#Maximum radius a handheld magnet attracts
+# Default: 8.0
+# Range: 1.0 ~ 16.0
+magnet_item_attracts_radius = 8.0
+#Redstone EMP length generated per block dropped by the anvil
+# Default: 6
+# Range: 1 ~ 64
+redstone_emp_radius = 6
+#Maximum length of redstone EMP
+# Default: 24
+# Range: 1 ~ 64
+redstone_emp_max_radius = 24
+#Maximum cooldown time of chute (in ticks)
+# Default: 8
+# Range: 1 ~ 80
+chute_max_cooldown = 8
+#Maximum cooldown time of batch crafter (in ticks)
+# Default: 8
+# Range: 1 ~ 80
+batch_crafter_cooldown = 8
+#The maximum search radius of the geode
+# Default: 64
+# Range: 64 ~ 512
+geode_radius = 64
+#The search interval of the geode
+# Default: 4
+# Range: 1 ~ 8
+geode_interval = 4
+#The search cooldown of the geode (in seconds)
+# Default: 5
+# Range: 5 ~ 30
+geode_cooldown = 5
+#Power grid range of power transmitter
+# Default: 8
+# Range: 1 ~ 64
+power_transmitter_range = 8
+#Power grid range of remote power transmitter
+# Default: 16
+# Range: 1 ~ 64
+remote_power_transmitter_range = 16
+#The maximum number of logs that can be cut per level of Felling enchantment
+# Default: 2
+# Range: 2 ~ 24
+felling_block_per_level = 2
+#Should show anvil levitate animation
+display_anvil_animation = true
+#Maximum cooldown of load monitor
+# Default: 10
+# Range: 1 ~ 60
+load_monitor = 10
+#Maximum size for connecting transparent crafting table to form matrix
+# Default: 15
+# Range: 3 ~ 32
+transparent_crafting_table_max_matrix_size = 15
+#Is laser do impact checking
+is_laser_do_impact_checking = true
+#Induction light block ripening cooldown
+induction_light_block_ripening_cooldown = 400
+#Induction light block ripening range
+# Default: 5
+# Range: 0 ~ 100
+induction_light_block_ripening_range = 5
+#The number of ticks between heliostat detections
+# Default: 4
+# Range: 1 ~ 20
+heliostats_detection_interval = 4
+#Iono Craft Backpack Max Flight Time in ticks
+iono_craft_backpack_max_flight_time = 24000
+#Giant anvil maxCount fall damage
+# Default: 40
+# Range: 0 ~ 100
+giant_anvil_fall_damage_max = 40
+#Block Devourer upward chain devouring blocks within tag #anvilcraft:block_devourer_chain_devouring
+block_devourer_upward_chain_devouring = true
+#Block Devourer upward chain devouring maxCount distance
+# Default: 8
+# Range: 0 ~ 15
+block_devourer_upward_chain_devouring_distance = 8
+#Block Placer recursive retrieval of container max distance
+# Default: 7
+# Range: 0 ~ 20
+block_placer_recursive_retrieval_distance_max = 7
+#Combining items with Enchanted Books beyond max level in Royal Anvil
+royal_anvil_beyond_max_level = false
+#Combining items with Enchanted Books beyond max level in Ember Anvil
+ember_anvil_beyond_max_level = false
+#Combining items with Enchanted Books beyond max level in Transcendence Anvil
+transcendence_anvil_beyond_max_level = true
+#Anvil collision craft speed (m/tick)
+anvil_collision_craft_speed = 16
+#Press shift and right click to take out all totem stored in the holding amulet box
+amulet_box_take_out_all_totem = true
+#Pushing or pulling a sliding rail will chain to other rails
+sliding_rail_stick_to_each_other = false
+#Whether to clean fluid after updating Menger Sponge
+clean_fluid_after_update_menger_sponge = true
+#The max size of the entries in multiphases' recover station
+multiphase_recover_max_size = 20
+
+[power_converter]
+	#The working interval of power converters
+	# Default: 10
+	# Range: 1 ~ 60
+	power_converter_countdown = 10
+	#Energy efficiency of energy converters (1 kW => xx FE/t)
+	# Default: 80
+	# Range: 1 ~ 1000
+	power_converter_efficiency = 80
+	#Power loss of energy converters
+	power_converter_loss = 0.1

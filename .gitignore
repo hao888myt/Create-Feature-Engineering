@@ -14,6 +14,7 @@
 /config/*
 !/config/parcool-server.toml
 !/config/create-server.toml
+!/config/anvilcraft-server.toml
 
 # 此处需要加入部分配置文件更改可以在对应文件路径前输入一个!来进行筛选
 kubejs/startup_scripts/jsconfig.json
