@@ -22,7 +22,7 @@ ServerEvents.tags("block", event => {
     event.add("minecraft:mineable/axe", "create_feature_engineering:steel_casing")
     event.add("minecraft:mineable/pickaxe", "create_feature_engineering:steel_casing")
 
-    var anvils = [
+    let anvils = [
         "minecraft:anvil",
         "minecraft:chipped_anvil",
         "minecraft:damaged_anvil",
@@ -33,30 +33,23 @@ ServerEvents.tags("block", event => {
     ]
 
     anvils.forEach(anvil => {
-        removeItemsFromTag(event, "alexscaves:ferromagnetic_blocks", anvil)
-        removeItemsFromTag(event, "alexscaves:magnetron_weapons", anvil)
+        event.remove("alexscaves:ferromagnetic_blocks", anvil)
+        event.remove("alexscaves:magnetron_weapons", anvil)
     })
 
-    /**
-    * 
-    * @param {Internal.TagEventJS} event 
-    * @param {ResourceLocation_} tag 
-    * @param {[Items_]} excludeItems 
-    */
+    let faucet_fillable = [
+        "create:fluid_tank",
+        "create:creative_fluid_tank",
+        "create_connected:fluid_vessel",
+        "create_connected:creative_fluid_vessel",
+        "fluidlogistics:multi_fluid_tank",
+        "fluidlogistics:horizontal_multi_fluid_tank",
+        "fluidlogistics:infinite_fluid_tank",
+        "createdieselgenerators:canister",
+        "createdieselgenerators:oil_barrel"
+    ]
 
-    function removeItemsFromTag(event, tag, excludeItems) {
-        let items = event.get(tag).getObjectIds();
-        let nonRemoveItems = [];
-
-        items.forEach(item => {
-            if (!excludeItems.includes(item.toString())) {
-                nonRemoveItems.push(item);
-            }
-        });
-
-        event.removeAll(tag);
-        nonRemoveItems.forEach(item => {
-            event.add(tag, item);
-        });
-    }
+    faucet_fillable.forEach(block => {
+        event.add("fluidlogistics:faucet_fillable", block)
+    })
 })
