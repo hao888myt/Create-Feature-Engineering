@@ -102,6 +102,25 @@ ServerEvents.recipes(event => {
     "create:cogwheel"
   ])
 
+  // 传动研究包复制
+  let conveying_copy = [
+    "create:gearbox",
+    "create:vertical_gearbox",
+    "create:encased_chain_drive",
+    "create:adjustable_chain_gearshift",
+    "create:chain_conveyor",
+    "create_connected:parallel_gearbox",
+    "create_connected:vertical_parallel_gearbox",
+    "create_connected:six_way_gearbox",
+    "create_connected:vertical_six_way_gearbox",
+    "create_connected:encased_chain_cogwheel"
+  ]
+  conveying_copy.forEach(item => {
+    event.shapeless(Item.of(item, 4), [
+      item,
+      'researchd:research_pack[researchd:research_pack="create_feature_engineering:conveying"]'
+    ])
+  })
 
   // 黄铜手部零件
   event.shaped(
