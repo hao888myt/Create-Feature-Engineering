@@ -95,6 +95,14 @@ ServerEvents.recipes(event => {
     "create:electron_tube"
   ])
 
+  // 链式齿轮箱
+  event.remove("create_connected:crafting/kinetics/encased_chain_cogwheel")
+  event.shapeless(Item.of("create_connected:encased_chain_cogwheel", 4),[
+    Item.of("create:encased_chain_drive", 4),
+    "create:cogwheel"
+  ])
+
+
   // 黄铜手部零件
   event.shaped(
     Item.of("create:brass_hand"),
