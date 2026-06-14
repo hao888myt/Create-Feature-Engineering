@@ -37,6 +37,64 @@ ServerEvents.recipes(event => {
     })
   })
 
+  // 十字齿轮箱
+  event.remove("create:crafting/kinetics/gearbox")
+  event.shaped(
+    Item.of("create:gearbox", 4), [
+    " C ",
+    "CAC",
+    " C "
+  ],
+    {
+      C: "create:cogwheel",
+      A: "create:andesite_casing"
+    }
+  )
+
+  // 竖十字齿轮箱
+  event.remove("create:crafting/kinetics/vertical_gearbox")
+  event.shaped(
+    Item.of("create:vertical_gearbox", 4), [
+    "C C",
+    " A ",
+    "C C"
+  ],
+    {
+      C: "create:cogwheel",
+      A: "create:andesite_casing"
+    }
+  )
+
+  // 离合器
+  event.remove("create:crafting/kinetics/clutch")
+  event.shapeless(
+    Item.of("create:clutch", 4),
+    [
+      "create:andesite_casing",
+      "create:shaft",
+      "minecraft:redstone"
+    ]
+  )
+
+  // 链式传动箱
+  event.remove("create:crafting/kinetics/encased_chain_drive")
+  event.shapeless(Item.of("create:encased_chain_drive", 4), [
+    "create:andesite_casing",
+    Ingredient.of("#c:nuggets/iron", 3)
+  ])
+  event.remove("create:crafting/kinetics/encased_chain_drive_from_zinc")
+  event.shapeless(Item.of("create:encased_chain_drive", 4), [
+    "create:andesite_casing",
+    Ingredient.of("#c:nuggets/zinc", 3)
+  ])
+
+  // 可调节链式传动箱
+  event.remove("create:crafting/kinetics/adjustable_chain_gearshift")
+  event.shapeless(Item.of("create:adjustable_chain_gearshift", 4), [
+    Item.of("create:encased_chain_drive", 4),
+    "create:electron_tube"
+  ])
+
   // 黄铜手部零件
   event.shaped(
     Item.of("create:brass_hand"),
