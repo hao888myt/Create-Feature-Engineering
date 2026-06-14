@@ -52,17 +52,12 @@ ServerEvents.recipes(event => {
   )
 
   // 烈焰人燃烧室
-  event.shaped(
-    Item.of("create:blaze_burner", 2),
+  event.shapeless(
+    Item.of("create:blaze_burner"),
     [
-      " A ",
-      "ABA",
-      " A "
-    ],
-    {
-      A: "#forge:plates/iron",
-      B: "spectrum:shimmerstone_gem"
-    }
+      "create:empty_blaze_burner",
+      "spectrum:shimmerstone_gem"
+    ]
   )
 
   // 传送带
