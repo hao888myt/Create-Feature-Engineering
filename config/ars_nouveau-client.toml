@@ -3,7 +3,7 @@
 	#Show the supporter message. This is set to false after the first time.
 	showSupporterMessage = true
 	#If dynamic lights are enabled
-	lightsEnabled = false
+	lightsEnabled = true
 	#How bright the touch light is
 	# Default: 8
 	# Range: 0 ~ 15
