@@ -5,6 +5,7 @@ ServerEvents.tags("block", event => {
         "#minecraft:pressure_plates",
         "#minecraft:rails",
         "#c:chests",
+        "#minecraft:signs",
         "#minecraft:pressure_plates",
         "minecraft:copper_grate",
         "minecraft:exposed_copper_grate",
