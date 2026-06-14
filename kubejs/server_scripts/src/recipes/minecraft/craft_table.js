@@ -97,7 +97,7 @@ ServerEvents.recipes(event => {
 
   // 链式齿轮箱
   event.remove("create_connected:crafting/kinetics/encased_chain_cogwheel")
-  event.shapeless(Item.of("create_connected:encased_chain_cogwheel", 4),[
+  event.shapeless(Item.of("create_connected:encased_chain_cogwheel", 4), [
     Item.of("create:encased_chain_drive", 4),
     "create:cogwheel"
   ])
@@ -191,5 +191,22 @@ ServerEvents.recipes(event => {
       "minecraft:quartz",
       Item.of("minecraft:redstone", 4)
     ]
+  )
+
+  // 喷气背包
+  event.remove("create_jetpack:jetpack")
+  event.shaped(
+    "create_jetpack:jetpack",
+    [
+      "BSB",
+      "BCB",
+      "H H"
+    ],
+    {
+      B: "#c:plates/brass",
+      C: "create:copper_backtank",
+      H: "create:chute",
+      S: "create:shaft"
+    }
   )
 })
