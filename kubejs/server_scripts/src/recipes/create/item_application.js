@@ -14,6 +14,8 @@ ServerEvents.recipes((event) => {
 
         ["create:deployer", "create:andesite_casing", "create:brass_hand"],
 
+        ["create:mechanical_pump", "create:fluid_pipe", "create:cogwheel", false],
+
         ["create:empty_blaze_burner", "minecraft:netherrack", "#c:plates/iron"],
 
         ["create:packager", "create:cardboard_block", "#c:ingots/andesite"],
