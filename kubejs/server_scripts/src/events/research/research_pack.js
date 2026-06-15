@@ -192,4 +192,16 @@ ResearchdEvents.registerResearches(event => {
         .effect(unlockRecipes("create:kjs/researchd_research_pack_3"))
         .parent("logistics")
     
+    event.create("basin_lid")
+        .translatableName("工作盆盖板")
+        .translatableDescription("解锁工作盆盖板")
+        .icon("createdieselgenerators:basin_lid")
+        .method(consumePacks([
+            [rp.conveying, 16, 200],
+            [rp.logistics, 16, 200],
+            [rp.fluid, 16, 200]
+        ]))
+        .effect(unlockRecipes("kubejs:kjs/createdieselgenerators_basin_lid"))
+        .parent("fluid")
+    
 })
