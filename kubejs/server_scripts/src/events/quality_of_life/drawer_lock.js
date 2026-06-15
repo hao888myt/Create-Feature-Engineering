@@ -1,4 +1,4 @@
-const { $CompoundTag } = require("@package/net/minecraft/nbt")
+// const { $CompoundTag } = require("@package/net/minecraft/nbt")
 
 BlockEvents.rightClicked(event => {
     let drawer = event.getBlock()
@@ -45,4 +45,19 @@ BlockEvents.rightClicked(event => {
     player.swing()
 
     event.cancel()
+})
+
+BlockEvents.placed(event => {
+    let drawer = event.getBlock()
+    if (!drawer.hasTag("storagedrawers:drawers")) return
+
+    if (!event.getPlayer().getOffHandItem().hasTag("c:tools/wrench")) return
+
+    let pos = event.block.pos
+    let drawer_nbt = drawer.getEntityData()
+
+    if (!drawer_nbt.contains("Lock")) {
+        drawer_nbt.putByte("Lock", 3)
+        drawer.setEntityData(drawer_nbt)
+    }
 })
