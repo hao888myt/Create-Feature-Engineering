@@ -19,7 +19,8 @@ ServerEvents.recipes((event) => {
         ["create:packager", "create:cardboard_block", "#c:ingots/andesite"],
         ["create:package_frogport", "create_fantasizing:andesite_crate", "#c:slimeballs"],
 
-        ["fluidlogistics:fluid_pump", "create:propeller", "create:mechanical_pump"]
+        ["fluidlogistics:fluid_pump", "create:mechanical_pump", "create:propeller"],
+        ["create:hose_pulley", "create:copper_casing", "minecraft:dried_kelp_block"]
     ]
 
 
