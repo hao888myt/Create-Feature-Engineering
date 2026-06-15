@@ -148,7 +148,7 @@ ServerEvents.recipes(event => {
   // 方块破坏器
   event.remove("anvilcraft_pigsplus:block_breaker")
   event.shaped(
-    Item.of("create:brass_hand"),
+    Item.of("anvilcraft_pigsplus:block_breaker"),
     [
       "CCC",
       "HRS",
