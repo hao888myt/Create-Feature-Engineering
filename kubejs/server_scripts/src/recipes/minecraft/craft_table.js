@@ -102,6 +102,29 @@ ServerEvents.recipes(event => {
     "create:cogwheel"
   ])
 
+  // 动力收割机
+  event.remove("create:crafting/kinetics/mechanical_harvester")
+  event.shaped(Item.of("create:mechanical_harvester", 4), [
+    "III",
+    "AAA",
+    " C "
+  ], {
+    A: "#c:ingots/andesite",
+    I: "#c:plates/iron",
+    C: "create:andesite_casing",
+  })
+
+  event.remove("create:crafting/kinetics/mechanical_plough")
+  event.shaped(Item.of("create:mechanical_harvester", 4), [
+    "AAA",
+    "III",
+    " C "
+  ], {
+    A: "#c:ingots/andesite",
+    I: "#c:plates/iron",
+    C: "create:andesite_casing",
+  })
+
   // 传动研究包复制
   let conveying_copy = [
     "create:gearbox",
