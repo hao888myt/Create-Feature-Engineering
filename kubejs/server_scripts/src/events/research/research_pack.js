@@ -133,7 +133,7 @@ ResearchdEvents.registerResearches(event => {
         ]))
         .effect(unlockRecipes(["create:crafting/kinetics/gantry_carriage", "create:crafting/kinetics/gantry_shaft"]))
         .parent("logistics")
-
+    
     event.create("andesite_crate")
         .translatableName("安山板条箱")
         .translatableDescription("可调节容量的容器")
@@ -166,4 +166,18 @@ ResearchdEvents.registerResearches(event => {
         ]))
         .effect(unlockRecipe("anvilcraft_pigsplus:block_breaker"))
         .parent("logistics")
+    
+    event.create("port_packger")
+        .translatableName("进阶物流")
+        .translatableDescription("解锁物流蛙港和打包机的配方")
+        .icon("create:packager")
+        .method(consumePacks([
+            [rp.conveying, 8, 200],
+            [rp.logistics, 8, 200]
+        ]))
+        .effect(unlockRecipes([
+            "create:kjs/create_package_frogport",
+            "create:kjs/create_packager"
+        ]))
+        .parent("andesite_crate")
 })
