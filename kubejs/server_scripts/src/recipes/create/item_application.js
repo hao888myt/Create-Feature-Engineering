@@ -17,7 +17,9 @@ ServerEvents.recipes((event) => {
         ["create:empty_blaze_burner", "minecraft:netherrack", "#c:plates/iron"],
 
         ["create:packager", "create:cardboard_block", "#c:ingots/andesite"],
-        ["create:package_frogport", "create_fantasizing:andesite_crate", "#c:slimeballs"]
+        ["create:package_frogport", "create_fantasizing:andesite_crate", "#c:slimeballs"],
+
+        ["fluidlogistics:fluid_pump", "create:propeller", "create:mechanical_pump"]
     ]
 
 
