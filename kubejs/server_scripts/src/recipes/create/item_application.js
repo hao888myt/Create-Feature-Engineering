@@ -14,7 +14,10 @@ ServerEvents.recipes((event) => {
 
         ["create:deployer", "create:andesite_casing", "create:brass_hand"],
 
-        ["create:empty_blaze_burner", "minecraft:netherrack", "#c:plates/iron"]
+        ["create:empty_blaze_burner", "minecraft:netherrack", "#c:plates/iron"],
+
+        ["create:packager", "create:cardboard_block", "#c:ingots/andesite"],
+        ["create:package_frogport", "create_fantasizing:andesite_crate", "#c:slimeballs"]
     ]
 
 
