@@ -145,6 +145,23 @@ ServerEvents.recipes(event => {
     ])
   })
 
+  // 方块破坏器
+  event.remove("anvilcraft_pigsplus:block_breaker")
+  event.shaped(
+    Item.of("create:brass_hand"),
+    [
+      "CCC",
+      "HRS",
+      "CCC"
+    ],
+    {
+      H: "minecraft:hopper",
+      R: "minecraft:redstone",
+      S: "minecraft:stonecutter",
+      C: "minecraft:cobblestone"
+    }
+  )
+
   // 黄铜手部零件
   event.shaped(
     Item.of("create:brass_hand"),
