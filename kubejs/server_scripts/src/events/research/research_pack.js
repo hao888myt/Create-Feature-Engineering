@@ -90,8 +90,8 @@ ResearchdEvents.registerResearches(event => {
         .effect(unlockRecipe("create:kjs/researchd_research_pack"))
 
     event.create("harvester_plough")
-        .translatableName("收割与开垦")
-        .translatableDescription("解锁动力收割机和动力犁")
+        .translatableName("开垦与收割")
+        .translatableDescription("解锁动力犁和动力收割机")
         .icon("create:mechanical_harvester")
         .method(consumePack(rp.conveying, 8, 200))
         .effect(unlockRecipes([
