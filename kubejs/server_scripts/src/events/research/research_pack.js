@@ -134,6 +134,17 @@ ResearchdEvents.registerResearches(event => {
         .effect(unlockRecipes(["create:crafting/kinetics/gantry_carriage", "create:crafting/kinetics/gantry_shaft"]))
         .parent("logistics")
 
+    event.create("andesite_crate")
+        .translatableName("安山板条箱")
+        .translatableDescription("可调节容量的容器")
+        .icon("create_fantasizing:andesite_crate")
+        .method(consumePacks([
+            [rp.conveying, 8, 200],
+            [rp.logistics, 8, 200]
+        ]))
+        .effect(unlockRecipes(["create_fantasizing:andesite_crate", "create_fantasizing:andesite_crate_alternative"]))
+        .parent("logistics")
+
     event.create("cart_assembler")
         .translatableName("矿车装配站")
         .translatableDescription("动态结构的起点")
