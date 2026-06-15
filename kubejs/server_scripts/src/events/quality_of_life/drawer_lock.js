@@ -1,18 +1,34 @@
+const { $CompoundTag } = require("@package/net/minecraft/nbt")
+
 BlockEvents.rightClicked(event => {
-    const drawer = event.getBlock()
+    let drawer = event.getBlock()
     if (!drawer.hasTag("storagedrawers:drawers") || event.hand != "MAIN_HAND") return
 
-    const player = event.getPlayer()
+    let player = event.getPlayer()
 
-    if(!event.item.hasTag("c:tools/wrench")) return
-    if(player.shiftKeyDown) return
+    if (!event.item.hasTag("c:tools/wrench")) return
+    if (player.shiftKeyDown) return
 
-    const pos = event.block.pos
-    const drawerNbt = drawer.getEntityData()
-    drawerNbt.contains("Lock") ? drawerNbt.remove("Lock") : drawerNbt.putByte("Lock", 3)
-    drawer.setEntityData(drawerNbt)
+    let pos = event.block.pos
+    let drawer_nbt = drawer.getEntityData()
+    drawer_nbt.contains("Lock") ? drawer_nbt.remove("Lock") : drawer_nbt.putByte("Lock", 3)
+    drawer.setEntityData(drawer_nbt)
+
+    /** @type {[$CompoundTag]} */
+    let drawers = drawer_nbt.get("Drawers")
+
+    for (let i = 0; i < drawers.length; i++) {
+        if (drawers[i].contains("Count")) {
+            if (drawers[i].getInt("Count") == 0) {
+                drawer_nbt.Drawers[i].remove("Item")
+                drawer_nbt.Drawers[i].remove("Count")
+            }
+        }
+    }
+
+    drawer.setEntityData(drawer_nbt)
 
     player.swing()
-    
+
     event.cancel()
 })
