@@ -228,4 +228,15 @@ ResearchdEvents.registerResearches(event => {
         .effect(unlockRecipe("create:kjs/fluidlogistics_fluid_pump"))
         .parent("fluid")
     
+    event.create("hose_pulley")
+        .translatableName("软管滑轮")
+        .translatableDescription("初期的无限流体")
+        .icon("create:hose_pulley")
+        .method(consumePacks([
+            [rp.conveying, 16, 200],
+            [rp.logistics, 16, 200],
+            [rp.fluid, 16, 200]
+        ]))
+        .effect(unlockRecipe("create:kjs/create_hose_pulley"))
+        .parent("fluid")
 })
