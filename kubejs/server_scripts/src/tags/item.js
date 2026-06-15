@@ -11,7 +11,7 @@ ServerEvents.tags("item", event => {
 
     let ingots = [
         ["steel", "create_feature_engineering:steel_ingot"],
-        ["andesite_alloy", "create:andesite_alloy"],
+        ["andesite", "create:andesite_alloy"],
         ["azure_neodymium", "alexscaves:azure_neodymium_ingot"],
         ["scarlet_neodymium", "alexscaves:scarlet_neodymium_ingot"]
     ]
