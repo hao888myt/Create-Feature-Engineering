@@ -216,4 +216,16 @@ ResearchdEvents.registerResearches(event => {
         .effect(unlockRecipe("fluidlogistics:faucet"))
         .parent("fluid")
     
+    event.create("fluid_pump")
+        .translatableName("流体泵")
+        .translatableDescription("更高效的流体传输方式")
+        .icon("fluidlogistics:fluid_pump")
+        .method(consumePacks([
+            [rp.conveying, 16, 200],
+            [rp.logistics, 16, 200],
+            [rp.fluid, 16, 200]
+        ]))
+        .effect(unlockRecipe("create:kjs/fluidlogistics_fluid_pump"))
+        .parent("fluid")
+    
 })
