@@ -144,4 +144,15 @@ ResearchdEvents.registerResearches(event => {
         ]))
         .effect(unlockRecipe("create:crafting/kinetics/cart_assembler"))
         .parent("logistics")
+    
+    event.create("block_breaker")
+        .translatableName("方块破坏器")
+        .translatableDescription("解锁方块破坏器的配方")
+        .icon("anvilcraft_pigsplus:block_breaker")
+        .method(consumePacks([
+            [rp.conveying, 8, 200],
+            [rp.logistics, 8, 200]
+        ]))
+        .effect(unlockRecipe("anvilcraft_pigsplus:block_breaker"))
+        .parent("logistics")
 })
