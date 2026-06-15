@@ -133,4 +133,15 @@ ResearchdEvents.registerResearches(event => {
         ]))
         .effect(unlockRecipes(["create:crafting/kinetics/gantry_carriage", "create:crafting/kinetics/gantry_shaft"]))
         .parent("logistics")
+
+    event.create("cart_assembler")
+        .translatableName("矿车装配站")
+        .translatableDescription("动态结构的起点")
+        .icon("create:cart_assembler")
+        .method(consumePacks([
+            [rp.conveying, 8, 200],
+            [rp.logistics, 8, 200]
+        ]))
+        .effect(unlockRecipe("create:crafting/kinetics/cart_assembler"))
+        .parent("logistics")
 })
