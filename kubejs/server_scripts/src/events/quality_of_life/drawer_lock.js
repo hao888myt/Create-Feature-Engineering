@@ -14,14 +14,28 @@ BlockEvents.rightClicked(event => {
     drawer_nbt.contains("Lock") ? drawer_nbt.remove("Lock") : drawer_nbt.putByte("Lock", 3)
     drawer.setEntityData(drawer_nbt)
 
-    /** @type {[$CompoundTag]} */
-    let drawers = drawer_nbt.get("Drawers")
+    if (drawer_nbt.contains("Drawers")) {
+        /** @type {[$CompoundTag]} */
+        let drawers = drawer_nbt.get("Drawers")
 
-    for (let i = 0; i < drawers.length; i++) {
-        if (drawers[i].contains("Count")) {
-            if (drawers[i].getInt("Count") == 0) {
-                drawer_nbt.Drawers[i].remove("Item")
-                drawer_nbt.Drawers[i].remove("Count")
+        for (let i = 0; i < drawers.length; i++) {
+            if (drawers[i].contains("Count")) {
+                if (drawers[i].getInt("Count") == 0) {
+                    drawer_nbt.Drawers[i].remove("Item")
+                    drawer_nbt.Drawers[i].remove("Count")
+                }
+            }
+        }
+    }
+
+    if (drawer_nbt.contains("tanks")) {
+        /** @type {[$CompoundTag]} */
+        let tanks = drawer_nbt.get("tanks")
+
+        for (let i = 0; i < tanks.length; i++) {
+            if (tanks[i].contains("cache") && !tanks[i].contains("Fluid")) {
+                drawer_nbt.tanks[i].cache.remove("id")
+                drawer_nbt.tanks[i].cache.remove("amount")
             }
         }
     }
