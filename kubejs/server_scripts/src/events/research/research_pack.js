@@ -204,4 +204,16 @@ ResearchdEvents.registerResearches(event => {
         .effect(unlockRecipes("kubejs:kjs/createdieselgenerators_basin_lid"))
         .parent("fluid")
     
+    event.create("faucet")
+        .translatableName("水龙头")
+        .translatableDescription("解锁水龙头")
+        .icon("fluidlogistics:faucet")
+        .method(consumePacks([
+            [rp.conveying, 16, 200],
+            [rp.logistics, 16, 200],
+            [rp.fluid, 16, 200]
+        ]))
+        .effect(unlockRecipe("fluidlogistics:faucet"))
+        .parent("fluid")
+    
 })
