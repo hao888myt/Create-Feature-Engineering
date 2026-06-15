@@ -180,4 +180,16 @@ ResearchdEvents.registerResearches(event => {
             "create:kjs/create_packager"
         ]))
         .parent("andesite_crate")
+    
+    event.create("fluid")
+        .translatableName("流体研究包")
+        .translatableDescription("解锁流体研究包")
+        .iconStacks('researchd:research_pack[researchd:research_pack="create_feature_engineering:fluid"]')
+        .method(consumePacks([
+            [rp.conveying, 32, 600],
+            [rp.logistics, 32, 600]
+        ]))
+        .effect(unlockRecipes("create:kjs/researchd_research_pack_3"))
+        .parent("logistics")
+    
 })
