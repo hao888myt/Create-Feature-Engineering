@@ -89,6 +89,16 @@ ResearchdEvents.registerResearches(event => {
         .method(consumeItem("create:andesite_alloy", 16))
         .effect(unlockRecipe("create:kjs/researchd_research_pack"))
 
+    event.create("harvester_plough")
+        .translatableName("收割与开垦")
+        .translatableDescription("解锁动力收割机和动力犁")
+        .icon("create:mechanical_harvester")
+        .method(consumePack(rp.conveying, 8, 200))
+        .effect(unlockRecipes([
+            "kubejs:kjs/create_mechanical_harvester",
+            "create:crafting/kinetics/mechanical_plough"
+        ]))
+
     event.create("basic_bearing")
         .translatableName("基础轴承")
         .translatableDescription("解锁风车轴承和动力轴承的配方")
@@ -96,7 +106,7 @@ ResearchdEvents.registerResearches(event => {
         .method(consumePack(rp.conveying, 8, 200))
         .effect(unlockRecipes(["create:crafting/kinetics/windmill_bearing", "create:crafting/kinetics/mechanical_bearing"]))
         .parent("conveying")
-    
+
     event.create("simple_process")
         .translatableName("简单加工")
         .translatableDescription("解锁卷簧机和动力砂轮")
@@ -112,7 +122,7 @@ ResearchdEvents.registerResearches(event => {
         .method(consumePack(rp.conveying, 16, 400))
         .effect(unlockRecipe("create:kjs/researchd_research_pack_2"))
         .parent("conveying")
-    
+
     event.create("gantry_carriage")
         .translatableName("起重机")
         .translatableDescription("解锁起重机")
