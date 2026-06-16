@@ -46,8 +46,7 @@ ServerEvents.recipes((event) => {
         "anvilcraft:item_crush/block_crush/cracked_deepslate_tiles_from_deepslate_tiles",
         "anvilcraft:item_crush/block_crush/cracked_nether_bricks_from_nether_bricks",
         "anvilcraft:item_crush/block_crush/cracked_polished_blackstone_bricks_from_polished_blackstone_bricks"
-    ]
-    removes.forEach(recipe => {
+    ].forEach(recipe => {
         event.remove(recipe)
     })
 
