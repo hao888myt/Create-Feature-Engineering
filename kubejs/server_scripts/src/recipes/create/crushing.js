@@ -1,6 +1,13 @@
 ServerEvents.recipes(event => {
     let create = event.recipes.create
 
+    let removes = [
+        "create:crushing/diorite_recycling",
+        "create:crushing/diorite"
+    ].forEach(recipe => {
+        event.remove(recipe)
+    })
+
     //充能方铅岩粉碎
     create.crushing([Item.of("alexscaves:raw_azure_neodymium", 2), Item.of("alexscaves:raw_scarlet_neodymium", 2), Item.of("alexscaves:galena")], ["alexscaves:energized_galena_neutral"])
 
@@ -8,8 +15,6 @@ ServerEvents.recipes(event => {
     create.crushing("minecraft:red_sand", "minecraft:granite")
 
     // 闪长岩粉碎
-    event.remove("create:crushing/diorite_recycling")
-    event.remove("create:crushing/diorite")
     create.crushing("anvilcraft:quartz_sand", "minecraft:diorite")
     create.crushing("anvilcraft:quartz_sand", Ingredient.of("#create:stone_types/diorite"))
 

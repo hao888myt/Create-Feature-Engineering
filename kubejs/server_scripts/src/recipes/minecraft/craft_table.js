@@ -5,6 +5,28 @@ ServerEvents.recipes(event => {
   // 
   event.remove({ mod: "beyonddimensions" })
 
+  let removes = [
+    "create:crafting/kinetics/gearbox",
+    "create:crafting/kinetics/vertical_gearbox",
+    "create:crafting/kinetics/clutch",
+    "create:crafting/kinetics/encased_chain_drive",
+    "create:crafting/kinetics/encased_chain_drive_from_zinc",
+    "create:crafting/kinetics/adjustable_chain_gearshift",
+    "create_connected:crafting/kinetics/encased_chain_cogwheel",
+    "create:crafting/kinetics/mechanical_harvester",
+    "create:crafting/kinetics/mechanical_plough",
+
+    "anvilcraft_pigsplus:block_breaker",
+
+    "createdieselgenerators:crafting/basin_lid",
+
+    "create:crafting/materials/rose_quartz",
+
+    "create_jetpack:jetpack"
+  ].forEach(recipe => {
+    event.remove(recipe)
+  })
+
   // 数字0
   event.shaped(Item.of("create_feature_engineering:zero", 8), [
     "ZZZ",
@@ -38,7 +60,6 @@ ServerEvents.recipes(event => {
   })
 
   // 十字齿轮箱
-  event.remove("create:crafting/kinetics/gearbox")
   event.shaped(
     Item.of("create:gearbox", 4), [
     " C ",
@@ -52,7 +73,6 @@ ServerEvents.recipes(event => {
   )
 
   // 竖十字齿轮箱
-  event.remove("create:crafting/kinetics/vertical_gearbox")
   event.shaped(
     Item.of("create:vertical_gearbox", 4), [
     "C C",
@@ -66,7 +86,6 @@ ServerEvents.recipes(event => {
   )
 
   // 离合器
-  event.remove("create:crafting/kinetics/clutch")
   event.shapeless(
     Item.of("create:clutch", 4),
     [
@@ -77,33 +96,28 @@ ServerEvents.recipes(event => {
   )
 
   // 链式传动箱
-  event.remove("create:crafting/kinetics/encased_chain_drive")
   event.shapeless(Item.of("create:encased_chain_drive", 4), [
     "create:andesite_casing",
     Ingredient.of("#c:nuggets/iron", 3)
   ])
-  event.remove("create:crafting/kinetics/encased_chain_drive_from_zinc")
   event.shapeless(Item.of("create:encased_chain_drive", 4), [
     "create:andesite_casing",
     Ingredient.of("#c:nuggets/zinc", 3)
   ])
 
   // 可调节链式传动箱
-  event.remove("create:crafting/kinetics/adjustable_chain_gearshift")
   event.shapeless(Item.of("create:adjustable_chain_gearshift", 4), [
     Item.of("create:encased_chain_drive", 4),
     "create:electron_tube"
   ])
 
   // 链式齿轮箱
-  event.remove("create_connected:crafting/kinetics/encased_chain_cogwheel")
   event.shapeless(Item.of("create_connected:encased_chain_cogwheel", 4), [
     Item.of("create:encased_chain_drive", 4),
     "create:cogwheel"
   ])
 
   // 动力收割机
-  event.remove("create:crafting/kinetics/mechanical_harvester")
   event.shaped(Item.of("create:mechanical_harvester", 4), [
     "III",
     "AAA",
@@ -114,7 +128,6 @@ ServerEvents.recipes(event => {
     C: "create:andesite_casing",
   })
 
-  event.remove("create:crafting/kinetics/mechanical_plough")
   event.shaped(Item.of("create:mechanical_harvester", 4), [
     "AAA",
     "III",
@@ -146,7 +159,6 @@ ServerEvents.recipes(event => {
   })
 
   // 方块破坏器
-  event.remove("anvilcraft_pigsplus:block_breaker")
   event.shaped(
     Item.of("anvilcraft_pigsplus:block_breaker"),
     [
@@ -210,7 +222,6 @@ ServerEvents.recipes(event => {
   )
 
   // 工作盆盖板
-  event.remove("createdieselgenerators:crafting/basin_lid")
   event.shaped(
     Item.of("createdieselgenerators:basin_lid", 3),
     [
@@ -224,7 +235,6 @@ ServerEvents.recipes(event => {
   )
 
   // 玫瑰石英
-  event.remove("create:crafting/materials/rose_quartz")
   event.shapeless(
     Item.of("create:rose_quartz"),
     [
@@ -234,7 +244,6 @@ ServerEvents.recipes(event => {
   )
 
   // 喷气背包
-  event.remove("create_jetpack:jetpack")
   event.shaped(
     "create_jetpack:jetpack",
     [

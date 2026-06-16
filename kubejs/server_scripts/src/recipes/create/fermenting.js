@@ -1,9 +1,14 @@
 ServerEvents.recipes(event => {
     let cdg = event.recipes.createdieselgenerators
 
+    let removes = [
+        "createdieselgenerators:basin_fermenting/fermentable",
+        "createdieselgenerators:bulk_fermenting/fermentable"
+    ].forEach(recipe => {
+        event.remove(recipe)
+    })
+
     // 乙醇
-    event.remove("createdieselgenerators:basin_fermenting/fermentable")
-    event.remove("createdieselgenerators:bulk_fermenting/fermentable")
     cdg.basin_fermenting(Fluid.of("createdieselgenerators:ethanol", 200), [
         Item.of("minecraft:sugar"),
         Ingredient.of('#c:flours/wheat'),

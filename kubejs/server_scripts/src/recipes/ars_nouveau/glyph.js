@@ -1,7 +1,12 @@
 ServerEvents.recipes(event => {
     let { ars_nouveau } = event.recipes
 
-    event.remove("ars_nouveau:glyph_launch")
+    let removes = [
+        "ars_nouveau:glyph_launch"
+    ].forEach(recipe => {
+        event.remove(recipe)
+    })
+    
     ars_nouveau.glyph("ars_nouveau:glyph_launch",
         [
             Ingredient.of("#c:leathers"),

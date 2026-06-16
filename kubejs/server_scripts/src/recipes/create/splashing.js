@@ -9,9 +9,7 @@ ServerEvents.recipes(event => {
 
         "create:splashing/ice",
         "create:splashing/magma_block"
-    ]
-
-    removes.forEach(remove => {
+    ].forEach(remove => {
         event.remove(remove)
     })
 })

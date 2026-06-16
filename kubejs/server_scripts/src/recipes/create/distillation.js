@@ -1,9 +1,14 @@
 ServerEvents.recipes(event => {
     let cdg = event.recipes.createdieselgenerators
 
+    let removes = [
+        "createdieselgenerators:distillation/superheated_crude_oil",
+        "createdieselgenerators:distillation/crude_oil"
+    ].forEach(reicpe => {
+        event.remove(reicpe)
+    })
+
     // 原油分馏
-    event.remove("createdieselgenerators:distillation/superheated_crude_oil")
-    event.remove("createdieselgenerators:distillation/crude_oil")
     // 加热
     cdg.distillation([
         Fluid.of("create_feature_engineering:heavy_oil", 50),
