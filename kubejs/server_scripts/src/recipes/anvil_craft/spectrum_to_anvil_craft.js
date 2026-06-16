@@ -1,5 +1,6 @@
 ServerEvents.recipes((event) => {
-    const { $ItemIngredientPredicate, $ChanceItemStack } = require("@package/dev/anvilcraft/lib/recipe/component")
+    let $ItemIngredientPredicate = Java.loadClass("dev.anvilcraft.lib.recipe.component.ItemIngredientPredicate");
+    let $ChanceItemStack = Java.loadClass("dev.anvilcraft.lib.recipe.component.ChanceItemStack");
 
     let anvilCraft = event.recipes.anvilcraft
 
