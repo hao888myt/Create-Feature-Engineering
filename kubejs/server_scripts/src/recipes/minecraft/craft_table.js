@@ -199,7 +199,7 @@ ServerEvents.recipes(event => {
 
   // 传送带
   event.shaped(
-    Item.of("create:belt_connector", 6),
+    Item.of("create:belt_connector", 3),
     [
       "DDD",
       "RRR"
@@ -210,7 +210,7 @@ ServerEvents.recipes(event => {
     }
   )
   event.shaped(
-    Item.of("create:belt_connector", 6),
+    Item.of("create:belt_connector", 3),
     [
       "RRR",
       "DDD"
