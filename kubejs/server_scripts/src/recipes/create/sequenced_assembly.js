@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
 			create.deploying(transitionalItem, [transitionalItem, "create:belt_connector"]),
 			create.deploying(transitionalItem, [transitionalItem, "create:chain_conveyor"]),
 			create.deploying(transitionalItem, [transitionalItem, "create:andesite_funnel"]),
-	]).transitionalItem(transitionalItem).loops(1)
+	]).transitionalItem(transitionalItem).loops(1).id(`${global.ModPackId}:logistics`)
 
 	// 流体研究包
 	transitionalItem = "create_feature_engineering:incomplete_research_pack"
@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
 			create.deploying(transitionalItem, [transitionalItem, "create:item_drain"]),
 			create.deploying(transitionalItem, [transitionalItem, "create:spout"]),
 			create.deploying(transitionalItem, [transitionalItem, "create:fluid_pipe"]),
-	]).transitionalItem(transitionalItem).loops(1)
+	]).transitionalItem(transitionalItem).loops(1).id(`${global.ModPackId}:fluid`)
 
 	// 智能研究包
 	transitionalItem = "create_feature_engineering:incomplete_research_pack"
@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
 			create.deploying(transitionalItem, [transitionalItem, "create:transmitter"]),
 			create.deploying(transitionalItem, [transitionalItem, "create:electron_tube"]),
 			create.deploying(transitionalItem, [transitionalItem, "create:filter"]),
-	]).transitionalItem(transitionalItem).loops(2)
+	]).transitionalItem(transitionalItem).loops(2).id(`${global.ModPackId}:smart`)
 
 	// 包裹研究包
 	transitionalItem = "create_feature_engineering:incomplete_research_pack"
@@ -37,5 +37,5 @@ ServerEvents.recipes(event => {
 			create.deploying(transitionalItem, [transitionalItem, "create:stock_link"]),
 			create.deploying(transitionalItem, [transitionalItem, "create:packager"]),
 			create.deploying(transitionalItem, [transitionalItem, "create:package_frogport"]),
-	]).transitionalItem(transitionalItem).loops(2)
+	]).transitionalItem(transitionalItem).loops(2).id(`${global.ModPackId}:package`)
 })
