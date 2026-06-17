@@ -87,13 +87,13 @@ ResearchdEvents.registerResearches(event => {
         .translatableDescription("千里之行，始于足下")
         .iconStacks('researchd:research_pack[researchd:research_pack="create_feature_engineering:conveying"]')
         .method(consumeItem("create:andesite_alloy", 16))
-        .effect(unlockRecipe("create:kjs/researchd_research_pack"))
+        .effect(unlockRecipe("create_feature_engineering:conveying"))
 
     event.create("harvester_plough")
         .translatableName("开垦与收割")
         .translatableDescription("解锁动力犁和动力收割机")
         .icon("create:mechanical_harvester")
-        .method(consumePack(rp.conveying, 8, 200))
+        .method(consumePack(rp.conveying, 8, 100))
         .effect(unlockRecipes([
             "kubejs:kjs/create_mechanical_harvester",
             "create:crafting/kinetics/mechanical_plough"
@@ -103,7 +103,7 @@ ResearchdEvents.registerResearches(event => {
         .translatableName("简单加工")
         .translatableDescription("解锁卷簧机和动力砂轮")
         .icon("vintageimprovements:spring_coiling_machine")
-        .method(consumePack(rp.conveying, 8, 200))
+        .method(consumePack(rp.conveying, 8, 100))
         .effect(unlockRecipes(["create:kjs/create_enchantment_industry_mechanical_grindstone", "create:kjs/vintageimprovements_spring_coiling_machine"]))
         .parent("conveying")
 
@@ -111,8 +111,8 @@ ResearchdEvents.registerResearches(event => {
         .translatableName("物流研究包")
         .translatableDescription("用于研究物流系统")
         .iconStacks('researchd:research_pack[researchd:research_pack="create_feature_engineering:logistics"]')
-        .method(consumePack(rp.conveying, 16, 400))
-        .effect(unlockRecipe("create:kjs/researchd_research_pack_2"))
+        .method(consumePack(rp.conveying, 16, 100))
+        .effect(unlockRecipe("create_feature_engineering:logistics"))
         .parent("conveying")
 
     event.create("gantry_carriage")
@@ -120,8 +120,8 @@ ResearchdEvents.registerResearches(event => {
         .translatableDescription("解锁起重机")
         .icon("create:gantry_carriage")
         .method(consumePacks([
-            [rp.conveying, 8, 200],
-            [rp.logistics, 8, 200]
+            [rp.conveying, 8, 100],
+            [rp.logistics, 8, 100]
         ]))
         .effect(unlockRecipes(["create:crafting/kinetics/gantry_carriage", "create:crafting/kinetics/gantry_shaft"]))
         .parent("logistics")
@@ -131,8 +131,8 @@ ResearchdEvents.registerResearches(event => {
         .translatableDescription("可调节容量的容器")
         .icon("create_fantasizing:andesite_crate")
         .method(consumePacks([
-            [rp.conveying, 8, 200],
-            [rp.logistics, 8, 200]
+            [rp.conveying, 8, 100],
+            [rp.logistics, 8, 100]
         ]))
         .effect(unlockRecipes(["create_fantasizing:andesite_crate", "create_fantasizing:andesite_crate_alternative"]))
         .parent("logistics")
@@ -142,8 +142,8 @@ ResearchdEvents.registerResearches(event => {
         .translatableDescription("动态结构的起点")
         .icon("create:cart_assembler")
         .method(consumePacks([
-            [rp.conveying, 8, 200],
-            [rp.logistics, 8, 200]
+            [rp.conveying, 8, 100],
+            [rp.logistics, 8, 100]
         ]))
         .effect(unlockRecipe("create:crafting/kinetics/cart_assembler"))
         .parent("logistics")
@@ -153,8 +153,8 @@ ResearchdEvents.registerResearches(event => {
         .translatableDescription("解锁方块破坏器的配方")
         .icon("anvilcraft_pigsplus:block_breaker")
         .method(consumePacks([
-            [rp.conveying, 8, 200],
-            [rp.logistics, 8, 200]
+            [rp.conveying, 8, 100],
+            [rp.logistics, 8, 100]
         ]))
         .effect(unlockRecipe("anvilcraft_pigsplus:block_breaker"))
         .parent("logistics")
@@ -164,8 +164,8 @@ ResearchdEvents.registerResearches(event => {
         .translatableDescription("解锁物流蛙港和打包机的配方")
         .icon("create:packager")
         .method(consumePacks([
-            [rp.conveying, 8, 200],
-            [rp.logistics, 8, 200]
+            [rp.conveying, 8, 100],
+            [rp.logistics, 8, 100]
         ]))
         .effect(unlockRecipes([
             "create:kjs/create_package_frogport",
@@ -178,10 +178,10 @@ ResearchdEvents.registerResearches(event => {
         .translatableDescription("解锁流体研究包")
         .iconStacks('researchd:research_pack[researchd:research_pack="create_feature_engineering:fluid"]')
         .method(consumePacks([
-            [rp.conveying, 32, 600],
-            [rp.logistics, 32, 600]
+            [rp.conveying, 32, 100],
+            [rp.logistics, 32, 100]
         ]))
-        .effect(unlockRecipes("create:kjs/researchd_research_pack_3"))
+        .effect(unlockRecipes("create_feature_engineering:fluid"))
         .parent("logistics")
     
     event.create("basin_lid")
@@ -189,9 +189,9 @@ ResearchdEvents.registerResearches(event => {
         .translatableDescription("解锁工作盆盖板")
         .icon("createdieselgenerators:basin_lid")
         .method(consumePacks([
-            [rp.conveying, 16, 200],
-            [rp.logistics, 16, 200],
-            [rp.fluid, 16, 200]
+            [rp.conveying, 16, 100],
+            [rp.logistics, 16, 100],
+            [rp.fluid, 16, 100]
         ]))
         .effect(unlockRecipes("kubejs:kjs/createdieselgenerators_basin_lid"))
         .parent("fluid")
@@ -201,9 +201,9 @@ ResearchdEvents.registerResearches(event => {
         .translatableDescription("解锁水龙头")
         .icon("fluidlogistics:faucet")
         .method(consumePacks([
-            [rp.conveying, 16, 200],
-            [rp.logistics, 16, 200],
-            [rp.fluid, 16, 200]
+            [rp.conveying, 16, 100],
+            [rp.logistics, 16, 100],
+            [rp.fluid, 16, 100]
         ]))
         .effect(unlockRecipe("fluidlogistics:faucet"))
         .parent("fluid")
@@ -213,9 +213,9 @@ ResearchdEvents.registerResearches(event => {
         .translatableDescription("更高效的流体传输方式")
         .icon("fluidlogistics:fluid_pump")
         .method(consumePacks([
-            [rp.conveying, 16, 200],
-            [rp.logistics, 16, 200],
-            [rp.fluid, 16, 200]
+            [rp.conveying, 16, 100],
+            [rp.logistics, 16, 100],
+            [rp.fluid, 16, 100]
         ]))
         .effect(unlockRecipe("create:kjs/fluidlogistics_fluid_pump"))
         .parent("fluid")
@@ -225,9 +225,9 @@ ResearchdEvents.registerResearches(event => {
         .translatableDescription("初期的无限流体")
         .icon("create:hose_pulley")
         .method(consumePacks([
-            [rp.conveying, 16, 200],
-            [rp.logistics, 16, 200],
-            [rp.fluid, 16, 200]
+            [rp.conveying, 16, 100],
+            [rp.logistics, 16, 100],
+            [rp.fluid, 16, 100]
         ]))
         .effect(unlockRecipe("create:kjs/create_hose_pulley"))
         .parent("fluid")
