@@ -69,7 +69,7 @@
 
 	[block_placer.enchantments]
 		#When true, Infinity enchantment allows placing renewable blocks (e.g. Cobblestone) without consuming them
-		infinity = true
+		infinity = false
 		#When true, Fortune enchantment affects block drops when breaking blocks
 		fortune = true
 		#When true, Silk Touch enchantment affects block drops when breaking blocks
