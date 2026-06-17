@@ -99,14 +99,6 @@ ResearchdEvents.registerResearches(event => {
             "create:crafting/kinetics/mechanical_plough"
         ]))
 
-    event.create("basic_bearing")
-        .translatableName("基础轴承")
-        .translatableDescription("解锁风车轴承和动力轴承的配方")
-        .icon("create:windmill_bearing")
-        .method(consumePack(rp.conveying, 8, 200))
-        .effect(unlockRecipes(["create:crafting/kinetics/windmill_bearing", "create:crafting/kinetics/mechanical_bearing"]))
-        .parent("conveying")
-
     event.create("simple_process")
         .translatableName("简单加工")
         .translatableDescription("解锁卷簧机和动力砂轮")
