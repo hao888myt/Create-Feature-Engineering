@@ -1,0 +1,8 @@
+[
+  {
+    "matchItems": [
+      "#c:plates/gold"
+    ],
+    "resultItems": "minecraft:light_weighted_pressure_plate"
+  }
+]

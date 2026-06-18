@@ -1,0 +1,8 @@
+[
+  {
+    "matchItems": [
+      "#c:plates/lead"
+    ],
+    "resultItems": "anvilcraft:lead_pressure_plate"
+  }
+]

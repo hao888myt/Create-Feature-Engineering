@@ -1,0 +1,44 @@
+[
+  {
+    "matchItems": [
+      "#c:ingots/zinc"
+    ],
+    "resultItems": "create:zinc_ingot"
+  },
+  {
+    "matchItems": [
+      "#c:nuggets/zinc"
+    ],
+    "resultItems": "create:zinc_nugget"
+  },
+  {
+    "matchItems": [
+      "#c:plates/zinc"
+    ],
+    "resultItems": "anvilcraft:zinc_pressure_plate"
+  },
+  {
+    "matchItems": [
+      "#c:raw_materials/zinc"
+    ],
+    "resultItems": "create:raw_zinc"
+  },
+  {
+    "matchItems": [
+      "#c:storage_blocks/raw_zinc"
+    ],
+    "resultItems": "create:raw_zinc_block"
+  },
+  {
+    "matchItems": [
+      "#c:storage_blocks/zinc"
+    ],
+    "resultItems": "create:zinc_block"
+  },
+  {
+    "matchItems": [
+      "anvilcraft:deepslate_zinc_ore"
+    ],
+    "resultItems": "create:deepslate_zinc_ore"
+  }
+]

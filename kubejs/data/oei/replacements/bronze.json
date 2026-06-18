@@ -1,0 +1,8 @@
+[
+  {
+    "matchItems": [
+      "#c:plates/bronze"
+    ],
+    "resultItems": "anvilcraft:bronze_pressure_plate"
+  }
+]

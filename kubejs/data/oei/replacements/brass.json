@@ -1,0 +1,26 @@
+[
+  {
+    "matchItems": [
+      "#c:ingots/brass"
+    ],
+    "resultItems": "create:brass_ingot"
+  },
+  {
+    "matchItems": [
+      "#c:nuggets/brass"
+    ],
+    "resultItems": "create:brass_nugget"
+  },
+  {
+    "matchItems": [
+      "#c:plates/brass"
+    ],
+    "resultItems": "anvilcraft:brass_pressure_plate"
+  },
+  {
+    "matchItems": [
+      "#c:storage_blocks/brass"
+    ],
+    "resultItems": "create:brass_block"
+  }
+]
