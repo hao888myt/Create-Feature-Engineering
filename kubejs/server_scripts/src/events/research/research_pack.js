@@ -231,4 +231,28 @@ ResearchdEvents.registerResearches(event => {
         ]))
         .effect(unlockRecipe("create:kjs/create_hose_pulley"))
         .parent("fluid")
+    
+    event.create("vacuum_chamber")
+        .translatableName("压缩机")
+        .literalDescription("化学工业的起点")
+        .icon("vintageimprovements:vacuum_chamber")
+        .method(consumePacks([
+            [rp.conveying, 16, 100],
+            [rp.logistics, 16, 100],
+            [rp.fluid, 16, 100]
+        ]))
+        .effect(unlockRecipe("create:kjs/create_hose_pulley"))
+        .parent("fluid")
+    
+    event.create("sturdy_sheet")
+        .translatableName("坚固板")
+        .literalDescription("坚固而可靠的材料")
+        .icon("create:sturdy_sheet")
+        .method(consumePacks([
+            [rp.conveying, 16, 100],
+            [rp.logistics, 16, 100],
+            [rp.fluid, 16, 100]
+        ]))
+        .effect(unlockRecipe("create:kjs/create_sturdy_sheet"))
+        .parent("vacuum_chamber")
 })
