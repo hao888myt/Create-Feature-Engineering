@@ -14,10 +14,6 @@ ServerEvents.tags("block", event => {
     event.add("minecraft:needs_diamond_tool", "create_feature_engineering:paltaeria_catalyst")
     event.add("minecraft:mineable/pickaxe", "create_feature_engineering:paltaeria_catalyst")
 
-    // 乌龟化石
-    event.add("minecraft:needs_stone_tool", "create_feature_engineering:toretoise_fossil")
-    event.add("minecraft:mineable/pickaxe", "create_feature_engineering:toretoise_fossil")
-
     // 钢机壳
     event.add("minecraft:mineable/axe", "create_feature_engineering:steel_casing")
     event.add("minecraft:mineable/pickaxe", "create_feature_engineering:steel_casing")
