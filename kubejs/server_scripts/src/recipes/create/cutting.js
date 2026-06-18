@@ -7,7 +7,23 @@ ServerEvents.recipes(event => {
     ]
 
     recipes.forEach(recipe => {
-        create.cutting(recipe[0], Ingredient.of(recipe[1]))
+        create.cutting(recipe[0], Ingredient.of(recipe[1]), 125)
         removeRecipe(recipe, 2, event)
+    })
+
+    event.forEachRecipe({ type: "create:cutting" }, recipe => {
+        let { json } = recipe
+
+        let processing_time = json.get("processing_time")
+
+        if (processing_time == 50)
+            processing_time = 75
+        else if (processing_time == 100)
+            processing_time = 125
+
+        event.remove(recipe.getId())
+        json.remove("processing_time")
+        json.add("processing_time", processing_time)
+        event.custom(json).id(recipe.getId())
     })
 })
