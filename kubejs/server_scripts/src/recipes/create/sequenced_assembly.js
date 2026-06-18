@@ -47,7 +47,7 @@ ServerEvents.recipes(event => {
 
 	// 坚固板
 	transitionalItem = "create:unprocessed_obsidian_sheet"
-	create.sequenced_assembly(Item.of("create:unprocessed_obsidian_sheet", 2),
+	create.sequenced_assembly(Item.of("create:sturdy_sheet", 2),
 		Ingredient.of("#c:dusts/obsidian"), [
 		create.filling(transitionalItem, [transitionalItem, Fluid.of("create_feature_engineering:molten_steel", 90)]),
 		create.pressing(transitionalItem, transitionalItem),
