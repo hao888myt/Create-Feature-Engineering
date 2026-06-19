@@ -243,6 +243,16 @@ ServerEvents.recipes(event => {
     ]
   )
 
+  // 过滤器
+  let filters = [
+    "create:filter",
+    "create:attribute_filter",
+    "create:package_filter",
+    "createdieselgenerators:entity_filter"
+  ].forEach(filter => {
+    event.replaceInput({output: filter}, Ingredient.of("#minecraft:wool"),"minecraft:paper")
+  })
+
   // 喷气背包
   event.shaped(
     "create_jetpack:jetpack",
