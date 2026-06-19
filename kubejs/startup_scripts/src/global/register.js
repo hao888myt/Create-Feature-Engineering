@@ -143,6 +143,10 @@ global.BasicItems = [
         zh_cn: "创世神工具",
     },
     {
+        id: "blue_print",
+        zh_cn: "蓝图物品"
+    },
+    {
         id: "cyan_mixture",
         zh_cn: "青色混合物",
     }
