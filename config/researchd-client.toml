@@ -1,0 +1,2 @@
+#Whether to show the join message on world load
+show_join_message = true

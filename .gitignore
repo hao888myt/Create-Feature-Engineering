@@ -22,6 +22,7 @@
 !/config/alexsmobs-common.toml
 !/config/ars_nouveau-client.toml
 !/config/create_fantasizing-server.toml
+!/config/researchd-client.toml
 
 # 此处需要加入部分配置文件更改可以在对应文件路径前输入一个!来进行筛选
 kubejs/startup_scripts/jsconfig.json
