@@ -9,6 +9,12 @@ ServerEvents.recipes(event => {
         Item.of("create:andesite_casing")
     ]).id(`${global.ModPackId}:conveying`)
 
+    // 传送带
+    create.mixing(Item.of("create:belt_connector", 2), [
+        Item.of("minecraft:dried_kelp"),
+        Ingredient.of("#neoforge:rubber")
+    ])
+
     // 熔融钢
     create.mixing(Fluid.of("create_feature_engineering:molten_steel", 90), [
         Item.of("minecraft:coal"),
