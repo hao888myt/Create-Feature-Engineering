@@ -3,7 +3,7 @@ ServerEvents.recipes(event => {
 
     // 霜冻水晶粉碎
     ars_nouveau.crush(
-        "spectrum:frostbite_crystal", // input block
+        "spectrum:frostbite_crystal",
         [
             {
                 stack: Item.of("spectrum:frostbite_essence", 16),
