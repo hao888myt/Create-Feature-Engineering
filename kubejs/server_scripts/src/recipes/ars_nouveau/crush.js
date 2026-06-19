@@ -17,7 +17,13 @@ ServerEvents.recipes(event => {
         ["#c:cobblestones", "minecraft:gravel"],
         ["minecraft:gravel", "minecraft:sand"],
         ["minecraft:end_stone", "anvilcraft:end_dust"],
-        ["minecraft:netherrack", "anvilcraft:nether_dust"]
+        ["minecraft:netherrack", "anvilcraft:nether_dust"],
+
+        ["spectrum:topaz_shard", Item.of("spectrum:topaz_powder", 4)],
+        ["minecraft:amethyst_shard", Item.of("spectrum:amethyst_powder", 4)],
+        ["spectrum:citrine_shard", Item.of("spectrum:citrine_powder", 4)],
+        ["spectrum:onyx_shard", Item.of("spectrum:onyx_powder", 4)],
+        ["spectrum:moonstone_shard", Item.of("spectrum:moonstone_powder", 4)]
     ].forEach(crush => {
         ars_nouveau.crush(
             crush[0],
