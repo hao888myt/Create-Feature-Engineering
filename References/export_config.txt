@@ -112,6 +112,7 @@ config/alexsmobs-common.toml
 config/ars_nouveau-client.toml
 config/create_fantasizing-server.toml
 config/researchd-client.toml
+config/ponderer-client.toml
 
 # 排除的文件
 !*.log

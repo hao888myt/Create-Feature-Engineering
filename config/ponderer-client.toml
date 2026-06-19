@@ -1,0 +1,69 @@
+#Which client-side item activates the Blueprint selection tool.
+#Set to a different item (e.g. 'create:schematic_and_quill') to piggyback on it.
+#If set to 'ponderer:blueprint', it only works when the server enables the built-in Blueprint item.
+blueprintCarrierItem = "create_feature_engineering:blue_print"
+#Allow editing scenes that have their 'editable' flag disabled.
+#This is intended for pack authors and advanced maintenance.
+developerMode = false
+#Default editable value for newly created scenes and scenes without an explicit editable flag.
+defaultEditable = true
+
+[ai]
+	#LLM provider type: 'anthropic' or 'openai' (OpenAI-compatible).
+	#Use 'openai' for OpenAI, DeepSeek, Groq, Ollama, LM Studio, etc.
+	provider = "anthropic"
+	#API base URL. Leave empty to use provider defaults.
+	#Anthropic default: https://api.anthropic.com
+	#OpenAI default: https://api.openai.com
+	#For compatible APIs, set to e.g. https://api.deepseek.com
+	apiBaseUrl = ""
+	#API key for the selected provider.
+	apiKey = ""
+	#Model name. Leave empty to use provider defaults.
+	#Anthropic default: claude-sonnet-4-20250514
+	#OpenAI default: gpt-4o
+	model = ""
+	#HTTP proxy for AI API calls. Format: host:port (e.g. 127.0.0.1:7890).
+	#Leave empty for no proxy.
+	proxy = ""
+	#Trust all SSL certificates (disable verification).
+	#Enable this if you use a proxy that does SSL interception.
+	#WARNING: only enable when using a trusted local proxy.
+	trustAllSsl = false
+	#Use the AI proxy for web page fetching (reference URLs).
+	#When enabled, reference URL requests go through the proxy configured above.
+	#When disabled, reference URLs are fetched with a direct connection.
+	webUseProxy = false
+	#Maximum number of tokens the LLM can generate per request.
+	#Increase this if complex scenes are being cut off.
+	#WARNING: Some models have lower limits:
+	#  - Claude 3.5 Haiku: max 8192 tokens
+	#  - Other Claude models: max 4096 tokens
+	#  - GPT-4o / GPT-4o mini: max 4096 tokens
+	#Default: 16384. Range: 1024-65536. Adjust based on your model limits.
+	# Default: 16384
+	# Range: 1024 ~ 65536
+	maxTokens = 16384
+	#AI configuration source: 'custom', 'codex', or 'claude_code'.
+	#Custom uses the fields below. Codex and Claude Code read local tool configuration.
+	configSource = "custom"
+
+[pack]
+	#Show a chat prompt when a registered pack's scripts have all been deleted.
+	#The prompt offers to unregister the pack from the registry.
+	#Set to false to suppress these prompts.
+	orphanPrompt = true
+
+[projector]
+	#Text scale multiplier for miniature projectors.
+	#Higher values make overlay text (text windows, input bubbles) larger.
+	#Default: 2.5. Range: 0.5-5.0.
+	# Default: 2.5
+	# Range: 0.5 ~ 5.0
+	miniatureTextScale = 2.5
+	#Text scale multiplier for life-size projectors.
+	#Higher values make overlay text (text windows, input bubbles) larger.
+	#Default: 1.25. Range: 0.5-5.0.
+	# Default: 1.25
+	# Range: 0.5 ~ 5.0
+	lifeSizeTextScale = 1.25
