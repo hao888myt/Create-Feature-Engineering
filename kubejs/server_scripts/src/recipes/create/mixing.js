@@ -16,7 +16,7 @@ ServerEvents.recipes(event => {
     ]).id(`${global.ModPackId}:conveying`)
 
     // 传送带
-    create.mixing(Item.of("create:belt_connector", 2), [
+    create.mixing(Item.of("create:belt_connector"), [
         Item.of("minecraft:dried_kelp"),
         Ingredient.of("#neoforge:rubber")
     ])
