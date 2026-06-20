@@ -1,6 +1,12 @@
 ServerEvents.recipes(event => {
     let create = event.recipes.create
 
+    let removes = [
+        "create:crafting/kinetics/chain_conveyor"
+    ].forEach(recipe => {
+        event.remove(recipe)
+    })
+
     // 传动研究包
     create.mixing(Item.of('researchd:research_pack[researchd:research_pack="create_feature_engineering:conveying"]', 2), [
         Item.of("create:shaft", 2),
@@ -13,6 +19,13 @@ ServerEvents.recipes(event => {
     create.mixing(Item.of("create:belt_connector", 2), [
         Item.of("minecraft:dried_kelp"),
         Ingredient.of("#neoforge:rubber")
+    ])
+
+    // 锁链传动轮
+    create.mixing(Item.of("create:chain_conveyor", 2), [
+        Item.of("create:shaft", 3),
+        Item.of("minecraft:chain", 3),
+        Item.of("create:andesite_casing")
     ])
 
     // 熔融钢
