@@ -1,9 +1,15 @@
 ServerEvents.recipes(event => {
     let { create } = event.recipes
 
+    let removes = [
+        "create:cutting/andesite_alloy"
+    ].forEach(recipe => {
+        event.remove(recipe)
+    })
+
     let recipes = [
         [Item.of("create:fluid_pipe", 4), "#c:plates/copper", false],
-        [Item.of("create:shaft", 6), "#c:ingots/andesite"]
+        [Item.of("create:shaft", 6), "#c:ingots/andesite", false]
     ]
 
     recipes.forEach(recipe => {
@@ -26,4 +32,4 @@ ServerEvents.recipes(event => {
         json.add("processing_time", processing_time)
         event.custom(json).id(recipe.getId())
     })
-})
+})  
