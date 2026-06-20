@@ -9,15 +9,6 @@ ServerEvents.recipes(event => {
         event.remove(recipe)
     })
 
-	// 物流研究包
-	transitionalItem = "create_feature_engineering:incomplete_research_pack"
-	create.sequenced_assembly(Item.of('researchd:research_pack[researchd:research_pack="create_feature_engineering:logistics"]', 4),
-		"create:cardboard_block", [
-		create.deploying(transitionalItem, [transitionalItem, "create:belt_connector"]),
-		create.deploying(transitionalItem, [transitionalItem, "create:chain_conveyor"]),
-		create.deploying(transitionalItem, [transitionalItem, "create:andesite_funnel"]),
-	]).transitionalItem(transitionalItem).loops(1).id(`${global.ModPackId}:logistics`)
-
 	// 流体研究包
 	transitionalItem = "create_feature_engineering:incomplete_research_pack"
 	create.sequenced_assembly(Item.of('researchd:research_pack[researchd:research_pack="create_feature_engineering:fluid"]', 2),

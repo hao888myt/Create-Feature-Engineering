@@ -15,6 +15,14 @@ ServerEvents.recipes(event => {
         Item.of("create:andesite_casing")
     ]).id(`${global.ModPackId}:conveying`)
 
+    // 物流研究包
+    create.mixing(Item.of('researchd:research_pack[researchd:research_pack="create_feature_engineering:logistics"]', 4), [
+        "create:cardboard_block",
+        "create:belt_connector",
+        "create:chain_conveyor",
+        "create:andesite_funnel"
+    ]).id(`${global.ModPackId}:logistics`)
+
     // 传送带
     create.mixing(Item.of("create:belt_connector"), [
         Item.of("minecraft:dried_kelp"),
