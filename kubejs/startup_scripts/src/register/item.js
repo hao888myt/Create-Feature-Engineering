@@ -1,13 +1,4 @@
 StartupEvents.registry("item", event => {
-
-    // 批量注册构件
-    global.MechanismTypes.forEach((mechanism) => {
-        event.create(`${global.ModPackId}:${mechanism}_mechanism`)
-            .texture(`${global.ModPackId}:item/mechanism/complete/${mechanism}`)
-        event.create(`${global.ModPackId}:incomplete_${mechanism}_mechanism`)
-            .texture(`${global.ModPackId}:item/mechanism/incomplete/${mechanism}`)
-    })
-
     global.Materials.forEach((material) => {
         material.types.forEach((type) => {
             switch (type) {

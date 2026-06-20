@@ -9,30 +9,6 @@ global.DeveloperName = [
     "Vechni_Metel"
 ]
 
-// 所有构件与机器名称
-global.MechanismTypes = [
-    "andesite",
-    "sturdy",
-    "magnet",
-    "infernal",
-    "sculk",
-    "nuclear",
-    "endless",
-    
-    "copper",
-    "logistics",
-    "intelligent",
-    "advanced_logistics",
-
-    "agriculture",
-    "optical",
-    "dark",
-    "ender",
-    "resonance",
-    "annihilation",
-    "colorful",
-]
-
 // 有可附魔的机器
 global.EnchantableMachines = [
     "create:encased_fan",
