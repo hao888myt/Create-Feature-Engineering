@@ -76,22 +76,6 @@ global.Materials = [
         zh_cn: "钢",
     },
     {
-        id: "azure_neodymium",
-        color: "#163cb8",
-        types: [
-            MaterialType.MOLTEN
-        ],
-        zh_cn: "青钕合金",
-    },
-    {
-        id: "scarlet_neodymium",
-        color: "#d90f1f",
-        types: [
-            MaterialType.MOLTEN
-        ],
-        zh_cn: "赤钕",
-    },
-    {
         id: "silicon",
         color: "#cccccc",
         types: [

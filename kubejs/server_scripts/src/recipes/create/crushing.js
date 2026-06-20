@@ -8,9 +8,6 @@ ServerEvents.recipes(event => {
         event.remove(recipe)
     })
 
-    //充能方铅岩粉碎
-    create.crushing([Item.of("alexscaves:raw_azure_neodymium", 2), Item.of("alexscaves:raw_scarlet_neodymium", 2), Item.of("alexscaves:galena")], ["alexscaves:energized_galena_neutral"])
-
     // 花岗岩粉碎
     create.crushing("minecraft:red_sand", "minecraft:granite")
 

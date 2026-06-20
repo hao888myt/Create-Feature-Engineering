@@ -23,13 +23,6 @@ ServerEvents.tags("block", event => {
         "minecraft:lightning_rod",
         "minecraft:chain",
 
-        "alexscaves:azure_magnet",
-        "alexscaves:hologram_projector",
-        "alexscaves:magnetic_activator",
-        "alexscaves:magnetic_light",
-        "alexscaves:quarry",
-        "alexscaves:scarlet_magnet",
-
         "ars_nouveau:spell_prism", 
         "ars_nouveau:relay_collector", 
         "ars_nouveau:scryers_oculus", 

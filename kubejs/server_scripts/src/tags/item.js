@@ -11,9 +11,7 @@ ServerEvents.tags("item", event => {
 
     let ingots = [
         ["steel", "create_feature_engineering:steel_ingot"],
-        ["andesite", "create:andesite_alloy"],
-        ["azure_neodymium", "alexscaves:azure_neodymium_ingot"],
-        ["scarlet_neodymium", "alexscaves:scarlet_neodymium_ingot"]
+        ["andesite", "create:andesite_alloy"]
     ]
     ingots.forEach(ingot => {
         event.add(`c:ingots/${ingot[0]}`, ingot[1])
@@ -24,7 +22,6 @@ ServerEvents.tags("item", event => {
 
     //添加树脂标签
     event.add("create_feature_engineering:sap", "anvilcraft:resin")
-    event.add("create_feature_engineering:sap", "alexscaves:pewen_sap")
 
     let crystal_blocks = [
         "minecraft:amethyst_block", 
