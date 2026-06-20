@@ -128,7 +128,8 @@ ServerEvents.recipes(event => {
     C: "create:andesite_casing",
   })
 
-  event.shaped(Item.of("create:mechanical_harvester", 4), [
+  // 动力犁
+  event.shaped(Item.of("create:mechanical_plough", 4), [
     "AAA",
     "III",
     " C "
