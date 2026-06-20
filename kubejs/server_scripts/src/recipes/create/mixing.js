@@ -9,10 +9,9 @@ ServerEvents.recipes(event => {
 
     // 传动研究包
     create.mixing(Item.of('researchd:research_pack[researchd:research_pack="create_feature_engineering:conveying"]', 2), [
-        Item.of("create:shaft", 2),
-        Item.of("create:cogwheel", 2),
-        Item.of("create:large_cogwheel", 2),
-        Item.of("create:andesite_casing")
+        Item.of("create:shaft", 1),
+        Item.of("create:cogwheel", 1),
+        Item.of("create:large_cogwheel", 1)
     ]).id(`${global.ModPackId}:conveying`)
 
     // 物流研究包
