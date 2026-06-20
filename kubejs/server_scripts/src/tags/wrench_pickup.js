@@ -7,6 +7,11 @@ ServerEvents.tags("block", event => {
         "#c:chests",
         "#minecraft:signs",
         "#minecraft:pressure_plates",
+        "minecraft:target",
+        "minecraft:furnace",
+        "minecraft:smoker",
+        "minecraft:blast_furnace",
+        "minecraft:stonecutter",
         "minecraft:copper_grate",
         "minecraft:exposed_copper_grate",
         "minecraft:weathered_copper_grate",
@@ -170,4 +175,6 @@ ServerEvents.tags("block", event => {
     ]
     event.add("create:wrench_pickup", create_wrench)
 
+    event.add("anvilcraft:hammer_removable", "#create:wrench_pickup")
+    event.add("create:wrench_pickup", "#anvilcraft:hammer_removable")
 })
