@@ -4,7 +4,11 @@ ServerEvents.recipes(event => {
 	let transitionalItem = "minecraft:barrier"
 
 	let removes = [
-        "create:sequenced_assembly/sturdy_sheet"
+        "create:sequenced_assembly/sturdy_sheet",
+		"createdieselgenerators:crafting/pumpjack_bearing",
+		"createdieselgenerators:mechanical_crafting/pumpjack_crank",
+		"createdieselgenerators:crafting/pumpjack_head",
+		"createdieselgenerators:crafting/pumpjack_hole"
     ].forEach(recipe => {
         event.remove(recipe)
     })
@@ -44,4 +48,40 @@ ServerEvents.recipes(event => {
 		create.pressing(transitionalItem, transitionalItem),
 		create.filling(transitionalItem, [transitionalItem, Fluid.of("minecraft:lava", 250)]),
 	]).transitionalItem(transitionalItem).loops(2)
+
+	// 抽油机轴承
+	transitionalItem = "create_feature_engineering:incomplete_pumpjack_bearing"
+	create.sequenced_assembly("createdieselgenerators:pumpjack_bearing",
+		"create:mechanical_bearing", [
+		create.deploying(transitionalItem, [transitionalItem, "create:sturdy_sheet"]),
+		create.deploying(transitionalItem, [transitionalItem, Ingredient.of("#c:ingots/zinc")]),
+		create.deploying(transitionalItem, [transitionalItem, Ingredient.of("#c:ingots/andesite")]),
+	]).transitionalItem(transitionalItem).loops(3)
+
+	// 抽油机曲柄
+	transitionalItem = "create_feature_engineering:incomplete_pumpjack_crank"
+	create.sequenced_assembly("createdieselgenerators:pumpjack_crank",
+		"create:shaft", [
+		create.deploying(transitionalItem, [transitionalItem, "create:sturdy_sheet"]),
+		create.deploying(transitionalItem, [transitionalItem, Ingredient.of("#c:ingots/zinc")]),
+		create.deploying(transitionalItem, [transitionalItem, Ingredient.of("#c:ingots/andesite")]),
+	]).transitionalItem(transitionalItem).loops(3)
+
+	// 抽油机驴头
+	transitionalItem = "create_feature_engineering:incomplete_pumpjack_head"
+	create.sequenced_assembly("createdieselgenerators:pumpjack_head",
+		"minecraft:dried_kelp", [
+		create.deploying(transitionalItem, [transitionalItem, "create:sturdy_sheet"]),
+		create.deploying(transitionalItem, [transitionalItem, Ingredient.of("#c:ingots/zinc")]),
+		create.deploying(transitionalItem, [transitionalItem, Ingredient.of("#c:ingots/andesite")]),
+	]).transitionalItem(transitionalItem).loops(3)
+
+	// 抽油机油泵
+	transitionalItem = "create_feature_engineering:incomplete_pumpjack_hole"
+	create.sequenced_assembly("createdieselgenerators:pumpjack_hole",
+		"fluidlogistics:fluid_pump", [
+		create.deploying(transitionalItem, [transitionalItem, "create:sturdy_sheet"]),
+		create.deploying(transitionalItem, [transitionalItem, Ingredient.of("#c:ingots/zinc")]),
+		create.deploying(transitionalItem, [transitionalItem, Ingredient.of("#c:ingots/andesite")]),
+	]).transitionalItem(transitionalItem).loops(3)
 })
