@@ -257,6 +257,26 @@ ResearchdEvents.registerResearches(event => {
         .effect(unlockRecipe("create:kjs/create_sturdy_sheet"))
         .parent("vacuum_chamber")
 
+    event.create("pumpjack")
+        .translatableName("抽油机")
+        .literalDescription("石油化工的起点")
+        .icon("createdieselgenerators:crude_oil_bucket")
+        .method(consumePacks([
+            [rp.conveying, 32, 50],
+            [rp.logistics, 32, 50],
+            [rp.fluid, 32, 50]
+        ]))
+        .effect(unlockRecipes([
+            "create:kjs/createdieselgenerators_pumpjack_bearing",
+            "create:kjs/createdieselgenerators_pumpjack_crank",
+            "create:kjs/createdieselgenerators_pumpjack_head",
+            "create:kjs/createdieselgenerators_pumpjack_hole"
+        ]))
+        .parents([
+            "sturdy_sheet",
+            "fluid_pump"
+        ])
+
     event.create("smart")
         .translatableName("智能研究包")
         .literalDescription("黄铜时代")
