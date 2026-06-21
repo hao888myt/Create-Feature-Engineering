@@ -182,7 +182,7 @@ ResearchdEvents.registerResearches(event => {
             [rp.conveying, 32, 100],
             [rp.logistics, 32, 100]
         ]))
-        .effect(unlockRecipes("create_feature_engineering:fluid"))
+        .effect(unlockRecipe("create_feature_engineering:fluid"))
         .parent("logistics")
     
     event.create("basin_lid")
@@ -194,7 +194,7 @@ ResearchdEvents.registerResearches(event => {
             [rp.logistics, 16, 100],
             [rp.fluid, 16, 100]
         ]))
-        .effect(unlockRecipes("kubejs:kjs/createdieselgenerators_basin_lid"))
+        .effect(unlockRecipe("kubejs:kjs/createdieselgenerators_basin_lid"))
         .parent("fluid")
     
     event.create("faucet")
