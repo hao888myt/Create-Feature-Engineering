@@ -4,5 +4,11 @@
       "#c:nuggets/copper"
     ],
     "resultItems": "create:copper_nugget"
+  },
+  {
+    "matchItems": [
+      "create:copper_sheet"
+    ],
+    "resultItems": "anvilcraft:copper_pressure_plate"
   }
 ]
