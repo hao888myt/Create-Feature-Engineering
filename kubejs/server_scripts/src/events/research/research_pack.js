@@ -98,6 +98,7 @@ ResearchdEvents.registerResearches(event => {
             "kubejs:kjs/create_mechanical_harvester",
             "kubejs:kjs/create_mechanical_plough"
         ]))
+        .parent("conveying")
 
     event.create("simple_process")
         .translatableName("简单加工")
