@@ -174,7 +174,4 @@ ServerEvents.tags("block", event => {
         "researchd:research_lab_part"
     ]
     event.add("create:wrench_pickup", create_wrench)
-
-    event.add("anvilcraft:hammer_removable", "#create:wrench_pickup")
-    event.add("create:wrench_pickup", "#anvilcraft:hammer_removable")
 })
