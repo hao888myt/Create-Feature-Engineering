@@ -29,7 +29,7 @@ ServerEvents.recipes(event => {
 		create.deploying(transitionalItem, [transitionalItem, "create:transmitter"]),
 		create.deploying(transitionalItem, [transitionalItem, "create:electron_tube"]),
 		create.deploying(transitionalItem, [transitionalItem, "create:filter"]),
-	]).transitionalItem(transitionalItem).loops(2).id(`${global.ModPackId}:smart`)
+	]).transitionalItem(transitionalItem).id(`${global.ModPackId}:smart`)
 
 	// 包裹研究包
 	transitionalItem = "create_feature_engineering:incomplete_research_pack"
@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
 		create.deploying(transitionalItem, [transitionalItem, "create:stock_link"]),
 		create.deploying(transitionalItem, [transitionalItem, "create:packager"]),
 		create.deploying(transitionalItem, [transitionalItem, "create:package_frogport"]),
-	]).transitionalItem(transitionalItem).loops(2).id(`${global.ModPackId}:package`)
+	]).transitionalItem(transitionalItem).id(`${global.ModPackId}:package`)
 
 	// 坚固板
 	transitionalItem = "create:unprocessed_obsidian_sheet"
