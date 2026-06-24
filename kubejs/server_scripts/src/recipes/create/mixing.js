@@ -35,6 +35,20 @@ ServerEvents.recipes(event => {
         Item.of("create:andesite_casing")
     ])
 
+    // 板条箱
+    let crates = [
+        ["create_fantasizing:andesite_crate", "create:andesite_casing"],
+        ["create_fantasizing:brass_crate", "create:brass_casing"],
+        ["create_fantasizing:sturdy_crate", "create:railway_casing"],
+        ["create_fantasizing:copper_fluid_barrel", "create:copper_casing"],
+        ["create_fantasizing:zinc_fluid_barrel", "create_fantasizing:zinc_casing"],
+        ["create_fantasizing:gold_fluid_barrel", "create_fantasizing:gold_casing"],
+        ["create_fantasizing:diamond_fluid_barrel", "create_fantasizing:diamond_casing"],
+    ].forEach(crate => {
+        create.mixing(Item.of(crate[0], 4), Item.of(crate[1], 4))
+    })
+    create.mixing(Item.of("create_fantasizing:iron_crate", 8), Item.of("create:item_vault", 4))
+
     // 熔融钢
     create.mixing(Fluid.of("create_feature_engineering:molten_steel", 90), [
         Item.of("minecraft:coal"),
