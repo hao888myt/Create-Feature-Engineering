@@ -2,7 +2,8 @@ ServerEvents.recipes(event => {
     let create = event.recipes.create
 
     let removes = [
-        "create:crafting/kinetics/chain_conveyor"
+        "create:crafting/kinetics/chain_conveyor",
+        "create:mixing/brass_ingot"
     ].forEach(recipe => {
         event.remove(recipe)
     })
@@ -54,6 +55,13 @@ ServerEvents.recipes(event => {
         Item.of("minecraft:coal"),
         Fluid.of("create_feature_engineering:molten_iron", 180)
     ]).heated()
+
+    // 黄铜
+    create.mixing(Fluid.of("create_feature_engineering:molten_brass", 180), [
+        Fluid.of("create_feature_engineering:molten_zinc", 90),
+        Fluid.of("create_feature_engineering:molten_copper", 90)
+    ])
+    create.mixing("create:brass_ingot", ["create:zinc_ingot", "minecraft:copper_ingot"]).heated()
 
     // 纸浆
     create.mixing(Item.of("create:pulp", 4), [Item.of("anvilcraft:wood_fiber", 2), Fluid.of("minecraft:water", 250)])
