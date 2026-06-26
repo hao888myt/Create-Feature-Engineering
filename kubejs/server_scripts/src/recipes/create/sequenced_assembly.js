@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
 
 	let create = event.recipes.create
-	let transitionalItem = "minecraft:barrier"
+	let transitional_item = "minecraft:barrier"
 
 	let removes = [
         "create:sequenced_assembly/sturdy_sheet",
@@ -14,74 +14,82 @@ ServerEvents.recipes(event => {
     })
 
 	// 流体研究包
-	transitionalItem = "create_feature_engineering:incomplete_research_pack"
+	transitional_item = "create_feature_engineering:incomplete_research_pack"
 	create.sequenced_assembly(Item.of('researchd:research_pack[researchd:research_pack="create_feature_engineering:fluid"]', 2),
 		"create:fluid_tank", [
-		create.deploying(transitionalItem, [transitionalItem, "create:item_drain"]),
-		create.deploying(transitionalItem, [transitionalItem, "create:spout"]),
-		create.deploying(transitionalItem, [transitionalItem, "create:fluid_pipe"]),
-	]).transitionalItem(transitionalItem).loops(1).id(`${global.ModPackId}:fluid`)
+		create.deploying(transitional_item, [transitional_item, "create:item_drain"]),
+		create.deploying(transitional_item, [transitional_item, "create:spout"]),
+		create.deploying(transitional_item, [transitional_item, "create:fluid_pipe"]),
+	]).transitionalItem(transitional_item).loops(1).id(`${global.ModPackId}:fluid`)
 
 	// 智能研究包
-	transitionalItem = "create_feature_engineering:incomplete_research_pack"
+	transitional_item = "create_feature_engineering:incomplete_research_pack"
 	create.sequenced_assembly(Item.of('researchd:research_pack[researchd:research_pack="create_feature_engineering:smart"]', 2),
 		"create:precision_mechanism", [
-		create.deploying(transitionalItem, [transitionalItem, "create:transmitter"]),
-		create.deploying(transitionalItem, [transitionalItem, "create:electron_tube"]),
-		create.deploying(transitionalItem, [transitionalItem, "create:filter"]),
-	]).transitionalItem(transitionalItem).id(`${global.ModPackId}:smart`)
+		create.deploying(transitional_item, [transitional_item, "create:transmitter"]),
+		create.deploying(transitional_item, [transitional_item, "create:electron_tube"]),
+		create.deploying(transitional_item, [transitional_item, "create:filter"]),
+	]).transitionalItem(transitional_item).id(`${global.ModPackId}:smart`)
 
 	// 包裹研究包
-	transitionalItem = "create_feature_engineering:incomplete_research_pack"
+	transitional_item = "create_feature_engineering:incomplete_research_pack"
 	create.sequenced_assembly(Item.of('researchd:research_pack[researchd:research_pack="create_feature_engineering:package"]', 2),
-		"fluidlogistics:waterproof_cardboard_block", [
-		create.deploying(transitionalItem, [transitionalItem, "create:stock_link"]),
-		create.deploying(transitionalItem, [transitionalItem, "create:packager"]),
-		create.deploying(transitionalItem, [transitionalItem, "create:package_frogport"]),
-	]).transitionalItem(transitionalItem).id(`${global.ModPackId}:package`)
+		"create:chain_conveyor", [
+		create.deploying(transitional_item, [transitional_item, "create:stock_link"]),
+		create.deploying(transitional_item, [transitional_item, "create:packager"]),
+		create.deploying(transitional_item, [transitional_item, "create:package_frogport"]),
+	]).transitionalItem(transitional_item).id(`${global.ModPackId}:package`)
+
+	// 动力合成器
+	transitional_item = "minecraft:crafter"
+	create.sequenced_assembly(Item.of("create:mechanical_crafter", 3),
+		"minecraft:crafter", [
+		create.deploying(transitional_item, [transitional_item, "create:brass_casing"]),
+		create.deploying(transitional_item, [transitional_item, "create:electron_tube"])
+	]).transitionalItem(transitional_item)
 
 	// 坚固板
-	transitionalItem = "create:unprocessed_obsidian_sheet"
+	transitional_item = "create:unprocessed_obsidian_sheet"
 	create.sequenced_assembly(Item.of("create:sturdy_sheet", 2),
 		Ingredient.of("#c:dusts/obsidian"), [
-		create.filling(transitionalItem, [transitionalItem, Fluid.of("create_feature_engineering:molten_steel", 90)]),
-		create.pressing(transitionalItem, transitionalItem),
-		create.filling(transitionalItem, [transitionalItem, Fluid.of("minecraft:lava", 250)]),
-	]).transitionalItem(transitionalItem).loops(2)
+		create.filling(transitional_item, [transitional_item, Fluid.of("create_feature_engineering:molten_steel", 90)]),
+		create.pressing(transitional_item, transitional_item),
+		create.filling(transitional_item, [transitional_item, Fluid.of("minecraft:lava", 250)]),
+	]).transitionalItem(transitional_item).loops(2)
 
 	// 抽油机轴承
-	transitionalItem = "create_feature_engineering:incomplete_pumpjack_bearing"
+	transitional_item = "create_feature_engineering:incomplete_pumpjack_bearing"
 	create.sequenced_assembly("createdieselgenerators:pumpjack_bearing",
 		"create:mechanical_bearing", [
-		create.deploying(transitionalItem, [transitionalItem, "create:sturdy_sheet"]),
-		create.deploying(transitionalItem, [transitionalItem, Ingredient.of("#c:ingots/zinc")]),
-		create.deploying(transitionalItem, [transitionalItem, Ingredient.of("#c:ingots/andesite")]),
-	]).transitionalItem(transitionalItem).loops(3)
+		create.deploying(transitional_item, [transitional_item, "create:sturdy_sheet"]),
+		create.deploying(transitional_item, [transitional_item, Ingredient.of("#c:ingots/zinc")]),
+		create.deploying(transitional_item, [transitional_item, Ingredient.of("#c:ingots/andesite")]),
+	]).transitionalItem(transitional_item).loops(3)
 
 	// 抽油机曲柄
-	transitionalItem = "create_feature_engineering:incomplete_pumpjack_crank"
+	transitional_item = "create_feature_engineering:incomplete_pumpjack_crank"
 	create.sequenced_assembly("createdieselgenerators:pumpjack_crank",
 		"create:shaft", [
-		create.deploying(transitionalItem, [transitionalItem, "create:sturdy_sheet"]),
-		create.deploying(transitionalItem, [transitionalItem, Ingredient.of("#c:ingots/zinc")]),
-		create.deploying(transitionalItem, [transitionalItem, Ingredient.of("#c:ingots/andesite")]),
-	]).transitionalItem(transitionalItem).loops(3)
+		create.deploying(transitional_item, [transitional_item, "create:sturdy_sheet"]),
+		create.deploying(transitional_item, [transitional_item, Ingredient.of("#c:ingots/zinc")]),
+		create.deploying(transitional_item, [transitional_item, Ingredient.of("#c:ingots/andesite")]),
+	]).transitionalItem(transitional_item).loops(3)
 
 	// 抽油机驴头
-	transitionalItem = "create_feature_engineering:incomplete_pumpjack_head"
+	transitional_item = "create_feature_engineering:incomplete_pumpjack_head"
 	create.sequenced_assembly("createdieselgenerators:pumpjack_head",
 		"minecraft:dried_kelp", [
-		create.deploying(transitionalItem, [transitionalItem, "create:sturdy_sheet"]),
-		create.deploying(transitionalItem, [transitionalItem, Ingredient.of("#c:ingots/zinc")]),
-		create.deploying(transitionalItem, [transitionalItem, Ingredient.of("#c:ingots/andesite")]),
-	]).transitionalItem(transitionalItem).loops(3)
+		create.deploying(transitional_item, [transitional_item, "create:sturdy_sheet"]),
+		create.deploying(transitional_item, [transitional_item, Ingredient.of("#c:ingots/zinc")]),
+		create.deploying(transitional_item, [transitional_item, Ingredient.of("#c:ingots/andesite")]),
+	]).transitionalItem(transitional_item).loops(3)
 
 	// 抽油机油泵
-	transitionalItem = "create_feature_engineering:incomplete_pumpjack_hole"
+	transitional_item = "create_feature_engineering:incomplete_pumpjack_hole"
 	create.sequenced_assembly("createdieselgenerators:pumpjack_hole",
 		"fluidlogistics:fluid_pump", [
-		create.deploying(transitionalItem, [transitionalItem, "create:sturdy_sheet"]),
-		create.deploying(transitionalItem, [transitionalItem, Ingredient.of("#c:ingots/zinc")]),
-		create.deploying(transitionalItem, [transitionalItem, Ingredient.of("#c:ingots/andesite")]),
-	]).transitionalItem(transitionalItem).loops(3)
+		create.deploying(transitional_item, [transitional_item, "create:sturdy_sheet"]),
+		create.deploying(transitional_item, [transitional_item, Ingredient.of("#c:ingots/zinc")]),
+		create.deploying(transitional_item, [transitional_item, Ingredient.of("#c:ingots/andesite")]),
+	]).transitionalItem(transitional_item).loops(3)
 })
