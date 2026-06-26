@@ -4,14 +4,15 @@ ServerEvents.recipes(event => {
 	let transitional_item = "minecraft:barrier"
 
 	let removes = [
-        "create:sequenced_assembly/sturdy_sheet",
+		"create:sequenced_assembly/sturdy_sheet",
 		"createdieselgenerators:crafting/pumpjack_bearing",
 		"createdieselgenerators:mechanical_crafting/pumpjack_crank",
 		"createdieselgenerators:crafting/pumpjack_head",
-		"createdieselgenerators:crafting/pumpjack_hole"
-    ].forEach(recipe => {
-        event.remove(recipe)
-    })
+		"createdieselgenerators:crafting/pumpjack_hole",
+		"create:sequenced_assembly/precision_mechanism"
+	].forEach(recipe => {
+		event.remove(recipe)
+	})
 
 	// 流体研究包
 	transitional_item = "create_feature_engineering:incomplete_research_pack"
@@ -39,6 +40,16 @@ ServerEvents.recipes(event => {
 		create.deploying(transitional_item, [transitional_item, "create:packager"]),
 		create.deploying(transitional_item, [transitional_item, "create:package_frogport"]),
 	]).transitionalItem(transitional_item).id(`${global.ModPackId}:package`)
+
+	// 精密构件
+	transitional_item = "create:incomplete_precision_mechanism"
+	create.sequenced_assembly("create:precision_mechanism",
+		Ingredient.of("#c:plates/gold"), [
+		create.deploying(transitional_item, [transitional_item, "create:cogwheel"]),
+		create.deploying(transitional_item, [transitional_item, "create:large_cogwheel"]),
+		create.filling(transitional_item, [transitional_item, Fluid.of("createdieselgenerators:plant_oil", 250)]),
+	]
+	).transitionalItem(transitional_item).loops(2)
 
 	// 动力合成器
 	transitional_item = "minecraft:crafter"
