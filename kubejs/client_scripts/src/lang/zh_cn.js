@@ -82,6 +82,9 @@ ClientEvents.lang("zh_cn", (event) => {
                 case "sheet":
                     AddItemLang(`${material.id}_sheet`, `${material.zh_cn}板`)
                     break
+                case "storage":
+                    AddBlockLang(`${material.id}_block`, `${material.zh_cn}块`)
+                    break
                 case "molten":
                     AddFluidLang(`molten_${material.id}`, `熔融${material.zh_cn}`)
                     break
