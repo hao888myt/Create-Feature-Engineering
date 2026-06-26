@@ -5,7 +5,7 @@ class MaterialType {
     static SHEET = "sheet"
 
     static INGOT = "ingot"
-    static BLOCK = "block"
+    static STORAGE = "storage"
     static NUGGET = "nugget"
 }
 
