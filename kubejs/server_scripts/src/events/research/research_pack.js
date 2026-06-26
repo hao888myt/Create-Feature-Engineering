@@ -126,7 +126,7 @@ ResearchdEvents.registerResearches(event => {
         ]))
         .effect(unlockRecipes(["create:crafting/kinetics/gantry_carriage", "create:crafting/kinetics/gantry_shaft"]))
         .parent("logistics")
-    
+
     event.create("andesite_crate")
         .translatableName("安山板条箱")
         .translatableDescription("可调节容量的容器")
@@ -148,7 +148,7 @@ ResearchdEvents.registerResearches(event => {
         ]))
         .effect(unlockRecipe("create:crafting/kinetics/cart_assembler"))
         .parent("logistics")
-    
+
     event.create("block_breaker")
         .translatableName("方块破坏器")
         .translatableDescription("解锁方块破坏器的配方")
@@ -159,7 +159,7 @@ ResearchdEvents.registerResearches(event => {
         ]))
         .effect(unlockRecipe("anvilcraft_pigsplus:block_breaker"))
         .parent("logistics")
-    
+
     event.create("port_packger")
         .translatableName("进阶物流")
         .translatableDescription("解锁物流蛙港和打包机的配方")
@@ -173,7 +173,7 @@ ResearchdEvents.registerResearches(event => {
             "create:kjs/create_packager"
         ]))
         .parent("andesite_crate")
-    
+
     event.create("fluid")
         .translatableName("流体研究包")
         .translatableDescription("解锁流体研究包")
@@ -184,7 +184,7 @@ ResearchdEvents.registerResearches(event => {
         ]))
         .effect(unlockRecipe("create_feature_engineering:fluid"))
         .parent("logistics")
-    
+
     event.create("basin_lid")
         .translatableName("工作盆盖板")
         .translatableDescription("解锁工作盆盖板")
@@ -196,7 +196,7 @@ ResearchdEvents.registerResearches(event => {
         ]))
         .effect(unlockRecipe("kubejs:kjs/createdieselgenerators_basin_lid"))
         .parent("fluid")
-    
+
     event.create("faucet")
         .translatableName("水龙头")
         .translatableDescription("解锁水龙头")
@@ -208,7 +208,7 @@ ResearchdEvents.registerResearches(event => {
         ]))
         .effect(unlockRecipe("fluidlogistics:faucet"))
         .parent("fluid")
-    
+
     event.create("fluid_pump")
         .translatableName("流体泵")
         .translatableDescription("更高效的流体传输方式")
@@ -220,7 +220,7 @@ ResearchdEvents.registerResearches(event => {
         ]))
         .effect(unlockRecipe("create:kjs/fluidlogistics_fluid_pump"))
         .parent("fluid")
-    
+
     event.create("hose_pulley")
         .translatableName("软管滑轮")
         .translatableDescription("初期的无限流体")
@@ -232,7 +232,7 @@ ResearchdEvents.registerResearches(event => {
         ]))
         .effect(unlockRecipe("create:kjs/create_hose_pulley"))
         .parent("fluid")
-    
+
     event.create("vacuum_chamber")
         .translatableName("压缩机")
         .literalDescription("化学工业的起点")
