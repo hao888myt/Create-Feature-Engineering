@@ -19,7 +19,6 @@ ServerEvents.recipes(event => {
     create.mixing(Item.of('researchd:research_pack[researchd:research_pack="create_feature_engineering:logistics"]', 4), [
         "create:cardboard_block",
         "create:belt_connector",
-        "create:chain_conveyor",
         "create:andesite_funnel"
     ]).id(`${global.ModPackId}:logistics`)
 
