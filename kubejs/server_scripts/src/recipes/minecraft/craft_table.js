@@ -244,6 +244,12 @@ ServerEvents.recipes(event => {
     ]
   )
 
+  // 粘液球
+  event.shapeless("minecraft:slime_ball", [
+    Ingredient.of("#c:resin"),
+    "minecraft:lime_dye"
+  ])
+
   // 过滤器
   let filters = [
     "create:filter",
