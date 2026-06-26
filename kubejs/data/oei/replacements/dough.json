@@ -3,6 +3,6 @@
     "matchItems": [
       "#c:foods/dough"
     ],
-    "resultItems": "farmersdelight:wheat_dough"
+    "resultItems": "create:dough"
   }
 ]
