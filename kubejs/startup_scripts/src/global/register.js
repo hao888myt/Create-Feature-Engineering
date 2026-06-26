@@ -71,6 +71,8 @@ global.Materials = [
         color: "#888888",
         types: [
             MaterialType.INGOT,
+            MaterialType.SHEET,
+            MaterialType.STORAGE,
             MaterialType.MOLTEN
         ],
         zh_cn: "钢",
