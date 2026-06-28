@@ -260,6 +260,39 @@ ServerEvents.recipes(event => {
     event.replaceInput({ output: filter }, Ingredient.of("#minecraft:wool"), "minecraft:paper")
   })
 
+  // 黄铜隧道
+  event.shaped(Item.of("create:brass_tunnel", 8), [
+    "E ",
+    "PP",
+    "DD",
+  ], {
+    E: "create:electron_tube",
+    P: "create:precision_mechanism",
+    D: "minecraft:dried_kelp"
+  })
+
+  // 黄铜漏斗
+  event.shaped(Item.of("create:brass_funnel", 8), [
+    "E",
+    "P",
+    "D",
+  ], {
+    E: "create:electron_tube",
+    P: "create:precision_mechanism",
+    D: "minecraft:dried_kelp"
+  })
+
+  // 智能溜槽
+  event.shaped(Item.of("create:smart_chute", 4), [
+    "E",
+    "C",
+    "P",
+  ], {
+    E: "create:electron_tube",
+    P: "create:precision_mechanism",
+    C: "create:chute"
+  })
+
   // 喷气背包
   event.shaped(
     "create_jetpack:jetpack",
