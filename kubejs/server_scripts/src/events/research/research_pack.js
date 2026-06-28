@@ -411,6 +411,19 @@ ResearchdEvents.registerResearches(event => {
         ]))
         .parent("smart")
     
+    event.create("smart_hopper")
+        .translatableName("智能漏斗")
+        .literalDescription("一个人干两个人的活")
+        .icon("fluidlogistics:smart_hopper")
+        .method(consumePacks([
+            [rp.conveying, 64, 50],
+            [rp.logistics, 64, 50],
+            [rp.fluid, 64, 50],
+            [rp.smart, 64, 50]
+        ]))
+        .effect(unlockRecipe("create:kjs/fluidlogistics_smart_hopper"))
+        .parent("smart")
+    
     event.create("mechanical_crafter")
         .translatableName("动力合成器")
         .literalDescription("慢工出细活")
