@@ -22,6 +22,13 @@ ServerEvents.recipes(event => {
 
     "create:crafting/materials/rose_quartz",
 
+    "create:crafting/logistics/brass_funnel",
+    "create:crafting/logistics/brass_tunnel",
+    "create:crafting/kinetics/smart_chute",
+
+    "anvilcraft_pigsplus:redstone_conduit_block",
+    "create:crafting/kinetics/rotation_speed_controller",
+
     "create_jetpack:jetpack"
   ].forEach(recipe => {
     event.remove(recipe)
