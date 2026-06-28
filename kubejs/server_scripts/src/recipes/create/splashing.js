@@ -12,4 +12,13 @@ ServerEvents.recipes(event => {
     ].forEach(remove => {
         event.remove(remove)
     })
+
+    let recipes = [
+        ["minecraft:quartz", "anvilcraft:quartz_sand", false]
+    ]
+
+    recipes.forEach(recipe => {
+        create.splashing(recipe[0], Ingredient.of(recipe[1]))
+        removeRecipe(recipe, 2, event)
+    })
 })
