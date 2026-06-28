@@ -347,6 +347,19 @@ ResearchdEvents.registerResearches(event => {
         ]))
         .parent("smart")
     
+    event.create("rotation_speed_controller")
+        .translatableName("转速控制器")
+        .literalDescription("优雅的变速方案")
+        .icon("create:rotation_speed_controller")
+        .method(consumePacks([
+            [rp.conveying, 64, 50],
+            [rp.logistics, 64, 50],
+            [rp.fluid, 64, 50],
+            [rp.smart, 64, 50]
+        ]))
+        .effect(unlockRecipe("kubejs:kjs/create_rotation_speed_controller"))
+        .parent("smart")
+
     event.create("mechanical_crafter")
         .translatableName("动力合成器")
         .literalDescription("慢工出细活")
