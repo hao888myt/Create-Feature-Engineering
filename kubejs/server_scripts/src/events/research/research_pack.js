@@ -277,15 +277,16 @@ ResearchdEvents.registerResearches(event => {
             "fluid_pump"
         ])
 
-    event.create("smart")
-        .translatableName("智能研究包")
-        .literalDescription("黄铜时代")
-        .iconStacks('researchd:research_pack[researchd:research_pack="create_feature_engineering:smart"]')
+    event.create("package")
+        .translatableName("包裹研究包")
+        .literalDescription("包裹物流")
+        .iconStacks('researchd:research_pack[researchd:research_pack="create_feature_engineering:package"]')
         .method(consumePacks([
-            [rp.conveying, 64, 50],
-            [rp.logistics, 64, 50],
-            [rp.fluid, 64, 50]
+            [rp.conveying, 128, 20],
+            [rp.logistics, 128, 20],
+            [rp.fluid, 128, 20],
+            [rp.smart, 128, 20]
         ]))
-        .effect(unlockRecipe("create_feature_engineering:smart"))
-        .parent("fluid")
+        .effect(unlockRecipe("create_feature_engineering:package"))
+        .parent("smart")
 })
