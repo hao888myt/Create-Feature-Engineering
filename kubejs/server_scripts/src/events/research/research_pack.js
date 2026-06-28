@@ -288,6 +288,23 @@ ResearchdEvents.registerResearches(event => {
             "electron_tube"
         ])
 
+    event.create("brass_funnel_tunnel_chute")
+        .translatableName("智能输出")
+        .literalDescription("解锁黄铜隧道、黄铜漏斗与智能溜槽")
+        .icon("create:brass_funnel")
+        .method(consumePacks([
+            [rp.conveying, 64, 50],
+            [rp.logistics, 64, 50],
+            [rp.fluid, 64, 50],
+            [rp.smart, 64, 50]
+        ]))
+        .effect(unlockRecipes([
+            "kubejs:kjs/create_brass_tunnel",
+            "kubejs:kjs/create_brass_funnel",
+            "kubejs:kjs/create_smart_chute"
+        ]))
+        .parent("smart")
+
     event.create("mechanical_crafter")
         .translatableName("动力合成器")
         .literalDescription("慢工出细活")
