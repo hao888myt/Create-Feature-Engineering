@@ -135,7 +135,11 @@ ResearchdEvents.registerResearches(event => {
             [rp.conveying, 8, 100],
             [rp.logistics, 8, 100]
         ]))
-        .effect(unlockRecipes(["create_fantasizing:andesite_crate", "create_fantasizing:andesite_crate_alternative"]))
+        .effect(unlockRecipes([
+            "create_fantasizing:andesite_crate",
+            "create_fantasizing:andesite_crate_alternative",
+            "create:kjs/create_fantasizing_andesite_crate"
+        ]))
         .parent("logistics")
 
     event.create("cart_assembler")
