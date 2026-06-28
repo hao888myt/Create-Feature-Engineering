@@ -244,7 +244,19 @@ ResearchdEvents.registerResearches(event => {
         ]))
         .effect(unlockRecipe("create:kjs/create_hose_pulley"))
         .parent("fluid")
-    
+    event.create("crushing_wheel")
+        .translatableName("粉碎轮")
+        .literalDescription("一对大家伙")
+        .icon("create:crushing_wheel")
+        .method(consumePacks([
+            [rp.conveying, 64, 50],
+            [rp.logistics, 64, 50],
+            [rp.fluid, 64, 50],
+            [rp.smart, 64, 50]
+        ]))
+        .effect(unlockRecipe("create:kjs/create_crushing_wheel"))
+        .parent("mechanical_crafter")
+
     event.create("sturdy_sheet")
         .translatableName("坚固板")
         .literalDescription("坚固而可靠的材料")
