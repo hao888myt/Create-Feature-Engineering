@@ -244,6 +244,19 @@ ResearchdEvents.registerResearches(event => {
         ]))
         .effect(unlockRecipe("create:kjs/create_hose_pulley"))
         .parent("fluid")
+
+    event.create("smart")
+        .translatableName("智能研究包")
+        .literalDescription("黄铜时代")
+        .iconStacks('researchd:research_pack[researchd:research_pack="create_feature_engineering:smart"]')
+        .method(consumePacks([
+            [rp.conveying, 64, 50],
+            [rp.logistics, 64, 50],
+            [rp.fluid, 64, 50]
+        ]))
+        .effect(unlockRecipe("create_feature_engineering:smart"))
+        .parent("fluid")
+
     event.create("mechanical_crafter")
         .translatableName("动力合成器")
         .literalDescription("慢工出细活")
