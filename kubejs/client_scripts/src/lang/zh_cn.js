@@ -43,33 +43,6 @@ ClientEvents.lang("zh_cn", (event) => {
         AddItemLang(number[0], number[1])
     })
 
-
-    let MechanismName = [
-        ["andesite", "安山"],
-        ["brass", "黄铜"],
-        ["sturdy", "坚固"],
-        ["magnet", "电磁"],
-        ["infernal", "炼狱"],
-        ["sculk", "幽匿"],
-        ["nuclear", "核能"],
-        ["endless", "终焉"],
-
-        ["copper", "铜"],
-        ["logistics", "物流"],
-        ["intelligent", "智能"],
-        ["advanced_logistics", "高级物流"],
-
-        ["agriculture", "农业"],
-        ["optical", "光学"],
-        ["dark", "黑暗"],
-        ["plant", "植物"],
-        ["ender", "末影"],
-        ["star", "流星"],
-        ["resonance", "嗡鸣"],
-        ["annihilation", "湮灭"],
-        ["colorful", "七彩"]
-    ]
-
     global.Materials.forEach(material => {
         material.types.forEach(type => {
             switch (type) {
@@ -102,13 +75,6 @@ ClientEvents.lang("zh_cn", (event) => {
 
     global.BasicFluids.forEach(fluid => {
         AddFluidLang(fluid.id, fluid.zh_cn)
-    })
-
-    MechanismName.forEach(([key, value]) => {
-        event.add(`item.${global.ModPackId}.${key}_mechanism`, `${value}构件`)
-        event.add(`item.${global.ModPackId}.incomplete_${key}_mechanism`, `${value}构件（半成品）`)
-        event.add(`item.${global.ModPackId}.${key}_machine`, `${value}机器`)
-        event.add(`block.${global.ModPackId}.${key}_machine`, `${value}机器`)
     })
 
     function AddBlockLang(key, value) {
