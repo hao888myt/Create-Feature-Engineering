@@ -393,7 +393,24 @@ ResearchdEvents.registerResearches(event => {
             "create:kjs/fluidlogistics_multi_fluid_tank"
         ]))
         .parent("smart")
-
+    
+    event.create("multi_fluid_tank")
+        .translatableName("多流体储罐")
+        .literalDescription("种类多，容量大")
+        .icon("fluidlogistics:multi_fluid_tank")
+        .method(consumePacks([
+            [rp.conveying, 64, 50],
+            [rp.logistics, 64, 50],
+            [rp.fluid, 64, 50],
+            [rp.smart, 64, 50]
+        ]))
+        .effect(unlockRecipes([
+            "fluidlogistics:multi_fluid_tank",
+            "fluidlogistics:horizontal_multi_fluid_tank",
+            "create:kjs/fluidlogistics_multi_fluid_tank"
+        ]))
+        .parent("smart")
+    
     event.create("mechanical_crafter")
         .translatableName("动力合成器")
         .literalDescription("慢工出细活")
