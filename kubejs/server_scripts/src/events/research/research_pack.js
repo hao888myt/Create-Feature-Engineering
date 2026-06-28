@@ -305,6 +305,19 @@ ResearchdEvents.registerResearches(event => {
         ]))
         .parent("smart")
 
+    event.create("redstone_conduit_block")
+        .translatableName("红石传导块")
+        .literalDescription("竖直传输，无需支撑")
+        .icon("anvilcraft_pigsplus:redstone_conduit_block")
+        .method(consumePacks([
+            [rp.conveying, 64, 50],
+            [rp.logistics, 64, 50],
+            [rp.fluid, 64, 50],
+            [rp.smart, 64, 50]
+        ]))
+        .effect(unlockRecipe("kubejs:kjs/anvilcraft_pigsplus_redstone_conduit_block"))
+        .parent("smart")
+
     event.create("mechanical_crafter")
         .translatableName("动力合成器")
         .literalDescription("慢工出细活")
