@@ -8,5 +8,5 @@ ServerEvents.recipes(event => {
   })
 
   //电子管
-  create.filling("create:electron_tube", [Fluid.of("create_feature_engineering:molten_iron", 90), "create:polished_rose_quartz"])
+  create.filling(Item.of("create:electron_tube", 4), [Fluid.of("create_feature_engineering:molten_iron", 180), "create:polished_rose_quartz"])
 })
