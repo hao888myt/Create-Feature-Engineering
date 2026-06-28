@@ -63,7 +63,7 @@ ServerEvents.recipes(event => {
 		create.deploying(transitional_item, [transitional_item, "create:electron_tube"])
 	]).transitionalItem(transitional_item)
 
-	// 动力合成器
+	// 动力臂
 	transitional_item = "create:brass_casing"
 	create.sequenced_assembly(Item.of("create:mechanical_arm", 2),
 		"create:brass_casing", [
@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
 		create.deploying(transitional_item, [transitional_item, "create:andesite_alloy"])
 	]).transitionalItem(transitional_item)
 
-	// 动力合成器
+	// 动力注液枪
 	transitional_item = "create:copper_casing"
 	create.sequenced_assembly(Item.of("fluidlogistics:mechanical_fluid_gun", 2),
 		"create:copper_casing", [
