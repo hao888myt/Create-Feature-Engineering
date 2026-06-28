@@ -244,6 +244,19 @@ ResearchdEvents.registerResearches(event => {
         ]))
         .effect(unlockRecipe("create:kjs/create_hose_pulley"))
         .parent("fluid")
+    event.create("mechanical_crafter")
+        .translatableName("动力合成器")
+        .literalDescription("慢工出细活")
+        .icon("create:mechanical_crafter")
+        .method(consumePacks([
+            [rp.conveying, 64, 50],
+            [rp.logistics, 64, 50],
+            [rp.fluid, 64, 50],
+            [rp.smart, 64, 50]
+        ]))
+        .effect(unlockRecipe("create_feature_engineering:smart"))
+        .parent("smart")
+
     event.create("crushing_wheel")
         .translatableName("粉碎轮")
         .literalDescription("一对大家伙")
