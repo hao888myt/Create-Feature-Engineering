@@ -285,7 +285,8 @@ ResearchdEvents.registerResearches(event => {
         .effect(unlockRecipe("create_feature_engineering:smart"))
         .parents([
             "precision_mechanism",
-            "electron_tube"
+            "electron_tube",
+            "simple_process"
         ])
 
     event.create("brass_funnel_tunnel_chute")
