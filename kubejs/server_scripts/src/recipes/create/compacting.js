@@ -9,9 +9,6 @@ ServerEvents.recipes(event => {
 
     // 木头压树脂
     create.compacting([Item.of("anvilcraft:wood_fiber", 2), Item.of("anvilcraft:resin")], Ingredient.of("#minecraft:logs"))
-
-    // 树皮压纸
-    create.compacting(Item.of("minecraft:paper"), Item.of("farmersdelight:tree_bark"))
     
     // 植本质压骨粉
     create.compacting(Item.of("minecraft:bone_meal", 16), "spectrum:vegetal")
