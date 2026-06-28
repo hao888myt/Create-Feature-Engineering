@@ -249,6 +249,17 @@ ResearchdEvents.registerResearches(event => {
         .effect(unlockRecipe("create:kjs/create_hose_pulley"))
         .parent("fluid")
 
+    event.create("electron_tube")
+        .translatableName("电子管")
+        .literalDescription("智能处理的基石")
+        .icon("create:electron_tube")
+        .method(consumePacks([
+            [rp.conveying, 16, 100],
+            [rp.logistics, 16, 100],
+            [rp.fluid, 16, 100]
+        ]))
+        .effect(unlockRecipe("create:kjs/create_electron_tube"))
+        .parent("basin_lid")
     event.create("smart")
         .translatableName("智能研究包")
         .literalDescription("黄铜时代")
