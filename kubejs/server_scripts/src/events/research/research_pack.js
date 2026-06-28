@@ -283,7 +283,10 @@ ResearchdEvents.registerResearches(event => {
             [rp.fluid, 64, 50]
         ]))
         .effect(unlockRecipe("create_feature_engineering:smart"))
-        .parent("fluid")
+        .parents([
+            "precision_mechanism",
+            "electron_tube"
+        ])
 
     event.create("mechanical_crafter")
         .translatableName("动力合成器")
