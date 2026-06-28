@@ -16,6 +16,8 @@ ServerEvents.recipes(event => {
 
         [Item.of("create:factory_gauge", 4), "create:precision_mechanism", "create:stock_link",],
         [Item.of("create:redstone_requester", 4), "create:item_vault", "create:stock_link",],
+
+        ["fluidlogistics:multi_fluid_tank", "create_fantasizing:andesite_crate", "#c:plates/brass", false]
     ]
     recipes.forEach(recipe => {
         create.deploying(recipe[0], [Ingredient.of(recipe[1]), Ingredient.of(recipe[2])])
