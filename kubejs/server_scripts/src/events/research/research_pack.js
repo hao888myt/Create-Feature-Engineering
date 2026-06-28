@@ -331,6 +331,22 @@ ResearchdEvents.registerResearches(event => {
         .effect(unlockRecipe("create:crafting/logistics/stockpile_switch"))
         .parent("smart")
 
+    event.create("requester_gauge")
+        .translatableName("发送请求")
+        .literalDescription("解锁工厂仪表和红石请求器")
+        .icon("create:factory_gauge")
+        .method(consumePacks([
+            [rp.conveying, 64, 50],
+            [rp.logistics, 64, 50],
+            [rp.fluid, 64, 50],
+            [rp.smart, 64, 50]
+        ]))
+        .effect(unlockRecipes([
+            "create:kjs/create_factory_gauge",
+            "create:kjs/create_redstone_requester"
+        ]))
+        .parent("smart")
+    
     event.create("mechanical_crafter")
         .translatableName("动力合成器")
         .literalDescription("慢工出细活")
