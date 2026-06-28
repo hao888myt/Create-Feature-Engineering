@@ -10,7 +10,10 @@ ServerEvents.recipes(event => {
 		"createdieselgenerators:crafting/pumpjack_head",
 		"createdieselgenerators:crafting/pumpjack_hole",
 		"create:sequenced_assembly/precision_mechanism",
-		"create:crafting/kinetics/mechanical_crafter"
+		"create:crafting/kinetics/mechanical_crafter",
+
+		"create:crafting/kinetics/mechanical_arm",
+		"fluidlogistics:mechanical_fluid_gun"
 	].forEach(recipe => {
 		event.remove(recipe)
 	})
@@ -58,6 +61,22 @@ ServerEvents.recipes(event => {
 		"minecraft:crafter", [
 		create.deploying(transitional_item, [transitional_item, "create:brass_casing"]),
 		create.deploying(transitional_item, [transitional_item, "create:electron_tube"])
+	]).transitionalItem(transitional_item)
+
+	// 动力合成器
+	transitional_item = "create:brass_casing"
+	create.sequenced_assembly(Item.of("create:mechanical_arm", 2),
+		"create:brass_casing", [
+		create.deploying(transitional_item, [transitional_item, "create:precision_mechanism"]),
+		create.deploying(transitional_item, [transitional_item, "create:andesite_alloy"])
+	]).transitionalItem(transitional_item)
+
+	// 动力合成器
+	transitional_item = "create:copper_casing"
+	create.sequenced_assembly(Item.of("fluidlogistics:mechanical_fluid_gun", 2),
+		"create:copper_casing", [
+		create.deploying(transitional_item, [transitional_item, "create:precision_mechanism"]),
+		create.deploying(transitional_item, [transitional_item, "create:spout"])
 	]).transitionalItem(transitional_item)
 
 	// 坚固板
