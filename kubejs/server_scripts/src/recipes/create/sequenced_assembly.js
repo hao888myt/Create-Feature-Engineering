@@ -47,7 +47,7 @@ ServerEvents.recipes(event => {
 		Ingredient.of("#c:plates/gold"), [
 		create.deploying(transitional_item, [transitional_item, "create:cogwheel"]),
 		create.deploying(transitional_item, [transitional_item, "create:large_cogwheel"]),
-		create.filling(transitional_item, [transitional_item, Fluid.of("createdieselgenerators:plant_oil", 250)]),
+		create.filling(transitional_item, [transitional_item, Fluid.of("createdieselgenerators:plant_oil", 100)]),
 	]
 	).transitionalItem(transitional_item).loops(2)
 
