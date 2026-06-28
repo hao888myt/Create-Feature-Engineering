@@ -9,7 +9,8 @@ ServerEvents.recipes(event => {
 		"createdieselgenerators:mechanical_crafting/pumpjack_crank",
 		"createdieselgenerators:crafting/pumpjack_head",
 		"createdieselgenerators:crafting/pumpjack_hole",
-		"create:sequenced_assembly/precision_mechanism"
+		"create:sequenced_assembly/precision_mechanism",
+		"create:crafting/kinetics/mechanical_crafter"
 	].forEach(recipe => {
 		event.remove(recipe)
 	})
