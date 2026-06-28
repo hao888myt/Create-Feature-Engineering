@@ -293,6 +293,17 @@ ServerEvents.recipes(event => {
     C: "create:chute"
   })
 
+  // 红石传导块
+  event.shaped(Item.of("anvilcraft_pigsplus:redstone_conduit_block", 32), [
+    "BRB",
+    "RPR",
+    "BRB",
+  ], {
+    R: "minecraft:redstone",
+    P: "create:precision_mechanism",
+    B: "#c:ingots/brass"
+  })
+
   // 喷气背包
   event.shaped(
     "create_jetpack:jetpack",
