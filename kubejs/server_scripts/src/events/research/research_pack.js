@@ -347,7 +347,7 @@ ResearchdEvents.registerResearches(event => {
             "create:kjs/create_redstone_requester"
         ]))
         .parent("smart")
-    
+
     event.create("rotation_speed_controller")
         .translatableName("转速控制器")
         .literalDescription("优雅的变速方案")
@@ -360,7 +360,7 @@ ResearchdEvents.registerResearches(event => {
         ]))
         .effect(unlockRecipe("kubejs:kjs/create_rotation_speed_controller"))
         .parent("smart")
-    
+
     event.create("mechanical_arm_gun")
         .translatableName("动力双雄")
         .literalDescription("只需简单配置，即可高效自动化")
@@ -377,7 +377,7 @@ ResearchdEvents.registerResearches(event => {
         ]))
         .parent("smart")
 
-        event.create("multi_fluid_tank")
+    event.create("multi_fluid_tank")
         .translatableName("多流体储罐")
         .literalDescription("种类多，容量大")
         .icon("fluidlogistics:multi_fluid_tank")
