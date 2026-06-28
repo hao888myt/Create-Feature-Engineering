@@ -304,6 +304,12 @@ ServerEvents.recipes(event => {
     B: "#c:ingots/brass"
   })
 
+  // 转速控制器
+  event.shapeless(Item.of("create:rotation_speed_controller", 4), [
+    "create:brass_casing",
+    "create:precision_mechanism"
+  ])
+
   // 喷气背包
   event.shaped(
     "create_jetpack:jetpack",
