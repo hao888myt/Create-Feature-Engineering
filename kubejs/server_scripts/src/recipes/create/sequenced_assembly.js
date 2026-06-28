@@ -13,7 +13,9 @@ ServerEvents.recipes(event => {
 		"create:crafting/kinetics/mechanical_crafter",
 
 		"create:crafting/kinetics/mechanical_arm",
-		"fluidlogistics:mechanical_fluid_gun"
+		"fluidlogistics:mechanical_fluid_gun",
+
+		"fluidlogistics:smart_hopper"
 	].forEach(recipe => {
 		event.remove(recipe)
 	})
@@ -77,6 +79,15 @@ ServerEvents.recipes(event => {
 		"create:copper_casing", [
 		create.deploying(transitional_item, [transitional_item, "create:precision_mechanism"]),
 		create.deploying(transitional_item, [transitional_item, "create:spout"])
+	]).transitionalItem(transitional_item)
+
+	// 智能漏斗
+	transitional_item = "create:copper_casing"
+	create.sequenced_assembly(Item.of("fluidlogistics:smart_hopper", 8),
+		"create:copper_casing", [
+		create.deploying(transitional_item, [transitional_item, "create:item_vault"]),
+		create.deploying(transitional_item, [transitional_item, "fluidlogistics:multi_fluid_tank"]),
+		create.deploying(transitional_item, [transitional_item, "create:electron_tube"])
 	]).transitionalItem(transitional_item)
 
 	// 坚固板
