@@ -280,7 +280,7 @@ ResearchdEvents.registerResearches(event => {
             [rp.fluid, 16, 100]
         ]))
         .effect(unlockRecipe("create:kjs/create_sturdy_sheet"))
-        .parent("vacuum_chamber")
+        .parent("crushing_wheel")
 
     event.create("pumpjack")
         .translatableName("抽油机")
