@@ -102,10 +102,10 @@ ResearchdEvents.registerResearches(event => {
 
     event.create("simple_process")
         .translatableName("简单加工")
-        .translatableDescription("解锁卷簧机和动力砂轮")
+        .translatableDescription("解锁卷簧机、轧机和动力砂轮")
         .icon("vintageimprovements:spring_coiling_machine")
         .method(consumePack(rp.conveying, 8, 100))
-        .effect(unlockRecipes(["create:kjs/create_enchantment_industry_mechanical_grindstone", "create:kjs/vintageimprovements_spring_coiling_machine"]))
+        .effect(unlockRecipes(["create:kjs/create_enchantment_industry_mechanical_grindstone", "create:kjs/vintageimprovements_spring_coiling_machine", "create:kjs/createaddition_rolling_mill"]))
         .parent("conveying")
 
     event.create("logistics")
