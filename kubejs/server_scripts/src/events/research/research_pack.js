@@ -260,6 +260,19 @@ ResearchdEvents.registerResearches(event => {
         ]))
         .effect(unlockRecipe("create:kjs/create_electron_tube"))
         .parent("basin_lid")
+
+    event.create("precision_mechanism")
+        .translatableName("精密构件")
+        .literalDescription("更小、更精密")
+        .icon("create:precision_mechanism")
+        .method(consumePacks([
+            [rp.conveying, 16, 100],
+            [rp.logistics, 16, 100],
+            [rp.fluid, 16, 100]
+        ]))
+        .effect(unlockRecipe("create:kjs/create_precision_mechanism"))
+        .parent("fluid")
+
     event.create("smart")
         .translatableName("智能研究包")
         .literalDescription("黄铜时代")
