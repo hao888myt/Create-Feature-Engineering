@@ -424,6 +424,22 @@ ResearchdEvents.registerResearches(event => {
         .effect(unlockRecipe("create:kjs/fluidlogistics_smart_hopper"))
         .parent("smart")
     
+    event.create("smart_faucet")
+        .translatableName("智能龙头")
+        .literalDescription("更智能的...水龙头？")
+        .icon("fluidlogistics:smart_faucet")
+        .method(consumePacks([
+            [rp.conveying, 64, 50],
+            [rp.logistics, 64, 50],
+            [rp.fluid, 64, 50],
+            [rp.smart, 64, 50]
+        ]))
+        .effect(unlockRecipe("create:kjs/fluidlogistics_smart_faucet"))
+        .parents([
+            "smart",
+            "faucet"
+        ])
+
     event.create("mechanical_crafter")
         .translatableName("动力合成器")
         .literalDescription("慢工出细活")
