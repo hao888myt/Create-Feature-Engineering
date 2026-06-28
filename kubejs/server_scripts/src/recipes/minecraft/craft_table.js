@@ -257,7 +257,7 @@ ServerEvents.recipes(event => {
     "create:package_filter",
     "createdieselgenerators:entity_filter"
   ].forEach(filter => {
-    event.replaceInput({output: filter}, Ingredient.of("#minecraft:wool"),"minecraft:paper")
+    event.replaceInput({ output: filter }, Ingredient.of("#minecraft:wool"), "minecraft:paper")
   })
 
   // 喷气背包
