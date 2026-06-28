@@ -360,7 +360,22 @@ ResearchdEvents.registerResearches(event => {
         ]))
         .effect(unlockRecipe("kubejs:kjs/create_rotation_speed_controller"))
         .parent("smart")
-
+    
+    event.create("mechanical_arm_gun")
+        .translatableName("动力双雄")
+        .literalDescription("只需简单配置，即可高效自动化")
+        .icon("create:mechanical_arm")
+        .method(consumePacks([
+            [rp.conveying, 64, 50],
+            [rp.logistics, 64, 50],
+            [rp.fluid, 64, 50],
+            [rp.smart, 64, 50]
+        ]))
+        .effect(unlockRecipes([
+            "create:kjs/create_mechanical_arm",
+            "create:kjs/fluidlogistics_mechanical_fluid_gun"
+        ]))
+        .parent("smart")
     event.create("mechanical_crafter")
         .translatableName("动力合成器")
         .literalDescription("慢工出细活")
