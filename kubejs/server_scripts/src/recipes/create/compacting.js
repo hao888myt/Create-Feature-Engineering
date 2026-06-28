@@ -2,7 +2,8 @@ ServerEvents.recipes(event => {
     let create = event.recipes.create
 
     let removes = [
-        "createdieselgenerators:compacting/plant_oil"
+        "createdieselgenerators:compacting/plant_oil",
+        "createaddition:compacting/seed_oil"
     ].forEach(recipe => {
         event.remove(recipe)
     })
