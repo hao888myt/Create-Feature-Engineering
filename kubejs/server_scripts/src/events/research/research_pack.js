@@ -318,6 +318,19 @@ ResearchdEvents.registerResearches(event => {
         .effect(unlockRecipe("kubejs:kjs/anvilcraft_pigsplus_redstone_conduit_block"))
         .parent("smart")
 
+    event.create("stockpile_switch")
+        .translatableName("存量转信器")
+        .literalDescription("本质是一个施密特触发器")
+        .icon("create:stockpile_switch")
+        .method(consumePacks([
+            [rp.conveying, 64, 50],
+            [rp.logistics, 64, 50],
+            [rp.fluid, 64, 50],
+            [rp.smart, 64, 50]
+        ]))
+        .effect(unlockRecipe("create:crafting/logistics/stockpile_switch"))
+        .parent("smart")
+
     event.create("mechanical_crafter")
         .translatableName("动力合成器")
         .literalDescription("慢工出细活")
