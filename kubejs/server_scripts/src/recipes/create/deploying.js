@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
     })
 
     let recipes = [
-        [Item.of("create:andesite_funnel", 2), "#c:ingots/andesite", "minecraft:dried_kelp", false],
+        [Item.of("create:andesite_funnel", 2), "#c:ingots/andesite_alloy", "minecraft:dried_kelp", false],
         ["create:fluid_tank", "create_fantasizing:andesite_crate", "#c:plates/copper", false],
         ["create:item_vault", "create_fantasizing:andesite_crate", "#c:plates/iron", false],
         ["create:transmitter", "#vintageimprovements:springs/copper", "minecraft:redstone"],

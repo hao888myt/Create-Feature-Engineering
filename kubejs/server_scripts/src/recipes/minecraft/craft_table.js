@@ -130,7 +130,7 @@ ServerEvents.recipes(event => {
     "AAA",
     " C "
   ], {
-    A: "#c:ingots/andesite",
+    A: "#c:ingots/andesite_alloy",
     I: "#c:plates/iron",
     C: "create:andesite_casing",
   })
@@ -141,7 +141,7 @@ ServerEvents.recipes(event => {
     "III",
     " C "
   ], {
-    A: "#c:ingots/andesite",
+    A: "#c:ingots/andesite_alloy",
     I: "#c:plates/iron",
     C: "create:andesite_casing",
   })

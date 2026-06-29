@@ -11,7 +11,7 @@ ServerEvents.recipes((event) => {
 
         ["vintageimprovements:spring_coiling_machine", "create:andesite_casing", "vintageimprovements:spring_coiling_machine_wheel"],
         ["createaddition:rolling_mill", "create:andesite_casing", "#c:ingots/zinc"],
-        ["create_enchantment_industry:mechanical_grindstone", "create:shaft", "#c:ingots/andesite"],
+        ["create_enchantment_industry:mechanical_grindstone", "create:shaft", "#c:ingots/andesite_alloy"],
 
         ["create:deployer", "create:andesite_casing", "create:brass_hand"],
 
@@ -19,7 +19,7 @@ ServerEvents.recipes((event) => {
 
         ["create:empty_blaze_burner", "minecraft:netherrack", "#c:plates/iron"],
 
-        ["create:packager", "create:cardboard_block", "#c:ingots/andesite"],
+        ["create:packager", "create:cardboard_block", "#c:ingots/andesite_alloy"],
         ["create:package_frogport", "create_fantasizing:andesite_crate", "#c:slimeballs"],
 
         ["create:item_drain", "create:copper_casing", "minecraft:iron_bars"],

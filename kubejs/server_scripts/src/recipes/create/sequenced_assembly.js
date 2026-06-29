@@ -105,7 +105,7 @@ ServerEvents.recipes(event => {
 		"create:mechanical_bearing", [
 		create.deploying(transitional_item, [transitional_item, "create:sturdy_sheet"]),
 		create.deploying(transitional_item, [transitional_item, Ingredient.of("#c:ingots/zinc")]),
-		create.deploying(transitional_item, [transitional_item, Ingredient.of("#c:ingots/andesite")]),
+		create.deploying(transitional_item, [transitional_item, Ingredient.of("#c:ingots/andesite_alloy")]),
 	]).transitionalItem(transitional_item).loops(3)
 
 	// 抽油机曲柄
@@ -114,7 +114,7 @@ ServerEvents.recipes(event => {
 		"create:shaft", [
 		create.deploying(transitional_item, [transitional_item, "create:sturdy_sheet"]),
 		create.deploying(transitional_item, [transitional_item, Ingredient.of("#c:ingots/zinc")]),
-		create.deploying(transitional_item, [transitional_item, Ingredient.of("#c:ingots/andesite")]),
+		create.deploying(transitional_item, [transitional_item, Ingredient.of("#c:ingots/andesite_alloy")]),
 	]).transitionalItem(transitional_item).loops(3)
 
 	// 抽油机驴头
@@ -123,7 +123,7 @@ ServerEvents.recipes(event => {
 		"minecraft:dried_kelp", [
 		create.deploying(transitional_item, [transitional_item, "create:sturdy_sheet"]),
 		create.deploying(transitional_item, [transitional_item, Ingredient.of("#c:ingots/zinc")]),
-		create.deploying(transitional_item, [transitional_item, Ingredient.of("#c:ingots/andesite")]),
+		create.deploying(transitional_item, [transitional_item, Ingredient.of("#c:ingots/andesite_alloy")]),
 	]).transitionalItem(transitional_item).loops(3)
 
 	// 抽油机油泵
@@ -132,6 +132,6 @@ ServerEvents.recipes(event => {
 		"fluidlogistics:fluid_pump", [
 		create.deploying(transitional_item, [transitional_item, "create:sturdy_sheet"]),
 		create.deploying(transitional_item, [transitional_item, Ingredient.of("#c:ingots/zinc")]),
-		create.deploying(transitional_item, [transitional_item, Ingredient.of("#c:ingots/andesite")]),
+		create.deploying(transitional_item, [transitional_item, Ingredient.of("#c:ingots/andesite_alloy")]),
 	]).transitionalItem(transitional_item).loops(3)
 })

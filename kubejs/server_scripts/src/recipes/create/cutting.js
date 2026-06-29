@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
 
     let recipes = [
         [Item.of("create:fluid_pipe", 4), "#c:plates/copper", false],
-        [Item.of("create:shaft", 6), "#c:ingots/andesite", false],
+        [Item.of("create:shaft", 6), "#c:ingots/andesite_alloy", false],
         [Item.of("minecraft:iron_bars", 4), "#c:plates/iron", false]
     ]
 
