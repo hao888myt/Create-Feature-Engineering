@@ -25,11 +25,11 @@ ServerEvents.recipes(event => {
         {
             cdg.basin_fermenting(Fluid.of(`${global.ModPackId}:molten_${material.id}`, 90), [
                 Ingredient.of(`#c:ingots/${material.id}`)
-            ]).heated().processingTime(38)
+            ]).heated().processingTime(18)
 
             cdg.basin_fermenting(Fluid.of(`${global.ModPackId}:molten_${material.id}`, 90), [
                 Ingredient.of(`#c:plates/${material.id}`)
-            ]).heated().processingTime(38)
+            ]).heated().processingTime(18)
         }
     });
 })
