@@ -348,9 +348,9 @@ ResearchdEvents.registerResearches(event => {
         ]))
         .parent("smart")
 
-    event.create("rotation_speed_controller")
-        .translatableName("转速控制器")
-        .literalDescription("优雅的变速方案")
+    event.create("controller")
+        .translatableName("变速、变向")
+        .literalDescription("优雅的解决方案")
         .icon("create:rotation_speed_controller")
         .method(consumePacks([
             [rp.conveying, 64, 50],
@@ -358,7 +358,10 @@ ResearchdEvents.registerResearches(event => {
             [rp.fluid, 64, 50],
             [rp.smart, 64, 50]
         ]))
-        .effect(unlockRecipe("kubejs:kjs/create_rotation_speed_controller"))
+        .effect(unlockRecipes([
+            "kubejs:kjs/create_rotation_speed_controller",
+            "create_connected:crafting/kinetics/brass_gearbox"
+        ]))
         .parent("smart")
 
     event.create("mechanical_arm_gun")
