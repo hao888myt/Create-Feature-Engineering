@@ -11,10 +11,15 @@ ServerEvents.tags("item", event => {
 
     let ingots = [
         ["steel", "create_feature_engineering:steel_ingot"],
-        ["andesite", "create:andesite_alloy"]
-    ]
-    ingots.forEach(ingot => {
+        ["andesite_alloy", "create:andesite_alloy"]
+    ].forEach(ingot => {
         event.add(`c:ingots/${ingot[0]}`, ingot[1])
+    })
+
+    let sheets = [
+        ["andesite_alloy", "vintageimprovements:andesite_sheet"]
+    ].forEach(ingot => {
+        event.add(`c:plates/${ingot[0]}`, ingot[1])
     })
 
     //添加橡胶标签
