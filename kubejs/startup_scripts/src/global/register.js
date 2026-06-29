@@ -51,7 +51,7 @@ global.Materials = [
         zh_cn: "铅",
     },
     {
-        id: "andesite",
+        id: "andesite_alloy",
         color: "#B8B8B8",
         types: [
             MaterialType.MOLTEN
