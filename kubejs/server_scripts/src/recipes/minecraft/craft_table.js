@@ -2,6 +2,8 @@ ServerEvents.recipes(event => {
   //传送石
   //event.remove("waystones:warp_stone")
 
+  let minecraft = event.recipes.minecraft
+
   // 
   event.remove({ mod: "beyonddimensions" })
 
@@ -35,7 +37,7 @@ ServerEvents.recipes(event => {
   })
 
   // 数字0
-  event.shaped(Item.of("create_feature_engineering:zero", 8), [
+  minecraft.crafting_shaped(Item.of("create_feature_engineering:zero", 8), [
     "ZZZ",
     "Z Z",
     "ZZZ"
@@ -57,7 +59,7 @@ ServerEvents.recipes(event => {
     ["create_feature_engineering:unstackable_nine", "create_feature_engineering:nine"]
   ]
   unstackable_numbers.forEach(number => {
-    event.shaped(Item.of(number[0]), [
+    minecraft.crafting_shaped(Item.of(number[0]), [
       "NNN",
       "N N",
       "NNN"
@@ -67,7 +69,7 @@ ServerEvents.recipes(event => {
   })
 
   // 十字齿轮箱
-  event.shaped(
+  minecraft.crafting_shaped(
     Item.of("create:gearbox", 4), [
     " C ",
     "CAC",
@@ -80,7 +82,7 @@ ServerEvents.recipes(event => {
   )
 
   // 竖十字齿轮箱
-  event.shaped(
+  minecraft.crafting_shaped(
     Item.of("create:vertical_gearbox", 4), [
     "C C",
     " A ",
@@ -93,7 +95,7 @@ ServerEvents.recipes(event => {
   )
 
   // 离合器
-  event.shapeless(
+  minecraft.crafting_shapeless(
     Item.of("create:clutch", 4),
     [
       "create:andesite_casing",
@@ -103,29 +105,29 @@ ServerEvents.recipes(event => {
   )
 
   // 链式传动箱
-  event.shapeless(Item.of("create:encased_chain_drive", 4), [
+  minecraft.crafting_shapeless(Item.of("create:encased_chain_drive", 4), [
     "create:andesite_casing",
     Ingredient.of("#c:nuggets/iron", 3)
   ])
-  event.shapeless(Item.of("create:encased_chain_drive", 4), [
+  minecraft.crafting_shapeless(Item.of("create:encased_chain_drive", 4), [
     "create:andesite_casing",
     Ingredient.of("#c:nuggets/zinc", 3)
   ])
 
   // 可调节链式传动箱
-  event.shapeless(Item.of("create:adjustable_chain_gearshift", 4), [
+  minecraft.crafting_shapeless(Item.of("create:adjustable_chain_gearshift", 4), [
     Item.of("create:encased_chain_drive", 4),
     "create:electron_tube"
   ])
 
   // 链式齿轮箱
-  event.shapeless(Item.of("create_connected:encased_chain_cogwheel", 4), [
+  minecraft.crafting_shapeless(Item.of("create_connected:encased_chain_cogwheel", 4), [
     Item.of("create:encased_chain_drive", 4),
     "create:cogwheel"
   ])
 
   // 动力收割机
-  event.shaped(Item.of("create:mechanical_harvester", 4), [
+  minecraft.crafting_shaped(Item.of("create:mechanical_harvester", 4), [
     "III",
     "AAA",
     " C "
@@ -136,7 +138,7 @@ ServerEvents.recipes(event => {
   })
 
   // 动力犁
-  event.shaped(Item.of("create:mechanical_plough", 4), [
+  minecraft.crafting_shaped(Item.of("create:mechanical_plough", 4), [
     "AAA",
     "III",
     " C "
@@ -160,14 +162,14 @@ ServerEvents.recipes(event => {
     "create_connected:encased_chain_cogwheel"
   ]
   conveying_copy.forEach(item => {
-    event.shapeless(Item.of(item, 4), [
+    minecraft.crafting_shapeless(Item.of(item, 4), [
       item,
       'researchd:research_pack[researchd:research_pack="create_feature_engineering:conveying"]'
     ])
   })
 
   // 方块破坏器
-  event.shaped(
+  minecraft.crafting_shaped(
     Item.of("anvilcraft_pigsplus:block_breaker"),
     [
       "CCC",
@@ -183,7 +185,7 @@ ServerEvents.recipes(event => {
   )
 
   // 黄铜手部零件
-  event.shaped(
+  minecraft.crafting_shaped(
     Item.of("create:brass_hand"),
     [
       " B ",
@@ -197,7 +199,7 @@ ServerEvents.recipes(event => {
   )
 
   // 烈焰人燃烧室
-  event.shapeless(
+  minecraft.crafting_shapeless(
     Item.of("create:blaze_burner"),
     [
       "create:empty_blaze_burner",
@@ -206,7 +208,7 @@ ServerEvents.recipes(event => {
   )
 
   // 传送带
-  event.shaped(
+  minecraft.crafting_shaped(
     Item.of("create:belt_connector", 3),
     [
       "DDD",
@@ -217,7 +219,7 @@ ServerEvents.recipes(event => {
       R: "#neoforge:rubber"
     }
   )
-  event.shaped(
+  minecraft.crafting_shaped(
     Item.of("create:belt_connector", 3),
     [
       "RRR",
@@ -230,7 +232,7 @@ ServerEvents.recipes(event => {
   )
 
   // 工作盆盖板
-  event.shaped(
+  minecraft.crafting_shaped(
     Item.of("createdieselgenerators:basin_lid", 3),
     [
       " C ",
@@ -243,7 +245,7 @@ ServerEvents.recipes(event => {
   )
 
   // 玫瑰石英
-  event.shapeless(
+  minecraft.crafting_shapeless(
     Item.of("create:rose_quartz"),
     [
       "minecraft:quartz",
@@ -252,7 +254,7 @@ ServerEvents.recipes(event => {
   )
 
   // 粘液球
-  event.shapeless("minecraft:slime_ball", [
+  minecraft.crafting_shapeless("minecraft:slime_ball", [
     Ingredient.of("#c:resin"),
     "minecraft:lime_dye"
   ])
@@ -268,7 +270,7 @@ ServerEvents.recipes(event => {
   })
 
   // 黄铜隧道
-  event.shaped(Item.of("create:brass_tunnel", 8), [
+  minecraft.crafting_shaped(Item.of("create:brass_tunnel", 8), [
     "E ",
     "PP",
     "DD",
@@ -279,7 +281,7 @@ ServerEvents.recipes(event => {
   })
 
   // 黄铜漏斗
-  event.shaped(Item.of("create:brass_funnel", 8), [
+  minecraft.crafting_shaped(Item.of("create:brass_funnel", 8), [
     "E",
     "P",
     "D",
@@ -290,7 +292,7 @@ ServerEvents.recipes(event => {
   })
 
   // 智能溜槽
-  event.shaped(Item.of("create:smart_chute", 4), [
+  minecraft.crafting_shaped(Item.of("create:smart_chute", 4), [
     "E",
     "C",
     "P",
@@ -301,7 +303,7 @@ ServerEvents.recipes(event => {
   })
 
   // 红石传导块
-  event.shaped(Item.of("anvilcraft_pigsplus:redstone_conduit_block", 32), [
+  minecraft.crafting_shaped(Item.of("anvilcraft_pigsplus:redstone_conduit_block", 32), [
     "BRB",
     "RPR",
     "BRB",
@@ -312,13 +314,13 @@ ServerEvents.recipes(event => {
   })
 
   // 转速控制器
-  event.shapeless(Item.of("create:rotation_speed_controller", 4), [
+  minecraft.crafting_shapeless(Item.of("create:rotation_speed_controller", 4), [
     "create:brass_casing",
     "create:precision_mechanism"
   ])
 
   // 喷气背包
-  event.shaped(
+  minecraft.crafting_shaped(
     "create_jetpack:jetpack",
     [
       "BSB",

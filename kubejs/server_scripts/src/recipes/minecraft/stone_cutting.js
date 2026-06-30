@@ -1,4 +1,6 @@
 ServerEvents.recipes(event => {
+    let minecraft = event.recipes.minecraft
+
     // 切数字
     let numbers = [
         Item.of("create_feature_engineering:zero"),
@@ -13,6 +15,6 @@ ServerEvents.recipes(event => {
         Item.of("create_feature_engineering:nine")
     ]
     numbers.forEach((item) => {
-        event.stonecutting(item,"#create_feature_engineering:numbers")
+        minecraft.stonecutting(item,"#create_feature_engineering:numbers")
     })
 })
