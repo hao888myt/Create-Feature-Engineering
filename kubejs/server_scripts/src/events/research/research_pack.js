@@ -317,9 +317,9 @@ ResearchdEvents.registerResearches(event => {
             [rp.smart, 64, 50]
         ]))
         .effect(unlockRecipes([
-            "kubejs:kjs/create_brass_tunnel",
-            "kubejs:kjs/create_brass_funnel",
-            "kubejs:kjs/create_smart_chute"
+            "minecraft:kjs/create_brass_funnel",
+            "minecraft:kjs/create_brass_tunnel",
+            "minecraft:kjs/create_smart_chute"
         ]))
         .parent("smart")
 
@@ -333,7 +333,7 @@ ResearchdEvents.registerResearches(event => {
             [rp.fluid, 64, 50],
             [rp.smart, 64, 50]
         ]))
-        .effect(unlockRecipe("kubejs:kjs/anvilcraft_pigsplus_redstone_conduit_block"))
+        .effect(unlockRecipe("minecraft:kjs/anvilcraft_pigsplus_redstone_conduit_block"))
         .parent("smart")
 
     event.create("stockpile_switch")
@@ -376,7 +376,7 @@ ResearchdEvents.registerResearches(event => {
             [rp.smart, 64, 50]
         ]))
         .effect(unlockRecipes([
-            "kubejs:kjs/create_rotation_speed_controller",
+            "minecraft:kjs/create_rotation_speed_controller",
             "create_connected:crafting/kinetics/brass_gearbox"
         ]))
         .parent("smart")
