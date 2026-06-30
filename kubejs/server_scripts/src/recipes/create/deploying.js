@@ -10,8 +10,11 @@ ServerEvents.recipes(event => {
 
     let recipes = [
         [Item.of("create:andesite_funnel", 2), "#c:ingots/andesite_alloy", "minecraft:dried_kelp", false],
+
         ["create:fluid_tank", "create_fantasizing:andesite_crate", "#c:plates/copper", false],
         ["create:item_vault", "create_fantasizing:andesite_crate", "#c:plates/iron", false],
+        ["ratatouille:compost_tower", "create_fantasizing:andesite_crate", "#c:plates/zinc", false],
+
         ["create:transmitter", "#vintageimprovements:springs/copper", "minecraft:redstone"],
 
         [Item.of("create:factory_gauge", 4), "create:precision_mechanism", "create:stock_link",],

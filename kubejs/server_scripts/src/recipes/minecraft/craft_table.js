@@ -22,6 +22,8 @@ ServerEvents.recipes(event => {
 
     "createdieselgenerators:crafting/basin_lid",
 
+    "ratatouille:crafting/compost_tower",
+
     "create:crafting/materials/rose_quartz",
 
     "create:crafting/logistics/brass_funnel",
@@ -241,6 +243,20 @@ ServerEvents.recipes(event => {
     {
       A: "create:andesite_alloy",
       C: "minecraft:clock"
+    }
+  )
+
+  // 堆肥塔
+  minecraft.crafting_shaped(
+    "ratatouille:compost_tower",
+    [
+      "Z",
+      "B",
+      "Z"
+    ],
+    {
+      B: "minecraft:barrel",
+      Z: "#c:plates/zinc"
     }
   )
 
