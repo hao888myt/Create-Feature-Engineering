@@ -28,6 +28,7 @@ ServerEvents.recipes((event) => {
         ["create:hose_pulley", "create:copper_casing", "minecraft:dried_kelp_block"],
 
         ["ratatouille:spreader", "create:encased_fan", "ratatouille:ripen_matter"],
+        ["ratatouille:irrigation_tower", "create:fluid_tank", "#c:ingots/copper"],
 
         ["fluidlogistics:smart_faucet", "fluidlogistics:faucet", "create:electron_tube"]
     ]
