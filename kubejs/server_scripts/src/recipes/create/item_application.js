@@ -27,6 +27,8 @@ ServerEvents.recipes((event) => {
         ["fluidlogistics:fluid_pump", "create:mechanical_pump", "create:propeller"],
         ["create:hose_pulley", "create:copper_casing", "minecraft:dried_kelp_block"],
 
+        ["ratatouille:spreader", "create:encased_fan", "ratatouille:ripen_matter"],
+
         ["fluidlogistics:smart_faucet", "fluidlogistics:faucet", "create:electron_tube"]
     ]
 
