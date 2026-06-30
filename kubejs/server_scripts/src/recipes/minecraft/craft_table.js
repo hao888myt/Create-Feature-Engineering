@@ -24,6 +24,8 @@ ServerEvents.recipes(event => {
 
     "ratatouille:crafting/compost_tower",
 
+    "create:crafting/kinetics/controls",
+
     "create:crafting/materials/rose_quartz",
 
     "create:crafting/logistics/brass_funnel",
@@ -259,6 +261,12 @@ ServerEvents.recipes(event => {
       Z: "#c:plates/zinc"
     }
   )
+
+  // 列车驾驶台
+  minecraft.crafting_shapeless(Item.of("create:controls", 2), [
+    "create:railway_casing",
+    "minecraft:lever"
+  ])
 
   // 玫瑰石英
   minecraft.crafting_shapeless(
