@@ -3,7 +3,9 @@ ServerEvents.recipes(event => {
 
     let removes = [
         "create:crafting/kinetics/chain_conveyor",
-        "create:mixing/brass_ingot"
+        "create:mixing/brass_ingot",
+
+        "createaddition:mixing/bioethanol"
     ].forEach(recipe => {
         event.remove(recipe)
     })
