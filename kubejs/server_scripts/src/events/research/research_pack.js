@@ -253,6 +253,38 @@ ResearchdEvents.registerResearches(event => {
             "create:kjs/ratatouille_compost_tower"
         ]))
         .parent("fluid")
+    
+    event.create("sturdy_sheet")
+        .translatableName("坚固板")
+        .literalDescription("坚固而可靠的材料")
+        .icon("create:sturdy_sheet")
+        .method(consumePacks([
+            [rp.conveying, 16, 100],
+            [rp.logistics, 16, 100],
+            [rp.fluid, 16, 100]
+        ]))
+        .effect(unlockRecipe("create:kjs/create_sturdy_sheet"))
+        .parent("basin_lid")
+
+    event.create("pumpjack")
+        .translatableName("抽油机")
+        .literalDescription("石油化工的起点")
+        .icon("createdieselgenerators:crude_oil_bucket")
+        .method(consumePacks([
+            [rp.conveying, 32, 50],
+            [rp.logistics, 32, 50],
+            [rp.fluid, 32, 50]
+        ]))
+        .effect(unlockRecipes([
+            "create:kjs/createdieselgenerators_pumpjack_bearing",
+            "create:kjs/createdieselgenerators_pumpjack_crank",
+            "create:kjs/createdieselgenerators_pumpjack_head",
+            "create:kjs/createdieselgenerators_pumpjack_hole"
+        ]))
+        .parents([
+            "sturdy_sheet",
+            "fluid_pump"
+        ])
 
     event.create("vacuum_chamber")
         .translatableName("压缩机")
@@ -481,38 +513,6 @@ ResearchdEvents.registerResearches(event => {
         ]))
         .effect(unlockRecipe("create:kjs/create_crushing_wheel"))
         .parent("mechanical_crafter")
-
-    event.create("sturdy_sheet")
-        .translatableName("坚固板")
-        .literalDescription("坚固而可靠的材料")
-        .icon("create:sturdy_sheet")
-        .method(consumePacks([
-            [rp.conveying, 16, 100],
-            [rp.logistics, 16, 100],
-            [rp.fluid, 16, 100]
-        ]))
-        .effect(unlockRecipe("create:kjs/create_sturdy_sheet"))
-        .parent("crushing_wheel")
-
-    event.create("pumpjack")
-        .translatableName("抽油机")
-        .literalDescription("石油化工的起点")
-        .icon("createdieselgenerators:crude_oil_bucket")
-        .method(consumePacks([
-            [rp.conveying, 32, 50],
-            [rp.logistics, 32, 50],
-            [rp.fluid, 32, 50]
-        ]))
-        .effect(unlockRecipes([
-            "create:kjs/createdieselgenerators_pumpjack_bearing",
-            "create:kjs/createdieselgenerators_pumpjack_crank",
-            "create:kjs/createdieselgenerators_pumpjack_head",
-            "create:kjs/createdieselgenerators_pumpjack_hole"
-        ]))
-        .parents([
-            "sturdy_sheet",
-            "fluid_pump"
-        ])
 
     event.create("package")
         .translatableName("包裹研究包")
