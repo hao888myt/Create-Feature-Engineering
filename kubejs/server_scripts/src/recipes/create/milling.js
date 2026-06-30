@@ -10,6 +10,9 @@ ServerEvents.recipes(event => {
     // 余烬面粉
     create.milling(Item.of("create:cinder_flour", 2), "minecraft:netherrack", 140)
 
+    // 黑曜石粉
+    create.milling("create:powdered_obsidian", "minecraft:obsidian", 1580)
+
     event.forEachRecipe({ type: "create:milling" }, recipe => {
         let { json } = recipe
 
