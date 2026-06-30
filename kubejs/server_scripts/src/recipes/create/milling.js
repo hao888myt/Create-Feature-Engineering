@@ -8,5 +8,18 @@ ServerEvents.recipes(event => {
     })
 
     // 余烬面粉
-    create.milling(Item.of("create:cinder_flour", 2), "minecraft:netherrack")
+    create.milling(Item.of("create:cinder_flour", 2), "minecraft:netherrack", 140)
+
+    event.forEachRecipe({ type: "create:milling" }, recipe => {
+        let { json } = recipe
+
+        let processing_time = json.get("processing_time")
+
+        processing_time = 140
+
+        event.remove(recipe.getId())
+        json.remove("processing_time")
+        json.add("processing_time", processing_time)
+        event.custom(json).id(recipe.getId())
+    })
 })
