@@ -236,6 +236,23 @@ ResearchdEvents.registerResearches(event => {
         ]))
         .effect(unlockRecipe("create:kjs/create_hose_pulley"))
         .parent("fluid")
+    
+    event.create("modern_farming")
+        .translatableName("现代化农业")
+        .translatableDescription("更加现代化的种植方式")
+        .icon("ratatouille:ripen_matter")
+        .method(consumePacks([
+            [rp.conveying, 16, 100],
+            [rp.logistics, 16, 100],
+            [rp.fluid, 16, 100]
+        ]))
+        .effect(unlockRecipes([
+            "create:kjs/ratatouille_spreader",
+            "create:kjs/ratatouille_irrigation_tower",
+            "minecraft:kjs/ratatouille_compost_tower",
+            "create:kjs/ratatouille_compost_tower"
+        ]))
+        .parent("fluid")
 
     event.create("vacuum_chamber")
         .translatableName("压缩机")
