@@ -13,12 +13,12 @@ ServerEvents.recipes(event => {
         Item.of("minecraft:sugar"),
         Ingredient.of('#c:flours/wheat'),
         Fluid.of("minecraft:water", 200)
-    ])
+    ], 78)
     cdg.bulk_fermenting(Fluid.of("createdieselgenerators:ethanol", 400), [
         Item.of("minecraft:sugar"),
         Ingredient.of('#c:flours/wheat'),
         Fluid.of("minecraft:water", 200)
-    ])
+    ], 78)
 
     global.Materials.forEach(material => {
         if (material.types.includes("molten"))
