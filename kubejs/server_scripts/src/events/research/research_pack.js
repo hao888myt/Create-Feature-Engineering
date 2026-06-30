@@ -397,6 +397,19 @@ ResearchdEvents.registerResearches(event => {
         ]))
         .parent("smart")
     
+    event.create("smart_fluid_pipe")
+        .translatableName("智能流体管道")
+        .literalDescription("其实不是很智能")
+        .icon("create:smart_fluid_pipe")
+        .method(consumePacks([
+            [rp.conveying, 64, 50],
+            [rp.logistics, 64, 50],
+            [rp.fluid, 64, 50],
+            [rp.smart, 64, 50]
+        ]))
+        .effect(unlockRecipe("create:kjs/create_smart_fluid_pipe"))
+        .parent("smart")
+    
     event.create("smart_hopper")
         .translatableName("智能漏斗")
         .literalDescription("一个人干两个人的活")
