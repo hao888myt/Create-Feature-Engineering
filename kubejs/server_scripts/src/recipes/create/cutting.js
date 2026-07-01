@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
     ]
 
     recipes.forEach(recipe => {
-        create.cutting(recipe[0], Ingredient.of(recipe[1]), 125)
+        create.cutting(recipe[0], Ingredient.of(recipe[1]), 80)
         removeRecipe(recipe, 2, event)
     })
 
