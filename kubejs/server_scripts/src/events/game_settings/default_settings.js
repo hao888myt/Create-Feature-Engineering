@@ -7,6 +7,8 @@ ServerEvents.loaded(event => {
 
     let defaultRules = [
         "doInsomnia false",
+        "doTraderSpawning false",
+        "doPatrolSpawning false",
         "playersSleepingPercentage 0"
     ]
     defaultRules.forEach(rule => server.runCommandSilent(`gamerule ${rule}`))
