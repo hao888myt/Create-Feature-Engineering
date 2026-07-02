@@ -18,6 +18,9 @@ ServerEvents.recipes(event => {
     "create:crafting/kinetics/mechanical_harvester",
     "create:crafting/kinetics/mechanical_plough",
 
+    "farmersdelight:organic_compost_from_rotten_flesh",
+    "farmersdelight:organic_compost_from_tree_bark",
+
     "anvilcraft_pigsplus:block_breaker",
 
     "createdieselgenerators:crafting/basin_lid",
@@ -151,6 +154,13 @@ ServerEvents.recipes(event => {
     I: "#c:plates/iron",
     C: "create:andesite_casing",
   })
+
+  // 有机堆肥
+  minecraft.crafting_shapeless(Item.of("farmersdelight:organic_compost", 4), [
+    Item.of("minecraft:dirt", 4),
+    Item.of("minecraft:bone_meal", 3),
+    Item.of("farmersdelight:tree_bark", 2)
+  ])
 
   // 传动研究包复制
   let conveying_copy = [
