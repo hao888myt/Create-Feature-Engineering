@@ -124,4 +124,22 @@ ServerEvents.recipes(event => {
             })
         }
     }
+
+    let removes = [
+        "ars_nouveau:imbuement_chamber",
+    ].forEach(recipe => {
+        event.remove(recipe)
+    })
+
+    new Pedestal(["ars_nouveau:imbuement_chamber", 1],
+        [
+            "PGP",
+            "P P",
+            "PGP"
+        ],
+        {
+            P: "ars_nouveau:archwood_planks",
+            G: "minecraft:gold_ingot"
+        }
+    ).build()
 })
