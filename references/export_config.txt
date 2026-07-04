@@ -114,6 +114,7 @@ config/researchd-client.toml
 config/ponderer-client.toml
 config/createaddition-common.toml
 config/farmersdelight-common.toml
+config/ars_creo-common.toml
 
 # 排除的文件
 !*.log
