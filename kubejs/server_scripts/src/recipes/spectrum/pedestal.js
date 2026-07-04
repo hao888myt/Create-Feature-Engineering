@@ -24,6 +24,7 @@ ServerEvents.recipes(event => {
             this.tier = "basic"
             this.group = ""
             this.required_advancement = ""
+            this.required_advancements = []
 
             return this
         }
@@ -95,8 +96,15 @@ ServerEvents.recipes(event => {
             return this
         }
 
-        setRequiredAdvancement(advancement) {
-            this.required_advancement = advancement
+        addRequiredAdvancement(advancement) {
+            this.required_advancements.push(advancement)
+            return this
+        }
+
+        addRequiredAdvancements(advancements) {
+            advancements.forEach(advancement => {
+                this.addRequiredAdvancement(advancement)
+            })
             return this
         }
 
@@ -120,7 +128,7 @@ ServerEvents.recipes(event => {
                     "id": this.id,
                     "count": this.count
                 },
-                "required_advancement": this.required_advancement
+                "required_advancements": this.required_advancements
             })
         }
     }
@@ -142,7 +150,7 @@ ServerEvents.recipes(event => {
             P: "ars_nouveau:archwood_planks",
             G: "minecraft:gold_ingot"
         }
-    ).setRequiredAdvancement("spectrum:collect_all_basic_shards")
+    ).addRequiredAdvancement("spectrum:collect_all_basic_shards")
     .build()
 
     new Pedestal(["ars_nouveau:source_jar", 1],
@@ -155,6 +163,6 @@ ServerEvents.recipes(event => {
             P: "ars_nouveau:archwood_slab",
             G: "#c:glass_blocks"
         }
-    ).setRequiredAdvancement("spectrum:collect_all_basic_shards")
+    ).addRequiredAdvancement("spectrum:collect_all_basic_shards")
     .build()
 })
