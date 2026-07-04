@@ -142,7 +142,8 @@ ServerEvents.recipes(event => {
             P: "ars_nouveau:archwood_planks",
             G: "minecraft:gold_ingot"
         }
-    ).build()
+    ).setRequiredAdvancement("spectrum:collect_all_basic_shards")
+    .build()
 
     new Pedestal(["ars_nouveau:source_jar", 1],
         [
@@ -154,5 +155,6 @@ ServerEvents.recipes(event => {
             P: "ars_nouveau:archwood_slab",
             G: "#c:glass_blocks"
         }
-    ).build()
+    ).setRequiredAdvancement("spectrum:collect_all_basic_shards")
+    .build()
 })
