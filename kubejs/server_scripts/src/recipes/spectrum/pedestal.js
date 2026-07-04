@@ -1,0 +1,127 @@
+ServerEvents.recipes(event => {
+    class Pedestal {
+        /**
+         * @param {Array<string|int>} result 
+         * @param {Array<string>} pattern 
+         * @param {Object<string, string>} key 
+         * @param {number} time 
+         */
+        constructor(result, pattern, key, time = 20) {
+            this.id = result[0]
+            this.count = result[1]
+
+            this.pattern = pattern
+            this.key = key
+
+            this.time = time
+
+            this.magenta = 0
+            this.yellow = 0
+            this.cyan = 0
+            this.black = 0
+            this.white = 0
+
+            this.tier = "basic"
+            this.group = ""
+            this.required_advancement = ""
+
+            return this
+        }
+
+        // #region 只是设置颜色
+        setMagenta(count) {
+            this.magenta = count
+            return this
+        }
+
+        setYellow(count) {
+            this.yellow = count
+            return this
+        }
+
+        setCyan(count) {
+            this.cyan = count
+            return this
+        }
+
+        setBlack(count) {
+            this.black = count
+            return this
+        }
+
+        setWhite(count) {
+            this.white = count
+            return this
+        }
+
+        setMYC(magenta, yellow, cyan) {
+            this.magenta = magenta
+            this.yellow = yellow
+            this.cyan = cyan
+            return this
+        }
+
+        setMYCB(magenta, yellow, cyan, black) {
+            this.magenta = magenta
+            this.yellow = yellow
+            this.cyan = cyan
+            this.black = black
+            return this
+        }
+
+        setMYCBW(magenta, yellow, cyan, black, white) {
+            this.magenta = magenta
+            this.yellow = yellow
+            this.cyan = cyan
+            this.black = black
+            this.white = white
+            return this
+        }
+
+        // #endregion
+
+        setTier(tier) {
+            this.tier = tier
+            return this
+        }
+
+        setGroup(group) {
+            this.group = group
+            return this
+        }
+
+        setExperience(experience) {
+            this.experience = experience
+            return this
+        }
+
+        setRequiredAdvancement(advancement) {
+            this.required_advancement = advancement
+            return this
+        }
+
+        build() {
+            event.custom({
+                "type": "spectrum:pedestal",
+                "group": this.group,
+                "time": this.time,
+                "tier": this.tier,
+                "colors": {
+                    "spectrum:magenta": this.magenta,
+                    "spectrum:yellow": this.yellow,
+                    "spectrum:cyan": this.cyan,
+                    "spectrum:black": this.black,
+                    "spectrum:white": this.white
+                },
+                "experience": this.experience,
+                "pattern": this.pattern,
+                "key": this.key,
+                "result": {
+                    "id": this.id,
+                    "count": this.count
+                },
+                "required_advancement": this.required_advancement
+            })
+        }
+    }
+})
