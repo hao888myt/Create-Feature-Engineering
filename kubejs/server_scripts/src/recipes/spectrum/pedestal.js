@@ -127,6 +127,7 @@ ServerEvents.recipes(event => {
 
     let removes = [
         "ars_nouveau:imbuement_chamber",
+        "ars_nouveau:source_jar"
     ].forEach(recipe => {
         event.remove(recipe)
     })
@@ -140,6 +141,18 @@ ServerEvents.recipes(event => {
         {
             P: "ars_nouveau:archwood_planks",
             G: "minecraft:gold_ingot"
+        }
+    ).build()
+
+    new Pedestal(["ars_nouveau:source_jar", 1],
+        [
+            "PPP",
+            "G G",
+            "PPP"
+        ],
+        {
+            P: "ars_nouveau:archwood_slab",
+            G: "#c:glass_blocks"
         }
     ).build()
 })
