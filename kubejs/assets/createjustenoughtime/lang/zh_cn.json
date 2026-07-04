@@ -1,0 +1,8 @@
+{
+  "createjustenoughtime.configuration.title": "机械动力: 预见时间",
+  "createjustenoughtime.configuration.section.createjustenoughtime.client.toml": "机械动力: 预见时间",
+  "createjustenoughtime.configuration.section.createjustenoughtime.client.toml.title": "机械动力: 预见时间",
+
+  "jet.detail.deployer": "世界交互时慢2刻",
+  "jet.detail.item_drain": "物品滚动耗时10刻（已计入理论时间）"
+}
