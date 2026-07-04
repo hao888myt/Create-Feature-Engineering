@@ -12,7 +12,6 @@
 # mod配置
 !/config/
 /config/*
-!/config/parcool-server.toml
 !/config/create-server.toml
 !/config/anvilcraft-server.toml
 !/config/trading_floor-server.toml
