@@ -203,6 +203,17 @@ global.IncompletedItems = [
     }
 ]
 
+global.Molds = [
+    {
+        id: "plate",
+        zh_cn: "板铸模"
+    },
+    {
+        id: "nugget",
+        zh_cn: "粒铸模"
+    }
+]
+
 global.ReserchPacks = [
     {
         id: "conveying",

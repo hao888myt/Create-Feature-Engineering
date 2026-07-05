@@ -43,3 +43,9 @@ StartupEvents.registry("item", event => {
         event.create(`${global.ModPackId}:incomplete_${item.id}`, "create:sequenced_assembly")
     })
 })
+
+CDGEvents.molds(event => {
+    global.Molds.forEach(mold => {
+        event.create(mold.id, mold.zh_cn)
+    })
+})
