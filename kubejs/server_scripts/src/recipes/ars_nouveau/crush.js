@@ -3,7 +3,10 @@ ServerEvents.recipes(event => {
 
     let removes = [
         "ars_nouveau:cobblestone",
-        "ars_nouveau:stone"
+        "ars_nouveau:stone",
+
+        "ars_nouveau:imbuement_amethyst",
+        "ars_nouveau:imbuement_lapis"
     ].forEach(recipe => {
         event.remove(recipe)
     })
@@ -35,4 +38,22 @@ ServerEvents.recipes(event => {
             ]
         )
     })
+
+    ars_nouveau.crush(
+        Ingredient.of("#create_feature_engineering:crystal_blocks"),
+        [
+            {
+                stack: Item.of("ars_nouveau:source_gem", 2),
+                chance: 1.0
+            },
+            {
+                stack: Item.of("ars_nouveau:source_gem"),
+                chance: 0.75
+            },
+            {
+                stack: Item.of("ars_nouveau:source_gem"),
+                chance: 0.5
+            }
+        ]
+    )
 })
