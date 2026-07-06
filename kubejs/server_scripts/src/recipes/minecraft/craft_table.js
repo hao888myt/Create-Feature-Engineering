@@ -368,4 +368,28 @@ ServerEvents.recipes(event => {
       S: "create:shaft"
     }
   )
+
+  // 磨制方解石
+  minecraft.crafting_shaped(
+    Item.of("spectrum:polished_calcite", 4),
+    [
+      "CC",
+      "CC"
+    ],
+    {
+      C: "minecraft:calcite"
+    }
+  )
+
+  // 磨制玄武岩
+  minecraft.crafting_shaped(
+    Item.of("spectrum:polished_basalt", 4),
+    [
+      "BB",
+      "BB"
+    ],
+    {
+      B: "minecraft:smooth_basalt"
+    }
+  )
 })
