@@ -1,4 +1,4 @@
-// const { $CompoundTag } = require("@package/net/minecraft/nbt")
+let $CompoundTag = Java.loadClass("net.minecraft.nbt.CompoundTag");
 
 BlockEvents.rightClicked(event => {
     let drawer = event.getBlock()
