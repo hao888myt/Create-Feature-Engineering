@@ -15,7 +15,6 @@ BlockEvents.rightClicked(event => {
     drawer.setEntityData(drawer_nbt)
 
     if (drawer_nbt.contains("Drawers")) {
-        /** @type {[$CompoundTag]} */
         let drawers = drawer_nbt.get("Drawers")
 
         for (let i = 0; i < drawers.length; i++) {
@@ -24,6 +23,12 @@ BlockEvents.rightClicked(event => {
                     drawer_nbt.Drawers[i].remove("Item")
                     drawer_nbt.Drawers[i].remove("Count")
                 }
+            }
+        }
+
+        if (drawers instanceof $CompoundTag) {
+            if (drawers.Count == 0) {
+                drawer_nbt.Drawers.Items = []
             }
         }
     }
