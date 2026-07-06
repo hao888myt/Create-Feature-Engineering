@@ -18,4 +18,20 @@ ServerEvents.tags("block", event => {
     faucet_fillable.forEach(block => {
         event.add("fluidlogistics:faucet_fillable", block)
     })
+
+    let drawers = [
+        "storagedrawers:compacting_drawers_2",
+        "storagedrawers:compacting_drawers_3",
+
+        "storagedrawers:compacting_half_drawers_2",
+        "storagedrawers:compacting_half_drawers_3",
+    ].forEach(drawer => {
+        event.add("storagedrawers:drawers", drawer)
+
+        if (drawer.includes("half")) {
+            event.add("storagedrawers:half_drawers", drawer)
+        } else {
+            event.add("storagedrawers:full_drawers", drawer)
+        }
+    })
 })
