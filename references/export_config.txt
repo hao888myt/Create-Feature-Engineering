@@ -1,5 +1,5 @@
 Name:Create：Feature Engineering
-Version:0.1.5-alpha
+Version:0.1.8-alpha
 
 # 是否打包正式版 PCL，以便没有启动器的玩家安装整合包。
 IncludeLauncher:False
@@ -115,6 +115,7 @@ config/ponderer-client.toml
 config/createaddition-common.toml
 config/farmersdelight-common.toml
 config/ars_creo-common.toml
+config/artifacts/items.toml
 
 # 排除的文件
 !*.log
