@@ -18,7 +18,7 @@
 	generateAsLoot = true
 	#The maximum duration in seconds negative mob effects can last when wearing the Antidote Vessel
 	#Range: 0 ~ 72000
-	maxEffectDuration = 0
+	maxEffectDuration = 1
 
 [aqua_dashers]
 	#Whether the Aqua-Dashers allow the wearer to sprint on water
