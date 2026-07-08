@@ -38,7 +38,9 @@ ServerEvents.recipes(event => {
     "anvilcraft_pigsplus:redstone_conduit_block",
     "create:crafting/kinetics/rotation_speed_controller",
 
-    "create_jetpack:jetpack"
+    "create_jetpack:jetpack",
+
+    "storagedrawers:controller_io"
   ].forEach(recipe => {
     event.remove(recipe)
   })
@@ -194,7 +196,7 @@ ServerEvents.recipes(event => {
       H: "minecraft:hopper",
       R: "minecraft:redstone",
       S: "minecraft:stonecutter",
-      C: "minecraft:cobblestone"
+      C: Ingredient.of("#c:cobblestones")
     }
   )
 
@@ -392,6 +394,52 @@ ServerEvents.recipes(event => {
       B: "minecraft:smooth_basalt"
     }
   )
+
+  // 抽屉管理器传动方块
+  minecraft.crafting_shaped(
+    Item.of("storagedrawers:controller_io", 4),
+    [
+      "SSS",
+      "CDC",
+      "SSS"
+    ],
+    {
+      S: "#c:stones",
+      D: "#storagedrawers:drawers",
+      C: "minecraft:comparator"
+    }
+  )
+
+  let stone_to_stones = [
+    "storagedrawers:compacting_drawers_2",
+    "storagedrawers:compacting_drawers_3",
+    "storagedrawers:compacting_half_drawers_2",
+    "storagedrawers:compacting_half_drawers_3",
+    "storagedrawers:controller",
+
+    "minecraft:comparator",
+    "minecraft:repeater"
+  ].forEach(item => {
+    event.replaceInput({
+      output: item
+    }, "minecraft:stone", Ingredient.of("#c:stones"))
+  })
+
+  let cobblestone_to_cobblestones = [
+    "anvilcraft:block_devourer",
+    "anvilcraft:block_placer",
+
+    "create:redstone_contact",
+
+    "minecraft:dispenser",
+    "minecraft:dropper",
+    "minecraft:observer",
+    "minecraft:piston"
+  ].forEach(item => {
+    event.replaceInput({
+      output: item
+    }, "minecraft:cobblestone", Ingredient.of("#c:cobblestones"))
+  })
 
   // 抽屉
   minecraft.crafting_shapeless("storagedrawers:oak_full_drawers_1", Ingredient.of("#c:chests/wooden"))
