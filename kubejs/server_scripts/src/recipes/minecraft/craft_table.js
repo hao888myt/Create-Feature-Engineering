@@ -441,6 +441,20 @@ ServerEvents.recipes(event => {
     }, "minecraft:cobblestone", Ingredient.of("#c:cobblestones"))
   })
 
+  // 发射器
+  minecraft.crafting_shaped("minecraft:dispenser",
+    [
+      "ST ",
+      "SDT",
+      "ST "
+    ],
+    {
+      S: "#c:strings",
+      T: "minecraft:stick",
+      D: "minecraft:dropper"
+    }
+  )
+
   // 抽屉
   minecraft.crafting_shapeless("storagedrawers:oak_full_drawers_1", Ingredient.of("#c:chests/wooden"))
   minecraft.crafting_shaped(Item.of("storagedrawers:oak_full_drawers_2", 2), [
