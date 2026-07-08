@@ -392,4 +392,21 @@ ServerEvents.recipes(event => {
       B: "minecraft:smooth_basalt"
     }
   )
+
+  // 抽屉
+  minecraft.crafting_shapeless("storagedrawers:oak_full_drawers_1", Ingredient.of("#c:chests/wooden"))
+  minecraft.crafting_shaped(Item.of("storagedrawers:oak_full_drawers_2", 2), [
+    "C",
+    " ",
+    "C"
+  ], {
+    C: "#c:chests/wooden"
+  })
+  minecraft.crafting_shaped(Item.of("storagedrawers:oak_full_drawers_4", 4), [
+    "C C",
+    "   ",
+    "C C"
+  ], {
+    C: "#c:chests/wooden"
+  })
 })
