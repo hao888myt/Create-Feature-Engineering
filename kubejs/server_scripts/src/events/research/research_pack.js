@@ -95,8 +95,8 @@ ResearchdEvents.registerResearches(event => {
         .icon("create:mechanical_harvester")
         .method(consumePack(rp.conveying, 8, 100))
         .effect(unlockRecipes([
-            "kubejs:kjs/create_mechanical_harvester",
-            "kubejs:kjs/create_mechanical_plough"
+            "minecraft:kjs/create_mechanical_harvester",
+            "minecraft:kjs/create_mechanical_plough"
         ]))
         .parent("conveying")
 
