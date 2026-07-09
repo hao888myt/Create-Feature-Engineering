@@ -10,26 +10,30 @@
 /kubejs/README.txt
 
 # mod配置
-!/config/
-/config/*
-!/config/create-server.toml
-!/config/anvilcraft-server.toml
-!/config/trading_floor-server.toml
-!/config/tweakeroo.json
-!/config/better-advanced-tooltips-client.toml
-!/config/beyonddimensions-server.toml
-!/config/alexsmobsup.toml
-!/config/ars_nouveau-client.toml
-!/config/create_fantasizing-server.toml
-!/config/researchd-client.toml
-!/config/ponderer-client.toml
-!/config/createaddition-common.toml
-!/config/farmersdelight-common.toml
-!/config/ars_creo-common.toml
-!/config/artifacts
-!/config/artifacts/items.toml
-config/artifacts/client.toml
-config/artifacts/general.toml
+!config/
+config/*
+!config/create-server.toml
+!config/anvilcraft-server.toml
+!config/trading_floor-server.toml
+!config/tweakeroo.json
+!config/better-advanced-tooltips-client.toml
+!config/beyonddimensions-server.toml
+!config/alexsmobsup.toml
+!config/ars_nouveau-client.toml
+!config/create_fantasizing-server.toml
+!config/researchd-client.toml
+!config/ponderer-client.toml
+!config/createaddition-common.toml
+!config/farmersdelight-common.toml
+!config/ars_creo-common.toml
+
+!config/artifacts/
+config/artifacts/*
+!config/artifacts/items.toml
+
+!config/ars_nouveau/
+config/ars_nouveau/*
+!config/ars_nouveau/glyph_crush.toml
 
 # 此处需要加入部分配置文件更改可以在对应文件路径前输入一个!来进行筛选
 kubejs/startup_scripts/jsconfig.json
