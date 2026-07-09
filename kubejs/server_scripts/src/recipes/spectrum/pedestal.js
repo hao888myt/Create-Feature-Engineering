@@ -47,11 +47,13 @@ ServerEvents.recipes(event => {
 
         setBlack(count) {
             this.black = count
+            this.tier = "advanced"
             return this
         }
 
         setWhite(count) {
             this.white = count
+            this.tier = "complex"
             return this
         }
 
@@ -67,6 +69,7 @@ ServerEvents.recipes(event => {
             this.yellow = yellow
             this.cyan = cyan
             this.black = black
+            this.tier = "advanced"
             return this
         }
 
@@ -76,13 +79,29 @@ ServerEvents.recipes(event => {
             this.cyan = cyan
             this.black = black
             this.white = white
+            this.tier = "complex"
             return this
         }
 
         // #endregion
 
-        setTier(tier) {
-            this.tier = tier
+        CMY () {
+            this.tier = "simple"
+            return this
+        }
+
+        onyx () {
+            this.tier = "advanced"
+            return this
+        }
+
+        moon () {
+            this.tier = "complex"
+            return this
+        }
+
+        setTime(time) {
+            this.time = time
             return this
         }
 
