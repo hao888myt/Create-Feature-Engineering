@@ -11,9 +11,12 @@ NativeEvents.onEvent(Java.loadClass("net.neoforged.neoforge.event.entity.player.
     ]
     for (let i = 0; i < filters.length; i++) {
         if (event.getItemStack().getItem().toString() == filters[i]) {
-            event.setUseItem($TriState.TRUE)
-            event.setUseBlock($TriState.FALSE)
-            break
+            let { pos, level } = event
+            if (level.getBlockEntity(pos) != null) {
+                event.setUseItem($TriState.TRUE)
+                event.setUseBlock($TriState.FALSE)
+                break
+            }
         }
     }
 })
