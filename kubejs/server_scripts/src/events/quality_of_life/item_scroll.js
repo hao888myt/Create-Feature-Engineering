@@ -40,7 +40,7 @@ ItemEvents.rightClicked(event => {
                     count: 1
                 })
             } else if (player.isShiftKeyDown()) {
-                new_items.shift()
+                new_items.pop()
             }
 
             item.set("ars_nouveau:item_scroll_data", new_items)
