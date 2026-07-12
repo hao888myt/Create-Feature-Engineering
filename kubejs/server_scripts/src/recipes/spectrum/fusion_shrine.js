@@ -130,4 +130,12 @@ ServerEvents.recipes(event => {
             return this
         }
     }
+
+    new FusionShrine(["spectrum:onyx_shard", 2], [
+        "spectrum:topaz_shard",
+        "minecraft:amethyst_shard",
+        "spectrum:citrine_shard",
+        "spectrum:onyx_powder"
+    ]).setRequiredAdvancement("spectrum:unlocks/blocks/fusion_shrine")
+    .build()
 })
