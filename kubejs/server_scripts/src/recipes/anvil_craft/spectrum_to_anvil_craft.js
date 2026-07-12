@@ -105,7 +105,7 @@ ServerEvents.recipes((event) => {
     ]
 
     tags.forEach(tag => {
-        tag.forEach(item => {
+        tag[0].forEach(item => {
             anvilCraft.item_crush()
                 .ingredients($ItemIngredientPredicate.of(item).build())
                 .results($ChanceItemStack.of(tag[1]))
