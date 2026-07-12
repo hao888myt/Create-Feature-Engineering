@@ -1,6 +1,7 @@
 ItemEvents.modification(event => {
     let unbreakable = [
-        "anvilcraft:magnet"
+        "anvilcraft:magnet",
+        "waystones:warp_stone"
     ]
 
     unbreakable.forEach(id => {
