@@ -108,6 +108,14 @@ ResearchdEvents.registerResearches(event => {
         .effect(unlockRecipes(["create:kjs/create_enchantment_industry_mechanical_grindstone", "create:kjs/vintageimprovements_spring_coiling_machine", "create:kjs/createaddition_rolling_mill"]))
         .parent("conveying")
 
+    event.create("jet_pack")
+        .translatableName("喷气背包")
+        .translatableDescription("芜湖起飞")
+        .icon("create_jetpack:jetpack")
+        .method(consumePack(rp.conveying, 8, 100))
+        .effect(unlockRecipe("minecraft:kjs/create_jetpack_jetpack"))
+        .parent("conveying")
+
     event.create("logistics")
         .translatableName("物流研究包")
         .translatableDescription("用于研究物流系统")
