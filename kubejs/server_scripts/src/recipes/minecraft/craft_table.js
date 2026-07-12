@@ -38,6 +38,8 @@ ServerEvents.recipes(event => {
     "anvilcraft_pigsplus:redstone_conduit_block",
     "create:crafting/kinetics/rotation_speed_controller",
 
+    "create_connected:crafting/kinetics/empty_fan_catalyst",
+
     "create_jetpack:jetpack",
 
     "storagedrawers:controller_io"
@@ -346,6 +348,16 @@ ServerEvents.recipes(event => {
   ], {
     R: "minecraft:redstone",
     P: "create:precision_mechanism",
+    B: "#c:ingots/brass"
+  })
+
+  // 鼓风机触媒
+  minecraft.crafting_shaped(Item.of("create_connected:empty_fan_catalyst", 4), [
+    "BIB",
+    "I I",
+    "BIB",
+  ], {
+    I: "minecraft:iron_bars",
     B: "#c:ingots/brass"
   })
 
