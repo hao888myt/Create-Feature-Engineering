@@ -397,7 +397,7 @@
 	#The amount of ticks a funnel waits between item transferrals, when it is not re-activated by redstone.
 	# Default: 8
 	# Range: > 1
-	defaultExtractionTimer = 8
+	defaultExtractionTimer = 4
 	#.
 	#The amount of ticks a portable storage interface waits for transfers until letting contraptions move along.
 	# Default: 60
@@ -437,7 +437,7 @@
 	#The amount of ticks a brass tunnel waits between distributions.
 	# Default: 10
 	# Range: 1 ~ 10
-	brassTunnelTimer = 10
+	brassTunnelTimer = 1
 	#.
 	#The amount of ticks a factory gauge waits between requests.
 	# Default: 100
