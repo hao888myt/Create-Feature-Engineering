@@ -6,7 +6,8 @@ ServerEvents.recipes(event => {
         "ars_nouveau:stone",
 
         "ars_nouveau:imbuement_amethyst",
-        "ars_nouveau:imbuement_lapis"
+        "ars_nouveau:imbuement_lapis",
+        "ars_nouveau:imbuement_amethyst_block"
     ].forEach(recipe => {
         event.remove(recipe)
     })
