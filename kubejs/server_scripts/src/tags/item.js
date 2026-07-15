@@ -37,4 +37,19 @@ ServerEvents.tags("item", event => {
     ].forEach(crystal_block => {
         event.add("create_feature_engineering:crystal_blocks", crystal_block)
     })
+
+    let golem_shards = [
+        "spectrum:topaz_shard",
+        "spectrum:citrine_shard",
+        "spectrum:onyx_shard",
+        "spectrum:moonstone_shard",
+
+        "minecraft:amethyst_cluster",
+        "spectrum:topaz_cluster",
+        "spectrum:citrine_cluster",
+        "spectrum:onyx_cluster",
+        "spectrum:moonstone_cluster"
+    ].forEach(shard => {
+        event.add("ars_nouveau:golem/shard", shard)
+    })
 })
