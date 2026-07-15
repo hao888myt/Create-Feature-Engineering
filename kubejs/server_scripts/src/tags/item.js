@@ -34,8 +34,7 @@ ServerEvents.tags("item", event => {
         "spectrum:topaz_block", 
         "spectrum:onyx_block", 
         "spectrum:moonstone_block"
-    ]
-    crystal_blocks.forEach(crystal_block => {
+    ].forEach(crystal_block => {
         event.add("create_feature_engineering:crystal_blocks", crystal_block)
     })
 })
