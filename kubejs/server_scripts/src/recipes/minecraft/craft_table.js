@@ -483,4 +483,23 @@ ServerEvents.recipes(event => {
   ], {
     C: "#c:chests/wooden"
   })
+
+  // 七彩基座
+  let pedestals = [
+    ["minecraft:amethyst_shard", "spectrum:pedestal_basic_amethyst", "spectrum:crafting_table/pedestal_basic_amethyst"],
+    ["spectrum:topaz_shard", "spectrum:pedestal_basic_topaz", "spectrum:crafting_table/pedestal_basic_topaz"],
+    ["spectrum:citrine_shard", "spectrum:pedestal_basic_citrine", "spectrum:crafting_table/pedestal_basic_citrine"]
+  ].forEach(pedestal => {
+    minecraft.crafting_shaped(pedestal[1], [
+      "SSS",
+      "BGB",
+      "CRC"
+    ], {
+      S: pedestal[0],
+      B: "spectrum:polished_basalt",
+      C: "spectrum:polished_calcite",
+      R: "minecraft:redstone",
+      G: "#c:gems/source"
+    }).id(pedestal[2])
+  })
 })
