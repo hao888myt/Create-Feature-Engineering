@@ -1,0 +1,79 @@
+[ars_nouveau]
+	#紫水晶傀儡的收集时间
+	# Default: 80
+	# Range: > 0
+	deposit_using_time = 10
+	#紫水晶傀儡的扫描冷却
+	# Default: 3600
+	# Range: > 0
+	scan_cooldown = 10
+	#紫水晶傀儡的收获冷却
+	# Default: 1200
+	# Range: > 0
+	harvest_cooldown = 20
+	#紫水晶傀儡的收获持续时间
+	# Default: 130
+	# Range: > 0
+	harvest_using_time = 10
+	#紫水晶傀儡的收获间隔
+	# Default: 40
+	# Range: > 1
+	harvest_interval = 5
+	#紫水晶傀儡的拾取冷却
+	# Default: 60
+	# Range: > 0
+	pickup_cooldown = 10
+	#紫水晶傀儡的拾取时间
+	# Default: 80
+	# Range: > 0
+	pickup_using_time = 5
+	#紫水晶傀儡的转化冷却
+	# Default: 6000
+	# Range: > 0
+	convert_cooldown = 5000
+	#紫水晶傀儡的转化时间
+	# Default: 120
+	# Range: > 0
+	convert_using_time = 100
+	#紫水晶傀儡的催生冷却
+	# Default: 300
+	# Range: > 0
+	grow_cooldown = 20
+	#紫水晶傀儡的催生时间
+	# Default: 120
+	# Range: > 0
+	grow_using_time = 5
+	#紫水晶傀儡每次催生的最大母岩数量
+	# Default: 4
+	# Range: > 1
+	grow_max_blocks = 5
+
+[create]
+	#在切割配方没有写配方时间时，动力锯使用的配方时间，机械动力默认值为50
+	# Default: 75
+	# Range: > 0
+	default_saw_recipe_time = 75
+	#在搅拌配方没有写配方时间时，动力搅拌器使用的配方时间，机械动力默认值为100
+	# Default: 85
+	# Range: > 0
+	default_mixer_recipe_time = 85
+	#注液器的处理时间，机械动力默认值为20
+	# Default: 19
+	# Range: > 6
+	spout_process_time = 19
+
+[create_enchantment_industry]
+	#打印机的处理时间
+	# Default: 19
+	# Range: > 6
+	printer_process_time = 19
+	#在打磨配方没有写配方时间时，动力砂轮使用的配方时间，附魔工业默认值为50
+	# Default: 30
+	# Range: > 0
+	grindstone_recipe_time = 30
+
+[ratatouille]
+	#冷冻块的处理时间
+	# Default: 20
+	# Range: > 1
+	frozen_block_process_time = 20

@@ -26,6 +26,7 @@ config/*
 !config/createaddition-common.toml
 !config/farmersdelight-common.toml
 !config/ars_creo-common.toml
+!config/create_feature_engineering-common.toml
 
 !config/artifacts/
 config/artifacts/*
