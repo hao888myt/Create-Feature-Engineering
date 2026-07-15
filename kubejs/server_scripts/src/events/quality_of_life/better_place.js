@@ -7,7 +7,8 @@ NativeEvents.onEvent(Java.loadClass("net.neoforged.neoforge.event.entity.player.
         "create_fantasizing:andesite_crate",
         "create_fantasizing:iron_crate",
         "create_fantasizing:brass_crate",
-        "create_fantasizing:sturdy_crate"
+        "create_fantasizing:sturdy_crate",
+        "ars_nouveau:dominion_wand"
     ]
     for (let i = 0; i < filters.length; i++) {
         if (event.getItemStack().getItem().toString() == filters[i]) {
