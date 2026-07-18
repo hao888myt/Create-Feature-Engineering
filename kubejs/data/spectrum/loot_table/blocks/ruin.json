@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "spectrum:bedrock_dust"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "spectrum:ruin",
+          "properties": {
+            "conversion": "default"
+          }
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_count",
+          "count": {
+            "type": "minecraft:uniform",
+            "min": 3.0,
+            "max": 5.0
+          },
+          "add": false
+        }
+      ]
+    }
+  ]
+}
