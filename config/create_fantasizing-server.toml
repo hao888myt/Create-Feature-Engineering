@@ -22,7 +22,7 @@
 	#Maximum hardness of blocks the Block Placer can break/replace. Blocks with higher hardness are ignored.
 	# Default: 50.0
 	# Range: 0.0 ~ 1.7976931348623157E308
-	power = 50.0
+	power = 10000
 	#Maximum reach distance of the Block Placer in blocks
 	# Default: 48
 	# Range: 8 ~ 128

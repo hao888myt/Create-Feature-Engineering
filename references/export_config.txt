@@ -110,6 +110,7 @@ config/beyonddimensions-server.toml
 config/alexsmobsup.toml
 config/ars_nouveau-client.toml
 config/create_fantasizing-server.toml
+config/create_fantasizing-startup.toml
 config/researchd-client.toml
 config/ponderer-client.toml
 config/createaddition-common.toml

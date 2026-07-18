@@ -1,0 +1,5 @@
+#Register the Powder Snow Bucket and the Powder Snow Cauldron capabilities that have the Snow Powder liquid.
+#* The Snow Powder liquid will always be registered.
+#* You need to turn it off when another mod also adds the powder snow liquid.
+#* Need to restart the game!
+register_powder_snow_liquid_capabilities = false
