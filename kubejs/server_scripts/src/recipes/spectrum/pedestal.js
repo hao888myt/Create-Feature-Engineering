@@ -1,12 +1,12 @@
 ServerEvents.recipes(event => {
     class Pedestal {
         /**
-         * @param {Array<string|int>} result 
+         * @param {Array<string|number>} result 
          * @param {Array<string>} pattern 
          * @param {Object<string, string>} key 
          * @param {number} time 
          */
-        constructor(result, pattern, key, time = 20) {
+        constructor(result, pattern, key, time = 40) {
             this.id = result[0]
             this.count = result[1]
 
@@ -25,6 +25,8 @@ ServerEvents.recipes(event => {
             this.group = ""
             this.required_advancement = ""
             this.required_advancements = []
+
+            this.recipe_id = this.id
 
             return this
         }
@@ -127,6 +129,10 @@ ServerEvents.recipes(event => {
             return this
         }
 
+        setId(id) {
+            this.recipe_id = id
+        }
+
         build() {
             event.custom({
                 "type": "spectrum:pedestal",
@@ -148,7 +154,7 @@ ServerEvents.recipes(event => {
                     "count": this.count
                 },
                 "required_advancements": this.required_advancements
-            })
+            }).id(`${this.recipe_id}`)
         }
     }
 
