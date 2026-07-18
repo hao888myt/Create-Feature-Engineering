@@ -37,12 +37,26 @@ StartupEvents.registry("item", event => {
             .rarity("uncommon")
             .tag(`${global.ModPackId}:unstackable_numbers`)
             .unstackable()
+            .texture(`${global.ModPackId}:item/number/${number}`)
     })
 
     numbers.forEach((number) => {
         event.create(`${global.ModPackId}:${number}`)
             .tag(`${global.ModPackId}:numbers`)
             .rarity("uncommon")
+            .texture(`${global.ModPackId}:item/number/${number}`)
+    })
+
+    let operators = [
+        "plus",
+        "minus",
+        "times",
+        "divide"
+    ].forEach(operator => {
+        event.create(`${global.ModPackId}:${operator}`)
+            .tag(`${global.ModPackId}:numbers`)
+            .rarity("uncommon")
+            .texture(`${global.ModPackId}:item/operator/${operator}`)
     })
 
     global.IncompletedItems.forEach(item => {
