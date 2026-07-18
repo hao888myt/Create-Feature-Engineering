@@ -34,4 +34,21 @@ ServerEvents.tags("block", event => {
             event.add("storagedrawers:full_drawers", drawer)
         }
     })
+    let golem_cluster = [
+        "spectrum:topaz_cluster",
+        "spectrum:citrine_cluster",
+        "spectrum:onyx_cluster",
+        "spectrum:moonstone_cluster"
+    ].forEach(block => {
+        event.add("ars_nouveau:golem/cluster", block)
+    })
+
+    let golem_budding = [
+        "spectrum:budding_topaz",
+        "spectrum:budding_citrine",
+        "spectrum:budding_onyx",
+        "spectrum:budding_moonstone"
+    ].forEach(block => {
+        event.add("ars_nouveau:golem/budding", block)
+    })
 })
