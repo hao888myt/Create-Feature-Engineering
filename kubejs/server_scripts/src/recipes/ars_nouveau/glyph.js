@@ -3,7 +3,8 @@ ServerEvents.recipes(event => {
 
     let removes = [
         "ars_nouveau:glyph_launch",
-        "ars_nouveau:glyph_crush"
+        "ars_nouveau:glyph_crush",
+        "ars_nouveau:wololo"
     ].forEach(recipe => {
         event.remove(recipe)
     })
@@ -22,6 +23,15 @@ ServerEvents.recipes(event => {
             Ingredient.of("#minecraft:anvil"),
             Ingredient.of("#spectrum:gemstone_shards"),
             Ingredient.of("anvilcraft:crushing_table")
+        ], 50
+    )
+
+    ars_nouveau.glyph("ars_nouveau:wololo",
+        [
+            "ars_nouveau:source_gem",
+            Ingredient.of("#c:dyes"),
+            Ingredient.of("#c:dyes"),
+            Ingredient.of("#c:dyes"),
         ], 50
     )
 })
