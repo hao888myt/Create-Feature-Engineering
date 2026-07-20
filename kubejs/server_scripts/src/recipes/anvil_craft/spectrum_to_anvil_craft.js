@@ -1,9 +1,4 @@
 ServerEvents.recipes((event) => {
-    let $ItemIngredientPredicate = Java.loadClass("dev.anvilcraft.lib.recipe.component.ItemIngredientPredicate");
-    let $ChanceItemStack = Java.loadClass("dev.anvilcraft.lib.recipe.component.ChanceItemStack");
-
-    let anvilCraft = event.recipes.anvilcraft
-
     let removes = [
         "spectrum:anvil_crushing/frostbite_essence_from_ice",
         "spectrum:anvil_crushing/incandescent_essence_from_magma_block",
@@ -55,7 +50,7 @@ ServerEvents.recipes((event) => {
     event.forEachRecipe({ type: "spectrum:anvil_crushing" }, (recipe) => {
         let { json } = recipe;
 
-        // console.log(json)
+        let id = recipe.getId()
 
         let result = json.get("result")
         let result_item = result.get("id")
@@ -73,23 +68,33 @@ ServerEvents.recipes((event) => {
             ingredients.forEach(ingredient => {
                 ingredient_item = ingredient.get("item")
                 ingredient_tag = ingredient.get("tag")
-                spectrumToAnvilCraft(ingredient_tag, ingredient_item, result_item, result_count)
+                spectrumToAnvilCraft(ingredient_tag, ingredient_item, result_item, result_count, id)
             })
         }
         else {
             ingredient_item = ingredients.get("item")
             ingredient_tag = ingredients.get("tag")
-            spectrumToAnvilCraft(ingredient_tag, ingredient_item, result_item, result_count)
+            spectrumToAnvilCraft(ingredient_tag, ingredient_item, result_item, result_count, id)
         }
 
-        function spectrumToAnvilCraft(input_tag, input_item, output_item, output_count) {
+        function spectrumToAnvilCraft(input_tag, input_item, output_item, output_count, id) {
             if (input_item != null && !Item.of(output_item).hasTag("c:dyes")) {
-                anvilCraft.item_crush()
-                    .ingredients($ItemIngredientPredicate.of(input_item).build())
-                    .results($ChanceItemStack.of(Item.of(output_item, output_count)))
+                // anvilCraft.item_crush()
+                //     .ingredients($ItemIngredientPredicate.of(input_item).build())
+                //     .results($ChanceItemStack.of(Item.of(output_item, output_count)))
+                event.custom({
+                    "type": "anvilcraft:item_crush",
+                    "ingredients": [
+                        { "items": input_item }
+                    ],
+                    "results": [{
+                        "count": output_count, 
+                        "id": output_item
+                    }]
+                }).id(id)
             }
         }
-    })
+    })//{"type":"anvilcraft:item_crush","ingredients":[{"items":"minecraft:ink_sac"}],"results":[{"count":2,"id":"minecraft:black_dye"}]}
 
     let tags = [
         [
@@ -106,11 +111,17 @@ ServerEvents.recipes((event) => {
 
     tags.forEach(tag => {
         tag[0].forEach(item => {
-            anvilCraft.item_crush()
-                .ingredients($ItemIngredientPredicate.of(item).build())
-                .results($ChanceItemStack.of(tag[1]))
+            event.custom({
+                "type": "anvilcraft:item_crush",
+                "ingredients": [
+                    { "items": "minecraft:ink_sac" }
+                ],
+                "results": [
+                    { "count": 2, "id": "minecraft:black_dye" }
+                ]
+            })
         })
     })
-    
+
     event.remove({ type: "spectrum:anvil_crushing" });
 });
