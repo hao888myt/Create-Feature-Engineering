@@ -8,14 +8,6 @@ ServerEvents.recipes(event => {
         event.remove(recipe)
     })
 
-    // anvilcraft.item_crush(
-    //     $ItemIngredientPredicate.of("minecraft:iron_nugget").build(),
-    //     [
-    //         $ChanceItemStack.of(Item.of("anvilcraft:wood_fiber", 2)),
-    //         $ChanceItemStack.of(Item.of("anvilcraft:resin"))
-    //     ]
-    // )
-
     event.custom(
         {
             "type": "anvilcraft:item_crush",
