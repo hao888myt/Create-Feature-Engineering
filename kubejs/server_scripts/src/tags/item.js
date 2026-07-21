@@ -52,4 +52,14 @@ ServerEvents.tags("item", event => {
     ].forEach(shard => {
         event.add("ars_nouveau:golem/shard", shard)
     })
+
+    let magic_saplings = [
+        "ars_nouveau:blue_archwood_sapling",
+        "ars_nouveau:red_archwood_sapling",
+        "ars_nouveau:purple_archwood_sapling",
+        "ars_nouveau:green_archwood_sapling",
+        "ars_elemental:yellow_archwood_sapling"
+    ].forEach(shard => {
+        event.add(`${global.ModPackId}:magic_saplings`, shard)
+    })
 })
