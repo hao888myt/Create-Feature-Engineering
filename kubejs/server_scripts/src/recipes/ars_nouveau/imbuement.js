@@ -1,3 +1,98 @@
 ServerEvents.recipes(event => {
     let { ars_nouveau } = event.recipes
+
+    let removes = [
+        "ars_elemental:imbuement_anima_essence",
+        "ars_nouveau:imbuement_water_essence",
+        "ars_nouveau:imbuement_fire_essence",
+        "ars_nouveau:imbuement_manipulation_essence",
+        "ars_nouveau:imbuement_conjuration_essence",
+        "ars_nouveau:imbuement_abjuration_essence",
+        "ars_nouveau:imbuement_earth_essence",
+        "ars_nouveau:imbuement_air_essence"
+    ].forEach(recipe => {
+        event.remove(recipe)
+    })
+
+    let essence_recipe = [
+        [
+            "sauce:anima_essence",
+            [
+                "minecraft:soul_sand",
+                "minecraft:golden_apple",
+                "minecraft:bone"
+            ]
+        ],
+        [
+            "ars_nouveau:water_essence",
+            [
+                "minecraft:water_bucket",
+                "minecraft:kelp",
+                "spectrum:mermaids_gem"
+            ]
+        ],
+        [
+            "ars_nouveau:fire_essence",
+            [
+                "minecraft:blaze_powder",
+                "spectrum:shimmerstone_gem",
+                "minecraft:flint_and_steel"
+            ]
+        ],
+        [
+            "ars_nouveau:manipulation_essence",
+            [
+                "anvilcraft:block_placer",
+                "spectrum:redstone_calculator",
+                "spectrum:redstone_timer"
+            ]
+        ],
+        [
+            "ars_nouveau:manipulation_essence",
+            [
+                "spectrum:block_placer",
+                "spectrum:redstone_calculator",
+                "spectrum:redstone_timer"
+            ]
+        ],
+        [
+            "ars_nouveau:conjuration_essence",
+            [
+                "minecraft:enchanted_book",
+                "ars_nouveau:wilden_horn",
+                "ars_nouveau:starbuncle_shards"
+            ]
+        ],
+        [
+            "ars_nouveau:abjuration_essence",
+            [
+                "minecraft:milk_bucket",
+                "ars_nouveau:source_gem",
+                "spectrum:quitoxic_reeds"
+            ]
+        ],
+        [
+            "ars_nouveau:earth_essence",
+            [
+                Ingredient.of("#c:stones"),
+                Ingredient.of("#minecraft:dirt"),
+                Ingredient.of("#c:seeds")
+            ]
+        ],
+        [
+            "ars_nouveau:air_essence",
+            [
+                "ars_nouveau:wilden_wing",
+                "minecraft:wind_charge",
+                "anvilcraft:topaz"
+            ]
+        ]
+    ].forEach(essence => {
+        ars_nouveau.imbuement(
+            Ingredient.of("#ars_nouveau:shady_wizard_fruits"),
+            essence[0],
+            2500,
+            essence[1]
+        )
+    })
 })
