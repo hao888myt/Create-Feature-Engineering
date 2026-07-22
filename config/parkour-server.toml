@@ -1,0 +1,136 @@
+#Online settings let you change all options related to multiplayer.
+[online_settings]
+	#Remove speed limits imposed by server.
+	#This removes most rollbacks but makes it easier to cheat on a server. (default: false)
+	removeSpeedLimits = false
+
+#Locomotion settings let you change all options related to movement on the ground.
+[locomotion_settings]
+	#Sprinting speed multiplier (default: 1.3 = 30% increase)
+	# Default: 1.3
+	# Range: 1.0 ~ 5.0
+	sprintSpeedMultiplier = 1.0
+	#Enable step height increase (default: true)
+	enableStepHeightIncrease = false
+	#Walking speed multiplier (default: 1.3 = 30% increase)
+	# Default: 1.3
+	# Range: 1.0 ~ 5.0
+	walkSpeedMultiplier = 1.0
+	#Enable safe fall height increase (default: true)
+	enableSafeFallHeightIncrease = false
+	#Enable omnidirectional sprinting (default: true)
+	enableOmniSprint = true
+	#Enable crawl (default: true)
+	enableCrawl = true
+	#Enable slide (default: true)
+	enableSlide = true
+	#Slide and evade cooldown in ticks (default: 12)
+	# Default: 12
+	# Range: > 0
+	slideCooldown = 12
+	#Slide boost speed (default: 0.7)
+	# Default: 0.7
+	# Range: 0.1 ~ 5.0
+	slideBoostSpeed = 0.7
+	#Enable turning without slowdown while sliding in the air (default: true)
+	enableTapStrafing = true
+	#Enable landing roll (default: true)
+	enableLandingRoll = true
+	#Landing roll window in ticks (default: 6)
+	# Default: 6
+	# Range: > 1
+	landingRollWindow = 6
+	#Enable move speed increase (default: true)
+	enableMoveSpeedIncrease = true
+	#Walking step height in blocks (default: 0.6, vanilla: 0.6)
+	# Default: 0.6
+	# Range: 0.6 ~ 1.5
+	walkStepHeight = 0.6
+	#Sprinting step height in blocks (default: 1.0, vanilla: 0.6)
+	# Default: 1.1
+	# Range: 0.6 ~ 1.5
+	sprintStepHeight = 1.1
+	#Safe fall height (default: 6.0)
+	# Default: 6.0
+	# Range: -3.0 ~ 1.7976931348623157E308
+	safeFallHeight = 3.0
+
+#Swimming settings let you change all options related to movement on the water.
+[swimming_settings]
+	#Enables swimming while sprinting through water (default: true)
+	enableShallowSwimming = true
+	#Enables speed boost while swimming (default: true)
+	enableSwimmingBoost = true
+	#Swimming boost speed multiplier (default: 0.4)
+	# Default: 0.4
+	# Range: 0.0 ~ 5.0
+	swimmingBoostSpeedMultiplier = 0.4
+	#Swimming boost cooldown in ticks (default: 12)
+	# Default: 12
+	# Range: > 0
+	swimmingBoostCooldown = 12
+	#Enables freestyle swimming (default: true)
+	enableFreestyle = true
+	#Enables stopping swimming when idle (default: true)
+	enableStopSwimmingWhenIdle = true
+
+#Wall movement settings let you change all options related to movement on the wall.
+[wall_movement_settings]
+	#Enable speed vault (default: true)
+	enableSpeedVault = false
+	#Allows climbing more block types (default: true)
+	canClimbMoreBlocks = true
+	#Enable upward climb speed increase (default: true)
+	enableUpClimbSpeedIncrease = true
+	#Upward climb speed multiplier (default: 1.25)
+	# Default: 1.25
+	# Range: 1.0 ~ 5.0
+	upClimbSpeedMultiplier = 1.25
+	#Enable downward climb speed increase when looking down (default: true)
+	enableClimbDownSpeedIncrease = true
+	#Downward climb speed multiplier (default: 2.0)
+	# Default: 2.0
+	# Range: 1.0 ~ 5.0
+	downClimbSpeedMultiplier = 2.0
+	#Enable climb acceleration over time (default: true)
+	enableClimbAccelerationOverTime = true
+	#Upward climb acceleration multiplier (default: 2.0)
+	# Default: 2.0
+	# Range: 1.0 ~ 5.0
+	upClimbAccelerationMultiplier = 2.0
+	#Downward climb acceleration multiplier (default: 1.5)
+	# Default: 1.5
+	# Range: 1.0 ~ 5.0
+	downClimbAccelerationMultiplier = 1.5
+	#Climbable blocks do not slow down movement (default: true)
+	climbableBlockNotSlowDown = true
+	#Enable wall run (default: true)
+	enableWallRun = true
+	#Wall run duration in ticks (default: 30)
+	# Default: 30
+	# Range: > 0
+	wallRunDuration = 30
+	#Enable wall slide (default: true)
+	enableWallSlide = true
+	#Enable wall jump (default: true)
+	enableWallJump = true
+	#Enable armhang (default: true)
+	enableArmhang = true
+	#Armhang movement speed (default: 0.15)
+	# Default: 0.15
+	# Range: 0.05 ~ 1.0
+	armhangMoveSpeed = 0.15
+	#Armhang resets wall climb (default: true)
+	armhangResetWallClimb = true
+	#Enable support wall jump (default: true)
+	enableSupportWallJump = true
+	#Enable wall climb (default: true)
+	enableWallClimb = true
+	#Wall climb duration in ticks (default: 20)
+	# Default: 20
+	# Range: > 0
+	wallClimbDuration = 20
+	#Wall climb speed (default: 0.2)
+	# Default: 0.2
+	# Range: 0.05 ~ 1.0
+	wallClimbSpeed = 0.2
