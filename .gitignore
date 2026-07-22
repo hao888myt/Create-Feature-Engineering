@@ -30,6 +30,7 @@ config/*
 !config/create_feature_engineering-common.toml
 !config/ftbquests
 !config/parkour-server.toml
+!config/creatorhotbar-client.json
 
 !config/artifacts/
 config/artifacts/*

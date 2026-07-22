@@ -1,0 +1,15 @@
+{
+  "showUI": true,
+  "hudMode": "AUTO_HIDE",
+  "hudScale": 0,
+  "iconSlot": 0,
+  "hudPosition": "ABOVE_HOTBAR",
+  "animate": true,
+  "animSpeed": 0.33,
+  "highlightAlways": false,
+  "panelOffsetX": 5,
+  "panelOffsetY": -6,
+  "panelStyle": "CLASSIC",
+  "pickerSnapToSlot": true,
+  "visualSync": true
+}

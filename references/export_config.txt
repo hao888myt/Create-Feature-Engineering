@@ -1,5 +1,5 @@
 Name:Create：Feature Engineering
-Version:0.2.0-alpha
+Version:0.2.3-alpha
 
 # 是否打包正式版 PCL，以便没有启动器的玩家安装整合包。
 IncludeLauncher:False
@@ -121,6 +121,7 @@ config/ars_nouveau/glyph_crush.toml
 config/create_feature_engineering-common.toml
 config/ftbquests/
 config/parkour-server.toml
+config/creatorhotbar-client.json
 
 # 排除的文件
 !*.log
