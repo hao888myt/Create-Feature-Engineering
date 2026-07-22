@@ -1,0 +1,66 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1154F5B6A8DE1CCE"
+	group: "29E2B66FF1ED57B3"
+	icon: {
+		id: "spectrum:yellow_pigment"
+	}
+	id: "1154F5B6A8DE1CCE"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			id: "3F6B0DE5864C96C9"
+			tasks: [{
+				id: "061DDE52AE1DAB48"
+				item: { count: 1, id: "spectrum:bottle_of_fading" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "71ECE3E5F68C98BA"
+			tasks: [{
+				id: "2F260141FE946753"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(spectrum:colored_saplings)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			id: "4981C47B13B78BB9"
+			tasks: [{
+				id: "7ABCF251BA3CF033"
+				item: { count: 1, id: "spectrum:neolith" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4981C47B13B78BB9"]
+			id: "33E6A6C827820E78"
+			tasks: [{
+				id: "55897C5DC964383D"
+				item: { count: 1, id: "spectrum:storm_stone" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4981C47B13B78BB9"]
+			id: "667728071B9FE72E"
+			tasks: [{
+				id: "01BBC59F4AA32D8B"
+				item: { count: 1, id: "spectrum:raw_azurite" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 5.5d
+		}
+	]
+}

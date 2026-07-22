@@ -121,6 +121,7 @@ config/artifacts/items.toml
 config/ars_nouveau/glyph_crush.toml
 
 config/create_feature_engineering-common.toml
+config/ftbquests/
 
 # 排除的文件
 !*.log

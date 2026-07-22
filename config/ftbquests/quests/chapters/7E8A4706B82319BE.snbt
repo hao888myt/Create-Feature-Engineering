@@ -1,0 +1,164 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "7E8A4706B82319BE"
+	group: "73901F8574D43516"
+	icon: {
+		components: {
+			"researchd:research_pack": "create_feature_engineering:conveying"
+		}
+		id: "researchd:research_pack"
+	}
+	id: "7E8A4706B82319BE"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"4B1EC6BB72C4DE14"
+				"299938D6CEB5F7CF"
+			]
+			id: "443C49B551AA6BEC"
+			tasks: [{
+				id: "673AC5A150682000"
+				item: { count: 1, id: "create:andesite_alloy" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"058AD91A0A40F254"
+				"2958A9A8BB1489DD"
+				"5C88E6731536C9D3"
+			]
+			hide_dependent_lines: true
+			id: "02863465E853724C"
+			tasks: [{
+				id: "467C90DD86C6C297"
+				item: { components: { "researchd:research_pack": "create_feature_engineering:conveying" }, count: 1, id: "researchd:research_pack" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["443C49B551AA6BEC"]
+			id: "058AD91A0A40F254"
+			tasks: [{
+				id: "5DCB83C4DB0286D8"
+				item: { count: 1, id: "create:shaft" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["058AD91A0A40F254"]
+			id: "5C88E6731536C9D3"
+			tasks: [{
+				id: "267F83BF27848DB0"
+				item: { count: 1, id: "create:cogwheel" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["058AD91A0A40F254"]
+			id: "2958A9A8BB1489DD"
+			tasks: [{
+				id: "1BBD4EF89C27638D"
+				item: { count: 1, id: "create:large_cogwheel" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			icon: {
+				id: "minecraft:iron_ingot"
+			}
+			id: "4B1EC6BB72C4DE14"
+			tasks: [
+				{
+					id: "489D12A8D1A7C4BC"
+					item: { count: 1, id: "minecraft:iron_ingot" }
+					type: "item"
+				}
+				{
+					id: "2781450AE783F963"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:anvil)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: -5.0d
+			y: -1.0d
+		}
+		{
+			id: "299938D6CEB5F7CF"
+			tasks: [{
+				id: "0B1D700991D06EAC"
+				item: { count: 1, id: "minecraft:andesite" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["02863465E853724C"]
+			hide_dependency_lines: true
+			id: "5D34B9FBA1E61A16"
+			tasks: [
+				{
+					id: "6314146956181976"
+					item: { count: 1, id: "createaddition:rolling_mill" }
+					type: "item"
+				}
+				{
+					id: "2B4C3D7B3AC98C75"
+					item: { count: 1, id: "vintageimprovements:spring_coiling_machine" }
+					type: "item"
+				}
+				{
+					id: "0EEEA32C242D14E1"
+					item: { count: 1, id: "create_enchantment_industry:mechanical_grindstone" }
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["02863465E853724C"]
+			hide_dependency_lines: true
+			id: "47E68A49C36A7AA3"
+			tasks: [
+				{
+					id: "5E55594643E07636"
+					item: { count: 1, id: "create:mechanical_harvester" }
+					type: "item"
+				}
+				{
+					id: "0B55B4C039110E85"
+					item: { count: 1, id: "create:mechanical_plough" }
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["02863465E853724C"]
+			id: "0D0D6FC46178465D"
+			tasks: [{
+				id: "5172A18920D897E8"
+				item: { components: { "create:banktank_air": 9000 }, count: 1, id: "create_jetpack:jetpack" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+	]
+}

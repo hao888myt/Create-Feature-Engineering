@@ -1,0 +1,145 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "296365F19F45F8DD"
+	group: "3A05517EF6F9BDAD"
+	icon: {
+		id: "create_fantasizing:block_placer"
+	}
+	id: "296365F19F45F8DD"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				id: "create_fantasizing:block_placer"
+			}
+			id: "44183795B328B39C"
+			rewards: [
+				{
+					id: "28EFA20077652B6F"
+					item: {
+						count: 1
+						id: "create_feature_engineering:net_creater"
+					}
+					type: "item"
+				}
+				{
+					id: "5D951F5FE254E7DF"
+					item: {
+						count: 1
+						id: "create_fantasizing:block_placer"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "4B7BFB8C51893419"
+					item: {
+						count: 1
+						id: "anvilcraft:active_silencer"
+					}
+					type: "item"
+				}
+				{
+					id: "35EEEA0BD222E2A9"
+					item: {
+						count: 1
+						id: "create:super_glue"
+					}
+					type: "item"
+				}
+				{
+					id: "0C108840CF449D07"
+					item: {
+						count: 1
+						id: "create:wrench"
+					}
+					type: "item"
+				}
+				{
+					id: "2051E9921A2C3001"
+					item: {
+						count: 1
+						id: "anvilcraft:anvil_hammer"
+					}
+					type: "item"
+				}
+				{
+					id: "186E4EC2DFEE9AB9"
+					item: {
+						count: 1
+						id: "artifacts:eternal_steak"
+					}
+					type: "item"
+				}
+				{
+					count: 5
+					id: "511808718FA096A6"
+					item: {
+						count: 1
+						id: "anvilcraft:geode"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "149DAF87CF727370"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: -3.5d
+		}
+		{
+			id: "3DFCF25B31E88B9F"
+			tasks: [{
+				id: "0C13C1DF365BE711"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			id: "764A5CC3B3951399"
+			tasks: [{
+				id: "19F01669E697409A"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -6.5d
+		}
+		{
+			icon: {
+				id: "create:chute"
+			}
+			id: "265609C91CCED7FA"
+			tasks: [{
+				id: "70B97E30B82F3032"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: -5.5d
+		}
+		{
+			icon: {
+				id: "create:andesite_funnel"
+			}
+			id: "7F8EF97754A33BE5"
+			tasks: [{
+				id: "444CBCFD14D4BEBA"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: -5.5d
+		}
+		{
+			id: "7D94D60CA24E34D9"
+			tasks: [{
+				id: "3A2FA4E00EE34CDB"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -3.5d
+		}
+	]
+}

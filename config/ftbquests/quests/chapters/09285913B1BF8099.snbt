@@ -1,0 +1,204 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "09285913B1BF8099"
+	group: "73901F8574D43516"
+	icon: {
+		components: {
+			"researchd:research_pack": "create_feature_engineering:fluid"
+		}
+		id: "researchd:research_pack"
+	}
+	id: "09285913B1BF8099"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["3683E4EA336FD602"]
+			hide_until_deps_complete: true
+			id: "35934A8655A221BD"
+			tasks: [{
+				id: "12164A597080A772"
+				item: { count: 1, id: "minecraft:copper_ingot" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["35934A8655A221BD"]
+			id: "1C59016123EC806D"
+			tasks: [{
+				id: "63CF71C6E6B87AF8"
+				item: { count: 1, id: "anvilcraft:copper_pressure_plate" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1C59016123EC806D"]
+			id: "3B251CB58CC137DE"
+			tasks: [{
+				id: "6E62D3970A0F201C"
+				item: { count: 1, id: "create:fluid_pipe" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"17EAD2B881581EC8"
+				"1C59016123EC806D"
+			]
+			id: "32E0EFBAB3BF7BB4"
+			tasks: [{
+				id: "3B6CAF4B57249195"
+				item: { count: 1, id: "create:fluid_tank" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["43F95E33C5FA264D"]
+			id: "413E692EF168D55A"
+			tasks: [{
+				id: "2A24747D760D4DFC"
+				item: { count: 1, id: "create:item_drain" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["43F95E33C5FA264D"]
+			id: "44BC7DD04B6A996E"
+			tasks: [{
+				id: "2C3D4E31080EE5B5"
+				item: { count: 1, id: "create:spout" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["35934A8655A221BD"]
+			id: "43F95E33C5FA264D"
+			tasks: [{
+				id: "3180796A15EE0FE9"
+				item: { count: 1, id: "create:copper_casing" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3683E4EA336FD602"]
+			hide_until_deps_complete: true
+			id: "3E0B7D93C73048B8"
+			tasks: [{
+				id: "75C8FCBAFE05EC73"
+				item: { count: 1, id: "create:andesite_casing" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3E0B7D93C73048B8"]
+			id: "17EAD2B881581EC8"
+			tasks: [{
+				id: "42545B656DFBF2D3"
+				item: { count: 1, id: "create_fantasizing:andesite_crate" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"32E0EFBAB3BF7BB4"
+				"413E692EF168D55A"
+				"44BC7DD04B6A996E"
+				"3B251CB58CC137DE"
+			]
+			hide_dependent_lines: true
+			id: "2976470F12951FF9"
+			tasks: [{
+				id: "0CCA2A7473A0FCB6"
+				item: { components: { "researchd:research_pack": "create_feature_engineering:fluid" }, count: 1, id: "researchd:research_pack" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2976470F12951FF9"]
+			id: "384CCCD1CD28C790"
+			tasks: [{
+				id: "48A40516490125C6"
+				item: { count: 1, id: "createdieselgenerators:basin_lid" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2976470F12951FF9"]
+			id: "38F2A420A4D9E763"
+			tasks: [{
+				id: "2A6261D3CB8A5C59"
+				item: { count: 1, id: "create:precision_mechanism" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2976470F12951FF9"]
+			id: "1FF7CB4961EAE08C"
+			tasks: [{
+				id: "614E2AAA6AD1CCF3"
+				item: { count: 1, id: "fluidlogistics:fluid_pump" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2976470F12951FF9"]
+			id: "63548BFBF7B473EA"
+			tasks: [{
+				id: "130074D341D5D41D"
+				item: { count: 1, id: "create:hose_pulley" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2976470F12951FF9"]
+			id: "75246AE40D9753E0"
+			tasks: [{
+				id: "429534690C0D2013"
+				item: { count: 1, id: "vintageimprovements:vacuum_chamber" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2976470F12951FF9"]
+			id: "3D4018FD624EEC21"
+			tasks: [{
+				id: "3A60DAF465006FE0"
+				item: { count: 1, id: "fluidlogistics:faucet" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -1.0d
+		}
+	]
+}

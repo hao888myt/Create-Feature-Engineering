@@ -1,0 +1,192 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "165028FEF133EC01"
+	group: "73901F8574D43516"
+	icon: {
+		components: {
+			"researchd:research_pack": "create_feature_engineering:logistics"
+		}
+		id: "researchd:research_pack"
+	}
+	id: "165028FEF133EC01"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"2CD176392654CC71"
+				"0F51DA3ADABDFEF6"
+			]
+			id: "40A6A23ECCD49D95"
+			tasks: [{
+				id: "38DE1C368A419B52"
+				item: { count: 1, id: "create:belt_connector" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2CD176392654CC71"]
+			id: "0B7B2EF79E473657"
+			tasks: [{
+				id: "7C9F0F9FEFEE4CFB"
+				item: { count: 1, id: "create:andesite_funnel" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["02863465E853724C"]
+			hide_until_deps_complete: true
+			id: "2CD176392654CC71"
+			tasks: [{
+				id: "439D8447A5D96A54"
+				item: { count: 1, id: "minecraft:dried_kelp" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2436480A1639B679"]
+			id: "3060868EC927C45F"
+			tasks: [{
+				id: "31645230EC265DA3"
+				item: { count: 1, id: "create:cardboard_block" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["02863465E853724C"]
+			hide_until_deps_complete: true
+			id: "4238F72FCB243CC1"
+			tasks: [{
+				id: "72C7945166DD86D9"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:logs)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6C1A6569BB40FD6E"]
+			id: "0F51DA3ADABDFEF6"
+			tasks: [{
+				id: "200EA450F95AE87B"
+				item: { count: 1, id: "create_feature_engineering:rubber" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4238F72FCB243CC1"]
+			id: "6C1A6569BB40FD6E"
+			tasks: [{
+				id: "13CDB8522489CCC7"
+				item: { count: 1, id: "anvilcraft:resin" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4238F72FCB243CC1"]
+			id: "306527F57E58773B"
+			tasks: [{
+				id: "7C6FD7199D76399D"
+				item: { count: 1, id: "anvilcraft:wood_fiber" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["306527F57E58773B"]
+			id: "2436480A1639B679"
+			tasks: [{
+				id: "6964C20BD94AE9B0"
+				item: { count: 1, id: "create:pulp" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"3060868EC927C45F"
+				"40A6A23ECCD49D95"
+				"0B7B2EF79E473657"
+			]
+			hide_dependent_lines: true
+			id: "3683E4EA336FD602"
+			tasks: [{
+				id: "32374FFBCBE09BAE"
+				item: { components: { "researchd:research_pack": "create_feature_engineering:logistics" }, count: 1, id: "researchd:research_pack" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3683E4EA336FD602"]
+			hide_dependency_lines: true
+			id: "72CD6756D68606EC"
+			tasks: [{
+				id: "4E69C57351E8DF43"
+				item: { count: 1, id: "create_fantasizing:andesite_crate" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3683E4EA336FD602"]
+			hide_dependency_lines: true
+			id: "28D45F7C2C122ECF"
+			tasks: [{
+				id: "402871DCFF942299"
+				item: { count: 1, id: "anvilcraft_pigsplus:block_breaker" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3683E4EA336FD602"]
+			hide_dependency_lines: true
+			id: "10A56D7B4EE03F22"
+			tasks: [
+				{
+					id: "3DA9931D88DAF078"
+					item: { count: 1, id: "create:gantry_carriage" }
+					type: "item"
+				}
+				{
+					id: "57566CDDED0C73B3"
+					item: { count: 1, id: "create:gantry_shaft" }
+					type: "item"
+				}
+			]
+			x: 11.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3683E4EA336FD602"]
+			hide_dependency_lines: true
+			id: "5E6EAADE246171C0"
+			tasks: [{
+				id: "06FFA5AC6C142A9C"
+				item: { count: 1, id: "create:cart_assembler" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: -1.5d
+		}
+	]
+}

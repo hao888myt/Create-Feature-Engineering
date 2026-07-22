@@ -1,0 +1,404 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1F97CA5F55F0D194"
+	group: "29E2B66FF1ED57B3"
+	hide_quest_until_deps_complete: true
+	icon: {
+		id: "ars_nouveau:manipulation_essence"
+	}
+	id: "1F97CA5F55F0D194"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1D9F96BE55FD6F5C"]
+			id: "78556B013177F55E"
+			tasks: [{
+				id: "5151F6733959A00F"
+				item: { count: 1, id: "ars_nouveau:source_jar" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1D9F96BE55FD6F5C"]
+			id: "3BF1C6C79BACA9CC"
+			tasks: [{
+				id: "5D3F07AF3E4D050F"
+				item: { count: 1, id: "ars_nouveau:agronomic_sourcelink" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0967F643A122987D"]
+			id: "0A02C90B85481DB1"
+			tasks: [{
+				id: "2D75852F4A5D00E3"
+				item: { count: 1, id: "ars_nouveau:volcanic_sourcelink" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1D9F96BE55FD6F5C"]
+			id: "0967F643A122987D"
+			tasks: [{
+				id: "7E48F64828892D5D"
+				item: { count: 1, id: "spectrum:shimmerstone_gem" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["07C32E95DB270A93"]
+			icon: {
+				id: "spectrum:pedestal_all_basic"
+			}
+			id: "1D9F96BE55FD6F5C"
+			tasks: [{
+				id: "37E8B295B058EFAE"
+				item: { count: 1, id: "spectrum:pedestal_all_basic" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1D9F96BE55FD6F5C"]
+			id: "4CBF552AC0CACA3D"
+			tasks: [{
+				id: "2F4062AF3D37E97C"
+				item: { count: 1, id: "ars_nouveau:basic_spell_turret" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1D9F96BE55FD6F5C"]
+			id: "636CDC03AA962BC3"
+			rewards: [{
+				count: 16
+				id: "1C9C35E9728FC77F"
+				item: {
+					count: 1
+					id: "ars_nouveau:arcane_pedestal"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "1CF4291B177F1ACB"
+					item: { count: 1, id: "ars_nouveau:enchanting_apparatus" }
+					type: "item"
+				}
+				{
+					id: "75528238177DE30A"
+					item: { count: 1, id: "ars_nouveau:arcane_core" }
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["636CDC03AA962BC3"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "721704485A50C074"
+			tasks: [{
+				id: "683D906783E08A97"
+				item: { count: 1, id: "ars_nouveau:starbuncle_charm" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1D9F96BE55FD6F5C"]
+			id: "22ECA20DF1049510"
+			rewards: [
+				{
+					count: 8
+					id: "648FF65A1FABB5B2"
+					item: {
+						count: 1
+						id: "ars_nouveau:mendosteen_pod"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "227711606129283C"
+					item: {
+						count: 1
+						id: "ars_nouveau:bastion_pod"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "4A9B1F8EC42DF70C"
+					item: {
+						count: 1
+						id: "ars_nouveau:bombegranate_pod"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "0B2663D2B7B0E6EA"
+					item: {
+						count: 1
+						id: "ars_nouveau:frostaya_pod"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "2C781E2196185054"
+					item: {
+						count: 1
+						id: "ars_elemental:flashpine_pod"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3EA36E1A5CA1578B"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(ars_nouveau:shady_wizard_fruits)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"4CBF552AC0CACA3D"
+				"636CDC03AA962BC3"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "664466851CAFC260"
+			tasks: [{
+				id: "5AFF28CE1B0642E3"
+				item: { count: 1, id: "ars_nouveau:timer_spell_turret" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4CBF552AC0CACA3D"]
+			hide_until_deps_complete: true
+			id: "34BE0346A1611946"
+			tasks: [{
+				id: "127D52EDFE052F18"
+				item: { count: 1, id: "ars_nouveau:rotating_spell_turret" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1D9F96BE55FD6F5C"]
+			id: "7BD08E4CD6DFAC3A"
+			tasks: [{
+				consume_items: true
+				count: 256L
+				id: "32466F4267E0076C"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(c:logs/archwood)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1D9F96BE55FD6F5C"]
+			hide_dependency_lines: true
+			id: "7808D50C186D1BC5"
+			tasks: [{
+				id: "4B2947880C8ECFDE"
+				item: { count: 1, id: "ars_nouveau:sourceberry_bush" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1D9F96BE55FD6F5C"]
+			hide_dependency_lines: true
+			id: "2A4225B4370512D8"
+			tasks: [{
+				id: "33750DFEF93E6763"
+				item: { count: 1, id: "ars_nouveau:wololo" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["53327EB8D9D8497F"]
+			id: "6E5EC1E4CBE9167B"
+			tasks: [{
+				id: "7C3DD40765FB9421"
+				item: { count: 1, id: "ars_nouveau:abjuration_essence" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["53327EB8D9D8497F"]
+			id: "07F366D0D1A59691"
+			tasks: [{
+				id: "509E400449BBA1E1"
+				item: { count: 1, id: "ars_nouveau:conjuration_essence" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["53327EB8D9D8497F"]
+			id: "47D2041BF81684AA"
+			tasks: [{
+				id: "679C5B705D48C6E0"
+				item: { count: 1, id: "ars_nouveau:air_essence" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["53327EB8D9D8497F"]
+			id: "320B227D9A22BA24"
+			tasks: [{
+				id: "25E84EC2AD4FD63C"
+				item: { count: 1, id: "ars_nouveau:earth_essence" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["53327EB8D9D8497F"]
+			id: "59ACEC61AA3848B2"
+			tasks: [{
+				id: "1D03413C0B9E2A17"
+				item: { count: 1, id: "ars_nouveau:fire_essence" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["53327EB8D9D8497F"]
+			id: "3AA8FDE08646E683"
+			tasks: [{
+				id: "29A0E444C8EC9A18"
+				item: { count: 1, id: "ars_nouveau:manipulation_essence" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["53327EB8D9D8497F"]
+			id: "557AA84DAFC58267"
+			tasks: [{
+				id: "6B3D21FB4B64AB7D"
+				item: { count: 1, id: "ars_nouveau:water_essence" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["53327EB8D9D8497F"]
+			id: "4236F0FB7668D11C"
+			tasks: [{
+				id: "33CD14A8D8067EAE"
+				item: { count: 1, id: "sauce:anima_essence" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"22ECA20DF1049510"
+				"2A4225B4370512D8"
+				"7808D50C186D1BC5"
+			]
+			hide_dependent_lines: true
+			id: "53327EB8D9D8497F"
+			rewards: [
+				{
+					count: 8
+					id: "35F4288556CF8E7F"
+					item: {
+						count: 1
+						id: "spectrum:mermaids_gem"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3E9392E8CB17E672"
+					item: {
+						count: 1
+						id: "minecraft:breeze_rod"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "70720DCC1FE3EE89"
+					item: {
+						count: 1
+						id: "spectrum:quitoxic_reeds"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0CDFFE82E95CB34F"
+				item: { count: 1, id: "ars_nouveau:imbuement_chamber" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"320B227D9A22BA24"
+				"47D2041BF81684AA"
+				"557AA84DAFC58267"
+				"07F366D0D1A59691"
+				"59ACEC61AA3848B2"
+				"6E5EC1E4CBE9167B"
+				"4236F0FB7668D11C"
+				"3AA8FDE08646E683"
+			]
+			icon: {
+				id: "ars_nouveau:manipulation_essence"
+			}
+			id: "238E6124102FE87A"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "47B8B945EEF59F31"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+	]
+}
