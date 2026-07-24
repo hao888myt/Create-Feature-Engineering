@@ -87,17 +87,17 @@ ServerEvents.recipes(event => {
 
         // #endregion
 
-        CMY () {
+        CMY() {
             this.tier = "simple"
             return this
         }
 
-        onyx () {
+        onyx() {
             this.tier = "advanced"
             return this
         }
 
-        moon () {
+        moon() {
             this.tier = "complex"
             return this
         }
