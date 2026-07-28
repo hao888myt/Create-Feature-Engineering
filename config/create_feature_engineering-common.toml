@@ -53,6 +53,10 @@
 		# Default: 40
 		# Range: > 1
 		spell_sensor_output_duration = 2
+		#附魔装置的工作时长
+		# Default: 210
+		# Range: > 1
+		enchanting_apparatus_crafting_length = 100
 
 [create]
 	#在切割配方没有写配方时间时，动力锯使用的配方时间，机械动力默认值为50
@@ -83,3 +87,9 @@
 	# Default: 20
 	# Range: > 1
 	frozen_block_process_time = 20
+
+[spectrum]
+	#微生物转换的时间
+	# Default: 40
+	# Range: > 1
+	decay_conversion_delay = 10
