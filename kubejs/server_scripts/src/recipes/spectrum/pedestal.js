@@ -161,7 +161,7 @@ ServerEvents.recipes(event => {
 
     let removes = [
         "ars_nouveau:imbuement_chamber",
-        "ars_nouveau:source_jar"
+        "ars_nouveau:source_jar",
     ].forEach(recipe => {
         event.remove(recipe)
     })
@@ -189,6 +189,7 @@ ServerEvents.recipes(event => {
             P: "ars_nouveau:archwood_slab",
             G: "#c:glass_blocks"
         }
-    ).addRequiredAdvancement("spectrum:collect_all_basic_shards")
-    .build()
+    ).addRequiredAdvancement("spectrum:build_basic_pedestal_structure")
+        .CMY()
+        .build()
 })
