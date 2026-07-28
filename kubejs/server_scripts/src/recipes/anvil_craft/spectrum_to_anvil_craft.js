@@ -91,10 +91,10 @@ ServerEvents.recipes((event) => {
                         "count": output_count, 
                         "id": output_item
                     }]
-                }).id(id)
+                })
             }
         }
-    })//{"type":"anvilcraft:item_crush","ingredients":[{"items":"minecraft:ink_sac"}],"results":[{"count":2,"id":"minecraft:black_dye"}]}
+    })
 
     let tags = [
         [
