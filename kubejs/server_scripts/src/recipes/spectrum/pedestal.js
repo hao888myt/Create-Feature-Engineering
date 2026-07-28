@@ -131,6 +131,7 @@ ServerEvents.recipes(event => {
 
         setId(id) {
             this.recipe_id = id
+            return this
         }
 
         build() {
