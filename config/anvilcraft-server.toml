@@ -78,8 +78,6 @@ induction_light_block_ripening_range = 5
 # Default: 4
 # Range: 1 ~ 20
 heliostats_detection_interval = 4
-#Iono Craft Backpack Max Flight Time in ticks
-iono_craft_backpack_max_flight_time = 24000
 #Giant anvil maxCount fall damage
 # Default: 40
 # Range: 0 ~ 100
@@ -106,10 +104,20 @@ anvil_collision_craft_speed = 16
 amulet_box_take_out_all_totem = true
 #Pushing or pulling a sliding rail will chain to other rails
 sliding_rail_stick_to_each_other = false
-#Whether to clean fluid after updating Menger Sponge
-clean_fluid_after_update_menger_sponge = true
-#The max size of the entries in multiphases' recover station
-multiphase_recover_max_size = 20
+#Maximum cooldown time of batch cutter (in ticks)
+# Default: 8
+# Range: 1 ~ 80
+batch_cutter_cooldown = 8
+#Maximum number of connected ore blocks collected by a laser gun
+# Default: 64
+# Range: 1 ~ 4096
+laser_ore_cluster_max_size = 64
+#Working interval of mineral fountain
+# Default: 20
+# Range: 2 ~ 1200
+mineral_fountain_interval = 4
+#Combining items with Enchanted Books beyond max level in Frost Anvil
+frost_anvil_beyond_max_level = false
 
 [power_converter]
 	#The working interval of power converters
@@ -117,8 +125,20 @@ multiphase_recover_max_size = 20
 	# Range: 1 ~ 60
 	power_converter_countdown = 10
 	#Energy efficiency of energy converters (1 kW => xx FE/t)
-	# Default: 80
+	# Default: 100
 	# Range: 1 ~ 1000
 	power_converter_efficiency = 80
 	#Power loss of energy converters
 	power_converter_loss = 0.1
+
+[spacetime_supercomputer_command]
+	#Allow /locate biome command
+	allow_locate_biome_command = true
+	#Allow /locate structure command
+	allow_locate_structure_command = true
+	#Allow /locate poi command
+	allow_locate_poi_command = true
+	#Allow /time add command
+	allow_time_add_command = true
+	#Allow /tick  sprint command
+	allow_tick_sprint_command = true
