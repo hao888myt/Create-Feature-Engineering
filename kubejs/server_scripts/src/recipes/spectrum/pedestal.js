@@ -264,4 +264,30 @@ ServerEvents.recipes(event => {
         .addRequiredAdvancement("spectrum:unlocks/items/bottle_of_fading")
         .setId("spectrum:pedestal/tier1/bottle_of_fading_essence")
         .build()
+
+    global.SpectrumColors.forEach(color => {
+        if (color == "white" || color == "gray" || color == "black" || color == "brown" || color == "light_gray") return
+
+        event.remove(`spectrum:pedestal/tier1/saplings/${color}`)
+
+        new Pedestal([`spectrum:${color}_sapling`, 1],
+            [
+                "CEC",
+                "VSV",
+                "CEC"
+            ],
+            {
+                C: `#c:dyes/${color}`,
+                S: "#create_feature_engineering:magic_saplings",
+                V: "spectrum:vegetal",
+                E: "ars_nouveau:earth_essence"
+            }
+        ).setTime(160)
+            .CMY()
+            .setGroup("colored_saplings")
+            .setMYC(2, 2, 2)
+            .addRequiredAdvancement(`spectrum:unlocks/colored_saplings/${color}_sapling`)
+            .setId(`spectrum:pedestal/tier1/saplings/${color}`)
+            .build()
+    })
 })
