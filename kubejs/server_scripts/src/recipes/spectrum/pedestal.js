@@ -165,6 +165,8 @@ ServerEvents.recipes(event => {
 
         "ars_nouveau:agronomic_sourcelink",
         "ars_nouveau:volcanic_sourcelink",
+        "spectrum:pedestal/tier1/bottle_of_fading",
+        "spectrum:pedestal/tier1/bottle_of_fading_essence"
     ].forEach(recipe => {
         event.remove(recipe)
     })
@@ -227,5 +229,39 @@ ServerEvents.recipes(event => {
         "spectrum:collect_shimmerstone"
     ])
         .CMY()
+        .build()
+
+    new Pedestal(["spectrum:bottle_of_fading", 1],
+        [
+            "FSF",
+            "PBP",
+            "FSF"
+        ],
+        {
+            F: "minecraft:fermented_spider_eye",
+            B: "minecraft:glass_bottle",
+            S: "spectrum:shimmerstone_gem",
+            P: "minecraft:blaze_powder"
+        }
+    ).setTime(400)
+        .addRequiredAdvancement("spectrum:unlocks/items/bottle_of_fading")
+        .setId("spectrum:pedestal/tier1/bottle_of_fading")
+        .build()
+
+    new Pedestal(["spectrum:bottle_of_fading", 1],
+        [
+            "FSF",
+            "PBP",
+            "FSF"
+        ],
+        {
+            F: "minecraft:fermented_spider_eye",
+            B: "minecraft:glass_bottle",
+            S: "spectrum:shimmerstone_gem",
+            P: "spectrum:incandescent_essence"
+        }
+    ).setTime(400)
+        .addRequiredAdvancement("spectrum:unlocks/items/bottle_of_fading")
+        .setId("spectrum:pedestal/tier1/bottle_of_fading_essence")
         .build()
 })
