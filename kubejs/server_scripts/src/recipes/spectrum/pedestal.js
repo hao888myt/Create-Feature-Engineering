@@ -174,19 +174,6 @@ ServerEvents.recipes(event => {
         event.remove(recipe)
     })
 
-    new Pedestal(["ars_nouveau:imbuement_chamber", 1],
-        [
-            "PGP",
-            "P P",
-            "PGP"
-        ],
-        {
-            P: "ars_nouveau:archwood_planks",
-            G: "minecraft:gold_ingot"
-        }
-    ).addRequiredAdvancement("spectrum:collect_all_basic_shards")
-    .build()
-
     new Pedestal(["ars_nouveau:source_jar", 1],
         [
             "PPP",
@@ -234,6 +221,22 @@ ServerEvents.recipes(event => {
         .CMY()
         .build()
 
+
+    new Pedestal(["ars_nouveau:imbuement_chamber", 1],
+        [
+            "PGP",
+            "PFP",
+            "PGP"
+        ],
+        {
+            P: "ars_nouveau:archwood_planks",
+            G: "minecraft:gold_ingot",
+            F: "#ars_nouveau:shady_wizard_fruits"
+        }
+    ).addRequiredAdvancement("spectrum:build_basic_pedestal_structure")
+        .CMY()
+        .setMYC(1, 1, 1)
+        .build()
     new Pedestal(["ars_nouveau:enchanting_apparatus", 1],
         [
             "GTG",
