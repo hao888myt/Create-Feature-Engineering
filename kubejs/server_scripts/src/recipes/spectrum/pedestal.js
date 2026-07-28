@@ -167,6 +167,7 @@ ServerEvents.recipes(event => {
         "ars_nouveau:volcanic_sourcelink",
 
         "ars_nouveau:arcane_pedestal",
+        "ars_nouveau:ritual_brazier",
 
         "ars_nouveau:basic_spell_turret",
         "ars_nouveau:enchanting_apparatus",
@@ -237,6 +238,22 @@ ServerEvents.recipes(event => {
             N: "#c:nuggets/gold"
         }
     ).addRequiredAdvancement("spectrum:place_pedestal")
+        .build()
+
+    new Pedestal(["ars_nouveau:ritual_brazier", 1],
+        [
+            "SGS",
+            "ISI",
+            "ISI"
+        ],
+        {
+            S: "ars_nouveau:sourcestone",
+            G: "ars_nouveau:source_gem",
+            I: "#c:ingots/gold"
+        }
+    ).addRequiredAdvancement("spectrum:place_pedestal")
+        .setTime(100)
+        .setMYC(2, 2, 2)
         .build()
 
     new Pedestal(["ars_nouveau:imbuement_chamber", 1],
