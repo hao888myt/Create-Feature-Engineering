@@ -162,6 +162,9 @@ ServerEvents.recipes(event => {
     let removes = [
         "ars_nouveau:imbuement_chamber",
         "ars_nouveau:source_jar",
+
+        "ars_nouveau:agronomic_sourcelink",
+        "ars_nouveau:volcanic_sourcelink",
     ].forEach(recipe => {
         event.remove(recipe)
     })
@@ -190,6 +193,39 @@ ServerEvents.recipes(event => {
             G: "#c:glass_blocks"
         }
     ).addRequiredAdvancement("spectrum:build_basic_pedestal_structure")
+        .CMY()
+        .build()
+
+    new Pedestal(["ars_nouveau:agronomic_sourcelink", 1],
+        [
+            " S ",
+            "GWG",
+            " S "
+        ],
+        {
+            S: "ars_nouveau:source_gem",
+            G: "minecraft:gold_ingot",
+            W: "#c:crops"
+        }
+    ).addRequiredAdvancement("spectrum:build_basic_pedestal_structure")
+        .CMY()
+        .build()
+
+    new Pedestal(["ars_nouveau:volcanic_sourcelink", 1],
+        [
+            " S ",
+            "GHG",
+            " S "
+        ],
+        {
+            S: "ars_nouveau:source_gem",
+            G: "minecraft:gold_ingot",
+            H: "spectrum:shimmerstone_gem"
+        }
+    ).addRequiredAdvancements([
+        "spectrum:build_basic_pedestal_structure",
+        "spectrum:collect_shimmerstone"
+    ])
         .CMY()
         .build()
 })
