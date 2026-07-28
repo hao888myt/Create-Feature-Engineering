@@ -165,6 +165,9 @@ ServerEvents.recipes(event => {
 
         "ars_nouveau:agronomic_sourcelink",
         "ars_nouveau:volcanic_sourcelink",
+        "ars_nouveau:enchanting_apparatus",
+        "ars_nouveau:arcane_core",
+
         "spectrum:pedestal/tier1/bottle_of_fading",
         "spectrum:pedestal/tier1/bottle_of_fading_essence"
     ].forEach(recipe => {
@@ -229,6 +232,47 @@ ServerEvents.recipes(event => {
         "spectrum:collect_shimmerstone"
     ])
         .CMY()
+        .build()
+
+    new Pedestal(["ars_nouveau:enchanting_apparatus", 1],
+        [
+            "GTG",
+            "SFS",
+            "GTG"
+        ],
+        {
+            G: "#c:ingots/gold",
+            S: "ars_nouveau:source_gem",
+            F: "spectrum:shimmerstone_gem",
+            T: "ars_nouveau:sourcestone"
+        }
+    ).setTime(200)
+        .CMY()
+        .setMYC(4, 4, 4)
+        .addRequiredAdvancements([
+            "spectrum:build_basic_pedestal_structure",
+            "spectrum:collect_shimmerstone"
+        ])
+        .build()
+
+    new Pedestal(["ars_nouveau:arcane_core", 1],
+        [
+            "SFS",
+            "GFG",
+            "SFS"
+        ],
+        {
+            F: "spectrum:shimmerstone_gem",
+            G: "#c:ingots/gold",
+            S: "ars_nouveau:sourcestone"
+        }
+    ).setTime(200)
+        .CMY()
+        .setMYC(4, 4, 4)
+        .addRequiredAdvancements([
+            "spectrum:build_basic_pedestal_structure",
+            "spectrum:collect_shimmerstone"
+        ])
         .build()
 
     new Pedestal(["spectrum:bottle_of_fading", 1],
