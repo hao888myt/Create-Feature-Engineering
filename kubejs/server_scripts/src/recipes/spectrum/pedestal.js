@@ -165,6 +165,8 @@ ServerEvents.recipes(event => {
 
         "ars_nouveau:agronomic_sourcelink",
         "ars_nouveau:volcanic_sourcelink",
+
+        "ars_nouveau:basic_spell_turret",
         "ars_nouveau:enchanting_apparatus",
         "ars_nouveau:arcane_core",
 
@@ -237,6 +239,24 @@ ServerEvents.recipes(event => {
         .CMY()
         .setMYC(1, 1, 1)
         .build()
+
+    new Pedestal(["ars_nouveau:basic_spell_turret", 1],
+        [
+            "RSR",
+            "SGS",
+            "RSR"
+        ],
+        {
+            R: "minecraft:redstone",
+            S: "#c:ingots/gold",
+            G: "ars_nouveau:source_gem"
+        }
+    ).setTime(50)
+        .CMY()
+        .setMYC(1, 1, 1)
+        .addRequiredAdvancement("spectrum:build_basic_pedestal_structure")
+        .build()
+
     new Pedestal(["ars_nouveau:enchanting_apparatus", 1],
         [
             "GTG",
