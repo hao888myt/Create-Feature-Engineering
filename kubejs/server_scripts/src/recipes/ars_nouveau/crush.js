@@ -57,4 +57,22 @@ ServerEvents.recipes(event => {
             }
         ]
     )
+
+    ars_nouveau.crush(
+        "spectrum:stratine_ore",
+        [
+            {
+                stack: Item.of("minecraft:netherrack"),
+                chance: 1.0
+            },
+            {
+                stack: Item.of("spectrum:stratine_fragments", 4),
+                chance: 1.0
+            },
+            {
+                stack: Item.of("spectrum:stratine_gem"),
+                chance: 0.1
+            }
+        ]
+    )
 })
