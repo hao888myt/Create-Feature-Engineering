@@ -39,6 +39,7 @@ ServerEvents.recipes(event => {
     "create:crafting/kinetics/rotation_speed_controller",
 
     "create_connected:crafting/kinetics/empty_fan_catalyst",
+    "anvilcraft:impact_pile",
 
     "create_jetpack:jetpack",
 
@@ -366,6 +367,16 @@ ServerEvents.recipes(event => {
     "create:brass_casing",
     "create:precision_mechanism"
   ])
+
+  // 冲击桩
+  minecraft.crafting_shaped(Item.of("anvilcraft:impact_pile", 2), [
+    "S",
+    "N",
+    "N"
+  ], {
+    S: "create:sturdy_sheet",
+    N: "minecraft:netherite_ingot"
+  }).id("anvilcraft:impact_pile")
 
   // 喷气背包
   minecraft.crafting_shaped(
