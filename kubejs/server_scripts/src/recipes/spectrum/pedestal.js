@@ -174,7 +174,10 @@ ServerEvents.recipes(event => {
         "ars_nouveau:arcane_core",
 
         "spectrum:pedestal/tier1/bottle_of_fading",
-        "spectrum:pedestal/tier1/bottle_of_fading_essence"
+        "spectrum:pedestal/tier1/bottle_of_fading_essence",
+
+        "spectrum:pedestal/tier2/fusion_shrine_basalt",
+        "spectrum:pedestal/tier2/fusion_shrine_calcite"
     ].forEach(recipe => {
         event.remove(recipe)
     })
@@ -389,4 +392,37 @@ ServerEvents.recipes(event => {
             .setId(`spectrum:pedestal/tier1/saplings/${color}`)
             .build()
     })
+
+    new Pedestal(["spectrum:fusion_shrine_basalt", 1], [
+        "BPB",
+        "CMC",
+        "BPB",
+    ], {
+        B: "spectrum:polished_basalt",
+        C: "spectrum:polished_calcite",
+        P: "#spectrum:pigments",
+        M: "ars_nouveau:manipulation_essence"
+    }).setTime(100)
+        .CMY()
+        .setGroup("fusion_shrines")
+        .setMYC(4, 4, 4)
+        .addRequiredAdvancement("spectrum:unlocks/blocks/fusion_shrine")
+        .setId("spectrum:pedestal/tier2/fusion_shrine_basalt")
+        .build()
+    
+    new Pedestal(["spectrum:fusion_shrine_calcite", 1], [
+        "CPC",
+        "CMC",
+        "CPC",
+    ], {
+        C: "spectrum:polished_calcite",
+        P: "#spectrum:pigments",
+        M: "ars_nouveau:manipulation_essence"
+    }).setTime(100)
+        .CMY()
+        .setGroup("fusion_shrines")
+        .setMYC(4, 4, 4)
+        .addRequiredAdvancement("spectrum:unlocks/blocks/fusion_shrine")
+        .setId("spectrum:pedestal/tier2/fusion_shrine_calcite")
+        .build()
 })
