@@ -93,3 +93,9 @@
 	# Default: 40
 	# Range: > 1
 	decay_conversion_delay = 10
+
+[minecraft]
+	#雪傀儡投掷雪球的偏移系数
+	# Default: 12.0
+	# Range: 0.0 ~ 3.4028234663852886E38
+	snow_golem_inaccuracy = 0.0
