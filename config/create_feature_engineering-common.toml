@@ -58,6 +58,20 @@
 		# Range: > 1
 		enchanting_apparatus_crafting_length = 100
 
+	[ars_nouveau.volcanic_sourcelink]
+		#火之精华产生的魔源
+		# Default: 2000
+		# Range: > 0
+		fire_essence_source = 2500
+		#石头转换成岩浆块消耗的进度
+		# Default: 150
+		# Range: > 0
+		stone_to_magma_block_consume = 8
+		#岩浆块熔岩消耗的进度
+		# Default: 200
+		# Range: > 0
+		magma_block_to_lava_consume = 12
+
 [create]
 	#在切割配方没有写配方时间时，动力锯使用的配方时间，机械动力默认值为50
 	# Default: 75
