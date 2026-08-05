@@ -7,10 +7,10 @@ NativeEvents.onEvent($BlockEvent$FluidPlaceBlockEvent, event => {
         let directions = [
             Direction.UP,      // 上 (Y+)
             Direction.DOWN,    // 下 (Y-)
-            Direction.NORTH,   // 北 (Z-)
             Direction.SOUTH,   // 南 (Z+)
+            Direction.NORTH,   // 北 (Z-)
+            Direction.EAST,    // 东 (X+)
             Direction.WEST,    // 西 (X-)
-            Direction.EAST     // 东 (X+)
         ]
 
         let new_state = "minecraft:blackstone"
