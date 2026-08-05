@@ -7,7 +7,10 @@
 		id: "spectrum:yellow_pigment"
 	}
 	id: "1154F5B6A8DE1CCE"
+	images: [ ]
 	order_index: 2
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [
 		{
@@ -17,28 +20,131 @@
 				item: { count: 1, id: "spectrum:bottle_of_fading" }
 				type: "item"
 			}]
-			x: 0.0d
+			x: -2.0d
 			y: 0.0d
 		}
 		{
+			dependencies: ["65B09D9CDE9710FB"]
 			id: "71ECE3E5F68C98BA"
+			rewards: [
+				{
+					count: 8
+					id: "0E93A89B7851444E"
+					item: {
+						count: 1
+						id: "spectrum:orange_sapling"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "32D3CBBB8FF98BD2"
+					item: {
+						count: 1
+						id: "spectrum:blue_sapling"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "52DAF394FCCD1647"
+					item: {
+						count: 1
+						id: "spectrum:purple_sapling"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "1F327D93D376768E"
+					item: {
+						count: 1
+						id: "spectrum:cyan_sapling"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "061727676A1DC6FB"
+					item: {
+						count: 1
+						id: "spectrum:pink_sapling"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "4D45B43BFF937E9A"
+					item: {
+						count: 1
+						id: "spectrum:green_sapling"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "0737B549AED2ECA3"
+					item: {
+						count: 1
+						id: "spectrum:light_blue_sapling"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "2AAD045B85AAD4E7"
+					item: {
+						count: 1
+						id: "spectrum:magenta_sapling"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "781DCFF966ECDE7C"
+					item: {
+						count: 1
+						id: "spectrum:red_sapling"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "59FD0C1834DEF133"
+					item: {
+						count: 1
+						id: "spectrum:yellow_sapling"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "5BE7D5573E757C53"
+					item: {
+						count: 1
+						id: "spectrum:lime_sapling"
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "2F260141FE946753"
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(spectrum:colored_saplings)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -2.0d
+			x: 2.0d
 			y: 0.0d
 		}
 		{
+			dependencies: ["3AE197F566F36683"]
 			id: "4981C47B13B78BB9"
 			tasks: [{
 				id: "7ABCF251BA3CF033"
 				item: { count: 1, id: "spectrum:neolith" }
 				type: "item"
 			}]
-			x: 5.5d
-			y: 4.5d
+			x: 16.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["4981C47B13B78BB9"]
@@ -48,19 +154,518 @@
 				item: { count: 1, id: "spectrum:storm_stone" }
 				type: "item"
 			}]
-			x: 7.0d
-			y: 3.5d
+			x: 16.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["4981C47B13B78BB9"]
+			hide_dependent_lines: true
 			id: "667728071B9FE72E"
 			tasks: [{
 				id: "01BBC59F4AA32D8B"
 				item: { count: 1, id: "spectrum:raw_azurite" }
 				type: "item"
 			}]
-			x: 7.0d
-			y: 5.5d
+			x: 16.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3F6B0DE5864C96C9"]
+			id: "65B09D9CDE9710FB"
+			rewards: [{
+				count: 64
+				id: "6F1A321923BACD3D"
+				item: {
+					count: 1
+					id: "spectrum:vegetal"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "71F0117DBEB1FE85"
+				item: { count: 1, id: "spectrum:vegetal" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["71ECE3E5F68C98BA"]
+			id: "12CFCA114A05E628"
+			rewards: [
+				{
+					count: 64
+					id: "6216AAE2E59115F6"
+					item: {
+						count: 1
+						id: "spectrum:orange_pigment"
+					}
+					type: "item"
+				}
+				{
+					count: 64
+					id: "0B9429DFBE98CD10"
+					item: {
+						count: 1
+						id: "spectrum:magenta_pigment"
+					}
+					type: "item"
+				}
+				{
+					count: 64
+					id: "1E9FBC8ABC39BF66"
+					item: {
+						count: 1
+						id: "spectrum:light_blue_pigment"
+					}
+					type: "item"
+				}
+				{
+					count: 64
+					id: "07220E4EFFCCAB3E"
+					item: {
+						count: 1
+						id: "spectrum:yellow_pigment"
+					}
+					type: "item"
+				}
+				{
+					count: 64
+					id: "769F98BF7D1AB215"
+					item: {
+						count: 1
+						id: "spectrum:lime_pigment"
+					}
+					type: "item"
+				}
+				{
+					count: 64
+					id: "3B823CB92031EE6B"
+					item: {
+						count: 1
+						id: "spectrum:pink_pigment"
+					}
+					type: "item"
+				}
+				{
+					count: 64
+					id: "390BEDED93B189F2"
+					item: {
+						count: 1
+						id: "spectrum:cyan_pigment"
+					}
+					type: "item"
+				}
+				{
+					count: 64
+					id: "4C7FC6B3DB25830A"
+					item: {
+						count: 1
+						id: "spectrum:purple_pigment"
+					}
+					type: "item"
+				}
+				{
+					count: 64
+					id: "5AB01FFDB39A77DD"
+					item: {
+						count: 1
+						id: "spectrum:blue_pigment"
+					}
+					type: "item"
+				}
+				{
+					count: 64
+					id: "4E8454FAFD06F4C9"
+					item: {
+						count: 1
+						id: "spectrum:green_pigment"
+					}
+					type: "item"
+				}
+				{
+					count: 64
+					id: "0F7AAB7C0794371A"
+					item: {
+						count: 1
+						id: "spectrum:red_pigment"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "2210E2F5FCEEC444"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(spectrum:pigments)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["12CFCA114A05E628"]
+			id: "7B2DBD960D2FB3D8"
+			tasks: [{
+				id: "127D585D14CB1885"
+				item: { count: 1, id: "spectrum:fusion_shrine_basalt" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7B2DBD960D2FB3D8"]
+			id: "1D978A29B3259D5E"
+			rewards: [{
+				count: 64
+				id: "6A12408463A0B8D1"
+				item: {
+					count: 1
+					id: "spectrum:onyx_shard"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "253401A9AEBA9AA6"
+				item: { count: 1, id: "spectrum:onyx_shard" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3ABD27162C430487"]
+			id: "33C0C5C5B5ADB815"
+			rewards: [{
+				id: "0C289A932F1B5B57"
+				item: {
+					components: {
+						"anvilcraft:saved_entity": {
+							isMonster: 1b
+							tag: {
+								AbsorptionAmount: 0.0f
+								Air: 300s
+								ArmorDropChances: [
+									0.085f
+									0.085f
+									0.085f
+									0.085f
+								]
+								ArmorItems: [
+									{ }
+									{ }
+									{ }
+									{ }
+								]
+								Brain: {
+									memories: { }
+								}
+								CanPickUpLoot: 0b
+								CitadelUpData: { }
+								DeathTime: 0s
+								FallDistance: 0.0f
+								FallFlying: 0b
+								Fire: -1s
+								HandDropChances: [
+									0.085f
+									0.085f
+								]
+								HandItems: [
+									{ }
+									{ }
+								]
+								Health: 28.0f
+								HurtByTimestamp: 0
+								HurtTime: 0s
+								Invulnerable: 0b
+								LeftHanded: 0b
+								Motion: [
+									0.0d
+									-0.0784000015258789d
+									0.0d
+								]
+								NeoForgeData: {
+									anvilcraft_resin_base_resentment: 7
+									create_biotech.previous_liquid_living_slime_vertical_speed: -0.0784000015258789d
+									create_biotech.was_touching_liquid_living_slime: 0b
+								}
+								OnGround: 1b
+								PersistenceRequired: 0b
+								PortalCooldown: 0
+								Pos: [
+									220.5d
+									64.0d
+									118.5d
+								]
+								Rotation: [
+									89.677795f
+									0.0f
+								]
+								StradpoleCount: 0
+								attributes: [
+									{
+										base: 0.30000001192092896d
+										id: "minecraft:generic.movement_speed"
+									}
+									{
+										base: 1.0d
+										id: "additionalentityattributes:generic.hitbox_width"
+									}
+									{
+										base: 1.0d
+										id: "additionalentityattributes:generic.hitbox_height"
+									}
+									{
+										base: 1.0d
+										id: "additionalentityattributes:generic.height"
+									}
+									{
+										base: 0.0d
+										id: "minecraft:generic.oxygen_bonus"
+									}
+									{
+										base: 32.0d
+										id: "minecraft:generic.follow_range"
+										modifiers: [{
+											amount: -0.06575958508480137d
+											id: "minecraft:random_spawn_bonus"
+											operation: "add_multiplied_base"
+										}]
+									}
+									{
+										base: 1.0d
+										id: "additionalentityattributes:generic.width"
+									}
+									{
+										base: 1.0d
+										id: "additionalentityattributes:generic.hitbox_scale"
+									}
+								]
+								id: "alexsmobsup:straddler"
+								"neoforge:attachments": {
+									"spectrum:azure_dike": {
+										current_charges: 0.0f
+										current_recharge_delay: 0
+										max_charges: 0.0f
+										ticks_to_replenish_charge: 0
+										ticks_to_replenish_charge_after_getting_hit: 0
+									}
+									"spectrum:primordial_fire": 0L
+									"yes_steve_model:vehicle_model_id": {
+										initialized: 0b
+										molang_vars_server_bound: { }
+										owner_model_id: "default"
+									}
+								}
+								"neoforge:spawn_type": "SPAWN_EGG"
+							}
+						}
+					}
+					count: 1
+					id: "anvilcraft:resin_block"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2EEF4203D1B92B74"
+				item: { count: 1, id: "spectrum:stratine_fragments" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["33C0C5C5B5ADB815"]
+			id: "3AE197F566F36683"
+			tasks: [{
+				id: "095F7366A08A424D"
+				item: { count: 1, id: "spectrum:bottle_of_failing" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["33C0C5C5B5ADB815"]
+			id: "1E446CD604AEE494"
+			tasks: [{
+				id: "06D4B0477FAA6305"
+				item: { count: 1, id: "spectrum:black_hole_chest" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1D978A29B3259D5E"]
+			id: "3ABD27162C430487"
+			tasks: [{
+				id: "6262C3ACCF8CCA66"
+				item: { count: 1, id: "spectrum:pedestal_onyx" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["33C0C5C5B5ADB815"]
+			id: "07966FAE7BD94391"
+			tasks: [{
+				id: "02C69A1C692D0FA5"
+				item: { count: 1, id: "spectrum:cinderhearth" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3ABD27162C430487"]
+			id: "6480200C91336C1A"
+			tasks: [{
+				id: "30DC0A9FA9DE0146"
+				item: { count: 1, id: "spectrum:knowledge_gem" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["33E6A6C827820E78"]
+			id: "24C36327EA823145"
+			tasks: [{
+				id: "7B82BA0DBF73DBB1"
+				item: { count: 1, id: "ars_elemental:ritual_tesla_coil" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["33E6A6C827820E78"]
+			id: "239C2BF7A98E4CE4"
+			tasks: [{
+				id: "266AF9B9D7E0F7F8"
+				item: { count: 1, id: "ars_elemental:glyph_discharge" }
+				type: "item"
+			}]
+			x: 17.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0E763CBABF6AF58B"]
+			id: "60E9BE47B665E715"
+			tasks: [{
+				id: "1428292FD34317AE"
+				item: { count: 1, id: "spectrum:connection_node" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0E763CBABF6AF58B"]
+			id: "03E7A104623F3927"
+			tasks: [{
+				id: "668554A242ABAB9B"
+				item: { count: 1, id: "spectrum:ink_node" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0E763CBABF6AF58B"]
+			id: "0D44C03DF72C94C3"
+			tasks: [
+				{
+					id: "2C80E70939C241B4"
+					item: { count: 1, id: "spectrum:provider_node" }
+					type: "item"
+				}
+				{
+					id: "169546E9FD443545"
+					item: { count: 1, id: "spectrum:sender_node" }
+					type: "item"
+				}
+				{
+					id: "4953E6BAA158DD4E"
+					item: { count: 1, id: "spectrum:storage_node" }
+					type: "item"
+				}
+				{
+					id: "583CB6481961D56F"
+					item: { count: 1, id: "spectrum:gather_node" }
+					type: "item"
+				}
+			]
+			x: 17.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0E763CBABF6AF58B"]
+			id: "13599C33C86372CE"
+			tasks: [
+				{
+					id: "79199F403577F7BF"
+					item: { count: 1, id: "spectrum:fluid_provider_node" }
+					type: "item"
+				}
+				{
+					id: "23159E51260828B8"
+					item: { count: 1, id: "spectrum:fluid_sender_node" }
+					type: "item"
+				}
+				{
+					id: "0FD40ACF06E60A54"
+					item: { count: 1, id: "spectrum:fluid_storage_node" }
+					type: "item"
+				}
+				{
+					id: "6C2401525A1B1D27"
+					item: { count: 1, id: "spectrum:fluid_gather_node" }
+					type: "item"
+				}
+			]
+			x: 17.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["667728071B9FE72E"]
+			icon: {
+				id: "spectrum:provider_node"
+			}
+			id: "0E763CBABF6AF58B"
+			tasks: [{
+				id: "1B425FBFE6E2D436"
+				type: "checkmark"
+			}]
+			x: 16.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["667728071B9FE72E"]
+			id: "348D7DC443F19660"
+			rewards: [{
+				id: "14CD9F779131CFD3"
+				item: {
+					components: {
+						"minecraft:stored_enchantments": {
+							levels: {
+								"spectrum:treasure_hunter": 3
+							}
+						}
+					}
+					count: 1
+					id: "minecraft:enchanted_book"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5FA6D0B0B2F9C3B7"
+				item: { count: 1, id: "spectrum:spirit_instiller" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: 2.0d
 		}
 	]
 }

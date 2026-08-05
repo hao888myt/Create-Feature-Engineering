@@ -8,12 +8,24 @@
 		id: "ars_nouveau:manipulation_essence"
 	}
 	id: "1F97CA5F55F0D194"
+	images: [ ]
 	order_index: 1
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["1D9F96BE55FD6F5C"]
 			id: "78556B013177F55E"
+			rewards: [{
+				count: 4
+				id: "1FF5781966A3EF76"
+				item: {
+					count: 1
+					id: "ars_nouveau:source_jar"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "5151F6733959A00F"
 				item: { count: 1, id: "ars_nouveau:source_jar" }
@@ -25,6 +37,15 @@
 		{
 			dependencies: ["1D9F96BE55FD6F5C"]
 			id: "3BF1C6C79BACA9CC"
+			rewards: [{
+				count: 4
+				id: "4B28321D5333AC99"
+				item: {
+					count: 1
+					id: "ars_nouveau:agronomic_sourcelink"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "5D3F07AF3E4D050F"
 				item: { count: 1, id: "ars_nouveau:agronomic_sourcelink" }
@@ -36,6 +57,15 @@
 		{
 			dependencies: ["0967F643A122987D"]
 			id: "0A02C90B85481DB1"
+			rewards: [{
+				count: 4
+				id: "20A5EE3B4DA87766"
+				item: {
+					count: 1
+					id: "ars_nouveau:volcanic_sourcelink"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "2D75852F4A5D00E3"
 				item: { count: 1, id: "ars_nouveau:volcanic_sourcelink" }
@@ -47,6 +77,15 @@
 		{
 			dependencies: ["1D9F96BE55FD6F5C"]
 			id: "0967F643A122987D"
+			rewards: [{
+				count: 64
+				id: "2E8264E21639B45B"
+				item: {
+					count: 1
+					id: "spectrum:shimmerstone_gem"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "7E48F64828892D5D"
 				item: { count: 1, id: "spectrum:shimmerstone_gem" }
@@ -112,6 +151,53 @@
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "721704485A50C074"
+			rewards: [
+				{
+					count: 4
+					id: "462738A426A15E3A"
+					item: {
+						count: 1
+						id: "starbunclemania:robin_mask"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "575B151326A5AF46"
+					item: {
+						count: 1
+						id: "starbunclemania:star_bucket"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3E2069B679E0287C"
+					item: {
+						count: 1
+						id: "starbunclemania:star_bin"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6C6BF6357DF765CB"
+					item: {
+						count: 1
+						id: "ars_nouveau:starbuncle_shades"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "6FE14E0DCDF9C8BB"
+					item: {
+						count: 1
+						id: "ars_nouveau:starbuncle_charm"
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "683D906783E08A97"
 				item: { count: 1, id: "ars_nouveau:starbuncle_charm" }
@@ -223,6 +309,24 @@
 			dependencies: ["1D9F96BE55FD6F5C"]
 			hide_dependency_lines: true
 			id: "7808D50C186D1BC5"
+			rewards: [
+				{
+					id: "7206AA3DCF2A7EE1"
+					item: {
+						count: 1
+						id: "ars_nouveau:glyph_grow"
+					}
+					type: "item"
+				}
+				{
+					id: "7CD0B678CD86967C"
+					item: {
+						count: 1
+						id: "ars_nouveau:glyph_harvest"
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "4B2947880C8ECFDE"
 				item: { count: 1, id: "ars_nouveau:sourceberry_bush" }
@@ -246,6 +350,15 @@
 		{
 			dependencies: ["53327EB8D9D8497F"]
 			id: "6E5EC1E4CBE9167B"
+			rewards: [{
+				count: 64
+				id: "39B88A9689CF0CE7"
+				item: {
+					count: 1
+					id: "ars_nouveau:abjuration_essence"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "7C3DD40765FB9421"
 				item: { count: 1, id: "ars_nouveau:abjuration_essence" }
@@ -257,6 +370,15 @@
 		{
 			dependencies: ["53327EB8D9D8497F"]
 			id: "07F366D0D1A59691"
+			rewards: [{
+				count: 64
+				id: "0A960FC975CC4E99"
+				item: {
+					count: 1
+					id: "ars_nouveau:conjuration_essence"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "509E400449BBA1E1"
 				item: { count: 1, id: "ars_nouveau:conjuration_essence" }
@@ -268,6 +390,15 @@
 		{
 			dependencies: ["53327EB8D9D8497F"]
 			id: "47D2041BF81684AA"
+			rewards: [{
+				count: 64
+				id: "1128AFC4F79E13E4"
+				item: {
+					count: 1
+					id: "ars_nouveau:air_essence"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "679C5B705D48C6E0"
 				item: { count: 1, id: "ars_nouveau:air_essence" }
@@ -279,6 +410,15 @@
 		{
 			dependencies: ["53327EB8D9D8497F"]
 			id: "320B227D9A22BA24"
+			rewards: [{
+				count: 64
+				id: "0C380BA122306A28"
+				item: {
+					count: 1
+					id: "ars_nouveau:earth_essence"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "25E84EC2AD4FD63C"
 				item: { count: 1, id: "ars_nouveau:earth_essence" }
@@ -290,6 +430,15 @@
 		{
 			dependencies: ["53327EB8D9D8497F"]
 			id: "59ACEC61AA3848B2"
+			rewards: [{
+				count: 64
+				id: "54CDF6552681345F"
+				item: {
+					count: 1
+					id: "ars_nouveau:fire_essence"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "1D03413C0B9E2A17"
 				item: { count: 1, id: "ars_nouveau:fire_essence" }
@@ -301,6 +450,15 @@
 		{
 			dependencies: ["53327EB8D9D8497F"]
 			id: "3AA8FDE08646E683"
+			rewards: [{
+				count: 64
+				id: "33828B3D7C9E6072"
+				item: {
+					count: 1
+					id: "ars_nouveau:manipulation_essence"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "29A0E444C8EC9A18"
 				item: { count: 1, id: "ars_nouveau:manipulation_essence" }
@@ -312,6 +470,15 @@
 		{
 			dependencies: ["53327EB8D9D8497F"]
 			id: "557AA84DAFC58267"
+			rewards: [{
+				count: 64
+				id: "374C004DC9B7E8A4"
+				item: {
+					count: 1
+					id: "ars_nouveau:water_essence"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "6B3D21FB4B64AB7D"
 				item: { count: 1, id: "ars_nouveau:water_essence" }
@@ -323,6 +490,15 @@
 		{
 			dependencies: ["53327EB8D9D8497F"]
 			id: "4236F0FB7668D11C"
+			rewards: [{
+				count: 64
+				id: "2C61E642A0CF2685"
+				item: {
+					count: 1
+					id: "sauce:anima_essence"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "33CD14A8D8067EAE"
 				item: { count: 1, id: "sauce:anima_essence" }

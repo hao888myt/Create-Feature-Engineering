@@ -1,5 +1,5 @@
 Name:Create：Feature Engineering
-Version:0.2.3-alpha
+Version:0.2.4-alpha
 
 # 是否打包正式版 PCL，以便没有启动器的玩家安装整合包。
 IncludeLauncher:False

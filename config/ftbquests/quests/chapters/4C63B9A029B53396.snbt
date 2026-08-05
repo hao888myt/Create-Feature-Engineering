@@ -10,7 +10,10 @@
 		id: "researchd:research_pack"
 	}
 	id: "4C63B9A029B53396"
+	images: [ ]
 	order_index: 3
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [
 		{
@@ -360,6 +363,34 @@
 				type: "item"
 			}]
 			x: 2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["62507B3AB28E1BFC"]
+			id: "46A14602052E9118"
+			tasks: [
+				{
+					id: "5F5D28BC930F4ED5"
+					item: { count: 1, id: "anvilcraft:pipe" }
+					type: "item"
+				}
+				{
+					id: "4C6D8FCBFF6004E0"
+					item: { count: 1, id: "anvilcraft:check_valve" }
+					type: "item"
+				}
+				{
+					id: "15642AFFFAB6CED9"
+					item: { count: 1, id: "anvilcraft:drain" }
+					type: "item"
+				}
+				{
+					id: "4341B839CCB531B5"
+					item: { count: 1, id: "anvilcraft:control_valve" }
+					type: "item"
+				}
+			]
+			x: 3.5d
 			y: 0.5d
 		}
 	]

@@ -7,10 +7,14 @@
 		id: "create_fantasizing:block_placer"
 	}
 	id: "296365F19F45F8DD"
+	images: [ ]
 	order_index: 0
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["7D94D60CA24E34D9"]
 			icon: {
 				id: "create_fantasizing:block_placer"
 			}
@@ -87,58 +91,131 @@
 				id: "149DAF87CF727370"
 				type: "checkmark"
 			}]
-			x: 1.0d
+			x: 0.5d
 			y: -3.5d
 		}
 		{
+			dependencies: ["7D94D60CA24E34D9"]
 			id: "3DFCF25B31E88B9F"
 			tasks: [{
 				id: "0C13C1DF365BE711"
 				type: "checkmark"
 			}]
-			x: -2.5d
-			y: -1.0d
+			x: -1.5d
+			y: -1.5d
 		}
 		{
+			dependencies: ["7D94D60CA24E34D9"]
+			hide_dependent_lines: true
 			id: "764A5CC3B3951399"
 			tasks: [{
 				id: "19F01669E697409A"
 				type: "checkmark"
 			}]
-			x: 0.5d
-			y: -6.5d
-		}
-		{
-			icon: {
-				id: "create:chute"
-			}
-			id: "265609C91CCED7FA"
-			tasks: [{
-				id: "70B97E30B82F3032"
-				type: "checkmark"
-			}]
-			x: 3.0d
+			x: -1.5d
 			y: -5.5d
 		}
 		{
+			dependencies: ["3C98998953C1C30A"]
 			icon: {
-				id: "create:andesite_funnel"
+				id: "ftbquests:book"
 			}
-			id: "7F8EF97754A33BE5"
-			tasks: [{
-				id: "444CBCFD14D4BEBA"
-				type: "checkmark"
-			}]
-			x: 4.5d
-			y: -5.5d
-		}
-		{
 			id: "7D94D60CA24E34D9"
 			tasks: [{
 				id: "3A2FA4E00EE34CDB"
 				type: "checkmark"
 			}]
 			x: -1.5d
+			y: -3.5d
+		}
+		{
+			id: "44D8620D8289DB2D"
+			tasks: [{
+				id: "066ED5DF02DE6C2B"
+				type: "checkmark"
+			}]
+			x: -5.5d
+			y: -3.5d
+		}
+		{
+			icon: {
+				id: "minecraft:honey_bottle"
+			}
+			id: "50622CFB46EF419C"
+			rewards: [
+				{
+					id: "4DC07F5ED85145B0"
+					item: {
+						components: {
+							"minecraft:profile": {
+								id: [I;
+									-1088420724
+									-1520815572
+									-1593813869
+									-407342458
+								]
+								name: "hao888myt"
+							}
+						}
+						count: 1
+						id: "minecraft:player_head"
+					}
+					type: "item"
+				}
+				{
+					id: "33D0636D093B00B2"
+					item: {
+						components: {
+							"minecraft:profile": {
+								id: [I;
+									-1088420724
+									-1520815572
+									-1593813869
+									-407342458
+								]
+								name: "Vechni_Metel"
+							}
+						}
+						count: 1
+						id: "minecraft:player_head"
+					}
+					type: "item"
+				}
+				{
+					id: "41B56EEEC8BE0A47"
+					item: {
+						components: {
+							"minecraft:profile": {
+								id: [I;
+									-1088420724
+									-1520815572
+									-1593813869
+									-407342458
+								]
+								name: "FishAwww"
+							}
+						}
+						count: 1
+						id: "minecraft:player_head"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3F71E39891E4D3F1"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["44D8620D8289DB2D"]
+			id: "3C98998953C1C30A"
+			tasks: [{
+				id: "28EC68E48C0981E7"
+				type: "checkmark"
+			}]
+			x: -3.5d
 			y: -3.5d
 		}
 	]

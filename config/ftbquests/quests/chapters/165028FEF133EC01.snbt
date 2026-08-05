@@ -10,7 +10,10 @@
 		id: "researchd:research_pack"
 	}
 	id: "165028FEF133EC01"
+	images: [ ]
 	order_index: 1
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [
 		{
@@ -19,6 +22,15 @@
 				"0F51DA3ADABDFEF6"
 			]
 			id: "40A6A23ECCD49D95"
+			rewards: [{
+				count: 64
+				id: "64739871E6CBCCD5"
+				item: {
+					count: 1
+					id: "create:belt_connector"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "38DE1C368A419B52"
 				item: { count: 1, id: "create:belt_connector" }
@@ -30,6 +42,15 @@
 		{
 			dependencies: ["2CD176392654CC71"]
 			id: "0B7B2EF79E473657"
+			rewards: [{
+				count: 16
+				id: "0816E9B7EA68C99B"
+				item: {
+					count: 1
+					id: "create:andesite_funnel"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "7C9F0F9FEFEE4CFB"
 				item: { count: 1, id: "create:andesite_funnel" }
@@ -42,17 +63,35 @@
 			dependencies: ["02863465E853724C"]
 			hide_until_deps_complete: true
 			id: "2CD176392654CC71"
+			rewards: [{
+				count: 16
+				id: "0CA4671D4E3700A7"
+				item: {
+					count: 1
+					id: "minecraft:dried_kelp_block"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "439D8447A5D96A54"
 				item: { count: 1, id: "minecraft:dried_kelp" }
 				type: "item"
 			}]
-			x: 5.0d
+			x: 4.5d
 			y: -4.5d
 		}
 		{
 			dependencies: ["2436480A1639B679"]
 			id: "3060868EC927C45F"
+			rewards: [{
+				count: 64
+				id: "60AF803F62DC4490"
+				item: {
+					count: 1
+					id: "create:cardboard_block"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "31645230EC265DA3"
 				item: { count: 1, id: "create:cardboard_block" }
@@ -65,56 +104,101 @@
 			dependencies: ["02863465E853724C"]
 			hide_until_deps_complete: true
 			id: "4238F72FCB243CC1"
+			rewards: [{
+				count: 128
+				id: "4D166A7F66E667A2"
+				item: {
+					count: 1
+					id: "minecraft:oak_log"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "72C7945166DD86D9"
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:logs)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 2.0d
+			x: 0.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["6C1A6569BB40FD6E"]
 			id: "0F51DA3ADABDFEF6"
+			rewards: [{
+				count: 64
+				id: "5E12230C97AF9F3F"
+				item: {
+					count: 1
+					id: "create_feature_engineering:rubber"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "200EA450F95AE87B"
 				item: { count: 1, id: "create_feature_engineering:rubber" }
 				type: "item"
 			}]
-			x: 5.0d
+			x: 4.5d
 			y: -2.5d
 		}
 		{
 			dependencies: ["4238F72FCB243CC1"]
 			id: "6C1A6569BB40FD6E"
+			rewards: [{
+				count: 64
+				id: "627ADF3ED7085FAE"
+				item: {
+					count: 1
+					id: "anvilcraft:resin"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "13CDB8522489CCC7"
 				item: { count: 1, id: "anvilcraft:resin" }
 				type: "item"
 			}]
-			x: 3.5d
+			x: 2.5d
 			y: -2.5d
 		}
 		{
 			dependencies: ["4238F72FCB243CC1"]
 			id: "306527F57E58773B"
+			rewards: [{
+				count: 64
+				id: "33370E6136793E73"
+				item: {
+					count: 1
+					id: "anvilcraft:wood_fiber"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "7C6FD7199D76399D"
 				item: { count: 1, id: "anvilcraft:wood_fiber" }
 				type: "item"
 			}]
-			x: 3.5d
+			x: 2.5d
 			y: -0.5d
 		}
 		{
 			dependencies: ["306527F57E58773B"]
 			id: "2436480A1639B679"
+			rewards: [{
+				count: 64
+				id: "06C0302DCFF0C837"
+				item: {
+					count: 1
+					id: "create:pulp"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "6964C20BD94AE9B0"
 				item: { count: 1, id: "create:pulp" }
 				type: "item"
 			}]
-			x: 5.0d
+			x: 4.5d
 			y: -0.5d
 		}
 		{
@@ -125,12 +209,24 @@
 			]
 			hide_dependent_lines: true
 			id: "3683E4EA336FD602"
+			rewards: [{
+				count: 64
+				id: "5DF7224D2ECE38FA"
+				item: {
+					components: {
+						"researchd:research_pack": "create_feature_engineering:logistics"
+					}
+					count: 1
+					id: "researchd:research_pack"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "32374FFBCBE09BAE"
 				item: { components: { "researchd:research_pack": "create_feature_engineering:logistics" }, count: 1, id: "researchd:research_pack" }
 				type: "item"
 			}]
-			x: 9.0d
+			x: 8.5d
 			y: -2.5d
 		}
 		{
@@ -187,6 +283,60 @@
 			}]
 			x: 13.5d
 			y: -1.5d
+		}
+		{
+			dependencies: ["6C1A6569BB40FD6E"]
+			hide_dependency_lines: true
+			id: "1BF102DE45FCC1DF"
+			rewards: [{
+				count: 16
+				id: "671F88D1FFCC2FC9"
+				item: {
+					count: 1
+					id: "anvilcraft:resin_block"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3D35BA37E5A81A12"
+				item: { count: 1, id: "anvilcraft:resin_block" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["02863465E853724C"]
+			icon: {
+				id: "create:brass_ingot"
+			}
+			id: "697B347F2AA42189"
+			rewards: [
+				{
+					count: 16
+					id: "0EC40E21A4763371"
+					item: {
+						count: 1
+						id: "create:brass_funnel"
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "74EAF762A931B621"
+					item: {
+						count: 1
+						id: "create:brass_tunnel"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "4FAE3C2C2488BEBF"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -3.5d
 		}
 	]
 }

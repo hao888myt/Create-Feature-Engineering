@@ -8,12 +8,24 @@
 		id: "minecraft:amethyst_shard"
 	}
 	id: "68A74C61534CE53D"
+	images: [ ]
 	order_index: 0
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["7DEFD3268CBC3704"]
 			id: "0D2BC3E40E34ED0F"
+			rewards: [{
+				count: 128
+				id: "1FCAC818585A3A91"
+				item: {
+					count: 1
+					id: "minecraft:amethyst_shard"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "648BC98C253AD673"
 				item: { count: 1, id: "minecraft:amethyst_shard" }
@@ -25,6 +37,26 @@
 		{
 			dependencies: ["0D2BC3E40E34ED0F"]
 			id: "2CA494DF6B2CC150"
+			rewards: [
+				{
+					count: 128
+					id: "001DB050C9D9B025"
+					item: {
+						count: 1
+						id: "spectrum:topaz_shard"
+					}
+					type: "item"
+				}
+				{
+					count: 128
+					id: "34791F6E5CBF6B74"
+					item: {
+						count: 1
+						id: "spectrum:citrine_shard"
+					}
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "2D15B9A7E497EAE3"
@@ -96,17 +128,6 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["59895E19A96B961D"]
-			id: "5993960E9C7A39F4"
-			tasks: [{
-				id: "092810FA177A1BA7"
-				item: { count: 1, id: "ars_nouveau:scribes_table" }
-				type: "item"
-			}]
-			x: -1.0d
-			y: -5.0d
-		}
-		{
 			dependencies: ["5C0D9EC86060936C"]
 			id: "5B7B949739EA3ED5"
 			tasks: [{
@@ -118,7 +139,7 @@
 			y: -5.0d
 		}
 		{
-			dependencies: ["5993960E9C7A39F4"]
+			dependencies: ["59895E19A96B961D"]
 			id: "3F5872DF835039F5"
 			tasks: [{
 				id: "330DBE3F1714F06F"
@@ -165,6 +186,15 @@
 			dependencies: ["5B7B949739EA3ED5"]
 			hide_dependency_lines: false
 			id: "0A607FD0C954AC89"
+			rewards: [{
+				count: 4
+				id: "74E9558DB9727053"
+				item: {
+					count: 1
+					id: "ars_nouveau:ritual_awakening"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "04DECA7D32BEF7A1"
 				item: { count: 1, id: "ars_nouveau:ritual_awakening" }
@@ -192,19 +222,28 @@
 					}
 					type: "item"
 				}
+				{
+					id: "1B641FCC0E6C2E48"
+					item: {
+						count: 1
+						id: "ars_nouveau:novice_spell_book"
+					}
+					type: "item"
+				}
 			]
 			tasks: [{
 				id: "6FCB9D0EAB22F367"
 				type: "checkmark"
 			}]
 			x: -3.0d
-			y: -3.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["7DEFD3268CBC3704"]
 			id: "59895E19A96B961D"
 			rewards: [
 				{
+					count: 4
 					id: "55397903C6C150FA"
 					item: {
 						count: 1
@@ -213,6 +252,7 @@
 					type: "item"
 				}
 				{
+					count: 4
 					id: "5343CB70F1510980"
 					item: {
 						count: 1
@@ -221,6 +261,7 @@
 					type: "item"
 				}
 				{
+					count: 4
 					id: "7FB67D0EF50D094B"
 					item: {
 						count: 1
@@ -229,6 +270,7 @@
 					type: "item"
 				}
 				{
+					count: 4
 					id: "04C27602F3E3228E"
 					item: {
 						count: 1
@@ -237,6 +279,7 @@
 					type: "item"
 				}
 				{
+					count: 4
 					id: "49AA5655317C1EB3"
 					item: {
 						count: 1
@@ -250,12 +293,41 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(c:logs/archwood)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -3.0d
+			x: -1.0d
 			y: -5.0d
 		}
 		{
 			dependencies: ["089884184087F6DA"]
 			id: "62E386A9D25C22ED"
+			rewards: [
+				{
+					count: 4
+					id: "528DFC1BCF668259"
+					item: {
+						count: 1
+						id: "minecraft:budding_amethyst"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4078C159095F7013"
+					item: {
+						count: 1
+						id: "spectrum:budding_topaz"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "764C28725B5DF6C5"
+					item: {
+						count: 1
+						id: "spectrum:budding_citrine"
+					}
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					consume_items: true
@@ -417,14 +489,34 @@
 			dependencies: ["0A607FD0C954AC89"]
 			hide_dependency_lines: true
 			id: "3784131E3E630D49"
-			rewards: [{
-				id: "1BF3A8F6A1618A95"
-				item: {
-					count: 1
-					id: "ars_nouveau:storage_lectern"
+			rewards: [
+				{
+					id: "1BF3A8F6A1618A95"
+					item: {
+						count: 1
+						id: "ars_nouveau:storage_lectern"
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					count: 16
+					id: "290D19C19C92E76C"
+					item: {
+						count: 1
+						id: "ars_nouveau:repository"
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "761C24556C9B78F3"
+					item: {
+						count: 1
+						id: "ars_nouveau:repository_controller"
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "7AB1E4CE59E19BC1"
 				item: { count: 1, id: "ars_nouveau:bookwyrm_charm" }

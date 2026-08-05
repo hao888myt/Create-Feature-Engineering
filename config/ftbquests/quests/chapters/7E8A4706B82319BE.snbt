@@ -10,7 +10,10 @@
 		id: "researchd:research_pack"
 	}
 	id: "7E8A4706B82319BE"
+	images: [ ]
 	order_index: 0
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [
 		{
@@ -19,6 +22,26 @@
 				"299938D6CEB5F7CF"
 			]
 			id: "443C49B551AA6BEC"
+			rewards: [
+				{
+					count: 64
+					id: "6860A692B0EBBFC7"
+					item: {
+						count: 1
+						id: "create:andesite_alloy"
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "12B7D8B12A0D4090"
+					item: {
+						count: 1
+						id: "create:andesite_casing"
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "673AC5A150682000"
 				item: { count: 1, id: "create:andesite_alloy" }
@@ -35,6 +58,29 @@
 			]
 			hide_dependent_lines: true
 			id: "02863465E853724C"
+			rewards: [
+				{
+					count: 16
+					id: "618086D66D3960C5"
+					item: {
+						components: {
+							"researchd:research_pack": "create_feature_engineering:conveying"
+						}
+						count: 1
+						id: "researchd:research_pack"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4EA43C5F38C2FFC1"
+					item: {
+						count: 1
+						id: "researchd:research_lab"
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "467C90DD86C6C297"
 				item: { components: { "researchd:research_pack": "create_feature_engineering:conveying" }, count: 1, id: "researchd:research_pack" }
@@ -46,6 +92,15 @@
 		{
 			dependencies: ["443C49B551AA6BEC"]
 			id: "058AD91A0A40F254"
+			rewards: [{
+				count: 64
+				id: "377B424F461B12E8"
+				item: {
+					count: 1
+					id: "create:shaft"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "5DCB83C4DB0286D8"
 				item: { count: 1, id: "create:shaft" }
@@ -57,6 +112,15 @@
 		{
 			dependencies: ["058AD91A0A40F254"]
 			id: "5C88E6731536C9D3"
+			rewards: [{
+				count: 32
+				id: "26EA804B747FDE7D"
+				item: {
+					count: 1
+					id: "create:cogwheel"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "267F83BF27848DB0"
 				item: { count: 1, id: "create:cogwheel" }
@@ -68,6 +132,15 @@
 		{
 			dependencies: ["058AD91A0A40F254"]
 			id: "2958A9A8BB1489DD"
+			rewards: [{
+				count: 32
+				id: "153042CB6125798E"
+				item: {
+					count: 1
+					id: "create:large_cogwheel"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "1BBD4EF89C27638D"
 				item: { count: 1, id: "create:large_cogwheel" }
@@ -81,6 +154,15 @@
 				id: "minecraft:iron_ingot"
 			}
 			id: "4B1EC6BB72C4DE14"
+			rewards: [{
+				count: 16
+				id: "4F7520081A75EA54"
+				item: {
+					count: 1
+					id: "minecraft:iron_block"
+				}
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "489D12A8D1A7C4BC"
@@ -98,6 +180,26 @@
 		}
 		{
 			id: "299938D6CEB5F7CF"
+			rewards: [
+				{
+					count: 256
+					id: "2FF058B228F0E4E6"
+					item: {
+						count: 1
+						id: "minecraft:andesite"
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "52FFA473FA83BC82"
+					item: {
+						count: 1
+						id: "create:mechanical_drill"
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "0B1D700991D06EAC"
 				item: { count: 1, id: "minecraft:andesite" }
@@ -127,7 +229,7 @@
 					type: "item"
 				}
 			]
-			x: 7.0d
+			x: 7.5d
 			y: 1.0d
 		}
 		{
@@ -146,7 +248,7 @@
 					type: "item"
 				}
 			]
-			x: 7.0d
+			x: 7.5d
 			y: -1.0d
 		}
 		{
@@ -157,7 +259,7 @@
 				item: { components: { "create:banktank_air": 9000 }, count: 1, id: "create_jetpack:jetpack" }
 				type: "item"
 			}]
-			x: 5.0d
+			x: 5.5d
 			y: 0.0d
 		}
 	]

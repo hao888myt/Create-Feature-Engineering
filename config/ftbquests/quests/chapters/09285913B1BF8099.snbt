@@ -10,7 +10,10 @@
 		id: "researchd:research_pack"
 	}
 	id: "09285913B1BF8099"
+	images: [ ]
 	order_index: 2
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [
 		{
@@ -136,13 +139,14 @@
 		}
 		{
 			dependencies: ["2976470F12951FF9"]
+			hide_dependent_lines: true
 			id: "384CCCD1CD28C790"
 			tasks: [{
 				id: "48A40516490125C6"
 				item: { count: 1, id: "createdieselgenerators:basin_lid" }
 				type: "item"
 			}]
-			x: 6.5d
+			x: 8.0d
 			y: 0.5d
 		}
 		{
@@ -153,7 +157,7 @@
 				item: { count: 1, id: "create:precision_mechanism" }
 				type: "item"
 			}]
-			x: 6.5d
+			x: 8.0d
 			y: 2.0d
 		}
 		{
@@ -164,7 +168,7 @@
 				item: { count: 1, id: "fluidlogistics:fluid_pump" }
 				type: "item"
 			}]
-			x: 8.0d
+			x: 6.5d
 			y: 2.0d
 		}
 		{
@@ -175,7 +179,7 @@
 				item: { count: 1, id: "create:hose_pulley" }
 				type: "item"
 			}]
-			x: 8.0d
+			x: 6.5d
 			y: 0.5d
 		}
 		{
@@ -186,7 +190,7 @@
 				item: { count: 1, id: "vintageimprovements:vacuum_chamber" }
 				type: "item"
 			}]
-			x: 6.5d
+			x: 8.0d
 			y: -1.0d
 		}
 		{
@@ -197,8 +201,20 @@
 				item: { count: 1, id: "fluidlogistics:faucet" }
 				type: "item"
 			}]
-			x: 8.0d
+			x: 6.5d
 			y: -1.0d
+		}
+		{
+			dependencies: ["384CCCD1CD28C790"]
+			hide_until_deps_visible: true
+			id: "5AA7F88075133387"
+			tasks: [{
+				id: "0556F44D782B5724"
+				item: { count: 1, id: "anvilcraft:impact_pile" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: 0.5d
 		}
 	]
 }
