@@ -43,7 +43,9 @@ ServerEvents.recipes(event => {
 
     "create_jetpack:jetpack",
 
-    "storagedrawers:controller_io"
+    "storagedrawers:controller_io",
+
+    "ars_nouveau:water_essence_to_obsidian"
   ].forEach(recipe => {
     event.remove(recipe)
   })
@@ -513,4 +515,9 @@ ServerEvents.recipes(event => {
       G: "#c:gems/source"
     }).id(pedestal[2])
   })
+
+  minecraft.crafting_shapeless(Item.of("minecraft:obsidian", 8), [
+    "ars_nouveau:water_essence",
+    "ars_nouveau:fire_essence"
+  ])
 })
