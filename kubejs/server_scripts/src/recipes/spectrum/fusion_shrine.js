@@ -138,4 +138,12 @@ ServerEvents.recipes(event => {
         "spectrum:onyx_powder"
     ]).setRequiredAdvancement("spectrum:unlocks/blocks/fusion_shrine")
     .build()
+
+    new FusionShrine(["create_feature_engineering:cyan_mixture", 4], [
+        "minecraft:lapis_lazuli",
+        "ars_nouveau:source_gem",
+        "spectrum:light_blue_pigment",
+        "spectrum:light_blue_pigment"
+    ]).setRequiredAdvancement("spectrum:midgame/collect_azurite")
+    .build()
 })
