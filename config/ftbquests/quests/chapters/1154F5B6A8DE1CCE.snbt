@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "1154F5B6A8DE1CCE"
 	group: "29E2B66FF1ED57B3"
+	hide_quest_until_deps_complete: true
 	icon: {
 		id: "spectrum:yellow_pigment"
 	}
@@ -14,6 +15,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["238E6124102FE87A"]
 			id: "3F6B0DE5864C96C9"
 			tasks: [{
 				id: "061DDE52AE1DAB48"
