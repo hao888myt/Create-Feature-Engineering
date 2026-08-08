@@ -13,4 +13,15 @@ ServerEvents.recipes(event => {
             0
         )
     })
+
+    ars_nouveau.enchanting_apparatus([
+        "create_feature_engineering:cyan_mixture",
+        "create_feature_engineering:cyan_mixture",
+        "create_feature_engineering:cyan_mixture",
+        "create_feature_engineering:cyan_mixture"
+        ],
+            "spectrum:neolith",
+            Item.of("spectrum:raw_azurite", 4),
+            2000
+        )
 })
