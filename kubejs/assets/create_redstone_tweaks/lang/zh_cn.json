@@ -1,0 +1,13 @@
+{
+    "gui.create_redstone_tweaks.title": "当前模式",
+    "gui.create_redstone_tweaks.action": "点击切换",
+    "gui.create_redstone_tweaks.desc.default": "无视红石信号。始终接受/发送包裹。",
+    "gui.create_redstone_tweaks.desc.disabled": "接收到红石信号时禁用。",
+    "gui.create_redstone_tweaks.desc.no_receive": "接收到红石信号时无法接收包裹。",
+    "gui.create_redstone_tweaks.desc.no_send": "接收到红石信号时无法发送包裹。",
+    "gui.create_redstone_tweaks.mode.default": "忽略",
+    "gui.create_redstone_tweaks.mode.disabled": "充能时禁用",
+    "gui.create_redstone_tweaks.mode.no_receive": "充能时不接收",
+    "gui.create_redstone_tweaks.mode.no_send": "充能时不发送",
+    "create_redstone_tweaks.display_source.frogport_redstone": "蛙港的红石模式"
+}
