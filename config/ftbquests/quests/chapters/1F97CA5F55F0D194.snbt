@@ -576,5 +576,17 @@
 			x: 4.0d
 			y: -1.0d
 		}
+		{
+			dependencies: ["53327EB8D9D8497F"]
+			hide_dependency_lines: true
+			id: "34933348806255ED"
+			tasks: [{
+				id: "6A2979604511BA62"
+				item: { count: 1, id: "spectrum:liquid_crystal_bucket" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -1.0d
+		}
 	]
 }
