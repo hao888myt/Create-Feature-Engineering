@@ -425,4 +425,21 @@ ServerEvents.recipes(event => {
         .addRequiredAdvancement("spectrum:unlocks/blocks/fusion_shrine")
         .setId("spectrum:pedestal/tier2/fusion_shrine_calcite")
         .build()
+
+    new Pedestal(["anvilcraft:spectral_anvil", 1], [
+        "EPE",
+        "RAR",
+        "EPE",
+    ], {
+        E: "sauce:anima_essence",
+        A: "#minecraft:anvil",
+        R: "spectrum:radiating_ender",
+        P: "spectrum:ethereal_platform"
+    }).setTime(80)
+        .setMYCB(4, 4, 4, 4)
+        .addRequiredAdvancements([
+            "spectrum:unlocks/blocks/ender_blocks",
+            "spectrum:unlocks/blocks/ethereal_platform"
+        ])
+        .build()
 })
