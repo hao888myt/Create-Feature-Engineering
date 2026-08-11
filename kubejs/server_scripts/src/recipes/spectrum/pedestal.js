@@ -425,6 +425,59 @@ ServerEvents.recipes(event => {
         .addRequiredAdvancement("spectrum:unlocks/blocks/fusion_shrine")
         .setId("spectrum:pedestal/tier2/fusion_shrine_calcite")
         .build()
+    
+    let brown_black = [
+        "black",
+        "brown"
+    ].forEach(color => {
+        event.remove(`spectrum:pedestal/tier1/saplings/${color}`)
+
+        new Pedestal([`spectrum:${color}_sapling`, 1],
+            [
+                "CEC",
+                "VSV",
+                "CEC"
+            ],
+            {
+                C: `#c:dyes/${color}`,
+                S: "#create_feature_engineering:magic_saplings",
+                V: "spectrum:vegetal",
+                E: "ars_nouveau:earth_essence"
+            }
+        ).setTime(160)
+            .setGroup("colored_saplings")
+            .setMYCB(2, 2, 2, 2)
+            .addRequiredAdvancement(`spectrum:unlocks/colored_saplings/${color}_sapling`)
+            .setId(`spectrum:pedestal/tier1/saplings/${color}`)
+            .build()
+    })
+
+    let white_gray = [
+        "white",
+        "gray",
+        "light_gray"
+    ].forEach(color => {
+        event.remove(`spectrum:pedestal/tier1/saplings/${color}`)
+
+        new Pedestal([`spectrum:${color}_sapling`, 1],
+            [
+                "CEC",
+                "VSV",
+                "CEC"
+            ],
+            {
+                C: `#c:dyes/${color}`,
+                S: "#create_feature_engineering:magic_saplings",
+                V: "spectrum:vegetal",
+                E: "ars_nouveau:earth_essence"
+            }
+        ).setTime(160)
+            .setGroup("colored_saplings")
+            .setMYCB(2, 2, 2, 2, 2)
+            .addRequiredAdvancement(`spectrum:unlocks/colored_saplings/${color}_sapling`)
+            .setId(`spectrum:pedestal/tier1/saplings/${color}`)
+            .build()
+    })
 
     new Pedestal(["anvilcraft:spectral_anvil", 1], [
         "EPE",
