@@ -177,7 +177,9 @@ ServerEvents.recipes(event => {
         "spectrum:pedestal/tier1/bottle_of_fading_essence",
 
         "spectrum:pedestal/tier2/fusion_shrine_basalt",
-        "spectrum:pedestal/tier2/fusion_shrine_calcite"
+        "spectrum:pedestal/tier2/fusion_shrine_calcite",
+
+        "spectrum:pedestal/tier3/black_hole_chest"
     ].forEach(recipe => {
         event.remove(recipe)
     })
@@ -425,7 +427,7 @@ ServerEvents.recipes(event => {
         .addRequiredAdvancement("spectrum:unlocks/blocks/fusion_shrine")
         .setId("spectrum:pedestal/tier2/fusion_shrine_calcite")
         .build()
-    
+
     let brown_black = [
         "black",
         "brown"
@@ -451,6 +453,23 @@ ServerEvents.recipes(event => {
             .setId(`spectrum:pedestal/tier1/saplings/${color}`)
             .build()
     })
+
+    new Pedestal(["spectrum:black_hole_chest", 1], [
+        "MFM",
+        "CSC",
+        "BBB",
+    ], {
+        C: "spectrum:polished_calcite",
+        S: "spectrum:stratine_gem",
+        F: "spectrum:stratine_fragments",
+        B: "spectrum:polished_basalt",
+        M: "ars_nouveau:manipulation_essence"
+    }).setTime(100)
+        .CMY()
+        .setMYCB(4, 8, 4, 2)
+        .addRequiredAdvancement("spectrum:unlocks/blocks/black_hole_chest")
+        .setId("spectrum:pedestal/tier3/black_hole_chest")
+        .build()
 
     event.custom({
         "type": "spectrum:fusion_shrine",
