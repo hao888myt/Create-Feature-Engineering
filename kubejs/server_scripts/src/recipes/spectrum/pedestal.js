@@ -409,7 +409,7 @@ ServerEvents.recipes(event => {
         .addRequiredAdvancement("spectrum:unlocks/blocks/fusion_shrine")
         .setId("spectrum:pedestal/tier2/fusion_shrine_basalt")
         .build()
-    
+
     new Pedestal(["spectrum:fusion_shrine_calcite", 1], [
         "CPC",
         "CMC",
@@ -450,6 +450,31 @@ ServerEvents.recipes(event => {
             .addRequiredAdvancement(`spectrum:unlocks/colored_saplings/${color}_sapling`)
             .setId(`spectrum:pedestal/tier1/saplings/${color}`)
             .build()
+    })
+
+    event.custom({
+        "type": "spectrum:fusion_shrine",
+        "required_advancement": "spectrum:midgame/crumble_midnight_aberration",
+        "time": 200,
+        "fluid": {
+            "fluid": "spectrum:midnight_solution"
+        },
+        "ingredients": [
+            "spectrum:midnight_aberration",
+            "spectrum:onyx_shard",
+            "spectrum:neolith",
+            "spectrum:raw_azurite",
+        ],
+        "result": {
+            "id": "spectrum:midnight_aberration",
+            "count": 16
+        },
+        "start_crafting_effect": "single_visual_explosion_on_shrine",
+        "during_crafting_effects": [
+            "nothing",
+            "maybe_place_midnight_solution"
+        ],
+        "finish_crafting_effect": "place_midnight_solution"
     })
 
     let white_gray = [
