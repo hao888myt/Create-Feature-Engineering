@@ -4,7 +4,8 @@ ServerEvents.recipes(event => {
     let removes = [
         "ars_nouveau:glyph_launch",
         "ars_nouveau:glyph_crush",
-        "ars_nouveau:wololo"
+        "ars_nouveau:wololo",
+        "ars_elemental:glyph_discharge"
     ].forEach(recipe => {
         event.remove(recipe)
     })
@@ -33,5 +34,14 @@ ServerEvents.recipes(event => {
             Ingredient.of("#c:dyes"),
             Ingredient.of("#c:dyes"),
         ], 50
+    )
+
+    ars_nouveau.glyph("ars_elemental:glyph_discharge",
+        [
+            "ars_elemental:flashpine_pod",
+            "minecraft:lightning_rod",
+            "spectrum:storm_stone",
+            "ars_nouveau:air_essence",
+        ], 55
     )
 })
