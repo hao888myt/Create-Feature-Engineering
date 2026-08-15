@@ -41,6 +41,14 @@ ServerEvents.tags("block", event => {
             event.add("storagedrawers:full_drawers", drawer)
         }
     })
+
+    let harvest = [
+        "spectrum:glistering_melon"
+    ].forEach(block => {
+        event.add("ars_nouveau:harvest/fellable", block)
+        event.add("ars_nouveau:whirlisprig/greatly_likes", block)
+    })
+
     let golem_cluster = [
         "spectrum:topaz_cluster",
         "spectrum:citrine_cluster",
