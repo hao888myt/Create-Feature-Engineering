@@ -146,4 +146,12 @@ ServerEvents.recipes(event => {
         "spectrum:light_blue_pigment"
     ]).setRequiredAdvancement("spectrum:midgame/collect_azurite")
     .build()
+
+    new FusionShrine(["anvilcraft:void_matter", 4], [
+        "spectrum:quitoxic_powder",
+        "spectrum:midnight_chip"
+    ]).setFluid("spectrum:midnight_solution")
+    .setTime(40)
+    .setRequiredAdvancement("spectrum:midgame/crumble_midnight_aberration")
+    .build()
 })
