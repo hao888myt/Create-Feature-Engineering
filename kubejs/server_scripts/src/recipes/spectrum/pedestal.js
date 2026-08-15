@@ -181,6 +181,8 @@ ServerEvents.recipes(event => {
         "spectrum:pedestal/tier2/fusion_shrine_basalt",
         "spectrum:pedestal/tier2/fusion_shrine_calcite",
 
+        "ars_nouveau:mycelial_sourcelink",
+
         "spectrum:pedestal/tier3/black_hole_chest"
     ].forEach(recipe => {
         event.remove(recipe)
@@ -473,6 +475,24 @@ ServerEvents.recipes(event => {
             .setId(`spectrum:pedestal/tier1/saplings/${color}`)
             .build()
     })
+
+    new Pedestal(["ars_nouveau:mycelial_sourcelink", 4],
+        [
+            " S ",
+            "GFG",
+            " S "
+        ],
+        {
+            S: "ars_nouveau:source_gem",
+            G: "minecraft:gold_ingot",
+            F: "spectrum:bottle_of_fading"
+        }
+    ).addRequiredAdvancements([
+        "spectrum:midgame/build_advanced_pedestal_structure",
+        "spectrum:craft_bottle_of_fading"
+    ])
+        .onyx()
+        .build()
 
     new Pedestal(["spectrum:black_hole_chest", 1], [
         "MFM",
