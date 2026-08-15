@@ -3,6 +3,13 @@ ServerEvents.tags("block", event => {
     event.add("minecraft:needs_diamond_tool", "create_feature_engineering:paltaeria_catalyst")
     event.add("minecraft:mineable/pickaxe", "create_feature_engineering:paltaeria_catalyst")
 
+    let magnetic_anvil = [
+        "anvilcraft:neoforge",
+        "anvilcraftextrapower:llama_anvil"
+    ].forEach(anvil => {
+        event.remove("anvilcraft:non_magnetic", anvil)
+    })
+
     let faucet_fillable = [
         "create:fluid_tank",
         "create:creative_fluid_tank",
