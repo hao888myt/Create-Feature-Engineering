@@ -8,6 +8,13 @@ ServerEvents.tags("item", event => {
         event.add("lychee:fire_immune", item)
     })
 
+    let fusion_shrines = [
+        "spectrum:fusion_shrine_basalt",
+        "spectrum:fusion_shrine_calcite"
+    ].forEach(fusion_shrine => {
+        event.add(`${global.ModPackId}:fusion_shrines`, fusion_shrine)
+    })
+
     //添加催化剂标签
     event.add("create_feature_engineering:catalysts", "create_feature_engineering:paltaeria_catalyst")
     event.add("create_feature_engineering:catalysts", "create_feature_engineering:stratine_catalyst")
