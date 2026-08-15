@@ -118,6 +118,22 @@ laser_ore_cluster_max_size = 64
 mineral_fountain_interval = 4
 #Combining items with Enchanted Books beyond max level in Frost Anvil
 frost_anvil_beyond_max_level = false
+#Block Devourer will not devour containers (blocks that can store items) when enabled
+block_devourer_protect_containers = false
+#Working interval of the auto enchanting table (in ticks)
+# Default: 80
+# Range: 1 ~ 1000
+auto_enchanting_table_interval = 80
+#Maximum valid bookshelves of the auto enchanting table
+# Default: 15
+# Range: 1 ~ 80
+auto_enchanting_table_max_bookshelf = 15
+#Maximum selectable level in auto enchanting table's liquid enchantment mode
+# Default: 15
+# Range: 1 ~ 15
+liquid_enchantment_max_level = 15
+#The max size of the entries in storages' recover station
+storage_recover_max_size = 20
 
 [power_converter]
 	#The working interval of power converters
