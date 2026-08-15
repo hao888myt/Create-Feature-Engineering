@@ -173,6 +173,8 @@ ServerEvents.recipes(event => {
         "ars_nouveau:enchanting_apparatus",
         "ars_nouveau:arcane_core",
 
+        "ars_nouveau:vitalic_sourcelink",
+
         "spectrum:pedestal/tier1/bottle_of_fading",
         "spectrum:pedestal/tier1/bottle_of_fading_essence",
 
@@ -313,6 +315,24 @@ ServerEvents.recipes(event => {
             "spectrum:build_basic_pedestal_structure",
             "spectrum:collect_shimmerstone"
         ])
+        .build()
+    
+    new Pedestal(["ars_nouveau:vitalic_sourcelink", 1],
+        [
+            " S ",
+            "GAG",
+            " S "
+        ],
+        {
+            S: "ars_nouveau:source_gem",
+            G: "minecraft:gold_ingot",
+            A: "sauce:anima_essence"
+        }
+    ).addRequiredAdvancements([
+        "spectrum:build_basic_pedestal_structure",
+        "ars_nouveau:imbuement_chamber"
+    ])
+        .CMY()
         .build()
 
     new Pedestal(["ars_nouveau:arcane_core", 1],
