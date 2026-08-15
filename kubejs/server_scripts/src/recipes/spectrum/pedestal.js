@@ -183,6 +183,7 @@ ServerEvents.recipes(event => {
 
         "ars_nouveau:mycelial_sourcelink",
 
+        "spectrum:pedestal/tier3/enchanter",
         "spectrum:pedestal/tier3/black_hole_chest",
         "spectrum:pedestal/tier3/spirit_instiller"
     ].forEach(recipe => {
@@ -319,7 +320,7 @@ ServerEvents.recipes(event => {
             "spectrum:collect_shimmerstone"
         ])
         .build()
-    
+
     new Pedestal(["ars_nouveau:vitalic_sourcelink", 1],
         [
             " S ",
@@ -495,6 +496,23 @@ ServerEvents.recipes(event => {
         .onyx()
         .build()
 
+    new Pedestal(["spectrum:enchanter", 1], [
+        "FLF",
+        "BAB",
+        "BCB",
+    ], {
+        C: "spectrum:polished_calcite",
+        F: "spectrum:stratine_fragments",
+        B: "spectrum:polished_basalt",
+        A: "ars_nouveau:abjuration_essence",
+        L: "minecraft:lapis_block"
+    }).setTime(100)
+        .CMY()
+        .setMYCB(0, 4, 0, 2)
+        .addRequiredAdvancement("spectrum:unlocks/blocks/enchanter")
+        .setId("spectrum:pedestal/tier3/enchanter")
+        .build()
+
     new Pedestal(["spectrum:black_hole_chest", 1], [
         "MFM",
         "CSC",
@@ -511,7 +529,7 @@ ServerEvents.recipes(event => {
         .addRequiredAdvancement("spectrum:unlocks/blocks/black_hole_chest")
         .setId("spectrum:pedestal/tier3/black_hole_chest")
         .build()
-    
+
     new Pedestal(["spectrum:spirit_instiller", 1], [
         "CEC",
         "DBD",
