@@ -367,7 +367,7 @@ ServerEvents.recipes(event => {
             S: "spectrum:shimmerstone_gem",
             P: "minecraft:blaze_powder"
         }
-    ).setTime(400)
+    ).setTime(100)
         .addRequiredAdvancement("spectrum:unlocks/items/bottle_of_fading")
         .setId("spectrum:pedestal/tier1/bottle_of_fading")
         .build()
@@ -384,7 +384,7 @@ ServerEvents.recipes(event => {
             S: "spectrum:shimmerstone_gem",
             P: "spectrum:incandescent_essence"
         }
-    ).setTime(400)
+    ).setTime(100)
         .addRequiredAdvancement("spectrum:unlocks/items/bottle_of_fading")
         .setId("spectrum:pedestal/tier1/bottle_of_fading_essence")
         .build()
