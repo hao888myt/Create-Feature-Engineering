@@ -51,4 +51,10 @@ ServerEvents.tags("block", event => {
     ].forEach(block => {
         event.add("ars_nouveau:golem/budding", block)
     })
+
+    let ruin_conversion = [
+        "anvilcraft:sturdy_deepslate"
+    ].forEach(block => {
+        event.add("spectrum:decay/ruin_conversions", block)
+    })
 })
