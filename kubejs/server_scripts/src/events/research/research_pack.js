@@ -115,6 +115,14 @@ ResearchdEvents.registerResearches(event => {
         .method(consumePack(rp.conveying, 8, 100))
         .effect(unlockRecipe("minecraft:kjs/create_jetpack_jetpack"))
         .parent("conveying")
+    
+    event.create("starbuncle_wheel")
+        .translatableName("星宝石兽跑轮")
+        .translatableDescription("奴役星宝石兽是可耻的！")
+        .icon("ars_creo:starbuncle_wheel")
+        .method(consumePack(rp.conveying, 8, 100))
+        .effect(unlockRecipe("ars_creo:starbuncle_wheel"))
+        .parent("conveying")
 
     event.create("logistics")
         .translatableName("物流研究包")
