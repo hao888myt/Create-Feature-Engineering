@@ -72,6 +72,16 @@
 		# Range: > 0
 		magma_block_to_lava_consume = 12
 
+	[ars_nouveau.starbuncle]
+		#星宝石兽拾取物品的冷却
+		# Default: 5
+		# Range: > 0
+		starbuncle_take_item_cooldown = 5
+		#星宝石兽寻找物品的冷却
+		# Default: 30
+		# Range: > 0
+		starbuncle_find_item_cooldown = 30
+
 [create]
 	#在切割配方没有写配方时间时，动力锯使用的配方时间，机械动力默认值为50
 	# Default: 75
@@ -107,9 +117,37 @@
 	# Default: 40
 	# Range: > 1
 	decay_conversion_delay = 10
+	#午夜溶液伤害间隔
+	# Default: 20
+	# Range: > 1
+	midnight_solution_hurt_interval = 20
+	#午夜溶液伤害倍率
+	# Default: 1.0
+	# Range: 0.0 ~ 3.4028234663852886E38
+	midnight_solution_damage_mult = 4.0
+
+	[spectrum.idols]
+		#魔盒冷却时间
+		# Default: 40
+		# Range: > 0
+		idol_cooldown = 10
+		#充气魔盒一次充气的史莱姆数量上限
+		# Default: 1
+		# Range: > 1
+		slime_idol_convert_num = 8
 
 [minecraft]
 	#雪傀儡投掷雪球的偏移系数
 	# Default: 12.0
 	# Range: 0.0 ~ 3.4028234663852886E38
 	snow_golem_inaccuracy = 0.0
+
+[starbunclemania]
+	#流体魔源通道的最大魔源存储量
+	# Default: 5000
+	# Range: > 1
+	fluid_sourcelink_max_source = 20000
+	#流体魔源通道的传输速率
+	# Default: 2000
+	# Range: > 1
+	fluid_sourcelink_transfer_rate = 10000
