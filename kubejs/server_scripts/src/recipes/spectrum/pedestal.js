@@ -183,7 +183,8 @@ ServerEvents.recipes(event => {
 
         "ars_nouveau:mycelial_sourcelink",
 
-        "spectrum:pedestal/tier3/black_hole_chest"
+        "spectrum:pedestal/tier3/black_hole_chest",
+        "spectrum:pedestal/tier3/spirit_instiller"
     ].forEach(recipe => {
         event.remove(recipe)
     })
@@ -509,6 +510,23 @@ ServerEvents.recipes(event => {
         .setMYCB(4, 8, 4, 2)
         .addRequiredAdvancement("spectrum:unlocks/blocks/black_hole_chest")
         .setId("spectrum:pedestal/tier3/black_hole_chest")
+        .build()
+    
+    new Pedestal(["spectrum:spirit_instiller", 1], [
+        "CEC",
+        "DBD",
+        "ACA",
+    ], {
+        C: "spectrum:polished_calcite",
+        D: "ars_nouveau:conjuration_essence",
+        E: "sauce:anima_essence",
+        B: "spectrum:polished_basalt",
+        A: "spectrum:raw_azurite"
+    }).setTime(100)
+        .CMY()
+        .setMYCB(0, 0, 0, 2)
+        .addRequiredAdvancement("spectrum:unlocks/blocks/spirit_instiller")
+        .setId("spectrum:pedestal/tier3/spirit_instiller")
         .build()
 
     event.custom({
