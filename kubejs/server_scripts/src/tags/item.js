@@ -1,7 +1,12 @@
 // priority: 1000
 ServerEvents.tags("item", event => {
-    event.add("lychee:fire_immune", "spectrum:bedrock_dust")
-    event.add("lychee:fire_immune", "spectrum:shimmerstone_gem")
+    let fire_immune = [
+        "spectrum:bedrock_dust",
+        "spectrum:shimmerstone_gem",
+        "minecraft:slime_ball"
+    ].forEach(item => {
+        event.add("lychee:fire_immune", item)
+    })
 
     //添加催化剂标签
     event.add("create_feature_engineering:catalysts", "create_feature_engineering:paltaeria_catalyst")
