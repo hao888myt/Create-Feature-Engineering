@@ -2,19 +2,19 @@
 		#紫水晶傀儡的收集时间
 		# Default: 80
 		# Range: > 0
-		deposit_using_time = 10
+		deposit_using_time = 5
 		#紫水晶傀儡的扫描冷却
 		# Default: 3600
 		# Range: > 0
-		scan_cooldown = 10
+		scan_cooldown = 5
 		#紫水晶傀儡的收获冷却
 		# Default: 1200
 		# Range: > 0
-		harvest_cooldown = 20
+		harvest_cooldown = 50
 		#紫水晶傀儡的收获持续时间
 		# Default: 130
 		# Range: > 0
-		harvest_using_time = 10
+		harvest_using_time = 50
 		#紫水晶傀儡的收获间隔
 		# Default: 40
 		# Range: > 1
@@ -22,7 +22,7 @@
 		#紫水晶傀儡的拾取冷却
 		# Default: 60
 		# Range: > 0
-		pickup_cooldown = 10
+		pickup_cooldown = 50
 		#紫水晶傀儡的拾取时间
 		# Default: 80
 		# Range: > 0
@@ -42,7 +42,7 @@
 		#紫水晶傀儡的催生时间
 		# Default: 120
 		# Range: > 0
-		grow_using_time = 5
+		grow_using_time = 0
 		#紫水晶傀儡每次催生的最大母岩数量
 		# Default: 4
 		# Range: > 1
@@ -57,6 +57,18 @@
 		# Default: 210
 		# Range: > 1
 		enchanting_apparatus_crafting_length = 100
+		#飞行物品的归一化时间
+		# Default: 80.0
+		# Range: 0.0 ~ 1.7976931348623157E308
+		flying_item_normalize_time = 10.0
+		#注魔台取源时粒子生成概率分母
+		# Default: 3
+		# Range: > 1
+		imbuement_rand_bound_draining = 18
+		#注魔台空闲时粒子生成概率分母
+		# Default: 6
+		# Range: > 1
+		imbuement_rand_bound_idle = 36
 
 	[ars_nouveau.volcanic_sourcelink]
 		#火之精华产生的魔源
@@ -80,7 +92,23 @@
 		#星宝石兽寻找物品的冷却
 		# Default: 30
 		# Range: > 0
-		starbuncle_find_item_cooldown = 30
+		starbuncle_find_item_cooldown = 10
+
+	[ars_nouveau.source_jar]
+		#魔源罐存储的魔源上限
+		# Default: 10000
+		# Range: > 0
+		source_jar_max_source = 100000
+
+	[ars_nouveau.relay]
+		#魔源中转器存储和运输的魔源上限
+		# Default: 1000
+		# Range: > 0
+		relay_max_source = 10000
+		#魔源中转器：分流型存储和运输的魔源上限
+		# Default: 2500
+		# Range: > 0
+		relay_splitter_max_source = 25000
 
 [create]
 	#在切割配方没有写配方时间时，动力锯使用的配方时间，机械动力默认值为50
