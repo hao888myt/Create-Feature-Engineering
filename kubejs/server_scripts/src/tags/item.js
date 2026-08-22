@@ -15,6 +15,10 @@ ServerEvents.tags("item", event => {
         event.add(`${global.ModPackId}:fusion_shrines`, fusion_shrine)
     })
 
+    global.SuperHeating.forEach(item => {
+        event.add("anvilcraft:super_heating_boost_production", item)
+    })
+
     //添加催化剂标签
     event.add("create_feature_engineering:catalysts", "create_feature_engineering:paltaeria_catalyst")
     event.add("create_feature_engineering:catalysts", "create_feature_engineering:stratine_catalyst")
@@ -41,10 +45,10 @@ ServerEvents.tags("item", event => {
     event.add("create_feature_engineering:sap", "anvilcraft:resin")
 
     let crystal_blocks = [
-        "minecraft:amethyst_block", 
-        "spectrum:citrine_block", 
-        "spectrum:topaz_block", 
-        "spectrum:onyx_block", 
+        "minecraft:amethyst_block",
+        "spectrum:citrine_block",
+        "spectrum:topaz_block",
+        "spectrum:onyx_block",
         "spectrum:moonstone_block"
     ].forEach(crystal_block => {
         event.add("create_feature_engineering:crystal_blocks", crystal_block)
