@@ -131,7 +131,7 @@ ServerEvents.recipes(event => {
         }
     }
 
-    new FusionShrine(["spectrum:onyx_shard", 2], [
+    new FusionShrine(["spectrum:onyx_shard", 4], [
         "spectrum:topaz_shard",
         "minecraft:amethyst_shard",
         "spectrum:citrine_shard",
