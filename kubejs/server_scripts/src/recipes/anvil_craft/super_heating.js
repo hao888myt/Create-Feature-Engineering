@@ -9,4 +9,25 @@ ServerEvents.recipes(event => {
     ].forEach(recipe => {
         event.remove(recipe)
     })
+
+    global.SuperHeating.forEach(items => {
+        event.custom({
+            "type": "anvilcraft:super_heating",
+            "ingredients": [
+                {
+                    "count": 8,
+                    "items": items[0]
+                },
+                {
+                    "items": "anvilcraft:earth_core_shard"
+                },
+            ],
+            "results": [
+                {
+                    "count": 24,
+                    "id": items[1]
+                }
+            ]
+        })
+    })
 })

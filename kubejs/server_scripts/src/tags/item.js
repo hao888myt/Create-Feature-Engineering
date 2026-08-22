@@ -16,7 +16,7 @@ ServerEvents.tags("item", event => {
     })
 
     global.SuperHeating.forEach(item => {
-        event.add("anvilcraft:super_heating_boost_production", item)
+        event.add("anvilcraft:super_heating_boost_production", item[0])
     })
 
     //添加催化剂标签
