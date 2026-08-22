@@ -160,6 +160,8 @@ ServerEvents.recipes(event => {
     }
 
     let removes = [
+        "ars_nouveau:sourcestone",
+
         "ars_nouveau:imbuement_chamber",
         "ars_nouveau:source_jar",
 
@@ -189,6 +191,19 @@ ServerEvents.recipes(event => {
     ].forEach(recipe => {
         event.remove(recipe)
     })
+
+    new Pedestal(["ars_nouveau:sourcestone", 8],
+        [
+            "SSS",
+            "SGS",
+            "SSS"
+        ],
+        {
+            S: "#c:stones",
+            G: "ars_nouveau:source_gem"
+        }
+    ).addRequiredAdvancement("spectrum:place_pedestal")
+        .build()
 
     new Pedestal(["ars_nouveau:source_jar", 1],
         [
@@ -593,7 +608,7 @@ ServerEvents.recipes(event => {
             }
         ).setTime(160)
             .setGroup("colored_saplings")
-            .setMYCB(2, 2, 2, 2, 2)
+            .setMYCBW(2, 2, 2, 2, 2, 2)
             .addRequiredAdvancement(`spectrum:unlocks/colored_saplings/${color}_sapling`)
             .setId(`spectrum:pedestal/tier1/saplings/${color}`)
             .build()
