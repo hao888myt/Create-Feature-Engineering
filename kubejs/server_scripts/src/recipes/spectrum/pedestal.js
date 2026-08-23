@@ -172,6 +172,7 @@ ServerEvents.recipes(event => {
         "ars_nouveau:ritual_brazier",
 
         "ars_nouveau:basic_spell_turret",
+        "ars_nouveau:spell_sensor",
         "ars_nouveau:enchanting_apparatus",
         "ars_nouveau:arcane_core",
 
@@ -312,6 +313,21 @@ ServerEvents.recipes(event => {
     ).setTime(50)
         .CMY()
         .setMYC(1, 1, 1)
+        .addRequiredAdvancement("spectrum:build_basic_pedestal_structure")
+        .build()
+    
+    new Pedestal(["ars_nouveau:spell_sensor", 4],
+        [
+            " G ",
+            "GOG",
+            " G "
+        ],
+        {
+            O: "minecraft:observer",
+            G: "ars_nouveau:source_gem"
+        }
+    ).setTime(40)
+        .CMY()
         .addRequiredAdvancement("spectrum:build_basic_pedestal_structure")
         .build()
 
