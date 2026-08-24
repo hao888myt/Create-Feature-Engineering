@@ -497,6 +497,35 @@ ServerEvents.recipes(event => {
     C: "#c:chests/wooden"
   })
 
+  let crystal_blocks = [
+    "citrine",
+    "onyx",
+    "topaz",
+    "moonstone"
+  ].forEach(crystal => {
+    minecraft.crafting_shaped(`spectrum:${crystal}_block`,
+      [
+        "CC",
+        "CC"
+      ],
+      {
+        C: `spectrum:${crystal}_shard`
+      }
+    )
+
+    minecraft.crafting_shapeless(Item.of(`spectrum:${crystal}_shard`, 4), [
+      `spectrum:${crystal}_block`
+    ])
+  })
+
+  minecraft.crafting_shapeless(Item.of("minecraft:amethyst_shard", 4), [
+    "minecraft:amethyst_block"
+  ])
+
+  minecraft.crafting_shapeless(Item.of("minecraft:quartz", 4), [
+    "minecraft:quartz_block"
+  ])
+
   // 七彩基座
   let pedestals = [
     ["minecraft:amethyst_shard", "spectrum:pedestal_basic_amethyst", "spectrum:crafting_table/pedestal_basic_amethyst"],
