@@ -78,4 +78,27 @@ ServerEvents.tags("item", event => {
     ].forEach(shard => {
         event.add(`${global.ModPackId}:magic_saplings`, shard)
     })
+
+    let skip_block_interaction = [
+        "create_fantasizing:copper_fluid_barrel",
+        "create_fantasizing:zinc_fluid_barrel",
+        "create_fantasizing:gold_fluid_barrel",
+        "create_fantasizing:diamond_fluid_barrel",
+        "create_fantasizing:andesite_crate",
+        "create_fantasizing:iron_crate",
+        "create_fantasizing:brass_crate",
+        "create_fantasizing:sturdy_crate",
+        
+        "ars_nouveau:arcane_pedestal",
+        "ars_nouveau:arcane_platform",
+        "ars_nouveau:dominion_wand"
+    ].forEach(item => {
+        event.add(`${global.ModPackId}:skip_block_interaction`, item)
+    })
+
+    let skip_block_interaction_all = [
+        "create_fantasizing:block_placer"
+    ].forEach(item => {
+        event.add(`${global.ModPackId}:skip_block_interaction_all`, item)
+    })
 })
