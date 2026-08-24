@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
     global.SpectrumColors.forEach(color => {
         ars_nouveau.enchanting_apparatus([
             `spectrum:${color}_pigment`,
-            `spectrum:${color}_pigment`,
+            "spectrum:vegetal",
             "spectrum:vegetal",
             "ars_nouveau:earth_essence"
         ],
