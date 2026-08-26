@@ -1,7 +1,7 @@
 [
   {
     "matchItems": [
-      "#c:plates/lead"
+      "vintageimprovements:lead_sheet"
     ],
     "resultItems": "anvilcraft:lead_pressure_plate"
   }

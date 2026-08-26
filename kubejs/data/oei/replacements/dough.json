@@ -1,7 +1,8 @@
 [
   {
     "matchItems": [
-      "#c:foods/dough"
+      "anvilcraft:dough",
+      "farmersdelight:wheat_dough"
     ],
     "resultItems": "create:dough"
   }

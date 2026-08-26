@@ -1,37 +1,39 @@
 [
   {
     "matchItems": [
-      "#c:ingots/zinc"
+      "anvilcraft:zinc_ingot"
     ],
     "resultItems": "create:zinc_ingot"
   },
   {
     "matchItems": [
-      "#c:nuggets/zinc"
+      "anvilcraft:zinc_nugget"
     ],
     "resultItems": "create:zinc_nugget"
   },
   {
     "matchItems": [
-      "#c:plates/zinc"
+      "vintageimprovements:zinc_sheet",
+      "createaddition:zinc_sheet",
+      "create_biotech:zinc_sheet"
     ],
     "resultItems": "anvilcraft:zinc_pressure_plate"
   },
   {
     "matchItems": [
-      "#c:raw_materials/zinc"
+      "anvilcraft:raw_zinc"
     ],
     "resultItems": "create:raw_zinc"
   },
   {
     "matchItems": [
-      "#c:storage_blocks/raw_zinc"
+      "anvilcraft:raw_zinc_block"
     ],
     "resultItems": "create:raw_zinc_block"
   },
   {
     "matchItems": [
-      "#c:storage_blocks/zinc"
+      "anvilcraft:zinc_block"
     ],
     "resultItems": "create:zinc_block"
   },

@@ -1,7 +1,7 @@
 [
   {
     "matchItems": [
-      "#c:plates/uranium"
+      "vintageimprovements:uranium_sheet"
     ],
     "resultItems": "anvilcraft:uranium_pressure_plate"
   }

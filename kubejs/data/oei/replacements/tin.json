@@ -1,7 +1,7 @@
 [
   {
     "matchItems": [
-      "#c:plates/tin"
+      "vintageimprovements:tin_sheet"
     ],
     "resultItems": "anvilcraft:tin_pressure_plate"
   }

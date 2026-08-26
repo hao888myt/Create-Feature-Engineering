@@ -1,8 +1,14 @@
 [
   {
     "matchItems": [
-      "#c:sulfur"
+      "vintageimprovements:sulfur"
     ],
     "resultItems": "anvilcraftextrapower:sulfur"
+  },
+  {
+    "matchItems": [
+      "vintageimprovements:sulfur_block"
+    ],
+    "resultItems": "anvilcraftextrapower:sulfur_block"
   }
 ]

@@ -1,7 +1,7 @@
 [
   {
     "matchItems": [
-      "#c:flour/wheat"
+      "anvilcraft:flour"
     ],
     "resultItems": "create:wheat_flour"
   }

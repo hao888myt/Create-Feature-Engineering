@@ -1,7 +1,7 @@
 [
   {
     "matchItems": [
-      "#c:nuggets/copper"
+      "create:copper_nugget"
     ],
     "resultItems": "create:copper_nugget"
   },

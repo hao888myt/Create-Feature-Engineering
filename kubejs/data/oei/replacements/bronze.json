@@ -1,7 +1,7 @@
 [
   {
     "matchItems": [
-      "#c:plates/bronze"
+      "vintageimprovements:bronze_sheet"
     ],
     "resultItems": "anvilcraft:bronze_pressure_plate"
   }
