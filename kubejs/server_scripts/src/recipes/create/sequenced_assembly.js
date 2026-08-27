@@ -12,6 +12,7 @@ ServerEvents.recipes(event => {
 		"createdieselgenerators:crafting/pumpjack_head",
 		"createdieselgenerators:crafting/pumpjack_hole",
 		"create:sequenced_assembly/precision_mechanism",
+		"anvilcraft:redstone_wire",
 		"create:crafting/kinetics/mechanical_crafter",
 
 		"create:crafting/kinetics/mechanical_arm",
@@ -56,6 +57,15 @@ ServerEvents.recipes(event => {
 		create.deploying(transitional_item, [transitional_item, "create:fluid_tank"]),
 		create.deploying(transitional_item, [transitional_item, "create:copper_casing"]),
 		create.deploying(transitional_item, [transitional_item, "create:fluid_tank"]),
+	]).transitionalItem(transitional_item)
+
+	// 红石导线
+	transitional_item = "anvilcraft:brass_pressure_plate"
+	create.sequenced_assembly(Item.of("anvilcraft:redstone_wire", 16),
+		Ingredient.of("#c:plates/brass"), [
+		create.deploying(transitional_item, [transitional_item, "create:electron_tube"]),
+		create.deploying(transitional_item, [transitional_item, "minecraft:redstone"]),
+		create.deploying(transitional_item, [transitional_item, "minecraft:redstone"]),
 	]).transitionalItem(transitional_item)
 
 	// 精密构件
