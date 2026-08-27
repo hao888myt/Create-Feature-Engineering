@@ -103,7 +103,6 @@ CustomSkinLoader/CustomSkinLoader.json
 
 config/create-server.toml
 config/anvilcraft-server.toml
-config/trading_floor-server.toml
 config/tweakeroo.json
 config/better-advanced-tooltips-client.toml
 config/beyonddimensions-server.toml

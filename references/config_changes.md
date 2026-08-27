@@ -9,8 +9,6 @@
 8. 黄铜隧道的分流模式变为3gt一次
 # 铁砧工艺
 1. 门格海绵受到更新后会清除流体
-# Create Trading Floor
-1. 交易置物台一个交易周期内可以交易的次数从4提升到256次
 # Tweakrage
 1. 禁用了客户端旋转放置
 # Better Advanced Tooltips
