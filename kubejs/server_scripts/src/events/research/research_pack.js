@@ -177,7 +177,7 @@ ResearchdEvents.registerResearches(event => {
             [rp.conveying, 8, 100],
             [rp.logistics, 8, 100]
         ]))
-        .effect(unlockRecipe("anvilcraft_pigsplus:block_breaker"))
+        .effect(unlockRecipe("minecraft:kjs/anvilcraft_pigsplus_block_breaker"))
         .parent("logistics")
 
     event.create("port_packger")
