@@ -97,7 +97,9 @@ ServerEvents.tags("item", event => {
     })
 
     let skip_block_interaction_all = [
-        "create_fantasizing:block_placer"
+        "create_fantasizing:block_placer",
+
+        "create_biotech:butter_cat_engine"
     ].forEach(item => {
         event.add(`${global.ModPackId}:skip_block_interaction_all`, item)
     })
