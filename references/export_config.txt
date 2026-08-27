@@ -123,6 +123,7 @@ config/ftbquests/
 config/parkour-server.toml
 config/creatorhotbar-client.json
 config/tooltips_reforged.json
+config/create_cyber_goggles.toml
 
 # 排除的文件
 !*.log

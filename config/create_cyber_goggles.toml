@@ -1,0 +1,396 @@
+# 护目镜
+[goggles]
+# 游戏模式
+[goggles.gameMode]
+	#  启用护目镜
+	#  护目镜主开关
+	enableGoggles = true
+	#  生存模式启用
+	#  在生存模式下始终启用护目镜
+	enableInSurvival = true
+	#  创造模式启用
+	#  在创造模式下始终启用护目镜
+	enableInCreative = true
+	#  旁观模式启用
+	#  在旁观模式下始终启用护目镜
+	enableInSpectator = true
+	#  冒险模式启用
+	#  在冒险模式下始终启用护目镜
+	enableInAdventure = true
+	#  高级信息显示
+	#  让护目镜显示更多信息
+	enhancedInfo = true
+	#  隐藏静态旋转信息
+	#  在护目镜中隐藏静态方块的旋转信息
+	hideStaticKineticInfo = false
+	#  仅在护目镜启用时启用
+	#  使大多数附加显示功能都会受到护目镜限制
+	#  此选项会受到启用护目镜功能影响
+	onlyOnWithGoggles = false
+	#  更好的商店信息
+	#  优化桌布商店信息显示以及操作逻辑
+	betterStoreInfo = true
+	#  更好的工厂仪表
+	#  始终允许任何方式的连接和移动工厂仪表
+	betterFactoryGauge = true
+	#  渲染旋转粒子
+	#  渲染目标方块的旋转粒子效果
+	enableKineticEffect = true
+	#  禁用界面内护目镜
+	#  任意界面出现时禁用护目镜显示
+	disableInScreenGoggles = true
+	#  允许值框出现时渲染
+	#  出现值框时允许渲染护目镜工具提示
+	canRenderOnValueBox = false
+	#  去重工具提示行
+	#  移除护目镜工具提示中相邻的重复或近似重复行
+	dedupTooltipLines = true
+	#  启用淡出
+	#  启用物品信息叠加层和护目镜叠加层的平滑淡出
+	enableFadeOut = true
+	#  精确数值
+	#  显示更加精确的数值信息
+	preciseNumber = true
+	#  最大分数位数
+	#  精确数值所使用的最大分数位数
+	maxFractionDigits = 2
+# 工具提示
+[tooltip]
+	#  额外物品工具提示
+	#  在物品工具提示中显示额外信息
+	extraItemTooltip = true
+	#  容器
+	#  显示容器内容
+	container = true
+	#  流体容器
+	#  显示流体容器内容
+	fluidContainer = true
+	#  剪贴板
+	#  启用第一人称与工具提示叠加层中的剪贴板自定义渲染
+	clipboard = true
+	#  地图
+	#  显示地图的额外工具提示信息
+	map = true
+	#  工具箱
+	#  显示工具箱内容
+	toolbox = true
+	#  末影箱
+	#  显示末影箱内容
+	enderChest = true
+	#  护目镜
+	#  显示护目镜的额外工具提示信息
+	goggles = true
+	#  背罐
+	#  显示背罐的额外工具提示信息
+	backtank = true
+	#  潜水靴
+	#  显示潜水靴的额外工具提示信息
+	divingBoots = true
+	#  扳手
+	#  显示扳手的额外工具提示信息
+	wrench = true
+	#  控制器
+	#  显示控制器的频率槽位
+	linkedController = true
+	#  列表过滤器
+	#  显示列表过滤器内容
+	listFilter = true
+	#  属性过滤器
+	#  显示属性过滤器详情
+	attributeFilter = true
+	#  包裹物品
+	#  显示包裹物品内容
+	packageItem = true
+	#  包裹实体
+	#  显示包裹实体内容
+	packageEntity = true
+	#  置物板
+	#  显示置物板内容
+	placard = true
+	#  物品实体
+	#  显示携带物品信息
+	itemEntity = true
+	#  机械手
+	#  显示机械手溢出物品
+	deployer = true
+	#  置物台
+	#  显示置物台内容
+	depot = true
+	#  桌面/桌布
+	#  显示桌面/桌布内容
+	tableCloth = true
+	#  红石请求器
+	#  显示红石请求器内容
+	redstoneRequester = true
+	#  粉碎控制器
+	#  显示粉碎控制器产出与进度
+	crushingController = true
+	#  石磨
+	#  显示石磨的额外工具提示信息
+	millstone = true
+# 叠加层
+[overlay]
+	#  渲染物品信息叠加层
+	#  允许渲染方块上的物品信息叠加层
+	renderItemOverlay = true
+	#  叠加层垂直偏移
+	#  物品信息叠加层的垂直偏移量
+	#  正数向下，负数向上
+	overlayPos = { x = 0, y = 0 }
+	#  提示框类型
+	#  选择提示框的显示类型
+	tooltipFlagType = "Default"
+	#  提示框主题
+	#  选择提示框的主题样式
+	tooltipTheme = "Default"
+	#  使用自定义颜色
+	#  启用物品信息叠加层的自定义颜色
+	useCustomColor = false
+	#  背景颜色
+	#  自定义的背景颜色
+	backgroundColor = 0x00000000
+	#  边框顶部颜色
+	#  自定义的边框顶部颜色
+	borderTopColor = 0x00000000
+	#  边框底部颜色
+	#  自定义的边框底部颜色
+	borderBottomColor = 0x00000000
+# 图解视图
+[overlay.draftingView]
+	#  启用图解视图
+	#  对整个画面应用图解风格的后处理效果
+	draftingViewEnabled = false
+	#  调色板偏移
+	#  调色板纹理的水平查找偏移（0..1）
+	paletteOffset = 0.25
+	#  像素化
+	#  将画面粗化以获得图解效果
+	pixelate = true
+	#  像素缩放
+	#  每个虚拟像素覆盖的屏幕像素数（1=关闭，4=默认，越大越粗）
+	pixelScale = 4.0
+	#  线条颜色
+	#  边缘轮廓颜色
+	lineColor = 0x2E3032
+	#  阴影线条颜色
+	#  深度提示轮廓的阴影面颜色
+	lineShadowColor = 0x696965
+# 边框渲染
+[outliner]
+	#  渲染模拟盒
+	#  渲染各种方块显示的模拟盒
+	renderAnalogBox = true
+	#  更好的连接线
+	#  优化部分渲染连接线
+	betterLine = true
+	#  延时渲染时长
+	#  模拟盒继续渲染的时长 [Ticks]
+	delayRenderDuration = 60
+	#  向外颜色
+	#  模拟盒向外时显示的颜色
+	outColor = 0xDDC166
+	#  向内颜色
+	#  模拟盒向内时显示的颜色
+	inColor = 0x7FCDE0
+	#  彩虹调试
+	#  启用彩虹调试模式
+	rainbowDebug = false
+# 航空学
+[aeronautics]
+	#  始终显示质量
+	#  显示任何方块的质量
+	alwaysShowMass = true
+	#  始终显示摩擦力
+	#  显示任何方块的摩擦力
+	alwaysShowFriction = false
+	#  解限把手范围
+	#  解除铁把手的范围限制
+	liftLimitOfHandleRange = false
+	#  自定义把手移动物理结构键
+	#  启用自定义把手移动物理结构键
+	customHandleMoveSublevelKey = false
+	#  始终允许悬挂绳索
+	#  无需扳手即可悬挂在绳索上
+	alwaysAllowRidingRope = false
+	#  启用物理法杖
+	#  在任何游戏模式中都启用物理法杖
+	enablePhysicsStaff = false
+# 力覆盖层
+[aeronautics.forceOverlay]
+	#  启用受力覆盖层
+	#  在目标物理结构上渲染世界内力的箭头和质心标记
+	enableForceOverlay = true
+	#  启用HUD面板
+	#  显示包含质量和力大小的HUD面板
+	hudPanelEnabled = true
+	#  覆盖层位置
+	#  HUD提示框位置偏移
+	forceOverlayPos = { x = 0, y = 0 }
+	#  使用世界标签
+	#  在世界中每个力箭头旁渲染悬浮的文字标签
+	useWorldLabels = true
+	#  世界标签缩放
+	#  世界内力标签的缩放比例（1.0 = 默认大小）
+	worldLabelScale = 1.0
+	#  聚类角度阈值
+	#  受力方向聚类的角度方差阈值（弧度）
+	clusterAngleRadians = 0.1
+	#  平滑因子
+	#  指数移动平均平滑因子（0=无变化, 1=即时）
+	smoothingFactor = 0.5
+	#  重力箭头比例
+	#  重力箭头长度占包围盒高度的比例
+	gravityArrowFraction = 0.5
+	#  箭头饱和度
+	#  控制大力映射到箭头长度的方式（值越大箭头相对重力越短）
+	arrowSaturation = 3.0
+	#  最小箭头长度
+	#  以方块为单位的最小箭头长度
+	minArrowLength = 0.1
+	#  目标搜索范围
+	#  用于目标物理结构的最大射线追踪距离（以区块为单位）
+	targetingChunks = 4
+	#  心跳间隔
+	#  向服务器请求力数据的游戏刻间隔
+	heartbeatIntervalTicks = 10
+	#  最小覆盖层像素大小
+	#  覆盖层元素的最小显示大小（像素，0=使用基于相机距离的大小）
+	minOverlayPixelSize = 0.0
+	#  显示质心
+	#  渲染质心的方块标记
+	showCenterOfMass = true
+	#  显示重力
+	#  渲染重力箭头
+	showGravity = true
+	#  显示阻力
+	#  渲染阻力箭头
+	showDrag = true
+	#  显示悬浮力
+	#  渲染悬浮力箭头
+	showLevitation = true
+	#  显示气球升力
+	#  渲染气球升力箭头
+	showBalloonLift = true
+	#  显示推进力
+	#  渲染推进力箭头
+	showPropulsion = true
+	#  显示升力
+	#  渲染升力箭头
+	showLift = true
+	#  显示磁力
+	#  渲染磁力箭头
+	showMagneticForce = true
+# 杂项
+[misc]
+# 锁链传动轮
+[misc.chainConveyor]
+	#  始终允许悬挂锁链
+	#  无需扳手即可悬挂在锁链传动轮上
+	alwaysAllowRidingChain = false
+	#  阻止自动分离
+	#  阻止在锁链传动轮上因为障碍物而自动分离
+	preventFalling = true
+	#  增强型连接
+	#  移除锁链传动轮的最小距离和最大倾角限制
+	enhancedConnection = true
+	#  自动打包自己
+	#  挂上锁链时自动变成纸箱
+	cardBoardedYourself = false
+# 扳手
+[misc.wrench]
+	#  更好的齿轮箱
+	#  空手时允许右键切换齿轮箱的开关状态
+	betterEncasedCogwheel = true
+	#  更好的管道箱
+	#  空手时允许右键切换管道箱的开关状态
+	betterEncasedPipe = false
+	#  更好的底盘
+	#  空手时允许右键切换底盘的胶粘状态
+	betterChassis = true
+	#  始终显示滚动值
+	#  始终在方块上显示滚动值
+	alwaysShowScrollValue = true
+	#  左键快速拆除
+	#  使用左键单击立即拆除组件
+	leftClickFastDismantle = true
+	#  移除冷却
+	#  移除方块旋转菜单的冷却时间
+	removeCooldown = true
+	#  始终允许旋转方块
+	#  无需扳手即可通过快捷键旋转方块
+	alwaysAllowRotating = false
+	#  增强的旋转菜单
+	#  允许方块旋转菜单修改更多方块属性
+	enchancedRotationMenu = false
+# 机械动力堆叠数字
+[misc.createStackCount]
+	#  启用机械动力风格堆叠数字
+	#  将物品堆叠数字替换为机械动力风格的字体
+	enableCreateStyleStackCount = true
+	#  数字描边颜色
+	#  机械动力风格堆叠数字的描边颜色
+	countOutlineColor = 0xFF383838
+# JEI
+[misc.jei]
+	#  允许大型动力合成
+	#  允许工厂仪表和仓储请求中使用大于 3×3 的动力合成配方（如 5×5）
+	#  §c警告：将此类包裹输入理包机可能导致吞物品
+	allowLargeCrafting = true
+	#  优化配方处理速度
+	#  优化仓储请求中配方转移的处理速度
+	optimizeRecipeProcessing = true
+	#  红石请求器 JEI 请求
+	#  在红石请求器界面显示 JEI 配方转移按钮，按网络库存填入原料
+	redstoneRequesterJEIRequest = true
+	#  显示废料内容
+	#  显示序列组装中随机废料的具体内容
+	showScrapContent = true
+	#  快捷请求操作
+	#  启用仓储请求和红石请求器界面的快捷操作
+	quickRequestActions = true
+	#  红石请求器多物品请求
+	#  允许红石请求器请求超过 9 种物品
+	#  §c警告：此功能与大多数模组不兼容，一旦设置超过 9 种物品将导致未启用该功能无法打开红石请求器
+	redstoneRequesterLargeRequest = false
+	#  移除请求限制
+	#  移除工厂仪表和红石请求器的请求数量限制并优化快速滚动
+	removeRequestLimit = true
+	#  移除动力臂限制
+	#  移除动力臂的距离限制
+	removeMechanicalArmLimit = false
+	#  无限编辑框长度
+	#  解除大部分编辑框的长度限制
+	infEditBoxLength = false
+	#  移除纸板套视线遮挡
+	#  移除纸板套在潜行时的视线遮挡
+	removeCardboardOverlay = true
+	#  移除第一人称背罐渲染
+	#  移除下界合金背罐的第一人称渲染效果
+	removeNetheriteFirstPerson = false
+	#  防止选区丢弃
+	#  防止在切换物品时丢弃选区
+	preventSelectionDiscard = true
+	#  阻止自动关闭过滤器
+	#  阻止过滤器界面自动关闭
+	preventAutoCloseFilter = false
+	#  允许潜水靴
+	#  潜水靴的功能，禁用以使它们像普通的靴子一样
+	allowDivingBoot = true
+	#  递归扫描蓝图
+	#  刷新蓝图列表时包含子文件夹中的蓝图
+	recursiveSchematicScan = true
+	#  修复蓝图名称
+	#  保存蓝图时可以使用非 ASCII 字符
+	fixSchematicName = true
+	#  移除列车伤害
+	#  阻止列车碰撞对玩家造成伤害
+	removeTrainDamage = false
+	#  启用负无穷油门
+	#  允许列车油门滚动突破正常最低限制
+	enableNegativeInfThrottle = false
+	#  强制飞轮优化
+	#  强制启用飞轮渲染后端（与着色器冲突，除非你知道你在做什么）
+	forcedBackend = false
+	#  NBT 修复
+	#  修复 NBT 过长而导致的崩溃，可能导致卡顿
+	nbtFix = false
