@@ -3,6 +3,7 @@ ServerEvents.recipes(event => {
 
     let removes = [
         "create:crafting/logistics/stock_link",
+        "create:crafting/logistics/stock_ticker",
 
         "create:crafting/logistics/factory_gauge",
         "create:crafting/logistics/redstone_requester",
@@ -24,6 +25,7 @@ ServerEvents.recipes(event => {
 
         ["create:transmitter", "#vintageimprovements:springs/copper", "minecraft:redstone"],
         [Item.of("create:stock_link", 2), "create_fantasizing:andesite_crate", "create:transmitter", false],
+        ["create:stock_ticker", "create:stock_link", Ingredient.of("#c:glass_blocks"), false],
 
         [Item.of("create:factory_gauge", 4), "create:precision_mechanism", "create:stock_link",],
         [Item.of("create:redstone_requester", 4), "create:item_vault", "create:stock_link",],
