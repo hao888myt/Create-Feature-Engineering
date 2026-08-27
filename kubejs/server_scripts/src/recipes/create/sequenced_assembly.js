@@ -18,7 +18,8 @@ ServerEvents.recipes(event => {
 		"create:crafting/kinetics/mechanical_arm",
 		"fluidlogistics:mechanical_fluid_gun",
 
-		"fluidlogistics:smart_hopper"
+		"fluidlogistics:smart_hopper",
+		"fluidlogistics:fluid_transporter"
 	].forEach(recipe => {
 		event.remove(recipe)
 	})
@@ -108,6 +109,15 @@ ServerEvents.recipes(event => {
 		"create:copper_casing", [
 		create.deploying(transitional_item, [transitional_item, "create:item_vault"]),
 		create.deploying(transitional_item, [transitional_item, "fluidlogistics:multi_fluid_tank"]),
+		create.deploying(transitional_item, [transitional_item, "create:electron_tube"])
+	]).transitionalItem(transitional_item)
+
+	// 流体传输器
+	transitional_item = "create:copper_casing"
+	create.sequenced_assembly(Item.of("fluidlogistics:fluid_transporter", 4),
+		"create:copper_casing", [
+		create.deploying(transitional_item, [transitional_item, "create:fluid_tank"]),
+		create.deploying(transitional_item, [transitional_item, "create:fluid_pipe"]),
 		create.deploying(transitional_item, [transitional_item, "create:electron_tube"])
 	]).transitionalItem(transitional_item)
 
