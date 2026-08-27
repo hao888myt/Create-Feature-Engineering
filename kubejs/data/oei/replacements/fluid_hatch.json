@@ -1,0 +1,8 @@
+[
+  {
+    "matchItems": [
+      "create_dragons_plus:fluid_hatch"
+    ],
+    "resultItems": "fluidlogistics:fluid_hatch"
+  }
+]
