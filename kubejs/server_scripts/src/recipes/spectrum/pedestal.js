@@ -176,6 +176,7 @@ ServerEvents.recipes(event => {
         "ars_nouveau:enchanting_apparatus",
         "ars_nouveau:arcane_core",
 
+        "ars_nouveau:redstone_relay",
         "ars_nouveau:vitalic_sourcelink",
 
         "spectrum:pedestal/tier1/bottle_of_fading",
@@ -315,7 +316,7 @@ ServerEvents.recipes(event => {
         .setMYC(1, 1, 1)
         .addRequiredAdvancement("spectrum:build_basic_pedestal_structure")
         .build()
-    
+
     new Pedestal(["ars_nouveau:spell_sensor", 4],
         [
             " G ",
@@ -367,6 +368,26 @@ ServerEvents.recipes(event => {
         "spectrum:build_basic_pedestal_structure",
         "ars_nouveau:imbuement_chamber"
     ])
+        .CMY()
+        .build()
+
+    new Pedestal(["ars_nouveau:redstone_relay", 2],
+        [
+            "GRG",
+            "SES",
+            "GRG"
+        ],
+        {
+            R: "minecraft:redstone",
+            G: "minecraft:gold_ingot",
+            E: "ars_nouveau:manipulation_essence",
+            S: "spectrum:shimmerstone_gem"
+        }
+    ).addRequiredAdvancements([
+        "spectrum:build_basic_pedestal_structure",
+        "ars_nouveau:imbuement_chamber"
+    ])
+        .setMYC(4, 4, 4)
         .CMY()
         .build()
 
