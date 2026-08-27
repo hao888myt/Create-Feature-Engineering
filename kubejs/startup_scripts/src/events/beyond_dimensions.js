@@ -13,9 +13,9 @@ StartupEvents.registry("item", event => {
             }
 
             // 单个物品、流体种类最大可存储上限（可自行修改，最大值为 9223372036854775807）
-            let defaultSlotCapability = 4096
+            let defaultSlotCapability = 8192
             // 最多可以存储的物品、流体种类（可自行修改，最大值为 2147483647）
-            let defaultSlotMaxSize = 108
+            let defaultSlotMaxSize = 256
             DimensionsNet.createNewNetForPlayer(player, defaultSlotCapability, defaultSlotMaxSize)
 
             let stack = player.getItemInHand(hand)
