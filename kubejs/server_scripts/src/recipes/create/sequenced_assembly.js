@@ -104,7 +104,7 @@ ServerEvents.recipes(event => {
 
 	// 智能漏斗
 	transitional_item = "create:copper_casing"
-	create.sequenced_assembly(Item.of("fluidlogistics:smart_hopper", 8),
+	create.sequenced_assembly(Item.of("fluidlogistics:smart_hopper", 4),
 		"create:copper_casing", [
 		create.deploying(transitional_item, [transitional_item, "create:item_vault"]),
 		create.deploying(transitional_item, [transitional_item, "fluidlogistics:multi_fluid_tank"]),
