@@ -270,6 +270,18 @@ ResearchdEvents.registerResearches(event => {
         ]))
         .parent("fluid")
 
+    event.create("copper_basin")
+        .translatableName("铜工作盆")
+        .translatableDescription("10倍容量！")
+        .icon("fluidlogistics:copper_basin")
+        .method(consumePacks([
+            [rp.conveying, 16, 100],
+            [rp.logistics, 16, 100],
+            [rp.fluid, 16, 100]
+        ]))
+        .effect(unlockRecipe("create:kjs/fluidlogistics_copper_basin"))
+        .parent("fluid")
+
     event.create("hose_pulley")
         .translatableName("软管滑轮")
         .translatableDescription("初期的无限流体")
