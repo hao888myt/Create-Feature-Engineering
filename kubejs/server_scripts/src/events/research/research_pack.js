@@ -422,7 +422,10 @@ ResearchdEvents.registerResearches(event => {
             [rp.fluid, 64, 50],
             [rp.smart, 64, 50]
         ]))
-        .effect(unlockRecipe("minecraft:kjs/anvilcraft_pigsplus_redstone_conduit_block"))
+        .effect(unlockRecipes([
+            "minecraft:kjs/anvilcraft_pigsplus_redstone_conduit_block",
+            "create:kjs/anvilcraft_redstone_wire"
+        ]))
         .parent("smart")
 
     event.create("stockpile_switch")
