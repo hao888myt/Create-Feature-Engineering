@@ -47,6 +47,7 @@ ServerEvents.recipes(event => {
 
     "create_jetpack:jetpack",
 
+    "explorerscompass:explorers_compass",
     "storagedrawers:controller_io",
 
     "ars_nouveau:water_essence_to_obsidian"
@@ -513,6 +514,15 @@ ServerEvents.recipes(event => {
     "C C"
   ], {
     C: "#c:chests/wooden"
+  })
+
+  minecraft.crafting_shaped(Item.of("explorerscompass:explorerscompass"), [
+    "SSS",
+    "SCS",
+    "SSS"
+  ], {
+    C: "minecraft:compass",
+    S: "#minecraft:stone_bricks"
   })
 
   let crystal_blocks = [
