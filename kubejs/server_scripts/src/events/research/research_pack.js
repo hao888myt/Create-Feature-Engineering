@@ -255,6 +255,21 @@ ResearchdEvents.registerResearches(event => {
         .effect(unlockRecipe("create:kjs/fluidlogistics_fluid_pump"))
         .parent("fluid")
 
+    event.create("copper_schematicannon")
+        .translatableName("流体加农炮")
+        .translatableDescription("打印流体")
+        .icon("fluidlogistics:copper_schematicannon")
+        .method(consumePacks([
+            [rp.conveying, 16, 100],
+            [rp.logistics, 16, 100],
+            [rp.fluid, 16, 100]
+        ]))
+        .effect(unlockRecipes([
+            "fluidlogistics:empty_fluid_schematic",
+            "fluidlogistics:copper_schematicannon"
+        ]))
+        .parent("fluid")
+
     event.create("hose_pulley")
         .translatableName("软管滑轮")
         .translatableDescription("初期的无限流体")
