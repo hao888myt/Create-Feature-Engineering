@@ -519,9 +519,9 @@ ResearchdEvents.registerResearches(event => {
         .effect(unlockRecipe("create:kjs/create_smart_fluid_pipe"))
         .parent("smart")
 
-    event.create("smart_hopper")
-        .translatableName("智能漏斗")
-        .literalDescription("一个人干两个人的活")
+    event.create("effective_fluid_transporter")
+        .translatableName("高效流体传输")
+        .literalDescription("多功能、简单方便")
         .icon("fluidlogistics:smart_hopper")
         .method(consumePacks([
             [rp.conveying, 64, 50],
@@ -529,7 +529,10 @@ ResearchdEvents.registerResearches(event => {
             [rp.fluid, 64, 50],
             [rp.smart, 64, 50]
         ]))
-        .effect(unlockRecipe("create:kjs/fluidlogistics_smart_hopper"))
+        .effect(unlockRecipes([
+            "create:kjs/fluidlogistics_smart_hopper",
+            "create:kjs/fluidlogistics_fluid_transporter"
+        ]))
         .parent("smart")
 
     event.create("smart_faucet")
