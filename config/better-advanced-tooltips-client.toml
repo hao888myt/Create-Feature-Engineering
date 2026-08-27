@@ -1,5 +1,5 @@
-remove_creative_tab_tooltip = true
-remove_component_count_tooltip = true
-fuel_tooltip = false
+remove_creative_tab_tooltip = false
+remove_component_count_tooltip = false
+fuel_tooltip = true
 tag_tooltip = false
 component_tooltip = false

@@ -12,7 +12,7 @@
 # Tweakrage
 1. 禁用了客户端旋转放置
 # Better Advanced Tooltips
-1. 禁用了燃料、tag、物品组件的显示
+1. 禁用了tag、物品组件的显示
 # 超越维度
 1. 禁用了不稳定时空碎片的生成
 # Alex的动物
