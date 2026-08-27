@@ -115,7 +115,7 @@ ResearchdEvents.registerResearches(event => {
         .method(consumePack(rp.conveying, 8, 100))
         .effect(unlockRecipe("minecraft:kjs/create_jetpack_jetpack"))
         .parent("conveying")
-    
+
     event.create("starbuncle_wheel")
         .translatableName("星宝石兽跑轮")
         .translatableDescription("奴役星宝石兽是可耻的！")
@@ -194,6 +194,20 @@ ResearchdEvents.registerResearches(event => {
         ]))
         .parent("andesite_crate")
 
+    event.create("remote_stock")
+        .translatableName("远程仓储")
+        .translatableDescription("解锁仓储链接站和仓储发报机的配方")
+        .icon("create:stock_link")
+        .method(consumePacks([
+            [rp.conveying, 8, 100],
+            [rp.logistics, 8, 100]
+        ]))
+        .effect(unlockRecipes([
+            "create:kjs/create_stock_link",
+            "create:kjs/create_stock_ticker"
+        ]))
+        .parent("andesite_crate")
+
     event.create("fluid")
         .translatableName("流体研究包")
         .translatableDescription("解锁流体研究包")
@@ -252,7 +266,7 @@ ResearchdEvents.registerResearches(event => {
         ]))
         .effect(unlockRecipe("create:kjs/create_hose_pulley"))
         .parent("fluid")
-    
+
     event.create("modern_farming")
         .translatableName("现代化农业")
         .translatableDescription("更加现代化的种植方式")
@@ -269,7 +283,7 @@ ResearchdEvents.registerResearches(event => {
             "create:kjs/ratatouille_compost_tower"
         ]))
         .parent("fluid")
-    
+
     event.create("sturdy_sheet")
         .translatableName("坚固板")
         .literalDescription("坚固而可靠的材料")
@@ -461,7 +475,7 @@ ResearchdEvents.registerResearches(event => {
             "create:kjs/fluidlogistics_multi_fluid_tank"
         ]))
         .parent("smart")
-    
+
     event.create("smart_fluid_pipe")
         .translatableName("智能流体管道")
         .literalDescription("其实不是很智能")
@@ -474,7 +488,7 @@ ResearchdEvents.registerResearches(event => {
         ]))
         .effect(unlockRecipe("create:kjs/create_smart_fluid_pipe"))
         .parent("smart")
-    
+
     event.create("smart_hopper")
         .translatableName("智能漏斗")
         .literalDescription("一个人干两个人的活")
@@ -487,7 +501,7 @@ ResearchdEvents.registerResearches(event => {
         ]))
         .effect(unlockRecipe("create:kjs/fluidlogistics_smart_hopper"))
         .parent("smart")
-    
+
     event.create("smart_faucet")
         .translatableName("智能龙头")
         .literalDescription("更智能的...水龙头？")
