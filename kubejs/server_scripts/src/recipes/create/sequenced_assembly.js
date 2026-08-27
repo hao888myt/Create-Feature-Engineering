@@ -4,6 +4,8 @@ ServerEvents.recipes(event => {
 	let transitional_item = "minecraft:barrier"
 
 	let removes = [
+		"fluidlogistics:copper_basin",
+
 		"create:sequenced_assembly/sturdy_sheet",
 		"createdieselgenerators:crafting/pumpjack_bearing",
 		"createdieselgenerators:mechanical_crafting/pumpjack_crank",
@@ -46,6 +48,15 @@ ServerEvents.recipes(event => {
 		create.deploying(transitional_item, [transitional_item, "create:packager"]),
 		create.deploying(transitional_item, [transitional_item, "create:package_frogport"]),
 	]).transitionalItem(transitional_item).id(`${global.ModPackId}:package`)
+
+	// 铜工作盆
+	transitional_item = "create:basin"
+	create.sequenced_assembly(Item.of("fluidlogistics:copper_basin", 2),
+		"create:basin", [
+		create.deploying(transitional_item, [transitional_item, "create:fluid_tank"]),
+		create.deploying(transitional_item, [transitional_item, "create:copper_casing"]),
+		create.deploying(transitional_item, [transitional_item, "create:fluid_tank"]),
+	]).transitionalItem(transitional_item)
 
 	// 精密构件
 	transitional_item = "create:incomplete_precision_mechanism"
