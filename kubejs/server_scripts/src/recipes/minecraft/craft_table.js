@@ -37,6 +37,8 @@ ServerEvents.recipes(event => {
     "create:crafting/logistics/brass_tunnel",
     "create:crafting/kinetics/smart_chute",
 
+    "create_connected:crafting/kinetics/brass_chute",
+
     "anvilcraft_pigsplus:redstone_conduit_block",
     "create:crafting/kinetics/rotation_speed_controller",
 
@@ -253,6 +255,20 @@ ServerEvents.recipes(event => {
       R: "#neoforge:rubber"
     }
   )
+
+  // 黄铜溜槽
+  minecraft.crafting_shaped(
+    Item.of("create_connected:brass_chute", 4),
+    [
+      "P",
+      "I",
+      "P"
+    ],
+    {
+      P: "#c:plates/brass",
+      I: "#c:ingots/brass"
+    }
+  ).id("create_connected:crafting/kinetics/brass_chute")
 
   // 工作盆盖板
   minecraft.crafting_shaped(
