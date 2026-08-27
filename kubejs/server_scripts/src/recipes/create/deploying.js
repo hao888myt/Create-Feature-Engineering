@@ -2,6 +2,8 @@ ServerEvents.recipes(event => {
     let create = event.recipes.create
 
     let removes = [
+        "create:crafting/logistics/stock_link",
+
         "create:crafting/logistics/factory_gauge",
         "create:crafting/logistics/redstone_requester",
 
@@ -21,6 +23,7 @@ ServerEvents.recipes(event => {
         ["ratatouille:compost_tower", "create_fantasizing:andesite_crate", "#c:plates/zinc", false],
 
         ["create:transmitter", "#vintageimprovements:springs/copper", "minecraft:redstone"],
+        [Item.of("create:stock_link", 2), "create_fantasizing:andesite_crate", "create:transmitter", false],
 
         [Item.of("create:factory_gauge", 4), "create:precision_mechanism", "create:stock_link",],
         [Item.of("create:redstone_requester", 4), "create:item_vault", "create:stock_link",],
