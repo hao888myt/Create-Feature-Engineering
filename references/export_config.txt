@@ -123,6 +123,7 @@ config/create_feature_engineering-common.toml
 config/ftbquests/
 config/parkour-server.toml
 config/creatorhotbar-client.json
+config/tooltips_reforged.json
 
 # 排除的文件
 !*.log
