@@ -21,6 +21,8 @@ ServerEvents.recipes(event => {
     "farmersdelight:organic_compost_from_rotten_flesh",
     "farmersdelight:organic_compost_from_tree_bark",
 
+    "create_dragons_plus:crafting/fluid_hatch",
+
     "anvilcraft_pigsplus:block_breaker",
 
     "createdieselgenerators:crafting/basin_lid",
