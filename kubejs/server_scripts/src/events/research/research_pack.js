@@ -445,6 +445,22 @@ ResearchdEvents.registerResearches(event => {
         ]))
         .parent("smart")
 
+    event.create("sequenced_machine")
+        .translatableName("可编程元件")
+        .literalDescription("精确控制")
+        .icon("create_connected:sequenced_pulse_generator")
+        .method(consumePacks([
+            [rp.conveying, 64, 50],
+            [rp.logistics, 64, 50],
+            [rp.fluid, 64, 50],
+            [rp.smart, 64, 50]
+        ]))
+        .effect(unlockRecipes([
+            "create:kjs/create_connected_sequenced_pulse_generator",
+            "create:kjs/create_sequenced_gearshift"
+        ]))
+        .parent("smart")
+
     event.create("requester_gauge")
         .translatableName("发送请求")
         .literalDescription("解锁工厂仪表和红石请求器")
