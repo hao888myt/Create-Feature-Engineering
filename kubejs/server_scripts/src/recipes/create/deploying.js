@@ -4,7 +4,6 @@ ServerEvents.recipes(event => {
     let removes = [
         "createadditionallogistics:crafting/logistics/cash_register",
 
-        "create:crafting/logistics/factory_gauge",
         "create:crafting/logistics/redstone_requester",
 
         "createdieselgenerators:cutting/bar_mold",
@@ -25,7 +24,6 @@ ServerEvents.recipes(event => {
         ["create:transmitter", "#vintageimprovements:springs/copper", "minecraft:redstone"],
         ["createadditionallogistics:cash_register", "create:stock_ticker", "minecraft:book", false],
 
-        [Item.of("create:factory_gauge", 4), "create:precision_mechanism", "create:stock_link",],
         [Item.of("create:redstone_requester", 4), "create:item_vault", "create:stock_link",],
 
         ["fluidlogistics:multi_fluid_tank", "create_fantasizing:andesite_crate", "#c:plates/brass", false],
