@@ -53,7 +53,7 @@ ServerEvents.recipes(event => {
 	transitional_item = "create_feature_engineering:incomplete_research_pack"
 	create.sequenced_assembly(Item.of('researchd:research_pack[researchd:research_pack="create_feature_engineering:package"]'),
 		"create:chain_conveyor", [
-		create.deploying(transitional_item, [transitional_item, "create:stock_link"]),
+		create.deploying(transitional_item, [transitional_item, "create:factory_gauge"]),
 		create.deploying(transitional_item, [transitional_item, "create:packager"]),
 		create.deploying(transitional_item, [transitional_item, "create:package_frogport"]),
 	]).transitionalItem(transitional_item).id(`${global.ModPackId}:package`)
