@@ -428,9 +428,9 @@ ResearchdEvents.registerResearches(event => {
         ]))
         .parent("smart")
 
-    event.create("stockpile_switch")
-        .translatableName("存量转信器")
-        .literalDescription("本质是一个施密特触发器")
+    event.create("stockpile_switch_content_observer")
+        .translatableName("智能检测")
+        .literalDescription("上至方块，中至流体，下至物品")
         .icon("create:stockpile_switch")
         .method(consumePacks([
             [rp.conveying, 64, 50],
@@ -438,7 +438,10 @@ ResearchdEvents.registerResearches(event => {
             [rp.fluid, 64, 50],
             [rp.smart, 64, 50]
         ]))
-        .effect(unlockRecipe("create:crafting/logistics/stockpile_switch"))
+        .effect(unlockRecipes([
+            "create:kjs/create_stockpile_switch",
+            "create:kjs/create_content_observer"
+        ]))
         .parent("smart")
 
     event.create("requester_gauge")
