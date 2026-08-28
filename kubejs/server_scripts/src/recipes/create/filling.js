@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
   create.filling(Item.of("create:andesite_alloy", 4), [Fluid.of("create_feature_engineering:molten_steel", 45), "minecraft:andesite"])
 
   // 工厂仪表
-  create.filling(Item.of("create:factory_gauge"), [Fluid.of("create_feature_engineering:molten_brass", 45), "create:stock_link"])
+  create.filling(Item.of("create:factory_gauge", 4), [Fluid.of("create_feature_engineering:molten_brass", 90), "create:stock_link"])
 
   // 沃土
   create.filling(Item.of("farmersdelight:rich_soil"), [Fluid.of("minecraft:water", 250), "farmersdelight:organic_compost"])
