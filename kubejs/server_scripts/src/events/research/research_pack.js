@@ -397,7 +397,7 @@ ResearchdEvents.registerResearches(event => {
 
     event.create("brass_funnel_tunnel_chute")
         .translatableName("智能输出")
-        .literalDescription("解锁黄铜隧道、黄铜漏斗与智能溜槽")
+        .literalDescription("解锁黄铜隧道、黄铜漏斗、智能溜槽与过滤器")
         .icon("create:brass_funnel")
         .method(consumePacks([
             [rp.conveying, 64, 50],
@@ -408,7 +408,8 @@ ResearchdEvents.registerResearches(event => {
         .effect(unlockRecipes([
             "minecraft:kjs/create_brass_funnel",
             "minecraft:kjs/create_brass_tunnel",
-            "minecraft:kjs/create_smart_chute"
+            "minecraft:kjs/create_smart_chute",
+            "minecraft:kjs/anvilcraft_filter"
         ]))
         .parent("smart")
 
