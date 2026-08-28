@@ -16,6 +16,9 @@ ServerEvents.recipes(event => {
 		"createadditionallogistics:crafting/kinetics/flexible_shaft",
 		"create:crafting/kinetics/mechanical_crafter",
 
+		"create:crafting/logistics/content_observer",
+		"create:crafting/logistics/stockpile_switch",
+
 		"create:crafting/kinetics/mechanical_arm",
 		"fluidlogistics:mechanical_fluid_gun",
 
@@ -79,6 +82,24 @@ ServerEvents.recipes(event => {
 		create.filling(transitional_item, [transitional_item, Fluid.of("createdieselgenerators:plant_oil", 100)]),
 	]
 	).transitionalItem(transitional_item).loops(2)
+
+	// 精密构件
+	transitional_item = "create:brass_casing"
+	create.sequenced_assembly(Item.of("create:stockpile_switch", 4),
+		"create:brass_casing", [
+		create.deploying(transitional_item, [transitional_item, "minecraft:comparator"]),
+		create.deploying(transitional_item, [transitional_item, "create:electron_tube"])
+	]
+	).transitionalItem(transitional_item)
+
+	// 精密构件
+	transitional_item = "create:brass_casing"
+	create.sequenced_assembly(Item.of("create:content_observer", 4),
+		"create:brass_casing", [
+		create.deploying(transitional_item, [transitional_item, "minecraft:observer"]),
+		create.deploying(transitional_item, [transitional_item, "create:electron_tube"])
+	]
+	).transitionalItem(transitional_item)
 
 	// 动力合成器
 	transitional_item = "minecraft:crafter"
