@@ -13,6 +13,7 @@ ServerEvents.recipes(event => {
 		"createdieselgenerators:crafting/pumpjack_hole",
 		"create:sequenced_assembly/precision_mechanism",
 		"anvilcraft:redstone_wire",
+		"createadditionallogistics:crafting/kinetics/flexible_shaft",
 		"create:crafting/kinetics/mechanical_crafter",
 
 		"create:crafting/kinetics/mechanical_arm",
@@ -85,6 +86,14 @@ ServerEvents.recipes(event => {
 		"minecraft:crafter", [
 		create.deploying(transitional_item, [transitional_item, "create:brass_casing"]),
 		create.deploying(transitional_item, [transitional_item, "create:electron_tube"])
+	]).transitionalItem(transitional_item)
+
+	// 惰性灵活传动杆
+	transitional_item = "create:brass_casing"
+	create.sequenced_assembly(Item.of("createadditionallogistics:flexible_shaft", 8),
+		"create:brass_casing", [
+		create.deploying(transitional_item, [transitional_item, Ingredient.of("#createadditionallogistics:basic_shafts")]),
+		create.deploying(transitional_item, [transitional_item, "create:precision_mechanism"])
 	]).transitionalItem(transitional_item)
 
 	// 动力臂
