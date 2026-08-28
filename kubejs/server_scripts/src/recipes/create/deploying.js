@@ -25,7 +25,7 @@ ServerEvents.recipes(event => {
         ["ratatouille:compost_tower", "create_fantasizing:andesite_crate", "#c:plates/zinc", false],
 
         ["create:transmitter", "#vintageimprovements:springs/copper", "minecraft:redstone"],
-        [Item.of("create:stock_link", 2), "create_fantasizing:andesite_crate", "create:transmitter", false],
+        ["create:stock_link", "create_fantasizing:andesite_crate", "create:transmitter", false],
         ["create:stock_ticker", "create:stock_link", Ingredient.of("#c:glass_blocks"), false],
         ["createadditionallogistics:cash_register", "create:stock_ticker", "minecraft:book", false],
 
