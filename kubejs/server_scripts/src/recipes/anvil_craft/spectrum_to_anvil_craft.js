@@ -37,6 +37,9 @@ ServerEvents.recipes((event) => {
         "spectrum:anvil_crushing/vanilla_items/leather_from_leather_horse_armor",
         "spectrum:anvil_crushing/vanilla_items/leather_from_saddle",
 
+        "spectrum:anvil_crushing/vanilla_items/bone_meal_from_bone",
+        "spectrum:anvil_crushing/vanilla_pulverising/bone_meal_from_bone_block",
+
         "anvilcraft:item_crush/block_crush/cracked_stone_bricks_from_stone_bricks",
         "anvilcraft:item_crush/block_crush/cracked_deepslate_bricks_from_deepslate_bricks",
         "anvilcraft:item_crush/block_crush/cracked_deepslate_tiles_from_deepslate_tiles",
