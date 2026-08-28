@@ -67,6 +67,15 @@ ServerEvents.recipes(event => {
 		create.deploying(transitional_item, [transitional_item, "create:fluid_tank"]),
 	]).transitionalItem(transitional_item)
 
+	// 安山机壳
+	transitional_item = "minecraft:stripped_oak_log"
+	create.sequenced_assembly(Item.of("create:andesite_casing", 4),
+		Ingredient.of("#c:stripped_logs"), [
+		create.deploying(transitional_item, [transitional_item, "create:andesite_alloy"]),
+		create.deploying(transitional_item, [transitional_item, "create:andesite_alloy"]),
+		create.filling(transitional_item, [transitional_item, Fluid.of("createdieselgenerators:plant_oil", 100)]),
+	]).transitionalItem(transitional_item)
+
 	// 红石导线
 	transitional_item = "anvilcraft:brass_pressure_plate"
 	create.sequenced_assembly(Item.of("anvilcraft:redstone_wire", 16),
