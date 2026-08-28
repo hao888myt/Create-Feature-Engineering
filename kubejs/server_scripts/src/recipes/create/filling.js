@@ -11,6 +11,9 @@ ServerEvents.recipes(event => {
   // 电子管
   create.filling(Item.of("create:electron_tube", 4), [Fluid.of("create_feature_engineering:molten_iron", 180), "create:polished_rose_quartz"])
 
+  // 安山合金
+  create.filling(Item.of("create:andesite_alloy", 4), [Fluid.of("create_feature_engineering:molten_steel", 45), "minecraft:andesite"])
+
   // 工厂仪表
   create.filling(Item.of("create:factory_gauge"), [Fluid.of("create_feature_engineering:molten_brass", 45), "create:stock_link"])
 
