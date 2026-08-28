@@ -11,14 +11,14 @@ ServerEvents.recipes(event => {
     })
 
     // 传动研究包
-    create.mixing(Item.of('researchd:research_pack[researchd:research_pack="create_feature_engineering:conveying"]', 2), [
+    create.mixing(Item.of('researchd:research_pack[researchd:research_pack="create_feature_engineering:conveying"]'), [
         Item.of("create:shaft", 1),
         Item.of("create:cogwheel", 1),
         Item.of("create:large_cogwheel", 1)
     ]).id(`${global.ModPackId}:conveying`)
 
     // 物流研究包
-    create.mixing(Item.of('researchd:research_pack[researchd:research_pack="create_feature_engineering:logistics"]', 4), [
+    create.mixing(Item.of('researchd:research_pack[researchd:research_pack="create_feature_engineering:logistics"]'), [
         "create:cardboard_block",
         "create:belt_connector",
         "create:andesite_funnel"

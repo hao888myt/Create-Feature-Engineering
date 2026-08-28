@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
 
 	// 流体研究包
 	transitional_item = "create_feature_engineering:incomplete_research_pack"
-	create.sequenced_assembly(Item.of('researchd:research_pack[researchd:research_pack="create_feature_engineering:fluid"]', 2),
+	create.sequenced_assembly(Item.of('researchd:research_pack[researchd:research_pack="create_feature_engineering:fluid"]'),
 		"create:fluid_tank", [
 		create.deploying(transitional_item, [transitional_item, "create:item_drain"]),
 		create.deploying(transitional_item, [transitional_item, "create:spout"]),
@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
 
 	// 智能研究包
 	transitional_item = "create_feature_engineering:incomplete_research_pack"
-	create.sequenced_assembly(Item.of('researchd:research_pack[researchd:research_pack="create_feature_engineering:smart"]', 2),
+	create.sequenced_assembly(Item.of('researchd:research_pack[researchd:research_pack="create_feature_engineering:smart"]'),
 		"create:precision_mechanism", [
 		create.deploying(transitional_item, [transitional_item, "create:transmitter"]),
 		create.deploying(transitional_item, [transitional_item, "create:electron_tube"]),
@@ -44,7 +44,7 @@ ServerEvents.recipes(event => {
 
 	// 包裹研究包
 	transitional_item = "create_feature_engineering:incomplete_research_pack"
-	create.sequenced_assembly(Item.of('researchd:research_pack[researchd:research_pack="create_feature_engineering:package"]', 2),
+	create.sequenced_assembly(Item.of('researchd:research_pack[researchd:research_pack="create_feature_engineering:package"]'),
 		"create:chain_conveyor", [
 		create.deploying(transitional_item, [transitional_item, "create:stock_link"]),
 		create.deploying(transitional_item, [transitional_item, "create:packager"]),
