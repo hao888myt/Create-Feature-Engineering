@@ -31,7 +31,7 @@ ServerEvents.recipes(event => {
     ])
 
     // 锁链传动轮
-    create.mixing(Item.of("create:chain_conveyor", 2), [
+    create.mixing(Item.of("create:chain_conveyor", 3), [
         Item.of("create:shaft", 3),
         Item.of("minecraft:chain", 3),
         Item.of("create:andesite_casing")
