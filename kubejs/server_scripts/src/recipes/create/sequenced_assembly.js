@@ -19,6 +19,9 @@ ServerEvents.recipes(event => {
 		"create:crafting/logistics/content_observer",
 		"create:crafting/logistics/stockpile_switch",
 
+		"create_connected:crafting/kinetics/sequenced_pulse_generator",
+		"create:crafting/kinetics/sequenced_gearshift",
+
 		"create:crafting/kinetics/mechanical_arm",
 		"fluidlogistics:mechanical_fluid_gun",
 
@@ -83,7 +86,7 @@ ServerEvents.recipes(event => {
 	]
 	).transitionalItem(transitional_item).loops(2)
 
-	// 精密构件
+	// 存量转信器
 	transitional_item = "create:brass_casing"
 	create.sequenced_assembly(Item.of("create:stockpile_switch", 4),
 		"create:brass_casing", [
@@ -92,11 +95,29 @@ ServerEvents.recipes(event => {
 	]
 	).transitionalItem(transitional_item)
 
-	// 精密构件
+	// 智能侦测器
 	transitional_item = "create:brass_casing"
 	create.sequenced_assembly(Item.of("create:content_observer", 4),
 		"create:brass_casing", [
 		create.deploying(transitional_item, [transitional_item, "minecraft:observer"]),
+		create.deploying(transitional_item, [transitional_item, "create:electron_tube"])
+	]
+	).transitionalItem(transitional_item)
+
+	// 可编程齿轮箱
+	transitional_item = "create:brass_casing"
+	create.sequenced_assembly(Item.of("create:sequenced_gearshift", 4),
+		"create:brass_casing", [
+		create.deploying(transitional_item, [transitional_item, "create:cogwheel"]),
+		create.deploying(transitional_item, [transitional_item, "create:electron_tube"])
+	]
+	).transitionalItem(transitional_item)
+
+	// 可编程脉冲生成器
+	transitional_item = "create:brass_casing"
+	create.sequenced_assembly(Item.of("create_connected:sequenced_pulse_generator", 4),
+		"create:brass_casing", [
+		create.deploying(transitional_item, [transitional_item, "minecraft:repeater"]),
 		create.deploying(transitional_item, [transitional_item, "create:electron_tube"])
 	]
 	).transitionalItem(transitional_item)
