@@ -47,7 +47,7 @@ ServerEvents.recipes(event => {
         ["create_fantasizing:gold_fluid_barrel", "create_fantasizing:gold_casing"],
         ["create_fantasizing:diamond_fluid_barrel", "create_fantasizing:diamond_casing"],
     ].forEach(crate => {
-        create.mixing(Item.of(crate[0], 4), Item.of(crate[1], 4))
+        create.mixing(Item.of(crate[0], 3), Item.of(crate[1], 3))
     })
     create.mixing(Item.of("create_fantasizing:iron_crate", 8), Item.of("create:item_vault", 4))
 
