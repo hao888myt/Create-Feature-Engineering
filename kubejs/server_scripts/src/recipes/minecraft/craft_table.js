@@ -43,6 +43,7 @@ ServerEvents.recipes(event => {
     "create:crafting/kinetics/rotation_speed_controller",
 
     "create_connected:crafting/kinetics/empty_fan_catalyst",
+    "anvilcraft:filter",
     "anvilcraft:impact_pile",
 
     "create_jetpack:jetpack",
@@ -381,6 +382,14 @@ ServerEvents.recipes(event => {
   ], {
     I: "minecraft:iron_bars",
     B: "#c:ingots/brass"
+  })
+
+  // 过滤器
+  minecraft.crafting_shaped(Item.of("anvilcraft:filter"), [
+    "IHI"
+  ], {
+    I: "#c:nuggets/iron",
+    H: "anvilcraft:hardend_resin"
   })
 
   // 转速控制器
