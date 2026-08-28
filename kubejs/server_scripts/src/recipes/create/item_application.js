@@ -1,6 +1,13 @@
 ServerEvents.recipes((event) => {
     let create = event.recipes.create
 
+    let removes = [
+        "create:crafting/logistics/stock_link",
+        "create:crafting/logistics/stock_ticker",
+    ].forEach(recipe => {
+        event.remove(recipe)
+    })
+
     let recipes = [
         ["create:mechanical_press", "create:andesite_casing", "#c:storage_blocks/iron"],
         ["create:mechanical_mixer", "create:andesite_casing", "create:whisk"],
@@ -21,6 +28,8 @@ ServerEvents.recipes((event) => {
 
         ["create:packager", "create:cardboard_block", "#c:ingots/andesite_alloy"],
         ["create:package_frogport", "create_fantasizing:andesite_crate", "#c:slimeballs"],
+        ["create:stock_link", "create_fantasizing:andesite_crate", "create:transmitter", false],
+        ["create:stock_ticker", "create:stock_link", Ingredient.of("#c:glass_blocks"), false],
 
         ["create:item_drain", "create:copper_casing", "minecraft:iron_bars"],
         ["create:spout", "create:copper_casing", "minecraft:dried_kelp"],

@@ -2,8 +2,6 @@ ServerEvents.recipes(event => {
     let create = event.recipes.create
 
     let removes = [
-        "create:crafting/logistics/stock_link",
-        "create:crafting/logistics/stock_ticker",
         "createadditionallogistics:crafting/logistics/cash_register",
 
         "create:crafting/logistics/factory_gauge",
@@ -25,8 +23,6 @@ ServerEvents.recipes(event => {
         ["ratatouille:compost_tower", "create_fantasizing:andesite_crate", "#c:plates/zinc", false],
 
         ["create:transmitter", "#vintageimprovements:springs/copper", "minecraft:redstone"],
-        ["create:stock_link", "create_fantasizing:andesite_crate", "create:transmitter", false],
-        ["create:stock_ticker", "create:stock_link", Ingredient.of("#c:glass_blocks"), false],
         ["createadditionallogistics:cash_register", "create:stock_ticker", "minecraft:book", false],
 
         [Item.of("create:factory_gauge", 4), "create:precision_mechanism", "create:stock_link",],
