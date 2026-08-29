@@ -28,6 +28,7 @@ ServerEvents.recipes(event => {
 		"fluidlogistics:smart_hopper",
 		"fluidlogistics:fluid_transporter",
 
+		"create_connected:crafting/kinetics/inventory_access_port",
 		"fluidlogistics:fluid_packager",
 		"fluidlogistics:copper_frogport",
 		"createadditionallogistics:crafting/logistics/package_accelerator",
@@ -229,6 +230,14 @@ ServerEvents.recipes(event => {
 		create.deploying(transitional_item, [transitional_item, Ingredient.of("#c:ingots/zinc")]),
 		create.deploying(transitional_item, [transitional_item, Ingredient.of("#c:ingots/andesite_alloy")]),
 	]).transitionalItem(transitional_item).loops(3)
+
+	// 容器拓展端口
+	transitional_item = "create:brass_casing"
+	create.sequenced_assembly(Item.of("create_connected:inventory_access_port", 2),
+		"create:brass_casing", [
+		create.deploying(transitional_item, [transitional_item, "create:chute"]),
+		create.deploying(transitional_item, [transitional_item, "create:electron_tube"]),
+	]).transitionalItem(transitional_item)
 
 	// 流体打包机
 	transitional_item = "create:cardboard_block"
