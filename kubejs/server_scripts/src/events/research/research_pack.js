@@ -666,4 +666,22 @@ ResearchdEvents.registerResearches(event => {
         .effect(unlockRecipe("create:kjs/fluidlogistics_copper_frogport"))
         .parent("package")
 
+
+    event.create("fluid_logistics")
+        .translatableName("流体包裹")
+        .literalDescription("解锁流体打包机、拆包机和流体工厂仪表的配方")
+        .icon("fluidlogistics:fluid_factory_gauge")
+        .method(consumePacks([
+            [rp.conveying, 128, 20],
+            [rp.logistics, 128, 20],
+            [rp.fluid, 128, 20],
+            [rp.smart, 128, 20],
+            [rp.package, 128, 20],
+        ]))
+        .effect(unlockRecipes([
+            "create:kjs/fluidlogistics_fluid_packager",
+            "fluidlogistics:fluid_repackager",
+            "create:kjs/fluidlogistics_fluid_factory_gauge"
+        ]))
+        .parent("package")
 })
