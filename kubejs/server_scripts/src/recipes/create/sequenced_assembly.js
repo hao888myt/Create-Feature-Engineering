@@ -229,9 +229,9 @@ ServerEvents.recipes(event => {
 	]).transitionalItem(transitional_item).loops(3)
 
 	// 流体打包机
-	transitional_item = "fluidlogistics:waterproof_cardboard_block"
+	transitional_item = "create:cardboard_block"
 	create.sequenced_assembly("fluidlogistics:fluid_packager",
-		"fluidlogistics:waterproof_cardboard_block", [
+		"create:cardboard_block", [
 		create.deploying(transitional_item, [transitional_item, "minecraft:copper_ingot"]),
 		create.deploying(transitional_item, [transitional_item, Ingredient.of("#c:glass_blocks")]),
 	]).transitionalItem(transitional_item)
