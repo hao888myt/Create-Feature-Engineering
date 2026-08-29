@@ -240,7 +240,7 @@ ServerEvents.recipes(event => {
 
 	// 覆铜货物蛙港
 	transitional_item = "create:package_frogport"
-	create.sequenced_assembly("fluidlogistics:copper_frogport",
+	create.sequenced_assembly(Item.of("fluidlogistics:copper_frogport", 2),
 		"create:package_frogport", [
 		create.deploying(transitional_item, [transitional_item, "create:copper_casing"]),
 		create.deploying(transitional_item, [transitional_item, Ingredient.of("#c:slime_balls")]),
