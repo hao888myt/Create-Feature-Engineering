@@ -46,6 +46,9 @@ ServerEvents.recipes(event => {
     "anvilcraft:filter",
     "anvilcraft:impact_pile",
 
+    "create_biotech:cutting/cardboard_box",
+    "create_biotech:cutting/large_cardboard_box",
+
     "create_jetpack:jetpack",
 
     "explorerscompass:explorers_compass",
@@ -407,6 +410,26 @@ ServerEvents.recipes(event => {
     S: "create:sturdy_sheet",
     N: "minecraft:netherite_ingot"
   }).id("anvilcraft:impact_pile")
+
+  // 小型纸箱
+  minecraft.crafting_shaped(Item.of("create_biotech:cardboard_box", 2), [
+    " C ",
+    "CRC",
+    " C "
+  ], {
+    C: "create:cardboard",
+    R: "anvilcraft:resin_block"
+  })
+
+  // 大型纸箱
+  minecraft.crafting_shaped(Item.of("create_biotech:large_cardboard_box", 2), [
+    "CCC",
+    "CRC",
+    "CCC"
+  ], {
+    C: "create:cardboard",
+    R: "anvilcraft_pigsplus:weak_resin_block"
+  })
 
   // 喷气背包
   minecraft.crafting_shaped(
