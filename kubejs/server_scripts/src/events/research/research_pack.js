@@ -182,7 +182,7 @@ ResearchdEvents.registerResearches(event => {
 
     event.create("port_packger")
         .translatableName("进阶物流")
-        .translatableDescription("解锁物流蛙港和打包机的配方")
+        .translatableDescription("解锁物流蛙港、打包机和理包机的配方")
         .icon("create:packager")
         .method(consumePacks([
             [rp.conveying, 8, 100],
@@ -190,7 +190,8 @@ ResearchdEvents.registerResearches(event => {
         ]))
         .effect(unlockRecipes([
             "create:kjs/create_package_frogport",
-            "create:kjs/create_packager"
+            "create:kjs/create_packager",
+            "create:crafting/logistics/repackager_from_conversion"
         ]))
         .parent("andesite_crate")
 
