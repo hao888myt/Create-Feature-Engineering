@@ -8,6 +8,9 @@ ServerEvents.recipes(event => {
   event.remove({ mod: "beyonddimensions" })
 
   let removes = [
+    "farmersdelight:wooden_basket",
+    "farmersdelight:bamboo_basket",
+
     "create:crafting/kinetics/gearbox",
     "create:crafting/kinetics/vertical_gearbox",
     "create:crafting/kinetics/clutch",
@@ -90,6 +93,30 @@ ServerEvents.recipes(event => {
       N: number[1]
     })
   })
+
+  // 篮子
+  minecraft.crafting_shaped(
+    Item.of("farmersdelight:bamboo_basket", 4), [
+    "B B",
+    "S S",
+    "BSB"
+  ],
+    {
+      B: "minecraft:bamboo",
+      S: "#c:strings"
+    }
+  )
+  minecraft.crafting_shaped(
+    Item.of("farmersdelight:wooden_basket", 4), [
+    "T T",
+    "S S",
+    "TST"
+  ],
+    {
+      T: "minecraft:stick",
+      S: "#c:strings"
+    }
+  )
 
   // 十字齿轮箱
   minecraft.crafting_shaped(
