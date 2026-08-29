@@ -83,6 +83,10 @@
 		# Default: 200
 		# Range: > 0
 		magma_block_to_lava_consume = 12
+		#烈焰至高木产生的魔源
+		# Default: 125
+		# Range: > 0
+		blazing_log_source = 500
 
 	[ars_nouveau.starbuncle]
 		#星宝石兽拾取物品的冷却
