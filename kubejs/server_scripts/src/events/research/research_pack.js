@@ -638,4 +638,18 @@ ResearchdEvents.registerResearches(event => {
         ]))
         .effect(unlockRecipe("create:kjs/createadditionallogistics_package_accelerator"))
         .parent("package")
+
+    event.create("package_editor")
+        .translatableName("包裹编辑器")
+        .literalDescription("自定义包裹地址")
+        .icon("createadditionallogistics:package_editor")
+        .method(consumePacks([
+            [rp.conveying, 128, 20],
+            [rp.logistics, 128, 20],
+            [rp.fluid, 128, 20],
+            [rp.smart, 128, 20],
+            [rp.package, 128, 20],
+        ]))
+        .effect(unlockRecipe("create:kjs/createadditionallogistics_package_editor"))
+        .parent("package")
 })
