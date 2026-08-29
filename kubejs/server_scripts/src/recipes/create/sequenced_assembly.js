@@ -30,7 +30,8 @@ ServerEvents.recipes(event => {
 
 		"fluidlogistics:fluid_packager",
 		"fluidlogistics:copper_frogport",
-		"createadditionallogistics:crafting/logistics/package_accelerator"
+		"createadditionallogistics:crafting/logistics/package_accelerator",
+		"createadditionallogistics:crafting/logistics/package_editor",
 	].forEach(recipe => {
 		event.remove(recipe)
 	})
@@ -252,5 +253,13 @@ ServerEvents.recipes(event => {
 		create.deploying(transitional_item, [transitional_item, "create:propeller"]),
 		create.deploying(transitional_item, [transitional_item, "create:precision_mechanism"]),
 		create.deploying(transitional_item, [transitional_item, "create:cardboard_block"]),
+	]).transitionalItem(transitional_item)
+
+	// 包裹编辑器
+	transitional_item = "create:cardboard_block"
+	create.sequenced_assembly("createadditionallogistics:package_editor",
+		"create:cardboard_block", [
+		create.deploying(transitional_item, [transitional_item, "create:clipboard"]),
+		create.deploying(transitional_item, [transitional_item, "create:electron_tube"]),
 	]).transitionalItem(transitional_item)
 })
