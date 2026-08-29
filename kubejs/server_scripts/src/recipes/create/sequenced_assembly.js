@@ -28,7 +28,8 @@ ServerEvents.recipes(event => {
 		"fluidlogistics:smart_hopper",
 		"fluidlogistics:fluid_transporter",
 
-		"fluidlogistics:fluid_packager"
+		"fluidlogistics:fluid_packager",
+		"createadditionallogistics:crafting/logistics/package_accelerator"
 	].forEach(recipe => {
 		event.remove(recipe)
 	})
@@ -234,5 +235,14 @@ ServerEvents.recipes(event => {
 		"create:cardboard_block", [
 		create.deploying(transitional_item, [transitional_item, "minecraft:copper_ingot"]),
 		create.deploying(transitional_item, [transitional_item, Ingredient.of("#c:glass_blocks")]),
+	]).transitionalItem(transitional_item)
+
+	// 包裹加速器
+	transitional_item = "create:brass_casing"
+	create.sequenced_assembly(Item.of("createadditionallogistics:package_accelerator", 4),
+		"create:brass_casing", [
+		create.deploying(transitional_item, [transitional_item, "create:propeller"]),
+		create.deploying(transitional_item, [transitional_item, "create:precision_mechanism"]),
+		create.deploying(transitional_item, [transitional_item, "create:cardboard_block"]),
 	]).transitionalItem(transitional_item)
 })
