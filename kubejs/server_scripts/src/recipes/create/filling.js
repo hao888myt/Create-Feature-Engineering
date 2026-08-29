@@ -3,7 +3,11 @@ ServerEvents.recipes(event => {
 
   let removes = [
     "create:crafting/materials/electron_tube",
-    "create:crafting/logistics/factory_gauge"
+    "create:crafting/logistics/factory_gauge",
+    "fluidlogistics:factory_gauge_from_fluid_factory_gauge",
+
+    "fluidlogistics:fluid_factory_gauge",
+    "fluidlogistics:fluid_factory_gauge_from_ingredients"
   ].forEach(recipe => {
     event.remove(recipe)
   })
@@ -16,6 +20,9 @@ ServerEvents.recipes(event => {
 
   // 工厂仪表
   create.filling(Item.of("create:factory_gauge", 4), [Fluid.of("create_feature_engineering:molten_gold", 90), "create:stock_link"])
+
+  // 流体工厂仪表
+  create.filling(Item.of("fluidlogistics:fluid_factory_gauge", 4), [Fluid.of("create_feature_engineering:molten_copper", 90), "create:stock_link"])
 
   // 沃土
   create.filling(Item.of("farmersdelight:rich_soil"), [Fluid.of("minecraft:water", 250), "farmersdelight:organic_compost"])
