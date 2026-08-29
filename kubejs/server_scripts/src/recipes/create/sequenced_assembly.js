@@ -65,9 +65,8 @@ ServerEvents.recipes(event => {
 	transitional_item = "create:basin"
 	create.sequenced_assembly(Item.of("fluidlogistics:copper_basin", 2),
 		"create:basin", [
-		create.deploying(transitional_item, [transitional_item, "create:fluid_tank"]),
 		create.deploying(transitional_item, [transitional_item, "create:copper_casing"]),
-		create.deploying(transitional_item, [transitional_item, "create:fluid_tank"]),
+		create.deploying(transitional_item, [transitional_item, "create:andesite_alloy"]),
 	]).transitionalItem(transitional_item)
 
 	// 安山机壳
