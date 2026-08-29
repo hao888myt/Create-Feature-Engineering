@@ -624,4 +624,18 @@ ResearchdEvents.registerResearches(event => {
         ]))
         .effect(unlockRecipe("create_biotech:cutting/large_cardboard_box"))
         .parent("package")
+
+    event.create("package_accelerator")
+        .translatableName("包裹加速器")
+        .literalDescription("加快打包速度")
+        .icon("createadditionallogistics:package_accelerator")
+        .method(consumePacks([
+            [rp.conveying, 128, 20],
+            [rp.logistics, 128, 20],
+            [rp.fluid, 128, 20],
+            [rp.smart, 128, 20],
+            [rp.package, 128, 20],
+        ]))
+        .effect(unlockRecipe("create:kjs/createadditionallogistics_package_accelerator"))
+        .parent("package")
 })
