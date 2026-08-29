@@ -610,4 +610,18 @@ ResearchdEvents.registerResearches(event => {
         ]))
         .effect(unlockRecipe("create_feature_engineering:package"))
         .parent("smart")
+
+    event.create("large_cardboard_box")
+        .translatableName("大型纸箱")
+        .literalDescription("捕捉大型生物")
+        .icon("create_biotech:large_cardboard_box")
+        .method(consumePacks([
+            [rp.conveying, 128, 20],
+            [rp.logistics, 128, 20],
+            [rp.fluid, 128, 20],
+            [rp.smart, 128, 20],
+            [rp.package, 128, 20],
+        ]))
+        .effect(unlockRecipe("create_biotech:cutting/large_cardboard_box"))
+        .parent("package")
 })
