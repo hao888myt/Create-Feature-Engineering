@@ -134,10 +134,10 @@ ServerEvents.recipes(event => {
 	).transitionalItem(transitional_item)
 
 	// 动力合成器
-	transitional_item = "minecraft:crafter"
+	transitional_item = "create:brass_casing"
 	create.sequenced_assembly(Item.of("create:mechanical_crafter", 3),
-		"minecraft:crafter", [
-		create.deploying(transitional_item, [transitional_item, "create:brass_casing"]),
+		"create:brass_casing", [
+		create.deploying(transitional_item, [transitional_item, "minecraft:crafter"]),
 		create.deploying(transitional_item, [transitional_item, "create:electron_tube"])
 	]).transitionalItem(transitional_item)
 
