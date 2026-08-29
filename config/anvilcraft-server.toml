@@ -134,6 +134,8 @@ auto_enchanting_table_max_bookshelf = 15
 liquid_enchantment_max_level = 15
 #The max size of the entries in storages' recover station
 storage_recover_max_size = 20
+#Allow eternal items to be killed by the void (falling out of the world)
+eternal_items_void_killable = false
 
 [power_converter]
 	#The working interval of power converters
@@ -156,5 +158,25 @@ storage_recover_max_size = 20
 	allow_locate_poi_command = true
 	#Allow /time add command
 	allow_time_add_command = true
-	#Allow /tick  sprint command
+	#Allow /tick sprint command
 	allow_tick_sprint_command = true
+
+[storage_port]
+	#Working interval of the storage port (in ticks): the performance wall that limits how often it scans and moves items
+	# Default: 5
+	# Range: 1 ~ 1200
+	work_interval = 5
+	#Maximum items the storage port moves per scan
+	# Default: 64
+	# Range: 1 ~ 1024
+	max_items_per_scan = 64
+
+[hyperdimension_uploader]
+	#Working interval of the hyperdimension uploader (in ticks)
+	# Default: 5
+	# Range: 1 ~ 1200
+	work_interval = 5
+	#Maximum items the hyperdimension uploader moves to the bound storage per scan
+	# Default: 64
+	# Range: 1 ~ 1024
+	max_items_per_scan = 64
