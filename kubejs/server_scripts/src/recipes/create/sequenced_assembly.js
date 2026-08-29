@@ -26,7 +26,9 @@ ServerEvents.recipes(event => {
 		"fluidlogistics:mechanical_fluid_gun",
 
 		"fluidlogistics:smart_hopper",
-		"fluidlogistics:fluid_transporter"
+		"fluidlogistics:fluid_transporter",
+
+		"fluidlogistics:fluid_packager"
 	].forEach(recipe => {
 		event.remove(recipe)
 	})
@@ -225,4 +227,12 @@ ServerEvents.recipes(event => {
 		create.deploying(transitional_item, [transitional_item, Ingredient.of("#c:ingots/zinc")]),
 		create.deploying(transitional_item, [transitional_item, Ingredient.of("#c:ingots/andesite_alloy")]),
 	]).transitionalItem(transitional_item).loops(3)
+
+	// 流体打包机
+	transitional_item = "fluidlogistics:waterproof_cardboard_block"
+	create.sequenced_assembly("fluidlogistics:fluid_packager",
+		"fluidlogistics:waterproof_cardboard_block", [
+		create.deploying(transitional_item, [transitional_item, "minecraft:copper_ingot"]),
+		create.deploying(transitional_item, [transitional_item, Ingredient.of("#c:glass_blocks")]),
+	]).transitionalItem(transitional_item)
 })
