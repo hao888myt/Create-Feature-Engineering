@@ -652,6 +652,7 @@ ResearchdEvents.registerResearches(event => {
         ]))
         .effect(unlockRecipe("create:kjs/createadditionallogistics_package_editor"))
         .parent("package")
+
     event.create("package_editor")
         .translatableName("覆铜货物蛙港")
         .literalDescription("哪面都能贴")
@@ -666,6 +667,22 @@ ResearchdEvents.registerResearches(event => {
         .effect(unlockRecipe("create:kjs/fluidlogistics_copper_frogport"))
         .parent("package")
 
+event.create("inventory_access_port_bridge")
+        .translatableName("拓展与桥接")
+        .literalDescription("解锁容器拓展端口和容器桥接器的配方")
+        .icon("create_connected:inventory_access_port")
+        .method(consumePacks([
+            [rp.conveying, 128, 20],
+            [rp.logistics, 128, 20],
+            [rp.fluid, 128, 20],
+            [rp.smart, 128, 20],
+            [rp.package, 128, 20],
+        ]))
+        .effect(unlockRecipes([
+            "create:kjs/create_connected_inventory_access_port",
+            "create_connected:crafting/kinetics/inventory_bridge"
+        ]))
+        .parent("package")
 
     event.create("fluid_logistics")
         .translatableName("流体包裹")
