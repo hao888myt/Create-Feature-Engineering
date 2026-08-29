@@ -29,6 +29,7 @@ ServerEvents.recipes(event => {
 		"fluidlogistics:fluid_transporter",
 
 		"fluidlogistics:fluid_packager",
+		"fluidlogistics:copper_frogport",
 		"createadditionallogistics:crafting/logistics/package_accelerator"
 	].forEach(recipe => {
 		event.remove(recipe)
@@ -234,6 +235,14 @@ ServerEvents.recipes(event => {
 		"create:cardboard_block", [
 		create.deploying(transitional_item, [transitional_item, "minecraft:copper_ingot"]),
 		create.deploying(transitional_item, [transitional_item, Ingredient.of("#c:glass_blocks")]),
+	]).transitionalItem(transitional_item)
+
+	// 覆铜货物蛙港
+	transitional_item = "create:package_frogport"
+	create.sequenced_assembly("fluidlogistics:copper_frogport",
+		"create:package_frogport", [
+		create.deploying(transitional_item, [transitional_item, "create:copper_casing"]),
+		create.deploying(transitional_item, [transitional_item, Ingredient.of("#c:slime_balls")]),
 	]).transitionalItem(transitional_item)
 
 	// 包裹加速器
