@@ -23,7 +23,7 @@ ServerEvents.recipes(event => {
                 "id": "ratatouille:compost_tea"
             },
             {
-                "amount": 25,
+                "amount": 10,
                 "id": "ratatouille:bio_gas"
             }
         ]
