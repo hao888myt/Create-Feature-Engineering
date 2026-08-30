@@ -12,6 +12,10 @@ ServerEvents.recipes(event => {
 		"createdieselgenerators:crafting/pumpjack_head",
 		"createdieselgenerators:crafting/pumpjack_hole",
 		"create:sequenced_assembly/precision_mechanism",
+
+		"createdieselgenerators:crafting/engine_piston",
+		"createdieselgenerators:crafting/diesel_engine",
+
 		"anvilcraft:redstone_wire",
 		"createadditionallogistics:crafting/kinetics/flexible_shaft",
 		"create:crafting/kinetics/mechanical_crafter",
@@ -88,6 +92,14 @@ ServerEvents.recipes(event => {
 		create.deploying(transitional_item, [transitional_item, "create:andesite_alloy"]),
 		create.deploying(transitional_item, [transitional_item, Ingredient.of("#c:ingots/steel")]),
 	]).transitionalItem(transitional_item)
+
+	// 柴油机
+	transitional_item = "create:brass_block"
+	create.sequenced_assembly("createdieselgenerators:diesel_engine",
+		"create:brass_block", [
+		create.deploying(transitional_item, [transitional_item, "createdieselgenerators:engine_piston"]),
+		create.deploying(transitional_item, [transitional_item, "create:fluid_tank"]),
+	]).transitionalItem(transitional_item).loops(2)
 
 	// 红石导线
 	transitional_item = "anvilcraft:brass_pressure_plate"
