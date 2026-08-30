@@ -5,7 +5,9 @@ ServerEvents.recipes(event => {
         "create:crafting/kinetics/chain_conveyor",
         "create:mixing/brass_ingot",
 
-        "createaddition:mixing/bioethanol"
+        "createaddition:mixing/bioethanol",
+
+        "ratatouille:mixing/residue_solidify",
     ].forEach(recipe => {
         event.remove(recipe)
     })
@@ -66,6 +68,9 @@ ServerEvents.recipes(event => {
 
     // 纸浆
     create.mixing(Item.of("create:pulp", 4), [Item.of("anvilcraft:wood_fiber", 2), Fluid.of("minecraft:water", 250)])
+
+    // 堆肥渣
+    create.mixing(Item.of("ratatouille:compost_residue", 4), Fluid.of("ratatouille:compost_residue_fluid", 200)).heated()
 
     // 液态数字
     create.mixing(Fluid.of("create_feature_engineering:liquid_number", 1000), [Ingredient.of("#create_feature_engineering:numbers", 8), Fluid.of("minecraft:water", 1000)])
