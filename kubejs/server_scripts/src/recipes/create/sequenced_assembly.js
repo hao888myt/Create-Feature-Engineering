@@ -76,8 +76,10 @@ ServerEvents.recipes(event => {
 	transitional_item = "minecraft:stripped_oak_log"
 	create.sequenced_assembly(Item.of("create:andesite_casing", 4),
 		Ingredient.of("#c:stripped_logs"), [
+		create.filling(transitional_item, [transitional_item, Fluid.of("createdieselgenerators:plant_oil", 100)]),
 		create.deploying(transitional_item, [transitional_item, "create:andesite_alloy"]),
 		create.deploying(transitional_item, [transitional_item, "create:andesite_alloy"]),
+	]).transitionalItem(transitional_item)
 
 	// 引擎活塞
 	transitional_item = "create:shaft"
