@@ -78,7 +78,13 @@ ServerEvents.recipes(event => {
 		Ingredient.of("#c:stripped_logs"), [
 		create.deploying(transitional_item, [transitional_item, "create:andesite_alloy"]),
 		create.deploying(transitional_item, [transitional_item, "create:andesite_alloy"]),
-		create.filling(transitional_item, [transitional_item, Fluid.of("createdieselgenerators:plant_oil", 100)]),
+
+	// 引擎活塞
+	transitional_item = "create:shaft"
+	create.sequenced_assembly(Item.of("createdieselgenerators:engine_piston", 2),
+		"create:shaft", [
+		create.deploying(transitional_item, [transitional_item, "create:andesite_alloy"]),
+		create.deploying(transitional_item, [transitional_item, Ingredient.of("#c:ingots/steel")]),
 	]).transitionalItem(transitional_item)
 
 	// 红石导线
