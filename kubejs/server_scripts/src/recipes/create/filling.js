@@ -26,4 +26,7 @@ ServerEvents.recipes(event => {
 
   // 沃土
   create.filling(Item.of("farmersdelight:rich_soil"), [Fluid.of("minecraft:water", 250), "farmersdelight:organic_compost"])
+
+  // 苔藓块
+  create.filling(Item.of("minecraft:moss_block", 4), [Fluid.of("ratatouille:compost_tea", 100), "minecraft:moss_block"])
 })
