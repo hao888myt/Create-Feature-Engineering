@@ -3,7 +3,9 @@ ServerEvents.recipes(event => {
 
     let removes = [
         "createdieselgenerators:compacting/plant_oil",
-        "createaddition:compacting/seed_oil"
+        "createaddition:compacting/seed_oil",
+
+        "ratatouille:sequenced_assembly/ripen_matter_fold",
     ].forEach(recipe => {
         event.remove(recipe)
     })
@@ -19,4 +21,7 @@ ServerEvents.recipes(event => {
 
     // 种子油配方
     create.compacting(Fluid.of("createdieselgenerators:plant_oil", 100), Ingredient.of("#c:seeds"))
+
+    // 催熟素叠
+    create.compacting(Item.of("ratatouille:ripen_matter_fold", 4), [Fluid.of("ratatouille:compost_tea", 100), Item.of("ratatouille:compost_residue", 3)])
 })
