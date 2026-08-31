@@ -177,6 +177,7 @@ ServerEvents.recipes(event => {
         "ars_nouveau:arcane_core",
 
         "ars_nouveau:redstone_relay",
+        "ars_nouveau:apprentice_book_upgrade",
         "ars_nouveau:vitalic_sourcelink",
 
         "spectrum:pedestal/tier1/bottle_of_fading",
@@ -343,6 +344,26 @@ ServerEvents.recipes(event => {
             S: "ars_nouveau:source_gem",
             F: "spectrum:shimmerstone_gem",
             T: "ars_nouveau:sourcestone"
+        }
+    ).setTime(200)
+        .CMY()
+        .setMYC(4, 4, 4)
+        .addRequiredAdvancements([
+            "spectrum:build_basic_pedestal_structure",
+            "spectrum:collect_shimmerstone"
+        ])
+        .build()
+
+    new Pedestal(["ars_nouveau:apprentice_spell_book", 1],
+        [
+            "FSF",
+            "SNS",
+            "FSF"
+        ],
+        {
+            N: "ars_nouveau:novice_spell_book",
+            S: "ars_nouveau:source_gem",
+            F: "spectrum:shimmerstone_gem"
         }
     ).setTime(200)
         .CMY()
