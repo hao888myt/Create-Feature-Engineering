@@ -143,6 +143,22 @@
 	# Default: 20
 	# Range: > 1
 	frozen_block_process_time = 20
+	#Spreader 低速催熟次数 (1 <= speed < 4)
+	# Default: 2
+	# Range: > 0
+	spreader_boost_low = 10
+	#Spreader 中速催熟次数 (4 <= speed < 8)
+	# Default: 3
+	# Range: > 0
+	spreader_boost_medium = 15
+	#Spreader 高速催熟次数 (8 <= speed < 12)
+	# Default: 4
+	# Range: > 0
+	spreader_boost_high = 20
+	#Spreader 极速催熟次数 (speed >= 12)
+	# Default: 5
+	# Range: > 0
+	spreader_boost_max = 30
 
 [spectrum]
 	#微生物转换的时间
