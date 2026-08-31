@@ -152,9 +152,9 @@
 
 [spawning]
 	#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
-	# Default: 2
+	# Default: 30
 	# Range: 0 ~ 1000
-	cachalotWhaleSpawnWeight = 0
+	soulVultureSpawnWeight = 0
 	#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 	# Default: 8
 	# Range: 0 ~ 1000
@@ -198,7 +198,7 @@
 	#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 	# Default: 3
 	# Range: 0 ~ 1000
-	flySpawnWeight = 0
+	flySpawnWeight = 3
 	#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 	# Default: 1
 	# Range: > 0
@@ -238,7 +238,7 @@
 	#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 	# Default: 15
 	# Range: 0 ~ 1000
-	crimsonMosquitoSpawnWeight = 0
+	crimsonMosquitoSpawnWeight = 15
 	#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 	# Default: 0
 	# Range: > 0
@@ -294,7 +294,7 @@
 	#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 	# Default: 8
 	# Range: 0 ~ 1000
-	caveCentipedeSpawnWeight = 0
+	caveCentipedeSpawnWeight = 8
 	#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 	# Default: 1
 	# Range: > 0
@@ -350,7 +350,7 @@
 	#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 	# Default: 4
 	# Range: 0 ~ 1000
-	cockroachSpawnWeight = 0
+	cockroachSpawnWeight = 4
 	#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 	# Default: 0
 	# Range: > 0
@@ -371,10 +371,6 @@
 	# Default: 0
 	# Range: > 0
 	elephantSpawnRolls = 0
-	#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
-	# Default: 30
-	# Range: 0 ~ 1000
-	soulVultureSpawnWeight = 30
 	#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 	# Default: 0
 	# Range: > 0
@@ -499,6 +495,10 @@
 	# Default: 0
 	# Range: > 0
 	kangarooSpawnRolls = 0
+	#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
+	# Default: 2
+	# Range: 0 ~ 1000
+	cachalotWhaleSpawnWeight = 2
 	#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 	# Default: 0
 	# Range: > 0
@@ -530,7 +530,7 @@
 	#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 	# Default: 6
 	# Range: 0 ~ 1000
-	tarantulaHawkSpawnWeight = 0
+	tarantulaHawkSpawnWeight = 6
 	#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 	# Default: 1
 	# Range: > 0
@@ -794,7 +794,7 @@
 	#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 	# Default: 10
 	# Range: 0 ~ 1000
-	skreecherSpawnWeight = 0
+	skreecherSpawnWeight = 10
 	#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 	# Default: 1
 	# Range: > 0
@@ -810,7 +810,7 @@
 	#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 	# Default: 5
 	# Range: 0 ~ 1000
-	murmurSpawnWeight = 0
+	murmurSpawnWeight = 5
 	#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 	# Default: 1
 	# Range: > 0
