@@ -4,6 +4,7 @@ ServerEvents.recipes(event => {
 	let transitional_item = "minecraft:barrier"
 
 	let removes = [
+		"create_integrated_farming:crafting/vacuum_harvester",
 		"fluidlogistics:copper_basin",
 
 		"create:sequenced_assembly/sturdy_sheet",
@@ -67,6 +68,15 @@ ServerEvents.recipes(event => {
 		create.deploying(transitional_item, [transitional_item, "create:packager"]),
 		create.deploying(transitional_item, [transitional_item, "create:package_frogport"]),
 	]).transitionalItem(transitional_item).id(`${global.ModPackId}:package`)
+
+	// 真空收割器
+	transitional_item = "create:brass_casing"
+	create.sequenced_assembly(Item.of("create_integrated_farming:vacuum_harvester", 2),
+		"create:brass_casing", [
+		create.deploying(transitional_item, [transitional_item, "create:mechanical_harvester"]),
+		create.deploying(transitional_item, [transitional_item, "create:propeller"]),
+		create.deploying(transitional_item, [transitional_item, "create:chute"]),
+	]).transitionalItem(transitional_item)
 
 	// 铜工作盆
 	transitional_item = "create:basin"
