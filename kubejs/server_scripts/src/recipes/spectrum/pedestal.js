@@ -179,6 +179,7 @@ ServerEvents.recipes(event => {
         "ars_nouveau:redstone_relay",
         "ars_nouveau:apprentice_book_upgrade",
         "ars_nouveau:mob_jar",
+        "starbunclemania:fluid_jar",
         "ars_nouveau:vitalic_sourcelink",
 
         "spectrum:pedestal/tier1/bottle_of_fading",
@@ -423,6 +424,25 @@ ServerEvents.recipes(event => {
             A: "ars_nouveau:archwood_slab",
             G: "#c:glass_blocks",
             C: "ars_nouveau:conjuration_essence"
+        }
+    ).addRequiredAdvancements([
+        "spectrum:build_basic_pedestal_structure",
+        "ars_nouveau:imbuement_chamber"
+    ])
+        .setMYC(4, 4, 4)
+        .CMY()
+        .build()
+
+    new Pedestal(["starbunclemania:fluid_jar", 4],
+        [
+            " G ",
+            "GWG",
+            "AAA"
+        ],
+        {
+            A: "#c:logs/archwood",
+            G: "#c:glass_blocks",
+            W: "ars_nouveau:water_essence"
         }
     ).addRequiredAdvancements([
         "spectrum:build_basic_pedestal_structure",
