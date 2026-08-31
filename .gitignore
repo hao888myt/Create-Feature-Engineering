@@ -28,6 +28,7 @@ config/*
 !config/ars_creo-common.toml
 !config/create_feature_engineering-common.toml
 !config/ftbquests
+!config/quest_enhance
 !config/parkour-server.toml
 !config/creatorhotbar-client.json
 !config/tooltips_reforged.json
