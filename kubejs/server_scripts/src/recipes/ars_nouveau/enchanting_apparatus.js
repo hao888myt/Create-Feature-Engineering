@@ -3,7 +3,8 @@ ServerEvents.recipes(event => {
 
     let removes = [
         "ars_elemental:ritual_tesla_coil",
-        "ars_nouveau:spell_turret"
+        "ars_nouveau:spell_turret",
+        "ars_nouveau:enchanters_eye"
     ].forEach(recipe => {
         event.remove(recipe)
     })
@@ -49,6 +50,16 @@ ServerEvents.recipes(event => {
     ],
         "ars_nouveau:basic_spell_turret",
         "ars_nouveau:spell_turret",
+        0
+    )
+
+    ars_nouveau.enchanting_apparatus([
+        "spectrum:radiating_ender",
+        "minecraft:gold_ingot",
+        "ars_nouveau:manipulation_essence",
+    ],
+        "ars_nouveau:scryers_crystal",
+        "ars_nouveau:enchanters_eye",
         0
     )
 })
