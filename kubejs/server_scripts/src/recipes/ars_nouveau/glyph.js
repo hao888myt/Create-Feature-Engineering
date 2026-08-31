@@ -5,7 +5,8 @@ ServerEvents.recipes(event => {
         "ars_nouveau:glyph_launch",
         "ars_nouveau:glyph_crush",
         "ars_nouveau:wololo",
-        "ars_elemental:glyph_discharge"
+        "ars_elemental:glyph_discharge",
+        "ars_nouveau:glyph_smelt"
     ].forEach(recipe => {
         event.remove(recipe)
     })
@@ -43,5 +44,13 @@ ServerEvents.recipes(event => {
             "spectrum:storm_stone",
             "ars_nouveau:air_essence",
         ], 55
+    )
+
+    ars_nouveau.glyph("ars_nouveau:glyph_smelt",
+        [
+            "minecraft:blast_furnace",
+            "minecraft:furnace",
+            "minecraft:smoker"
+        ], 50
     )
 })
