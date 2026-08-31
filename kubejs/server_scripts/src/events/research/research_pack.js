@@ -306,6 +306,7 @@ ResearchdEvents.registerResearches(event => {
         ]))
         .effect(unlockRecipes([
             "create:kjs/ratatouille_spreader",
+            "create:kjs/create_integrated_farming_vacuum_harvester",
             "create:kjs/ratatouille_irrigation_tower",
             "minecraft:kjs/ratatouille_compost_tower",
             "create:kjs/ratatouille_compost_tower"
