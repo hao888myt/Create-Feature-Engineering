@@ -181,6 +181,7 @@ ServerEvents.recipes(event => {
         "ars_nouveau:mob_jar",
         "starbunclemania:fluid_jar",
         "ars_nouveau:potion_jar",
+        "ars_nouveau:item_detector",
         "ars_nouveau:vitalic_sourcelink",
 
         "spectrum:pedestal/tier1/bottle_of_fading",
@@ -463,6 +464,25 @@ ServerEvents.recipes(event => {
             A: "#c:logs/archwood",
             G: "#c:glass_blocks",
             E: "ars_nouveau:abjuration_essence"
+        }
+    ).addRequiredAdvancements([
+        "spectrum:build_basic_pedestal_structure",
+        "ars_nouveau:imbuement_chamber"
+    ])
+        .setMYC(4, 4, 4)
+        .CMY()
+        .build()
+
+    new Pedestal(["ars_nouveau:item_detector", 8],
+        [
+            "GGG",
+            "GMG",
+            "AAA"
+        ],
+        {
+            A: "ars_nouveau:archwood_planks",
+            G: "#c:glass_blocks",
+            M: "ars_nouveau:manipulation_essence"
         }
     ).addRequiredAdvancements([
         "spectrum:build_basic_pedestal_structure",
