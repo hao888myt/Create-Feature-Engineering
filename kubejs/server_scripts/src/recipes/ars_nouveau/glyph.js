@@ -6,7 +6,8 @@ ServerEvents.recipes(event => {
         "ars_nouveau:glyph_crush",
         "ars_nouveau:wololo",
         "ars_elemental:glyph_discharge",
-        "ars_nouveau:glyph_smelt"
+        "ars_nouveau:glyph_smelt",
+        "ars_nouveau:glyph_heal",
     ].forEach(recipe => {
         event.remove(recipe)
     })
@@ -51,6 +52,15 @@ ServerEvents.recipes(event => {
             "minecraft:blast_furnace",
             "minecraft:furnace",
             "minecraft:smoker"
+        ], 50
+    )
+
+    ars_nouveau.glyph("ars_nouveau:glyph_heal",
+        [
+            "minecraft:enchanted_golden_apple",
+            "ars_nouveau:abjuration_essence",
+            "minecraft:golden_carrot",
+            "minecraft:glistering_melon_slice"
         ], 50
     )
 })
