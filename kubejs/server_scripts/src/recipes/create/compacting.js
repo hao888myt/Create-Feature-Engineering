@@ -6,6 +6,7 @@ ServerEvents.recipes(event => {
         "createaddition:compacting/seed_oil",
 
         "ratatouille:sequenced_assembly/ripen_matter_fold",
+        "ratatouille:sequenced_assembly/mature_matter_fold",
     ].forEach(recipe => {
         event.remove(recipe)
     })
@@ -24,4 +25,7 @@ ServerEvents.recipes(event => {
 
     // 催熟素叠
     create.compacting(Item.of("ratatouille:ripen_matter_fold", 4), [Fluid.of("ratatouille:compost_tea", 100), Item.of("ratatouille:compost_residue", 3)])
+
+    // 成熟素叠
+    create.compacting(Item.of("ratatouille:mature_matter_fold", 4), [Fluid.of("ratatouille:compost_tea", 100), Item.of("ratatouille:compost_residue", 3)]).heated()
 })
