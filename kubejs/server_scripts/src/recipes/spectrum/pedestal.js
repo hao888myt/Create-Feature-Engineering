@@ -164,6 +164,7 @@ ServerEvents.recipes(event => {
 
         "ars_nouveau:imbuement_chamber",
         "ars_nouveau:source_jar",
+        "ars_nouveau:relay",
 
         "ars_nouveau:agronomic_sourcelink",
         "ars_nouveau:volcanic_sourcelink",
@@ -221,6 +222,20 @@ ServerEvents.recipes(event => {
         {
             P: "ars_nouveau:archwood_slab",
             G: "#c:glass_blocks"
+        }
+    ).addRequiredAdvancement("spectrum:build_basic_pedestal_structure")
+        .CMY()
+        .build()
+
+    new Pedestal(["ars_nouveau:relay", 4],
+        [
+            "G G",
+            "GSG",
+            "G G"
+        ],
+        {
+            S: "ars_nouveau:source_gem_block",
+            G: "minecraft:gold_ingot"
         }
     ).addRequiredAdvancement("spectrum:build_basic_pedestal_structure")
         .CMY()
