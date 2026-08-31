@@ -2,12 +2,61 @@ ServerEvents.recipes(event => {
     let ars_nouveau = event.recipes.ars_nouveau
 
     let removes = [
+        "ars_nouveau:relay_splitter",
+        "ars_nouveau:relay_deposit",
+        "ars_nouveau:relay_warp",
+        "ars_nouveau:relay_collector",
+
         "ars_elemental:ritual_tesla_coil",
         "ars_nouveau:spell_turret",
         "ars_nouveau:enchanters_eye"
     ].forEach(recipe => {
         event.remove(recipe)
     })
+
+    ars_nouveau.enchanting_apparatus([
+        "ars_nouveau:relay",
+        "ars_nouveau:relay",
+        "ars_nouveau:relay",
+        "ars_nouveau:relay",
+    ],
+        "minecraft:lapis_lazuli",
+        Item.of("ars_nouveau:relay_splitter", 4),
+        0
+    )
+
+    ars_nouveau.enchanting_apparatus([
+        "ars_nouveau:relay",
+        "ars_nouveau:relay",
+        "ars_nouveau:relay",
+        "ars_nouveau:relay",
+    ],
+        "#c:chests/wooden",
+        Item.of("ars_nouveau:relay_deposit", 4),
+        0
+    )
+
+    ars_nouveau.enchanting_apparatus([
+        "ars_nouveau:relay",
+        "ars_nouveau:relay",
+        "ars_nouveau:relay",
+        "ars_nouveau:relay",
+    ],
+        "spectrum:radiating_ender",
+        Item.of("ars_nouveau:relay_warp", 4),
+        0
+    )
+
+    ars_nouveau.enchanting_apparatus([
+        "ars_nouveau:relay",
+        "ars_nouveau:relay",
+        "ars_nouveau:relay",
+        "ars_nouveau:relay",
+    ],
+        "minecraft:hopper",
+        Item.of("ars_nouveau:relay_collector", 4),
+        0
+    )
 
     global.SpectrumColors.forEach(color => {
         ars_nouveau.enchanting_apparatus([
