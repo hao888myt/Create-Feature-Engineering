@@ -178,6 +178,7 @@ ServerEvents.recipes(event => {
 
         "ars_nouveau:redstone_relay",
         "ars_nouveau:apprentice_book_upgrade",
+        "ars_nouveau:mob_jar",
         "ars_nouveau:vitalic_sourcelink",
 
         "spectrum:pedestal/tier1/bottle_of_fading",
@@ -403,6 +404,25 @@ ServerEvents.recipes(event => {
             G: "minecraft:gold_ingot",
             E: "ars_nouveau:manipulation_essence",
             S: "spectrum:shimmerstone_gem"
+        }
+    ).addRequiredAdvancements([
+        "spectrum:build_basic_pedestal_structure",
+        "ars_nouveau:imbuement_chamber"
+    ])
+        .setMYC(4, 4, 4)
+        .CMY()
+        .build()
+
+    new Pedestal(["ars_nouveau:mob_jar", 2],
+        [
+            "AAA",
+            "GCG",
+            "GGG"
+        ],
+        {
+            A: "ars_nouveau:archwood_slab",
+            G: "#c:glass_blocks",
+            C: "ars_nouveau:conjuration_essence"
         }
     ).addRequiredAdvancements([
         "spectrum:build_basic_pedestal_structure",
