@@ -34,7 +34,10 @@ ServerEvents.recipes(event => {
         ['createdieselgenerators:mold[createdieselgenerators:mold_type="createdieselgenerators:bar"]', "#c:plates/iron", "#c:ingots", false],
         ['createdieselgenerators:mold[createdieselgenerators:mold_type="createdieselgenerators:bowl"]', "#c:plates/iron", "minecraft:bowl", false],
         ['createdieselgenerators:mold[createdieselgenerators:mold_type="createdieselgenerators:chain"]', "#c:plates/iron", "#c:chains", false],
-        ['createdieselgenerators:mold[createdieselgenerators:mold_type="createdieselgenerators:lines"]', "#c:plates/iron", "#c:rods", false]
+        ['createdieselgenerators:mold[createdieselgenerators:mold_type="createdieselgenerators:lines"]', "#c:plates/iron", "#c:rods", false],
+
+        [Item.of("anvilcraft:circuit_board", 4), "anvilcraft:hardend_resin", "anvilcraft:redstone_wire"],
+        ["anvilcraft:circuit_board", "anvilcraft:hardend_resin", "minecraft:redstone"],
     ]
     recipes.forEach(recipe => {
         create.deploying(recipe[0], [Ingredient.of(recipe[1]), Ingredient.of(recipe[2])])
