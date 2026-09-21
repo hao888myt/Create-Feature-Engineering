@@ -76,5 +76,5 @@ ServerEvents.recipes(event => {
     create.mixing(Fluid.of("create_feature_engineering:liquid_number", 1000), [Ingredient.of("#create_feature_engineering:numbers", 8), Fluid.of("minecraft:water", 1000)])
 
     // 电解水
-    create.mixing([Fluid.of("create_feature_engineering:hydrogen", 500), Fluid.of("create_feature_engineering:oxygen", 250), "anvilcraft:capacitor_empty"], [Fluid.of("minecraft:water", 500), "anvilcraft:capacitor"])
+    create.mixing([Fluid.of("anvilcraft:hydrogen", 500), Fluid.of("anvilcraft:oxygen", 250), "anvilcraft:capacitor_empty"], [Fluid.of("minecraft:water", 500), "anvilcraft:capacitor"])
 })
