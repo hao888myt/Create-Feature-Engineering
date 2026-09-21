@@ -29,7 +29,10 @@ ServerEvents.recipes(event => {
 
     // 硬化树脂
     vintageimprovements.pressurizing(Item.of("anvilcraft:hardend_resin", 4),
-        Fluid.of("create_feature_engineering:petroleum_gas", 200))
+        [
+            Fluid.of("create_feature_engineering:petroleum_gas", 200),
+            Item.of("anvilcraft:resin")
+        ])
         .heated()
         .processingTime(90)
 })
