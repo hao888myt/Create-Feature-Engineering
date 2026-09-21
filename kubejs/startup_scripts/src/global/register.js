@@ -299,18 +299,6 @@ global.BasicFluids = [
         zh_cn: "润滑油"
     },
     {
-        id: "oxygen",
-        color: "#90c8ff",
-        type: "thin",
-        zh_cn: "氧气"
-    },
-    {
-        id: "hydrogen",
-        color: "#ffffff",
-        type: "thin",
-        zh_cn: "氢气"
-    },
-    {
         id: "nitrogen",
         color: "#909090",
         type: "thin",
