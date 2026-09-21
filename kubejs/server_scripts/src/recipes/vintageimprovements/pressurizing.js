@@ -1,5 +1,12 @@
 ServerEvents.recipes(event => {
     let vintageimprovements = event.recipes.vintageimprovements
+
+    let removes = [
+        "anvilcraft:fast_cooking/hardend_resin"
+    ].forEach(recipe => {
+        event.remove(recipe)
+    })
+
     // 润滑油
     vintageimprovements.pressurizing(Fluid.of("create_feature_engineering:lubricant", 50),
         Fluid.of("create_feature_engineering:heavy_oil", 100))
