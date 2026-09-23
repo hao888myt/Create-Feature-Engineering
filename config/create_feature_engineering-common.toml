@@ -56,7 +56,7 @@
 		#附魔装置的工作时长
 		# Default: 210
 		# Range: > 1
-		enchanting_apparatus_crafting_length = 100
+		enchanting_apparatus_crafting_length = 50
 		#飞行物品的归一化时间
 		# Default: 80.0
 		# Range: 0.0 ~ 1.7976931348623157E308
