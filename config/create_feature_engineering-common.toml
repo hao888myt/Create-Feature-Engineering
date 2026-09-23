@@ -127,6 +127,8 @@
 	# Default: 19
 	# Range: > 6
 	spout_process_time = 19
+	#是否提前动力冲压机的配方检查以减少1gt的延迟
+	enable_decrease_press_time = false
 
 [create_enchantment_industry]
 	#打印机的处理时间

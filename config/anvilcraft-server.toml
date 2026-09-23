@@ -53,9 +53,9 @@ power_transmitter_range = 8
 # Range: 1 ~ 64
 remote_power_transmitter_range = 16
 #The maximum number of logs that can be cut per level of Felling enchantment
-# Default: 2
+# Default: 4
 # Range: 2 ~ 24
-felling_block_per_level = 2
+felling_block_per_level = 4
 #Should show anvil levitate animation
 display_anvil_animation = true
 #Maximum cooldown of load monitor
@@ -136,6 +136,36 @@ liquid_enchantment_max_level = 15
 storage_recover_max_size = 20
 #Allow eternal items to be killed by the void (falling out of the world)
 eternal_items_void_killable = false
+#Orbital integration substeps per tick for freely falling items and blocks; 1 restores legacy motion
+# Default: 8
+# Range: 1 ~ 64
+orbit_integration_substeps = 8
+#Enable weak Schwarzschild periapsis advance around attractive gravity sources of strength at least 10
+relativistic_precession = true
+#Maximum duration of Plasma Jets (in ticks)
+# Default: 12000
+# Range: 200 ~ 1728000
+plasma_jets_max_duration = 12000
+#Amount of fuel consumed per cycle by Plasma Jets based on Cauldrons (in Layer)
+# Default: 1
+# Range: 1 ~ 4
+plasma_jets_cauldron_consume_amount = 1
+#Extended duration of a single consumption of Plasma Jets based on Cauldrons (in ticks)
+# Default: 6000
+# Range: 100 ~ 864000
+plasma_jets_cauldron_extra_duration = 6000
+#Amount of fuel consumed per cycle by Plasma Jets based on Fish Tanks (in mB)
+# Default: 1
+# Range: 1 ~ 1000
+plasma_jets_fish_tank_consume_amount = 1
+#Extended duration of a single consumption of Plasma Jets based on Fish Tanks (in ticks)
+# Default: 24
+# Range: 1 ~ 864000
+plasma_jets_fish_tank_extra_duration = 24
+#Effective speed of light in blocks per tick for orbital precession; larger values weaken the effect
+# Default: 64
+# Range: 16 ~ 4096
+orbital_speed_of_light = 64
 
 [power_converter]
 	#The working interval of power converters

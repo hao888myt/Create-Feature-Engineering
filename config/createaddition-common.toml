@@ -181,7 +181,7 @@
 #Liquid Blaze Burner
 [liquid_blaze_burner]
 	#Liquid Blaze Burner internal liquid storage capacity (in mB). A value less than 1000 prevents players from refilling with a bucket.
-	# Default: 4000
+	# Default: 1000
 	# Range: > 100
 	liquid_blaze_burner_max_liquid_capacity = 4000
 	#Liquid Blaze Burner internal heat capacity (in ticks).
@@ -220,3 +220,22 @@
 	# Default: 80000
 	# Range: > 1
 	docking_connector_capacity = 80000
+
+#Electric Pump
+[electric_pump]
+	#Electric Pump min/max pump strength (equivalent to the Mechanical Pumps RPM).
+	# Default: 256
+	# Range: > 1
+	pump_rpm_range = 256
+	#Electric Pump energy consumption in FE/t at max pump strength (256).
+	# Default: 120
+	# Range: > 1
+	pump_fe_at_max_rpm = 120
+	#Electric Pump max input in FE (Energy transfer not consumption).
+	# Default: 5000
+	# Range: > 0
+	pump_max_input = 5000
+	#Electric Pump internal capacity in FE.
+	# Default: 5000
+	# Range: > 0
+	pump_capacity = 5000
