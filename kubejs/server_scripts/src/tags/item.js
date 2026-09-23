@@ -88,7 +88,7 @@ ServerEvents.tags("item", event => {
         "create_fantasizing:iron_crate",
         "create_fantasizing:brass_crate",
         "create_fantasizing:sturdy_crate",
-        
+
         "ars_nouveau:arcane_pedestal",
         "ars_nouveau:arcane_platform",
         "ars_nouveau:dominion_wand"
@@ -102,5 +102,12 @@ ServerEvents.tags("item", event => {
         "create_biotech:butter_cat_engine"
     ].forEach(item => {
         event.add(`${global.ModPackId}:skip_block_interaction_all`, item)
+    })
+
+    let curios_back = [
+        "create_jetpack:jetpack",
+        "create_jetpack:netherite_jetpack"
+    ].forEach(item => {
+        event.add("curios:back", item)
     })
 })
