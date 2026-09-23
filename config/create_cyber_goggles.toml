@@ -42,9 +42,6 @@
 	#  允许值框出现时渲染
 	#  出现值框时允许渲染护目镜工具提示
 	canRenderOnValueBox = false
-	#  去重工具提示行
-	#  移除护目镜工具提示中相邻的重复或近似重复行
-	dedupTooltipLines = true
 	#  启用淡出
 	#  启用物品信息叠加层和护目镜叠加层的平滑淡出
 	enableFadeOut = true
@@ -303,7 +300,7 @@
 	betterEncasedCogwheel = true
 	#  更好的管道箱
 	#  空手时允许右键切换管道箱的开关状态
-	betterEncasedPipe = false
+	betterEncasedPipe = true
 	#  更好的底盘
 	#  空手时允许右键切换底盘的胶粘状态
 	betterChassis = true
@@ -348,16 +345,15 @@
 	#  快捷请求操作
 	#  启用仓储请求和红石请求器界面的快捷操作
 	quickRequestActions = true
-	#  红石请求器多物品请求
-	#  允许红石请求器请求超过 9 种物品
-	#  §c警告：此功能与大多数模组不兼容，一旦设置超过 9 种物品将导致未启用该功能无法打开红石请求器
-	redstoneRequesterLargeRequest = false
 	#  移除请求限制
 	#  移除工厂仪表和红石请求器的请求数量限制并优化快速滚动
 	removeRequestLimit = true
 	#  移除动力臂限制
 	#  移除动力臂的距离限制
 	removeMechanicalArmLimit = false
+	#  移除货物蛙港向下限制
+	#  允许将货物蛙港放在目标上方
+	removePackagePortDownLimit = false
 	#  无限编辑框长度
 	#  解除大部分编辑框的长度限制
 	infEditBoxLength = false
@@ -382,6 +378,9 @@
 	#  修复蓝图名称
 	#  保存蓝图时可以使用非 ASCII 字符
 	fixSchematicName = true
+	#  自动补齐缺货
+	#  在仓库管理员的蓝图模式下显示「自动补齐缺货」按钮：按蓝图清单递归展开配方并一键下单
+	autoReplenishStock = true
 	#  移除列车伤害
 	#  阻止列车碰撞对玩家造成伤害
 	removeTrainDamage = false
@@ -394,3 +393,6 @@
 	#  NBT 修复
 	#  修复 NBT 过长而导致的崩溃，可能导致卡顿
 	nbtFix = false
+	#  声音池上限
+	#  向 OpenAL 申请的声源数量，增加该值可以缓解声音池溢出导致的静默失效
+	soundPoolLimit = 255
