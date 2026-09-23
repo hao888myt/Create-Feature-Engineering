@@ -27,11 +27,11 @@ redstone_emp_max_radius = 24
 #Maximum cooldown time of chute (in ticks)
 # Default: 8
 # Range: 1 ~ 80
-chute_max_cooldown = 8
+chute_max_cooldown = 5
 #Maximum cooldown time of batch crafter (in ticks)
 # Default: 8
 # Range: 1 ~ 80
-batch_crafter_cooldown = 8
+batch_crafter_cooldown = 5
 #The maximum search radius of the geode
 # Default: 64
 # Range: 64 ~ 512
@@ -107,7 +107,7 @@ sliding_rail_stick_to_each_other = false
 #Maximum cooldown time of batch cutter (in ticks)
 # Default: 8
 # Range: 1 ~ 80
-batch_cutter_cooldown = 8
+batch_cutter_cooldown = 5
 #Maximum number of connected ore blocks collected by a laser gun
 # Default: 64
 # Range: 1 ~ 4096
