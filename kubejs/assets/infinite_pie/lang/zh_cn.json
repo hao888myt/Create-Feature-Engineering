@@ -1,0 +1,19 @@
+{
+  "itemGroup.infinite_pie.tab": "无限派",
+  "item.infinite_pie.infinite_pie": "无限派",
+  "advancements.husbandry.infinite_pie.title": "无限力量",
+  "advancements.husbandry.infinite_pie.description": "使用龙蛋合成无限派",
+  "advancements.husbandry.pie_times_pi.title": "派乘以派！",
+  "advancements.husbandry.pie_times_pi.description": "食用无限派314次",
+  "infinite_pie.midnightconfig.title": "§9无限派配置",
+  "infinite_pie.midnightconfig.piHunger": "§7无限派饥饿值",
+  "infinite_pie.midnightconfig.piHunger.tooltip": "§8§o[?]§7§o 调整食用无限派提供的饥饿值。",
+  "infinite_pie.midnightconfig.piSaturation": "§7无限派饱和度",
+  "infinite_pie.midnightconfig.piSaturation.tooltip": "§8§o[?]§7§o 调整食用无限派提供的饱和度。",
+  "infinite_pie.midnightconfig.piMaxStackSize": "§7无限派最大堆叠数量",
+  "infinite_pie.midnightconfig.piMaxStackSize.tooltip": "§8§o[?]§7§o 调整无限派的最大堆叠数量。",
+  "infinite_pie.midnightconfig.piEatingSpeed": "§7无限派食用速度",
+  "infinite_pie.midnightconfig.piEatingSpeed.tooltip": "§8§o[?]§7§o 调整无限派的食用速度。32是默认食物速度，16类似西瓜。",
+  "infinite_pie.midnightconfig.piCooldown": "§7无限派冷却",
+  "infinite_pie.midnightconfig.piCooldown.tooltip": "§8§o[?]§7§o 无限派是否具有食用冷却。"
+}
