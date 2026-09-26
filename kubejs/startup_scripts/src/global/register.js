@@ -269,10 +269,10 @@ global.BasicFluids = [
         zh_cn: "液态数字"
     },
     {
-        id: "ectoplasm",
+        id: "saline",
         color: "#85e6ff",
         type: "thin",
-        zh_cn: "灵质"
+        zh_cn: "盐水"
     },
     {
         id: "light_oil",
