@@ -8,6 +8,7 @@ ServerEvents.recipes(event => {
         "createaddition:mixing/bioethanol",
 
         "ratatouille:mixing/residue_solidify",
+        "ratatouille:mixing/salt_from_boil",
     ].forEach(recipe => {
         event.remove(recipe)
     })
@@ -74,6 +75,7 @@ ServerEvents.recipes(event => {
 
     // 液态数字
     create.mixing(Fluid.of("create_feature_engineering:liquid_number", 1000), [Ingredient.of("#create_feature_engineering:numbers", 8), Fluid.of("minecraft:water", 1000)])
+    create.mixing(["ratatouille:boil_stone", "ratatouille:salt"], ["ratatouille:boil_stone", Fluid.of("minecraft:water", 1000)]).heated()
 
     // 电解水
     create.mixing([Fluid.of("anvilcraft:hydrogen", 500), Fluid.of("anvilcraft:oxygen", 250), "anvilcraft:capacitor_empty"], [Fluid.of("minecraft:water", 500), "anvilcraft:capacitor"])
