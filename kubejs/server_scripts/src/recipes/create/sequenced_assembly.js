@@ -34,6 +34,9 @@ ServerEvents.recipes(event => {
 		"fluidlogistics:fluid_transporter",
 
 		"create_connected:crafting/kinetics/inventory_access_port",
+
+		"anvilcraft:capacitor_empty",
+
 		"fluidlogistics:fluid_packager",
 		"fluidlogistics:copper_frogport",
 		"createadditionallogistics:crafting/logistics/package_accelerator",
@@ -113,7 +116,7 @@ ServerEvents.recipes(event => {
 
 	// 红石导线
 	transitional_item = "anvilcraft:brass_pressure_plate"
-	create.sequenced_assembly(Item.of("anvilcraft:redstone_wire", 16),
+	create.sequenced_assembly(Item.of("anvilcraft:redstone_wire", 4),
 		Ingredient.of("#c:plates/brass"), [
 		create.deploying(transitional_item, [transitional_item, "create:electron_tube"]),
 		create.deploying(transitional_item, [transitional_item, "minecraft:redstone"]),
@@ -267,6 +270,14 @@ ServerEvents.recipes(event => {
 		"create:brass_casing", [
 		create.deploying(transitional_item, [transitional_item, "create:chute"]),
 		create.deploying(transitional_item, [transitional_item, "create:electron_tube"]),
+	]).transitionalItem(transitional_item)
+
+	// 电容器
+	transitional_item = "anvilcraft:resin"
+	create.sequenced_assembly(Item.of("anvilcraft:capacitor_empty", 2),
+		Ingredient.of("#c:resin"), [
+		create.deploying(transitional_item, [transitional_item, Ingredient.of("#c:plates/copper")]),
+		create.deploying(transitional_item, [transitional_item, Ingredient.of("#c:plates/zinc")]),
 	]).transitionalItem(transitional_item)
 
 	// 流体打包机
