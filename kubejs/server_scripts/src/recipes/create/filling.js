@@ -24,8 +24,11 @@ ServerEvents.recipes(event => {
   // 流体工厂仪表
   create.filling(Item.of("fluidlogistics:fluid_factory_gauge", 4), [Fluid.of("create_feature_engineering:molten_copper", 90), "create:stock_link"])
 
-  // 沃土
-  create.filling(Item.of("farmersdelight:rich_soil"), [Fluid.of("minecraft:water", 250), "farmersdelight:organic_compost"])
+  // 流体工厂仪表
+  create.filling(Item.of("fluidlogistics:fluid_factory_gauge", 4), [Fluid.of("create_feature_engineering:molten_copper", 90), "create:stock_link"])
+
+  // 电容器充电
+  create.filling(Item.of("anvilcraft:capacitor"), [Fluid.of("create_feature_engineering:saline", 500), "anvilcraft:capacitor_empty"])
 
   // 苔藓块
   create.filling(Item.of("minecraft:moss_block", 4), [Fluid.of("ratatouille:compost_tea", 100), "minecraft:moss_block"])
