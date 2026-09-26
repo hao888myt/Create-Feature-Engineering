@@ -3,6 +3,8 @@ ClientEvents.lang("zh_cn", (event) => {
     AddItemLang("singularity", "奇点")
     AddItemLang("net_checker", "维度网络查询器")
 
+    AddItemLang("salted_fish", "咸鱼")
+
     AddBlockLang("stradpole_skeleton", "跨座蝌蚪遗骸")
 
     AddBlockLang("paltaeria_ore_catalyst", "苍绿催生体")

@@ -31,6 +31,9 @@ StartupEvents.registry("item", event => {
         event.create(`${global.ModPackId}:${item.id}`)
     })
 
+    event.create(`${global.ModPackId}:salted_fish`)
+        .unstackable()
+
     let numbers = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
     numbers.forEach((number) => {
         event.create(`${global.ModPackId}:unstackable_${number}`)
