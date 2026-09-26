@@ -75,6 +75,9 @@ ServerEvents.recipes(event => {
 
     // 液态数字
     create.mixing(Fluid.of("create_feature_engineering:liquid_number", 1000), [Ingredient.of("#create_feature_engineering:numbers", 8), Fluid.of("minecraft:water", 1000)])
+
+    // 盐
+    create.mixing(Item.of("ratatouille:salt", 4), Fluid.of("create_feature_engineering:saline", 1000)).heated()
     create.mixing(["ratatouille:boil_stone", "ratatouille:salt"], ["ratatouille:boil_stone", Fluid.of("minecraft:water", 1000)]).heated()
 
     // 电解水
