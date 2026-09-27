@@ -55,9 +55,10 @@ ServerEvents.recipes(event => {
     create.mixing(Item.of("create_fantasizing:iron_crate", 8), Item.of("create:item_vault", 4))
 
     // 熔融钢
-    create.mixing(Fluid.of("create_feature_engineering:molten_steel", 90), [
+    create.mixing(Fluid.of("create_feature_engineering:molten_steel", 180), [
         Item.of("minecraft:coal"),
-        Fluid.of("create_feature_engineering:molten_iron", 180)
+        Fluid.of("create_feature_engineering:molten_iron", 180),
+        Fluid.of("create_feature_engineering:molten_andesite_alloy", 90),
     ]).heated()
 
     // 黄铜
