@@ -35,4 +35,13 @@ ServerEvents.recipes(event => {
         ])
         .heated()
         .processingTime(90)
+
+    // 煤炭
+    vintageimprovements.pressurizing(Item.of("minecraft:coal", 4),
+        [
+            Fluid.of("createdieselgenerators:crude_oil", 200),
+            Ingredient.of("#minecraft:logs")
+        ])
+        .heated()
+        .processingTime(90)
 })
