@@ -13,27 +13,26 @@ ServerEvents.recipes(event => {
         Item.of("minecraft:sugar"),
         Ingredient.of('#c:flours/wheat'),
         Fluid.of("minecraft:water", 200)
-    ], 78)
+    ], 80)
     cdg.bulk_fermenting(Fluid.of("createdieselgenerators:ethanol", 400), [
         Item.of("minecraft:sugar"),
         Ingredient.of('#c:flours/wheat'),
         Fluid.of("minecraft:water", 200)
-    ], 78)
+    ], 80)
 
     global.Materials.forEach(material => {
-        if (material.types.includes("molten"))
-        {
+        if (material.types.includes("molten")) {
             cdg.basin_fermenting(Fluid.of(`${global.ModPackId}:molten_${material.id}`, 90), [
                 Ingredient.of(`#c:ingots/${material.id}`)
-            ]).heated().processingTime(18)
+            ]).heated().processingTime(20)
 
             cdg.basin_fermenting(Fluid.of(`${global.ModPackId}:molten_${material.id}`, 90), [
                 Ingredient.of(`#c:plates/${material.id}`)
-            ]).heated().processingTime(18)
+            ]).heated().processingTime(20)
 
             cdg.basin_fermenting(Fluid.of(`${global.ModPackId}:molten_${material.id}`, 810), [
                 Ingredient.of(`#c:storage_blocks/${material.id}`)
-            ]).heated().processingTime(158)
+            ]).heated().processingTime(160)
         }
     });
 })
