@@ -180,6 +180,17 @@ ResearchdEvents.registerResearches(event => {
         .effect(unlockRecipe("minecraft:kjs/anvilcraft_pigsplus_block_breaker"))
         .parent("logistics")
 
+    event.create("item_splitter")
+        .translatableName("物品分配器")
+        .translatableDescription("丐版黄铜隧道")
+        .icon("anvilcraft:item_splitter")
+        .method(consumePacks([
+            [rp.conveying, 8, 100],
+            [rp.logistics, 8, 100]
+        ]))
+        .effect(unlockRecipe("anvilcraft:item_splitter"))
+        .parent("logistics")
+
     event.create("port_packger")
         .translatableName("进阶物流")
         .translatableDescription("解锁物流蛙港、打包机和理包机的配方")
