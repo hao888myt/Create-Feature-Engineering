@@ -41,6 +41,11 @@ ServerEvents.recipes(event => {
 		"fluidlogistics:copper_frogport",
 		"createadditionallogistics:crafting/logistics/package_accelerator",
 		"createadditionallogistics:crafting/logistics/package_editor",
+
+		"anvilcraft:circuit_board",
+		"anvilcraft_pigsplus:circuit_board",
+		"anvilcraft_pigsplus:precision_electromagnetic_processing/circuit_board",
+		"anvilcraft_pigsplus:precision_electromagnetic_processing/circuit_board_2",
 	].forEach(recipe => {
 		event.remove(recipe)
 	})
@@ -280,6 +285,7 @@ ServerEvents.recipes(event => {
 		create.deploying(transitional_item, [transitional_item, Ingredient.of("#c:plates/zinc")]),
 	]).transitionalItem(transitional_item)
 
+
 	// 流体打包机
 	transitional_item = "create:cardboard_block"
 	create.sequenced_assembly("fluidlogistics:fluid_packager",
@@ -311,5 +317,20 @@ ServerEvents.recipes(event => {
 		"create:cardboard_block", [
 		create.deploying(transitional_item, [transitional_item, "create:clipboard"]),
 		create.deploying(transitional_item, [transitional_item, "create:electron_tube"]),
+	]).transitionalItem(transitional_item)
+
+	// 电路板
+	transitional_item = "anvilcraft:hardend_resin"
+	create.sequenced_assembly(Item.of("anvilcraft:circuit_board", 4),
+		Ingredient.of("anvilcraft:hardend_resin"), [
+		create.deploying(transitional_item, [transitional_item, "anvilcraft:redstone_wire"]),
+		create.filling(transitional_item, [transitional_item, Fluid.of("create_feature_engineering:hydrochloric_acid", 250)]),
+	]).transitionalItem(transitional_item)
+
+	create.sequenced_assembly(Item.of("anvilcraft:circuit_board", 2),
+		Ingredient.of("anvilcraft:hardend_resin"), [
+		create.deploying(transitional_item, [transitional_item, Ingredient.of("#c:plates/copper")]),
+		create.deploying(transitional_item, [transitional_item, "minecraft:redstone"]),
+		create.filling(transitional_item, [transitional_item, Fluid.of("create_feature_engineering:hydrochloric_acid", 250)]),
 	]).transitionalItem(transitional_item)
 })
