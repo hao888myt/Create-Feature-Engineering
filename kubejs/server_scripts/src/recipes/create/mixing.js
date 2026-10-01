@@ -86,4 +86,11 @@ ServerEvents.recipes(event => {
 
     // 电解水
     create.mixing([Fluid.of("anvilcraft:hydrogen", 500), Fluid.of("anvilcraft:oxygen", 250), "anvilcraft:capacitor_empty"], [Fluid.of("minecraft:water", 500), "anvilcraft:capacitor"])
+
+    // 电解盐水
+    create.mixing([
+        Fluid.of("anvilcraft:hydrogen", 125),
+        Fluid.of("create_feature_engineering:chlorine", 125),
+        "anvilcraft:capacitor_empty"],
+        [Fluid.of("create_feature_engineering:saline", 250), "anvilcraft:capacitor"])
 })
