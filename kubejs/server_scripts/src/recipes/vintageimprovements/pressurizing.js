@@ -44,4 +44,13 @@ ServerEvents.recipes(event => {
         ])
         .heated()
         .processingTime(100)
+
+    // 盐酸
+    vintageimprovements.pressurizing(Fluid.of("create_feature_engineering:hydrochloric_acid", 200),
+        [
+            Fluid.of("anvilcraft:hydrogen", 100),
+            Fluid.of("create_feature_engineering:chlorine", 100),
+        ])
+        .heated()
+        .processingTime(100)
 })
