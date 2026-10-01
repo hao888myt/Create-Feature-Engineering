@@ -18,7 +18,8 @@ ServerEvents.recipes((event) => {
 
         ["vintageimprovements:spring_coiling_machine", "create:andesite_casing", "vintageimprovements:spring_coiling_machine_wheel"],
         ["createaddition:rolling_mill", "create:andesite_casing", "#c:ingots/zinc"],
-        ["create_enchantment_industry:mechanical_grindstone", "create:shaft", "#c:ingots/andesite_alloy"],
+        ["vintageimprovements:belt_grinder", "create:andesite_casing", "vintageimprovements:grinder_belt"],
+        //["create_enchantment_industry:mechanical_grindstone", "create:shaft", "#c:ingots/andesite_alloy"],
 
         ["create:deployer", "create:andesite_casing", "create:brass_hand"],
 
