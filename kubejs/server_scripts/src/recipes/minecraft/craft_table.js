@@ -51,6 +51,8 @@ ServerEvents.recipes(event => {
 
     "create_jetpack:jetpack",
 
+    "anvilcraft:charger",
+
     "explorerscompass:explorers_compass",
     "storagedrawers:controller_io",
 
@@ -434,6 +436,32 @@ ServerEvents.recipes(event => {
     S: "create:sturdy_sheet",
     N: "minecraft:netherite_ingot"
   }).id("anvilcraft:impact_pile")
+
+  // 充电器
+  minecraft.crafting_shaped("anvilcraft:charger", [
+    "HGH",
+    "CMC",
+    "SSS"
+  ], {
+    S: "create:sturdy_sheet",
+    M: "anvilcraft:magnetoelectric_core",
+    C: "#c:ingots/copper",
+    H: "anvilcraft:hardend_resin",
+    G: "#c:glass_panes"
+  }).id("anvilcraft:charger")
+
+  // 放电器
+  minecraft.crafting_shaped("anvilcraft:discharger", [
+    "HMH",
+    "CGC",
+    "SSS"
+  ], {
+    S: "create:sturdy_sheet",
+    M: "anvilcraft:magnetoelectric_core",
+    C: "#c:ingots/copper",
+    H: "anvilcraft:hardend_resin",
+    G: "#c:glass_panes"
+  }).id("anvilcraft:discharger")
 
   // 喷气背包
   minecraft.crafting_shaped(
