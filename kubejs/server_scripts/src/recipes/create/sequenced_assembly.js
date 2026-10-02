@@ -48,6 +48,7 @@ ServerEvents.recipes(event => {
 		"anvilcraft_pigsplus:precision_electromagnetic_processing/circuit_board_2",
 
 		"anvilcraft:pump",
+		"anvilcraft:control_valve",
 	].forEach(recipe => {
 		event.remove(recipe)
 	})
@@ -341,6 +342,15 @@ ServerEvents.recipes(event => {
 		"fluidlogistics:fluid_pump", [
 		create.deploying(transitional_item, [transitional_item, "anvilcraft:pipe"]),
 		create.deploying(transitional_item, [transitional_item, "anvilcraft:magnetoelectric_core"]),
+		create.deploying(transitional_item, [transitional_item, "anvilcraft:pipe"]),
+	]).transitionalItem(transitional_item)
+
+	// 控制阀
+	transitional_item = "create:smart_fluid_pipe"
+	create.sequenced_assembly(Item.of("anvilcraft:control_valve", 2),
+		"create:smart_fluid_pipe", [
+		create.deploying(transitional_item, [transitional_item, "anvilcraft:pipe"]),
+		create.deploying(transitional_item, [transitional_item, "anvilcraft:circuit_board"]),
 		create.deploying(transitional_item, [transitional_item, "anvilcraft:pipe"]),
 	]).transitionalItem(transitional_item)
 })
