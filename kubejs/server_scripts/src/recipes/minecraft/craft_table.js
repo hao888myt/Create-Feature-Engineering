@@ -54,6 +54,7 @@ ServerEvents.recipes(event => {
     "anvilcraft:charger",
     "anvilcraft:charge_collector",
     "anvilcraft:induction_light",
+    "anvilcraft:transmission_pole",
 
     "explorerscompass:explorers_compass",
     "storagedrawers:controller_io",
@@ -486,6 +487,17 @@ ServerEvents.recipes(event => {
     M: "anvilcraft:magnetoelectric_core",
     H: "anvilcraft:hardend_resin",
   }).id("anvilcraft:induction_light")
+
+  // 集电器
+  minecraft.crafting_shaped(Item.of("anvilcraft:transmission_pole", 2), [
+    "M",
+    "L",
+    "S"
+  ], {
+    M: "anvilcraft:magnetoelectric_core",
+    L: "minecraft:lightning_rod",
+    S: "create:sturdy_sheet"
+  }).id("anvilcraft:transmission_pole")
 
   // 喷气背包
   minecraft.crafting_shaped(
