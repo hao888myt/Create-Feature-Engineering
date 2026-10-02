@@ -52,6 +52,7 @@ ServerEvents.recipes(event => {
     "create_jetpack:jetpack",
 
     "anvilcraft:charger",
+    "anvilcraft:charge_collector",
 
     "explorerscompass:explorers_compass",
     "storagedrawers:controller_io",
@@ -462,6 +463,18 @@ ServerEvents.recipes(event => {
     H: "anvilcraft:hardend_resin",
     G: "#c:glass_panes"
   }).id("anvilcraft:discharger")
+
+  // 集电器
+  minecraft.crafting_shaped(Item.of("anvilcraft:charge_collector", 4), [
+    " M ",
+    "CHC",
+    "SSS"
+  ], {
+    S: "create:sturdy_sheet",
+    M: "anvilcraft:magnetoelectric_core",
+    C: "#c:ingots/copper",
+    H: "anvilcraft:hardend_resin",
+  }).id("anvilcraft:charge_collector")
 
   // 喷气背包
   minecraft.crafting_shaped(
