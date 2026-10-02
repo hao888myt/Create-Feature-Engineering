@@ -46,6 +46,8 @@ ServerEvents.recipes(event => {
 		"anvilcraft_pigsplus:circuit_board",
 		"anvilcraft_pigsplus:precision_electromagnetic_processing/circuit_board",
 		"anvilcraft_pigsplus:precision_electromagnetic_processing/circuit_board_2",
+
+		"anvilcraft:pump",
 	].forEach(recipe => {
 		event.remove(recipe)
 	})
@@ -285,7 +287,6 @@ ServerEvents.recipes(event => {
 		create.deploying(transitional_item, [transitional_item, Ingredient.of("#c:plates/zinc")]),
 	]).transitionalItem(transitional_item)
 
-
 	// 流体打包机
 	transitional_item = "create:cardboard_block"
 	create.sequenced_assembly("fluidlogistics:fluid_packager",
@@ -332,5 +333,14 @@ ServerEvents.recipes(event => {
 		create.deploying(transitional_item, [transitional_item, Ingredient.of("#c:plates/copper")]),
 		create.deploying(transitional_item, [transitional_item, "minecraft:redstone"]),
 		create.filling(transitional_item, [transitional_item, Fluid.of("create_feature_engineering:hydrochloric_acid", 250)]),
+	]).transitionalItem(transitional_item)
+
+	// 泵
+	transitional_item = "fluidlogistics:fluid_pump"
+	create.sequenced_assembly(Item.of("anvilcraft:pump", 2),
+		"fluidlogistics:fluid_pump", [
+		create.deploying(transitional_item, [transitional_item, "anvilcraft:pipe"]),
+		create.deploying(transitional_item, [transitional_item, "anvilcraft:magnetoelectric_core"]),
+		create.deploying(transitional_item, [transitional_item, "anvilcraft:pipe"]),
 	]).transitionalItem(transitional_item)
 })
