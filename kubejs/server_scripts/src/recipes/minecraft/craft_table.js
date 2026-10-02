@@ -53,6 +53,7 @@ ServerEvents.recipes(event => {
 
     "anvilcraft:charger",
     "anvilcraft:charge_collector",
+    "anvilcraft:induction_light",
 
     "explorerscompass:explorers_compass",
     "storagedrawers:controller_io",
@@ -475,6 +476,16 @@ ServerEvents.recipes(event => {
     C: "#c:ingots/copper",
     H: "anvilcraft:hardend_resin",
   }).id("anvilcraft:charge_collector")
+
+  // 集电器
+  minecraft.crafting_shaped(Item.of("anvilcraft:induction_light", 8), [
+    "H",
+    "M",
+    "H"
+  ], {
+    M: "anvilcraft:magnetoelectric_core",
+    H: "anvilcraft:hardend_resin",
+  }).id("anvilcraft:induction_light")
 
   // 喷气背包
   minecraft.crafting_shaped(
