@@ -440,6 +440,11 @@ ServerEvents.recipes(event => {
     N: "minecraft:netherite_ingot"
   }).id("anvilcraft:impact_pile")
 
+  // 咸鱼
+  minecraft.crafting_shapeless("create_feature_engineering:salted_fish", [
+    "#minecraft:fishes", Ingredient.of("#c:salts", 2)
+  ])
+
   // 充电器
   minecraft.crafting_shaped("anvilcraft:charger", [
     "HGH",
