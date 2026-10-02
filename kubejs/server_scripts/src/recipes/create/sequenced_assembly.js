@@ -47,6 +47,7 @@ ServerEvents.recipes(event => {
 		"anvilcraft_pigsplus:precision_electromagnetic_processing/circuit_board",
 		"anvilcraft_pigsplus:precision_electromagnetic_processing/circuit_board_2",
 
+		"anvilcraft:pipe",
 		"anvilcraft:pump",
 		"anvilcraft:control_valve",
 	].forEach(recipe => {
@@ -334,6 +335,15 @@ ServerEvents.recipes(event => {
 		create.deploying(transitional_item, [transitional_item, Ingredient.of("#c:plates/copper")]),
 		create.deploying(transitional_item, [transitional_item, "minecraft:redstone"]),
 		create.filling(transitional_item, [transitional_item, Fluid.of("create_feature_engineering:hydrochloric_acid", 250)]),
+	]).transitionalItem(transitional_item)
+
+	// 管道
+	transitional_item = "anvilcraft:brass_pressure_plate"
+	create.sequenced_assembly(Item.of("anvilcraft:pipe", 8),
+		Ingredient.of("#c:plates/brass"), [
+		create.filling(transitional_item, [Fluid.of("create_feature_engineering:lubricant", 100), transitional_item]),
+		create.cutting(transitional_item, transitional_item),
+		create.pressing(transitional_item, transitional_item),
 	]).transitionalItem(transitional_item)
 
 	// 泵
