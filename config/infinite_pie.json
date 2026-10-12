@@ -1,0 +1,7 @@
+{
+  "piHunger": 20,
+  "piSaturation": 20.0,
+  "piMaxStackSize": 1,
+  "piEatingSpeed": 16,
+  "piCooldown": false
+}

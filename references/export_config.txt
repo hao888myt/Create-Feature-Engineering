@@ -126,6 +126,7 @@ config/tooltips_reforged.json
 config/create_cyber_goggles.toml
 config/curios-common.toml
 config/create_jetpack-common.toml
+config/infinite_pie.json
 
 # 排除的文件
 !*.log

@@ -35,6 +35,7 @@ config/*
 !config/create_cyber_goggles.toml
 !config/curios-common.toml
 !config/create_jetpack-common.toml
+!config/infinite_pie.json
 
 !config/ars_nouveau/
 config/ars_nouveau/*
