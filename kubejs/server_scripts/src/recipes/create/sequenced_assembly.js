@@ -50,6 +50,9 @@ ServerEvents.recipes(event => {
 		"anvilcraft:pipe",
 		"anvilcraft:pump",
 		"anvilcraft:control_valve",
+
+		"anvilcraftextrapower:lead_acid_battery_empty",
+		"anvilcraft_pigsplus:anvilcraftextrapower/lead_acid_battery_empty",
 	].forEach(recipe => {
 		event.remove(recipe)
 	})
@@ -363,4 +366,13 @@ ServerEvents.recipes(event => {
 		create.deploying(transitional_item, [transitional_item, "anvilcraft:circuit_board"]),
 		create.deploying(transitional_item, [transitional_item, "anvilcraft:pipe"]),
 	]).transitionalItem(transitional_item)
+
+	// 铅酸蓄电池
+	transitional_item = "anvilcraft:capacitor_empty"
+	create.sequenced_assembly(Item.of("anvilcraftextrapower:lead_acid_battery_empty"),
+		Ingredient.of("#anvilcraft:capacitor"), [
+		create.deploying(transitional_item, [transitional_item, "create:sturdy_sheet"]),
+		create.filling(transitional_item, [transitional_item, Fluid.of("vintageimprovements:sulfuric_acid", 100)]),
+		create.deploying(transitional_item, [transitional_item, Ingredient.of("#c:plates/lead")]),
+	]).transitionalItem(transitional_item).loops(2)
 })
