@@ -84,13 +84,31 @@ ServerEvents.recipes(event => {
     create.mixing(Item.of("ratatouille:salt", 4), Fluid.of("create_feature_engineering:saline", 1000)).heated()
     create.mixing(["ratatouille:boil_stone", "ratatouille:salt"], ["ratatouille:boil_stone", Fluid.of("minecraft:water", 1000)]).heated()
 
-    // 电解水
-    create.mixing([Fluid.of("anvilcraft:hydrogen", 500), Fluid.of("anvilcraft:oxygen", 250), "anvilcraft:capacitor_empty"], [Fluid.of("minecraft:water", 500), "anvilcraft:capacitor"])
+    // 电容器电解水
+    create.mixing([
+        Fluid.of("anvilcraft:hydrogen", 500),
+        Fluid.of("anvilcraft:oxygen", 250),
+        CreateItem.of("anvilcraft:capacitor_empty", 0.75)
+    ], [Fluid.of("minecraft:water", 500), "anvilcraft:capacitor"])
 
-    // 电解盐水
+    // 电容器电解盐水
     create.mixing([
         Fluid.of("anvilcraft:hydrogen", 125),
         Fluid.of("create_feature_engineering:chlorine", 125),
-        "anvilcraft:capacitor_empty"],
+        CreateItem.of("anvilcraft:capacitor_empty", 0.5)],
         [Fluid.of("create_feature_engineering:saline", 250), "anvilcraft:capacitor"])
+
+    // 铅酸电池电解水
+    create.mixing([
+        Fluid.of("anvilcraft:hydrogen", 1000),
+        Fluid.of("anvilcraft:oxygen", 500),
+        "anvilcraftextrapower:lead_acid_battery_empty"
+    ], [Fluid.of("minecraft:water", 1000), "anvilcraftextrapower:lead_acid_battery"])
+
+    // 铅酸电池电解盐水
+    create.mixing([
+        Fluid.of("anvilcraft:hydrogen", 250),
+        Fluid.of("create_feature_engineering:chlorine", 250),
+        "anvilcraftextrapower:lead_acid_battery_empty"],
+        [Fluid.of("create_feature_engineering:saline", 500), "anvilcraftextrapower:lead_acid_battery"])
 })
