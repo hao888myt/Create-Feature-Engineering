@@ -238,7 +238,7 @@
 	# Range: 3 ~ 32
 	transparent_crafting_table_max_matrix_size = 15
 	#Controls the ripening cooldown of the Induction Light (in ticks)
-	induction_light_block_ripening_cooldown = 400
+	induction_light_block_ripening_cooldown = 20
 	#Controls the ripening range of the Induction Light
 	# Default: 5
 	# Range: 0 ~ 100
