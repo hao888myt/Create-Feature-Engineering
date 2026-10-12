@@ -504,6 +504,19 @@ ServerEvents.recipes(event => {
     S: "create:sturdy_sheet"
   }).id("anvilcraft:transmission_pole")
 
+  // 电加热器
+  minecraft.crafting_shaped("anvilcraft:heater", [
+    "HBH",
+    "CMC",
+    "SSS"
+  ], {
+    M: "anvilcraft:magnetoelectric_core",
+    C: "#c:wires/copper",
+    S: "create:sturdy_sheet",
+    H: "anvilcraft:hardend_resin",
+    B: "anvilcraft:circuit_board"
+  }).id("anvilcraft:heater")
+
   // 喷气背包
   minecraft.crafting_shaped(
     "create_jetpack:jetpack",
