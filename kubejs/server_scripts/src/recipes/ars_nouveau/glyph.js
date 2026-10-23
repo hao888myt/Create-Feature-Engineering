@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
     ].forEach(recipe => {
         event.remove(recipe)
     })
-    
+
     ars_nouveau.glyph("ars_nouveau:glyph_launch",
         [
             Ingredient.of("#c:leathers"),
@@ -25,7 +25,8 @@ ServerEvents.recipes(event => {
         [
             Ingredient.of("#minecraft:anvil"),
             Ingredient.of("#spectrum:gemstone_shards"),
-            Ingredient.of("anvilcraft:crushing_table")
+            Ingredient.of("minecraft:grindstone"),
+            Ingredient.of("anvilcraft:stamping_platform")
         ], 50
     )
 
