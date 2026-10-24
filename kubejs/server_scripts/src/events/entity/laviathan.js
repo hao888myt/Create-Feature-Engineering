@@ -1,24 +1,18 @@
 EntityEvents.beforeHurt("alexsmobs:laviathan", event => {
     let source = event.getSource()
     if (source == null) return
-    // console.log(source.getType())
 
     let actual = source.getActual()
     if (actual == null) return
 
     let laviathan = event.getEntity()
 
-    if (laviathan.nbt.getByte("Obsidian").toString() == "0") return
-    
-    else if (source.getType() == "anvil" || source.getType() == "falling_block")
-    {
-        if (!laviathan.inWaterOrBubble)
-        {
+    if (source.getType() == "anvil" || source.getType() == "fallingBlock") {
+        if (laviathan.getNbt().getByte("Obsidian").toString() == "1" && !laviathan.inWaterOrBubble) {
             let pos = laviathan.getOnPos()
-            let block = event.getLevel().getBlock(pos.above(3))
-            block.popItem(Item.of("obsidian", randomNum(8, 12)))
+            let block = event.getLevel().getBlock(pos.above(4))
+            block.popItem(Item.of("obsidian", randomNum(16, 24)))
             laviathan.mergeNbt("{Obsidian:0b}")
-            laviathan.health += 5
         }
         event.setDamage(0)
         event.cancel()
