@@ -345,5 +345,11 @@ global.BasicFluids = [
         color: "#ffee00",
         type: "thin",
         zh_cn: "硝酸"
-    }
+    },
+    {
+        id: "sodium_hydroxide",
+        color: "#C9F1EB",
+        type: "thin",
+        zh_cn: "氢氧化钠"
+    },
 ]
