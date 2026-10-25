@@ -34,7 +34,7 @@ ServerEvents.recipes(event => {
                 content: {
                     type: "anvilcraft:block_compress",
                     inputs: [
-                        input,
+                        { blocks: input },
                         { blocks: this.index != 0 ? "anvilcraft:wip_block" : this.initial_block.blocks },
                     ],
                     result: { block: "anvilcraft:wip_block" }
