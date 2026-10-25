@@ -1,3 +1,7 @@
+#Server-wide Overworld sky and lunar travel mode. Vanilla keeps the original sky and midnight travel window. Special uses modeled celestial bodies and permits travel when the Moon is overhead. Applies to every player.
+#Allowed Values: VANILLA, SPECIAL
+overworld_sky_mode = "VANILLA"
+
 #Adjusts settings related to world physics, anvil impacts, and block behavior
 [world]
 	#Controls the number of orbital integration substeps per tick for freely falling items and blocks (1 = legacy motion)
@@ -10,57 +14,58 @@
 	# Default: 10.0
 	# Range: 0.0 ~ 1000.0
 	relativistic_precession_min_strength = 10.0
-	#Controls the effective speed of light in blocks per tick used by orbital precession; larger values weaken the effect
+	#Controls the effective speed of light used by orbital precession (in blocks/tick)
+	#Larger values weaken the effect
 	# Default: 64
 	# Range: 16 ~ 4096
 	orbital_speed_of_light = 64
-	#Controls the maximum depth a lightning strike can reach
+	#Controls the maximum depth a lightning strike can reach (in blocks)
 	# Default: 2
 	# Range: 1 ~ 16
 	lightning_strike_depth = 2
-	#Controls the maximum radius a lightning strike can reach
+	#Controls the maximum radius a lightning strike can reach (in blocks)
 	lightning_strike_radius = 1
-	#Controls the maximum radius of the Giant Anvil's shock behavior
+	#Controls the maximum radius of the Giant Anvil's Shock (in blocks)
 	# Default: 16
 	# Range: 4 ~ 16
 	giant_anvil_max_shock_radius = 16
-	#Controls the maximum fall damage dealt by the Giant Anvil
+	#Controls the maximum fall damage dealt by the Giant Anvil (-1 means infinity)
 	# Default: 40
-	# Range: 0 ~ 100
+	# Range: -1 ~ 1000
 	giant_anvil_max_fall_damage = 40
-	#Controls the minimum collision speed at which anvils explode instead of merely stopping (in blocks/tick)
+	#Controls the minimum collision speed at which Anvils explode instead of merely stopping (in blocks/tick)
 	anvil_collision_craft_speed = 16
-	#Controls the length of redstone EMP generated per block dropped by the anvil
+	#Controls the length of Redstone EMP generated per block dropped by the Anvil (in blocks)
 	# Default: 6
 	# Range: 1 ~ 64
 	redstone_emp_radius = 6
-	#Controls the maximum length of redstone EMP
+	#Controls the maximum length of Redstone EMP (in blocks)
 	# Default: 24
 	# Range: 1 ~ 64
 	redstone_emp_max_radius = 24
-	#Controls the maximum distance for the Block Placer to recursively retrieve items from containers
+	#Controls the maximum distance for the Block Placer to recursively retrieve items from containers (in blocks)
 	# Default: 7
 	# Range: 0 ~ 20
 	block_placer_max_recursive_retrieval_distance = 7
 	#Controls whether the Block Devourer devours blocks upward in a chain (see #anvilcraft:block_devourer_chain_devouring)
 	block_devourer_upward_chain_devouring = true
-	#Controls the maximum distance of the Block Devourer's upward chain devouring
+	#Controls the maximum distance of the Block Devourer's upward chain devouring (in blocks)
 	# Default: 8
 	# Range: 0 ~ 15
 	block_devourer_upward_chain_devouring_distance = 8
 	#Controls whether the Block Devourer protects containers (blocks that can store items) from being devoured
 	block_devourer_protect_containers = false
-	#Controls whether pushing or pulling a sliding rail chains to other rails
+	#Controls whether pushing or pulling a Sliding Rail chains to other Sliding Rails
 	sliding_rail_stick_to_each_other = false
 	#Controls the range in which the Active Silencer mutes sounds (in blocks)
 	# Default: 31
 	# Range: 3 ~ 64
 	active_silencer_range = 31
-	#Controls the minimum size of the crafting table multiblock the Giant Anvil can craft
+	#Controls the minimum size of the Crafting Table multiblock the Giant Anvil can craft (in blocks)
 	# Default: 3
 	# Range: 3 ~ 15
 	giant_anvil_multiblock_min_size = 3
-	#Controls the maximum size of the crafting table multiblock the Giant Anvil can craft
+	#Controls the maximum size of the Crafting Table multiblock the Giant Anvil can craft (in blocks)
 	# Default: 15
 	# Range: 3 ~ 31
 	giant_anvil_multiblock_max_size = 15
@@ -68,11 +73,11 @@
 	# Default: 20.0
 	# Range: 0.0 ~ 512.0
 	mun_safe_fall_distance = 20.0
-	#Controls the blocks per damage point of fall damage in the Mun dimension
+	#Controls the fall distance per damage in the Mun dimension (in blocks/damage)
 	# Default: 6.0
 	# Range: 0.0 ~ 64.0
 	mun_blocks_per_damage = 6.0
-	#Controls the delay before an Overworld-like dimension collapses (in ticks)
+	#Controls the delay before an Overworld-Like dimension collapses (in ticks)
 	# Default: 40
 	# Range: 1 ~ 1200
 	overworld_like_collapse_delay_ticks = 40
@@ -80,11 +85,11 @@
 	# Default: 10
 	# Range: 0 ~ 100
 	transcendium_bonus_ingot_chance_per_enchantment = 10
-	#Controls the experience points granted per block of Liquid Experience
+	#Controls the experience points granted per block of EXP Fluid (in XP/block)
 	# Default: 50
 	# Range: 0 ~ 1000
 	exp_fluid_xp_per_block = 50
-	#Controls how many neighbouring Void Matter blocks are needed for Void Matter to decay
+	#Controls the number of neighbouring Void Matter Blocks needed for a Void Matter Block to decay
 	# Default: 5
 	# Range: 1 ~ 6
 	void_matter_decay_threshold = 5
@@ -92,31 +97,23 @@
 	# Default: 0.1
 	# Range: 0.0 ~ 1.0
 	cement_solidify_chance = 0.1
-	#Controls the chance that a Hollow Magnet converts the block it pulls
-	# Default: 0.005
-	# Range: 0.0 ~ 1.0
-	hollow_magnet_convert_chance = 0.005
 	#Controls the chance that the Block Devourer suppresses the drops of the block it eats
 	# Default: 0.05
 	# Range: 0.0 ~ 1.0
 	block_devourer_drop_suppression_chance = 0.05
-	#Controls the chance that Redhot blocks absorb water
+	#Controls the chance that Redhot Blocks absorb water
 	# Default: 0.5
 	# Range: 0.0 ~ 1.0
 	redhot_water_absorb_chance = 0.5
-	#Controls the chance that Ember blocks absorb water
+	#Controls the chance that Ember Blocks absorb water
 	# Default: 0.5
 	# Range: 0.0 ~ 1.0
 	ember_block_water_absorption_chance = 0.5
-	#Controls the damage a falling Anvil deals per block fallen
-	# Default: 2.0
-	# Range: 0.0 ~ 100.0
-	anvil_fall_damage_per_block = 2.0
 	#Controls the damage a falling Giant Anvil deals per block fallen
 	# Default: 10.0
 	# Range: 0.0 ~ 1000.0
 	giant_anvil_fall_damage_per_block = 10.0
-	#Controls the speed a powered Sliding Rail launches entities with
+	#Controls the speed a powered Sliding Rail launches entities with (in blocks/tick)
 	# Default: 0.3499999940395355
 	# Range: 0.0 ~ 10.0
 	sliding_rail_launch_speed = 0.3499999940395355
@@ -124,11 +121,11 @@
 	# Default: 0.15000000596046448
 	# Range: 0.0 ~ 10.0
 	sliding_rail_pull_strength = 0.15000000596046448
-	#Controls how much of an entity's motion a Sliding Rail preserves
+	#Controls the fraction of an entity's motion a Sliding Rail preserves
 	# Default: 0.800000011920929
 	# Range: 0.0 ~ 1.0
 	sliding_rail_damping = 0.800000011920929
-	#Controls how long a Detector Sliding Rail stays powered (in ticks)
+	#Controls the duration a Detector Sliding Rail stays powered (in ticks)
 	# Default: 20
 	# Range: 1 ~ 200
 	detector_sliding_rail_hold_ticks = 20
@@ -138,49 +135,47 @@
 	heater_damage = 4.0
 	#Controls the chance that using an item on a Chipped Anvil repairs it
 	#Higher rolls consume the item without repairing anything
-	#
 	# Default: 0.9
 	# Range: 0.0 ~ 1.0
 	chipped_anvil_repair_chance = 0.9
 	#Controls the chance that using an item on a Damaged Anvil repairs it to a full Anvil
-	#Rolls between this chance and the chipped anvil repair chance degrade it to a Chipped Anvil instead
-	#
+	#Rolls between this chance and the Chipped Anvil repair chance degrade it to a Chipped Anvil instead
 	# Default: 0.1
 	# Range: 0.0 ~ 1.0
 	damaged_anvil_repair_chance = 0.1
-	#Controls how often Chocolate Blocks apply their effects (in ticks)
+	#Controls the interval at which Chocolate Blocks apply their effects (in ticks)
 	# Default: 80
 	# Range: 1 ~ 1200
 	chocolate_block_effect_period = 80
-	#Controls how long the effects of Chocolate Blocks last (in ticks)
+	#Controls the effect duration of Chocolate Blocks (in ticks)
 	# Default: 180
 	# Range: 1 ~ 24000
 	chocolate_block_effect_duration = 180
-	#Controls the chance that overheated Ember Metal turns into a Netherite Block
+	#Controls the chance that an Overheated Block of Ember Metal turns into a Block of Netherite
 	# Default: 0.05
 	# Range: 0.0 ~ 1.0
 	overheated_ember_metal_netherite_chance = 0.05
-	#Controls how many times an Enchanted Gold Ingot makes Piglins barter
+	#Controls the number of times an Enchanted Gold Ingot makes Piglins barter
 	# Default: 4
 	# Range: 1 ~ 16
 	enchanted_gold_barter_multiplier = 4
-	#Controls how long the Monolith hint stays before it fades (in ticks)
+	#Controls the duration of the Monolith hint before it fades (in ticks)
 	# Default: 100
 	# Range: 1 ~ 1200
 	monolith_hint_ticks = 100
-	#Controls the radius the Monolith hint searches for players (in blocks)
+	#Controls the radius the Monolith hint searches for Monolith Cores (in blocks)
 	# Default: 5
 	# Range: 1 ~ 32
 	monolith_hint_range = 5
-	#Controls how long the Monolith return confirmation lasts (in ticks)
+	#Controls the duration of the Monolith return confirmation (in ticks)
 	# Default: 60
 	# Range: 1 ~ 1200
 	monolith_return_confirmation_ticks = 60
-	#Controls how long the Monolith Core takes to accept an offering (in ticks)
+	#Controls the time the Monolith Core takes to accept an offering (in ticks)
 	# Default: 100
 	# Range: 1 ~ 1200
 	monolith_offering_ticks = 100
-	#Controls how long the Monolith Core takes to dissolve an offering (in ticks)
+	#Controls the time the Monolith Core takes to dissolve an offering (in ticks)
 	# Default: 60
 	# Range: 1 ~ 1200
 	monolith_dissolve_ticks = 60
@@ -204,16 +199,55 @@
 	# Default: 0.1
 	# Range: 0.0 ~ 1.0
 	cut_ember_metal_block_water_absorption_chance = 0.1
-	#Controls how many blocks a sliding structure may push at most (also scales the detector rail signal)
+	#Controls the maximum number of blocks a sliding structure may push (also scales the Detector Sliding Rail signal)
 	#A piston push limit changed by another mod takes precedence over this value
-	#
 	# Default: 12
 	# Range: 1 ~ 256
 	sliding_rail_max_push_depth = 12
-	#Controls the chance that a falling NeoForge anvil takes damage on impact
+	#Controls the chance that a falling NeoForge takes damage on impact
 	# Default: 0.01
 	# Range: 0.0 ~ 1.0
 	neoforge_anvil_damage_chance = 0.01
+	#Controls the damage a falling NeoForge deals per block fallen
+	# Default: 2.0
+	# Range: 0.0 ~ 1000.0
+	neoforge_fall_damage_per_block = 2.0
+	#Controls the maximum fall damage dealt by the NeoForge (-1 means infinity)
+	# Default: 20
+	# Range: -1 ~ 1000
+	neoforge_max_fall_damage = 20
+	#Controls the damage a falling Royal Anvil deals per block fallen
+	# Default: 2.0
+	# Range: 0.0 ~ 1000.0
+	royal_anvil_fall_damage_per_block = 2.0
+	#Controls the maximum fall damage dealt by the Royal Anvil (-1 means infinity)
+	# Default: 80
+	# Range: -1 ~ 1000
+	royal_anvil_max_fall_damage = 80
+	#Controls the damage a falling Frost Anvil deals per block fallen
+	# Default: 2.0
+	# Range: 0.0 ~ 1000.0
+	frost_anvil_fall_damage_per_block = 2.0
+	#Controls the maximum fall damage dealt by the Frost Anvil (-1 means infinity)
+	# Default: 120
+	# Range: -1 ~ 1000
+	frost_anvil_max_fall_damage = 120
+	#Controls the damage a falling Ember Anvil deals per block fallen
+	# Default: 2.0
+	# Range: 0.0 ~ 1000.0
+	ember_anvil_fall_damage_per_block = 2.0
+	#Controls the maximum fall damage dealt by the Ember Anvil (-1 means infinity)
+	# Default: 120
+	# Range: -1 ~ 1000
+	ember_anvil_max_fall_damage = 120
+	#Controls the damage a falling Transcendence Anvil deals per block fallen
+	# Default: 2.0
+	# Range: 0.0 ~ 1000.0
+	transcendence_anvil_fall_damage_per_block = 2.0
+	#Controls the maximum fall damage dealt by the Transcendence Anvil (-1 means infinity)
+	# Default: -1
+	# Range: -1 ~ 1000
+	transcendence_anvil_max_fall_damage = -1
 
 #Adjusts settings related to machines, power transmission, and storage logistics
 [machines]
@@ -239,11 +273,11 @@
 	transparent_crafting_table_max_matrix_size = 15
 	#Controls the ripening cooldown of the Induction Light (in ticks)
 	induction_light_block_ripening_cooldown = 20
-	#Controls the ripening range of the Induction Light
+	#Controls the ripening range of the Induction Light (in blocks)
 	# Default: 5
 	# Range: 0 ~ 100
 	induction_light_block_ripening_range = 5
-	#Controls the number of ticks between Heliostats detections
+	#Controls the interval between Heliostats detections (in ticks)
 	# Default: 4
 	# Range: 1 ~ 20
 	heliostats_detection_interval = 4
@@ -259,15 +293,15 @@
 	# Default: 80
 	# Range: 1 ~ 1200
 	tesla_tower_strike_cooldown = 80
-	#Controls the FE extracted per tick by the Discharger
+	#Controls the FE extracted per tick by the Discharger (in FE/tick)
 	# Default: 10000
 	# Range: 1 ~ 1000000
 	discharger_fe_per_tick = 10000
-	#Controls the FE capacity of the Fe Collector
+	#Controls the maximum energy of the FE Collector (in FE)
 	# Default: 1000000
 	# Range: 1000 ~ 1000000000
 	fe_collector_max_energy = 1000000
-	#Controls the FE converted per tick by the Fe Collector
+	#Controls the FE converted per tick by the FE Collector (in FE/tick)
 	# Default: 10000
 	# Range: 1 ~ 1000000
 	fe_collector_fe_per_tick = 10000
@@ -275,11 +309,11 @@
 	# Default: 8
 	# Range: 1 ~ 200
 	item_splitter_interval = 8
-	#Controls the maximum distance the Item Splitter distributes items to
+	#Controls the maximum distance the Item Splitter distributes items to (in blocks)
 	# Default: 16
 	# Range: 1 ~ 64
 	item_splitter_max_distance = 16
-	#Controls the charge the Charge Collector accepts per incoming window
+	#Controls the charge the Charge Collector accepts per incoming window (in kW)
 	# Default: 128.0
 	# Range: 1.0 ~ 1024.0
 	charge_collector_max_power_per_incoming = 128.0
@@ -291,31 +325,31 @@
 	# Default: 10
 	# Range: 1 ~ 200
 	charge_collector_output_cooldown = 10
-	#Controls the base output power of the Infinite Collector
+	#Controls the base output power of the Infinite Collector (in kW)
 	# Default: 256
 	# Range: 0 ~ 4096
 	infinite_collector_base_power = 256
-	#Controls the range in which the Infinite Collector collects charges
+	#Controls the range in which the Infinite Collector collects heat and charges and measures void mass (in blocks)
 	# Default: 3
 	# Range: 1 ~ 8
 	infinite_collector_range = 3
-	#Controls the power consumed by the Mass Energy Inverter
+	#Controls the power consumed by the Mass Energy Inverter (in kW)
 	# Default: 1024
 	# Range: 1 ~ 65536
 	mass_energy_inverter_power = 1024
-	#Controls the mass injected per tick by the Mass Energy Inverter
-	# Default: 5
-	# Range: 1 ~ 1000
+	#Controls the mass injected by the Mass Energy Inverter (in mass/tick)
+	# Default: 5.0
+	# Range: 1.0 ~ 1000.0
 	mass_energy_inverter_mass_per_tick = 5
 	#Controls the maximum output of the Space Overcompressor per conversion
 	# Default: 640
 	# Range: 1 ~ 6400
 	space_overcompressor_max_output_per_time = 640
-	#Controls how many items the Large Cauldron processes in parallel
+	#Controls the number of items the Large Cauldron processes in parallel
 	# Default: 9
 	# Range: 1 ~ 24
 	large_cauldron_max_process_efficiency = 9
-	#Controls how many tropical fish a Fish Tank can hold
+	#Controls the maximum number of tropical fish a Fish Tank can hold
 	# Default: 4
 	# Range: 1 ~ 16
 	fish_tank_max_tropical_fish = 4
@@ -323,15 +357,15 @@
 	# Default: 40
 	# Range: 1 ~ 1200
 	neutron_irradiator_radiation_interval = 40
-	#Controls how many Anvilons the Neutron Irradiator needs to select a type
+	#Controls the number of Confined Anvilons the Neutron Irradiator needs to select a type
 	# Default: 6
 	# Range: 1 ~ 9
 	neutron_irradiator_type_threshold = 6
-	#Controls the FE capacity of the Propel Piston
+	#Controls the maximum energy of the Propel Piston (in FE)
 	# Default: 160000000
 	# Range: 1000000 ~ 1600000000
 	propel_piston_max_energy = 160000000
-	#Controls the fluid output of megastructures such as the Extractor per tick (in mB)
+	#Controls the fluid output of megastructures such as the Extractor per tick (in mB/tick)
 	# Default: 250
 	# Range: 1 ~ 10000
 	megastructure_fluid_per_tick = 250
@@ -343,49 +377,51 @@
 	# Default: 5
 	# Range: 1 ~ 100
 	drain_interval = 5
-	#Controls the power grid range of Power Transmitters
+	#Controls the power grid range of Transmission Poles (in blocks)
 	# Default: 8
 	# Range: 1 ~ 64
 	power_transmitter_range = 8
-	#Controls the power grid range of Remote Transmission Poles
+	#Controls the power grid range of Remote Transmission Poles (in blocks)
 	# Default: 16
 	# Range: 1 ~ 64
 	remote_power_transmitter_range = 16
-	#Controls the maximum size of the entries in the storages' recover station
+	#Controls the maximum size of the Storages' Recover Station
 	storage_recover_max_size = 20
-	#Controls how long the Infinite Fluid Tank asks for confirmation before it can be broken (in ticks)
+	#Controls the time a Fluid Tank containing infinite fluid waits for break confirmation (in ticks)
 	# Default: 200
 	# Range: 1 ~ 1200
 	infinite_tank_break_confirm_duration_ticks = 200
-	#Controls the fluid flow a fluid pipe gains per block of height difference (in mB/tick)
+	#Controls the fluid flow a Pipe gains per block of height difference (in mB/tick)
 	# Default: 50
 	# Range: 1 ~ 1000
 	pipe_flow_per_height = 50
-	#Controls the maximum fluid flow of a fluid pipe (in mB/tick)
+	#Controls the maximum fluid flow of a Pipe (in mB/tick)
 	# Default: 2000
 	# Range: 1 ~ 100000
 	pipe_max_flow_rate = 2000
-	#Controls how many stacks the Large Cauldron accepts per input slot
+	#Controls the number of stacks the Large Cauldron accepts per input slot
 	# Default: 9
 	# Range: 1 ~ 64
 	large_cauldron_input_stack_multiplier = 9
-	#Controls the range of the Local Storage Terminal (in blocks)
+	#Controls the range of the Local Terminal (in blocks)
 	# Default: 32
 	# Range: 1 ~ 256
 	local_terminal_range = 32
-	#Controls the range of the Shulker Storage Terminal (in blocks)
+	#Controls the range of the Shulker Terminal (in blocks)
 	# Default: 64
 	# Range: 1 ~ 512
 	shulker_terminal_range = 64
-	#Controls how many storage operations can be undone
+	#Controls the number of storage operations that can be undone
 	# Default: 4
 	# Range: 0 ~ 64
 	storage_undo_depth = 4
-	#Controls how much heat the Heat Collector can accumulate (the super_heat advancement requires 4096)
+	#Controls the maximum heat the Heat Collector can accumulate (in kW)
+	#The super_heat advancement requires reaching 4096
 	# Default: 4096
 	# Range: 1 ~ 1048576
 	heat_collector_max_output_power = 4096
-	#Controls the interval of power grid logic in ticks; it is also the unit of the FE/t accounting
+	#Controls the interval of power grid logic (in ticks)
+	#It is also the unit of the FE/t accounting
 	# Default: 20
 	# Range: 1 ~ 200
 	power_grid_tick = 20
@@ -393,7 +429,7 @@
 	# Default: 64000
 	# Range: 1000 ~ 1000000
 	large_cauldron_tank_capacity = 64000
-	#Controls the amount at which a fluid tank counts as infinite (in mB)
+	#Controls the amount at which a Fluid Tank counts as infinite (in mB)
 	# Default: 12800000
 	# Range: 1000 ~ 2000000000
 	fluid_tank_infinity_threshold = 12800000
@@ -420,27 +456,27 @@
 		# Default: 24
 		# Range: 1 ~ 864000
 		fish_tank_extra_duration = 24
-		#Controls the maximum height of the Plasma Jets' chimney walls
+		#Controls the maximum height of the Plasma Jets' tube walls (in blocks)
 		# Default: 4
 		# Range: 1 ~ 8
 		max_tube_height = 4
 
-	#Adjusts settings related to power converters
+	#Adjusts settings related to Power Converters
 	[machines.power_converter]
-		#Controls the working interval of power converters (in ticks)
+		#Controls the working interval of Power Converters (in ticks)
 		# Default: 10
 		# Range: 1 ~ 60
 		work_interval = 10
-		#Controls the energy efficiency of power converters (1 kW => xx FE/t)
+		#Controls the energy efficiency of Power Converters (1 kW => xx FE/t)
 		# Default: 100
 		# Range: 1 ~ 1000
 		efficiency = 100
-		#Controls the power loss of power converters
+		#Controls the power loss of Power Converters
 		loss = 0.1
 
 	#Adjusts settings related to the Storage Port
 	[machines.storage_port]
-		#Controls the working interval of the Storage Port (in ticks), which limits how often it scans and moves items
+		#Controls the working interval between the Storage Port's scans and item moves (in ticks)
 		# Default: 5
 		# Range: 1 ~ 1200
 		work_interval = 5
@@ -474,7 +510,7 @@
 	# Default: 15
 	# Range: 1 ~ 80
 	auto_enchanting_table_max_bookshelf = 15
-	#Controls the liquid XP cost per bookshelf level of the Auto Enchanting Table (in mB)
+	#Controls the EXP Fluid cost per bookshelf level of the Auto Enchanting Table (in mB)
 	# Default: 400
 	# Range: 0 ~ 10000
 	auto_enchanting_table_exp_cost_per_shelf = 400
@@ -490,27 +526,22 @@
 	ember_anvil_beyond_max_level = false
 	#Controls whether items can be combined with Enchanted Books beyond the maximum level in the Transcendence Anvil
 	transcendence_anvil_beyond_max_level = true
-	#Controls the maximum length a magnet attracts
+	#Controls the maximum distance a Block of Magnet attracts (in blocks)
 	# Default: 5
 	# Range: 0 ~ 8
 	magnet_attracts_distance = 5
-	#Controls the maximum radius a handheld magnet attracts
-	# Default: 8.0
-	# Range: 1.0 ~ 16.0
-	magnet_item_attracts_radius = 8.0
-	#Controls whether lasers are blocked by the collision shapes of blocks along their path
+	#Controls whether Lasers are blocked by the collision shapes of blocks along their path
 	laser_impact_checking = true
 	#Controls the maximum ore vein size searched while mining with a Laser Gun
 	#Ore beyond this limit is not chain-mined (default: 64)
-	#
 	# Default: 64
 	# Range: 1 ~ 4096
 	laser_ore_cluster_max_size = 64
-	#Controls the maximum search radius of the Geode
+	#Controls the maximum search radius of the Geode (in blocks)
 	# Default: 64
 	# Range: 64 ~ 512
 	geode_radius = 64
-	#Controls the search interval of the Geode
+	#Controls the search interval of the Geode (in blocks)
 	# Default: 4
 	# Range: 1 ~ 8
 	geode_interval = 4
@@ -520,49 +551,45 @@
 	geode_cooldown = 5
 	#Controls whether pressing shift and right-clicking takes out all totems stored in the Amulet Box
 	amulet_box_take_out_all_totem = true
-	#Controls how many totems the Amulet Box can store
+	#Controls the maximum number of totems the Amulet Box can store
 	# Default: 16
 	# Range: 1 ~ 64
 	amulet_box_capacity = 16
-	#Controls whether eternal items can be killed by the void (falling out of the world)
+	#Controls whether Eternal items can be killed by the void (falling out of the world)
 	eternal_items_void_killable = false
 	#Controls the maximum number of blocks a single Building Rod operation may place
-	# Default: 4000
+	# Default: 4096
 	# Range: 1 ~ 65536
 	building_rod_max_blocks = 4000
-	#Controls the item cooldown applied when a Magnet is used (in ticks)
-	# Default: 5
-	# Range: 1 ~ 200
-	magnet_item_cooldown = 5
-	#Controls how much durability a Frost Metal Ingot restores when repairing an item
+	#Controls the durability a Frost Metal Ingot restores when repairing an item
 	# Default: 1080
 	# Range: 1 ~ 10000
 	frost_metal_ingot_repair_amount = 1080
-	#Controls how much durability a Frost Metal Nugget restores when repairing an item
+	#Controls the durability a Frost Metal Nugget restores when repairing an item
 	# Default: 120
 	# Range: 1 ~ 1000
 	frost_metal_nugget_repair_amount = 120
-	#Controls how long the Totem of Rage keeps its owner alive (in ticks)
+	#Controls the duration the Totem of Rage keeps its owner alive (in ticks)
 	# Default: 1200
 	# Range: 20 ~ 24000
 	totem_of_rage_duration = 1200
-	#Controls the experience a villager gains when an Experience Gem is used on it
+	#Controls the experience a Villager gains when an EXP Gem is used on it (in XP)
 	# Default: 20
 	# Range: 0 ~ 1000
 	exp_gem_villager_xp = 20
-	#Controls how much a villager ages up when an Experience Gem is used on it (in ticks)
+	#Controls the amount a Villager ages up when an EXP Gem is used on it (in ticks)
 	# Default: 120
 	# Range: 1 ~ 24000
 	exp_gem_age_addition = 120
-	#Controls how long the Portable Anvil takes to use (in ticks)
+	#Controls the time the Portable Anvil takes to use (in ticks)
 	# Default: 40
 	# Range: 1 ~ 200
 	portable_anvil_use_ticks = 40
-	#Controls the radius in which the Cursed Golden Apple affects villagers
+	#Controls the search radius in which the Cursed Golden Apple affects Players (in blocks)
 	# Default: 16
 	# Range: 1 ~ 64
 	cursed_golden_apple_search_radius = 16
-	#Controls how much durability Fire Reforging restores per tick
+	#Controls the durability Fire Reforging restores per tick
 	# Default: 10
 	# Range: 1 ~ 1000
 	fire_reforging_repair_per_tick = 10
@@ -574,7 +601,7 @@
 	# Default: 0.05000000074505806
 	# Range: 0.0 ~ 1.0
 	providence_third_roll_chance = 0.05000000074505806
-	#Controls how long the Resonator takes to mine a block by resonance (in ticks)
+	#Controls the time the Resonator takes to mine a block by resonance (in ticks)
 	# Default: 20
 	# Range: 1 ~ 200
 	resonator_mining_ticks = 20
@@ -582,23 +609,23 @@
 	# Default: 128
 	# Range: 1 ~ 10000
 	resonator_durability_cost = 128
-	#Controls how many Anvil Railgun rounds can be loaded (at most 30 to fit the ammo bitmask)
+	#Controls the maximum number of Anvil Railgun rounds that can be loaded
 	# Default: 16
 	# Range: 1 ~ 30
 	anvil_railgun_max_ammo = 16
-	#Controls the base cooldown of the Tesla Gun (in ticks, shortened by Quick Charge)
+	#Controls the base cooldown of the Tesla Gun, shortened by Quick Charge (in ticks)
 	# Default: 80
 	# Range: 1 ~ 1200
 	tesla_gun_cooldown = 80
-	#Controls how long the Charged Jump ability takes to charge (in ticks)
-	# Default: 20
+	#Controls the charge time of the Charged Jump ability (in ticks)
+	# Default: 10
 	# Range: 1 ~ 200
 	charged_jump_charge_ticks = 20
-	#Controls how long the Charged Jump bar holds its progress after releasing (in ticks)
-	# Default: 20
+	#Controls the time the Charged Jump bar holds its progress after releasing (in ticks)
+	# Default: 10
 	# Range: 0 ~ 200
 	charged_jump_charge_hold_ticks = 20
-	#Controls how long the Charged Jump bar takes to decay after holding (in ticks)
+	#Controls the time the Charged Jump bar takes to decay after holding (in ticks)
 	# Default: 10
 	# Range: 1 ~ 200
 	charged_jump_charge_decay_ticks = 10
@@ -606,11 +633,12 @@
 	# Default: 3.5
 	# Range: 1.0 ~ 10.0
 	charged_jump_max_height_multiplier = 3.5
-	#Controls how often the helmet refreshes Night Vision (in ticks, above the 200 tick flicker threshold)
+	#Controls the Night Vision refresh interval of the Weatherproof Spacesuit Helmet (in ticks)
 	# Default: 210
 	# Range: 200 ~ 2400
 	night_vision_refresh_ticks = 210
-	#Controls the maximum energy of energy weapons (in FE, the item component default stays 640M)
+	#Controls the maximum energy of Energy Weapons (in FE)
+	#The default matches the item component value of 640M
 	# Default: 640000000
 	# Range: 1 ~ 2000000000
 	energy_weapon_max_energy = 640000000
@@ -642,12 +670,20 @@
 	# Default: 8000000
 	# Range: 1 ~ 2000000000
 	building_rod_max_energy = 8000000
-	#Controls how long the mob effect an amulet grants lasts while its condition holds (in ticks)
+	#Controls the duration of the mob effect an Amulet grants while its condition holds (in ticks)
 	# Default: 210
 	# Range: 1 ~ 100000
 	amulet_effect_refresh_ticks = 210
+	#Controls the maximum radius a Handheld Magnet attracts (in blocks)
+	# Default: 8.0
+	# Range: 1.0 ~ 16.0
+	handheld_magnet_attracts_radius = 8.0
+	#Controls the item cooldown applied when a Handheld Magnet is used (in ticks)
+	# Default: 5
+	# Range: 1 ~ 200
+	handheld_magnet_cooldown = 5
 
-#Adjusts the commands the Spacetime Supercomputer may execute
+#Adjusts settings related to the commands the Spacetime Supercomputer may execute
 [commands]
 	#Controls whether to allow the /locate biome command
 	allow_locate_biome_command = true
@@ -659,7 +695,7 @@
 	allow_time_add_command = true
 	#Controls whether to allow the /tick sprint command
 	allow_tick_sprint_command = true
-	#Controls how many power grid entries the power grid command shows
+	#Controls the number of power grid entries the power grid command shows
 	# Default: 256
 	# Range: 1 ~ 4096
 	powergrid_info_limit = 256

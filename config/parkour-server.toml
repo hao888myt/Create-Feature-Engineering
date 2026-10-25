@@ -54,6 +54,14 @@
 	# Default: 6.0
 	# Range: -3.0 ~ 1.7976931348623157E308
 	safeFallHeight = 3.0
+	#Enable walking and sneaking on top of entities (default: true)
+	enableEntityWalking = true
+	#Press jump again near an entity for one extra jump per airborne period (default: true)
+	enableEntityJump = true
+	#Maximum gap between hitboxes for an entity jump, in blocks (default: 0.6)
+	# Default: 0.6
+	# Range: 0.1 ~ 2.0
+	entityJumpReach = 0.6
 
 #Swimming settings let you change all options related to movement on the water.
 [swimming_settings]
@@ -80,28 +88,20 @@
 	enableSpeedVault = false
 	#Allows climbing more block types (default: true)
 	canClimbMoreBlocks = true
-	#Enable upward climb speed increase (default: true)
+	#Enable sprint-key upward climb acceleration; disabling this removes all upward climb boosts (default: true)
 	enableUpClimbSpeedIncrease = true
-	#Upward climb speed multiplier (default: 1.25)
-	# Default: 1.25
+	#The sole target speed multiplier for sprint-key upward climbing; 1 adds no climb speed, subject to a safe speed limit (default: 1.25)
+	# Default: 2.0
 	# Range: 1.0 ~ 5.0
 	upClimbSpeedMultiplier = 1.25
-	#Enable downward climb speed increase when looking down (default: true)
+	#Enable sprint-key downward climb acceleration regardless of look direction; disabling this removes all downward climb boosts (default: true)
 	enableClimbDownSpeedIncrease = true
-	#Downward climb speed multiplier (default: 2.0)
+	#The sole target speed multiplier for sprint-key downward climbing; 1 adds no climb speed, subject to a safe speed limit (default: 2.0)
 	# Default: 2.0
 	# Range: 1.0 ~ 5.0
 	downClimbSpeedMultiplier = 2.0
-	#Enable climb acceleration over time (default: true)
+	#Ease into the target speed over 8 ticks (about 0.4 seconds); when disabled, reach the same target immediately. This setting does not change the final target speed (default: true)
 	enableClimbAccelerationOverTime = true
-	#Upward climb acceleration multiplier (default: 2.0)
-	# Default: 2.0
-	# Range: 1.0 ~ 5.0
-	upClimbAccelerationMultiplier = 2.0
-	#Downward climb acceleration multiplier (default: 1.5)
-	# Default: 1.5
-	# Range: 1.0 ~ 5.0
-	downClimbAccelerationMultiplier = 1.5
 	#Climbable blocks do not slow down movement (default: true)
 	climbableBlockNotSlowDown = true
 	#Enable wall run (default: true)
@@ -134,3 +134,21 @@
 	# Default: 0.2
 	# Range: 0.05 ~ 1.0
 	wallClimbSpeed = 0.2
+	#Enable jumping during or shortly after a speed vault (default: true)
+	enableSpeedVaultJump = true
+
+#Horizontal bar swinging
+[bar_swing_settings]
+	#Automatically catch horizontal bars while airborne (default: true)
+	enableBarSwing = true
+	#Bar release jump strength multiplier (default: 1.0)
+	# Default: 1.0
+	# Range: 0.5 ~ 1.5
+	barSwingJumpStrength = 1.0
+
+#Animation settings let you change first-person parkour animations.
+[animation_settings]
+	#Enable first-person parkour arm animations while holding items (default: true). Bar swinging keeps its own animation.
+	enableFirstPersonAnimations = true
+	#Enable first-person crawl animations (default: true). Still respects enableFirstPersonAnimations while holding items. Does not affect crawling itself.
+	enableCrawlFirstPersonAnimations = false
