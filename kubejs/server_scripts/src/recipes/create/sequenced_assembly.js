@@ -124,6 +124,7 @@ ServerEvents.recipes(event => {
 		"create:brass_block", [
 		create.deploying(transitional_item, [transitional_item, "createdieselgenerators:engine_piston"]),
 		create.deploying(transitional_item, [transitional_item, "create:fluid_tank"]),
+		create.deploying(transitional_item, [transitional_item, "create:sturdy_sheet"]),
 	]).transitionalItem(transitional_item).loops(2)
 
 	// 红石导线
