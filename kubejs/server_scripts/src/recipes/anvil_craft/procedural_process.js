@@ -99,7 +99,9 @@ ServerEvents.recipes(event => {
 
     let removes = [
         "anvilcraft:magnetoelectric_core",
-        "anvilcraft:precision_electromagnetic_processing/magnetoelectric_core"
+        "anvilcraft:precision_electromagnetic_processing/magnetoelectric_core",
+
+        "createimp:batch_mechanical_crafter",
     ].forEach(recipe => {
         event.remove(recipe)
     })
@@ -109,4 +111,10 @@ ServerEvents.recipes(event => {
         .addItemInject(["#c:wires/copper"])
         .addItemInject(["#c:glass_blocks"])
         .build(`${global.ModPackId}:magnetoelectric_core`)
+
+    new ProceduralProcess("createimp:batch_mechanical_crafter", "create:mechanical_crafter", "createimp:batch_mechanical_crafter")
+        .addItemInject(["anvilcraft:circuit_board"])
+        .addItemInject(["anvilcraft:hardend_resin"])
+        .addBlockCompress("create:railway_casing")
+        .build(`${global.ModPackId}:batch_mechanical_crafter`)
 })
