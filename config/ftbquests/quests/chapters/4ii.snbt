@@ -435,7 +435,7 @@
 				}
 			]
 			x: 12.5d
-			y: -1.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["2746729863E50C60"]
@@ -581,7 +581,7 @@
 				type: "item"
 			}]
 			x: 10.5d
-			y: 2.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["2746729863E50C60"]
@@ -594,7 +594,7 @@
 				type: "item"
 			}]
 			x: 10.5d
-			y: -1.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["2746729863E50C60"]
@@ -606,8 +606,33 @@
 				item: { count: 1, id: "anvilcraftextrapower:lead_acid_battery_empty" }
 				type: "item"
 			}]
+			x: 10.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["13FCC3F5D35A9412"]
+			id: "78B9F17C07212228"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "30254EAB90D77A31"
+				item: { count: 1, id: "anvilcraftextrapower:electromagnet" }
+				type: "item"
+			}]
 			x: 12.5d
-			y: 0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2746729863E50C60"]
+			id: "3A6F3B8E4CB677B6"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "792060908E0756AC"
+				item: { count: 1, id: "anvilcraftextrapower:magnetic_display_stand" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 4.5d
 		}
 	]
 }
