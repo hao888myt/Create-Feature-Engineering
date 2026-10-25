@@ -1,7 +1,7 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "7E8A4706B82319BE"
+	filename: "7e8a4706b82319be"
 	group: "73901F8574D43516"
 	icon: {
 		components: {
@@ -22,6 +22,7 @@
 				"299938D6CEB5F7CF"
 			]
 			id: "443C49B551AA6BEC"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [
 				{
 					count: 64
@@ -47,7 +48,7 @@
 				item: { count: 1, id: "create:andesite_alloy" }
 				type: "item"
 			}]
-			x: -3.0d
+			x: -3.5d
 			y: 0.0d
 		}
 		{
@@ -57,10 +58,17 @@
 				"5C88E6731536C9D3"
 			]
 			hide_dependent_lines: true
+			icon: {
+				components: {
+					"researchd:research_pack": "create_feature_engineering:conveying"
+				}
+				id: "researchd:research_pack"
+			}
 			id: "02863465E853724C"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [
 				{
-					count: 16
+					count: 128
 					id: "618086D66D3960C5"
 					item: {
 						components: {
@@ -72,17 +80,30 @@
 					type: "item"
 				}
 				{
-					count: 4
-					id: "4EA43C5F38C2FFC1"
+					count: 8
+					id: "1A1EC687F9B4D244"
 					item: {
 						count: 1
 						id: "researchd:research_lab"
 					}
 					type: "item"
 				}
+				{
+					count: 4
+					id: "7A1FC7C86CF4AAA3"
+					item: {
+						count: 1
+						id: "create_feature_engineering:singularity"
+					}
+					type: "item"
+				}
 			]
+			shape: "hexagon"
+			size: 2.0d
 			tasks: [{
-				id: "467C90DD86C6C297"
+				consume_items: true
+				count: 128L
+				id: "5FD07ADB33AF7D7E"
 				item: { components: { "researchd:research_pack": "create_feature_engineering:conveying" }, count: 1, id: "researchd:research_pack" }
 				type: "item"
 			}]
@@ -92,6 +113,7 @@
 		{
 			dependencies: ["443C49B551AA6BEC"]
 			id: "058AD91A0A40F254"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				count: 64
 				id: "377B424F461B12E8"
@@ -106,12 +128,13 @@
 				item: { count: 1, id: "create:shaft" }
 				type: "item"
 			}]
-			x: -1.0d
+			x: -1.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["058AD91A0A40F254"]
 			id: "5C88E6731536C9D3"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				count: 32
 				id: "26EA804B747FDE7D"
@@ -126,12 +149,13 @@
 				item: { count: 1, id: "create:cogwheel" }
 				type: "item"
 			}]
-			x: 1.0d
+			x: 0.5d
 			y: 1.0d
 		}
 		{
 			dependencies: ["058AD91A0A40F254"]
 			id: "2958A9A8BB1489DD"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				count: 32
 				id: "153042CB6125798E"
@@ -146,7 +170,7 @@
 				item: { count: 1, id: "create:large_cogwheel" }
 				type: "item"
 			}]
-			x: 1.0d
+			x: 0.5d
 			y: -1.0d
 		}
 		{
@@ -154,6 +178,7 @@
 				id: "minecraft:iron_ingot"
 			}
 			id: "4B1EC6BB72C4DE14"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				count: 16
 				id: "4F7520081A75EA54"
@@ -175,11 +200,12 @@
 					type: "item"
 				}
 			]
-			x: -5.0d
+			x: -5.5d
 			y: -1.0d
 		}
 		{
 			id: "299938D6CEB5F7CF"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [
 				{
 					count: 256
@@ -205,13 +231,15 @@
 				item: { count: 1, id: "minecraft:andesite" }
 				type: "item"
 			}]
-			x: -5.0d
+			x: -5.5d
 			y: 1.0d
 		}
 		{
 			dependencies: ["02863465E853724C"]
 			hide_dependency_lines: true
 			id: "5D34B9FBA1E61A16"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
 			tasks: [
 				{
 					id: "6314146956181976"
@@ -225,17 +253,19 @@
 				}
 				{
 					id: "0EEEA32C242D14E1"
-					item: { count: 1, id: "create_enchantment_industry:mechanical_grindstone" }
+					item: { count: 1, id: "vintageimprovements:belt_grinder" }
 					type: "item"
 				}
 			]
-			x: 7.5d
+			x: 5.5d
 			y: 1.0d
 		}
 		{
 			dependencies: ["02863465E853724C"]
 			hide_dependency_lines: true
 			id: "47E68A49C36A7AA3"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
 			tasks: [
 				{
 					id: "5E55594643E07636"
@@ -254,13 +284,28 @@
 		{
 			dependencies: ["02863465E853724C"]
 			id: "0D0D6FC46178465D"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "5172A18920D897E8"
 				item: { components: { "create:banktank_air": 9000 }, count: 1, id: "create_jetpack:jetpack" }
 				type: "item"
 			}]
 			x: 5.5d
-			y: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["02863465E853724C"]
+			id: "0F22198E4ED3E28B"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "794A12F484D32E67"
+				item: { count: 1, id: "ars_creo:starbuncle_wheel" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 1.0d
 		}
 	]
 }

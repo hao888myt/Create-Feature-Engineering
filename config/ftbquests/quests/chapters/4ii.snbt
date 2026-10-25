@@ -1,0 +1,613 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "4ii"
+	group: "73901F8574D43516"
+	icon: {
+		components: {
+			"researchd:research_pack": "create_feature_engineering:chemical"
+		}
+		id: "researchd:research_pack"
+	}
+	id: "2704B6D1DB338862"
+	images: [ ]
+	order_index: 4
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"63E5EEEA7D53368C"
+				"05F999AA30EFB719"
+				"41D4977A4AABEAAC"
+				"3E61BD0CAE27C275"
+			]
+			hide_dependent_lines: true
+			id: "2746729863E50C60"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				consume_items: true
+				count: 512L
+				id: "74B252068EC93C26"
+				item: { components: { "researchd:research_pack": "create_feature_engineering:chemical" }, count: 1, id: "researchd:research_pack" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"701A1F01DB42C13C"
+				"0CD6F59B9E0FDDA2"
+			]
+			id: "05F999AA30EFB719"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "50A42A2990CB4C4F"
+				item: { count: 1, id: "anvilcraft:capacitor" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"02440105AEA7ED66"
+				"3FB5EDDEB1A291B8"
+				"1E4CFE29EE92E2D5"
+			]
+			id: "701A1F01DB42C13C"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "546036143C597A08"
+				item: { count: 1, id: "anvilcraft:capacitor_empty" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			id: "3FB5EDDEB1A291B8"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "30987685E6881904"
+				item: { count: 1, id: "anvilcraft:resin" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 6.0d
+		}
+		{
+			id: "02440105AEA7ED66"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "272378BE2A4F3079"
+				item: { count: 1, id: "anvilcraft:zinc_pressure_plate" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 7.0d
+		}
+		{
+			id: "1E4CFE29EE92E2D5"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3FE40D8D76943F4B"
+				item: { count: 1, id: "anvilcraft:copper_pressure_plate" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"07DD8B483EC321C3"
+				"6D7F453FC5E808E1"
+			]
+			id: "0CD6F59B9E0FDDA2"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "188337BC7ED55022"
+				item: { count: 1, id: "create_feature_engineering:saline_bucket" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"1B8D084CF29D6CA7"
+				"66BF7D2E467C8633"
+			]
+			id: "6D7F453FC5E808E1"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4E2C22137CEB226E"
+				item: { count: 1, id: "create_feature_engineering:salted_fish" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: 3.5d
+		}
+		{
+			id: "07DD8B483EC321C3"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "10327F63A1C6B8C4"
+				item: { count: 1, id: "minecraft:water_bucket" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: 0.5d
+		}
+		{
+			id: "66BF7D2E467C8633"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7BA91503A2571C10"
+				item: { count: 1, id: "ratatouille:salt" }
+				type: "item"
+			}]
+			x: -7.0d
+			y: 2.0d
+		}
+		{
+			id: "1B8D084CF29D6CA7"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "18D844C4B0C633CE"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:fishes)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -7.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"0019D9D99E0D9645"
+				"694ADEDB582EFB83"
+			]
+			id: "41D4977A4AABEAAC"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6D56C5F40BF1F255"
+				item: { count: 1, id: "anvilcraftextrapower:sulfur" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			id: "0019D9D99E0D9645"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "258F236C9761A030"
+				item: { count: 1, id: "anvilcraft:cinerite" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			id: "694ADEDB582EFB83"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "41450D9B59ACD972"
+				item: { count: 1, id: "minecraft:sand" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"31375F76EC7A53DA"
+				"34F3E9487F452B34"
+			]
+			id: "3E61BD0CAE27C275"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "088033492E03D236"
+				item: { count: 1, id: "anvilcraft:hardend_resin" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["23426C712E2E7E7A"]
+			id: "34F3E9487F452B34"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "136BD922394C9423"
+				item: { count: 1, id: "create_feature_engineering:petroleum_gas_bucket" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -5.5d
+		}
+		{
+			id: "31375F76EC7A53DA"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7BD3D1A81D5001BB"
+				item: { count: 1, id: "anvilcraft:resin" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"40741A6C4EDB6C08"
+				"3195E8D103DC276B"
+				"505A26ACDF0559AD"
+			]
+			id: "63E5EEEA7D53368C"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "09292E704EE3C9A5"
+				item: { count: 1, id: "create:sturdy_sheet" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6FEDF161386311E7"]
+			id: "40741A6C4EDB6C08"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "2ED8963FC494D74E"
+				item: { count: 1, id: "create:powdered_obsidian" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.5d
+		}
+		{
+			id: "6FEDF161386311E7"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "446B172E8255B68D"
+				item: { count: 1, id: "minecraft:obsidian" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"1320D2E8A89A3412"
+				"7479D0A900A35926"
+				"563DF874618A6B88"
+			]
+			id: "3195E8D103DC276B"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "31C3CD284CA2B1A1"
+				item: { count: 1, id: "create_feature_engineering:molten_steel_bucket" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.5d
+		}
+		{
+			id: "505A26ACDF0559AD"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1B714B9C3C60CE65"
+				item: { count: 1, id: "minecraft:lava_bucket" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -0.5d
+		}
+		{
+			id: "7479D0A900A35926"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0EE9E3A3E83589DF"
+				item: { count: 1, id: "create_feature_engineering:molten_andesite_alloy_bucket" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			id: "1320D2E8A89A3412"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "38114DEF9127453C"
+				item: { count: 1, id: "create_feature_engineering:molten_iron_bucket" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"23426C712E2E7E7A"
+				"6216BA50C3B4851C"
+			]
+			id: "563DF874618A6B88"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "612D3F3CAFEC0D5F"
+				item: { count: 1, id: "minecraft:coal" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -5.5d
+		}
+		{
+			id: "6216BA50C3B4851C"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "257C2DECF90686F8"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:logs)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -6.5d
+		}
+		{
+			id: "23426C712E2E7E7A"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0F3DED8DAE216A9E"
+				item: { count: 1, id: "createdieselgenerators:crude_oil_bucket" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["13FCC3F5D35A9412"]
+			id: "3EA5ED92B45CA46D"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "2EE215B30EB8BEED"
+					item: { count: 1, id: "anvilcraft:discharger" }
+					type: "item"
+				}
+				{
+					id: "5E60B0792BCE65EB"
+					item: { count: 1, id: "anvilcraft:charger" }
+					type: "item"
+				}
+			]
+			x: 16.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["13FCC3F5D35A9412"]
+			id: "146FE77A8D1516E9"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "5E41F3D24FCE61CC"
+				item: { count: 1, id: "anvilcraft:load_monitor" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"13FCC3F5D35A9412"
+				"166F3D1413AE79F0"
+			]
+			id: "3C6BDDCB04F70739"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "59D0C111FBB02D8F"
+					item: { count: 1, id: "anvilcraft:control_valve" }
+					type: "item"
+				}
+				{
+					id: "7BB38EF01DB27314"
+					item: { count: 1, id: "anvilcraft:pump" }
+					type: "item"
+				}
+				{
+					id: "36530CFB5BABF29E"
+					item: { count: 1, id: "anvilcraft:pipe" }
+					type: "item"
+				}
+				{
+					id: "667F046103DB2D59"
+					item: { count: 1, id: "anvilcraft:check_valve" }
+					type: "item"
+				}
+				{
+					id: "13EF25DAC6129EA8"
+					item: { count: 1, id: "anvilcraft:drain" }
+					type: "item"
+				}
+			]
+			x: 12.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2746729863E50C60"]
+			id: "2E236D2CDB03996D"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "47CB9B827095D625"
+				item: { count: 1, id: "createdieselgenerators:diesel_engine" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2746729863E50C60"]
+			id: "0C68C05BCE41198A"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "2139810E4A970E99"
+					item: { count: 1, id: "createimp:batch_mechanical_crafter" }
+					type: "item"
+				}
+				{
+					id: "059C636223B328CB"
+					item: { count: 1, id: "createimp:batch_repackager" }
+					type: "item"
+				}
+			]
+			x: 8.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2746729863E50C60"]
+			id: "532B4644AA817E4E"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "211893D49AED2991"
+					item: { count: 1, id: "createimp:process_manager" }
+					type: "item"
+				}
+				{
+					id: "34A4026D240AE820"
+					item: { count: 1, id: "createimp:work_warehouse" }
+					type: "item"
+				}
+			]
+			x: 8.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["13FCC3F5D35A9412"]
+			id: "1DA6F1F99EECD887"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "23259794D50B060A"
+				item: { count: 1, id: "anvilcraft:induction_light" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["13FCC3F5D35A9412"]
+			id: "7EB8B352E3E2732A"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "06677E47E114188A"
+				item: { count: 1, id: "anvilcraft:charge_collector" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["13FCC3F5D35A9412"]
+			id: "46E06FC4B569D61E"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4E60801F5C67D76B"
+				item: { count: 1, id: "anvilcraft:transmission_pole" }
+				type: "item"
+			}]
+			x: 14.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2746729863E50C60"]
+			hide_dependent_lines: true
+			id: "13FCC3F5D35A9412"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6020F81F3F7CA091"
+				item: { count: 1, id: "anvilcraft:magnetoelectric_core" }
+				type: "item"
+			}]
+			x: 14.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2746729863E50C60"]
+			hide_dependent_lines: true
+			id: "166F3D1413AE79F0"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "56CD58B6C506182A"
+				item: { count: 1, id: "anvilcraft:circuit_board" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["13FCC3F5D35A9412"]
+			id: "0F0A3F743613F422"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "24C77E2A8F525B32"
+				item: { count: 1, id: "anvilcraft:heater" }
+				type: "item"
+			}]
+			x: 14.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["166F3D1413AE79F0"]
+			id: "53108E3D5AFD77BE"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "37195022B3364F0B"
+				item: { count: 1, id: "anvilcraft:trading_station" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2746729863E50C60"]
+			id: "1617A444AA05ABF2"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7836C8B27D0F92FE"
+				item: { count: 1, id: "anvilcraft:piezoelectric_crystal" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2746729863E50C60"]
+			id: "6B8C637705D2AA51"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "25BAAF180C57666B"
+				item: { count: 1, id: "anvilcraftextrapower:lead_acid_battery_empty" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 0.5d
+		}
+	]
+}

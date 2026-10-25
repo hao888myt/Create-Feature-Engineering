@@ -1,7 +1,7 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "4C63B9A029B53396"
+	filename: "4c63b9a029b53396"
 	group: "73901F8574D43516"
 	icon: {
 		components: {
@@ -25,13 +25,24 @@
 			]
 			hide_dependency_lines: false
 			hide_dependent_lines: true
+			icon: {
+				components: {
+					"researchd:research_pack": "create_feature_engineering:smart"
+				}
+				id: "researchd:research_pack"
+			}
 			id: "62507B3AB28E1BFC"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 2.0d
 			tasks: [{
-				id: "5D1A4DE5E8606325"
+				consume_items: true
+				count: 512L
+				id: "4B5FA1BC30DBC297"
 				item: { components: { "researchd:research_pack": "create_feature_engineering:smart" }, count: 1, id: "researchd:research_pack" }
 				type: "item"
 			}]
-			x: -3.0d
+			x: -5.0d
 			y: -1.0d
 		}
 		{
@@ -40,13 +51,14 @@
 				"7DC3298AA77C7189"
 			]
 			id: "227C7DFF8ED0D330"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "249FBF8A055F4F4D"
 				item: { count: 1, id: "create:filter" }
 				type: "item"
 			}]
-			x: -6.0d
-			y: -2.0d
+			x: -3.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -54,27 +66,30 @@
 				"130BCABF04BC0500"
 			]
 			id: "3D5F74BCF03E463E"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "4CFEEFBA72C060B0"
 				item: { count: 1, id: "create:transmitter" }
 				type: "item"
 			}]
-			x: -6.0d
-			y: 0.0d
+			x: -7.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
 				"1B17C842506F76B4"
 				"218BCA931E653E23"
+				"4FC940739A9EF11D"
 			]
 			id: "40CE12A8EFA2D184"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "7C6D9B52FF46D8CB"
 				item: { count: 1, id: "create:precision_mechanism" }
 				type: "item"
 			}]
-			x: -6.0d
-			y: 2.0d
+			x: -3.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -82,36 +97,39 @@
 				"63C9104553539110"
 			]
 			id: "78A23A3B00129F52"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "4F0BD850204A92B5"
 				item: { count: 1, id: "create:electron_tube" }
 				type: "item"
 			}]
-			x: -6.0d
-			y: -4.0d
+			x: -7.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["2976470F12951FF9"]
 			hide_until_deps_complete: true
 			id: "09A646AD483CFD4E"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "356AC608705E7A74"
 				item: { count: 1, id: "create_feature_engineering:molten_iron_bucket" }
 				type: "item"
 			}]
-			x: -10.0d
-			y: -5.5d
+			x: -6.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["063925AA5CD0F333"]
 			id: "63C9104553539110"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "02A75F72202F5972"
 				item: { count: 1, id: "create:polished_rose_quartz" }
 				type: "item"
 			}]
-			x: -10.0d
-			y: -4.0d
+			x: -9.0d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -119,90 +137,98 @@
 				"061E99AD928C6330"
 			]
 			id: "063925AA5CD0F333"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "73D02659A819F6E0"
 				item: { count: 1, id: "create:rose_quartz" }
 				type: "item"
 			}]
-			x: -12.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["2976470F12951FF9"]
-			hide_until_deps_complete: true
-			id: "7DC3298AA77C7189"
-			tasks: [{
-				id: "4F39CBD84557B353"
-				item: { count: 1, id: "minecraft:paper" }
-				type: "item"
-			}]
-			x: -8.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["2976470F12951FF9"]
-			hide_until_deps_complete: true
-			id: "7E0865C06984820E"
-			tasks: [{
-				id: "33DABB20168BAFF9"
-				item: { count: 1, id: "minecraft:iron_nugget" }
-				type: "item"
-			}]
-			x: -8.0d
+			x: -10.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["2976470F12951FF9"]
 			hide_until_deps_complete: true
+			id: "7DC3298AA77C7189"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4F39CBD84557B353"
+				item: { count: 1, id: "minecraft:paper" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["2976470F12951FF9"]
+			hide_until_deps_complete: true
+			id: "7E0865C06984820E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "33DABB20168BAFF9"
+				item: { count: 1, id: "minecraft:iron_nugget" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2976470F12951FF9"]
+			hide_until_deps_complete: true
 			id: "130BCABF04BC0500"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "7E5F8AC9CFC009E8"
 				item: { count: 1, id: "vintageimprovements:copper_spring" }
 				type: "item"
 			}]
-			x: -9.0d
-			y: 1.5d
+			x: -6.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["2976470F12951FF9"]
 			hide_until_deps_complete: true
 			id: "1E94B41659AA3D6F"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "517F042CE7AE427F"
 				item: { count: 1, id: "minecraft:redstone" }
 				type: "item"
 			}]
-			x: -14.0d
-			y: 0.0d
+			x: -9.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["2976470F12951FF9"]
 			hide_until_deps_complete: true
 			id: "061E99AD928C6330"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "5C7924B51A36D2E7"
 				item: { count: 1, id: "minecraft:quartz" }
 				type: "item"
 			}]
-			x: -14.0d
-			y: -3.5d
+			x: -11.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["2976470F12951FF9"]
 			hide_until_deps_complete: true
 			id: "218BCA931E653E23"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "28CD9066D215C980"
 				item: { count: 1, id: "createdieselgenerators:plant_oil_bucket" }
 				type: "item"
 			}]
-			x: -7.5d
+			x: -3.5d
 			y: 3.0d
 		}
 		{
 			dependencies: ["2976470F12951FF9"]
 			hide_until_deps_complete: true
 			id: "1B17C842506F76B4"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [
 				{
 					id: "0A32D39EDB69F1EE"
@@ -215,12 +241,14 @@
 					type: "item"
 				}
 			]
-			x: -7.5d
-			y: 2.0d
+			x: -1.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["62507B3AB28E1BFC"]
 			id: "29A2210965C0A19C"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
 			tasks: [
 				{
 					id: "3AD104B63D4D1835"
@@ -237,35 +265,53 @@
 					item: { count: 1, id: "create:smart_chute" }
 					type: "item"
 				}
+				{
+					id: "576CE9C05AB6773F"
+					item: { components: { "anvilcraft:filter_contents": { deny_list: 0b, include_components: 0b, list: [ { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { } ] } }, count: 1, id: "anvilcraft:filter" }
+					type: "item"
+				}
 			]
-			x: -1.0d
-			y: -2.5d
+			x: 3.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["62507B3AB28E1BFC"]
 			id: "7B0F867F6C2C1625"
-			tasks: [{
-				id: "38A3B989BF889B2A"
-				item: { count: 1, id: "fluidlogistics:smart_hopper" }
-				type: "item"
-			}]
-			x: 0.5d
-			y: -2.5d
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "38A3B989BF889B2A"
+					item: { count: 1, id: "fluidlogistics:smart_hopper" }
+					type: "item"
+				}
+				{
+					id: "4EE15EFEE7AFE3AF"
+					item: { count: 1, id: "fluidlogistics:fluid_transporter" }
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["62507B3AB28E1BFC"]
 			id: "2F47B03D3B9DD686"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "0E1CF2AE73EF6840"
 				item: { count: 1, id: "fluidlogistics:smart_faucet" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: -2.5d
+			x: 7.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["62507B3AB28E1BFC"]
 			id: "421990429ED478AE"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
 			tasks: [
 				{
 					id: "548F18C51DD040FA"
@@ -278,56 +324,80 @@
 					type: "item"
 				}
 			]
-			x: 3.5d
-			y: -2.5d
+			x: 9.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["62507B3AB28E1BFC"]
 			id: "4138AA0441B78E49"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "23672771A3924BD0"
 				item: { count: 1, id: "create:mechanical_crafter" }
 				type: "item"
 			}]
-			x: -1.0d
+			x: 3.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["62507B3AB28E1BFC"]
 			id: "4A8833C759D57C3F"
-			tasks: [{
-				id: "2076EF4AE6C57C56"
-				item: { count: 1, id: "anvilcraft_pigsplus:redstone_conduit_block" }
-				type: "item"
-			}]
-			x: 0.5d
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "2076EF4AE6C57C56"
+					item: { count: 1, id: "anvilcraft_pigsplus:redstone_conduit_block" }
+					type: "item"
+				}
+				{
+					id: "49F14F924C4E3C4D"
+					item: { count: 1, id: "anvilcraft:redstone_wire" }
+					type: "item"
+				}
+			]
+			x: 5.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["62507B3AB28E1BFC"]
 			id: "126E698BE92AEA27"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "5B1C07072062139B"
 				item: { count: 1, id: "create:factory_gauge" }
 				type: "item"
 			}]
-			x: 2.0d
+			x: 7.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["62507B3AB28E1BFC"]
 			id: "65444DC1AD1E7432"
-			tasks: [{
-				id: "072B0F0E55A27429"
-				item: { count: 1, id: "create:stockpile_switch" }
-				type: "item"
-			}]
-			x: 3.5d
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "072B0F0E55A27429"
+					item: { count: 1, id: "create:stockpile_switch" }
+					type: "item"
+				}
+				{
+					id: "1FB49454EFD49C6E"
+					item: { count: 1, id: "create:content_observer" }
+					type: "item"
+				}
+			]
+			x: 9.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["62507B3AB28E1BFC"]
 			id: "054DD04378434673"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
 			tasks: [
 				{
 					id: "08078AF80D93B8A0"
@@ -339,59 +409,72 @@
 					item: { count: 1, id: "create:rotation_speed_controller" }
 					type: "item"
 				}
+				{
+					id: "21802A2E5762722C"
+					item: { count: 1, id: "createadditionallogistics:flexible_shaft" }
+					type: "item"
+				}
 			]
-			x: -1.0d
-			y: 0.5d
+			x: 3.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["62507B3AB28E1BFC"]
 			id: "78C939FBDBFB6863"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "382C5CC5615792FC"
 				item: { count: 1, id: "fluidlogistics:multi_fluid_tank" }
 				type: "item"
 			}]
-			x: 0.5d
-			y: 0.5d
+			x: 5.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["62507B3AB28E1BFC"]
 			id: "18300D4932FBD7DE"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "6FBC360B20C2B072"
 				item: { count: 1, id: "create:smart_fluid_pipe" }
 				type: "item"
 			}]
-			x: 2.0d
+			x: 7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2976470F12951FF9"]
+			id: "4FC940739A9EF11D"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "377B8881E0CDDAB1"
+				item: { count: 1, id: "minecraft:light_weighted_pressure_plate" }
+				type: "item"
+			}]
+			x: -1.0d
 			y: 0.5d
 		}
 		{
 			dependencies: ["62507B3AB28E1BFC"]
-			id: "46A14602052E9118"
+			id: "28EF0756B698FADD"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
 			tasks: [
 				{
-					id: "5F5D28BC930F4ED5"
-					item: { count: 1, id: "anvilcraft:pipe" }
+					id: "4F54F9B413011CEB"
+					item: { count: 1, id: "create:sequenced_gearshift" }
 					type: "item"
 				}
 				{
-					id: "4C6D8FCBFF6004E0"
-					item: { count: 1, id: "anvilcraft:check_valve" }
-					type: "item"
-				}
-				{
-					id: "15642AFFFAB6CED9"
-					item: { count: 1, id: "anvilcraft:drain" }
-					type: "item"
-				}
-				{
-					id: "4341B839CCB531B5"
-					item: { count: 1, id: "anvilcraft:control_valve" }
+					id: "4F3A904CEF521761"
+					item: { count: 1, id: "create_connected:sequenced_pulse_generator" }
 					type: "item"
 				}
 			]
-			x: 3.5d
-			y: 0.5d
+			x: 9.0d
+			y: 1.0d
 		}
 	]
 }

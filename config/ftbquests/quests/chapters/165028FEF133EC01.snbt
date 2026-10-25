@@ -1,7 +1,7 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "165028FEF133EC01"
+	filename: "165028fef133ec01"
 	group: "73901F8574D43516"
 	icon: {
 		components: {
@@ -22,6 +22,7 @@
 				"0F51DA3ADABDFEF6"
 			]
 			id: "40A6A23ECCD49D95"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				count: 64
 				id: "64739871E6CBCCD5"
@@ -36,12 +37,13 @@
 				item: { count: 1, id: "create:belt_connector" }
 				type: "item"
 			}]
-			x: 6.5d
+			x: 6.0d
 			y: -2.5d
 		}
 		{
 			dependencies: ["2CD176392654CC71"]
 			id: "0B7B2EF79E473657"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				count: 16
 				id: "0816E9B7EA68C99B"
@@ -56,33 +58,47 @@
 				item: { count: 1, id: "create:andesite_funnel" }
 				type: "item"
 			}]
-			x: 6.5d
+			x: 6.0d
 			y: -4.5d
 		}
 		{
-			dependencies: ["02863465E853724C"]
+			dependencies: ["081C29F3533E2233"]
+			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "2CD176392654CC71"
-			rewards: [{
-				count: 16
-				id: "0CA4671D4E3700A7"
-				item: {
-					count: 1
-					id: "minecraft:dried_kelp_block"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 16
+					id: "0CA4671D4E3700A7"
+					item: {
+						count: 1
+						id: "minecraft:dried_kelp_block"
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					count: 256
+					id: "1852926D92464E99"
+					item: {
+						count: 1
+						id: "farmersdelight:rich_soil"
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "439D8447A5D96A54"
 				item: { count: 1, id: "minecraft:dried_kelp" }
 				type: "item"
 			}]
-			x: 4.5d
+			x: 4.0d
 			y: -4.5d
 		}
 		{
 			dependencies: ["2436480A1639B679"]
 			id: "3060868EC927C45F"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				count: 64
 				id: "60AF803F62DC4490"
@@ -97,13 +113,13 @@
 				item: { count: 1, id: "create:cardboard_block" }
 				type: "item"
 			}]
-			x: 6.5d
+			x: 6.0d
 			y: -0.5d
 		}
 		{
-			dependencies: ["02863465E853724C"]
-			hide_until_deps_complete: true
+			dependencies: ["081C29F3533E2233"]
 			id: "4238F72FCB243CC1"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				count: 128
 				id: "4D166A7F66E667A2"
@@ -118,12 +134,13 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:logs)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 0.5d
+			x: 0.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["6C1A6569BB40FD6E"]
 			id: "0F51DA3ADABDFEF6"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				count: 64
 				id: "5E12230C97AF9F3F"
@@ -138,12 +155,13 @@
 				item: { count: 1, id: "create_feature_engineering:rubber" }
 				type: "item"
 			}]
-			x: 4.5d
+			x: 4.0d
 			y: -2.5d
 		}
 		{
 			dependencies: ["4238F72FCB243CC1"]
 			id: "6C1A6569BB40FD6E"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				count: 64
 				id: "627ADF3ED7085FAE"
@@ -158,12 +176,13 @@
 				item: { count: 1, id: "anvilcraft:resin" }
 				type: "item"
 			}]
-			x: 2.5d
+			x: 2.0d
 			y: -2.5d
 		}
 		{
 			dependencies: ["4238F72FCB243CC1"]
 			id: "306527F57E58773B"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				count: 64
 				id: "33370E6136793E73"
@@ -178,12 +197,13 @@
 				item: { count: 1, id: "anvilcraft:wood_fiber" }
 				type: "item"
 			}]
-			x: 2.5d
+			x: 2.0d
 			y: -0.5d
 		}
 		{
 			dependencies: ["306527F57E58773B"]
 			id: "2436480A1639B679"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				count: 64
 				id: "06C0302DCFF0C837"
@@ -198,7 +218,7 @@
 				item: { count: 1, id: "create:pulp" }
 				type: "item"
 			}]
-			x: 4.5d
+			x: 4.0d
 			y: -0.5d
 		}
 		{
@@ -208,21 +228,58 @@
 				"0B7B2EF79E473657"
 			]
 			hide_dependent_lines: true
+			icon: {
+				components: {
+					"researchd:research_pack": "create_feature_engineering:logistics"
+				}
+				id: "researchd:research_pack"
+			}
 			id: "3683E4EA336FD602"
-			rewards: [{
-				count: 64
-				id: "5DF7224D2ECE38FA"
-				item: {
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 256
+					id: "236C9583F6AA3B51"
+					item: {
+						components: {
+							"researchd:research_pack": "create_feature_engineering:logistics"
+						}
+						count: 1
+						id: "researchd:research_pack"
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "34E00F29D1C2F788"
+					item: {
+						count: 1
+						id: "anvilcraft:impact_pile"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "1B5A41C68BF44C3F"
+					item: {
+						count: 1
+						id: "create_feature_engineering:singularity"
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				consume_items: true
+				count: 256L
+				icon: {
 					components: {
 						"researchd:research_pack": "create_feature_engineering:logistics"
 					}
-					count: 1
 					id: "researchd:research_pack"
 				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "32374FFBCBE09BAE"
+				id: "38CDE5FBF2710669"
 				item: { components: { "researchd:research_pack": "create_feature_engineering:logistics" }, count: 1, id: "researchd:research_pack" }
 				type: "item"
 			}]
@@ -232,31 +289,46 @@
 		{
 			dependencies: ["3683E4EA336FD602"]
 			hide_dependency_lines: true
+			hide_dependent_lines: true
 			id: "72CD6756D68606EC"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "40FC41AB16C417F5"
+				item: {
+					count: 1
+					id: "fluidlogistics:hand_pointer"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "4E69C57351E8DF43"
 				item: { count: 1, id: "create_fantasizing:andesite_crate" }
 				type: "item"
 			}]
-			x: 11.5d
-			y: -3.5d
+			x: 13.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["3683E4EA336FD602"]
 			hide_dependency_lines: true
 			id: "28D45F7C2C122ECF"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "402871DCFF942299"
 				item: { count: 1, id: "anvilcraft_pigsplus:block_breaker" }
 				type: "item"
 			}]
-			x: 13.5d
-			y: -3.5d
+			x: 11.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["3683E4EA336FD602"]
 			hide_dependency_lines: true
 			id: "10A56D7B4EE03F22"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
 			tasks: [
 				{
 					id: "3DA9931D88DAF078"
@@ -269,25 +341,28 @@
 					type: "item"
 				}
 			]
-			x: 11.5d
-			y: -1.5d
+			x: 11.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["3683E4EA336FD602"]
 			hide_dependency_lines: true
 			id: "5E6EAADE246171C0"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "06FFA5AC6C142A9C"
 				item: { count: 1, id: "create:cart_assembler" }
 				type: "item"
 			}]
-			x: 13.5d
-			y: -1.5d
+			x: 11.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["6C1A6569BB40FD6E"]
 			hide_dependency_lines: true
 			id: "1BF102DE45FCC1DF"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				count: 16
 				id: "671F88D1FFCC2FC9"
@@ -302,15 +377,17 @@
 				item: { count: 1, id: "anvilcraft:resin_block" }
 				type: "item"
 			}]
-			x: 2.5d
+			x: 2.0d
 			y: -4.5d
 		}
 		{
-			dependencies: ["02863465E853724C"]
+			dependencies: ["081C29F3533E2233"]
 			icon: {
 				id: "create:brass_ingot"
 			}
 			id: "697B347F2AA42189"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
 			rewards: [
 				{
 					count: 16
@@ -335,8 +412,83 @@
 				id: "4FAE3C2C2488BEBF"
 				type: "checkmark"
 			}]
-			x: 0.5d
+			x: 0.0d
 			y: -3.5d
+		}
+		{
+			dependencies: ["02863465E853724C"]
+			hide_until_deps_complete: true
+			id: "081C29F3533E2233"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 16
+				id: "32DA438CBD77BDBD"
+				item: {
+					count: 1
+					id: "create_fantasizing:andesite_crate"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7E88AD09751DDA53"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["72CD6756D68606EC"]
+			id: "450A664333D0A313"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "79C3776797B589A5"
+					item: { count: 1, id: "create:stock_ticker" }
+					type: "item"
+				}
+				{
+					id: "2E24567D60DEF273"
+					item: { count: 1, id: "create:stock_link" }
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["72CD6756D68606EC"]
+			id: "0A5AC1C3B07FEAAC"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "728487F1820B87BB"
+					item: { count: 1, id: "create:packager" }
+					type: "item"
+				}
+				{
+					id: "25E3B6515D989FF3"
+					item: { count: 1, id: "create:package_frogport" }
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["306527F57E58773B"]
+			hide_dependency_lines: true
+			id: "743E3A1B706E1BCE"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "700625EE2B356552"
+				item: { count: 1, id: "anvilcraft:plywood" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.5d
 		}
 	]
 }

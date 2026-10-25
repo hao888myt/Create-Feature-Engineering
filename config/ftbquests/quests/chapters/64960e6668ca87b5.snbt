@@ -1,0 +1,16 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "64960e6668ca87b5"
+	group: "05A685A8BF0E2551"
+	icon: {
+		id: "anvilcraft_pigsplus:void_acid_bucket"
+	}
+	id: "64960E6668CA87B5"
+	images: [ ]
+	order_index: 0
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [ ]
+}

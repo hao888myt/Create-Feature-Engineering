@@ -1,0 +1,99 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "4a"
+	group: "07B4594E62BCD622"
+	icon: {
+		components: {
+			"researchd:research_pack": "create_feature_engineering:package"
+		}
+		id: "researchd:research_pack"
+	}
+	id: "1D6F6AD4B47EB32F"
+	images: [ ]
+	order_index: 1
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			id: "4444698167A9FFF7"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "78C4B678311BA1A5"
+					item: { count: 1, id: "create_connected:inventory_access_port" }
+					type: "item"
+				}
+				{
+					id: "6389EA0C0200EAD7"
+					item: { count: 1, id: "create_connected:inventory_bridge" }
+					type: "item"
+				}
+				{
+					id: "726395CB66681B90"
+					item: { count: 1, id: "fluidlogistics:fluid_inventory_access_port" }
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			id: "65898C5F49400F10"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "240CAC5E56F5E04D"
+				item: { count: 1, id: "create_biotech:empty_large_cardboard_box" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			id: "0245E0A3F532BF99"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "320EAEE92ACC1BEF"
+					item: { count: 1, id: "fluidlogistics:fluid_factory_gauge" }
+					type: "item"
+				}
+				{
+					id: "14195B283B6BA8D2"
+					item: { count: 1, id: "fluidlogistics:fluid_packager" }
+					type: "item"
+				}
+				{
+					id: "056CD30EFF896AD7"
+					item: { count: 1, id: "fluidlogistics:fluid_repackager" }
+					type: "item"
+				}
+			]
+			x: 8.5d
+			y: 0.0d
+		}
+		{
+			id: "2C588EA2E8443AE6"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7FBFB1DF11C3B460"
+				item: { count: 1, id: "fluidlogistics:copper_frogport" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			id: "772CDB6141CAFB91"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0179C17D784FF885"
+				item: { count: 1, id: "createadditionallogistics:package_accelerator" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 0.0d
+		}
+	]
+}

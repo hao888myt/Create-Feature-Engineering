@@ -1,13 +1,27 @@
 {
-	chapter.09285913B1BF8099.title: "流体研究包"
-	chapter.1154F5B6A8DE1CCE.title: "纯粹之色"
-	chapter.165028FEF133EC01.title: "物流研究包"
-	chapter.1F97CA5F55F0D194.title: "元素精华"
-	chapter.296365F19F45F8DD.title: "介绍"
-	chapter.4C63B9A029B53396.title: "智能研究包"
-	chapter.68A74C61534CE53D.title: "七彩世界"
-	chapter.7E8A4706B82319BE.title: "传动研究包"
+	chapter.00AB80BA8CA1F1ED.title: "光谱世界"
+	chapter.09285913B1BF8099.title: "3-流体研究包"
+	chapter.0A2CDD2FFCEDDE47.title: "新生魔艺"
+	chapter.1154F5B6A8DE1CCE.title: "3-纯粹之色"
+	chapter.165028FEF133EC01.title: "2-物流研究包"
+	chapter.1D6F6AD4B47EB32F.title: "4a-包裹研究包（WIP）"
+	chapter.1F97CA5F55F0D194.title: "2-元素精华"
+	chapter.2704B6D1DB338862.title: "4-II-化工研究包（WIP）"
+	chapter.296365F19F45F8DD.title: "0-介绍"
+	chapter.2A98BC5F2DB64CD0.title: "3a-现代农业（WIP）"
+	chapter.3707A393AB3CE5A0.title: "4-完美造物"
+	chapter.3FE9C46110805E39.title: "5-洁白无暇（WIP）"
+	chapter.4C63B9A029B53396.title: "4-I-智能研究包（WIP）"
+	chapter.4DADCD984DD7785A.title: "其它"
+	chapter.63D52EC4CA81E4DB.title: "5-电磁研究包（WIP）"
+	chapter.64960E6668CA87B5.title: "虚空蚀刻（WIP）"
+	chapter.68A74C61534CE53D.title: "1-七彩世界"
+	chapter.6C43FE6957528218.title: "铁砧工艺"
+	chapter.78F2835D78E5CDDC.title: "机械动力"
+	chapter.7E8A4706B82319BE.title: "1-传动研究包"
 	chapter_group.05A685A8BF0E2551.title: "混合线"
+	chapter_group.07B4594E62BCD622.title: "科技支线"
+	chapter_group.12CF6200B3616D13.title: "改动一览（WIP）"
 	chapter_group.29E2B66FF1ED57B3.title: "魔法线"
 	chapter_group.3A05517EF6F9BDAD.title: "启程"
 	chapter_group.73901F8574D43516.title: "科技线"
@@ -17,14 +31,36 @@
 		"&7（研究的页面默认按\"打开）"
 	]
 	quest.02863465E853724C.title: "第一个研究包！"
+	quest.05064BEC5C7DF9F4.quest_desc: [
+		"章节分为5类："
+		"&e科技主线、科技支线、魔法主线、魔法支线和混合线"
+		"其中混合线的定位是科技和魔法共有的支线"
+		""
+		"章节的名字也有其含义，下面给出部分例子："
+		"&d0-启程&r，它是名为“启程”第0个章节"
+		""
+		"&d8-I-新建文件夹&r是第8章主线的其中一个主线章节"
+		""
+		"&d1a-未命名&r是第1章主线支线章节的其中一个"
+		""
+		"&d1-7-暴君&r是第1章科技主线和第7章魔法主线混合线章节"
+	]
+	quest.05064BEC5C7DF9F4.title: "关于章节介绍"
 	quest.058AD91A0A40F254.quest_desc: [
 		"在&b动力锯&r上，&e1块&r安山合金可以切出&e6根&r传动杆！"
 		"&7记得加过滤"
 	]
 	quest.058AD91A0A40F254.quest_subtitle: "我去我过滤没设置！"
 	quest.058AD91A0A40F254.title: "安山栏杆、安山脚手架、安山..."
+	quest.07966FAE7BD94391.quest_subtitle: "一把抓住，顷刻炼化"
 	quest.07C32E95DB270A93.quest_desc: ["恭喜，你已经完成了魔法线的第一章！"]
 	quest.07C32E95DB270A93.title: "七彩世界 完成！"
+	quest.081C29F3533E2233.quest_desc: [
+		"&d科技线&r存在多种物品运输方式，像&e包裹、传送带、溜槽、水道&r等"
+		""
+		"更多的运输方式会在后续逐步解锁，前中期主要用&e传送带、抽屉、溜槽&r等作为运输手段"
+	]
+	quest.081C29F3533E2233.title: "关于物品运输"
 	quest.089884184087F6DA.quest_desc: [
 		"紫水晶傀儡功能繁多，有以下行为："
 		"&e催生、收获、拾取、存放、转化"
@@ -56,7 +92,7 @@
 		"&e岩浆桶&r&7（返还桶）&r："
 		"s = t / 12 = 1666，p = 1"
 		"&e烈焰至高木&r&7（不可去皮）&r："
-		"s = t / 12 + 100 = 125，p = 12"
+		"s = 500，p = 12"
 		"&e其它至高木&r："
 		"s = t / 12 + 50 = 75，p = 8"
 		"&e火之精华&r： "
@@ -68,7 +104,7 @@
 	quest.0CD7119D43A5DB42.quest_desc: [
 		"&e魔源宝石&r和&e魔源石&r是魔法线的基本材料，后续合成会大量用到"
 		"魔源宝石可以通过&b粉碎之魔符&r粉碎&e水晶块&r获得&7（不是磨制水晶块）&r"
-		"而魔源石可以用&e石头和魔源宝石&r在&b工作台&r上合成"
+		"而魔源石可以用&e石头和魔源宝石&r在&b七彩基座&r上合成"
 	]
 	quest.0CD7119D43A5DB42.title: "基本材料"
 	quest.0D0D6FC46178465D.quest_desc: [
@@ -79,30 +115,62 @@
 		"紫水晶碎片是魔法的基础，收集一些吧"
 		"紫水晶也可以制作工具，自带附魔、耐久较高"
 	]
+	quest.0D44C03DF72C94C3.title: "绘彩物品节点"
+	quest.0E763CBABF6AF58B.quest_desc: [
+		"&b绘彩网络&r是&d魔法线&r的另一种物流方式，&e支持短距离的无线运输&r"
+		""
+		"&b绘彩节点&r可以被&b画笔&r染色，&e同色的绘彩节点才能相互连接"
+	]
+	quest.0E763CBABF6AF58B.quest_subtitle: "物联网"
 	quest.0E763CBABF6AF58B.title: "绘彩网络"
+	quest.0F22198E4ED3E28B.quest_subtitle: "奴役星宝石兽是可耻的！"
 	quest.0F51DA3ADABDFEF6.quest_desc: [
 		"&e树脂&r经过&b烘烤&r后，就变成了富有弹性的&e橡胶&r，是制作传送带的好原料"
 		"&7（是烟熏配方，不是冶炼！）"
 	]
+	quest.1044B5A5D4E02FBC.title: "纯粹之色 完成！"
 	quest.10A56D7B4EE03F22.title: "起重机"
 	quest.122F631B4B3489B6.quest_desc: [
 		"水晶是可以再生的，但是其生长速度出奇地慢"
 		"也许有什么手段可以加速生长？"
 	]
-	quest.12CFCA114A05E628.quest_desc: ["彩色树上收获下来的是这种带有魔法的颜料，&e比原版的染料更加高效、纯粹"]
+	quest.12CFCA114A05E628.quest_desc: [
+		"彩色树上收获下来的是这种带有魔法的颜料，&e比原版的染料更加高效、纯粹"
+		""
+		"用&e颜料&r制作彩色树苗&6原料利用率更高"
+	]
 	quest.12CFCA114A05E628.quest_subtitle: "怎么你也少了5种颜色"
 	quest.12CFCA114A05E628.title: "魔法颜料"
+	quest.13599C33C86372CE.title: "绘彩流体节点"
+	quest.17EAD2B881581EC8.quest_desc: ["&b板条箱&r可以自由调节容量，在前期没有黄铜科技的时候可以&e用于限制输出数量&r"]
+	quest.19FB78E84BC02171.quest_desc: ["&c请一定保证你的地板不是什么自然方块（比如泥土、草方块、雪块），不然出意外了后果自负&r"]
+	quest.19FB78E84BC02171.quest_subtitle: "风险很高的样子"
+	quest.19FB78E84BC02171.title: "完美化合物？"
 	quest.1AFE35E67823BF42.quest_subtitle: "不建议在家里使用"
 	quest.1BF102DE45FCC1DF.quest_desc: ["&b树脂块&r可以捕捉&e中小型的生物，包括敌对生物，但是捕捉敌对生物需要使用虚弱药水"]
 	quest.1BF102DE45FCC1DF.quest_subtitle: "精灵球？"
 	quest.1D978A29B3259D5E.quest_desc: ["美术上的三原色混合在一起是黑色，那能不能通过&e混合三种水晶&r来获得新的水晶呢？"]
-	quest.1D9F96BE55FD6F5C.quest_desc: ["单种水晶碎片制作的七彩基座功能有限，为什么不用三种水晶碎片来升级一下呢？"]
+	quest.1D978A29B3259D5E.title: "再次升级"
+	quest.1D9F96BE55FD6F5C.quest_desc: [
+		"单种水晶碎片制作的七彩基座功能有限，为什么不用三种水晶碎片来升级一下呢？"
+		"&7（搭建完整结构才能解锁后续配方）"
+	]
 	quest.1D9F96BE55FD6F5C.title: "是时候升级一下了"
+	quest.1E446CD604AEE494.quest_desc: [
+		"&b黑洞箱&r可以吸取&6以自身为中心23x23x23范围内的物品和经验&r"
+		""
+		"&e支持过滤&r，可以用&b命名牌&r来过滤tag&7（加!可反选）"
+		"安装&b经验宝石&r可以&e吸取经验"
+	]
+	quest.1E446CD604AEE494.quest_subtitle: "!?真空箱子?!"
 	quest.22ECA20DF1049510.quest_desc: ["这种果子种出来也&c只能掉落一个&r，得想想&e其它的办法&r量产"]
 	quest.22ECA20DF1049510.quest_subtitle: "所以它们最开始从哪里来的？"
 	quest.22ECA20DF1049510.title: "魔法水果"
 	quest.238E6124102FE87A.title: "元素精华 完成！"
+	quest.239C2BF7A98E4CE4.quest_subtitle: "电↗眼↘逼→人↗"
 	quest.2436480A1639B679.quest_subtitle: "造纸术"
+	quest.24C36327EA823145.quest_subtitle: "天打雷劈"
+	quest.29322A220F56F359.title: "现代农业 完成！"
 	quest.2958A9A8BB1489DD.quest_desc: ["大齿轮的合成是&e无序配方&r，可以用&b动力搅拌器&r搅拌出来"]
 	quest.299938D6CEB5F7CF.quest_desc: [
 		"现在&e安山岩、闪长岩、花岗岩和凝灰岩&r也可以制作&a刷石机&r了"
@@ -124,6 +192,7 @@
 		"&c未解锁配方无法查看也无法使用"
 	]
 	quest.2A3357B2EB855B98.quest_subtitle: "什么东西解锁了？"
+	quest.2A3357B2EB855B98.title: "水晶粉末"
 	quest.2A4225B4370512D8.quest_desc: [
 		"打开&e法术书&r，选择&e法术样式&r，找到&bWololo魔符&r，&a配置颜色&r"
 		"&7需要搭配射线魔符或者滞留魔符才能对掉落物生效"
@@ -143,10 +212,53 @@
 	quest.3060868EC927C45F.quest_desc: ["可以把&e纸板&r放到&b压缩抽屉&r里，这样就可以自动转化为&e纸板块&r了"]
 	quest.3060868EC927C45F.quest_subtitle: "打包带走"
 	quest.32595D717E66D50D.quest_subtitle: "神奇动物在哪里？"
+	quest.33C0C5C5B5ADB815.quest_desc: [
+		"&e玄武岩三角洲&r的&b跨座兽&r是一种&c非常烦人的存在&r"
+		""
+		"&6被铁砧砸死的跨座蝌蚪可以将下方3x2x3区域的下界岩和下界尘转化为&e跨座蝌蚪残骸&r"
+		"&7（1次转化1个，优先级为上>下，南>北>东>西）"
+		""
+		"&e跨座蝌蚪残骸&r上方放上&b炽热水晶&r，再用铁砧加工一下，就可以产生&e绯红矿石&r！"
+		"&7（绯红矿石也可以在下界自然生成）"
+	]
 	quest.33C0C5C5B5ADB815.quest_subtitle: "现在是，复仇时间！"
+	quest.33E6A6C827820E78.quest_subtitle: "我就是那迫近的风暴"
+	quest.348D7DC443F19660.quest_subtitle: "复活吧，我的爱人！"
+	quest.34933348806255ED.quest_desc: [
+		"&b液态水晶&r和流体接触会有&e不同反应"
+		"流体源："
+		"水：&9霜冻水晶"
+		"熔岩：&c炽热水晶"
+		""
+		"流动："
+		"水：方解石"
+		"熔岩：&7深板岩"
+		"&7（暂不支持机动6.0刷石机制）"
+	]
+	quest.34933348806255ED.quest_subtitle: "这是液晶吗？"
 	quest.34BE0346A1611946.quest_subtitle: "指哪打哪"
+	quest.35934A8655A221BD.quest_desc: [
+		"在这里用上你的第一个&b冲击桩&r来量产&e铜矿&r吧！"
+		""
+		"&b矿物涌泉&r可以产生&e金属矿物、熔岩和火山灰&r，&6每4gt工作一次&r"
+	]
+	quest.3633BE20DCEC7584.title: "安山/黄铜隧道"
 	quest.3784131E3E630D49.quest_desc: ["在启蒙仪式&e激活前&r，&b投入书与笔&r后激活即可获得"]
 	quest.3784131E3E630D49.quest_subtitle: "超级仓管"
+	quest.3AE197F566F36683.quest_desc: [
+		"&b蚀解微生物&r的机制类似&b褪解微生物"
+		"&c但是可以感染大部分方块&r"
+		"蚀解微生物&e存在age标签，初始值为0，最高为15，15后就不会扩散了"
+		""
+		"&b蚀解微生物&r喜爱&e黑曜石&r和&e哭泣的黑曜石&r，&6后者可以产生更多坚新石&r"
+	]
+	quest.3AE197F566F36683.title: "蚀解实验"
+	quest.3B251CB58CC137DE.quest_desc: [
+		"&d科技线&r存在2种流体运输方式，一种是&e机械动力&r，一种是&e铁砧工艺&r"
+		"铁砧工艺的流体系统会在后续逐步解锁，&e前中期主要用的是机械动力来传输流体&r"
+		""
+		"二者各有利弊，可以自行选择"
+	]
 	quest.3BB358D7C8F0532D.quest_subtitle: "开了就是开了？"
 	quest.3BF1C6C79BACA9CC.quest_desc: [
 		"&b农艺魔源通道&r可以在&e周围有植物生长时产生魔源&r"
@@ -185,10 +297,15 @@
 	]
 	quest.40A6A23ECCD49D95.quest_subtitle: "这可高效多了"
 	quest.40A6A23ECCD49D95.title: "高效配方"
+	quest.413E692EF168D55A.quest_subtitle: "滚滚而来"
 	quest.4238F72FCB243CC1.quest_desc: ["原木通过&b冲压&r或者&b铁砧粉碎&r可以获得&e树脂和木质纤维&r"]
 	quest.4238F72FCB243CC1.quest_subtitle: "好像上一章就该做树场了..."
 	quest.4238F72FCB243CC1.title: "原木浑身都是宝"
-	quest.44183795B328B39C.quest_subtitle: "爽啊！"
+	quest.44183795B328B39C.quest_desc: [
+		"扳手&a右键&r可以锁住抽屉，&a再次右键&r解锁抽屉"
+		"放在副手，&e放下的抽屉默认上锁"
+	]
+	quest.44183795B328B39C.quest_subtitle: "做东西前先看看任务有没有送"
 	quest.443C49B551AA6BEC.quest_desc: ["用&b动力搅拌器&r搅拌，&e原料利用率&r更高哦"]
 	quest.44D8620D8289DB2D.quest_desc: [
 		"这是一个以机械动力(Create)、铁砧工艺（AnvilCraft）、光谱世界（Spectrum）、新生魔艺（Ars Nouveau）为核心的&e科技整合包&r。"
@@ -200,6 +317,7 @@
 	quest.44D8620D8289DB2D.quest_subtitle: "老大我们这样真的可以拉到新人吗"
 	quest.44D8620D8289DB2D.title: "欢迎来到机械动力：特性工程！"
 	quest.47E68A49C36A7AA3.title: "开垦与收割"
+	quest.486C7F82AAD86015.title: "至高树苗"
 	quest.4B1EC6BB72C4DE14.quest_desc: [
 		"&e原版&r和&e机械动力刷铁机&r的&c效率实在是太低了&r，有没有什么更快更好的刷铁机？"
 		""
@@ -219,6 +337,8 @@
 	]
 	quest.4B1EC6BB72C4DE14.quest_subtitle: "左脚踩右脚升天"
 	quest.4B1EC6BB72C4DE14.title: "新时代刷铁机"
+	quest.4BA9F71BF6BC48F2.quest_subtitle: "我这把刀上可是涂了剧毒哦（舔）"
+	quest.4C5E76CE52007B89.title: "我们需要更深入一些..."
 	quest.4CBF552AC0CACA3D.quest_desc: ["在&e法术书&r里编辑好法术后，&a右键&r&9法术炮塔&r，即可将法术抄写到炮台上"]
 	quest.4CBF552AC0CACA3D.quest_subtitle: "这是个魔法模组，对吧？"
 	quest.4CBF552AC0CACA3D.title: "利用炮塔自动化"
@@ -239,7 +359,10 @@
 	quest.50622CFB46EF419C.quest_subtitle: "人多力量大"
 	quest.50622CFB46EF419C.title: "开发组成员"
 	quest.50B98E60A85CAF88.quest_subtitle: "天气之子"
+	quest.517829EDDA31FFA4.title: "矿物涌泉"
 	quest.53327EB8D9D8497F.quest_desc: ["灌注室的合成&e不消耗基座上的物品&r，所以可以只用一份材料合成无数的精华"]
+	quest.558B6C7D8DE79911.quest_subtitle: "并不是很完美..."
+	quest.558B6C7D8DE79911.title: "完美造物 完成！"
 	quest.5880B775B9FCB197.quest_desc: ["新生魔艺的怪物有时候挺难找的，这个时候就可以请出荒野之板手动生成来刷取材料了"]
 	quest.59895E19A96B961D.quest_desc: [
 		"至高木是新生魔艺中相当重要的材料，一共五种：&d恼人&r、&c烈焰&r、&a繁茂&r、&9奔流&r、&e闪耀&r"
@@ -263,22 +386,55 @@
 		"配方处理时间为100gt"
 	]
 	quest.636CDC03AA962BC3.quest_subtitle: "不只是附魔"
-	quest.65B09D9CDE9710FB.quest_desc: [
-		"植本质是一种萃取了植物精华的物质，它可以&e高效产出肥料&r"
-		"同时也是一些魔法植物所必须的原料"
+	quest.64312F5DEA233569.quest_desc: [
+		"光谱世界的配方解锁功能是进度驱动的，所以想要同步解锁的配方，就需要同步进度"
+		"指令为/spectrum advancement_sync create <玩家名/@a> SPECTRUM_ALL"
 	]
+	quest.64312F5DEA233569.title: "关于进度同步"
+	quest.643FA80CBF18BC07.quest_subtitle: "毁灭亦是新生"
+	quest.6480200C91336C1A.quest_desc: [
+		"&b知识宝石&r可以存储经验"
+		"&a右键取出&r，&aShift+右键存入"
+		"可以附魔&e效率&r&7（增加容量）&r和&e快速装填&r&7（加快存取速率）&r"
+	]
+	quest.6480200C91336C1A.quest_subtitle: "知识就是力量！"
+	quest.65A710F05DD45713.quest_desc: [
+		"&d科技线&r存在2种流体运输方式，一种是&e机械动力&r，一种是&e铁砧工艺&r"
+		"铁砧工艺的流体系统会在后续逐步解锁，&e前中期主要用的是机械动力来传输流体&r"
+		""
+		"二者各有利弊，可以自行选择"
+	]
+	quest.65A710F05DD45713.title: "关于流体运输"
+	quest.667728071B9FE72E.quest_desc: ["&b石青&r是一种可以激发颜料魔力的矿石，也可以通过&e青色混合物&r来合成"]
+	quest.667728071B9FE72E.quest_subtitle: "地底深处传来声响"
 	quest.697B347F2AA42189.quest_desc: [
 		"在没有&b黄铜隧道&r和&b黄铜漏斗&r的情况下配平产线确实有些坐牢，&e所以这里提供了一些来渡过前期"
 		"&7（前期在没有黄铜科技的情况下确实可以配平，想挑战自己可以试试）"
 	]
 	quest.697B347F2AA42189.quest_subtitle: "这是计划的一部分（"
 	quest.697B347F2AA42189.title: "没有黄铜的日子真难熬"
-	quest.71ECE3E5F68C98BA.quest_desc: ["&b褪解微生物&r更喜欢消化&e这种树的树叶&r，可以&9产生更多的植本质&r"]
+	quest.6F9BFDECFB1A70AA.title: "黄铜/安山漏斗"
+	quest.71ECE3E5F68C98BA.quest_desc: ["&b褪解微生物&r更喜欢消化&e这种树的树叶&r，&6可以产生更多的植本质"]
 	quest.71ECE3E5F68C98BA.quest_subtitle: "奇怪，怎么少了5种颜色"
 	quest.71ECE3E5F68C98BA.title: "五颜六色的树"
 	quest.721704485A50C074.title: "最可爱的漏斗"
-	quest.764A5CC3B3951399.title: "关于物流元件的改动"
-	quest.7BD08E4CD6DFAC3A.quest_desc: ["后续的合成有很多地方需要用到至高木，不妨做个树场吧"]
+	quest.764A5CC3B3951399.quest_desc: [
+		"为了提供更好的游玩体验，&e整合包魔改了很多模组的数值和机制&r，具体可以在&d改动一览&r里查看"
+		"&7（施工中）"
+	]
+	quest.764A5CC3B3951399.title: "关于各种改动"
+	quest.7808D50C186D1BC5.quest_desc: ["&e魔源浆果&r是制作魔法水果的优秀原料，可以利用&b星宝石兽&r来采摘"]
+	quest.7B2DBD960D2FB3D8.quest_desc: [
+		"&b融合圣坛&r可以进行&e有液体参与的配方&r"
+		""
+		"假设一个配方所需的物品材料和液体各需要一份"
+		"无论物品材料有几份，进行一次配方的时候，&6只消耗一份液体&r"
+	]
+	quest.7B2DBD960D2FB3D8.title: "融合圣坛"
+	quest.7BD08E4CD6DFAC3A.quest_desc: [
+		"后续的合成有很多地方需要用到&b至高木&r，不妨做个树场吧"
+		"&7（生长之魔符可以一次催熟树木，效果类似树木肥料）"
+	]
 	quest.7BD08E4CD6DFAC3A.title: "至高木树场"
 	quest.7D94D60CA24E34D9.quest_desc: [
 		"该整合包主要采用&eFTB任务&r和&e思索（Ponder）&r来进行引导"
@@ -298,23 +454,35 @@
 	quest.7DEFD3268CBC3704.title: "初来乍到"
 	task.066ED5DF02DE6C2B.title: "我明白了"
 	task.0C13C1DF365BE711.title: "关于替代配方"
+	task.0EDBBFD567590214.title: "完成"
+	task.127D585D14CB1885.title: "Any #create_feature_engineering:fusion_shrines"
 	task.149DAF87CF727370.title: "开局奖励"
+	task.18D844C4B0C633CE.title: "Any #minecraft:fishes"
 	task.19F01669E697409A.title: "关于物流改动"
 	task.1B425FBFE6E2D436.title: "我明白了"
 	task.2210E2F5FCEEC444.title: "Any #spectrum:pigments"
+	task.240327944F77DF0E.title: "我明白了"
+	task.257C2DECF90686F8.title: "Any #minecraft:logs"
 	task.2781450AE783F963.title: "Any #minecraft:anvil"
 	task.28EC68E48C0981E7.title: "我明白了"
 	task.2F260141FE946753.title: "Any #spectrum:colored_saplings"
 	task.32466F4267E0076C.title: "Any #c:logs/archwood"
+	task.32BBA0E054984AD7.title: "我明白了"
+	task.37D944E107087CAC.title: "我明白了"
 	task.3A2FA4E00EE34CDB.title: "我明白了"
 	task.3E3D5CC37F3CDDEF.title: "Any #spectrum:pedestals"
 	task.3EA36E1A5CA1578B.title: "Any #ars_nouveau:shady_wizard_fruits"
 	task.3F71E39891E4D3F1.title: "我明白了"
+	task.457C6FE4161C2BC4.title: "完成"
 	task.47B8B945EEF59F31.title: "完成"
 	task.4FAE3C2C2488BEBF.title: "我明白了"
 	task.57D5B0D219546DB2.title: "Any #c:logs/archwood"
+	task.5CF78E4F52D7F530.title: "Any #create_feature_engineering:magic_saplings"
 	task.5F0378DFB8D98679.title: "观察：紫水晶母岩"
+	task.63CF71C6E6B87AF8.title: "Any #c:plates/copper"
 	task.6B66F5C75903BEA6.title: "完成"
 	task.6FCB9D0EAB22F367.title: "魔法入门"
+	task.7298867EE298F7F9.title: "我明白了"
 	task.72C7945166DD86D9.title: "Any #minecraft:logs"
+	task.7E88AD09751DDA53.title: "我明白了"
 }

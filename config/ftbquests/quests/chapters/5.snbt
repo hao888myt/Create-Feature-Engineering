@@ -1,0 +1,19 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "5"
+	group: "73901F8574D43516"
+	icon: {
+		components: {
+			"researchd:research_pack": "create_feature_engineering:electrical"
+		}
+		id: "researchd:research_pack"
+	}
+	id: "63D52EC4CA81E4DB"
+	images: [ ]
+	order_index: 5
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [ ]
+}

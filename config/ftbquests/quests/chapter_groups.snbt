@@ -1,7 +1,9 @@
 {
 	chapter_groups: [
 		{ id: "3A05517EF6F9BDAD" }
+		{ id: "12CF6200B3616D13" }
 		{ id: "73901F8574D43516" }
+		{ id: "07B4594E62BCD622" }
 		{ id: "29E2B66FF1ED57B3" }
 		{ id: "05A685A8BF0E2551" }
 	]

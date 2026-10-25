@@ -1,0 +1,176 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "2a98bc5f2db64cd0"
+	group: "07B4594E62BCD622"
+	icon: {
+		id: "ratatouille:spreader"
+	}
+	id: "2A98BC5F2DB64CD0"
+	images: [ ]
+	order_index: 0
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2158529D730212B0"]
+			id: "60F65E0A6D59D48E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "26D6D1DF565FF736"
+				item: { count: 1, id: "ratatouille:ripen_matter" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"7156EF2B49E776E7"
+				"7C55A2642D551F8A"
+			]
+			id: "2158529D730212B0"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0458EA48CA694AA9"
+				item: { count: 1, id: "ratatouille:ripen_matter_fold" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0A47990316D1B43E"]
+			id: "7156EF2B49E776E7"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "27C7258C67816644"
+				item: { count: 1, id: "ratatouille:compost_residue" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4F6B46E999E22395"]
+			hide_dependent_lines: true
+			id: "7C55A2642D551F8A"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "15A52C4B901D7C71"
+				item: { count: 1, id: "ratatouille:compost_tea_bucket" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4F6B46E999E22395"]
+			id: "0A47990316D1B43E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "5045C37C6811E68B"
+				item: { count: 1, id: "ratatouille:compost_residue_fluid_bucket" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4F6B46E999E22395"]
+			id: "62194100A3ABC4D1"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "46A65898CF32ED60"
+				item: { count: 1, id: "ratatouille:bio_gas_bucket" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["299F348024C41402"]
+			id: "4F6B46E999E22395"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1F7B309F92FDE247"
+				item: { count: 1, id: "ratatouille:compost_tower" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["47025701CAB3D813"]
+			id: "299F348024C41402"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "2AF1846DDAB71285"
+				item: { count: 1, id: "ratatouille:compost_mass" }
+				type: "item"
+			}]
+			x: -12.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2976470F12951FF9"]
+			id: "47025701CAB3D813"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6AB7D5B8CEEB951F"
+				item: { count: 1, id: "minecraft:moss_block" }
+				type: "item"
+			}]
+			x: -14.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"7156EF2B49E776E7"
+				"7C55A2642D551F8A"
+			]
+			id: "59A0CD2ED25DD58E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "01D7B77F62E3884E"
+				item: { count: 1, id: "ratatouille:mature_matter_fold" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["59A0CD2ED25DD58E"]
+			id: "7A25A4E85B6D4211"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "02662A6667738D94"
+				item: { count: 1, id: "ratatouille:mature_matter" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"7A25A4E85B6D4211"
+				"60F65E0A6D59D48E"
+			]
+			icon: {
+				id: "ratatouille:spreader"
+			}
+			id: "29322A220F56F359"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "457C6FE4161C2BC4"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: 2.5d
+		}
+	]
+}

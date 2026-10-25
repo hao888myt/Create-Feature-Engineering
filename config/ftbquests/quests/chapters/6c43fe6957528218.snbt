@@ -1,0 +1,59 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "6c43fe6957528218"
+	group: "12CF6200B3616D13"
+	icon: {
+		id: "anvilcraft:royal_anvil"
+	}
+	id: "6C43FE6957528218"
+	images: [ ]
+	order_index: 1
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				id: "anvilcraft:mineral_fountain"
+			}
+			id: "517829EDDA31FFA4"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "240327944F77DF0E"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			id: "364663FDAA81BEBA"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "082FABD944A2E8CA"
+					item: { count: 1, id: "anvilcraft:chute" }
+					type: "item"
+				}
+				{
+					id: "28EBF772D3543F8C"
+					item: { count: 1, id: "anvilcraft:magnetic_chute" }
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			id: "71F308B51EA085FC"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "59B4D82C05C7A04A"
+				item: { count: 1, id: "anvilcraft:batch_cutter" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 1.5d
+		}
+	]
+}

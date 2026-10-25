@@ -1,0 +1,162 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "78f2835d78e5cddc"
+	group: "12CF6200B3616D13"
+	icon: {
+		id: "create:cogwheel"
+	}
+	id: "78F2835D78E5CDDC"
+	images: [ ]
+	order_index: 0
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			id: "6F9BFDECFB1A70AA"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "14E11A20C57BD7AC"
+					item: { count: 1, id: "create:andesite_funnel" }
+					type: "item"
+				}
+				{
+					id: "7C4DD06D18AFAEEB"
+					item: { count: 1, id: "create:brass_funnel" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			id: "3633BE20DCEC7584"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "4DC9AF13B0F4DD6F"
+					item: { count: 1, id: "create:andesite_tunnel" }
+					type: "item"
+				}
+				{
+					id: "0BC17A7164BD2D44"
+					item: { count: 1, id: "create:brass_tunnel" }
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			id: "2D054F0C6ACCD11B"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6CFD99A58DF147DD"
+				item: { count: 1, id: "create:package_frogport" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -0.5d
+		}
+		{
+			id: "350147C13CFC4E29"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6820FD4A1E2D9961"
+				item: { components: { "create:banktank_air": 9000 }, count: 1, id: "create_jetpack:jetpack" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -0.5d
+		}
+		{
+			id: "7CD4EBF1315EC3F1"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "43EB9CCA83ABC8B8"
+				item: { count: 1, id: "create:belt_connector" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -0.5d
+		}
+		{
+			id: "0F8204C3BECBF358"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "162893181CD3AC34"
+				item: { count: 1, id: "create:chain_conveyor" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: -0.5d
+		}
+		{
+			id: "3A440FDBEECFC709"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "68B371D32791E51C"
+				item: { count: 1, id: "create:schematicannon" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			id: "644A0F02FDC0931D"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "59303D69BFE7CCE6"
+				item: { count: 1, id: "create:deployer" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			id: "1F7A2AA64460CBBB"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "2E8A149A19823F33"
+					item: { count: 1, id: "create:mechanical_saw" }
+					type: "item"
+				}
+				{
+					id: "03BF65F06656E036"
+					item: { count: 1, id: "createaddition:rolling_mill" }
+					type: "item"
+				}
+				{
+					id: "0BE2C45DAD87EF7E"
+					item: { count: 1, id: "create:mechanical_press" }
+					type: "item"
+				}
+				{
+					id: "5723447763F2D72D"
+					item: { count: 1, id: "create:mechanical_mixer" }
+					type: "item"
+				}
+				{
+					id: "6C9152CC6783C2CE"
+					item: { count: 1, id: "createdieselgenerators:basin_lid" }
+					type: "item"
+				}
+				{
+					id: "541AE7ABC188DB5E"
+					item: { count: 1, id: "create:spout" }
+					type: "item"
+				}
+				{
+					id: "48B2DC4B9410A5AA"
+					item: { count: 1, id: "create:millstone" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 2.5d
+		}
+	]
+}

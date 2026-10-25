@@ -1,7 +1,7 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "296365F19F45F8DD"
+	filename: "296365f19f45f8dd"
 	group: "3A05517EF6F9BDAD"
 	icon: {
 		id: "create_fantasizing:block_placer"
@@ -19,6 +19,7 @@
 				id: "create_fantasizing:block_placer"
 			}
 			id: "44183795B328B39C"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [
 				{
 					id: "28EFA20077652B6F"
@@ -73,7 +74,7 @@
 					id: "186E4EC2DFEE9AB9"
 					item: {
 						count: 1
-						id: "artifacts:eternal_steak"
+						id: "infinite_pie:infinite_pie"
 					}
 					type: "item"
 				}
@@ -83,6 +84,31 @@
 					item: {
 						count: 1
 						id: "anvilcraft:geode"
+					}
+					type: "item"
+				}
+				{
+					id: "61C66C761F02A404"
+					item: {
+						count: 1
+						id: "reconstructedwands:diamond_wand"
+					}
+					type: "item"
+				}
+				{
+					count: 9
+					id: "54B52ECDE129CCFB"
+					item: {
+						count: 1
+						id: "industrial_platform:industrial_platform"
+					}
+					type: "item"
+				}
+				{
+					id: "48E29C5809580632"
+					item: {
+						count: 1
+						id: "explorerscompass:explorerscompass"
 					}
 					type: "item"
 				}
@@ -97,6 +123,7 @@
 		{
 			dependencies: ["7D94D60CA24E34D9"]
 			id: "3DFCF25B31E88B9F"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "0C13C1DF365BE711"
 				type: "checkmark"
@@ -107,7 +134,11 @@
 		{
 			dependencies: ["7D94D60CA24E34D9"]
 			hide_dependent_lines: true
+			icon: {
+				id: "minecraft:debug_stick"
+			}
 			id: "764A5CC3B3951399"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "19F01669E697409A"
 				type: "checkmark"
@@ -116,11 +147,12 @@
 			y: -5.5d
 		}
 		{
-			dependencies: ["3C98998953C1C30A"]
+			dependencies: ["05064BEC5C7DF9F4"]
 			icon: {
 				id: "ftbquests:book"
 			}
 			id: "7D94D60CA24E34D9"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "3A2FA4E00EE34CDB"
 				type: "checkmark"
@@ -130,11 +162,38 @@
 		}
 		{
 			id: "44D8620D8289DB2D"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					id: "186E1F21A099CC2F"
+					item: {
+						count: 1
+						id: "anvilcraft:neoforge"
+					}
+					type: "item"
+				}
+				{
+					id: "225F871E699A2388"
+					item: {
+						count: 1
+						id: "anvilcraftextrapower:llama_anvil"
+					}
+					type: "item"
+				}
+				{
+					id: "4369387D137E63D0"
+					item: {
+						count: 1
+						id: "anvilcraft_pigsplus:pig_anvil"
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "066ED5DF02DE6C2B"
 				type: "checkmark"
 			}]
-			x: -5.5d
+			x: -7.5d
 			y: -3.5d
 		}
 		{
@@ -142,6 +201,7 @@
 				id: "minecraft:honey_bottle"
 			}
 			id: "50622CFB46EF419C"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [
 				{
 					id: "4DC07F5ED85145B0"
@@ -210,13 +270,44 @@
 		}
 		{
 			dependencies: ["44D8620D8289DB2D"]
+			icon: {
+				id: "minecraft:polished_deepslate_slab"
+			}
 			id: "3C98998953C1C30A"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "28EC68E48C0981E7"
 				type: "checkmark"
 			}]
+			x: -5.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3C98998953C1C30A"]
+			icon: {
+				id: "minecraft:name_tag"
+			}
+			id: "05064BEC5C7DF9F4"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "32BBA0E054984AD7"
+				type: "checkmark"
+			}]
 			x: -3.5d
 			y: -3.5d
+		}
+		{
+			icon: {
+				id: "spectrum:pedestal_all_basic"
+			}
+			id: "64312F5DEA233569"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7298867EE298F7F9"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 1.0d
 		}
 	]
 }

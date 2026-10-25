@@ -1,0 +1,508 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "4"
+	group: "29E2B66FF1ED57B3"
+	icon: {
+		id: "spectrum:midnight_aberration"
+	}
+	id: "3707A393AB3CE5A0"
+	images: [ ]
+	order_index: 3
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["3AE197F566F36683"]
+			id: "33E6A6C827820E78"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "0DA119DF6D698CA5"
+				item: {
+					components: {
+						"minecraft:stored_enchantments": {
+							levels: {
+								"spectrum:treasure_hunter": 3
+							}
+						}
+					}
+					count: 1
+					id: "minecraft:enchanted_book"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "55897C5DC964383D"
+				item: { count: 1, id: "spectrum:storm_stone" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3AE197F566F36683"]
+			hide_text_until_complete: true
+			id: "667728071B9FE72E"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					id: "7DCED4ECBC4560ED"
+					item: {
+						count: 1
+						id: "spectrum:bottle_of_decay_away"
+					}
+					type: "item"
+				}
+				{
+					count: 32
+					id: "1A109F543DE335BF"
+					item: {
+						count: 1
+						id: "spectrum:raw_azurite"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "01BBC59F4AA32D8B"
+				item: { count: 1, id: "spectrum:raw_azurite" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1044B5A5D4E02FBC"]
+			id: "33C0C5C5B5ADB815"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					id: "0C289A932F1B5B57"
+					item: {
+						components: {
+							"anvilcraft:saved_entity": {
+								isMonster: 1b
+								tag: {
+									AbsorptionAmount: 0.0f
+									Air: 300s
+									ArmorDropChances: [
+										0.085f
+										0.085f
+										0.085f
+										0.085f
+									]
+									ArmorItems: [
+										{ }
+										{ }
+										{ }
+										{ }
+									]
+									Brain: {
+										memories: { }
+									}
+									CanPickUpLoot: 0b
+									CitadelUpData: { }
+									DeathTime: 0s
+									FallDistance: 0.0f
+									FallFlying: 0b
+									Fire: -1s
+									HandDropChances: [
+										0.085f
+										0.085f
+									]
+									HandItems: [
+										{ }
+										{ }
+									]
+									Health: 28.0f
+									HurtByTimestamp: 0
+									HurtTime: 0s
+									Invulnerable: 0b
+									LeftHanded: 0b
+									Motion: [
+										0.0d
+										-0.0784000015258789d
+										0.0d
+									]
+									NeoForgeData: {
+										anvilcraft_resin_base_resentment: 7
+										create_biotech.previous_liquid_living_slime_vertical_speed: -0.0784000015258789d
+										create_biotech.was_touching_liquid_living_slime: 0b
+									}
+									OnGround: 1b
+									PersistenceRequired: 0b
+									PortalCooldown: 0
+									Pos: [
+										220.5d
+										64.0d
+										118.5d
+									]
+									Rotation: [
+										89.677795f
+										0.0f
+									]
+									StradpoleCount: 0
+									attributes: [
+										{
+											base: 0.30000001192092896d
+											id: "minecraft:generic.movement_speed"
+										}
+										{
+											base: 1.0d
+											id: "additionalentityattributes:generic.hitbox_width"
+										}
+										{
+											base: 1.0d
+											id: "additionalentityattributes:generic.hitbox_height"
+										}
+										{
+											base: 1.0d
+											id: "additionalentityattributes:generic.height"
+										}
+										{
+											base: 0.0d
+											id: "minecraft:generic.oxygen_bonus"
+										}
+										{
+											base: 32.0d
+											id: "minecraft:generic.follow_range"
+											modifiers: [{
+												amount: -0.06575958508480137d
+												id: "minecraft:random_spawn_bonus"
+												operation: "add_multiplied_base"
+											}]
+										}
+										{
+											base: 1.0d
+											id: "additionalentityattributes:generic.width"
+										}
+										{
+											base: 1.0d
+											id: "additionalentityattributes:generic.hitbox_scale"
+										}
+									]
+									id: "alexsmobsup:straddler"
+									"neoforge:attachments": {
+										"spectrum:azure_dike": {
+											current_charges: 0.0f
+											current_recharge_delay: 0
+											max_charges: 0.0f
+											ticks_to_replenish_charge: 0
+											ticks_to_replenish_charge_after_getting_hit: 0
+										}
+										"spectrum:primordial_fire": 0L
+										"yes_steve_model:vehicle_model_id": {
+											initialized: 0b
+											molang_vars_server_bound: { }
+											owner_model_id: "default"
+										}
+									}
+									"neoforge:spawn_type": "SPAWN_EGG"
+								}
+							}
+						}
+						count: 1
+						id: "anvilcraft:resin_block"
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "0B08F47F4599F1EC"
+					item: {
+						count: 1
+						id: "spectrum:stratine_gem"
+					}
+					type: "item"
+				}
+				{
+					count: 64
+					id: "525B3B03AC55E82E"
+					item: {
+						count: 1
+						id: "spectrum:stratine_fragments"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "2EEF4203D1B92B74"
+				item: { count: 1, id: "spectrum:stratine_fragments" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["33C0C5C5B5ADB815"]
+			id: "3AE197F566F36683"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 16
+				id: "5403F357D9DACE70"
+				item: {
+					count: 1
+					id: "spectrum:neolith"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "095F7366A08A424D"
+					item: { count: 1, id: "spectrum:bottle_of_failing" }
+					type: "item"
+				}
+				{
+					id: "066E1252B4F68DB5"
+					item: { count: 1, id: "spectrum:neolith" }
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["33C0C5C5B5ADB815"]
+			hide_dependency_lines: true
+			id: "1E446CD604AEE494"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 8
+				id: "16DAB5F538AECB23"
+				item: {
+					count: 1
+					id: "spectrum:black_hole_chest"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "06D4B0477FAA6305"
+				item: { count: 1, id: "spectrum:black_hole_chest" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["33C0C5C5B5ADB815"]
+			hide_dependency_lines: true
+			id: "07966FAE7BD94391"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "02C69A1C692D0FA5"
+				item: { count: 1, id: "spectrum:cinderhearth" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["33E6A6C827820E78"]
+			hide_dependency_lines: true
+			id: "24C36327EA823145"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7B82BA0DBF73DBB1"
+				item: { count: 1, id: "ars_elemental:ritual_tesla_coil" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["33E6A6C827820E78"]
+			hide_dependency_lines: true
+			id: "239C2BF7A98E4CE4"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "266AF9B9D7E0F7F8"
+				item: { count: 1, id: "ars_elemental:glyph_discharge" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0E763CBABF6AF58B"]
+			id: "60E9BE47B665E715"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1428292FD34317AE"
+				item: { count: 1, id: "spectrum:connection_node" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0E763CBABF6AF58B"]
+			id: "03E7A104623F3927"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "668554A242ABAB9B"
+				item: { count: 1, id: "spectrum:ink_node" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0E763CBABF6AF58B"]
+			id: "0D44C03DF72C94C3"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "2C80E70939C241B4"
+					item: { count: 1, id: "spectrum:provider_node" }
+					type: "item"
+				}
+				{
+					id: "169546E9FD443545"
+					item: { count: 1, id: "spectrum:sender_node" }
+					type: "item"
+				}
+				{
+					id: "4953E6BAA158DD4E"
+					item: { count: 1, id: "spectrum:storage_node" }
+					type: "item"
+				}
+				{
+					id: "583CB6481961D56F"
+					item: { count: 1, id: "spectrum:gather_node" }
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0E763CBABF6AF58B"]
+			id: "13599C33C86372CE"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "79199F403577F7BF"
+					item: { count: 1, id: "spectrum:fluid_provider_node" }
+					type: "item"
+				}
+				{
+					id: "23159E51260828B8"
+					item: { count: 1, id: "spectrum:fluid_sender_node" }
+					type: "item"
+				}
+				{
+					id: "0FD40ACF06E60A54"
+					item: { count: 1, id: "spectrum:fluid_storage_node" }
+					type: "item"
+				}
+				{
+					id: "6C2401525A1B1D27"
+					item: { count: 1, id: "spectrum:fluid_gather_node" }
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["667728071B9FE72E"]
+			hide_dependency_lines: true
+			icon: {
+				id: "spectrum:provider_node"
+			}
+			id: "0E763CBABF6AF58B"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1B425FBFE6E2D436"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["667728071B9FE72E"]
+			hide_dependency_lines: true
+			id: "348D7DC443F19660"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "5FA6D0B0B2F9C3B7"
+				item: { count: 1, id: "spectrum:spirit_instiller" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["33C0C5C5B5ADB815"]
+			hide_dependency_lines: true
+			id: "4BA220A9DB2ADAA4"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "6712AE3B9C1F47E2"
+				item: {
+					count: 1
+					id: "spectrum:gilded_book"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7AF31B02B8036334"
+				item: { count: 1, id: "spectrum:enchanter" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["667728071B9FE72E"]
+			id: "19FB78E84BC02171"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 16
+				id: "5BF58A152B7FA8F7"
+				item: {
+					count: 1
+					id: "spectrum:midnight_aberration"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "202BEE29868538C7"
+				item: { count: 1, id: "spectrum:midnight_aberration" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["667728071B9FE72E"]
+			hide_dependency_lines: true
+			id: "412FB610FDA98F93"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4DC448DE605409E5"
+				item: { count: 1, id: "ars_nouveau:spell_turret" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["19FB78E84BC02171"]
+			icon: {
+				id: "spectrum:midnight_aberration"
+			}
+			id: "558B6C7D8DE79911"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "0EDBBFD567590214"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: 0.0d
+		}
+	]
+}

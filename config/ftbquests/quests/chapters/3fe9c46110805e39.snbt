@@ -1,0 +1,190 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "3fe9c46110805e39"
+	group: "29E2B66FF1ED57B3"
+	icon: {
+		id: "spectrum:pedestal_moonstone"
+	}
+	id: "3FE9C46110805E39"
+	images: [ ]
+	order_index: 4
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["558B6C7D8DE79911"]
+			id: "643FA80CBF18BC07"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4BFD2DC6BC23798D"
+				item: { count: 1, id: "spectrum:midnight_solution_bucket" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["558B6C7D8DE79911"]
+			id: "44979DDEA995961D"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "769A9AAD1AFBD985"
+				item: { count: 1, id: "spectrum:midnight_chip" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["558B6C7D8DE79911"]
+			hide_dependency_lines: true
+			id: "4BA9F71BF6BC48F2"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4AD7EDF1E4084DDF"
+				item: { count: 1, id: "spectrum:quitoxic_powder" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"44979DDEA995961D"
+				"4BA9F71BF6BC48F2"
+				"643FA80CBF18BC07"
+			]
+			id: "74C4B1A0C3DA8F81"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "06597EFE677CFB3C"
+				item: { count: 1, id: "anvilcraft:void_matter" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["74C4B1A0C3DA8F81"]
+			id: "4D4CC4AD578FAF1C"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "783F1F3211BF70FF"
+				item: { count: 1, id: "ars_nouveau:void_prism" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["74C4B1A0C3DA8F81"]
+			id: "6E857F1FE21A5630"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					id: "015E12F7A974374C"
+					item: {
+						count: 1
+						id: "ars_elemental:homing_prism_lens"
+					}
+					type: "item"
+				}
+				{
+					id: "53FAB47E7B5F075D"
+					item: {
+						count: 1
+						id: "ars_elemental:arc_prism_lens"
+					}
+					type: "item"
+				}
+				{
+					id: "1B9B972C1549D101"
+					item: {
+						count: 1
+						id: "ars_elemental:acceleration_prism_lens"
+					}
+					type: "item"
+				}
+				{
+					id: "7479F29EEC595D65"
+					item: {
+						count: 1
+						id: "ars_elemental:deceleration_prism_lens"
+					}
+					type: "item"
+				}
+				{
+					id: "3852D8AAF8FE45A9"
+					item: {
+						count: 1
+						id: "ars_elemental:piercing_prism_lens"
+					}
+					type: "item"
+				}
+				{
+					id: "6E813CAE07613BB9"
+					item: {
+						count: 1
+						id: "ars_elemental:chaining_prism_lens"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "61E2738C4CAB8FAC"
+				item: { count: 1, id: "ars_elemental:advanced_prism" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["74C4B1A0C3DA8F81"]
+			id: "119D061BB1F80BCC"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 64
+				id: "5E78272EE0B80875"
+				item: {
+					count: 1
+					id: "spectrum:bedrock_dust"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "46E56EDAF457EF39"
+				item: { count: 1, id: "spectrum:bottle_of_ruin" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4C5E76CE52007B89"]
+			id: "55149D08B6169557"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1CD9BDB1220E389F"
+				item: { count: 1, id: "spectrum:moonstone_shard" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["119D061BB1F80BCC"]
+			id: "4C5E76CE52007B89"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				dimension: "spectrum:deeper_down"
+				id: "0BF2CBCB586B7590"
+				type: "dimension"
+			}]
+			x: 5.0d
+			y: 0.5d
+		}
+	]
+}

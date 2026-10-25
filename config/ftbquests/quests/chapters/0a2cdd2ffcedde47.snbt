@@ -1,0 +1,94 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "0a2cdd2ffcedde47"
+	group: "12CF6200B3616D13"
+	icon: {
+		id: "ars_nouveau:archmage_spell_book"
+	}
+	id: "0A2CDD2FFCEDDE47"
+	images: [ ]
+	order_index: 2
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			id: "50EB3D20E4709F44"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "36C41173109DF2CA"
+				item: { count: 1, id: "ars_nouveau:glyph_toss" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			id: "47F73B682FC6AFC1"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "2F35090462FA2BB1"
+				item: { count: 1, id: "ars_nouveau:glyph_lightning" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			id: "33500F642F586416"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3DE105EE1E8DF780"
+				item: { count: 1, id: "ars_nouveau:bastion_pod" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			id: "69B9588F540C355C"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "5F043DD61EE66ACC"
+				item: { count: 1, id: "ars_nouveau:agronomic_sourcelink" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -2.0d
+		}
+		{
+			id: "1C8869CA128B007E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3BDB18A3AFA08C48"
+				item: { count: 1, id: "ars_nouveau:spell_sensor" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			id: "464FC9CFDD8F88CA"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "094609A6C0F488ED"
+				item: { count: 1, id: "ars_nouveau:glyph_crush" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			id: "2964218B718C53A8"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "5AF2253524EB796E"
+				item: { count: 1, id: "ars_creo:starbuncle_wheel" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.0d
+		}
+	]
+}

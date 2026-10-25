@@ -1,7 +1,7 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "1F97CA5F55F0D194"
+	filename: "1f97ca5f55f0d194"
 	group: "29E2B66FF1ED57B3"
 	hide_quest_until_deps_complete: true
 	icon: {
@@ -17,6 +17,7 @@
 		{
 			dependencies: ["1D9F96BE55FD6F5C"]
 			id: "78556B013177F55E"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				count: 4
 				id: "1FF5781966A3EF76"
@@ -37,6 +38,8 @@
 		{
 			dependencies: ["1D9F96BE55FD6F5C"]
 			id: "3BF1C6C79BACA9CC"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				count: 4
 				id: "4B28321D5333AC99"
@@ -57,6 +60,8 @@
 		{
 			dependencies: ["0967F643A122987D"]
 			id: "0A02C90B85481DB1"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				count: 4
 				id: "20A5EE3B4DA87766"
@@ -77,6 +82,7 @@
 		{
 			dependencies: ["1D9F96BE55FD6F5C"]
 			id: "0967F643A122987D"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				count: 64
 				id: "2E8264E21639B45B"
@@ -100,6 +106,16 @@
 				id: "spectrum:pedestal_all_basic"
 			}
 			id: "1D9F96BE55FD6F5C"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 4
+				id: "6C1AAD38B156FCFF"
+				item: {
+					count: 1
+					id: "ars_nouveau:spell_turret"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "37E8B295B058EFAE"
 				item: { count: 1, id: "spectrum:pedestal_all_basic" }
@@ -111,6 +127,16 @@
 		{
 			dependencies: ["1D9F96BE55FD6F5C"]
 			id: "4CBF552AC0CACA3D"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 4
+				id: "1FE5C067D2AB436B"
+				item: {
+					count: 1
+					id: "ars_nouveau:spell_sensor"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "2F4062AF3D37E97C"
 				item: { count: 1, id: "ars_nouveau:basic_spell_turret" }
@@ -122,6 +148,7 @@
 		{
 			dependencies: ["1D9F96BE55FD6F5C"]
 			id: "636CDC03AA962BC3"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				count: 16
 				id: "1C9C35E9728FC77F"
@@ -151,6 +178,8 @@
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "721704485A50C074"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
 			rewards: [
 				{
 					count: 4
@@ -209,6 +238,7 @@
 		{
 			dependencies: ["1D9F96BE55FD6F5C"]
 			id: "22ECA20DF1049510"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [
 				{
 					count: 8
@@ -272,6 +302,8 @@
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "664466851CAFC260"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "5AFF28CE1B0642E3"
 				item: { count: 1, id: "ars_nouveau:timer_spell_turret" }
@@ -284,6 +316,8 @@
 			dependencies: ["4CBF552AC0CACA3D"]
 			hide_until_deps_complete: true
 			id: "34BE0346A1611946"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "127D52EDFE052F18"
 				item: { count: 1, id: "ars_nouveau:rotating_spell_turret" }
@@ -295,6 +329,8 @@
 		{
 			dependencies: ["1D9F96BE55FD6F5C"]
 			id: "7BD08E4CD6DFAC3A"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				consume_items: true
 				count: 256L
@@ -309,6 +345,7 @@
 			dependencies: ["1D9F96BE55FD6F5C"]
 			hide_dependency_lines: true
 			id: "7808D50C186D1BC5"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [
 				{
 					id: "7206AA3DCF2A7EE1"
@@ -339,6 +376,7 @@
 			dependencies: ["1D9F96BE55FD6F5C"]
 			hide_dependency_lines: true
 			id: "2A4225B4370512D8"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "33750DFEF93E6763"
 				item: { count: 1, id: "ars_nouveau:wololo" }
@@ -350,8 +388,9 @@
 		{
 			dependencies: ["53327EB8D9D8497F"]
 			id: "6E5EC1E4CBE9167B"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
-				count: 64
+				count: 16
 				id: "39B88A9689CF0CE7"
 				item: {
 					count: 1
@@ -370,8 +409,9 @@
 		{
 			dependencies: ["53327EB8D9D8497F"]
 			id: "07F366D0D1A59691"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
-				count: 64
+				count: 16
 				id: "0A960FC975CC4E99"
 				item: {
 					count: 1
@@ -390,8 +430,9 @@
 		{
 			dependencies: ["53327EB8D9D8497F"]
 			id: "47D2041BF81684AA"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
-				count: 64
+				count: 16
 				id: "1128AFC4F79E13E4"
 				item: {
 					count: 1
@@ -410,8 +451,9 @@
 		{
 			dependencies: ["53327EB8D9D8497F"]
 			id: "320B227D9A22BA24"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
-				count: 64
+				count: 16
 				id: "0C380BA122306A28"
 				item: {
 					count: 1
@@ -430,8 +472,9 @@
 		{
 			dependencies: ["53327EB8D9D8497F"]
 			id: "59ACEC61AA3848B2"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
-				count: 64
+				count: 16
 				id: "54CDF6552681345F"
 				item: {
 					count: 1
@@ -450,8 +493,9 @@
 		{
 			dependencies: ["53327EB8D9D8497F"]
 			id: "3AA8FDE08646E683"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
-				count: 64
+				count: 16
 				id: "33828B3D7C9E6072"
 				item: {
 					count: 1
@@ -470,8 +514,9 @@
 		{
 			dependencies: ["53327EB8D9D8497F"]
 			id: "557AA84DAFC58267"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
-				count: 64
+				count: 16
 				id: "374C004DC9B7E8A4"
 				item: {
 					count: 1
@@ -490,8 +535,9 @@
 		{
 			dependencies: ["53327EB8D9D8497F"]
 			id: "4236F0FB7668D11C"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
-				count: 64
+				count: 16
 				id: "2C61E642A0CF2685"
 				item: {
 					count: 1
@@ -515,6 +561,7 @@
 			]
 			hide_dependent_lines: true
 			id: "53327EB8D9D8497F"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [
 				{
 					count: 8
@@ -567,6 +614,7 @@
 				id: "ars_nouveau:manipulation_essence"
 			}
 			id: "238E6124102FE87A"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
@@ -577,12 +625,23 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["53327EB8D9D8497F"]
+			dependencies: ["4236F0FB7668D11C"]
 			hide_dependency_lines: true
-			id: "34933348806255ED"
+			id: "6F5B4A844428FA56"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 4
+				id: "12F6EC28EEAF9A74"
+				item: {
+					count: 1
+					id: "ars_nouveau:vitalic_sourcelink"
+				}
+				type: "item"
+			}]
 			tasks: [{
-				id: "6A2979604511BA62"
-				item: { count: 1, id: "spectrum:liquid_crystal_bucket" }
+				id: "177807AB37CA1ECF"
+				item: { count: 1, id: "ars_nouveau:vitalic_sourcelink" }
 				type: "item"
 			}]
 			x: 8.0d
