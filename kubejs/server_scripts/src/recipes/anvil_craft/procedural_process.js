@@ -102,6 +102,7 @@ ServerEvents.recipes(event => {
         "anvilcraft:precision_electromagnetic_processing/magnetoelectric_core",
 
         "createimp:batch_mechanical_crafter",
+        "createimp:batch_repackager",
     ].forEach(recipe => {
         event.remove(recipe)
     })
@@ -117,4 +118,16 @@ ServerEvents.recipes(event => {
         .addItemInject(["anvilcraft:hardend_resin"])
         .addBlockCompress("create:railway_casing")
         .build(`${global.ModPackId}:batch_mechanical_crafter`)
+
+    new ProceduralProcess("createimp:batch_repackager", "create:repackager", "createimp:batch_repackager")
+        .addItemInject(["anvilcraft:circuit_board"])
+        .addItemInject(["anvilcraft:hardend_resin"])
+        .addBlockCompress("create:railway_casing")
+        .build(`${global.ModPackId}:batch_repackager_from_repackager`)
+
+    new ProceduralProcess("createimp:batch_repackager", "create:packager", "createimp:batch_repackager")
+        .addItemInject(["anvilcraft:circuit_board"])
+        .addItemInject(["anvilcraft:hardend_resin"])
+        .addBlockCompress("create:railway_casing")
+        .build(`${global.ModPackId}:batch_repackager_from_packager`)
 })
