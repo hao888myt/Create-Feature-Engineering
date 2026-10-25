@@ -201,3 +201,9 @@
 	# Default: 2000
 	# Range: > 1
 	fluid_sourcelink_transfer_rate = 10000
+
+[alexsmobs]
+	#炽岩产生黑曜石外壳所需世界
+	# Default: 300
+	# Range: > 0
+	laviathan_conversion_time = 19
