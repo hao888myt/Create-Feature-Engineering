@@ -11,6 +11,8 @@ ServerEvents.recipes(event => {
     "farmersdelight:wooden_basket",
     "farmersdelight:bamboo_basket",
 
+    "anvilcraft:big_red_button",
+
     "create:crafting/kinetics/gearbox",
     "create:crafting/kinetics/vertical_gearbox",
     "create:crafting/kinetics/clutch",
@@ -117,6 +119,20 @@ ServerEvents.recipes(event => {
     {
       T: "minecraft:stick",
       S: "#c:strings"
+    }
+  )
+
+  // 大红按钮
+  minecraft.crafting_shaped(
+    Item.of("anvilcraft:big_red_button", 4), [
+    " R ",
+    "RBR",
+    "III"
+  ],
+    {
+      R: "minecraft:redstone",
+      B: "#minecraft:buttons",
+      I: "minecraft:iron_ingot"
     }
   )
 
