@@ -17,6 +17,8 @@ ServerEvents.recipes(event => {
     let recipes = [
         [Item.of("create:andesite_funnel", 2), "#c:ingots/andesite_alloy", "minecraft:dried_kelp", false],
 
+        ["create_biotech:butter_cat_engine", "create_biotech:cute_cat_on_shaft", "minecraft:bread"],
+
         ["create:fluid_tank", "create_fantasizing:andesite_crate", "#c:plates/copper", false],
         ["create:item_vault", "create_fantasizing:andesite_crate", "#c:plates/iron", false],
         ["ratatouille:compost_tower", "create_fantasizing:andesite_crate", "#c:plates/zinc", false],
