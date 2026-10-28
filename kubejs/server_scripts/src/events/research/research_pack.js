@@ -124,6 +124,14 @@ ResearchdEvents.registerResearches(event => {
         .effect(unlockRecipe("ars_creo:starbuncle_wheel"))
         .parent("conveying")
 
+    event.create("butter_cat_engine")
+        .translatableName("黄油猫引擎")
+        .translatableDescription("一个古老的悖论")
+        .icon("create_biotech:butter_cat_engine")
+        .method(consumePack(rp.conveying, 8, 100))
+        .effect(unlockRecipe("create:kjs/create_biotech_butter_cat_engine"))
+        .parent("conveying")
+
     event.create("logistics")
         .translatableName("物流研究包")
         .translatableDescription("用于研究物流系统")
