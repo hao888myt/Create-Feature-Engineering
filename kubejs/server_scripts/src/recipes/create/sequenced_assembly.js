@@ -53,6 +53,8 @@ ServerEvents.recipes(event => {
 
 		"anvilcraftextrapower:lead_acid_battery_empty",
 		"anvilcraft_pigsplus:anvilcraftextrapower/lead_acid_battery_empty",
+
+		"anvilcraft:trading_station",
 	].forEach(recipe => {
 		event.remove(recipe)
 	})
@@ -376,4 +378,13 @@ ServerEvents.recipes(event => {
 		create.filling(transitional_item, [transitional_item, Fluid.of("vintageimprovements:sulfuric_acid", 100)]),
 		create.deploying(transitional_item, [transitional_item, Ingredient.of("#c:plates/lead")]),
 	]).transitionalItem(transitional_item).loops(2)
+
+	// 交易站
+	transitional_item = "create_fantasizing:andesite_crate"
+	create.sequenced_assembly(Item.of("anvilcraft:trading_station"),
+		"create_fantasizing:andesite_crate", [
+		create.deploying(transitional_item, [transitional_item, "minecraft:emerald_block"]),
+		create.deploying(transitional_item, [transitional_item, "anvilcraft:circuit_board"]),
+		create.deploying(transitional_item, [transitional_item, Ingredient.of("#minecraft:wool")]),
+	]).transitionalItem(transitional_item)
 })
