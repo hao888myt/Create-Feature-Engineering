@@ -9,7 +9,10 @@ ServerEvents.recipes(event => {
         "createdieselgenerators:cutting/bar_mold",
         "createdieselgenerators:cutting/bowl_mold",
         "createdieselgenerators:cutting/lines_mold",
-        "createdieselgenerators:cutting/chain_mold"
+        "createdieselgenerators:cutting/chain_mold",
+
+        "createimp:work_warehouse",
+        "createimp:template_panel",
     ].forEach(recipe => {
         event.remove(recipe)
     })
@@ -37,6 +40,11 @@ ServerEvents.recipes(event => {
         ['createdieselgenerators:mold[createdieselgenerators:mold_type="createdieselgenerators:bowl"]', "#c:plates/iron", "minecraft:bowl", false],
         ['createdieselgenerators:mold[createdieselgenerators:mold_type="createdieselgenerators:chain"]', "#c:plates/iron", "#c:chains", false],
         ['createdieselgenerators:mold[createdieselgenerators:mold_type="createdieselgenerators:lines"]', "#c:plates/iron", "#c:rods", false],
+
+        ["createimp:work_warehouse", "create:redstone_requester", "create:railway_casing", false],
+        ["createimp:process_manager", "create:display_board", "create:railway_casing"],
+
+        ["createimp:template_panel", "create:factory_gauge", "create:crafting_blueprint", false],
     ]
     recipes.forEach(recipe => {
         create.deploying(recipe[0], [Ingredient.of(recipe[1]), Ingredient.of(recipe[2])])
