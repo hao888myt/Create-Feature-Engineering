@@ -721,4 +721,264 @@ ResearchdEvents.registerResearches(event => {
             "create:kjs/fluidlogistics_fluid_factory_gauge"
         ]))
         .parent("package")
+
+    event.create("chemical")
+        .translatableName("化工研究包")
+        .literalDescription("解锁化工研究包的配方")
+        .iconStacks('researchd:research_pack[researchd:research_pack="create_feature_engineering:chemical"]')
+        .method(consumePacks([
+            [rp.conveying, 512, 20],
+            [rp.logistics, 512, 20],
+            [rp.fluid, 512, 20],
+            [rp.smart, 512, 20],
+        ]))
+        .effect(unlockRecipe("vintageimprovements:kjs/researchd_research_pack"))
+        .parents(["smart", "pumpjack", "vacuum_chamber"])
+
+    event.create("magnetoelectric_core")
+        .translatableName("磁电核心")
+        .literalDescription("解锁磁电核心的配方")
+        .icon("anvilcraft:magnetoelectric_core")
+        .method(consumePacks([
+            [rp.conveying, 256, 20],
+            [rp.logistics, 256, 20],
+            [rp.fluid, 256, 20],
+            [rp.smart, 256, 20],
+            [rp.chemical, 256, 20],
+        ]))
+        .effect(unlockRecipe("create_feature_engineering:magnetoelectric_core"))
+        .parent("chemical")
+
+    event.create("circuit_board")
+        .translatableName("电路板")
+        .literalDescription("解锁电路板的配方")
+        .icon("anvilcraft:circuit_board")
+        .method(consumePacks([
+            [rp.conveying, 256, 20],
+            [rp.logistics, 256, 20],
+            [rp.fluid, 256, 20],
+            [rp.smart, 256, 20],
+            [rp.chemical, 256, 20],
+        ]))
+        .effect(unlockRecipes([
+            "create:kjs/anvilcraft_circuit_board",
+            "create:kjs/anvilcraft_circuit_board_2"
+        ]))
+        .parent("chemical")
+
+    event.create("piezoelectric_crystal")
+        .translatableName("压电晶体")
+        .literalDescription("解锁压电晶体的配方")
+        .icon("anvilcraft:piezoelectric_crystal")
+        .method(consumePacks([
+            [rp.conveying, 256, 20],
+            [rp.logistics, 256, 20],
+            [rp.fluid, 256, 20],
+            [rp.smart, 256, 20],
+            [rp.chemical, 256, 20],
+        ]))
+        .effect(unlockRecipes([
+            "anvilcraft:piezoelectric_crystal",
+            "anvilcraft:piezoelectric_crystal_amethyst"
+        ]))
+        .parent("chemical")
+
+    event.create("transmission_pole")
+        .translatableName("输电杆")
+        .literalDescription("解锁输电杆的配方")
+        .icon("anvilcraft:transmission_pole")
+        .method(consumePacks([
+            [rp.conveying, 256, 20],
+            [rp.logistics, 256, 20],
+            [rp.fluid, 256, 20],
+            [rp.smart, 256, 20],
+            [rp.chemical, 256, 20],
+        ]))
+        .effect(unlockRecipe("anvilcraft:transmission_pole"))
+        .parent("chemical")
+
+    event.create("load_monitor")
+        .translatableName("负载监视器")
+        .literalDescription("解锁负载监视器的配方")
+        .icon("anvilcraft:load_monitor")
+        .method(consumePacks([
+            [rp.conveying, 256, 20],
+            [rp.logistics, 256, 20],
+            [rp.fluid, 256, 20],
+            [rp.smart, 256, 20],
+            [rp.chemical, 256, 20],
+        ]))
+        .effect(unlockRecipe("anvilcraft:load_monitor"))
+        .parent("magnetoelectric_core")
+
+    event.create("induction_light")
+        .translatableName("电感灯")
+        .literalDescription("解锁电感灯的配方")
+        .icon("anvilcraft:induction_light")
+        .method(consumePacks([
+            [rp.conveying, 256, 20],
+            [rp.logistics, 256, 20],
+            [rp.fluid, 256, 20],
+            [rp.smart, 256, 20],
+            [rp.chemical, 256, 20],
+        ]))
+        .effect(unlockRecipe("anvilcraft:induction_light"))
+        .parent("magnetoelectric_core")
+
+    event.create("charge_collector")
+        .translatableName("集电器")
+        .literalDescription("解锁集电器的配方")
+        .icon("anvilcraft:charge_collector")
+        .method(consumePacks([
+            [rp.conveying, 256, 20],
+            [rp.logistics, 256, 20],
+            [rp.fluid, 256, 20],
+            [rp.smart, 256, 20],
+            [rp.chemical, 256, 20],
+        ]))
+        .effect(unlockRecipe("anvilcraft:charge_collector"))
+        .parent("magnetoelectric_core")
+
+    event.create("heater")
+        .translatableName("电加热器")
+        .literalDescription("解锁电加热器的配方")
+        .icon("anvilcraft:heater")
+        .method(consumePacks([
+            [rp.conveying, 256, 20],
+            [rp.logistics, 256, 20],
+            [rp.fluid, 256, 20],
+            [rp.smart, 256, 20],
+            [rp.chemical, 256, 20],
+        ]))
+        .effect(unlockRecipe("anvilcraft:heater"))
+        .parent("magnetoelectric_core")
+
+    event.create("diesel_engine")
+        .translatableName("柴油引擎")
+        .literalDescription("解锁柴油引擎的配方")
+        .icon("createdieselgenerators:diesel_engine")
+        .method(consumePacks([
+            [rp.conveying, 256, 20],
+            [rp.logistics, 256, 20],
+            [rp.fluid, 256, 20],
+            [rp.smart, 256, 20],
+            [rp.chemical, 256, 20],
+        ]))
+        .effect(unlockRecipe("create:kjs/createdieselgenerators_diesel_engine"))
+        .parent("chemical")
+
+    event.create("lead_acid_battery")
+        .translatableName("铅酸蓄电池")
+        .literalDescription("解锁铅酸蓄电池的配方")
+        .icon("anvilcraftextrapower:lead_acid_battery")
+        .method(consumePacks([
+            [rp.conveying, 256, 20],
+            [rp.logistics, 256, 20],
+            [rp.fluid, 256, 20],
+            [rp.smart, 256, 20],
+            [rp.chemical, 256, 20],
+        ]))
+        .effect(unlockRecipe("create:kjs/anvilcraftextrapower_lead_acid_battery_empty"))
+        .parent("chemical")
+
+    event.create("template_panel")
+        .translatableName("智能工厂")
+        .literalDescription("解锁模板仪表、进程面板和工作仓库的配方")
+        .icon("createimp:template_panel")
+        .method(consumePacks([
+            [rp.conveying, 256, 20],
+            [rp.logistics, 256, 20],
+            [rp.fluid, 256, 20],
+            [rp.smart, 256, 20],
+            [rp.chemical, 256, 20],
+        ]))
+        .effect(unlockRecipes([
+            "create:kjs/createimp_template_panel",
+            "create:kjs/createimp_work_warehouse",
+            "create:kjs/createimp_process_manager"
+        ]))
+        .parent("chemical")
+
+    event.create("electromagnet")
+        .translatableName("电磁铁")
+        .literalDescription("解锁电磁铁的配方")
+        .icon("anvilcraftextrapower:electromagnet")
+        .method(consumePacks([
+            [rp.conveying, 256, 20],
+            [rp.logistics, 256, 20],
+            [rp.fluid, 256, 20],
+            [rp.smart, 256, 20],
+            [rp.chemical, 256, 20],
+        ]))
+        .effect(unlockRecipe("anvilcraftextrapower:electromagnet"))
+        .parent("magnetoelectric_core")
+
+    event.create("charger")
+        .translatableName("充放电")
+        .literalDescription("解锁充电器和放电器的配方")
+        .icon("anvilcraft:charger")
+        .method(consumePacks([
+            [rp.conveying, 256, 20],
+            [rp.logistics, 256, 20],
+            [rp.fluid, 256, 20],
+            [rp.smart, 256, 20],
+            [rp.chemical, 256, 20],
+        ]))
+        .effect(unlockRecipes([
+            "anvilcraft:discharger",
+            "anvilcraft:charger"
+        ]))
+        .parent("magnetoelectric_core")
+
+    event.create("trading_station")
+        .translatableName("交易站")
+        .literalDescription("解锁交易站的配方")
+        .icon("anvilcraft:trading_station")
+        .method(consumePacks([
+            [rp.conveying, 256, 20],
+            [rp.logistics, 256, 20],
+            [rp.fluid, 256, 20],
+            [rp.smart, 256, 20],
+            [rp.chemical, 256, 20],
+        ]))
+        .effect(unlockRecipe("create:kjs/anvilcraft_trading_station"))
+        .parent("circuit_board")
+
+    event.create("batch_mechanical_crafter_repackager")
+        .translatableName("批量合成")
+        .literalDescription("解锁批量动力合成器、批量理包机的配方")
+        .icon("createimp:batch_mechanical_crafter")
+        .method(consumePacks([
+            [rp.conveying, 256, 20],
+            [rp.logistics, 256, 20],
+            [rp.fluid, 256, 20],
+            [rp.smart, 256, 20],
+            [rp.chemical, 256, 20],
+        ]))
+        .effect(unlockRecipes([
+            "create_feature_engineering:batch_mechanical_crafter",
+            "create_feature_engineering:batch_repackager_from_packager",
+            "create_feature_engineering:batch_repackager_from_repackager"
+        ]))
+        .parent("circuit_board")
+
+    event.create("better_fluid_logistics")
+        .translatableName("更好的流体物流")
+        .literalDescription("解锁管道、泵等物品的配方")
+        .icon("anvilcraft:pipe")
+        .method(consumePacks([
+            [rp.conveying, 256, 20],
+            [rp.logistics, 256, 20],
+            [rp.fluid, 256, 20],
+            [rp.smart, 256, 20],
+            [rp.chemical, 256, 20],
+        ]))
+        .effect(unlockRecipes([
+            "create:kjs/anvilcraft_control_valve",
+            "create:kjs/anvilcraft_pump",
+            "anvilcraft:drain",
+            "anvilcraft:check_valve",
+            "create:kjs/anvilcraft_pipe",
+        ]))
+        .parents(["magnetoelectric_core", "smart_fluid_pipe", "fluid_pump", "circuit_board"])
 })
