@@ -12,6 +12,7 @@ ServerEvents.recipes(event => {
     "farmersdelight:bamboo_basket",
 
     "anvilcraft:big_red_button",
+    "create:crafting/appliances/crafting_blueprint",
 
     "create:crafting/kinetics/gearbox",
     "create:crafting/kinetics/vertical_gearbox",
@@ -134,6 +135,14 @@ ServerEvents.recipes(event => {
       B: "#minecraft:buttons",
       I: "minecraft:iron_ingot"
     }
+  )
+
+  // 合成蓝图
+  minecraft.crafting_shapeless(
+    Item.of("create:crafting_blueprint", 3), [
+    "create:empty_schematic",
+    "minecraft:crafting_table"
+  ]
   )
 
   // 十字齿轮箱
