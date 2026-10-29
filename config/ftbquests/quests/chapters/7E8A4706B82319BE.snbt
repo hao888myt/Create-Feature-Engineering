@@ -320,5 +320,19 @@
 			x: 9.5d
 			y: -1.0d
 		}
+		{
+			dependencies: ["44183795B328B39C"]
+			id: "1A24080259DB3FC9"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
+			tasks: [{
+				id: "67DD77AB6A48636C"
+				item: { count: 1, id: "anvilcraft:big_red_button" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -3.0d
+		}
 	]
 }
