@@ -334,7 +334,7 @@
 			x: -3.5d
 			y: -3.0d
 		}
-{
+		{
 			dependencies: ["44183795B328B39C"]
 			id: "0FCC72B73099613A"
 			optional: true
