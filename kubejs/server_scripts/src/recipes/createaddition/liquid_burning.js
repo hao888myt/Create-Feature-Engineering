@@ -1,6 +1,8 @@
 ServerEvents.recipes(event => {
     let removes = [
-        "createaddition:liquid_burning/biofuel"
+        "createaddition:liquid_burning/biofuel",
+        "createaddition:liquid_burning/gasoline",
+        "createaddition:liquid_burning/biodiesel",
     ].forEach(recipe => {
         event.remove(recipe)
     })
@@ -12,6 +14,30 @@ ServerEvents.recipes(event => {
             "type": "neoforge:tag",
             "amount": 1000,
             "tag": "c:biogas"
+        }],
+        "results": [],
+        "superheated": true
+    })
+
+    event.custom({
+        "type": "createaddition:liquid_burning",
+        "burn_time": 24000,
+        "ingredients": [{
+            "type": "neoforge:tag",
+            "amount": 1000,
+            "tag": "c:gasoline"
+        }],
+        "results": [],
+        "superheated": true
+    })
+
+    event.custom({
+        "type": "createaddition:liquid_burning",
+        "burn_time": 6000,
+        "ingredients": [{
+            "type": "neoforge:tag",
+            "amount": 1000,
+            "tag": "c:biodiesel"
         }],
         "results": [],
         "superheated": true
