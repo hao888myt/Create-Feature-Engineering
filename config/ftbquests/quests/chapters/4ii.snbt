@@ -70,6 +70,8 @@
 			y: 4.5d
 		}
 		{
+			dependencies: ["2976470F12951FF9"]
+			hide_until_deps_complete: true
 			id: "3FB5EDDEB1A291B8"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -81,6 +83,8 @@
 			y: 6.0d
 		}
 		{
+			dependencies: ["2976470F12951FF9"]
+			hide_until_deps_complete: true
 			id: "02440105AEA7ED66"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -92,6 +96,8 @@
 			y: 7.0d
 		}
 		{
+			dependencies: ["2976470F12951FF9"]
+			hide_until_deps_complete: true
 			id: "1E4CFE29EE92E2D5"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -133,6 +139,8 @@
 			y: 3.5d
 		}
 		{
+			dependencies: ["2976470F12951FF9"]
+			hide_until_deps_complete: true
 			id: "07DD8B483EC321C3"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -144,6 +152,8 @@
 			y: 0.5d
 		}
 		{
+			dependencies: ["2976470F12951FF9"]
+			hide_until_deps_complete: true
 			id: "66BF7D2E467C8633"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -155,6 +165,8 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["2976470F12951FF9"]
+			hide_until_deps_complete: true
 			id: "1B8D084CF29D6CA7"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -181,6 +193,8 @@
 			y: 2.5d
 		}
 		{
+			dependencies: ["2976470F12951FF9"]
+			hide_until_deps_complete: true
 			id: "0019D9D99E0D9645"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -192,6 +206,8 @@
 			y: 4.5d
 		}
 		{
+			dependencies: ["2976470F12951FF9"]
+			hide_until_deps_complete: true
 			id: "694ADEDB582EFB83"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -230,6 +246,8 @@
 			y: -5.5d
 		}
 		{
+			dependencies: ["2976470F12951FF9"]
+			hide_until_deps_complete: true
 			id: "31375F76EC7A53DA"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -269,6 +287,8 @@
 			y: -2.5d
 		}
 		{
+			dependencies: ["2976470F12951FF9"]
+			hide_until_deps_complete: true
 			id: "6FEDF161386311E7"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -296,6 +316,8 @@
 			y: -3.5d
 		}
 		{
+			dependencies: ["2976470F12951FF9"]
+			hide_until_deps_complete: true
 			id: "505A26ACDF0559AD"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -307,6 +329,8 @@
 			y: -0.5d
 		}
 		{
+			dependencies: ["2976470F12951FF9"]
+			hide_until_deps_complete: true
 			id: "7479D0A900A35926"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -318,6 +342,8 @@
 			y: -4.5d
 		}
 		{
+			dependencies: ["2976470F12951FF9"]
+			hide_until_deps_complete: true
 			id: "1320D2E8A89A3412"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -344,6 +370,8 @@
 			y: -5.5d
 		}
 		{
+			dependencies: ["2976470F12951FF9"]
+			hide_until_deps_complete: true
 			id: "6216BA50C3B4851C"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -355,6 +383,8 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["2976470F12951FF9"]
+			hide_until_deps_complete: true
 			id: "23426C712E2E7E7A"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
