@@ -12,6 +12,9 @@ ServerEvents.recipes(event => {
     event.remove(recipe)
   })
 
+  // 沃土
+  create.filling(Item.of("farmersdelight:rich_soil"), [Fluid.of("minecraft:water", 500), "farmersdelight:organic_compost"])
+
   // 电子管
   create.filling(Item.of("create:electron_tube", 4), [Fluid.of("create_feature_engineering:molten_iron", 180), "create:polished_rose_quartz"])
 
