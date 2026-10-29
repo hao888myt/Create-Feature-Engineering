@@ -687,7 +687,7 @@ ResearchdEvents.registerResearches(event => {
         .effect(unlockRecipe("create:kjs/fluidlogistics_copper_frogport"))
         .parent("package")
 
-event.create("inventory_access_port_bridge")
+    event.create("inventory_access_port_bridge")
         .translatableName("拓展与桥接")
         .literalDescription("解锁容器拓展端口和容器桥接器的配方")
         .icon("create_connected:inventory_access_port")

@@ -446,6 +446,7 @@
 		}
 		{
 			dependencies: ["2976470F12951FF9"]
+			hide_until_deps_complete: true
 			id: "4FC940739A9EF11D"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
