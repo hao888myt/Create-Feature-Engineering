@@ -128,6 +128,7 @@
 		"&e树脂&r经过&b烘烤&r后，就变成了富有弹性的&e橡胶&r，是制作传送带的好原料"
 		"&7（是烟熏配方，不是冶炼！）"
 	]
+	quest.0FCC72B73099613A.quest_subtitle: "我去，reach！"
 	quest.1044B5A5D4E02FBC.title: "纯粹之色 完成！"
 	quest.10A56D7B4EE03F22.title: "起重机"
 	quest.122F631B4B3489B6.quest_desc: [
@@ -146,6 +147,7 @@
 	quest.19FB78E84BC02171.quest_desc: ["&c请一定保证你的地板不是什么自然方块（比如泥土、草方块、雪块），不然出意外了后果自负&r"]
 	quest.19FB78E84BC02171.quest_subtitle: "风险很高的样子"
 	quest.19FB78E84BC02171.title: "完美化合物？"
+	quest.1A24080259DB3FC9.quest_subtitle: "想按多久按多久"
 	quest.1AFE35E67823BF42.quest_subtitle: "不建议在家里使用"
 	quest.1BF102DE45FCC1DF.quest_desc: ["&b树脂块&r可以捕捉&e中小型的生物，包括敌对生物，但是捕捉敌对生物需要使用虚弱药水"]
 	quest.1BF102DE45FCC1DF.quest_subtitle: "精灵球？"
@@ -332,8 +334,9 @@
 		"1.铁砧抢夺铁傀儡"
 		"2.铁傀儡的铁锭修复铁傀儡，回到步骤1"
 		""
-		"铁砧下落高度+1，伤害+2，最高40点"
+		"&e原版铁砧&r下落高度+1，伤害+2，最高40点"
 		"1个铁锭可以恢复铁傀儡25点血量"
+		"&7可用开裂的铁砧省材料&r"
 	]
 	quest.4B1EC6BB72C4DE14.quest_subtitle: "左脚踩右脚升天"
 	quest.4B1EC6BB72C4DE14.title: "新时代刷铁机"
@@ -407,6 +410,7 @@
 	quest.65A710F05DD45713.title: "关于流体运输"
 	quest.667728071B9FE72E.quest_desc: ["&b石青&r是一种可以激发颜料魔力的矿石，也可以通过&e青色混合物&r来合成"]
 	quest.667728071B9FE72E.quest_subtitle: "地底深处传来声响"
+	quest.6823412C14646D27.quest_subtitle: "生物锅炉"
 	quest.697B347F2AA42189.quest_desc: [
 		"在没有&b黄铜隧道&r和&b黄铜漏斗&r的情况下配平产线确实有些坐牢，&e所以这里提供了一些来渡过前期"
 		"&7（前期在没有黄铜科技的情况下确实可以配平，想挑战自己可以试试）"
@@ -418,6 +422,7 @@
 	quest.71ECE3E5F68C98BA.quest_subtitle: "奇怪，怎么少了5种颜色"
 	quest.71ECE3E5F68C98BA.title: "五颜六色的树"
 	quest.721704485A50C074.title: "最可爱的漏斗"
+	quest.743E3A1B706E1BCE.quest_subtitle: "便宜货"
 	quest.764A5CC3B3951399.quest_desc: [
 		"为了提供更好的游玩体验，&e整合包魔改了很多模组的数值和机制&r，具体可以在&d改动一览&r里查看"
 		"&7（施工中）"
