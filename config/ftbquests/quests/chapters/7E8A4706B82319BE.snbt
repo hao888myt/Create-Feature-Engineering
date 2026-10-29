@@ -307,5 +307,18 @@
 			x: 7.5d
 			y: 1.0d
 		}
+		{
+			dependencies: ["02863465E853724C"]
+			id: "6823412C14646D27"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4E3BB7B263A625C2"
+				item: { count: 1, id: "create_biotech:butter_cat_engine" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: -1.0d
+		}
 	]
 }
