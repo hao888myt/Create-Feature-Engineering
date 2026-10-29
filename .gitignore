@@ -32,7 +32,7 @@ config/*
 !config/parkour-server.toml
 !config/creatorhotbar-client.json
 !config/tooltips_reforged.json
-!config/create_cyber_goggles.toml
+!config/create_cyber_goggles-client.toml
 !config/curios-common.toml
 !config/create_jetpack-common.toml
 !config/infinite_pie.json
