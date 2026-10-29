@@ -443,6 +443,7 @@
 			id: "3BB358D7C8F0532D"
 			optional: true
 			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
 			tasks: [{
 				id: "12B687A6FE18C75C"
 				item: { count: 1, id: "ars_nouveau:ritual_scrying" }
@@ -458,6 +459,7 @@
 			id: "5030C2CA7AC29839"
 			optional: true
 			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
 			tasks: [{
 				id: "1F9EEAC36B9C65EC"
 				item: { count: 1, id: "ars_nouveau:ritual_burrowing" }
@@ -473,6 +475,7 @@
 			id: "770C30DA4B689663"
 			optional: true
 			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
 			tasks: [{
 				id: "5A85FBB388235729"
 				item: { count: 1, id: "ars_nouveau:ritual_sunrise" }
@@ -488,6 +491,7 @@
 			id: "5CE692CAEC4D1187"
 			optional: true
 			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
 			tasks: [{
 				id: "58691AC2EA0834BC"
 				item: { count: 1, id: "ars_nouveau:ritual_binding" }
@@ -503,6 +507,7 @@
 			id: "50B98E60A85CAF88"
 			optional: true
 			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
 			tasks: [{
 				id: "62DCC11FC16CAC90"
 				item: { count: 1, id: "ars_nouveau:ritual_cloudshaping" }
@@ -518,6 +523,7 @@
 			id: "32595D717E66D50D"
 			optional: true
 			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
 			tasks: [{
 				id: "160D40C10E6384F8"
 				item: { count: 1, id: "ars_nouveau:ritual_animal_summon" }
@@ -533,6 +539,7 @@
 			id: "3637902CF412A18F"
 			optional: true
 			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
 			tasks: [{
 				id: "1F8E38361725477F"
 				item: { count: 1, id: "ars_nouveau:ritual_moonfall" }
@@ -547,6 +554,7 @@
 			id: "5880B775B9FCB197"
 			optional: true
 			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
 			tasks: [{
 				id: "4D98B8B3C7DA4B0B"
 				item: { count: 1, id: "ars_nouveau:ritual_wilden_summon" }
@@ -561,6 +569,7 @@
 			id: "1AFE35E67823BF42"
 			optional: true
 			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
 			tasks: [{
 				id: "69294F1E0EE36CB2"
 				item: { count: 1, id: "ars_nouveau:ritual_challenge" }
@@ -603,6 +612,7 @@
 					type: "item"
 				}
 			]
+			shape: "rsquare"
 			tasks: [{
 				id: "7AB1E4CE59E19BC1"
 				item: { count: 1, id: "ars_nouveau:bookwyrm_charm" }

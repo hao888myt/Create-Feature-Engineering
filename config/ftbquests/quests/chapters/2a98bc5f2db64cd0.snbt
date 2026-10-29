@@ -1,5 +1,4 @@
 {
-	always_invisible: true
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "2a98bc5f2db64cd0"
@@ -116,6 +115,7 @@
 		}
 		{
 			dependencies: ["2976470F12951FF9"]
+			hide_until_deps_complete: true
 			id: "47025701CAB3D813"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{

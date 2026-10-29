@@ -37,6 +37,7 @@
 		}
 		{
 			dependencies: ["1D9F96BE55FD6F5C"]
+			hide_dependency_lines: true
 			id: "3BF1C6C79BACA9CC"
 			optional: true
 			quest_enhance_disable_scroll_paging: false
@@ -49,6 +50,7 @@
 				}
 				type: "item"
 			}]
+			shape: "rsquare"
 			tasks: [{
 				id: "5D3F07AF3E4D050F"
 				item: { count: 1, id: "ars_nouveau:agronomic_sourcelink" }
@@ -59,6 +61,7 @@
 		}
 		{
 			dependencies: ["0967F643A122987D"]
+			hide_dependency_lines: true
 			id: "0A02C90B85481DB1"
 			optional: true
 			quest_enhance_disable_scroll_paging: false
@@ -71,6 +74,7 @@
 				}
 				type: "item"
 			}]
+			shape: "rsquare"
 			tasks: [{
 				id: "2D75852F4A5D00E3"
 				item: { count: 1, id: "ars_nouveau:volcanic_sourcelink" }
@@ -227,6 +231,7 @@
 					type: "item"
 				}
 			]
+			shape: "rsquare"
 			tasks: [{
 				id: "683D906783E08A97"
 				item: { count: 1, id: "ars_nouveau:starbuncle_charm" }
@@ -304,6 +309,7 @@
 			id: "664466851CAFC260"
 			optional: true
 			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
 			tasks: [{
 				id: "5AFF28CE1B0642E3"
 				item: { count: 1, id: "ars_nouveau:timer_spell_turret" }
@@ -314,10 +320,12 @@
 		}
 		{
 			dependencies: ["4CBF552AC0CACA3D"]
+			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "34BE0346A1611946"
 			optional: true
 			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
 			tasks: [{
 				id: "127D52EDFE052F18"
 				item: { count: 1, id: "ars_nouveau:rotating_spell_turret" }
@@ -328,9 +336,11 @@
 		}
 		{
 			dependencies: ["1D9F96BE55FD6F5C"]
+			hide_dependency_lines: true
 			id: "7BD08E4CD6DFAC3A"
 			optional: true
 			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
 			tasks: [{
 				consume_items: true
 				count: 256L

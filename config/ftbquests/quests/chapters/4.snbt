@@ -16,6 +16,7 @@
 		{
 			dependencies: ["3AE197F566F36683"]
 			id: "33E6A6C827820E78"
+			optional: true
 			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				id: "0DA119DF6D698CA5"
@@ -32,6 +33,7 @@
 				}
 				type: "item"
 			}]
+			shape: "rsquare"
 			tasks: [{
 				id: "55897C5DC964383D"
 				item: { count: 1, id: "spectrum:storm_stone" }
@@ -266,6 +268,7 @@
 			dependencies: ["33C0C5C5B5ADB815"]
 			hide_dependency_lines: true
 			id: "1E446CD604AEE494"
+			optional: true
 			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				count: 8
@@ -276,6 +279,7 @@
 				}
 				type: "item"
 			}]
+			shape: "rsquare"
 			tasks: [{
 				id: "06D4B0477FAA6305"
 				item: { count: 1, id: "spectrum:black_hole_chest" }
@@ -288,7 +292,9 @@
 			dependencies: ["33C0C5C5B5ADB815"]
 			hide_dependency_lines: true
 			id: "07966FAE7BD94391"
+			optional: true
 			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
 			tasks: [{
 				id: "02C69A1C692D0FA5"
 				item: { count: 1, id: "spectrum:cinderhearth" }
@@ -301,7 +307,9 @@
 			dependencies: ["33E6A6C827820E78"]
 			hide_dependency_lines: true
 			id: "24C36327EA823145"
+			optional: true
 			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
 			tasks: [{
 				id: "7B82BA0DBF73DBB1"
 				item: { count: 1, id: "ars_elemental:ritual_tesla_coil" }
@@ -314,7 +322,9 @@
 			dependencies: ["33E6A6C827820E78"]
 			hide_dependency_lines: true
 			id: "239C2BF7A98E4CE4"
+			optional: true
 			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
 			tasks: [{
 				id: "266AF9B9D7E0F7F8"
 				item: { count: 1, id: "ars_elemental:glyph_discharge" }
@@ -326,7 +336,9 @@
 		{
 			dependencies: ["0E763CBABF6AF58B"]
 			id: "60E9BE47B665E715"
+			optional: true
 			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
 			tasks: [{
 				id: "1428292FD34317AE"
 				item: { count: 1, id: "spectrum:connection_node" }
@@ -338,7 +350,9 @@
 		{
 			dependencies: ["0E763CBABF6AF58B"]
 			id: "03E7A104623F3927"
+			optional: true
 			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
 			tasks: [{
 				id: "668554A242ABAB9B"
 				item: { count: 1, id: "spectrum:ink_node" }
@@ -350,7 +364,9 @@
 		{
 			dependencies: ["0E763CBABF6AF58B"]
 			id: "0D44C03DF72C94C3"
+			optional: true
 			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
 			tasks: [
 				{
 					id: "2C80E70939C241B4"
@@ -379,7 +395,9 @@
 		{
 			dependencies: ["0E763CBABF6AF58B"]
 			id: "13599C33C86372CE"
+			optional: true
 			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
 			tasks: [
 				{
 					id: "79199F403577F7BF"
@@ -412,7 +430,9 @@
 				id: "spectrum:provider_node"
 			}
 			id: "0E763CBABF6AF58B"
+			optional: true
 			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
 			tasks: [{
 				id: "1B425FBFE6E2D436"
 				type: "checkmark"
@@ -424,7 +444,9 @@
 			dependencies: ["667728071B9FE72E"]
 			hide_dependency_lines: true
 			id: "348D7DC443F19660"
+			optional: true
 			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
 			tasks: [{
 				id: "5FA6D0B0B2F9C3B7"
 				item: { count: 1, id: "spectrum:spirit_instiller" }
@@ -437,6 +459,7 @@
 			dependencies: ["33C0C5C5B5ADB815"]
 			hide_dependency_lines: true
 			id: "4BA220A9DB2ADAA4"
+			optional: true
 			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				id: "6712AE3B9C1F47E2"
@@ -446,6 +469,7 @@
 				}
 				type: "item"
 			}]
+			shape: "rsquare"
 			tasks: [{
 				id: "7AF31B02B8036334"
 				item: { count: 1, id: "spectrum:enchanter" }
@@ -479,7 +503,9 @@
 			dependencies: ["667728071B9FE72E"]
 			hide_dependency_lines: true
 			id: "412FB610FDA98F93"
+			optional: true
 			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
 			tasks: [{
 				id: "4DC448DE605409E5"
 				item: { count: 1, id: "ars_nouveau:spell_turret" }

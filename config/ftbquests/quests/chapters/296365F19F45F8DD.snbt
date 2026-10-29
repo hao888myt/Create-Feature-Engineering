@@ -112,6 +112,14 @@
 					}
 					type: "item"
 				}
+				{
+					id: "4C61A7394232765E"
+					item: {
+						count: 1
+						id: "create:brown_toolbox"
+					}
+					type: "item"
+				}
 			]
 			tasks: [{
 				id: "149DAF87CF727370"

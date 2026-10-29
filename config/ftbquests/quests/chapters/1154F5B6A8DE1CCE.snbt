@@ -377,7 +377,9 @@
 		{
 			dependencies: ["1D978A29B3259D5E"]
 			id: "6480200C91336C1A"
+			optional: true
 			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
 			tasks: [{
 				id: "30DC0A9FA9DE0146"
 				item: { count: 1, id: "spectrum:knowledge_gem" }
@@ -413,6 +415,7 @@
 		{
 			dependencies: ["1D978A29B3259D5E"]
 			id: "34933348806255ED"
+			optional: true
 			quest_enhance_disable_scroll_paging: false
 			rewards: [
 				{
@@ -434,6 +437,7 @@
 					type: "item"
 				}
 			]
+			shape: "rsquare"
 			tasks: [{
 				id: "6A2979604511BA62"
 				item: { count: 1, id: "spectrum:liquid_crystal_bucket" }
