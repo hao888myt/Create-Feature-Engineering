@@ -308,7 +308,7 @@ overworld_sky_mode = "VANILLA"
 	#Controls the interval at which the Item Splitter distributes items (in ticks)
 	# Default: 8
 	# Range: 1 ~ 200
-	item_splitter_interval = 8
+	item_splitter_interval = 5
 	#Controls the maximum distance the Item Splitter distributes items to (in blocks)
 	# Default: 16
 	# Range: 1 ~ 64
