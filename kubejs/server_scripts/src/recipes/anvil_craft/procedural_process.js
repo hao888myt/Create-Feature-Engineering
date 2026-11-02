@@ -130,4 +130,17 @@ ServerEvents.recipes(event => {
         .addItemInject(["anvilcraft:hardend_resin"])
         .addBlockCompress("create:railway_casing")
         .build(`${global.ModPackId}:batch_repackager_from_packager`)
+
+    new ProceduralProcess("anvilcraft:royal_steel_block", "anvilcraft:void_matter_block", "anvilcraft:royal_steel_block")
+        .addBlockCompress(["anvilcraft:magnet_block"])
+        .addBlockCompress(["create_feature_engineering:steel_block"])
+        .addBlockProcessing({
+            "blocks": "anvilcraft:heater",
+            "properties": [
+                {
+                    "overload": "false"
+                }
+            ]
+        })
+        .build(`${global.ModPackId}:royal_steel_block`)
 })
