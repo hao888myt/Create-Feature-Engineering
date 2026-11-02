@@ -9,6 +9,9 @@ ClientEvents.lang("zh_cn", (event) => {
 
     AddBlockLang("paltaeria_ore_catalyst", "苍绿催生体")
 
+    AddBlockLang("black", "黑")
+    AddBlockLang("white", "白")
+
     AddResearchPackLang("conveying", "传动")
     AddResearchPackLang("logistics", "物流")
     AddResearchPackLang("smart", "智能")
