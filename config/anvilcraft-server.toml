@@ -114,15 +114,15 @@ overworld_sky_mode = "VANILLA"
 	# Range: 0.0 ~ 1000.0
 	giant_anvil_fall_damage_per_block = 10.0
 	#Controls the speed a powered Sliding Rail launches entities with (in blocks/tick)
-	# Default: 0.3499999940395355
+	# Default: 0.35
 	# Range: 0.0 ~ 10.0
 	sliding_rail_launch_speed = 0.3499999940395355
 	#Controls the strength an unpowered Sliding Rail pulls entities with
-	# Default: 0.15000000596046448
+	# Default: 0.15
 	# Range: 0.0 ~ 10.0
 	sliding_rail_pull_strength = 0.15000000596046448
 	#Controls the fraction of an entity's motion a Sliding Rail preserves
-	# Default: 0.800000011920929
+	# Default: 0.8
 	# Range: 0.0 ~ 1.0
 	sliding_rail_damping = 0.800000011920929
 	#Controls the duration a Detector Sliding Rail stays powered (in ticks)
@@ -598,7 +598,7 @@ overworld_sky_mode = "VANILLA"
 	# Range: 0.0 ~ 1.0
 	providence_extra_roll_chance = 0.25
 	#Controls the chance that Providence grants a third roll
-	# Default: 0.05000000074505806
+	# Default: 0.05
 	# Range: 0.0 ~ 1.0
 	providence_third_roll_chance = 0.05000000074505806
 	#Controls the time the Resonator takes to mine a block by resonance (in ticks)
