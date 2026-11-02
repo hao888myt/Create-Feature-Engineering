@@ -134,6 +134,7 @@ ServerEvents.recipes(event => {
     new ProceduralProcess("anvilcraft:royal_steel_block", "anvilcraft:void_matter_block", "anvilcraft:royal_steel_block")
         .addBlockCompress(["anvilcraft:magnet_block"])
         .addBlockCompress(["create_feature_engineering:steel_block"])
+        .addBlockCompress(["minecraft:emerald_block", "anvilcraft:topaz_block", "anvilcraft:ruby_block", "anvilcraft:sapphire_block"])
         .addBlockProcessing({
             "blocks": "anvilcraft:heater",
             "properties": [
