@@ -72,4 +72,13 @@ ServerEvents.tags("block", event => {
     ].forEach(block => {
         event.add("spectrum:decay/ruin_conversions", block)
     })
+
+    let gem_blocks = [
+        "minecraft:emerald_block",
+        "anvilcraft:ruby_block",
+        "anvilcraft:sapphire_block",
+        "anvilcraft:topaz_block"
+    ].forEach(block => {
+        event.add("anvilcraft:gem_blocks", block)
+    })
 })
