@@ -77,7 +77,7 @@ ServerEvents.recipes(event => {
             [{ block: "create_feature_engineering:black", offset: [0, 1, 0] }]
         )
         .addStep(
-            [{ item: "anvilcraft:giant_anvil", count: 1 }],
+            [{ item: "create:crushing_wheel", count: 1 }],
             [{ block: "create_feature_engineering:white", offset: [0, 1, 0] }]
         )
         .build(`${global.ModPackId}:black_and_white`)
