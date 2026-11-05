@@ -24,6 +24,8 @@ overworld_sky_mode = "VANILLA"
 	# Range: 1 ~ 16
 	lightning_strike_depth = 2
 	#Controls the maximum radius a lightning strike can reach (in blocks)
+	# Default: 1
+	# Range: > -2147483648
 	lightning_strike_radius = 1
 	#Controls the maximum radius of the Giant Anvil's Shock (in blocks)
 	# Default: 16
@@ -34,6 +36,8 @@ overworld_sky_mode = "VANILLA"
 	# Range: -1 ~ 1000
 	giant_anvil_max_fall_damage = 40
 	#Controls the minimum collision speed at which Anvils explode instead of merely stopping (in blocks/tick)
+	# Default: 16
+	# Range: > -2147483648
 	anvil_collision_craft_speed = 16
 	#Controls the length of Redstone EMP generated per block dropped by the Anvil (in blocks)
 	# Default: 6
@@ -75,7 +79,7 @@ overworld_sky_mode = "VANILLA"
 	mun_safe_fall_distance = 20.0
 	#Controls the fall distance per damage in the Mun dimension (in blocks/damage)
 	# Default: 6.0
-	# Range: 0.0 ~ 64.0
+	# Range: 0.5 ~ 64.0
 	mun_blocks_per_damage = 6.0
 	#Controls the delay before an Overworld-Like dimension collapses (in ticks)
 	# Default: 40
@@ -272,6 +276,8 @@ overworld_sky_mode = "VANILLA"
 	# Range: 3 ~ 32
 	transparent_crafting_table_max_matrix_size = 15
 	#Controls the ripening cooldown of the Induction Light (in ticks)
+	# Default: 400
+	# Range: > -2147483648
 	induction_light_block_ripening_cooldown = 20
 	#Controls the ripening range of the Induction Light (in blocks)
 	# Default: 5
@@ -386,6 +392,8 @@ overworld_sky_mode = "VANILLA"
 	# Range: 1 ~ 64
 	remote_power_transmitter_range = 16
 	#Controls the maximum size of the Storages' Recover Station
+	# Default: 20
+	# Range: > -2147483648
 	storage_recover_max_size = 20
 	#Controls the time a Fluid Tank containing infinite fluid waits for break confirmation (in ticks)
 	# Default: 200
@@ -472,6 +480,8 @@ overworld_sky_mode = "VANILLA"
 		# Range: 1 ~ 1000
 		efficiency = 100
 		#Controls the power loss of Power Converters
+		# Default: 0.1
+		# Range: -Infinity ~ Infinity
 		loss = 0.1
 
 	#Adjusts settings related to the Storage Port
