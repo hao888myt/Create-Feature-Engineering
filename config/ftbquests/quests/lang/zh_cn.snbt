@@ -11,7 +11,7 @@
 	chapter.2A98BC5F2DB64CD0.title: "3a-现代农业（WIP）"
 	chapter.3707A393AB3CE5A0.title: "4-完美造物"
 	chapter.3FE9C46110805E39.title: "5-洁白无暇（WIP）"
-	chapter.4C63B9A029B53396.title: "4-I-智能研究包（WIP）"
+	chapter.4C63B9A029B53396.title: "4-I-智能研究包"
 	chapter.4DADCD984DD7785A.title: "其它"
 	chapter.63D52EC4CA81E4DB.title: "5-电磁研究包（WIP）"
 	chapter.64960E6668CA87B5.title: "虚空蚀刻（WIP）"
@@ -52,6 +52,10 @@
 	]
 	quest.058AD91A0A40F254.quest_subtitle: "我去我过滤没设置！"
 	quest.058AD91A0A40F254.title: "安山栏杆、安山脚手架、安山..."
+	quest.063925AA5CD0F333.quest_desc: [
+		"当前阶段&c并没有什么好的批量合成的方式&r"
+		"建议使用原版的&b合成器&r来进行&a批量合成&r"
+	]
 	quest.07966FAE7BD94391.quest_subtitle: "一把抓住，顷刻炼化"
 	quest.07C32E95DB270A93.quest_desc: ["恭喜，你已经完成了魔法线的第一章！"]
 	quest.07C32E95DB270A93.title: "七彩世界 完成！"
@@ -149,6 +153,10 @@
 	quest.19FB78E84BC02171.title: "完美化合物？"
 	quest.1A24080259DB3FC9.quest_subtitle: "想按多久按多久"
 	quest.1AFE35E67823BF42.quest_subtitle: "不建议在家里使用"
+	quest.1B17C842506F76B4.quest_desc: [
+		"&b搅拌器&r在这里显得&c有些低效了&r"
+		"可以使用原版的&b合成器&r来合成&e大小齿轮&r"
+	]
 	quest.1BF102DE45FCC1DF.quest_desc: ["&b树脂块&r可以捕捉&e中小型的生物，包括敌对生物，但是捕捉敌对生物需要使用虚弱药水"]
 	quest.1BF102DE45FCC1DF.quest_subtitle: "精灵球？"
 	quest.1D978A29B3259D5E.quest_desc: ["美术上的三原色混合在一起是黑色，那能不能通过&e混合三种水晶&r来获得新的水晶呢？"]
@@ -165,6 +173,16 @@
 		"安装&b经验宝石&r可以&e吸取经验"
 	]
 	quest.1E446CD604AEE494.quest_subtitle: "!?真空箱子?!"
+	quest.1E94B41659AA3D6F.quest_desc: [
+		"十分建议通过&6铁砧抢夺&r&e女巫&r来获得&e红石粉&r等材料"
+		"女巫需要堆叠&e14只左右&r才能保证产量足够"
+		"&7（记得给女巫命名，不然女巫会消失）&r"
+	]
+	quest.1E94B41659AA3D6F.title: "第四类永动机"
+	quest.227C7DFF8ED0D330.quest_desc: [
+		"当前阶段&c并没有什么好的批量合成的方式&r"
+		"建议使用原版的&b合成器&r来进行&a批量合成&r"
+	]
 	quest.22ECA20DF1049510.quest_desc: ["这种果子种出来也&c只能掉落一个&r，得想想&e其它的办法&r量产"]
 	quest.22ECA20DF1049510.quest_subtitle: "所以它们最开始从哪里来的？"
 	quest.22ECA20DF1049510.title: "魔法水果"
@@ -389,6 +407,10 @@
 		"配方处理时间为100gt"
 	]
 	quest.636CDC03AA962BC3.quest_subtitle: "不只是附魔"
+	quest.63C9104553539110.quest_desc: [
+		"机械动力原版的砂纸&c实在是太易耗了&r..."
+		"你可以用&b砂带磨床&r或者&b喷砂&r来处理&e玫瑰石英&r"
+	]
 	quest.64312F5DEA233569.quest_desc: [
 		"光谱世界的配方解锁功能是进度驱动的，所以想要同步解锁的配方，就需要同步进度"
 		"指令为/spectrum advancement_sync create <玩家名/@a> SPECTRUM_ALL"
@@ -455,6 +477,10 @@
 		"&a操作&r采用&a黄绿色&r"
 	]
 	quest.7D94D60CA24E34D9.title: "关于引导与提示"
+	quest.7DC3298AA77C7189.quest_desc: [
+		"纸有&e多种获取方式&r，&e树皮&r、&e甘蔗&r、&e木制纤维&r都可以合成纸"
+		"这里建议用&b冲压机&r冲压&e树皮&r的配方，刚好可以配平"
+	]
 	quest.7DEFD3268CBC3704.quest_desc: ["魔法线的内容主要由光谱世界和新生魔艺两个模组组成，前者偏重冒险与探索，后者偏重功能"]
 	quest.7DEFD3268CBC3704.title: "初来乍到"
 	task.066ED5DF02DE6C2B.title: "我明白了"
