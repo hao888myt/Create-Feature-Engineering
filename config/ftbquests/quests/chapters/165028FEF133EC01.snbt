@@ -494,5 +494,20 @@
 			x: 2.0d
 			y: 1.5d
 		}
+		{
+			dependencies: ["3060868EC927C45F"]
+			hide_dependency_lines: true
+			id: "2216B77CDAB37B27"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
+			tasks: [{
+				id: "669F26665C962D14"
+				item: { count: 1, id: "create_biotech:empty_cardboard_box" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.5d
+		}
 	]
 }
