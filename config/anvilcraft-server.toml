@@ -441,6 +441,10 @@ overworld_sky_mode = "VANILLA"
 	# Default: 12800000
 	# Range: 1000 ~ 2000000000
 	fluid_tank_infinity_threshold = 12800000
+	#Placement interval of smart block placer (in ticks)
+	# Default: 20
+	# Range: 2 ~ 200
+	smart_block_placer_interval = 20
 
 	#Adjusts settings related to Plasma Jets
 	[machines.plasma_jets]
