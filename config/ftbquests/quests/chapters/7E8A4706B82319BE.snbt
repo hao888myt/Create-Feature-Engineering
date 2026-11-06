@@ -348,5 +348,20 @@
 			x: -3.5d
 			y: 3.0d
 		}
+		{
+			dependencies: ["44183795B328B39C"]
+			hide_dependency_lines: true
+			id: "3DE0F8C0150ED47F"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
+			tasks: [{
+				id: "3DBF40701895D61B"
+				item: { count: 1, id: "fluidlogistics:copper_bucket" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.0d
+		}
 	]
 }
