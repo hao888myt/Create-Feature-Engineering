@@ -33,6 +33,18 @@
 			}
 			id: "62507B3AB28E1BFC"
 			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 256
+				id: "4DEB51471A93D174"
+				item: {
+					components: {
+						"researchd:research_pack": "create_feature_engineering:smart"
+					}
+					count: 1
+					id: "researchd:research_pack"
+				}
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
@@ -52,6 +64,15 @@
 			]
 			id: "227C7DFF8ED0D330"
 			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 32
+				id: "212D09E3432CC502"
+				item: {
+					count: 1
+					id: "create:filter"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "249FBF8A055F4F4D"
 				item: { count: 1, id: "create:filter" }
@@ -67,6 +88,15 @@
 			]
 			id: "3D5F74BCF03E463E"
 			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 32
+				id: "690B93F09D744F19"
+				item: {
+					count: 1
+					id: "create:transmitter"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "4CFEEFBA72C060B0"
 				item: { count: 1, id: "create:transmitter" }
@@ -83,6 +113,15 @@
 			]
 			id: "40CE12A8EFA2D184"
 			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 32
+				id: "7376DC98783080F7"
+				item: {
+					count: 1
+					id: "create:precision_mechanism"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "7C6D9B52FF46D8CB"
 				item: { count: 1, id: "create:precision_mechanism" }
@@ -98,6 +137,15 @@
 			]
 			id: "78A23A3B00129F52"
 			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 32
+				id: "12535A95C2AB8A95"
+				item: {
+					count: 1
+					id: "create:electron_tube"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "4F0BD850204A92B5"
 				item: { count: 1, id: "create:electron_tube" }
@@ -123,6 +171,15 @@
 			dependencies: ["063925AA5CD0F333"]
 			id: "63C9104553539110"
 			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 64
+				id: "74270B4DF5C0132B"
+				item: {
+					count: 1
+					id: "create:polished_rose_quartz"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "02A75F72202F5972"
 				item: { count: 1, id: "create:polished_rose_quartz" }
@@ -138,6 +195,15 @@
 			]
 			id: "063925AA5CD0F333"
 			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 64
+				id: "7D330E6B7754EE00"
+				item: {
+					count: 1
+					id: "create:rose_quartz"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "73D02659A819F6E0"
 				item: { count: 1, id: "create:rose_quartz" }
@@ -151,6 +217,15 @@
 			hide_until_deps_complete: true
 			id: "7DC3298AA77C7189"
 			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 64
+				id: "7E02F15DE7C7B236"
+				item: {
+					count: 1
+					id: "minecraft:paper"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "4F39CBD84557B353"
 				item: { count: 1, id: "minecraft:paper" }
@@ -164,6 +239,15 @@
 			hide_until_deps_complete: true
 			id: "7E0865C06984820E"
 			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 64
+				id: "3C45AD8384235F19"
+				item: {
+					count: 1
+					id: "minecraft:iron_nugget"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "33DABB20168BAFF9"
 				item: { count: 1, id: "minecraft:iron_nugget" }
@@ -177,6 +261,15 @@
 			hide_until_deps_complete: true
 			id: "130BCABF04BC0500"
 			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 64
+				id: "216EA2C75AA5E224"
+				item: {
+					count: 1
+					id: "vintageimprovements:copper_spring"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "7E5F8AC9CFC009E8"
 				item: { count: 1, id: "vintageimprovements:copper_spring" }
@@ -190,6 +283,26 @@
 			hide_until_deps_complete: true
 			id: "1E94B41659AA3D6F"
 			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 8
+					id: "61D4F2DB1E10DACA"
+					item: {
+						count: 1
+						id: "anvilcraft:tin_pressure_plate"
+					}
+					type: "item"
+				}
+				{
+					count: 128
+					id: "75837ACDEF4010FF"
+					item: {
+						count: 1
+						id: "minecraft:redstone"
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "517F042CE7AE427F"
 				item: { count: 1, id: "minecraft:redstone" }
@@ -203,12 +316,21 @@
 			hide_until_deps_complete: true
 			id: "061E99AD928C6330"
 			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 64
+				id: "566C6183F4327709"
+				item: {
+					count: 1
+					id: "minecraft:quartz"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "5C7924B51A36D2E7"
 				item: { count: 1, id: "minecraft:quartz" }
 				type: "item"
 			}]
-			x: -11.5d
+			x: -12.0d
 			y: -1.0d
 		}
 		{
@@ -229,6 +351,26 @@
 			hide_until_deps_complete: true
 			id: "1B17C842506F76B4"
 			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 64
+					id: "411D1F7E72140575"
+					item: {
+						count: 1
+						id: "create:large_cogwheel"
+					}
+					type: "item"
+				}
+				{
+					count: 64
+					id: "79A2FE3411AAC05C"
+					item: {
+						count: 1
+						id: "create:cogwheel"
+					}
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "0A32D39EDB69F1EE"
@@ -449,6 +591,15 @@
 			hide_until_deps_complete: true
 			id: "4FC940739A9EF11D"
 			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 64
+				id: "60B2E3E66F348F28"
+				item: {
+					count: 1
+					id: "minecraft:light_weighted_pressure_plate"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "377B8881E0CDDAB1"
 				item: { count: 1, id: "minecraft:light_weighted_pressure_plate" }
