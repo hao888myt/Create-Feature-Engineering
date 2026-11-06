@@ -291,6 +291,140 @@
 			hide_until_deps_complete: true
 			id: "6FEDF161386311E7"
 			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "03F2DE5DB4D67DC9"
+				item: {
+					components: {
+						"anvilcraft:saved_entity": {
+							isMonster: 0b
+							tag: {
+								AbsorptionAmount: 0.0f
+								Age: 0
+								Air: 300s
+								ArmorDropChances: [
+									0.085f
+									0.085f
+									0.085f
+									0.085f
+								]
+								ArmorItems: [
+									{ }
+									{ }
+									{ }
+									{ }
+								]
+								BodyGear: 0b
+								Brain: {
+									memories: { }
+								}
+								CanPickUpLoot: 0b
+								ChillTime: 0
+								CitadelData: { }
+								DeathTime: 0s
+								FallDistance: 0.0f
+								FallFlying: 0b
+								Fire: -1s
+								ForcedAge: 0
+								HandDropChances: [
+									0.085f
+									0.085f
+								]
+								HandItems: [
+									{ }
+									{ }
+								]
+								HeadGear: 0b
+								Health: 60.0f
+								HurtByTimestamp: 0
+								HurtTime: 0s
+								InLove: 0
+								Invulnerable: 0b
+								LeftHanded: 0b
+								Motion: [
+									0.0d
+									-0.0784000015258789d
+									0.0d
+								]
+								NeoForgeData: {
+									anvilcraft_resin_base_resentment: 7
+								}
+								Obsidian: 0b
+								OnGround: 1b
+								PersistenceRequired: 0b
+								PortalCooldown: 0
+								Pos: [
+									212.5d
+									64.0d
+									105.5d
+								]
+								Rotation: [
+									110.67101f
+									-8.253879f
+								]
+								attributes: [
+									{
+										base: 1.0d
+										id: "additionalentityattributes:generic.hitbox_scale"
+									}
+									{
+										base: 1.0d
+										id: "additionalentityattributes:generic.width"
+									}
+									{
+										base: 0.30000001192092896d
+										id: "minecraft:generic.movement_speed"
+									}
+									{
+										base: 0.0d
+										id: "minecraft:generic.oxygen_bonus"
+									}
+									{
+										base: 16.0d
+										id: "minecraft:generic.follow_range"
+										modifiers: [{
+											amount: 0.03748729467443667d
+											id: "minecraft:random_spawn_bonus"
+											operation: "add_multiplied_base"
+										}]
+									}
+									{
+										base: 1.0d
+										id: "additionalentityattributes:generic.hitbox_height"
+									}
+									{
+										base: 1.0d
+										id: "additionalentityattributes:generic.height"
+									}
+									{
+										base: 1.0d
+										id: "additionalentityattributes:generic.hitbox_width"
+									}
+								]
+								id: "alexsmobs:laviathan"
+								"neoforge:attachments": {
+									"spectrum:azure_dike": {
+										current_charges: 0.0f
+										current_recharge_delay: 0
+										max_charges: 0.0f
+										ticks_to_replenish_charge: 0
+										ticks_to_replenish_charge_after_getting_hit: 0
+									}
+									"spectrum:primordial_fire": 0L
+									"yes_steve_model:vehicle_model_id": {
+										initialized: 0b
+										molang_vars_server_bound: { }
+										owner_model_id: "default"
+									}
+								}
+								"neoforge:spawn_type": "SPAWN_EGG"
+							}
+						}
+					}
+					count: 1
+					id: "anvilcraft:resin_block"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "446B172E8255B68D"
 				item: { count: 1, id: "minecraft:obsidian" }
