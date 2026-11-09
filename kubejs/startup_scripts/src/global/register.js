@@ -143,64 +143,6 @@ global.IncompletedItems = [
         id: "research_pack",
         zh_cn: "研究包",
     },
-    {
-        id: "distillation_controller",
-        zh_cn: "分馏塔控制器",
-    },
-    {
-        id: "bulk_fermenter",
-        zh_cn: "批量发酵器",
-    },
-    {
-        id: "impact_pile",
-        zh_cn: "冲击桩",
-    },
-    {
-        id: "diesel_engine",
-        zh_cn: "柴油引擎",
-    },
-    {
-        id: "pumpjack_hole",
-        zh_cn: "抽油机油泵",
-    },
-    {
-        id: "pumpjack_crank",
-        zh_cn: "抽油机曲柄",
-    },
-    {
-        id: "pumpjack_head",
-        zh_cn: "抽油机驴头",
-    },
-    {
-        id: "pumpjack_bearing",
-        zh_cn: "抽油机轴承",
-    },
-
-    {
-        id: "circuit_board",
-        zh_cn: "电路板",
-    },
-    {
-        id: "magnetoelectric_core",
-        zh_cn: "磁电核心",
-    },
-
-    {
-        id: "transmission_pole",
-        zh_cn: "输电杆",
-    },
-    {
-        id: "remote_transmission_pole",
-        zh_cn: "远程输电杆",
-    },
-    {
-        id: "heater",
-        zh_cn: "加热器",
-    },
-    {
-        id: "charge_collector",
-        zh_cn: "集电器",
-    }
 ]
 
 global.Molds = [

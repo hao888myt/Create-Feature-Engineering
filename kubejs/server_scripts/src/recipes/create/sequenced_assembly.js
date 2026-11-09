@@ -244,7 +244,7 @@ ServerEvents.recipes(event => {
 	]).transitionalItem(transitional_item).loops(2)
 
 	// 抽油机轴承
-	transitional_item = "create_feature_engineering:incomplete_pumpjack_bearing"
+	transitional_item = "create_fantasizing:zinc_casing"
 	create.sequenced_assembly("createdieselgenerators:pumpjack_bearing",
 		"create:mechanical_bearing", [
 		create.deploying(transitional_item, [transitional_item, "create:sturdy_sheet"]),
@@ -253,7 +253,7 @@ ServerEvents.recipes(event => {
 	]).transitionalItem(transitional_item).loops(3)
 
 	// 抽油机曲柄
-	transitional_item = "create_feature_engineering:incomplete_pumpjack_crank"
+	transitional_item = "create_fantasizing:zinc_casing"
 	create.sequenced_assembly("createdieselgenerators:pumpjack_crank",
 		"create:shaft", [
 		create.deploying(transitional_item, [transitional_item, "create:sturdy_sheet"]),
@@ -262,7 +262,7 @@ ServerEvents.recipes(event => {
 	]).transitionalItem(transitional_item).loops(3)
 
 	// 抽油机驴头
-	transitional_item = "create_feature_engineering:incomplete_pumpjack_head"
+	transitional_item = "create_fantasizing:zinc_casing"
 	create.sequenced_assembly("createdieselgenerators:pumpjack_head",
 		"minecraft:dried_kelp", [
 		create.deploying(transitional_item, [transitional_item, "create:sturdy_sheet"]),
@@ -271,7 +271,7 @@ ServerEvents.recipes(event => {
 	]).transitionalItem(transitional_item).loops(3)
 
 	// 抽油机油泵
-	transitional_item = "create_feature_engineering:incomplete_pumpjack_hole"
+	transitional_item = "fluidlogistics:fluid_pump"
 	create.sequenced_assembly("createdieselgenerators:pumpjack_hole",
 		"fluidlogistics:fluid_pump", [
 		create.deploying(transitional_item, [transitional_item, "create:sturdy_sheet"]),
