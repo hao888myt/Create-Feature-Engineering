@@ -1,11 +1,6 @@
 ServerEvents.recipes(event => {
-    //传送石
-    //event.remove("waystones:warp_stone")
-
     let minecraft = event.recipes.minecraft
 
-    // 
-    event.remove({ mod: "beyonddimensions" })
 
     let removes = [
         "farmersdelight:wooden_basket",

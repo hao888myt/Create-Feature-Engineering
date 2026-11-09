@@ -105,7 +105,6 @@ config/create-server.toml
 config/anvilcraft-server.toml
 config/tweakeroo.json
 config/better-advanced-tooltips-client.toml
-config/beyonddimensions-server.toml
 config/alexsmobs.toml
 config/ars_nouveau-client.toml
 config/create_fantasizing-server.toml
