@@ -1,0 +1,121 @@
+#Common
+[common]
+	#Fix deployers unnecessarily entering their 10-tick cooldown when milking, emptying buckets, slaughtering, etc.
+	#Because the secondary output overflow check is always performed before the outputs are extracted.
+	deployer_instant_output = true
+	#Allows funnels to extract items positioned exactly at the center of a belt.
+	#Previously, funnels could only extract items past the center.
+	#When a opposing funnel blocks items at the center, all side-facing belt funnels stop extracting, which is unintuitive.
+	belt_funnel_detection_tweak = true
+	#Prevent the depot from dropping overflow items.
+	#For example when it accumulates too many processing outputs.
+	#Or when an Ejector cannot merge received item stacks.
+	no_depot_overflow_drop = true
+	#PSIs on trains are now only activated when the train arrives at a station.
+	better_psi_on_carriage = true
+	#Make super glue as convenient as honey glue from Aeronautic.
+	hachimi_glue = true
+	#Allow smart fluid pipes and valve pipes to work without being directly attached to a tank.
+	#And significantly optimize the performance.
+	smart_fluid_pipe = true
+	#Allow belts to operate without requiring a power source.
+	easy_belt = true
+	#Optimize the performance of various logistics components.
+	fast_logistics = true
+	#Show the contents of the basin faucet when wearing Goggles.
+	basin_faucet_view = true
+	#Fix deployers and presses skipping the remaining input stack after a belt processing operation produces no output;
+	#Slightly reduce logistics latency and performance cost for belt processing in certain cases;
+	#Allow presses to output immediately after processing, speeding up pressing recipes by 1 tick.
+	belt_processing_tweak = true
+	#Holding with a wrench on a filtering box will open the toolbox-like JEI bookmark overlay.
+	easy_filtering = true
+	# Default: 10
+	# Range: > 0
+	hose_pulley_sound_cooldown = 10
+	#Ticks the toolbelt hotkey must be held before activating.
+	#By the way, this key is blocked while holding a schematic.
+	# Default: 3
+	# Range: 0 ~ 100
+	toolbelt_hold_delay = 3
+	#Duration of the Toolbelt opening animation.
+	#Set to 0 to open instantly. (Vanilla: 10)
+	# Default: 2
+	# Range: 0 ~ 100
+	toolbelt_animation_ticks = 2
+	#Short-press the toolbelt hotkey to quickly unequip items without opening the toolbox.
+	quick_unequip_items = true
+	#Make threshold switch cloneable. (Need restart)
+	#(Vanilla appears to copy it too, but it actually only copies the Filter Slot.)
+	clipboard_cloneable_switch = true
+	# Default: 8
+	# Range: 1 ~ 64
+	pump_speed_multiplier = 8
+	#Increase fluid propagation speed to 16 blocks/tick.
+	#Significantly reduce the performance impact of unnecessary open ends in pipe networks.
+	hyper_fluid_propagation = true
+	#Prevents different fluids collide in the same pipe.
+	#Instead, fluids will queue and wait for the path ahead to become available.
+	#However Improper pipe layouts may cause deadlocks.
+	#(Requires Hyper Fluid Propagation to be enabled)
+	fluid_not_collide = false
+	#Blaze Burner will use the Void as fuel.
+	void_burning = false
+	#A downward Encased Fan upon any Boiler Heater will provide stress capacity.
+	# Default: 2048
+	# Range: > 0
+	fan_passive_generation = 0
+	#A downward Encased Fan upon any Boiler Heater will provide stress capacity.
+	# Default: 2048
+	# Range: > 0
+	fan_active_generation = 0
+
+#Bugfix
+[bugfix]
+	#Fix hose pulleys incorrectly showing "Bottomless Supply" and stopping fill the last block before reaching the actual threshold;
+	#Fix fluid input rates above 1000 mB/t to hose pulleys being incorrectly reduced;
+	#Fix mechanical pumps with a full output deleting fluid when extracting from a hose pulley;
+	#Add extra tooltip when wearing Goggles.
+	hose_pulley_fix = true
+	#Fix single-block tanks or vaults placed by schematic incorrectly have zero capacity.
+	vault_and_tank_schematic_fix = true
+	#Backported the fix from Create PR #9974 and #10001;
+	#Fix open pipes being unable to place fluids when the output rate exceeds 1000 mB/t;
+	#Fix open pipes not validating their connections;
+	#Fix an issue where, when "mechanicalPumpRange" >= 16, long pipes may occasionally fail to rebuild their fluid network correctly after chunks are reloaded.
+	fluid_network_fix = true
+	#Backported the fix from Create PR #9891 and #9967;
+	#Fix the issue where the outputs of belt processing machines will be pushed back to the input side by a blocked belt funnel;
+	#Fix Create Issue #9682.
+	belt_fix = true
+	#Fix one of the two fluids output of a basin disappearing under certain conditions;
+	#Fix recipe priority sorting not taking fluid ingredient amounts into account;
+	#Fix basin recipe filtering only considering the first output of recipes with multiple outputs;
+	#Fix sequenced assembly recipes using incorrect steps under certain conditions.
+	processing_fix = true
+	#Backported the fix from Create PR #9875 and #10362;
+	#Fix an issue where trains never release their reserved signal segment, causing a deadlock.
+	train_fix = true
+	#Fix millstones voiding items when the output is full.
+	millstone_fix = true
+	#Fix empty weighted depots (ejectors) not accepting item stacks larger than one.
+	#Because NeoForge reports a max stack size of 1 for air.
+	depot_fix = true
+	#Fix Create Issue #8600.
+	logistics_fix = true
+
+#Misc
+[misc]
+	#Player won't drown underwater.
+	player_can_breath_underwater = false
+	#When players are in the air or water, they will no longer be subject to a five-time increase in digging time penalty
+	disable_dig_speed_penalty = false
+	#Allow all players flying.
+	always_allow_flying = false
+	#Prevents players from automatically exiting flight mode when touching the ground.
+	keep_flying_on_ground = false
+	#Allow rotation for blocks without a custom rotate implementation.
+	#Many mod authors do not override rotate and mirror when adding directional blocks.
+	#As a result, vanilla structure block placement and Create schematic printing are unable to correctly rotate these blocks.
+	#Enabling this feature automatically detects common facing properties and applies rotation/mirror.
+	heuristic_rotation = true

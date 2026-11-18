@@ -35,6 +35,7 @@ config/*
 !config/curios-common.toml
 !config/create_jetpack-common.toml
 !config/infinite_pie.json
+!config/createwheelsuponchairs-common.toml
 
 !config/ars_nouveau/
 config/ars_nouveau/*
